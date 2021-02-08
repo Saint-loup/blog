@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ seo.title or title }}  | {{ meta.siteName }}</title>
-    <link rel="stylesheet" href="/assets/tailwind.css"/>
-    <link rel="alternate" type="application/atom+xml" title="RSS Feed for {{ meta.siteName }}" href="/feed.xml"/>
+    <link rel="stylesheet" href="{{ '/assets/tailwind.css' | url }}"/>
+    <link rel="alternate" type="application/atom+xml" title="RSS Feed for {{ meta.siteName }}" href="{{ '/feed.xml' | url }}"/>
     {# Only include the Flickity js if this page uses a hero.carousel  #}
     {% if hero == "carousel" or product.carousel -%}
       <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
@@ -47,13 +47,14 @@
       {% include "partials/footer.njk" %}
     </div>
 
-    <script src="/assets/main.js" defer></script>
+    <script src=" {{ '/assets/main.js'   | url }}" defer></script>
 
     {# Only include the Flickity js if this page uses a hero.carousel  #}
     {% if hero == "carousel" or product.carousel %}
       <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
       <script src="https://unpkg.com/flickity-fullscreen@1/fullscreen.js"></script>
     {% endif %}
+
 
   </body>
 </html>

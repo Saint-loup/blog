@@ -49,7 +49,7 @@ module.exports = {
 	 * *** before this file existed. :-)
 	 * I might move stuff around on the next version...
 	 */
-	g_showFooterSocialIcons: true,
+	g_showFooterSocialIcons: false,
 	/**
 	 * Set to 'false' to disable the "Share:" icons on the Post Detail views.
 	 * You can also set individual platforms to 'false' to disable just those platforms.
@@ -57,7 +57,7 @@ module.exports = {
 	 * if you want Facebook support you'll have to build it yourself.
 	 * https://deletefacebook.com/
 	 */
-	g_showSocialShareIcons: true,
+	g_showSocialShareIcons: false,
 	// Display individual Share Icons. Above must be 'true' for items below to display.
 	g_showShareLinkedIn: true,
 	g_showSharePinterest: true,
@@ -87,7 +87,7 @@ module.exports = {
 	 *        'postListStyle' and 'tagListStyle.'
 	 *
 	 * */
-	postListStyle: 'postslistcards',
+	postListStyle: 'postslist',
 
 	/**
 	 * ===== Tag List Style Options =====

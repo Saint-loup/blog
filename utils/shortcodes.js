@@ -2,35 +2,47 @@ const markdownIt = require('markdown-it')
 const svgColorDefault = 'text-indigo-500'
 
 module.exports = {
+
+
+
+
+
+	project: function (name, link, img, description) {
+		return `<div class="project flex flex-col overflow-hidden rounded-lg shadow-lg">
+							<h3 class="name"><a href="${link}">${name}</a></h3>
+							<img class="picture" src="${img}"></img>
+							<span class="description">${description}</span>
+						</div>`;
+	},
 	/**
 	 * ===== SVGs =====
-   * This shortcode is used in layouts and can be used in .md content. 
-   * 
+   * This shortcode is used in layouts and can be used in .md content.
+   *
    * Set the default color above in the "svgColorDefault" variable.
-   * 
-   * The SVGs MUST exist in the /src/assets/svg/ directory and must me named 
-   * according to the existing examples. 
-   * 
+   *
+   * The SVGs MUST exist in the /src/assets/svg/ directory and must me named
+   * according to the existing examples.
+   *
    * Attributes:
    *    name ; required, must be same as SVG file name in /src/assets/svg/ (without ".svg")
-   *    classes : optional but required if you want to control size, color, etc. 
+   *    classes : optional but required if you want to control size, color, etc.
    *    desc : optional when used in .md content files
    *    location : optional when used in .md content files
-   * 
+   *
 	 * Usage by Editors in .md content files:
    *  {% svg "name", "any TailwindCSS classes" %}
-   * 
+   *
    * Example:
    *  {% svg "instagram", "h-12 w-12 text-blue-500" %}
 
    * Sensible fallback defaults are in place. ;-)
    * "desc" and "location" attribures are required for accessibility and Lighthouse validations
    * and are hardcoded in the layouts to provide unique values as required by Lighthouse.
-   * 
+   *
    * Used in Layouts:
-   *  /src/authors.njk 
-   *  /src/_includes/partials/footer.njk 
-   *  /src/_includes/components/socialshare.njk 
+   *  /src/authors.njk
+   *  /src/_includes/partials/footer.njk
+   *  /src/_includes/components/socialshare.njk
    *  /src/_includes/components/nav.njk (for the logos)
 	 */
 	svg: function (name, classes, desc, location) {
@@ -83,15 +95,14 @@ module.exports = {
 		const ratio = vratio ? vratio : '16:9'
 		const start = vstart
 			? vstart
-					.split(':')
-					.reduce((minute, seconds) => Number(minute) * 60 + Number(seconds))
+				.split(':')
+				.reduce((minute, seconds) => Number(minute) * 60 + Number(seconds))
 			: ''
 		const padding = ratio
 			.split(':')
 			.reduce((first, second) => (second / first) * 100)
 
-		return `<div id="${slug}" style="position:relative; width:100%; padding-bottom:${padding}%"><iframe style="position:absolute; top:0; right:0; bottom:0; left:0; width:100%; height:100%" width="100%" height="100%" title="${title}" src="https://www.youtube.com/embed/${slug}${
-			start ? `?start=${start}` : ''
-		}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>`
+		return `<div id="${slug}" style="position:relative; width:100%; padding-bottom:${padding}%"><iframe style="position:absolute; top:0; right:0; bottom:0; left:0; width:100%; height:100%" width="100%" height="100%" title="${title}" src="https://www.youtube.com/embed/${slug}${start ? `?start=${start}` : ''
+			}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>`
 	},
 }
