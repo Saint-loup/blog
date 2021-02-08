@@ -46,6 +46,8 @@ module.exports = function (eleventyConfig) {
 	 */
 	Object.keys(shortcodes).forEach((shortcodeName) => {
 		eleventyConfig.addShortcode(shortcodeName, shortcodes[shortcodeName])
+
+
 	})
 
 	/**
@@ -95,6 +97,7 @@ module.exports = function (eleventyConfig) {
 						case 'authors':
 						case 'pages':
 						case 'post':
+						case 'travaux':
 							return false
 					}
 
@@ -110,6 +113,11 @@ module.exports = function (eleventyConfig) {
 		// returning an array in addCollection works in Eleventy 0.5.3
 		return [...tagSet]
 	})
+
+	eleventyConfig.addCollection("catList", function (collectionApi) {
+		return collectionApi.getFilteredByTag("travaux");
+	});
+
 
 	/**
 	 * Custom Watch Targets
@@ -158,6 +166,8 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addLayoutAlias('page', 'layouts/page.njk')
 	eleventyConfig.addLayoutAlias('post', 'layouts/post.njk')
 	eleventyConfig.addLayoutAlias('author', 'layouts/author.njk')
+	//eleventyConfig.addLayoutAlias('home', 'layouts/home.njk')
+
 
 	/**
 	 * Opts in to a full deep merge when combining the Data Cascade.

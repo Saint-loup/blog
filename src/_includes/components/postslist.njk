@@ -6,17 +6,11 @@
           <div class="pb-10">
             {# Post publish Date and Author display conditional  #}
             <div class="text-sm {{ colors.authorCustom.date or colors.authorDefault.date }}">
-              <time datetime="{{ post.data.date | dateToFormat("yyyy-MM-dd") }}">
-                {{ post.data.date | dateToFormat("dd LLL yyyy") }}
+              <time datetime="{{ post.data.page.date | dateToFormat("yyyy-MM-dd") }}">
+                {{ post.data.page.date | dateToFormat("dd LLL yyyy") }}
               </time>
               {# Global disable author display in /src/_data/structure.js #}
-              {% if structure.g_showAuthors %}
-                {# Only display the Author Block if there is a value for "author" in Post Frontmatter #}
-                {% if post.data.author %}
-                  {% set postAuthor = authors | getAuthor(post.data.author) %}
-                  by <a class="hover:underline" href="/authors/{{ post.data.author }}/">{{ postAuthor.name }}</a>
-                {% endif %}
-              {% endif %}
+
 
             </div>
 
