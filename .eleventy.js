@@ -10,9 +10,11 @@ const filters = require('./utils/filters.js')
 const shortcodes = require('./utils/shortcodes.js')
 const pairedshortcodes = require('./utils/paired-shortcodes.js')
 const transforms = require('./utils/transforms.js')
-const svgsprite = require('./utils/svgsprite')
+//const svgsprite = require('./utils/svgsprite')
 
 module.exports = function (eleventyConfig) {
+
+
 	/**
 	 * Plugins
 	 * @link https://www.11ty.dev/docs/plugins/
@@ -62,7 +64,7 @@ module.exports = function (eleventyConfig) {
 	 *
 	 * @link https://www.11ty.dev/docs/languages/nunjucks/#asynchronous-shortcodes
 	 */
-	eleventyConfig.addNunjucksAsyncShortcode('svgsprite', svgsprite)
+	//eleventyConfig.addNunjucksAsyncShortcode('svgsprite', svgsprite)
 
 	/**
 	 * Collections
@@ -180,21 +182,23 @@ module.exports = function (eleventyConfig) {
 	// 			},
 	// 		},
 	// 	},
-		// Set local server 404 fallback
-		// callbacks: {
-		// 	ready: function (err, browserSync) {
-		// 		const content_404 = fs.readFileSync('dist/404.html')
+	// Set local server 404 fallback
+	// callbacks: {
+	// 	ready: function (err, browserSync) {
+	// 		const content_404 = fs.readFileSync('dist/404.html')
 
-		// 		browserSync.addMiddleware('*', (req, res) => {
-		// 			// Provides the 404 content without redirect.
-		// 			res.write(content_404)
-		// 			res.end()
-		// 		})
-		// 	},
-		// },
+	// 		browserSync.addMiddleware('*', (req, res) => {
+	// 			// Provides the 404 content without redirect.
+	// 			res.write(content_404)
+	// 			res.end()
+	// 		})
+	// 	},
+	// },
 	// })
 
 	return {
+		pathPrefix: "/blog/",
+
 		dir: {
 			input: 'src',
 			output: 'dist',
