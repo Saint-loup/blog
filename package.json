@@ -12,15 +12,6 @@
     "type": "git",
     "url": "https://github.com/shanerobinson/sr-11ty-tailwind-alpine-template.git"
   },
-  "keywords": [
-    "11ty",
-    "TailwindCSS",
-    "TailwindUI",
-    "Alpine.js",
-    "webpack",
-    "PostCSS",
-    "CSSnano"
-  ],
   "scripts": {
     "clean": "rimraf dist",
     "dev:webpack": "webpack  --mode development",
@@ -28,11 +19,10 @@
     "dev:postcss": "postcss src/assets/css/tailwind.css -o dist/assets/tailwind.css --watch",
     "dev": "npm-run-all clean --parallel dev:* --print-label",
     "build:webpack": "webpack  --mode production",
-    "build:eleventy": "ELEVENTY_ENV=production eleventy",
-    "build:postcss": "NODE_ENV=production postcss src/assets/css/tailwind.css -o dist/assets/tailwind.css",
+    "build:eleventy": " cross-env ELEVENTY_ENV=production eleventy",
+    "build:postcss": " cross-env NODE_ENV=production postcss src/assets/css/tailwind.css -o dist/assets/tailwind.css",
     "build": "run-s clean build:* --print-label"
   },
-  "dependencies": {},
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
     "@11ty/eleventy-navigation": "^0.1.6",
@@ -46,6 +36,7 @@
     "axios": "^0.21.1",
     "babel-loader": "^8.2.2",
     "clean-css": "^4.2.3",
+    "cross-env": "^7.0.3",
     "cssnano": "^4.1.10",
     "dotenv": "^8.2.0",
     "html-minifier": "^4.0.0",
