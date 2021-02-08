@@ -1,4 +1,5 @@
-# Custom Local 
+.eleventyignore
+# Custom Local
 project
 _project
 
