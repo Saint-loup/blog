@@ -1,11 +1,11 @@
 ---
 title: "Un plugin Sketch pour importer du contenu depuis le presse-papier"
 date: "2019-12-11"
-categories: 
-  - "travaux"
-tags: 
+tags:
   - "prototypage"
   - "sketch"
+  - "travaux"
+
 ---
 
 Beaucoup de plugins Sketch pour l'import de contenu ([Craft](https://www.invisionapp.com/craft), [Data Populator](https://www.datapopulator.com/)…) sont pensés pour des sources de données non modifiables (banque d'images, noms de pays...), ou pour des données complexes à synchroniser avec des maquettes graphiques abouties. Suivant les plugins, ça implique de renommer des calques, d'avoir un fichier de données en TXT voire en JSON... bref des procédures un peu lourdes.

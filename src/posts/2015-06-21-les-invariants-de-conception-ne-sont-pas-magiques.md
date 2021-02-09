@@ -53,7 +53,11 @@ Première solution : décliner le produit **en plusieurs tailles** afin de couvr
 
 Deuxième solution : rendre le produit **ajustable**, lors de l'installation ou de l'utilisation. Par exemple on peut changer la hauteur, l'avancement… d'un siège de voiture. Ce serait compliqué pour un téléphone, mais on peut citer le Galaxy Note 3, doté d'un mode assez curieux permettant réduire la surface utile de l'image d'un geste (cliquez pour arrêter l'animation) :
 
-![Un geste de va-et-vient réduit la taille de l'écran. (Source : Android Central "](/blog/assets/images/note-3-shrink-15fps.gif) Un geste de va-et-vient réduit la taille de l'écran. (Source : Android Central)")
+<figure>
+<img id="#freezegif" src="/blog/assets/images/note-3-shrink-15fps.gif">
+	<figcaption>Un geste de va-et-vient réduit la taille de l'écran. (Source : Android Central </figcaption>
+</figure>
+
 
 Enfin, on peut essayer de trouver une **dimension unique** qui satisfasse le maximum de monde. Par exemple on peut placer une borne interactive à hauteur de bras d'une personne de petite taille, dans l'idée qu'il est plus facile pour une grande personne de se baisser que le contraire.
 
@@ -81,4 +85,12 @@ Conclusion : ne jamais raisonner sur un critère isolé. Tout est affaire de com
 - [Une compilation de ressources sur les usages et la conception mobile](http://4ourth.com/Touch/)
 - [Les slides de la présentation de Cornelia Laros](http://fr.slideshare.net/orsoral/comportements-mobiles-vrais-challenges-ides-reues)
 
-<script><br /> document.querySelector(".wp-image-1416").addEventListener('click', freeze_gifs_on_click, true);<br /> function freeze_gifs_on_click(e) {<br /> [].slice.apply(document.images).filter(is_gif_image).map(freeze_gif);<br /> }<br /> function is_gif_image(i) {<br /> return /^(?!data:).*\.gif/i.test(i.src);<br /> }<br /> function freeze_gif(i) {<br /> var c = document.createElement('canvas');<br /> var w = c.width = i.width;<br /> var h = c.height = i.height;<br /> c.getContext('2d').drawImage(i, 0, 0, w, h);<br /> try {<br /> i.src = c.toDataURL("image/gif"); // if possible, retain all css aspects<br /> } catch(e) { // cross-domain -- mimic original with all its tag attributes<br /> for (var j = 0, a; a = i.attributes[j]; j++)<br /> c.setAttribute(a.name, a.value);<br /> i.parentNode.replaceChild(c, i);<br /> }<br /> }<br /></script>
+
+<script>
+document.getElementById("#freezegif").addEventListener('click', freeze_gifs_on_click, true);
+function freeze_gifs_on_click(e) { [].slice.apply(document.images).filter(is_gif_image).map(freeze_gif); } function is_gif_image(i) { return /^(?!data:).*\.gif/i.test(i.src); } function freeze_gif(i) { var c = document.createElement('canvas'); var w = c.width = i.width; var h = c.height = i.height; c.getContext('2d').drawImage(i, 0, 0, w, h);
+try { i.src = c.toDataURL("image/gif");
+// if possible, retain all css aspects
+} catch(e) { // cross-domain -- mimic original with all its tag attributes
+for (var j = 0, a; a = i.attributes[j]; j++) c.setAttribute(a.name, a.value); i.parentNode.replaceChild(c, i); } }
+</script>

@@ -1,7 +1,7 @@
 ---
 title: "J'ai fait un truc"
 date: "2020-12-18"
-categories:
+tags:
   - "travaux"
 coverImage: "Screenshot_2020-12-19-table-basse1-scaled.jpg"
 ---

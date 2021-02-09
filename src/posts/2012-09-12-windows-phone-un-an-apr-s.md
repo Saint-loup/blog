@@ -1,7 +1,7 @@
 ---
 title: "Windows Phone : un an après"
 date: "2012-09-12"
-tags: 
+tags:
   - "critique"
   - "windows-phone"
 ---
@@ -18,7 +18,7 @@ Le problème se pose également pour Windows 8. Beaucoup sont d’avis que la pa
 
 ### Disette d’applis
 
-Il y a un autre problème, qui ne touche pas directement Windows Phone et que Microsoft fait \[tout ce qu’il peut pour combattre, il s’agit de l’écosystème d’applications. Pour le dire brutalement, c’est un peu la misère. Un certain nombre d’apps connues ont une version pour Windows Phone, mais il y a toujours des manques. Cela dépend bien sûr des besoins de chacun, mais par exemple je n’ai pas de bon client pour [Pocket](http://getpocket.com). Si beaucoup de grands noms sont là, c’est souvent à retard. Par exemple, [Instagram](http://www.theverge.com/2012/9/10/3307889/instagram-windows-phone-app-nokia-video) devrait arriver seulement avec la sortie de Windows Phone 8. Je ne parle même pas d’applis innovantes ou de jeux originaux : l’immense majorité est sur iOS et parfois, dans un second temps, sur Android.
+Il y a un autre problème, qui ne touche pas directement Windows Phone et que Microsoft fait tout ce qu’il peut pour combattre, il s’agit de l’écosystème d’applications. Pour le dire brutalement, c’est un peu la misère. Un certain nombre d’apps connues ont une version pour Windows Phone, mais il y a toujours des manques. Cela dépend bien sûr des besoins de chacun, mais par exemple je n’ai pas de bon client pour [Pocket](http://getpocket.com). Si beaucoup de grands noms sont là, c’est souvent à retard. Par exemple, [Instagram](http://www.theverge.com/2012/9/10/3307889/instagram-windows-phone-app-nokia-video) devrait arriver seulement avec la sortie de Windows Phone 8. Je ne parle même pas d’applis innovantes ou de jeux originaux : l’immense majorité est sur iOS et parfois, dans un second temps, sur Android.
 
 De plus, les applis existantes sont chères. [Plant vs Zombies](http://www.windowsphone.com/fr-fr/store/app/plants-vs-zombies/706f822a-a47e-e011-986b-78e7d1fa76f8) est à 5€ (contre 2.40€ sur [l’iPhone](http://itunes.apple.com/fr/app/id350642635?mt=8)). [Bejeweled](http://www.windowsphone.com/fr-fr/store/app/bejeweled-live/ea9a24ad-d2d1-df11-9eae-00237de2db9e) est à 5€ aussi (contre 0.80€ sur [iOS](http://itunes.apple.com/fr/app/bejeweled/id479536744?mt=8)). Notez qu’il y a des exceptions (Final Fantasy est un peu moins cher sur Windows Phone), que la disparité de prix est moins grande dans certaines catégories (notamment les lecteurs de flux RSS) et que tout ce qui est diffusé sur le Marketplace doit avoir une version d’essai. Je reconnais aussi que c’est un problème épineux : la pauvreté de l’offre et les prix élevés sont dûs, pour beaucoup, au peu d’attrait commercial que représente la plateforme pour un développeur. Malgré tout, quand on a un Windows Phone, il ne faut pas avoir des besoins en applications trop spécifiques ou aimer avoir la dernière sortie à la mode.
 

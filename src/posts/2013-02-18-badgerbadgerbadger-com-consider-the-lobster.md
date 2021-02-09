@@ -1,7 +1,8 @@
 ---
 title: "Consider the badger"
 date: "2013-02-18"
-categories:
+draft: true
+tags:
   - "travaux"
 ---
 

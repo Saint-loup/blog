@@ -1,10 +1,10 @@
 ---
 title: "Un plugin de typographie française pour Sketch"
 date: "2019-02-07"
-categories:
-  - "travaux"
 tags:
   - "prototypage"
+  - "travaux"
+
 coverImage: "Icon_ombre2.png"
 ---
 

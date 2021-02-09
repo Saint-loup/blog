@@ -1,8 +1,6 @@
 ---
 title: "Un menu radial inspiré des jeux de tir"
 date: "2013-04-16"
-categories:
-  - "travaux"
 tags:
   - "jeu-video"
 ---
@@ -33,10 +31,21 @@ Le design d'interfaces pourrait s'inspirer de cette idée. Cela fait longtemps q
 
 Je trouve l'idée particulièrement adaptée aux écrans tactiles, donc j'ai en tête un modèle d'interaction de ce genre : presser deux doigts pour faire apparaitre un menu, puis les faire glisser vers l'item désiré. Décoller les doigts de l'écran suffit à sélectionner ce dernier. L'interaction conjugue la facilité des gestes tactiles et l'immédiateté du feedback visuel. Le résultat est fluide puisque les doigts ne quittent pas l'écran. Dans l'animation ci-après (oui c'est juste un Gif pourri), le menu apparait vers le haut pour ne pas être caché par la main. L'exemple est assez limité (partager un article vers divers services), mais au-delà ce genre d'interaction me semble prometteur.
 
-![2x\_Press\_Hold](/blog/assets/images/2x_Press_Hold.gif) 
+<figure>
+<img id="freezegif" src="/blog/assets/images/2x_Press_Hold.gif">
+</figure>
+
+
 
 Cliquer sur l'animation pour l'arrêter.
 
 Cela pourrait être utilisé soit comme menu contextuel, soit comme menu global (ie qui permettrait d'accéder aux même actions quelque soit l'endroit où j'appuie). Le premier cas serait utile avec beaucoup de cibles potentielles distinctes (par exemple une page pleine de liens), tandis que le second serait plus avantageux avec des actions répétitives (par exemple accéder à une palette d'outils dans une application de dessin). Je suis preneur d'avis et de critiques. L'utilisabilité aussi bien que l'utilité de cette proposition sont certainement critiquables et j'ai pu passer à coté de travaux semblables.
 
-<script>document.getElementById("freezegif").addEventListener('click', freeze_gifs_on_click, true); function freeze_gifs_on_click(e) { [].slice.apply(document.images).filter(is_gif_image).map(freeze_gif); } function is_gif_image(i) { return /^(?!data:).*\.gif/i.test(i.src); } function freeze_gif(i) { var c = document.createElement('canvas'); var w = c.width = i.width; var h = c.height = i.height; c.getContext('2d').drawImage(i, 0, 0, w, h); try { i.src = c.toDataURL("image/gif"); // if possible, retain all css aspects } catch(e) { // cross-domain -- mimic original with all its tag attributes for (var j = 0, a; a = i.attributes[j]; j++) c.setAttribute(a.name, a.value); i.parentNode.replaceChild(c, i); } }</script>
+<script>
+document.getElementById("#freezegif").addEventListener('click', freeze_gifs_on_click, true);
+function freeze_gifs_on_click(e) { [].slice.apply(document.images).filter(is_gif_image).map(freeze_gif); } function is_gif_image(i) { return /^(?!data:).*\.gif/i.test(i.src); } function freeze_gif(i) { var c = document.createElement('canvas'); var w = c.width = i.width; var h = c.height = i.height; c.getContext('2d').drawImage(i, 0, 0, w, h);
+try { i.src = c.toDataURL("image/gif");
+// if possible, retain all css aspects
+} catch(e) { // cross-domain -- mimic original with all its tag attributes
+for (var j = 0, a; a = i.attributes[j]; j++) c.setAttribute(a.name, a.value); i.parentNode.replaceChild(c, i); } }
+</script>
