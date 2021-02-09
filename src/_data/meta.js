@@ -7,7 +7,7 @@ module.exports = {
 	lang: 'fr',
 	locale: 'en_us',
 	authorName: 'Baptiste',
-	authorEmail: 'contact@toutcequibouge.net',
+	authorEmail: 'baptiste@roullin.net',
 	twitterSite: '@saint_loup',
 
 }
