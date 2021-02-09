@@ -1,7 +1,7 @@
 ---
 title: "Protocoles, normes, infrastructures : la main invisible de Google"
 date: "2019-04-03"
-tags: 
+tags:
   - "politique"
   - "systemes-complexes"
 coverImage: "2019-04-02_22h11_15.png"
@@ -16,7 +16,7 @@ Je vais décrire quelque chose d'à la fois similaire et différent:
 
 [
 
-![Chromebook](images/Chromebook-HP-x2-12-f000nf-12-3-Tactile-e1553702398142.jpg)
+![Chromebook](/blog/assets/images/Chromebook-HP-x2-12-f000nf-12-3-Tactile-e1553702398142.jpg)
 
 ](https://www.google.com/intl/fr_fr/chromebook/)
 
@@ -24,7 +24,7 @@ Je vais décrire quelque chose d'à la fois similaire et différent:
 
 [
 
-![Logo OS Fuschia](images/1920px-Google_fuchsia3.svg_-e1553702339879.png)
+![Logo OS Fuschia](/blog/assets/images/1920px-Google_fuchsia3.svg_-e1553702339879.png)
 
 ](https://fr.wikipedia.org/wiki/Google_Fuchsia)
 
@@ -32,7 +32,7 @@ Je vais décrire quelque chose d'à la fois similaire et différent:
 
 [
 
-![Logo language Dart](images/320px-Dart_programming_language_logo.svg_.png)
+![Logo language Dart](/blog/assets/images/320px-Dart_programming_language_logo.svg_.png)
 
 ](https://www.dartlang.org/)
 
@@ -40,7 +40,7 @@ Je vais décrire quelque chose d'à la fois similaire et différent:
 
 [
 
-![Logo AMP pour Email](images/2019-03-26_23h55_44-e1553702617226.png)
+![Logo AMP pour Email](/blog/assets/images/2019-03-26_23h55_44-e1553702617226.png)
 
 ](https://techcrunch.com/2019/03/26/google-makes-emails-more-dynamic-with-amp-for-email/)
 
@@ -48,7 +48,7 @@ Je vais décrire quelque chose d'à la fois similaire et différent:
 
 [
 
-![Logo format d'image Webp](images/Webp-logo-wordmark.svg_-e1553702658598-1.png)
+![Logo format d'image Webp](/blog/assets/images/Webp-logo-wordmark.svg_-e1553702658598-1.png)
 
 ](https://en.wikipedia.org/wiki/WebP)
 
@@ -56,7 +56,7 @@ Je vais décrire quelque chose d'à la fois similaire et différent:
 
 [
 
-![Logo protocole QUIC](images/QUIC-1-e1553702580328.png)
+![Logo protocole QUIC](/blog/assets/images/QUIC-1-e1553702580328.png)
 
 ](https://en.wikipedia.org/wiki/QUIC)
 
@@ -64,7 +64,7 @@ Je vais décrire quelque chose d'à la fois similaire et différent:
 
 [
 
-![Logo Google DNS](images/Google-Public-DNS2-1-e1553705419878.png)
+![Logo Google DNS](/blog/assets/images/Google-Public-DNS2-1-e1553705419878.png)
 
 ](https://developers.google.com/speed/public-dns/)
 
@@ -72,7 +72,7 @@ Je vais décrire quelque chose d'à la fois similaire et différent:
 
 [
 
-![Carte du cable sous-marin FASTER](images/2019-04-07_17h33_42.png)
+![Carte du cable sous-marin FASTER](/blog/assets/images/2019-04-07_17h33_42.png)
 
 ](https://blog.telegeography.com/rising-tide-content-providers-investment-in-submarine-cables-continues)
 
@@ -80,7 +80,7 @@ Je vais décrire quelque chose d'à la fois similaire et différent:
 
 [
 
-![](images/2019-03-27_17h08_12-1.png)
+![](/blog/assets/images/2019-03-27_17h08_12-1.png)
 
 ](https://pki.goog/)
 
@@ -88,7 +88,7 @@ Je vais décrire quelque chose d'à la fois similaire et différent:
 
 [
 
-![Logo Google Cloud Platform](images/2019-03-27_14h25_35-1-e1553702092704.png)
+![Logo Google Cloud Platform](/blog/assets/images/2019-03-27_14h25_35-1-e1553702092704.png)
 
 ](https://cloud.google.com/)
 
@@ -96,23 +96,23 @@ Je vais décrire quelque chose d'à la fois similaire et différent:
 
 [
 
-![Logo Youtube Red](images/YouTubeRedOSLogo-1-e1553702148606.png)
+![Logo Youtube Red](/blog/assets/images/YouTubeRedOSLogo-1-e1553702148606.png)
 
 ](https://www.youtube.com/premium/originals)
 
 11\. J’arrive sur une plateforme de vidéo et regarde une série produite par Google.
 
-[![Logo Widevine](images/widevine.png)](https://en.wikipedia.org/wiki/Widevine)
+[![Logo Widevine](/blog/assets/images/widevine.png)](https://en.wikipedia.org/wiki/Widevine)
 
 12\. Je ne peux pas télécharger la vidéo à cause d'un DRM géré par Google.
 
-[![galerie de matériel Google](images/2019-04-02_22h11_15.png)](https://store.google.com/)
+[![galerie de matériel Google](/blog/assets/images/2019-04-02_22h11_15.png)](https://store.google.com/)
 
 13\. Mon assistant Google Home m'envoie une alerte d'une caméra Google connectée à une borne wifi Google.
 
 [
 
-![Mascotte Android en cag](images/android-lockup1.jpg)
+![Mascotte Android en cag](/blog/assets/images/android-lockup1.jpg)
 
 ](https://arstechnica.com/gadgets/2018/07/googles-iron-grip-on-android-controlling-open-source-by-any-means-necessary/)
 

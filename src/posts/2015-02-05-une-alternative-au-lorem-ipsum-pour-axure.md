@@ -1,7 +1,7 @@
 ---
 title: "Une alternative au Lorem ipsum pour Axure"
 date: "2015-02-05"
-tags: 
+tags:
   - "prototypage"
 ---
 
@@ -13,7 +13,7 @@ Dans une maquette, le texte peut servir à plein de choses :
 
 Mais en premier lieu ça sert à dire "là il y a aura du texte". Une manière stylisée et minimale de signaler cette présence sans induire de connotation indésirable est d'utiliser un effet de "griffonnage" avec une [police spéciale](https://github.com/christiannaths/Redacted-Font).
 
-[\[caption id="attachment\_1189" align="alignnone" width="676"\]![screenshot](images/redacted.png) Cliquer pour voir une démo\[/caption\]](http://toutcequibouge.net/Divers/Redacted/home.html)
+[![screenshot](/blog/assets/images/redacted.png " Cliquer pour voir une démo")](http://toutcequibouge.net/Divers/Redacted/home.html)
 
 La procédure à suivre pour intégrer une web font en local avec Axure est un peu tordue. La voici (version 7 requise) :
 

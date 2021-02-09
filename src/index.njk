@@ -1,0 +1,33 @@
+---
+title: Tout ce qui bouge
+layout: base
+date: 2020-08-05
+excerpt: # used for page excerpts and META (will be overwritten if SEO used below)
+eleventyNavigation: # Required if want to display in Main Nav Bar
+  key: main # "main" is required
+  title: Accueil # as it will appear in the nav
+  order: 1 # order to display in the nav (index = 1)
+
+---
+
+<article class="{{ structure.g_pageWidth }}">
+
+
+  {% if seo.description %}
+    <div class="p-2 {{ colors.borderCustom.borders or colors.borderDefault.borders }} {{ colors.borderCustom.color or colors.borderDefault.color }}">
+      {{ seo.description }}
+    </div>
+  {% endif %}
+
+<div class="project-list grid gap-8 mx-auto mt-12 md:grid-cols-2 xl:grid-cols-3 lg:max-w-none" >
+        {% for project in projects | reverse %}
+         <div class="project flex flex-col overflow-hidden rounded-lg shadow-lg">
+							<h3 class="name"><a href="{{project.link}}">{{project.name}}</a></h3>
+							<img class="picture" src="{{project.img}}"></img>
+							<span class="description">{{project.description}}</span>
+						</div>
+        {% endfor %}
+</div>
+
+
+</article>

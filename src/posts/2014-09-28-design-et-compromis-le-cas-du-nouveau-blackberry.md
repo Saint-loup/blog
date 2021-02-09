@@ -1,7 +1,7 @@
 ---
 title: "Design et compromis : le cas du nouveau Blackberry"
 date: "2014-09-28"
-tags: 
+tags:
   - "mobile"
   - "objets"
   - "strategie"
@@ -9,7 +9,7 @@ tags:
 
 > all design is a series of compromises; but good design finds the right ones. ([Doug Bowman](https://twitter.com/stop/status/299019199030886400))
 
-\[caption id="attachment\_1061" align="alignnone" width="681"\]![Blackberry Passport](images/blackberry-passport.0.0_standard_800.0.jpg) Blackberry Passport\[/caption\]
+![Blackberry Passport](/blog/assets/images/blackberry-passport.0.0_standard_800.0.jpg " Blackberry Passport")
 
 Avec la Surface, Microsoft est l'archétype de la compagnie qui, à force de ne vouloir faire aucun compromis, finit par faire les pires et sortir un [produit batard](http://daringfireball.net/2013/02/the_c_word). Le cas du Blackberry Passport parait différent puisqu'il vise un public précis (les professionnels) et qu'il est prêt à sacrifier certains cas d'utilisation (la vidéo) au profit d'autres (la bureautique). Pourtant la situation est similaire.
 

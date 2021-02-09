@@ -2,17 +2,8 @@
 <nav x-data="{ open: false }" class="{{ colors.navCustom.barBg or colors.navDefault.barBg }} shadow relative">
   <div class="px-8 md:px-16 lg:px-32">
     <div class="flex justify-between h-16">
-      <div class="flex">
-        <div class="flex items-center">
-          {# small logo hidden on md and above #}
-          <a aria-label="Mobile Logo" href="/" class="block md:hidden {{ colors.logoCustom.mobile or colors.logoDefault.mobile }} hover:{{ colors.logoCustom.hover or colors.logoDefault.hover }}" alt="Mobile Logo">
-            {% svg "logo-mobile", "fill-current w-16 hover:{{ colors.logoCustom.hover or colors.logoDefault.hover }}", "The Mobile Logo" %}
-          </a>
-          {# large logo hidden on small, block on md #}
-          <a aria-label="Desktop Logo" href="/" class="hidden md:block {{ colors.logoCustom.desktop or colors.logoDefault.desktop }} hover:{{ colors.logoCustom.hover or colors.logoDefault.hover }}" alt="Desktop Logo">
-            {% svg "logo", "fill-current h-8 hover:{{ colors.logoCustom.hover or colors.logoDefault.hover }}", "The Logo" %}
-          </a>
-        </div>
+        <h1 class="{{ colors.headingsCustom or colors.headingsDefault }}" ><a href= "{{ '/' |  url}}">{{ meta.siteName or title }}</a></h1>
+
         <div class="hidden sm:ml-6 sm:flex sm:items-center">
           {# 11ty Nav Plugin loop  #}
           {% for entry in navPages %}
@@ -20,7 +11,6 @@
               {{ entry.title }}
             </a>
           {% endfor %}
-        </div>
       </div>
 
       {# Right side of Navbar  #}
