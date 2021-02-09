@@ -1,7 +1,8 @@
 ---
-draft:true
+draft: true
 title: "Flèches, partie 1"
 date: ""
+---
 
 J'ai une envie de créer un programme générant des flèches.
 
