@@ -22,7 +22,7 @@ Mais il est parfait pour minuter du collage de post-it.
 - D'après mes tests, il fonctionne même sans réseau.
 - Via Chrome, il peut être installé en cliquant sur l’icône "plus" dans la barre d'adresse et apparaitra comme n'importe quelle application locale.
 
-![](images/install.png)
+![](/blog/assets/images/install.png)
 
 **Pourquoi ?**
 

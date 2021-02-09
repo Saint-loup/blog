@@ -1,13 +1,13 @@
 ---
 title: "Concevoir pour l'apesanteur"
 date: "2014-09-17"
-tags: 
+tags:
   - "objets"
 ---
 
 Strabic a publié un [article passionnant](http://strabic.fr/Octave-De-Gaulle-Distiller) sur la création d'une bouteille et d'un verre qui soient utilisables dans une station spatiale. Je vous encourage à le lire en détail, mais voici quelques remarques.
 
-\[caption id="attachment\_1015" width="500"\]![La bouteille](images/distiller_02.jpg) La bouteille – Crédits photo : Tanguy Masson, Basile de Gaulle\[/caption\]
+![La bouteille](/blog/assets/images/distiller_02.jpg " La bouteille – Crédits photo : Tanguy Masson, Basile de Gaulle")
 
 Par certains aspects (surtout pour ce qui est de l'analyse de l'activité et du contexte), on est dans du classique : il y a des codes à intégrer (parti pris que la bouteille reste verte), un aspect social (le rituel de boire ensemble), une dialectique entre usage prescrit et réel (l'alcool est interdit dans les sous-marins et les environnements spatiaux, donc soit on boit en cachette, soit le chef est conciliant).
 
@@ -19,7 +19,7 @@ L'absence de gravité change le moindre geste et influe sur bien des aspects de 
 
 En jouant avec la manière dont les fluides sont retenus ou repoussés selon la topologie et le matériau, plus une valve pour le goulot, ils ont ainsi pu recréer le geste de se servir un verre et de le boire. Plus largement, les designers réfléchissent à la réinvention de tout un répertoire de concepts et d'opérations. Par exemple, s'arrimer ou coincer un objet entre des bandes souples, au lieu de tout sangler et accrocher.
 
-\[caption id="attachment\_1016" width="500"\]![Le verre](images/distiller_verre_02-2.jpg) Le verre – Crédits photo : Tanguy Masson, Basile de Gaulle\[/caption\]
+![Le verre](/blog/assets/images/distiller_verre_02-2.jpg " Le verre – Crédits photo : Tanguy Masson, Basile de Gaulle")
 
 _[Octave De Gaulle : Distiller](http://strabic.fr/Octave-De-Gaulle-Distiller)_, sur Strabic.
 

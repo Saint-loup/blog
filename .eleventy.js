@@ -11,9 +11,14 @@ const shortcodes = require('./utils/shortcodes.js')
 const pairedshortcodes = require('./utils/paired-shortcodes.js')
 const transforms = require('./utils/transforms.js')
 //const svgsprite = require('./utils/svgsprite')
+const yaml = require("js-yaml");
+const pageAssetsPlugin = require('eleventy-plugin-page-assets');
+
+const implicitFigures = require('markdown-it-implicit-figures');
 
 module.exports = function (eleventyConfig) {
 
+	eleventyConfig.addDataExtension("yaml", contents => yaml.safeLoad(contents));
 
 	/**
 	 * Plugins
@@ -79,9 +84,9 @@ module.exports = function (eleventyConfig) {
 	 */
 	eleventyConfig.addCollection('post', (collection) => {
 		if (process.env.ELEVENTY_ENV !== 'production')
-			return [...collection.getFilteredByGlob('./src/posts/*.md')]
+			return [...collection.getFilteredByGlob('./src/posts/**/*.md')]
 		else
-			return [...collection.getFilteredByGlob('./src/posts/*.md')].filter((post) => !post.data.draft)
+			return [...collection.getFilteredByGlob('./src/posts/**/*.md')].filter((post) => !post.data.draft)
 	})
 
 	// TAGLIST used from the official eleventy-base-blog  https://github.com/11ty/eleventy-base-blog/blob/master/.eleventy.js
@@ -205,6 +210,25 @@ module.exports = function (eleventyConfig) {
 	// 	},
 	// },
 	// })
+
+	eleventyConfig.addPlugin(pageAssetsPlugin, {
+		mode: "parse",
+		postsMatching: "src/posts/*/*.md",
+	});
+
+
+
+	let options = {
+		dataType: false,  // <figure data-type="image">, default: false
+		figcaption: false,  // <figcaption>alternative text</figcaption>, default: false
+		tabindex: false, // <figure tabindex="1+n">..., default: false
+		link: false // <a href="img.png"><img src="img.png"></a>, default: false
+	}
+	let markdownLib = markdownIt(options).use(implicitFigures);
+	eleventyConfig.setLibrary("md", markdownLib);
+
+
+
 
 	return {
 		pathPrefix: "/blog/",

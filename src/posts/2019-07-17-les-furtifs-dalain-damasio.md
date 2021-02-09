@@ -1,7 +1,7 @@
 ---
 title: "Les Furtifs d'Alain Damasio : plus de la même chose"
 date: "2019-07-17"
-tags: 
+tags:
   - "futur"
   - "litterature"
 coverImage: "1-uFzbZEP0dfQZzBpgwPndGA-e1582155605785.jpeg"
@@ -13,7 +13,7 @@ Les connaisseurs de son œuvre seront en terrain connu. De la Horde, on retrouve
 
 Vous allez me dire qu’il creuse et fait foisonner ses obsessions. Je trouve surtout qu’il se répète et se caricature lui-même.
 
-![Couverture des Furtifs](images/1-uFzbZEP0dfQZzBpgwPndGA-1024x439.jpeg)
+![Couverture des Furtifs](/blog/assets/images/1-uFzbZEP0dfQZzBpgwPndGA-1024x439.jpeg)
 
 ### Une fan fiction des mouvements libertaires
 
@@ -23,7 +23,7 @@ Mais à part ça niveau prospective, c'est un peu court. Megacorps, hackers, mar
 
 Rien sur le dérèglement climatique. Sérieusement, une des _deux seules_ occurrences de "climatique" c'est pour dire "cool il fait beau en avril". C’est un peu con de faire un roman anti-spéciste mais pas du tout environnementaliste.
 
-![recherche de "climatique" dans le texte](images/2019-06-30_22h20_23.png)
+![recherche de "climatique" dans le texte](/blog/assets/images/2019-06-30_22h20_23.png)
 
 recherche de "climatique" dans le texte
 
@@ -40,14 +40,14 @@ Ajoutons que l'analyse politique qui se dégage du roman ne vole pas très haut.
 Vers la fin du roman se trouvent de courts inserts, des sortes de fragments de micro-révolutions. Je sais que c'est volontairement outré et carnavalesque et qu'une citation hors contexte fait facilement ridicule. Mais quand même, voici un exemple :
 
 > Le 11 mars, Bruno R. a coupé sa réul \[réalité virtuelle\], jeté ses disques rétiniens aux toilettes et tiré la chasse. Il a pris sa bague, l’a fait fondre dans la braise de son barbecue deux jours durant, avant de la reforger à la main, comme il a pu. Puis il l’a offerte à son amoureuse en la demandant en mariage. Elle a coupé sa réul trente secondes pour dire « oui ». C’est un début.
-> 
+>
 > Le 12 mars, Cèce-la-Rousse a fait à peu près la même chose dans une charbonnière du Vercors, avec ses bracelets connectés. Elle en a forgé six bagues fondues et elle s’est fiancée six fois avec six arbres de la forêt : un épicéa, un chêne, un fayard, un pin sylvestre, un charme, un orme. Elle se vit à présent comme une nymphe des bois dédiée à des arbres qu’elle habite tour à tour, naissant et mourant avec eux : une hamadryade.
 
 2\. Ensuite, l’auto-gestion c’est cool. Damasio se défendrait de l’accusation de [spontanéisme](https://fr.wikipedia.org/wiki/Spontan%C3%A9isme) : “Il faut sortir de la hourrah-révolution”, dit un personnage. N’empêche que j’y trouve beaucoup de “oh qu’est-ce qui nous prend et nous transporte, faisons la fête et la révolution !” Ça fait penser à Vernon Subutex, où de mystérieuses transes collectives se transmutent en mouvement durable, puis en religion.
 
 3\. L'histoire finit carrément par une révolution quasi-généralisée (ville par ville et hors mégalopoles, attention on est municipaliste) catalysée par les furtifs. C'est mon dernier point : l’humanité découvre une nouvelle forme de vie et paf ça fait le Grand soir. Dans [un entretien](https://next.liberation.fr/livres/2019/04/12/a-la-zad-et-a-tarnac-j-ai-fait-l-eponge-rencontre-avec-alain-damasio_1720985) l'auteur déclare vouloir “proposer des micro-révolutions à la fin, pas un seul basculement révolutionnaire”. Ben raté, c’est ce qui se passe.
 
-![Recherche pour le mot "déter"](images/2019-07-08_23h12_00.png)
+![Recherche pour le mot "déter"](/blog/assets/images/2019-07-08_23h12_00.png)
 
 Recherche pour le mot "déter".
 
@@ -78,7 +78,7 @@ Au fond, ce qui me déçoit le plus c'est que Damasio ne fasse pas grand chose d
 Je n'en vois pas grand chose ici et en veux pour preuve son exploration décevante du langage des furtifs. Leur écriture est fascinante : une même glyphe est tracée et retracée de nombreuses fois, si bien que la même forme peut signifie plusieurs caractères différents. Quant au langage lui-même, il est décrit comme aussi changeant que le corps des furtifs. OK, mais encore ? Et là, Damasio a recours à des effets de manche :
 
 > la parole furtive et sa littérature fonctionnent exactement de la même façon que leur biologie et leur physique, à savoir comme un champ métamorphique, à haute teneur en vitalité. La parole était pour elles aussi vivante et fluctuante que leur corps. Communiquer n’était pas transmettre de l’information à un interlocuteur, humain ou furtif, c’était « transmettre une transformation ». Des inflexions, un vecteur de mutation, un bourgeonnement, un virus. Hakima en voulait pour preuve les torsions imprimées aux préfixes et aux suffixes, le camaïeu des conjugaisons, le dynamitage des articles et des pronoms, les jeux éblouissants avec les assonances, les anagrammes, les consonances, les onomatopées, la syntaxe.
-> 
+>
 > p. 333
 
 Comparez avec Légationville (_[Embassytown](https://en.wikipedia.org/wiki/Embassytown)_). Dans ce génial roman d'anticipation, China Miéville décrit une espèce alien incapable d'abstraction et dont le langage et la pensée reposent sur un système d'analogies. Il parvient à dérouler cette expérience de pensée paradoxale, à imaginer précisément ses conséquences et à nous faire palper l'étrangeté de cette espèce qui ne peut ni spéculer ni mentir.
