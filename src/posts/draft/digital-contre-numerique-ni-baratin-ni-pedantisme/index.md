@@ -1,11 +1,11 @@
 ---
-draft:true
+draft: true
 title: "Digital ou numérique : ni baratin ni pédantisme"
 date: "2016-08-15"
 tags:
   - "reflexions"
 
-[![Fleur digitale](images/029E017005098755-c1-photo-oYToxOntzOjE6InciO2k6NjcwO30-digitale.jpg)](https://fr.wikipedia.org/wiki/Digitale)
+---
 
 Dans un article sur le thème "[Faut-il dire numérique ou digital ?](http://www.blogdumoderateur.com/numerique-ou-digital/)", le Blog du modérateur donne la parole à plusieurs linguistes, lesquels rappellent quelques principes utiles. Notamment :
 

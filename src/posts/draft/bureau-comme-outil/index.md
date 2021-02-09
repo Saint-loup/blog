@@ -1,7 +1,8 @@
 ---
-draft:true
-title: "Le bureau comme outil et pas comme mobilier"
-date: "2019-09-22"
+title: Le bureau comme outil et pas comme mobilier
+draft: true
+date: 2019-09-22
+---
 
 écritoire
 

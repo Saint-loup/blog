@@ -1,5 +1,5 @@
 Title: Néo-libéralisme, ou "La plus belle des ruses du diable est de vous persuader qu'il n'existe pas"
-draft:true
+draft: true
 ----
 
 Text:

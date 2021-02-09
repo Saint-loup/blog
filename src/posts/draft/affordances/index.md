@@ -1,7 +1,8 @@
 ---
-draft:true
+draft: true
 title: "Au-delà des affordances"
 date: ""
+---
 
 Introduction
 

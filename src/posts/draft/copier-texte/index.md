@@ -1,7 +1,8 @@
 ---
-draft:true
+draft: true
 title: "Importer facilement du vrai contenu dans Sketch"
 date: ""
+---
 
 Note : les commandes citées peuvent être exécutées ainsi : utiliser le raccourci `⌘+⇧+/`, taper le début du nom de la commande puis appuyer sur Entrée.
 

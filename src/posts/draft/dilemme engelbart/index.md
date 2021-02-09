@@ -1,7 +1,8 @@
 ---
-draft:true
+draft: true
 title: "Bret"
 date: ""
+---
 
 Théorie : symbolique, interacion, visuel
 

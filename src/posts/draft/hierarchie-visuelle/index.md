@@ -1,7 +1,8 @@
 ---
-draft:true
+draft: true
 title: "Au-delà de la hiérarchie visuelle du livre"
 date: ""
+---
 
 ![](images/sens-de-lecture-01.png)
 
