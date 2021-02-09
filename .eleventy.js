@@ -218,16 +218,16 @@ module.exports = function (eleventyConfig) {
 
 
 
-	let options = {
-		dataType: false,  // <figure data-type="image">, default: false
-		figcaption: false,  // <figcaption>alternative text</figcaption>, default: false
-		tabindex: false, // <figure tabindex="1+n">..., default: false
-		link: false // <a href="img.png"><img src="img.png"></a>, default: false
-	}
-	let markdownLib = markdownIt(options).use(implicitFigures);
-	eleventyConfig.setLibrary("md", markdownLib);
-
-
+	/*	let options = {
+			dataType: false,  // <figure data-type="image">, default: false
+			figcaption: false,  // <figcaption>alternative text</figcaption>, default: false
+			tabindex: false, // <figure tabindex="1+n">..., default: false
+			link: false // <a href="img.png"><img src="img.png"></a>, default: false
+		}
+		let markdownLib = markdownIt(options).use(implicitFigures);
+		eleventyConfig.setLibrary("md", markdownLib);
+	
+	*/
 
 
 	return {
