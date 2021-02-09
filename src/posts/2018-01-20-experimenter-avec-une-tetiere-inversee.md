@@ -1,10 +1,11 @@
 ---
 title: "Expérimenter avec une tétière inversée"
 date: "2018-01-20"
-categories:
-  - "travaux"
 tags:
+  - "Tout ce qui bouge"
   - "concept"
+
+tags:
 ---
 
 _Résumé : sur mobile j'ai changé la barre de menu du blog._
@@ -13,7 +14,10 @@ Pendant longtemps, quand on ouvrait mon blog sur téléphone on voyait ça :![Na
 
 Ça fait un gros pâté de texte non ? Nom du blog, puis liens, puis titre de l'article. Les liens du menu, notamment, sont plus directs et efficaces qu'un menu-burger, mais ils font très lourds sans vraiment être parlants ou inciter à cliquer. Comment rendre ce menu plus discret sans perdre en utilisabilité ? Une solution : un menu-tiroir masqué par défaut, mais pas un menu-burger pour autant. Pour l'ouvrir, il suffit de scroller vers le haut ou d'appuyer sur la manicule. Essayez de vous-même sur un téléphone, une fenêtre étroite ou regardez cette vidéo :
 
-\[video width="366" height="636" mp4="http://toutcequibouge.net/toutcequibouge/wp-content/uploads/2018/01/navbar-blog-mobile.mp4"\]\[/video\]
+<video width="366" height="636">
+<source src="http://toutcequibouge.net/toutcequibouge/wp-content/uploads/2018/01/navbar-blog-mobile.mp4"      type="video/mp4">
+</video>
+
 
 Pourquoi ce choix ? J'avais envie d’expérimenter autour de l'idée de la page web comme canevas infini (pour reprendre une expression de [Scott McCloud](https://en.wikipedia.org/wiki/Infinite_canvas)). Une page web n'est pas un rectangle avec des frontières claires ni un sens de lecture prédéfini.
 

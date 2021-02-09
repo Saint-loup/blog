@@ -1,9 +1,9 @@
 ---
 title: "Meta Axure : un outil de maquettage créé avec un outil de maquettage"
 date: "2015-12-26"
-categories:
-  - "travaux"
+
 tags:
+  - "travaux"
   - "prototypage"
 ---
 

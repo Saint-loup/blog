@@ -39,25 +39,23 @@ De même, être tout en bas de l'échelle de la stratégie ne signifie pas qu'on
 
 Nick Yee et son [cabinet d'analyse](https://quanticfoundry.com/gdc2019/) proposent un modèle alternatif tiré d'enquêtes massives. A partir de 400 000 d'entretiens, il fait émerger douze d'attributs.
 
-![Les douze motivations :
-<div></div>
-Destruction
-Excitation
-<div></div>
-Compétition
-Communauté
-<div></div>
-Défi
-Stratégie
-<div></div>
-Complétion
-Pouvoir
-<div></div>
-Imaginaire (fantasy)
-Story
-<div></div>
-Apparence
-Découverte](images/Sans-titre-1024x575.png)
+![](/blog/assets/images/Sans-titre-1024x575.png)
+
+Les douze motivations :
+
+- Destruction
+- Excitation
+- Compétition
+- Communauté
+- Défi
+- Stratégie
+- Complétion
+- Pouvoir
+- Imaginaire (fantasy)
+- Histoire
+- Apparence
+- Découverte
+
 
 Destruction
 Excitation

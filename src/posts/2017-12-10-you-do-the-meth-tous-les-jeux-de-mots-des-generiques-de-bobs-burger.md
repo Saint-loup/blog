@@ -1,8 +1,8 @@
 ---
 title: "You do the meth  : tous les jeux de mots des génériques de Bob's Burgers"
 date: "2017-12-10"
-categories:
-  - "galerie"
+draft: true
+tags:
   - "travaux"
 ---
 

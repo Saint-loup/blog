@@ -1,8 +1,9 @@
 ---
 title: "Glitchy web design"
 date: "2013-01-21"
-categories:
+tags:
   - "travaux"
+draft: true
 ---
 
 ![screenshot twitter](/blog/assets/images/tumblr_mgyniqmRhc1s2ha81o1_12801.png)

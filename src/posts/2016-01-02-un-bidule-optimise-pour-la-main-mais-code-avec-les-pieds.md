@@ -1,7 +1,7 @@
 ---
 title: "Un bidule optimisé pour la main mais codé avec les pieds"
 date: "2016-01-02"
-categories:
+tags:
   - "travaux"
 ---
 
