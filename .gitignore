@@ -3,6 +3,8 @@
 project
 _project
 
+.DS_Store
+/**/.DS_Store
 
 # Logs
 logs

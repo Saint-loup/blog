@@ -1,13 +1,13 @@
 ---
 title: "Petit panorama de la ville hostile"
 date: "2017-08-05"
-tags: 
+tags:
   - "architecture"
   - "ville"
 coverImage: "archisuits-bench.jpg"
 ---
 
-\[caption id="attachment\_2284" align="aligncenter" width="625"\]![banc de camden](images/Camden_bench.jpg) Un banc anti SDF, anti-dealer, anti-tagueur, anti-skater\[/caption\]
+![banc de camden](/blog/assets/images/Camden_bench.jpg " Un banc anti SDF, anti-dealer, anti-tagueur, anti-skater")
 
 Architecture hostile, design désagréable, mobilier anti-SDF, autant de termes qui tournent autour de la même idée. Petit panorama non exhaustif.
 
@@ -32,4 +32,4 @@ Enfin, deux sites recensant ces dispositifs hostiles :
 - [Anti-sites](http://www.survivalgroup.org/anti-site.html) -- aussi sur [Flickr](https://www.flickr.com/people/7211263@N02/).
 - [Marche ou crève](http://urbanisme-inhumain.tumblr.com/).
 
-\[caption id="attachment\_2285" align="aligncenter" width="625"\]![Archisuit ](images/archisuits-bench.jpg) Archisuit, un exemple de contournement\[/caption\]
+![Archisuit ](/blog/assets/images/archisuits-bench.jpg " Archisuit, un exemple de contournement")

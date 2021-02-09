@@ -1,7 +1,7 @@
 ---
 title: "Leçons ergonomiques et techniques d'un projet perso"
 date: "2016-05-23"
-categories: 
+categories:
   - "travaux"
 ---
 
@@ -9,7 +9,7 @@ Il y a quelques mois j'ai publié un outil pour calculer une addition en terme d
 
 Vous pouvez le charger ci-dessous en cliquant sur le screenshot ou [l'ouvrir](http://toutcequibouge.net/Divers/TR) depuis votre ordiphone préféré.
 
-![](images/Capture-d’écran-2019-09-30-à-00.34.16.png) 
+![](/blog/assets/images/Capture-d’écran-2019-09-30-à-00.34.16.png)
 
 <iframe class="TR" style="border: none;border-radius:5px;display:none; margin:auto; background-color:black;" src="" width="400" height="600"></iframe>
 

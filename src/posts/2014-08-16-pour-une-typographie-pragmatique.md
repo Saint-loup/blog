@@ -1,14 +1,14 @@
 ---
 title: "Pour une typographie pragmatique"
 date: "2014-08-16"
-tags: 
+tags:
   - "graphisme"
   - "typographie"
 ---
 
 En typographie, on aime bien les nombres magiques. Par exemple, il parait qu'il faut 66 caractères par ligne (recommandation de [Bringhust](http://jacobian.org/writing/typography-rhythm-proportion/), souvent répétée), que la hauteur de texte d’un livre doit être égale à la largeur de la page (selon le [canon de Tschichold](https://en.wikipedia.org/wiki/Canons_of_page_construction#Golden_canon) qui m’a toujours semblé mystérieux) et que mettre le Nombre d’or partout ne fait jamais de mal (à part bien sûr tomber dans la [numérologie](http://www.laputanlogic.com/articles/2005/04/14-1647-4601.html)).
 
-\[caption id="attachment\_985" align="alignnone" width="625"\]![Différents canons de mise en page : ceux de Tschichold, d'un manuscrit médiéval (reconstruit) et de Van de Graaf. Source : Wikipedia](images/canons_mise_en_page.png) Différents canons de mise en page : ceux de Tschichold, d'un manuscrit médiéval (reconstruit) et de Van de Graaf. Source : [Wikipedia](https://en.wikipedia.org/wiki/Canons_of_page_construction)\[/caption\]
+![Différents canons de mise en page : ceux de Tschichold, d'un manuscrit médiéval (reconstruit " et de Van de Graaf. Source : Wikipedia](/blog/assets/images/canons_mise_en_page.png) Différents canons de mise en page : ceux de Tschichold, d'un manuscrit médiéval (reconstruit) et de Van de Graaf. Source : [Wikipedia](https://en.wikipedia.org/wiki/Canons_of_page_construction)")
 
 Pourtant, si on vous demande quelle est la taille idéale pour lire du texte, la réponse est « ça dépend ». De quoi ? Du choix de la police (plus ou moins lisible et plus ou moins grande [à unité égale](http://www.fontbureau.com/blog/the-em/)), de l’usage (niveau d’attention, luminosité, éloignement, etc.), du type de contenu (corps de texte ou élément d’interface ?)… bref de plein de choses. C'est d'ailleurs pour ça que les recommandations ergonomiques sérieuses sont souvent désespérément prudentes, du genre « toutes choses égales par ailleurs, la taille angulaire optimale serait comprise dans l’intervalle bla bla ». (Je parle de recommandations à valeur générale et pas pour un projet spécifique.)
 

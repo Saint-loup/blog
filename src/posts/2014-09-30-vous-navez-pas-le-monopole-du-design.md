@@ -1,7 +1,7 @@
 ---
 title: "Vous n'avez pas le monopole du design"
 date: "2014-09-30"
-tags: 
+tags:
   - "features"
   - "place-du-concepteur"
 ---
@@ -26,7 +26,7 @@ Enfin, le design (et par extension le design UX) peut être vu comme une respons
 
 Un avis ?
 
-\[caption id="attachment\_1032" align="alignnone" width="473"\]![VGE, wink wink](images/VGE.png)[Source](http://www.ina.fr/video/I00017840)\[/caption\]
+![VGE, wink wink](/blog/assets/images/VGE.png "[Source](http://www.ina.fr/video/I00017840)")
 
 ### Pour aller plus loin
 

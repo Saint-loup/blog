@@ -1,7 +1,7 @@
 ---
 title: "D'une métaphore oubliée : Macintosh et le lent déclin du bureau"
 date: "2015-05-01"
-tags: 
+tags:
   - "features"
   - "histoire"
   - "mac"
@@ -9,16 +9,16 @@ tags:
 
 Les raisons du succès des interfaces graphiques sont bien connues : des objets visuels simples (fenêtre, icônes, menus et pointeurs), permettant un panel d'actions limitées et explicites, organisés par une métaphore cohérente : des documents rassemblés en dossier, posés sur le bureau pour les affaires courantes et rangés dans des casiers pour le reste.
 
-\[caption id="attachment\_1323" align="alignnone" width="582"\]![wooton](images/wooton.png) Bureau Wooton, station de travail tout-en-un\[/caption\]
+![wooton](/blog/assets/images/wooton.png " Bureau Wooton, station de travail tout-en-un")
 
 ### Un dossier = une fenêtre
 
 il est moins connu que cette métaphore, à son origine, était plus forte et contraignante. Les premières versions du Finder (l'explorateur de fichier de Mac OS) obéissaient à un modèle dit « spatial », lequel a été abandonné à la sortie de Mac OS X (moment d'une refonte complète du système). Cela se traduisait par deux règles :
 
 1. **Cohérence**. Chaque dossier était représenté par une seule fenêtre et chaque fenêtre était liée à un seul dossier. L'icône d'un dossier changeait d'apparence pour signifier qu'il était ouvert ou fermé. Cliquer sur l'icône d'un dossier ouvert faisait clignoter sa fenêtre et rien d'autre, puisqu'il ne pouvait être ouvert deux fois. En bref, pour l'utilisateur il n'y avait aucune différence entre un dossier et sa fenêtre.
-    
+
 2. **Stabilité**. Les fenêtres mémorisaient la manière dont l'utilisateur les personnalisait. La forme, la position, le mode d'affichage (grille, liste...), la position des icônes en mode grille, etc., tout cela était conservé. Grâce à l'association entre fenêtre et dossier, cette règle était beaucoup plus simple à appliquer qu'aujourd'hui et le comportement des fenêtres d'autant plus prédictible pour l'utilisateur. Si j'ouvre ce dossier, je sais qu'il apparaitra à droite sur toute la hauteur de l'écran ; si j'ouvre cet autre dossier, il apparaitra en petit à gauche et ses fichiers seront en liste. Aujourd'hui, le Finder conserve certains paramètres (taille et position) et d'autres non (mode d'affichage et style), selon des règles de priorité impénétrables ([détails ici](http://hints.macworld.com/article.php?story=20030305025744788)).
-    
+
 
 En résumé, le Finder « spatial » tentait de faire fonctionner le bureau comme un ensemble de choses tangibles et fixes, pouvant servir de véritable mémoire externe ([l'être humain étant plus doué pour reconnaitre un objet que pour s'en rappeler](http://www.nngroup.com/articles/recognition-and-recall/)). Au lieu d'utiliser une abstraction pour en gérer une autre (fenêtre et système de fichier), l'utilisateur manipulait des objets concrets qui ne changeaient pas dans son dos ([principe de moindre surprise](http://en.wikipedia.org/wiki/Principle_of_least_astonishment)).
 
@@ -26,11 +26,11 @@ En résumé, le Finder « spatial » tentait de faire fonctionner le bureau 
 
 Ce modèle pouvait être assez contraignant. Notamment, ouvrir un dossier faisait forcément apparaître une nouvelle fenêtre (_la_ fenêtre de _ce_ dossier). Pour éviter de se retrouver avec des dizaines ouvertes, il fallait déplier l'arborescence du dossier (comme dans Mac OS X aujourd'hui), ou bien utiliser Alt+click, ce qui fermait la fenêtre d'origine et ouvrait la nouvelle en même temps.
 
-\[caption id="attachment\_1328" align="alignnone" width="1024"\]![Un dossier dans un dossier dans un… (Mac OS 9)](images/macOS9.png) Un dossier dans un dossier dans un… (Mac OS 9)\[/caption\]
+![Un dossier dans un dossier dans un… (Mac OS 9 "](/blog/assets/images/macOS9.png) Un dossier dans un dossier dans un… (Mac OS 9)")
 
 Pourtant, d'après ce que j'ai pu lire et tester, ça marchait pas mal. D'abord, ces dossiers superposés dans tous les sens ne faisaient que reproduire le rangement classique d'un bureau, dans ce qu'il peut avoir d'idiosyncrasique et d'apparement chaotique. Ensuite, l'OS était organisé autour de ce modèle. Par exemple, plutôt que de minimiser une fenêtre, on pouvait double-cliquer sur la barre de titre pour ne laisser que celle-ci et cacher tout le reste. Cette fonction de « stores » (_shades_) suivait, une fois encore, un principe de spatialité : la fenêtre restait à sa place.
 
-\[caption id="attachment\_1326" align="alignnone" width="883"\]![Exemple de deux fenêtres réduites à leur barre de titres](images/MacOS9-shades.png) Exemple de deux fenêtres réduites à leur barre de titres\[/caption\]
+![Exemple de deux fenêtres réduites à leur barre de titres](/blog/assets/images/MacOS9-shades.png " Exemple de deux fenêtres réduites à leur barre de titres")
 
 Ensuite, la cible d'Apple était moins experte que le public typique de l'époque et n'était probablement pas à l'aise avec l'abstraction d'un système de fichiers arborescent. Enfin, les ordinateurs d'alors avaient peu de mémoire, peu de fichiers et peu d'applications, peu de mémoire et avaient donc moins besoin de manipuler des quantités énormes d'information.
 

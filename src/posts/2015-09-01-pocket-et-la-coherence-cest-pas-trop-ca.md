@@ -1,14 +1,14 @@
 ---
 title: "Pocket et la cohérence c'est pas trop ça"
 date: "2015-09-01"
-tags: 
+tags:
   - "architecture-de-linformation"
   - "critique"
 ---
 
 [Pocket](https://getpocket.com/) est un service de lecture différée plutôt chouette et disponible officiellement sur cinq plateformes. Hélas, les interfaces de ces différentes plateformes souffrent d'un certain manque d'homogénéité. C'est même carrément le bordel. J'ai fait un tableau de ces incohérences.
 
-\[caption id="attachment\_1528" align="alignnone" width="891"\]![Dans l'ordre, la barre de navigation des versions Web, Android, Windows et Mac](images/pocket.png) Dans l'ordre, la barre de navigation des versions Web, Android, Windows et Mac\[/caption\]
+![Dans l'ordre, la barre de navigation des versions Web, Android, Windows et Mac](/blog/assets/images/pocket.png " Dans l'ordre, la barre de navigation des versions Web, Android, Windows et Mac")
 
 Notez bien que :
 

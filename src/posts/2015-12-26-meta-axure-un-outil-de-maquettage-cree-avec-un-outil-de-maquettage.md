@@ -1,9 +1,9 @@
 ---
 title: "Meta Axure : un outil de maquettage créé avec un outil de maquettage"
 date: "2015-12-26"
-categories: 
+categories:
   - "travaux"
-tags: 
+tags:
   - "prototypage"
 ---
 
@@ -13,4 +13,4 @@ J'ai fait un truc du même genre, en beaucoup plus modeste : un outil de maquett
 
 Il est testable en ligne [à cette adresse](http://toutcequibouge.net/Divers/meta%20axure/home.html) et le fichier source est [ici](http://toutcequibouge.net/Divers/meta%20axure/meta%20axure.rp) (il n'est pas du tout documenté et nécessite Axure 8).
 
-[![Meta Axure](images/2016-01-04_11h26_09-1024x727.png)](http://toutcequibouge.net/Divers/meta%20axure/home.html)
+[![Meta Axure](/blog/assets/images/2016-01-04_11h26_09-1024x727.png)](http://toutcequibouge.net/Divers/meta%20axure/home.html)
