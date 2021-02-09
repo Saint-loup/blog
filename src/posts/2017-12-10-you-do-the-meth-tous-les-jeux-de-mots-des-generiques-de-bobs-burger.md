@@ -1,12 +1,12 @@
 ---
 title: "You do the meth  : tous les jeux de mots des génériques de Bob's Burgers"
 date: "2017-12-10"
-categories: 
-  - "galerie"
+draft: true
+tags:
   - "travaux"
 ---
 
-![](images/Bobs-Burgers-S07E17-Zero-Larp-Thirty.-1024x581.png)
+![](/blog/assets/images/Bobs-Burgers-S07E17-Zero-Larp-Thirty.-1024x581.png)
 
 Vous voyez dans le générique des Simpsons le texte que Bart écrit depuis 25 saisons ? Dans Bob's Burgers c'est pareil, il y a deux jeux de mot dans le décor, presque toujours nouveaux. Je me suis amusé à les extraire avec un petit script basé sur [ffmpeg](http://ffmpeg.org/) (et peu d'huile de coude pour capturer les photogrammes ayant des timecode différents).
 

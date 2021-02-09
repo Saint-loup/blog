@@ -1,8 +1,6 @@
 {
-  "name": "sr-11ty-tailwind-alpine-template",
+  "name": "tout-ce-qui-bouge",
   "version": "1.0.0",
-  "description": "Template for new projects with 11ty, TailwindCSS, TailwindUI, and Alpine.js",
-  "author": "Shane Robinson",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/shanerobinson/sr-11ty-tailwind-alpine-template/issues"
@@ -17,7 +15,7 @@
     "dev:webpack": "webpack  --mode development",
     "dev:eleventy": "eleventy --serve",
     "dev:postcss": "postcss src/assets/css/tailwind.css -o dist/assets/tailwind.css --watch",
-    "dev": "npm-run-all clean --parallel dev:* --print-label",
+    "dev": " npm-run-all clean --parallel dev:* --print-label",
     "build:webpack": "webpack  --mode production",
     "build:eleventy": " cross-env ELEVENTY_ENV=production eleventy",
     "build:postcss": " cross-env NODE_ENV=production postcss src/assets/css/tailwind.css -o dist/assets/tailwind.css",
@@ -39,6 +37,7 @@
     "cross-env": "^7.0.3",
     "cssnano": "^4.1.10",
     "dotenv": "^8.2.0",
+    "eleventy-plugin-page-assets": "^0.3.0",
     "html-minifier": "^4.0.0",
     "luxon": "^1.25.0",
     "markdown-it": "^11.0.1",
@@ -52,5 +51,9 @@
     "terser-webpack-plugin": "^4.2.3",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "js-yaml": "^3.14.0",
+    "markdown-it-implicit-figures": "^0.10.0"
   }
 }

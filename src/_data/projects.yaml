@@ -1,0 +1,30 @@
+---
+- name: Méta Axure
+  link: ""
+  img: assets/images/home/axure.png
+  description: Une expérimentation pour créer un outil de maquettage utilisable...
+    dans une maquette Axure
+- name: Data from clipboard
+  link:
+  img: assets/images/home/data-from-clipboard.png
+  description: test
+- name: Plugin de typographie pour Sketch
+  link: ts
+  img: assets/images/home/typo.png
+  description: test
+- name: Table basse
+  link: 2020/12/18/jai-fait-un-truc/
+  img:
+  description:
+- name: Timer
+  link: ''
+  img:
+  description:
+- name: Bot invisible
+  link: ''
+  img:
+  description:
+- name: Calculateur de ticket resto
+  link: ''
+  img:
+  description:

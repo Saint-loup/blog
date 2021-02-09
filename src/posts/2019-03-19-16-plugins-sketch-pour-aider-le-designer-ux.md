@@ -1,7 +1,7 @@
 ---
 title: "16 extensions Sketch pour aider le designer UX"
 date: "2019-03-19"
-tags: 
+tags:
   - "prototypage"
   - "sketch"
 coverImage: "2019-03-19_20h12_29.png"
@@ -15,7 +15,7 @@ Pour les designers UX qui travaillent sur Sketch, voici des plugins utiles pour 
 
 [Connection Flow Arrows](https://github.com/faridsabitov/Sketch-Connection-Flow-Arrows) : pareil mais vers n'importe quel calque. Et avec pas mal de paramètres utiles. Le détail qui fait la différence : des pointes de flèche orientées par rapport au trait, pas à l'objet cible.
 
-![Exemple de flèches avec le plugin Connection flow arrows](images/2019-03-19_20h12_29-768x369.png)
+![Exemple de flèches avec le plugin Connection flow arrows](/blog/assets/images/2019-03-19_20h12_29-768x369.png)
 
 Connection Flow Arrows
 
@@ -27,9 +27,11 @@ Deux plugins d'organisation automatiquement des plans de travail : [Artboard Man
 
 **Cliquer sur l'animation pour l'arrêter**
 
-![Exemple d'arrangement automatique des blocs avec Artboard manager](images/28533105-3a1586ca-709c-11e7-8544-87d2bb0ad4f1.gif)
+<figure>
+<img id="#freezegif" src="/blog/assets/images/28533105-3a1586ca-709c-11e7-8544-87d2bb0ad4f1.gif">
+	<figcaption>Exemple d'arrangement automatique des blocs avec Artboard manager</figcaption>
+</figure>
 
-Artboard Manager
 
 ### Composants
 
@@ -55,4 +57,11 @@ Accessibilité des couleurs avec [Stark](https://www.getstark.co/) : test de con
 
 [Lorem Ipsum](https://github.com/fliptopbox/random-ipsom)
 
-<script>document.getElementById("freezegif").addEventListener('click', freeze_gifs_on_click, true); function freeze_gifs_on_click(e) { [].slice.apply(document.images).filter(is_gif_image).map(freeze_gif); } function is_gif_image(i) { return /^(?!data:).*\.gif/i.test(i.src); } function freeze_gif(i) { var c = document.createElement('canvas'); var w = c.width = i.width; var h = c.height = i.height; c.getContext('2d').drawImage(i, 0, 0, w, h); try { i.src = c.toDataURL("image/gif"); // if possible, retain all css aspects } catch(e) { // cross-domain -- mimic original with all its tag attributes for (var j = 0, a; a = i.attributes[j]; j++) c.setAttribute(a.name, a.value); i.parentNode.replaceChild(c, i); } }</script>
+<script>
+document.getElementById("#freezegif").addEventListener('click', freeze_gifs_on_click, true);
+function freeze_gifs_on_click(e) { [].slice.apply(document.images).filter(is_gif_image).map(freeze_gif); } function is_gif_image(i) { return /^(?!data:).*\.gif/i.test(i.src); } function freeze_gif(i) { var c = document.createElement('canvas'); var w = c.width = i.width; var h = c.height = i.height; c.getContext('2d').drawImage(i, 0, 0, w, h);
+try { i.src = c.toDataURL("image/gif");
+// if possible, retain all css aspects
+} catch(e) { // cross-domain -- mimic original with all its tag attributes
+for (var j = 0, a; a = i.attributes[j]; j++) c.setAttribute(a.name, a.value); i.parentNode.replaceChild(c, i); } }
+</script>

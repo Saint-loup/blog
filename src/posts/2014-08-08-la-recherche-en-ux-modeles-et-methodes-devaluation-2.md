@@ -1,7 +1,7 @@
 ---
 title: "La recherche en UX : modèles et méthodes d’évaluation"
 date: "2014-08-08"
-tags: 
+tags:
   - "recherche"
   - "ux"
 ---
@@ -22,7 +22,7 @@ Un dernier aspect intéressant est l’insistance sur la dimension temporelle : 
 
 Je vous laisse aller voir la partie sur l’évaluation, qui rappelle des bases (types, applicabilité, importance des tests normalisés) et présentent l’originalité de ces méthodes par rapport aux évaluations classiques de l’utilisabilité. Le questionnaire Attratkdiff, toujours de Hassenzahl, me parait le plus prometteur et donne des résultats de ce genre :
 
-\[caption id="attachment\_638" align="aligncenter" width="357"\]![Résultats de deux services A et B sur les axes pragmatiques et hédoniques. La taille des carrés représente l’intervalle de confiance](images/Attrakdiff.png) Résultats de deux services A et B sur les axes pragmatiques et hédoniques. La taille des carrés représente l’intervalle de confiance\[/caption\]
+![Résultats de deux services A et B sur les axes pragmatiques et hédoniques. La taille des carrés représente l’intervalle de confiance](/blog/assets/images/Attrakdiff.png " Résultats de deux services A et B sur les axes pragmatiques et hédoniques. La taille des carrés représente l’intervalle de confiance")
 
 ### Autres ressources
 

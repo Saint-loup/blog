@@ -1,12 +1,12 @@
 ---
 title: "Sur quelques anicroches avec les applications universelles de Windows 10"
 date: "2017-01-02"
-tags: 
+tags:
   - "critique"
   - "windows"
 ---
 
-![illus écosystème apps](images/groove-music-1024x410.jpg)
+![illus écosystème apps](/blog/assets/images/groove-music-1024x410.jpg)
 
 La double erreur de Windows 8, c'était de vouloir forcer un paradigme tactile sur un OS classique et en plus de le faire cohabiter avec une interface de type desktop. Cela entrainait des [trucs aberrants](http://www.thewindowsclub.com/windows-store-apps-windows-taskbar) comme les applications "Metro" ouvertes et pourtant absentes de la barre des tâches du bureau.
 
@@ -16,11 +16,13 @@ Parenthèse : ils poursuivent ainsi un travail assez novateur en matière de res
 
 Prenez OneNote : non seulement les boutons du ruban deviennent plus compacts quand on réduit la largeur de l'écran, mais c'est même l’organisation de l'app qui change, puisque la liste des notes est reléguée dans une vue dédiée et un bouton retour apparait pour y accéder.
 
-\[video width="590" height="140" mp4="http://toutcequibouge.net/toutcequibouge/wp-content/uploads/2016/10/onenote-responsive2.mp4"\]\[/video\]
+<video width="590" height="140">
+<source src="http://toutcequibouge.net/toutcequibouge/wp-content/uploads/2016/10/onenote-responsive2.mp4"      type="video/mp4">
+</video>
 
 Le problème, c'est que le travail d'adaptation a été minime pour beaucoup des nouvelles applications natives. Par exemple, dans une fenêtre étroite Groove Music marche très bien -- normal, elle est très proche de sa contrepartie sur Windows 10 Mobile. Mais redimensionner la fenêtre ne tire pas du tout partie de la taille d'écran. Le contenu est découpé en plein de vues étriquées : pour se faire une idée globale de ce que j'ai d'un artiste en local, je dois ouvrir sa fiche, puis cliquer sur un album ou sur "Vue Morceaux". N'importe quel lecteur de musique digne de ce nom montre deux niveaux à la fois : des artistes et leurs albums respectifs, ou les albums d'un artiste avec ses chansons. iTunes montre même les trois niveaux : artistes, albums et chansons.
 
-![iTunes Artist View](images/artists-view-100017932-orig-1024x623.png)
+![iTunes Artist View](/blog/assets/images/artists-view-100017932-orig-1024x623.png)
 
 Plus généralement, j'ai relevé trois problèmes presque systématiques dans ces nouvelles applications.
 
@@ -28,7 +30,10 @@ Plus généralement, j'ai relevé trois problèmes presque systématiques dans c
 
 L'utilisation du bouton "hamburger" sur mobile est discutable mais compréhensible. Sur desktop ça l'est moins, surtout quand c'est de manière non-conventionnelle. Dans les "grosses" applications, il sert d'interrupteur pour masquer/afficher les libellés du menu. Dans les applications légères, il fait apparaitre ces libellés temporairement (comme un "flyover" ou "popover"). Comme on le voit dans cette animation, ce n'est pas d'une utilité renversante eu égard à sa position prééminente.
 
-\[video width="600" height="600" mp4="http://toutcequibouge.net/toutcequibouge/wp-content/uploads/2016/11/menu-démarrer2.mp4"\]\[/video\]
+
+<video width="600" height="600">
+<source src="http://toutcequibouge.net/toutcequibouge/wp-content/uploads/2016/11/menu-démarrer2.mp4"      type="video/mp4">
+</video>
 
 Oui, c'est bien le Menu démarrer, même lui y a droit. Un menu de navigation avec son propre bouton de navigation, merci Microsoft. L’icône habituellement la plus structurante d'une app est transformée en simple post-it, puisque cliquer dessus sert juste à rappeler la signification des icônes. Si celle-ci posait vraiment problème il y avait d'autres solutions, comme afficher tous les titres de menu lors d'un survol prolongé. Courrier est le seul cas où ce hamburger est justifié puisqu'il présente de vraies différences de contenu entre modes compact et complet.
 
@@ -36,7 +41,7 @@ Oui, c'est bien le Menu démarrer, même lui y a droit. Un menu de navigation av
 
 La barre de commandes comprend une icône en points de suspension. C’est encore un décalque du mobile, qui transgresse au passage des conventions desktop, sans gain évident. Elle ouvre des commandes supplémentaires et fait apparaitre le nom de toutes les cônes.
 
-![2016-10-25_00h34_01.png](images/2016-10-25_00h34_01.png)
+![2016-10-25_00h34_01.png](/blog/assets/images/2016-10-25_00h34_01.png)
 
 Elle présente quatre problèmes :
 
@@ -45,9 +50,12 @@ Elle présente quatre problèmes :
 3. Il n'y a parfois qu'une seule entrée dans le menu (Cf. les apps Téléphone et Messages)
 4. Il n'y a parfois aucun menu et cliquer dessus affiche juste les libellés. Le plus ridicule est qu'il n'y a parfois qu'une seule icone et donc qu'un seul libellé à afficher.
 
-![2016-10-24_20h08_13.png](images/2016-10-24_20h08_13.png)
+![2016-10-24_20h08_13.png](/blog/assets/images/2016-10-24_20h08_13.png)
 
-\[video width="1112" height="176" mp4="http://toutcequibouge.net/toutcequibouge/wp-content/uploads/2016/10/ellipse2.mp4"\]\[/video\]
+<video width="1112" height="176">
+<source src="http://toutcequibouge.net/toutcequibouge/wp-content/uploads/2016/10/ellipse2.mp4"      type="video/mp4">
+</video>
+
 
 Si c'était un bonus, le comportement ne serait pas une mauvaise idée puisqu’il enseigne _en passant_ aux utilisateurs la signification des pictogrammes. Mais remplacer une convention archi-classique par un comportement plus lourd n'est pas très une bonne idée.
 
@@ -65,4 +73,4 @@ Plus fondamentalement, ce bouton retour est gênant dans son principe. Dans un e
 
 Contrairement aux problèmes précédents, cette fonction est moins une erreur basique qu'une réponse inadaptée à une question compliquée. J’aurais simplement préféré que Microsoft ajoute ce bouton au cas par cas, quand c'était vraiment nécessaire : Word et Courrier n'en ont pas, Groove Music n'aurait pas dû en avoir, mais le Store en a un et c'est justifié vu la profondeur de son arborescence. Voici comment Apple ajoute un bouton retour global à certaines applications (Photos, Mac App Store).
 
-![photos_01_mac-100577934-orig](images/photos_01_mac-100577934-orig.png)
+![photos_01_mac-100577934-orig](/blog/assets/images/photos_01_mac-100577934-orig.png)

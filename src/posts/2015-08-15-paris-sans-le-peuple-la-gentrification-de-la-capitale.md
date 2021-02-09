@@ -1,13 +1,13 @@
 ---
 title: "Paris sans le peuple – La gentrification de la capitale"
 date: "2015-08-15"
-tags: 
+tags:
   - "notes-de-lecture"
   - "politique"
   - "ville"
 ---
 
-![paris sans le peuple](images/paris-sans-le-peuple.jpg)
+![paris sans le peuple](/blog/assets/images/paris-sans-le-peuple.jpg)
 
 On change des thèmes habituels de ce blog avec des morceaux choisis de l'essai _Paris sans le peuple – La gentrification de la capitale_, d'[Anne Clerval](http://acp.u-pem.fr/equipe/anne-clerval/) et aux Éditions de la découverte.
 

@@ -1,10 +1,10 @@
 ---
 title: "Le guide relativement exhaustif et raisonnablement ultime des outils de prototypage"
 date: "2014-06-13"
-categories: 
-  - "travaux"
-tags: 
+tags:
+tags:
   - "prototypage"
+  - "travaux"
 ---
 
 J'ai commencé un guide des différents logiciels de prototypage, sous forme de matrice de fonctionnalités. Elle est [sur Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_software_prototyping_tools) et toutes suggestions et contributions sont les bienvenues.
