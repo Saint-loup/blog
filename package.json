@@ -1,15 +1,6 @@
 {
   "name": "tout-ce-qui-bouge",
   "version": "1.0.0",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/shanerobinson/sr-11ty-tailwind-alpine-template/issues"
-  },
-  "homepage": "https://github.com/shanerobinson/sr-11ty-tailwind-alpine-template#readme",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/shanerobinson/sr-11ty-tailwind-alpine-template.git"
-  },
   "scripts": {
     "clean": "rimraf dist",
     "dev:webpack": "webpack  --mode development",
