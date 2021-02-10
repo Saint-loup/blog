@@ -4,6 +4,7 @@ date: "2019-07-04"
 tags:
   - "conception"
 coverImage: "012cukejqs1z.png"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
 ---
 
 ![](/assets/images/012cukejqs1z.png)

@@ -2,6 +2,7 @@
 draft: true
 title: "Flèches, partie 1"
 date: ""
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
 ---
 
 J'ai une envie de créer un programme générant des flèches.

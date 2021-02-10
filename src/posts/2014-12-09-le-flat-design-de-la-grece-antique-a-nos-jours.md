@@ -5,6 +5,7 @@ tags:
   - "anthologie"
   - "architecture"
   - "histoire"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
 ---
 
 Le 04 décembre, j'ai donné une présentation à Lille dans le cadre du quatrième [Welsh Design](http://www.meetup.com/WelshDesign/), qui m'a gentiment donné l'opportunité de parler de mes lubies.

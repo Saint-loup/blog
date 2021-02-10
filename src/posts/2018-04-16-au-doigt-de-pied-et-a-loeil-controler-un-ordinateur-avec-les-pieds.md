@@ -4,6 +4,7 @@ date: "2018-04-16"
 tags:
   - "objets"
 coverImage: "joyboard_ad-e1523890846210.jpg"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
 ---
 
 Lors de deux moments importants pour l'histoire de l'informatique, on trouve une personne assise à une machine et utilisant autant ses pieds que ses mains.

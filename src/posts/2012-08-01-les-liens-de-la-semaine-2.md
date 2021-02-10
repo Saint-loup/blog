@@ -1,8 +1,9 @@
 ---
 title: "Les liens de la semaine #4"
 date: "2012-08-01"
-tags: 
+tags:
   - "veille"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
 ---
 
 - Pour la sortie de la nouvelle version de Mac OS X, John Siracusa et Ars Technica perpétuent leur tradition de [recension exhaustive](http://arstechnica.com/apple/2012/07/os-x-10-8/). La référence sur le sujet.

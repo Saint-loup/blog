@@ -4,6 +4,7 @@ date: 2020-04-10
 tags:
   - travaux
 coverImage: "screenshot.png"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
 ---
 
 J'ai fait un minuteur, il est joli, il est cool, [il est disponible ici](https://misc.toutcequibouge.net/Timer/).

@@ -3,6 +3,7 @@ title: "Cogner à son ordi"
 date: "2016-04-12"
 tags:
   - "objets"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
 ---
 
 Ces temps-ci, j'ai l'occasion d'utiliser un Thinkpad (X230 pour les amateurs). Ces ordinateurs portables sont dotés d'une petite lampe en haut de l'écran, pour l'éclairer quand la lumière ambiante est trop faible. Un raccourci clavier (Fn+Espace) permet de l'éteindre et de l'allumer instantanément.

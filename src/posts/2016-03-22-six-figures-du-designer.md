@@ -1,9 +1,10 @@
 ---
 title: "Six métaphores plus modestes qu'il n'y parait pour le rôle du designer"
 date: "2016-03-22"
-tags: 
+tags:
   - "conception"
   - "reflexions"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
 ---
 
 [Le designer comme hôte](http://www.eamesoffice.com/the-work/the-guest-host-relationship/) – Charles Eames, 1972.

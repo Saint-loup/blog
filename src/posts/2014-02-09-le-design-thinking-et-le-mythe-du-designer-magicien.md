@@ -1,9 +1,10 @@
 ---
 title: "Le design thinking et le mythe du designer-magicien"
 date: "2014-02-09"
-tags: 
+tags:
   - "features"
   - "place-du-concepteur"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
 ---
 
 _Résumé : le design n’est pas une panacée._
@@ -17,11 +18,11 @@ On entend par _design thinking_ le fait de recourir à des designers, en personn
 De prime abord, ces critères sont positifs, mais quel rapport avec le design ou les designers ? Tout repose sur l'idée que celui qui fait vœu de design acquiert certaines capacités supérieures ou uniques, qu'il peut appliquer à peu près à tous les domaines. Cette supposée exclusivité me paraît très contestable :
 
 1. Travailler de manière itérative et incrémentale est depuis longtemps une tarte à la crème dans [l'industrie](https://en.wikipedia.org/wiki/Lean_management#Continuously_improve).
-    
+
 2. Garder à l'esprit les besoins des usagers est quelque chose de présent dans certains milieux, notamment en ergonomie. Les techniques de terrain, quant à elles, viennent largement des sciences humaines et sociales. Comme le [dit Peter Merholz](http://blogs.hbr.org/2009/10/why-design-thinking-wont-save/), ce n’est pas pour autant qu’on parle de _socio thinking_ ou d’_ethno thinking_.
-    
+
 3. La créativité est une notion très floue. On peut la rattacher à l'intuition, mais celle-ci n'est ni une habilité particulière ni quelque chose de propre au designer : c'est seulement la manière dont nous utilisons notre expérience de manière intériorisée et non-réflexive (cf [cet article](http://www.asktog.com/papers/raskinintuit.html) de Raskin pour ce qui est des IHM). On rapproche également la créativité de l'abduction (appelée aussi inférence à la meilleure explication), mais cela revient à dire qu'on est designer dès qu'on fait un diagnostic médical, qu'on résout une enquête criminelle ou qu'on essaye de deviner qui s'est servi dans le frigo la nuit dernière. Enfin, en parlant de créativité, on aime à imaginer le designer comme celui qui sait réfléchir en dehors des sentiers battus et voir à travers les [problèmes mal posés](https://en.wikipedia.org/wiki/Wicked_problem). Cela impliquerait qu'on est un peu designer dès qu'on fait preuve d'audace intellectuelle, ce qui est encore une façon pour le design de tout ramener à soi. Steve Jobs était un businessman visionnaire, pas besoin d'en faire un designer.
-    
+
 
 Bref, ces caractéristiques n'ont rien d'exceptionnel et sont largement répandues.
 

@@ -5,6 +5,7 @@ tags:
   - "prototypage"
   - "sketch"
 coverImage: "2019-03-19_20h12_29.png"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
 ---
 
 Pour les designers UX qui travaillent sur Sketch, voici des plugins utiles pour faire des wireframes ou des wireflows.

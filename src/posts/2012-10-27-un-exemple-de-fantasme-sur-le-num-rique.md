@@ -1,8 +1,9 @@
 ---
 title: "Un exemple de fantasme sur le numérique"
 date: "2012-10-27"
-tags: 
+tags:
   - "reflexions"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
 ---
 
 Dans [un article](http://uxmag.com/articles/five-things-to-know-when-designing-a-windows-8-app) sur la conception d’applications pour Windows 8, on peut lire :

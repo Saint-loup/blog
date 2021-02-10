@@ -3,6 +3,7 @@ title: "Une confusion courante à propos du kerning"
 date: "2013-01-22"
 tags:
   - "graphisme"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
 ---
 
 En typographie, l’approche (_tracking_ ou _letter-spacing_, en anglais), c’est l’espacement uniforme entre les caractères d’un texte.
