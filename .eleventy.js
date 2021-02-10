@@ -20,6 +20,10 @@ module.exports = function (eleventyConfig) {
 
 	eleventyConfig.addDataExtension("yaml", contents => yaml.safeLoad(contents));
 
+
+
+
+
 	/**
 	 * Plugins
 	 * @link https://www.11ty.dev/docs/plugins/
@@ -230,16 +234,101 @@ module.exports = function (eleventyConfig) {
 	*/
 
 
+	const markdownItOptions = {
+		html: true,
+		breaks: true,
+		linkify: true,
+	};
+	const markdownItAttributes = require('markdown-it-attrs');
+	const markdownItContainer = require('markdown-it-container');
+
+	const markdownItFootnote = require('markdown-it-footnote');
+
+	const slugify = require('./src/_includes/slugify.js');
+	const markdownItAnchor = require('markdown-it-anchor');
+	// https://www.toptal.com/designers/htmlarrows/punctuation/section-sign/
+	const markdownItAnchorOptions = {
+		permalink: true,
+		permalinkClass: 'deeplink',
+		permalinkSymbol: '&#xa7;&#xFE0E;',
+		level: [2, 3, 4],
+		slugify: function (s) {
+			return slugify(s);
+		},
+	};
+
+
+
+
+	// taken from https://gist.github.com/rodneyrehm/4feec9af8a8635f7de7cb1754f146a39
+	function getHeadingLevel(tagName) {
+		if (tagName[0].toLowerCase() === 'h') {
+			tagName = tagName.slice(1);
+		}
+
+		return parseInt(tagName, 10);
+	}
+
+	function markdownItHeadingLevel(md, options) {
+		var firstLevel = options.firstLevel;
+
+		if (typeof firstLevel === 'string') {
+			firstLevel = getHeadingLevel(firstLevel);
+		}
+
+		if (!firstLevel || isNaN(firstLevel)) {
+			return;
+		}
+
+		var levelOffset = firstLevel - 1;
+		if (levelOffset < 1 || levelOffset > 6) {
+			return;
+		}
+
+		md.core.ruler.push('adjust-heading-levels', function (state) {
+			var tokens = state.tokens;
+			for (var i = 0; i < tokens.length; i++) {
+				if (tokens[i].type !== 'heading_close') {
+					continue;
+				}
+
+				var headingOpen = tokens[i - 2];
+				var headingClose = tokens[i];
+
+				var currentLevel = getHeadingLevel(headingOpen.tag);
+				var tagName = 'h' + Math.min(currentLevel + levelOffset, 6);
+
+				headingOpen.tag = tagName;
+				headingClose.tag = tagName;
+			}
+		});
+	}
+
+	const md = markdownIt(markdownItOptions)
+		.disable('code')
+		.use(markdownItHeadingLevel, { firstLevel: 2 })
+		.use(markdownItFootnote)
+		.use(markdownItAnchor, markdownItAnchorOptions)
+		.use(markdownItAttributes)
+		.use(markdownItContainer, 'info')
+		.use(markdownItContainer, 'success')
+		.use(markdownItContainer, 'warning')
+		.use(markdownItContainer, 'error');
+	eleventyConfig.setLibrary('md', md);
+
+	// Add markdownify filter with Markdown-it configuration
+	eleventyConfig.addFilter('markdownify', (markdownString) =>
+		md.render(markdownString)
+	);
+
+
+
 	eleventyConfig.addFilter("dateToPermalink", function (date) {
 		return moment(date).format("YYYY/MM");
 	});
 
 
-
-
 	return {
-		//pathPrefix: "/blog/",
-
 		dir: {
 			input: 'src',
 			output: 'dist',
