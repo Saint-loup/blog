@@ -6,9 +6,9 @@ tags:
 coverImage: "screenshot.png"
 ---
 
-J'ai fait un minuteur, il est joli, il est cool, [il est disponible ici](https://toutcequibouge.net/Divers/Timer/).
+J'ai fait un minuteur, il est joli, il est cool, [il est disponible ici](https://misc.toutcequibouge.net/Timer/).
 
-[![](/images/screenshot-984x1024.png)](https://toutcequibouge.net/Divers/Timer/)
+[![](/images/screenshot-984x1024.png)](https://misc.toutcequibouge.net/Timer/)
 
 **Quoi qu'est-ce que c'est ?**
 
