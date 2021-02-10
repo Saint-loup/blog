@@ -6,7 +6,7 @@ module.exports = {
 	siteImage: '/assets/images/site/default.png',
 	lang: 'fr',
 	locale: 'en_us',
-	authorName: 'Baptiste',
+	authorName: 'Baptiste Roullin',
 	authorEmail: 'baptiste@roullin.net',
 	twitterSite: '@saint_loup',
 

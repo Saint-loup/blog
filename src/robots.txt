@@ -1,5 +1,5 @@
 # www.robotstxt.org
-
+Sitemap: https://toutcequibouge.net/sitemap.xml
 # Allow crawling of all content
 User-agent: *
-Disallow: 
+Disallow:
