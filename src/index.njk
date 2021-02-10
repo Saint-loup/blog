@@ -35,7 +35,7 @@ eleventyNavigation: # Required if want to display in Main Nav Bar
 
 <h2>Moi, ailleurs</h2>
 <ul class="ailleurs-list " >
-        {% for item in ailleurs | reverse %}
+        {% for item in ailleurs  %}
           <li class="ailleurs list-none my-4">
               <div class="name text-base"><a href="{{item.link}}">{{item.name}}</a></div>
               {#<img class="picture" src="{{item.img}}"></img>#}
