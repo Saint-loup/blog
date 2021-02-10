@@ -10,6 +10,8 @@ eleventyNavigation: # Required if want to display in Main Nav Bar
 
 ---
 
+# page en construction. [/archive](Le blog est là)
+
 <img style="margin:auto;widht:40vmax;" src="/assets/images/construction.gif"></img>
 
 <article class="{{ structure.g_pageWidth }}">
@@ -21,7 +23,7 @@ eleventyNavigation: # Required if want to display in Main Nav Bar
     </div>
   {% endif %}
 
-<div class="project-list grid gap-8 mx-auto mt-12 md:grid-cols-2 xl:grid-cols-3 lg:max-w-none" >
+{#<div class="project-list grid gap-8 mx-auto mt-12 md:grid-cols-2 xl:grid-cols-3 lg:max-w-none" >
         {% for project in projects | reverse %}
          <div class="project flex flex-col overflow-hidden rounded-lg shadow-lg">
 							<h3 class="name"><a href="{{project.link}}">{{project.name}}</a></h3>
@@ -30,6 +32,6 @@ eleventyNavigation: # Required if want to display in Main Nav Bar
 						</div>
         {% endfor %}
 </div>
-
+#}
 
 </article>
