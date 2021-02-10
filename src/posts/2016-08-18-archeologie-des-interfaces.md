@@ -5,7 +5,7 @@ tags:
   - "critique"
   - "histoire"
   - "windows"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 [Précédemment](http://toutcequibouge.net/2015/09/pocket-et-la-coherence-cest-pas-trop-ca/), je parlais du manque de cohérence entre les applications de Pocket. Il s'agissait pour beaucoup de points isolés qui s'accumulaient, alors que les exemples suivants sont plus graves : les interfaces sont incohérentes dans leur principe.

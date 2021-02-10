@@ -2,7 +2,7 @@
 title: Le bureau comme outil et pas comme mobilier
 draft: true
 date: 2019-09-22
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 écritoire

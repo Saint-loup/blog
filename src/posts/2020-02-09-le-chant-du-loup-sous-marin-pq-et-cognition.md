@@ -7,7 +7,7 @@ tags:
   - "sciences-cognitives"
   - "systemes-complexes"
 coverImage: "le-chant-du-loup-e1581375123572.jpg"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 _Le Chant du loup_ suit l’épopée de l’équipage d’un sous-marin et de son “oreille d’or”, un analyste acoustique. Ce film est une mine d'or sur l'esprit humain et ses interactions avec la machine. Voici pêle-mêle ce que j'ai trouvé intéressant.

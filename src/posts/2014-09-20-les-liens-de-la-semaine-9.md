@@ -3,7 +3,7 @@ title: "Les liens de la semaine #9"
 date: "2014-09-20"
 tags:
   - "veille"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 - Un chouette recueil de design-fiction (prospective ancrant un concept dans les usages) : [Une histoire du futur en cent objets](http://ahistoryofthefuture.org/).

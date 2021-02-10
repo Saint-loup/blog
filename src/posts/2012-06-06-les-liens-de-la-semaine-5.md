@@ -3,7 +3,7 @@ title: "Les liens de la semaine 1"
 date: "2012-06-06"
 tags:
   - "veille"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 - [Tactus](http://tactustechnology.com/), un écran tactile à retour haptique avec des boutons qui, selon le contexte, apparaitraient pour déformer l’écran. Cela pourrait faire disparaitre le plus gros inconvénient des interfaces tactiles.

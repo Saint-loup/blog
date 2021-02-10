@@ -4,7 +4,7 @@ date: "2014-09-30"
 tags:
   - "features"
   - "place-du-concepteur"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 Les relations entre client et prestataire sont compliquées, presque par définition. Un problème fréquent pour le prestataire est de faire reconnaître son expertise, notamment quand il est dans un rôle de conception. Il est sans doute tentant d'apprendre son métier à un concepteur d'interfaces, à un architecte (de systèmes ou de bâtiments) ou à un styliste automobile, plus qu'à un illustrateur, un développeur ou tout autre personne qui réalise elle-même le résultat final.

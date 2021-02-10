@@ -4,7 +4,7 @@ date: "2013-02-18"
 draft: true
 tags:
   - "travaux"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 ![enter image description here](/assets/images/tumblr_miepri6uTI1s2ha81o1_r1_400.png)

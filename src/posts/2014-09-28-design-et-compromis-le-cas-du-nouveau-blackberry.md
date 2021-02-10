@@ -5,7 +5,7 @@ tags:
   - "mobile"
   - "objets"
   - "strategie"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 > all design is a series of compromises; but good design finds the right ones. ([Doug Bowman](https://twitter.com/stop/status/299019199030886400))

@@ -2,7 +2,7 @@
 draft: true
 title: "Bret"
 date: ""
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 Théorie : symbolique, interacion, visuel

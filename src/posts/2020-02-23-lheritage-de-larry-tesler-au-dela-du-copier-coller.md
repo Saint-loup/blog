@@ -6,7 +6,7 @@ tags:
   - "histoire"
   - "utilisateurs"
 coverImage: "Capture-d’écran-2020-02-22-à-21.56.15-e1582420058368.png"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 ![Clavier auxiliaire utilisé par Tesler pour tester la fonction de couper-coller, avec des étiquettes notées "cut" et "paste".](/assets/images/Capture-d’écran-2020-02-22-à-21.56.15-e1582420058368-1024x882.png)

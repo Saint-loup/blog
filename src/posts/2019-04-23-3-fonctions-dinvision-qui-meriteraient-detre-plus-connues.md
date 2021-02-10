@@ -4,7 +4,7 @@ date: "2019-04-23"
 tags:
   - "prototypage"
 coverImage: "2019-04-23_19h12_30.png"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 _Design system_, moodboard, création de maquette avec Studio... Invision est devenue une plateforme complète. Voici pourtant trois fonctions que vous avez peut-être manqué.

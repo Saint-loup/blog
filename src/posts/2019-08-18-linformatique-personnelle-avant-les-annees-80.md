@@ -5,7 +5,7 @@ tags:
   - "histoire"
   - "utilisateurs"
 coverImage: "2019-09-14_01h56_51.jpg"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 Notes rapides sur un livre intéressant : [A People’s History of Computing in the United States](https://www.hup.harvard.edu/catalog.php?isbn=9780674970977).
