@@ -11,6 +11,6 @@ La première fait gicler la barre de navigation noire des services de Google, vu
 
 La seconde réarrange le layout (parler de redesign est sans doute un grand mot) pour quelque chose de plus minimaliste. Pour résumer, les deux barres d’actions sont comprimées en une seule, sont supprimés Google Chat, la colonne à droite d’un mail, les fonctions de G+… la barre noire est transformée en petite liste en bas à droite. Évidemment, c’est accordé à mes préférences et inutilisable pour pas mal de monde. Mais c’était un exercice intéressant de voir jusqu’on pouvait aller.
 
-[![gmail_full](/blog/assets/images/gmail_full.png)](http://toutcequibouge.net/toutcequibouge/wp-content/uploads/2013/01/gmail_full.png)
+[![gmail_full](/assets/images/gmail_full.png)](http://toutcequibouge.net/toutcequibouge/wp-content/uploads/2013/01/gmail_full.png)
 
 Le résultat n’est pas parfait et je ne garantis pas la perennité du CSS. Il y a beaucoup de règles vilaines et il suffit que Google change le nom d’une classe pour que les choses se gâtent. En attendant, si vous avez Firefox et l’addon [Stylish](https://addons.mozilla.org/en-US/firefox/addon/stylish/), vous pouvez les essayer depuis [là](http://userstyles.org/users/175691).

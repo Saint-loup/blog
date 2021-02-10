@@ -10,13 +10,13 @@ coverImage: "Icon_ombre2.png"
 
 Résumé : j'ai créé un [plugin Sketch](https://github.com/Saint-loup/typographie-frenchy#readme) pour respecter automatiquement les règles typo, espaces insécables et bien plus.
 
-[![icone du plugin](/blog/assets/images/Icon_ombre2.png)](https://github.com/Saint-loup/typographie-frenchy#readme)
+[![icone du plugin](/assets/images/Icon_ombre2.png)](https://github.com/Saint-loup/typographie-frenchy#readme)
 
 [Typographie frenchy](https://github.com/Saint-loup/typographie-frenchy#readme)
 
 Tout a commencé par une interface comme celle-ci :
 
-![screenshot de boite de dialogue](/blog/assets/images/dialog-1-e1549493962289.png)
+![screenshot de boite de dialogue](/assets/images/dialog-1-e1549493962289.png)
 
 ... Dans le titre, un magnifique point d'exclamation seul sur sa ligne, problème récurrent dans une application mobile sur laquelle je travaillais. Je me suis demandé comment résoudre ce problème, sans demander aux développeurs de mémoriser chaque règle et d'insérer systématiquement des caractères spéciaux à la main. Ces caractères, ce sont les espaces insécables, qui collent la ponctuation au signe précédent. Sur le web ça implique de taper des choses sympathiques comme `&nbsp;` ou d'utiliser d'obscurs raccourcis clavier.
 

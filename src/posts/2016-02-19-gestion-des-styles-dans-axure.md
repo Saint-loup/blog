@@ -10,11 +10,11 @@ Axure n'est pas un outil de maquettage à haute fidélité, pourtant il est parf
 
 []: # (wide-img)
 
-![Axure - Style par défaut](/blog/assets/images/2016-02-19\_14h44\_12.png)
+![Axure - Style par défaut](/assets/images/2016-02-19\_14h44\_12.png)
 
-![Axure Créer un style réutilisable](/blog/assets/images/2016-02-19\_14h52\_44.png)
+![Axure Créer un style réutilisable](/assets/images/2016-02-19\_14h52\_44.png)
 
 
 La gestion des styles est propre à un fichier Axure. Cela dit, on peut importer les styles depuis un fichier existant, en allant dans Fichier > Importer. Là, avancez dans l'assistant jusqu'à la fenêtre d'importation de styles de widgets puis sélectionnez ceux qui vous intéressent.
 
-![Axure - Import styles](/blog/assets/images/2016-02-19_14h44_46.png)
+![Axure - Import styles](/assets/images/2016-02-19_14h44_46.png)

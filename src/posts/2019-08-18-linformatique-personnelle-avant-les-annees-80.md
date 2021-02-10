@@ -11,7 +11,7 @@ Notes rapides sur un livre intéressant : [A People’s History of Computing in 
 
 Inspiré du classique [A People's History of the United States,](https://en.wikipedia.org/wiki/A_People%27s_History_of_the_United_States) le projet est de faire un récit au plus près des concernés et d'interroger les figures classiques et opposés de l'utilisateur et du concepteur.
 
-![Une enseignante et ses élèves autour d'un terminal Teletype. Crédits : Computer History Museum](/blog/assets/images/2019-09-14_01h56_51.jpg)
+![Une enseignante et ses élèves autour d'un terminal Teletype. Crédits : Computer History Museum](/assets/images/2019-09-14_01h56_51.jpg)
 
 Une enseignante et ses élèves autour d'un terminal Teletype. Crédits : Computer History Museum
 
@@ -55,6 +55,6 @@ A noter que le chapitre 2 est consacré à l'influence de la culture "jock" et m
 - [When Women Stopped Coding](https://www.npr.org/sections/money/2014/10/21/357629765/when-women-stopped-coding?t=1566130798081)
 - [Pourquoi les filles ont délaissé l’informatique](https://theconversation.com/pourquoi-les-filles-ont-delaisse-linformatique-110940)
 
-![Enfants autour d'un terminal PLATO. utilisé dans une campagne de publicité.](/blog/assets/images/2019-12-03_20h31_49-1024x696.jpg)
+![Enfants autour d'un terminal PLATO. utilisé dans une campagne de publicité.](/assets/images/2019-12-03_20h31_49-1024x696.jpg)
 
 Enfants autour d'un terminal PLATO. utilisé dans une campagne de publicité.

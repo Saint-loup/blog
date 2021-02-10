@@ -13,11 +13,11 @@ L'histoire est coutumière : un site Web entame une grosse refonte pour se moder
 
 Parfois, ce sont des pans entiers d'un site qui détonnent. Exemple : Pôle Emploi, dont la page d'accueil ressemble actuellement à ça :
 
-![Page d'accueil Pole Emploi](/blog/assets/images/Pole-emploi-HP-cropped--1024x609.png)
+![Page d'accueil Pole Emploi](/assets/images/Pole-emploi-HP-cropped--1024x609.png)
 
 Pas mal pas mal. Sauf que cette "[révolution numérique](http://www.leparisien.fr/economie/emploi/pole-emploi-fait-sa-revolution-numerique-23-01-2016-5478493.php)", "[user-centric et disruptive](http://www.journaldunet.com/management/ressources-humaines/1176880-anne-leone-campanella-pole-emploi/)", n'est pas encore allée très loin. Dès qu'on se connecte on retombe sur l'ancien, avec un style et une structure largement différente, et une utilisabilité sur laquelle je ne m'étendrai pas.
 
-![](/blog/assets/images/Pole-Emploi-connect├®-particulier-1-1024x717.png)
+![](/assets/images/Pole-Emploi-connect├®-particulier-1-1024x717.png)
 
 Bien sûr, je sais ce que c'est. Il y a des contraintes de temps et d'argent et je n'ose imaginer les décennies de dette technique et d'inertie architecturale pour ce genre de gros SI. Ce qui semble pour l'utilisateur une section parmi d'autres est peut-être un module à part, avec une technologie incompatible et géré par un département différent (une bonne illustration du [principe de Conway](https://en.wikipedia.org/wiki/Conway%27s_law)). Je ne doute pas que les gens qui y travaillent soient les premiers frustrés. Mais bon, l'homogénéisation est prévue pour une V2, hein ? Hein ?
 
@@ -25,31 +25,31 @@ Sauf que ce n’est pas toujours le cas. Parfois, au fil des refontes ou des ajo
 
 ### MAAF
 
-![](/blog/assets/images/MAAF-0-1024x659.png)
+![](/assets/images/MAAF-0-1024x659.png)
 
 * * *
 
-![](/blog/assets/images/MAAF-1-1024x749.png)
+![](/assets/images/MAAF-1-1024x749.png)
 
 * * *
 
-![](/blog/assets/images/MAAF-2-1024x808-1.jpg)
+![](/assets/images/MAAF-2-1024x808-1.jpg)
 
 ### impots.gouv.fr
 
 []: # (wide-img)
-[](/blog/assets/images/impots-0-e1471563276671.png)
+[](/assets/images/impots-0-e1471563276671.png)
 
 * * *
 
 
 []: # (wide-img)
-[](/blog/assets/images/impots-2-e1471563206897.png)
+[](/assets/images/impots-2-e1471563206897.png)
 
 * * *
 
 []: # (wide-img)
-[](/blog/assets/images/Impots-3-e1471563162292.png)
+[](/assets/images/Impots-3-e1471563162292.png)
 
 
 ### Windows, ce palimpseste
@@ -58,13 +58,13 @@ Microsoft est un spécialiste pour ajouter des couches d'IHM à Windows sans ré
 
 D'abord, l'accueil datant de Windows 10. Ensuite, celui datant de XP. Les deux suivent le même concept : une grille d'icônes ouvrant des fenêtres maximisées dotées avec une barre de navigation latérale. Mais mystérieusement, les deux ont été conservés. Il y a donc des fenêtres redondantes (Désinstaller des programmes), d'autres qui n'ont pas été migrées vers la charte Windows 10 (Centre de réseau et partage).
 
-![Parametres Windows](/blog/assets/images/2016-08-18_21h57_11-1024x649.png)
+![Parametres Windows](/assets/images/2016-08-18_21h57_11-1024x649.png)
 
-![Panneau de configuration Windows 10](/blog/assets/images/2016-08-18_21h57_42-1024x787.png)
+![Panneau de configuration Windows 10](/assets/images/2016-08-18_21h57_42-1024x787.png)
 
 Ensuite, on arrive aux panneaux à taille fixe et à onglets, qui datent de Windows 95. Les paramètres de l'explorateur de fichiers en est le meilleur exemple : à part le retrait et surtout l'ajout de certaines options, il n'a pas bougé en vingt ans -- et il en aurait bien besoin, avec cette liste interminable dans un cadre minuscule.
 
-![Options de l'explorateur de fichier](/blog/assets/images/2016-08-18_22h22_56-1024x623.png)
+![Options de l'explorateur de fichier](/assets/images/2016-08-18_22h22_56-1024x623.png)
 
 ### Un dernier exemple
 

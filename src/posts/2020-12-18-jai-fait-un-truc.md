@@ -12,7 +12,7 @@ coverImage: "Screenshot_2020-12-19-table-basse1-scaled.jpg"
 
 * * *
 
-![](/blog/assets/images/image.jpg)
+![](/assets/images/image.jpg)
 
 ## C'est quoi ?
 

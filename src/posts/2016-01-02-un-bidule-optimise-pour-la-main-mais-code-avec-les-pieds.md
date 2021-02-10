@@ -15,4 +15,4 @@ Avertissement : on parle d'un truc optimisé pour la main mais codé avec les pi
 
 [C'est ici](http://toutcequibouge.net/Divers/TR/index.html).
 
-[![Screenshot_2016-01-03-00-05-00](/blog/assets/images/Screenshot_2016-01-03-00-05-00-e1451777220269.png)](http://toutcequibouge.net/Divers/TR/index.html)
+[![Screenshot_2016-01-03-00-05-00](/assets/images/Screenshot_2016-01-03-00-05-00-e1451777220269.png)](http://toutcequibouge.net/Divers/TR/index.html)
