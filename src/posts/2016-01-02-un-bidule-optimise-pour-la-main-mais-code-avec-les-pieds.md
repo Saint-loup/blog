@@ -3,7 +3,7 @@ title: "Un bidule optimisé pour la main mais codé avec les pieds"
 date: "2016-01-02"
 tags:
   - "travaux"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 **EDIT** : [Infos plus récentes ici](http://toutcequibouge.net/2016/05/lecons-ergonomiques-et-techniques-dun-projet-perso/).

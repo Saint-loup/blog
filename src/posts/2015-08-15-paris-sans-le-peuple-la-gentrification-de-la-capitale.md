@@ -5,7 +5,7 @@ tags:
   - "notes-de-lecture"
   - "politique"
   - "ville"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 ![paris sans le peuple](/assets/images/paris-sans-le-peuple.jpg)

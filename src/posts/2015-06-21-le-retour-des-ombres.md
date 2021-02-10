@@ -3,7 +3,7 @@ title: "Le retour des ombres"
 date: "2015-06-21"
 tags:
   - "graphisme"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 Ce n'est pas le titre d'un roman fantastique, c'est le fait qu'après quelques excès de minimalisme, on assiste ici et là à un retour des ombres portée. Voici deux exemples notables.

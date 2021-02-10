@@ -4,7 +4,7 @@ date: "2013-04-12"
 tags:
   - "features"
   - "utilisateurs"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 Il est louable de se mettre à la place des gens et de comprendre qu’ils utilisent leurs outils quotidiens de manière pragmatique. Cela parait évident et c’est le point de départ de la conception centrée sur l’utilisateur. C'est grâce à ça qu'on conçoit des interfaces simples, sans jargon ni option inutile. Pourtant cette importance de l'empathie est souvent caricaturée et transformée en dédain.

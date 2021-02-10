@@ -3,7 +3,7 @@ title: "Les méthodes de déplacement du curseur sur un clavier tactile"
 date: "2015-03-01"
 tags:
   - "mobile"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 La saisie de texte est devenue raisonnablement bonne sur les principaux OS mobiles. Tous ont des systèmes de saisie prédictive (pour anticiper le mot suivant le plus susceptible d'être tapé) et des méthodes de saisie au « tracé » (sans appuyer sur chaque lettre, genre Swype ou SwiftKey).

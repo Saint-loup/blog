@@ -3,7 +3,7 @@ title: "Les liens de la semaine #3"
 date: "2012-07-24"
 tags:
   - "veille"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 - Connaissiez-vous ces paradigmes d’interaction ? Les interfaces [basées sur le zoom](http://en.wikipedia.org/wiki/Zooming_user_interface), celles basées sur le [franchissement](http://en.wikipedia.org/wiki/Crossing-based_interface) plutôt que sur le pointage, celles basées sur le fait de [gratter une surface](http://en.wikipedia.org/wiki/Scratch_input).

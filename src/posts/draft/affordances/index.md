@@ -2,7 +2,7 @@
 draft: true
 title: "Au-delà des affordances"
 date: ""
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 Introduction

@@ -5,7 +5,7 @@ date: "2016-08-15"
 tags:
   - "reflexions"
 
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 Dans un article sur le thème "[Faut-il dire numérique ou digital ?](http://www.blogdumoderateur.com/numerique-ou-digital/)", le Blog du modérateur donne la parole à plusieurs linguistes, lesquels rappellent quelques principes utiles. Notamment :

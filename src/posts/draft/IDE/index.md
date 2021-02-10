@@ -2,7 +2,7 @@
 draft: true
 title: "Outils UX : usine à gaz ou une nébuleuse d'applications?"
 date: ""
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 Il y a quelques débats ces temps-ci sur l'évolution des logiciels de prototypage et sur ce que serait l'outil parfait (exemples d'articles : [1](http://grafiskjournal.com/archive/envisioning-the-perfect-design-app), [2](https://medium.com/startup-study-group/designer-desperately-looking-for-scalability-design-tools-f04478a12d42#.w49saisuc), [3](http://www.subtraction.com/2015/05/07/the-state-of-design-tools/). Avant même de s'interroger sur le logiciel lui-même, un angle intéressant -- et souvent implicite dans les discussions -- est de distinguer deux styles de flux de travail : le style de l'IDE et celui d'UNIX.

@@ -4,7 +4,7 @@ date: "2015-09-06"
 tags:
   - "reflexions"
   - "securite"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 Créer un système, c'est s'assurer qu'il remplit un ensemble de fonctions données, mais aussi qu'il possède des qualités globales comme la maintenabilité, la fiabilité, la rapidité… On les appelle parfois des [exigences non-fonctionnelles](https://en.wikipedia.org/wiki/Non-functional_requirement). Parmi elles, l'utilisabilité et la sécurité sont des qualités cruciales et moins antagonistes que l'on ne pourrait le croire.

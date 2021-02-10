@@ -4,7 +4,7 @@ date: "2020-12-18"
 tags:
   - "travaux"
 coverImage: "Screenshot_2020-12-19-table-basse1-scaled.jpg"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 * * *

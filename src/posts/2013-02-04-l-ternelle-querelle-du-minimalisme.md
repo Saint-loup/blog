@@ -4,7 +4,7 @@ date: "2013-02-04"
 tags:
   - "features"
   - "histoire"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 S’il y a une chose dont manquent les débats actuels sur le skeuomorphisme et ce qu’on appelle le _flat design_, c’est de recul historique.

@@ -4,7 +4,7 @@ date: "2012-06-13"
 tags:
   - "futur"
   - "utilisateurs"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 L’_[uncanny valley](http://en.wikipedia.org/wiki/Uncanny_valley)_, la vallée dérangeante, est une hypothèse fondamentale en robotique et en animation. Elle énonce que plus une créature est proche de l’être humain, plus notre affinité pour elle croît, jusqu’à au point où cette tendance s’inverse et où commence le dégoût. Par exemple, un robot industriel ne dérange guère, un humanoïde idéal non plus. Par contre, voir un robot proche de l’être humain mais mal animé, ou un personnage de dessin animé très bien rendu mais avec des yeux inertes, cela provoque une réaction de rejet. Le problème n’est pas seulement que l’imitation peut être _creepy,_ mais que le phénomène est limitée à une zone de la courbe.
