@@ -10,28 +10,42 @@ eleventyNavigation: # Required if want to display in Main Nav Bar
 
 ---
 
-<h1>page en construction. <a href="/archive"> Le blog est là</a></h1>
+<div class="{{ structure.g_pageWidth }}">
+  <h1>page en construction.</h1>
 
-<img style="margin:auto;widht:40vmax;" src="/assets/images/construction.gif"></img>
+  <img style="margin:auto;widht:40vmax;" src="/assets/images/construction.gif"></img>
 
-<article class="{{ structure.g_pageWidth }}">
 
 
   {% if seo.description %}
     <div class="p-2 {{ colors.borderCustom.borders or colors.borderDefault.borders }} {{ colors.borderCustom.color or colors.borderDefault.color }}">
       {{ seo.description }}
-    </div>
   {% endif %}
 
-{#<div class="project-list grid gap-8 mx-auto mt-12 md:grid-cols-2 xl:grid-cols-3 lg:max-w-none" >
+<h2>Projets, essais et autres bidouilles</h2>
+<ul class="project-list " >
         {% for project in projects | reverse %}
-         <div class="project flex flex-col overflow-hidden rounded-lg shadow-lg">
-							<h3 class="name"><a href="{{project.link}}">{{project.name}}</a></h3>
-							<img class="picture" src="{{project.img}}"></img>
-							<span class="description">{{project.description}}</span>
-						</div>
+          <li class="project list-none my-4">
+              <div class="name text-base"><a href="{{project.link}}">{{project.name}}</a></div>
+              {#<img class="picture" src="{{project.img}}"></img>#}
+              <div class="description">{{project.description}}</div>
+            </li>
         {% endfor %}
-</div>
-#}
+</ul>
 
-</article>
+<h2>Moi, ailleurs</h2>
+<ul class="ailleurs-list " >
+        {% for item in ailleurs | reverse %}
+          <li class="ailleurs list-none my-4">
+              <div class="name text-base"><a href="{{item.link}}">{{item.name}}</a></div>
+              {#<img class="picture" src="{{item.img}}"></img>#}
+              <div class="description">{{item.description}}</div>
+            </li>
+        {% endfor %}
+</ul>
+
+
+
+
+</div>
+

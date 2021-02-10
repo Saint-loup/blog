@@ -1,0 +1,26 @@
+---
+- name: Twitter
+  link: twitter.com/saint_loup
+  img:
+  description:
+
+- name: Mastodon
+  link:    https://mastodon.social/@Saint_loup
+  img:
+  description:
+
+- name: Photos
+  link: https://solvitur---ambulando.tumblr.com/
+  img:
+  description:
+
+- name: Différence et répétition
+  link:  https://difference--repetition.tumblr.com/
+  img:
+  description:
+
+- name: Google is eating the web
+  link:  https://googleeatingtheweb.tumblr.com/
+  img:
+  description:
+

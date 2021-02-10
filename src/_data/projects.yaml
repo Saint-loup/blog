@@ -1,30 +1,33 @@
 ---
 - name: Méta Axure
-  link: ""
+  link: "http://misc.toutcequibouge.net/meta%20axure/home.html"
   img: assets/images/home/axure.png
-  description: Une expérimentation pour créer un outil de maquettage utilisable...
-    dans une maquette Axure
+  description: Une expérimentation pour maquetter… dans une maquette.
+- name: Bot invisible
+  link: 'https://github.com/Saint-loup/botinvisible'
+  img:
+  description: Le seul bot appeliste de la planète.
+- name: Calculateur de ticket resto
+  link: 'https://toutcequibouge.net/2016/05/lecons-ergonomiques-et-techniques-dun-projet-perso/'
+  img:
+  description: Un test de clavier mobile dédié pour aider au calcul des tickets resto.
+- name: Archive d'animations flash
+  link: 'https://toutcequibouge.net/2016/05/lecons-ergonomiques-et-techniques-dun-projet-perso/'
+  img:
+  description: Quelques animations Flash classiques, en voie de disparition et archivées ici.
 - name: Data from clipboard
-  link:
+  link: "2019/12/un-plugin-sketch-pour-importer-du-contenu-depuis-le-presse-papier/"
   img: assets/images/home/data-from-clipboard.png
-  description: test
+  description: Un plugin Sketch pour importer du contenu depuis le presse-papier.
 - name: Plugin de typographie pour Sketch
-  link: ts
+  link: 2019/02/un-plugin-de-typographie-francaise-pour-sketch/
   img: assets/images/home/typo.png
-  description: test
+  description: Répandez du bonheur et des espaces insécables autour de vous.
 - name: Table basse
   link: 2020/12/18/jai-fait-un-truc/
   img:
-  description:
+  description: Ma vie culturelle en mosaïque.
 - name: Timer
-  link: ''
+  link: '2020/04/un-minuteur-en-pwa-pour-vos-ateliers/'
   img:
-  description:
-- name: Bot invisible
-  link: ''
-  img:
-  description:
-- name: Calculateur de ticket resto
-  link: ''
-  img:
-  description:
+  description: Un minuteur en PWA pour vos ateliers.
