@@ -7,7 +7,7 @@ tags:
 ---
 []: # (wide-img)
 
-![](/blog/assets/imageslarge\_the\_apartment\_blu-ray\_1.jpg)
+![](/assets/imageslarge\_the\_apartment\_blu-ray\_1.jpg)
 
 ### Excel
 
@@ -30,9 +30,9 @@ Et DuPont a fait ça de la manière la plus littérale et steampunk qui soit : _
 
 []: # (wide-img)
 
-![](/blog/assets/images/1974298\_001.jpg "1919 : première version")
+![](/assets/images/1974298\_001.jpg "1919 : première version")
 
-![](/blog/assets/images/2005273\_0001-e145540648863.jpg "1950 : ver­sion plus évo­luée")
+![](/assets/images/2005273\_0001-e145540648863.jpg "1950 : ver­sion plus évo­luée")
 
 ### Pour aller plus loin
 

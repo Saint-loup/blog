@@ -6,33 +6,33 @@ tags:
 coverImage: "012cukejqs1z.png"
 ---
 
-![](/blog/assets/images/012cukejqs1z.png)
+![](/assets/images/012cukejqs1z.png)
 
 Comme beaucoup de designers dont le travail est de créer de bonnes interfaces, je suis fasciné par l’extrême inverse : des interfaces monstrueusement mauvaises.
 
 Il y a les interfaces frontalement horribles, comme cet outil de maintenance pour un distributeur de billet.
 
-![](/blog/assets/images/ecoatm-1024x579.jpg)
+![](/assets/images/ecoatm-1024x579.jpg)
 
 Il y a les interfaces qu'il faut avoir utilisé pour comprendre. Prenez Lotus Notes : des [analyses](http://hallofshame.gp.co.at/lotus.htm) et des [sites entiers](https://web.archive.org/web/20120222220218/http://lotusnotessucks.4t.com/lnEnd.html) sont dédiés à sa nullité. On parle d'une application qui ne suit pas des raccourcis universels et basiques (par exemple CTRL+A pour tout sélectionner). On parle d'une application fournie avec un utilitaire pour la forcer à quitter quand les choses tournent mal. Une application suicidaire.
 
-![](/blog/assets/images/Cylu1iUXUAArxc5.jpg)
+![](/assets/images/Cylu1iUXUAArxc5.jpg)
 
 Mais pour aller au fond de la nullité et creuser encore, il faut la créer soi-même.
 
 [Il y a ce défi collectif](https://imgur.com/a/4f3XB#uBlNJV3) sur Reddit pour créer le pire sélecteur de numéro de téléphone.
 
-![](/blog/assets/images/pugHH9i.gif)
+![](/assets/images/pugHH9i.gif)
 
 [Des gens sur Reddit](https://www.designernews.co/stories/84443-redditors-design-worst-volume-sliders-possible) ont remis ça, autour d'un variateur de volume. Magnifique et totalement pataphysique.
 
-![](/blog/assets/images/PassionateOddballBlueandgoldmackaw.gif)
+![](/assets/images/PassionateOddballBlueandgoldmackaw.gif)
 
 Il y aussi sur cette expérimentation autour [du choix des cookies](https://twitter.com/kevinvennitti/status/1144293130222624768?s=20)
 
 Et enfin, le petit dernier : un [formulaire absolument atroce](https://userinyerface.com/game.html). Ce n'est plus un dark pattern, c'est un trou noir.
 
-![](/blog/assets/images/2019-07-04_00h19_54.jpg)
+![](/assets/images/2019-07-04_00h19_54.jpg)
 
 Les points communs entre tout ça ? Le meilleur des _worst practices_, une connaissance fine des habitudes des internautes pour s'en écarter le plus, des interfaces possédées, ayant leur vie propre ou luttant activement contre l'utilisateur, un succès toujours _techniquement_ possible mais avec des probabilités infimes, un humour noir auto-référencé... J'en passe.
 

@@ -15,7 +15,7 @@ Pour les designers UX qui travaillent sur Sketch, voici des plugins utiles pour 
 
 [Connection Flow Arrows](https://github.com/faridsabitov/Sketch-Connection-Flow-Arrows) : pareil mais vers n'importe quel calque. Et avec pas mal de paramètres utiles. Le détail qui fait la différence : des pointes de flèche orientées par rapport au trait, pas à l'objet cible.
 
-![Exemple de flèches avec le plugin Connection flow arrows](/blog/assets/images/2019-03-19_20h12_29-768x369.png)
+![Exemple de flèches avec le plugin Connection flow arrows](/assets/images/2019-03-19_20h12_29-768x369.png)
 
 Connection Flow Arrows
 
@@ -28,7 +28,7 @@ Deux plugins d'organisation automatiquement des plans de travail : [Artboard Man
 **Cliquer sur l'animation pour l'arrêter**
 
 <figure>
-<img id="#freezegif" src="/blog/assets/images/28533105-3a1586ca-709c-11e7-8544-87d2bb0ad4f1.gif">
+<img id="#freezegif" src="/assets/images/28533105-3a1586ca-709c-11e7-8544-87d2bb0ad4f1.gif">
 	<figcaption>Exemple d'arrangement automatique des blocs avec Artboard manager</figcaption>
 </figure>
 

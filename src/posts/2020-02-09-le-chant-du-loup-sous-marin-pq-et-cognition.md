@@ -11,7 +11,7 @@ coverImage: "le-chant-du-loup-e1581375123572.jpg"
 
 _Le Chant du loup_ suit l’épopée de l’équipage d’un sous-marin et de son “oreille d’or”, un analyste acoustique. Ce film est une mine d'or sur l'esprit humain et ses interactions avec la machine. Voici pêle-mêle ce que j'ai trouvé intéressant.
 
-![](/blog/assets/images/le-chant-du-loup-e1581375123572.jpg)
+![](/assets/images/le-chant-du-loup-e1581375123572.jpg)
 
 On y trouve beaucoup d'exemples des approches appelées [facteur humain](https://en.wikipedia.org/wiki/Human_factors_and_ergonomics), c'est-à-dire en gros de la manière dont humains, technique et organisations sont intriqués dans des gros machins impénétrables appelés [systèmes socio-techniques complexes](https://en.wikipedia.org/wiki/Sociotechnical_system).
 
@@ -21,7 +21,7 @@ C'est aussi une parfaite illustration de la [cognition incarnée](https://en.wik
 - Que nos représentations existent par et pour l'action. Notre vision ne doit pas être pensée comme la construction d'une image mais comme une activité d'exploration du monde par boucles incessantes entre gestes et perception.Deux références : un livre d'Alva Noe ([PDF de résumé](http://www.nyu.edu/gsas/dept/philo/courses/consciousness08/noe.precis.pdf) et un de Kevin O'Regan Même nos capacités plus abstraites peuvent être pensées comme orientées vers certaines pratiques comme [la communication et l'argumentation](https://journals.openedition.org/aad/2884).
 - Qu'il n'y a pas de limite précise entre l'esprit, le corps et son environnement immédiat. Par exemple si je dessine des schémas pour m'aider et structurer ma pensée et que j'y reviens fréquemment dans un carnet de notes, c'est une manière d'[externaliser ma mémoire](https://www.researchgate.net/publication/306352756_Cognitive_Offloading) et on peut même dire que ce carnet fait partie de mon esprit, [de manière étendue](https://en.wikipedia.org/wiki/The_Extended_Mind).
 
-![XKCD 903. Légende : "When Wikipedia has a server outage, my apparent IQ drops by 30 points."](/blog/assets/images/extended_mind.png)
+![XKCD 903. Légende : "When Wikipedia has a server outage, my apparent IQ drops by 30 points."](/assets/images/extended_mind.png)
 
 [XKCD - The Extend Mind](https://xkcd.com/903/)
 
@@ -37,44 +37,44 @@ Dans un environnement aussi avancé et précaire qu'un sous-marin, l'usage de l'
 
 Il y a d'abord la table de navigation, utilisée avec feutre effaçable, rapporteur et compas. Le navigateur y calcule des modifications de trajectoire pour les proposer au commandant, qui peut voir le résultat directement. Quelques exemples, tirés du Chant du loup et d'autres films.
 
-- [![](/blog/assets/images/vlcsnap-2020-02-08-14h39m35s021-1024x432.png)](https://toutcequibouge.net/toutcequibouge/wp-content/uploads/2020/02/vlcsnap-2020-02-08-14h39m35s021-1024x432.png)
+- [![](/assets/images/vlcsnap-2020-02-08-14h39m35s021-1024x432.png)](https://toutcequibouge.net/toutcequibouge/wp-content/uploads/2020/02/vlcsnap-2020-02-08-14h39m35s021-1024x432.png)
 
-- [![](/blog/assets/images/vlcsnap-2020-02-08-14h09m10s472-1-e1581169488346-1024x427.jpg)](https://toutcequibouge.net/toutcequibouge/wp-content/uploads/2020/02/vlcsnap-2020-02-08-14h09m10s472-1-e1581169488346-1024x427.jpg)
+- [![](/assets/images/vlcsnap-2020-02-08-14h09m10s472-1-e1581169488346-1024x427.jpg)](https://toutcequibouge.net/toutcequibouge/wp-content/uploads/2020/02/vlcsnap-2020-02-08-14h09m10s472-1-e1581169488346-1024x427.jpg)
 
-- [![](/blog/assets/images/EQPVwmDX0Ac83Jy-1024x435.jpg)](https://toutcequibouge.net/toutcequibouge/wp-content/uploads/2020/02/EQPVwmDX0Ac83Jy-1024x435.jpg)
+- [![](/assets/images/EQPVwmDX0Ac83Jy-1024x435.jpg)](https://toutcequibouge.net/toutcequibouge/wp-content/uploads/2020/02/EQPVwmDX0Ac83Jy-1024x435.jpg)
 
-- [![](/blog/assets/images/EQPVwnmXYAASuGE-1024x427.jpg)](https://toutcequibouge.net/toutcequibouge/wp-content/uploads/2020/02/EQPVwnmXYAASuGE-1024x427.jpg)
+- [![](/assets/images/EQPVwnmXYAASuGE-1024x427.jpg)](https://toutcequibouge.net/toutcequibouge/wp-content/uploads/2020/02/EQPVwnmXYAASuGE-1024x427.jpg)
 
 
 Ce genre de réflexion effectuée directement sur papier a été qualifiée "[d'action épistémique](https://onlinelibrary.wiley.com/doi/pdf/10.1207/s15516709cog1804_1)" (PDF) par Kirsch et Maglio, qui ont étudié le comportement de joueurs face à Tetris. Ces actions n'ont pas d'autre but que d'aider à la résolution de problème, par exemple pour vérifier si une pièce va s'adapter aux autres il est plus simple de la pivote à l'écran que dans sa tête.
 
-![](/blog/assets/images/Capture-d’écran-2020-02-08-à-11.25.42.png)
+![](/assets/images/Capture-d’écran-2020-02-08-à-11.25.42.png)
 
 Des zoids tout à fait mignons dessinés à la main en 1994
 
 Admirez aussi le tableau lumineux, les feuillets suspendus et le rouleau de scotch pré-dévidé.
 
-- [![](/blog/assets/images/vlcsnap-2020-02-08-14h18m13s710-1024x435.png)](https://toutcequibouge.net/toutcequibouge/wp-content/uploads/2020/02/vlcsnap-2020-02-08-14h18m13s710-1024x435.png)
+- [![](/assets/images/vlcsnap-2020-02-08-14h18m13s710-1024x435.png)](https://toutcequibouge.net/toutcequibouge/wp-content/uploads/2020/02/vlcsnap-2020-02-08-14h18m13s710-1024x435.png)
 
-- [![](/blog/assets/images/vlcsnap-2020-02-08-14h09m56s011-1-1024x453.png)](https://toutcequibouge.net/toutcequibouge/wp-content/uploads/2020/02/vlcsnap-2020-02-08-14h09m56s011-1-1024x453.png)
+- [![](/assets/images/vlcsnap-2020-02-08-14h09m56s011-1-1024x453.png)](https://toutcequibouge.net/toutcequibouge/wp-content/uploads/2020/02/vlcsnap-2020-02-08-14h09m56s011-1-1024x453.png)
 
 
 Cet usage du papier est aussi documenté dans les cockpits d'avion, [voir ce papier](https://pages.ucsd.edu/~ehutchins/documents/fp146-nomura.pdf) (PDF) écrit par Nomura, Hutchins (encore lui) et Holder.
 
-- ![](/blog/assets/images/Capture-d’écran-2020-02-08-à-10.53.48.png)
+- ![](/assets/images/Capture-d’écran-2020-02-08-à-10.53.48.png)
 
-- ![](/blog/assets/images/Capture-d’écran-2020-02-08-à-10.53.00.png)
+- ![](/assets/images/Capture-d’écran-2020-02-08-à-10.53.00.png)
 
 
 ### Papier... et papier-toilette
 
 Dans À la poursuite d'Octobre rouge, on voit ce qui ressemble fort à un rouleau de papier-toilette à droite de l'écran. Pourquoi ?
 
-![À la poursuite d'Octobre rouge : ordinateur surplombé d'un rouleau de papier toilette pour nettoyer un écran](/blog/assets/images/vlcsnap-2020-02-07-20h41m12s465-1024x435.jpg)
+![À la poursuite d'Octobre rouge : ordinateur surplombé d'un rouleau de papier toilette pour nettoyer un écran](/assets/images/vlcsnap-2020-02-07-20h41m12s465-1024x435.jpg)
 
 Réponse : un analyste utilise un sonar passif, c'est-à-dire pas un sonar classique qui émet des sons pour détecter leur réverbération sur l'environnement. Il écoute, tout simplement. Et il regarde : le spectre sonore ci-dessous représente le temps en ordonnées et la direction en abscisses (parfois il s'agit de la fréquence). A l'époque, pour suivre une trace sonore il devait le faire à la main. Ou plutôt au feutre. D'où le rouleau qui permettait d'essuyer ces marques. [Ma source](https://www.quora.com/In-The-Hunt-for-Red-October-why-is-there-toilet-paper-at-the-USS-Dallas-sonar-station).
 
-![](/blog/assets/images/vlcsnap-2020-02-09-14h50m31s457-1024x576.jpg)
+![](/assets/images/vlcsnap-2020-02-09-14h50m31s457-1024x576.jpg)
 
 ### **Oreille d'or**
 
@@ -86,25 +86,25 @@ L'oreille d'or a le trackball dans une main, le casque sur une seule oreille pen
 >
 > [Source](http://zone.sousmarins.free.fr/nouvelles%20internationales%20des%20sous-marins.htm)
 
-![](/blog/assets/images/vlcsnap-2020-02-08-14h07m47s689-e1581169306219-1024x430.png)
+![](/assets/images/vlcsnap-2020-02-08-14h07m47s689-e1581169306219-1024x430.png)
 
 ### **Système socio-technique**
 
 Voici quelques interfaces montrées dans le film (probablement non-contractuelles). Mais c'est la partie émergée de l'iceberg. D'une certaine manière dans un sous-marin tout est interface entre l'être humain et des fonctions critiques. Tout est pensé pour aider les sous-mariniers à écouter et exécuter des ordres, à marcher, se tenir, ou respirer. Par exemple quand l'atmosphère est compromise, ils peuvent se brancher à intervalle régulier à des arrivées d'air.
 
-- [![](/blog/assets/images/D_dx7AjXoAcTNaU.png)](https://toutcequibouge.net/toutcequibouge/wp-content/uploads/2020/02/D_dx7AjXoAcTNaU.png)
+- [![](/assets/images/D_dx7AjXoAcTNaU.png)](https://toutcequibouge.net/toutcequibouge/wp-content/uploads/2020/02/D_dx7AjXoAcTNaU.png)
 
-- [![](/blog/assets/images/D_dx7ARWkAEjWrd.png)](https://toutcequibouge.net/toutcequibouge/wp-content/uploads/2020/02/D_dx7ARWkAEjWrd.png)
+- [![](/assets/images/D_dx7ARWkAEjWrd.png)](https://toutcequibouge.net/toutcequibouge/wp-content/uploads/2020/02/D_dx7ARWkAEjWrd.png)
 
-- [![](/blog/assets/images/D_dx7BQX4AE4Z7E.png)](https://toutcequibouge.net/toutcequibouge/wp-content/uploads/2020/02/D_dx7BQX4AE4Z7E.png)
+- [![](/assets/images/D_dx7BQX4AE4Z7E.png)](https://toutcequibouge.net/toutcequibouge/wp-content/uploads/2020/02/D_dx7BQX4AE4Z7E.png)
 
-- [![](/blog/assets/images/D_dx92QX4AI5k-d.jpg)](https://toutcequibouge.net/toutcequibouge/wp-content/uploads/2020/02/D_dx92QX4AI5k-d.jpg)
+- [![](/assets/images/D_dx92QX4AI5k-d.jpg)](https://toutcequibouge.net/toutcequibouge/wp-content/uploads/2020/02/D_dx92QX4AI5k-d.jpg)
 
-- [![](/blog/assets/images/D_dx93bXkAAFIMo.png)](https://toutcequibouge.net/toutcequibouge/wp-content/uploads/2020/02/D_dx93bXkAAFIMo.png)
+- [![](/assets/images/D_dx93bXkAAFIMo.png)](https://toutcequibouge.net/toutcequibouge/wp-content/uploads/2020/02/D_dx93bXkAAFIMo.png)
 
-- [![](/blog/assets/images/D_dy0NxXYAIXkt8.png)](https://toutcequibouge.net/toutcequibouge/wp-content/uploads/2020/02/D_dy0NxXYAIXkt8.png)
+- [![](/assets/images/D_dy0NxXYAIXkt8.png)](https://toutcequibouge.net/toutcequibouge/wp-content/uploads/2020/02/D_dy0NxXYAIXkt8.png)
 
-- [![](/blog/assets/images/vlcsnap-2020-02-09-14h49m19s615-e1583282965609-1024x458.jpg)](https://toutcequibouge.net/toutcequibouge/wp-content/uploads/2020/02/vlcsnap-2020-02-09-14h49m19s615-e1583282965609.jpg)
+- [![](/assets/images/vlcsnap-2020-02-09-14h49m19s615-e1583282965609-1024x458.jpg)](https://toutcequibouge.net/toutcequibouge/wp-content/uploads/2020/02/vlcsnap-2020-02-09-14h49m19s615-e1583282965609.jpg)
 
 
 Dans cet écosystème entièrement artificiel, tout a été conçu. L'équipage aussi : comment s'organiser, qui doit faire quoi à quel moment, le language codifié, tout a été réfléchi. Plutôt que l'histoire d'un humain réduit à un rouage dans la machine, le film nous montre un monde où l'opposition entre humain et système n'a pas de sens.
@@ -121,6 +121,6 @@ https://twitter.com/JivTurky/status/1125057398874484738
 
 Un reportage de Libération : [Vingt-quatre heures dans un sous-marin](https://www.liberation.fr/apps/2018/10/vingt-quatre-heures-dans-un-sous-marin/)
 
-![Panneau de contrôle à bord du sous-marin Casabianca](/blog/assets/images/crop-0-0-1500-1000-0-monge-myop-casabianca-7-1539854297.jpg)
+![Panneau de contrôle à bord du sous-marin Casabianca](/assets/images/crop-0-0-1500-1000-0-monge-myop-casabianca-7-1539854297.jpg)
 
 Photo : Olivier Monge pour [Libération](https://www.liberation.fr/apps/2018/10/vingt-quatre-heures-dans-un-sous-marin/), à bord du sous marin nucléaire Casabianca à quai à Toulon. Toulon, le 9 aout 2018

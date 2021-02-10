@@ -8,7 +8,7 @@ tags:
 coverImage: "Capture-d’écran-2020-02-22-à-21.56.15-e1582420058368.png"
 ---
 
-![Clavier auxiliaire utilisé par Tesler pour tester la fonction de couper-coller, avec des étiquettes notées "cut" et "paste".](/blog/assets/images/Capture-d’écran-2020-02-22-à-21.56.15-e1582420058368-1024x882.png)
+![Clavier auxiliaire utilisé par Tesler pour tester la fonction de couper-coller, avec des étiquettes notées "cut" et "paste".](/assets/images/Capture-d’écran-2020-02-22-à-21.56.15-e1582420058368-1024x882.png)
 
 Clavier auxiliaire utilisé par Tesler pour tester la fonction de couper-coller, avec des étiquettes notées "cut" et "paste".
 
@@ -32,7 +32,7 @@ NLS, le système d'Engelbart était plus avancé et utilisait une souris comme p
 
 Larry Tesler (avec Peter Deutsch) inventa alors le curseur placé entre les caractères que l'on connait aujourd'hui.
 
-![curseur en poutre en I](/blog/assets/images/2020-02-23_00h54_25.png)
+![curseur en poutre en I](/assets/images/2020-02-23_00h54_25.png)
 
 #### 2\. **Le remplacement des modes par le presse-papier et les menus**
 
@@ -42,7 +42,7 @@ Les éditeurs de texte étaient massivement modaux, c'est-à-dire qu'il y avait 
 
 C'est aussi l'héritage d'une époque où [les éditeurs de texte](https://en.wikipedia.org/wiki/Line_editor) étaient conçus pour un télétype (c'est-à-dire concrètement une imprimante), pas pour un écran. On désignait une ligne, on faisait une modification et on imprimait le résultat en croisant les doigts pour ne avoir fait d'erreur. Dans un contexte aussi peu interactif, des modes étaient nécessaires.
 
-![Les créateurs d'Unix utilisant un PDP-11 avec un terminal télétype](/blog/assets/images/ken-and-den-1024x777.jpg)
+![Les créateurs d'Unix utilisant un PDP-11 avec un terminal télétype](/assets/images/ken-and-den-1024x777.jpg)
 
 Les créateurs d'Unix devant un PDP-11
 
@@ -58,7 +58,7 @@ Inspiré par Pentti Kanerva, Tesler abolit ces modes en inversant le modèle d'i
 
 La complexité a été ainsi déplacée des modes au presse-papier : celui-ci stocke de l'information sans l'afficher à l'utilisateur, ce qui occasionne parfois des surprises. Mais globalement, copier et coller étant souvent concomitants, on a beaucoup gagné au change.
 
-![Capture d'écran de Mac OS 9, avec un éditeur de texte ouvert dans lequel il est écrit "Larry Tesler 1945-2020")](/blog/assets/images/Capture-d’écran-2020-02-22-à-18.53.08-1024x691.png)
+![Capture d'écran de Mac OS 9, avec un éditeur de texte ouvert dans lequel il est écrit "Larry Tesler 1945-2020")](/assets/images/Capture-d’écran-2020-02-22-à-18.53.08-1024x691.png)
 
 Réalisé avec cet [émulateur](https://jamesfriend.com.au/pce-js/)
 
@@ -74,7 +74,7 @@ Quelle approche a suivi Tesler pour faire tout ça ?
 
 Malgré ses fortes convictions (qui allaient jusqu'à avoir une plaque d'immatriculation anti-modale), Tesler n'a jamais succombé à l'illusion de connaitre les utilisateurs et a donc très tôt mené des tests.
 
-![](/blog/assets/images/2020-02-23_01h20_55-1024x533.jpg)
+![](/assets/images/2020-02-23_01h20_55-1024x533.jpg)
 
 > My observations of secretaries learning to use the text editors of that era soon convinced me that my beloved computers were, in fact, unfriendly monsters, and that their sharpest fangs were the ever-present modes. The most common question asked by new users, at least as often as "How do I do this?," was "How do I get out of this mode?"
 >
@@ -90,7 +90,7 @@ Malgré ses fortes convictions (qui allaient jusqu'à avoir une plaque d'immatri
 
 Ce qui m'impressionne, c'est sa capacité très tôt dans sa carrière à argumenter et théoriser ses choix. Dès 1981, son [disours contre les modes](https://carlstrom.com/stanford/cs242/WWW/readings/Smalltalk-Byte.htm) est solide et construit. En 2010 il réalise ce schéma pour montrer qu'il faut moins d'étapes pour corriger une erreur avec une interface amodale. Voir ces enjeux nécessitait de s'abstraire du fonctionnel et de modéliser des interactions. Cela va plus loin que compter le nombre de clics et relève de la sémantique : les opérations de l'utilisateur sont composées de verbes et de noms, l'ordre nom-verbe est-il supérieur à l'ordre inverse, pourtant plus proche de l'anglais ? Les tests lui ont montré que oui.
 
-![](/blog/assets/images/2020-02-23_01h43_56.png)
+![](/assets/images/2020-02-23_01h43_56.png)
 
 [A Personal History of Modeless Text Editing](http://worrydream.com/refs/Tesler%20-%20A%20Personal%20History%20of%20Modeless%20Text%20Editing%20and%20Cut-Copy-Paste.pdf)
 
@@ -100,7 +100,7 @@ L'opposition de Tesler à Engelbart fut parfois frontale et révèle une différ
 
 Engelbart développait un système ambitieux et complet pour inventer de nouvelles manières de travailler collaborativement et même de raisonner. Plusieurs ordinateurs étaient connectés entre eux et équipés d'un clavier, d'une souris à trois boutons et d'un [clavier-accord](https://en.wikipedia.org/wiki/Chord_keyset). Ce dernier, à gauche sur la photo, résume bien la complexité de l'ensemble, puisque chaque combinaison de touches exécutait une action différente.
 
-![Douglas Engelbart démontrant son système ](/blog/assets/images/motd_ui.jpg)
+![Douglas Engelbart démontrant son système ](/assets/images/motd_ui.jpg)
 
 [Douglas Engelbart démontrant son système](https://en.wikipedia.org/wiki/The_Mother_of_All_Demos)
 
@@ -134,7 +134,7 @@ Computer History Museum, [Oral History of Lawrence G. “Larry” Tesler](https:
 
 [Une démonstration par Tesler de son éditeur de texte phare](https://www.youtube.com/watch?v=Dhmz68CII9Y)
 
-![Larry Tesler face à un Xerox Alto](/blog/assets/images/maxresdefault1-1024x576.jpg)
+![Larry Tesler face à un Xerox Alto](/assets/images/maxresdefault1-1024x576.jpg)
 
 ### Post-scriptum : où l'on retrouve Don Norman
 
