@@ -3,6 +3,7 @@ title: "Ornementations"
 date: "2013-01-21"
 tags:
   - "travaux"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
 ---
 
 Quelques tentatives pour dessiner des ornementations servant à séparer des sections de texte, et qui changent des arabesques classiques de ce [genre](http://www.fontsquirrel.com/fonts/Nymphette).

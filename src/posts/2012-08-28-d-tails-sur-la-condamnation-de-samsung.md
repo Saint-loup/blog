@@ -1,9 +1,10 @@
 ---
 title: "Détails sur la condamnation de Samsung"
 date: "2012-08-28"
-tags: 
+tags:
   - "droit"
   - "politique"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
 ---
 
 Avertissement habituel : [je ne suis pas juriste](http://en.wikipedia.org/wiki/IANAL).

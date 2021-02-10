@@ -13,7 +13,7 @@ const transforms = require('./utils/transforms.js')
 //const svgsprite = require('./utils/svgsprite')
 const yaml = require("js-yaml");
 const pageAssetsPlugin = require('eleventy-plugin-page-assets');
-
+const moment = require("moment");
 const implicitFigures = require('markdown-it-implicit-figures');
 
 module.exports = function (eleventyConfig) {
@@ -228,6 +228,13 @@ module.exports = function (eleventyConfig) {
 		eleventyConfig.setLibrary("md", markdownLib);
 
 	*/
+
+
+	eleventyConfig.addFilter("dateToPermalink", function (date) {
+		return moment(date).format("YYYY/MM");
+	});
+
+
 
 
 	return {

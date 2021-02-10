@@ -4,6 +4,7 @@ date: "2014-03-30"
 tags:
   - "objets"
   - "veille"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
 ---
 
 ![Noodles coolers](/assets/images/noodleCooler.png)

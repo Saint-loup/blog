@@ -4,6 +4,7 @@ date: "2016-02-14"
 tags:
   - "histoire"
   - "objets"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
 ---
 []: # (wide-img)
 

@@ -2,6 +2,7 @@
 draft: true
 title: "Importer facilement du vrai contenu dans Sketch"
 date: ""
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
 ---
 
 Note : les commandes citées peuvent être exécutées ainsi : utiliser le raccourci `⌘+⇧+/`, taper le début du nom de la commande puis appuyer sur Entrée.

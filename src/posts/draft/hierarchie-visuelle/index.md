@@ -2,6 +2,7 @@
 draft: true
 title: "Au-delà de la hiérarchie visuelle du livre"
 date: ""
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
 ---
 
 ![](images/sens-de-lecture-01.png)

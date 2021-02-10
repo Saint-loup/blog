@@ -3,6 +3,7 @@ title: "Gravir les échelles du design"
 date: "2016-04-26"
 tags:
   - "place-du-concepteur"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
 ---
 
 ### Petite mission et pied dans la porte

@@ -1,10 +1,11 @@
 ---
 title: "Methodes Agile et conception d'objets"
 date: "2012-11-01"
-tags: 
+tags:
   - "agile"
   - "conception"
   - "reflexions"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
 ---
 
 [Un article intéressant d’Internet Actu](http://www.internetactu.net/2012/10/31/methodes-agiles-la-conception-logicielle-appliquee-au-monde-physique/) sur l’application des méthodes Agile au génie industriel. Quelques remarques :

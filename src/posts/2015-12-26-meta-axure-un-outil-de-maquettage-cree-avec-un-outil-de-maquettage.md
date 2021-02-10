@@ -5,6 +5,7 @@ date: "2015-12-26"
 tags:
   - "travaux"
   - "prototypage"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
 ---
 
 Vous voyez les gens qui recréent un ordinateur dans Minecraft ? Si vous ne voyez pas, voici [une intro](http://minecraft.gamepedia.com/Tutorials/Redstone_computers) et [un exemple en vidéo ici](https://www.youtube.com/watch?v=aQqWorbrAaY).

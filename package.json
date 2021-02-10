@@ -45,6 +45,7 @@
   },
   "dependencies": {
     "js-yaml": "^3.14.0",
-    "markdown-it-implicit-figures": "^0.10.0"
+    "markdown-it-implicit-figures": "^0.10.0",
+    "moment": "^2.29.1"
   }
 }

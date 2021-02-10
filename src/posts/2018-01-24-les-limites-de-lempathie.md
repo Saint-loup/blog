@@ -1,9 +1,10 @@
 ---
 title: "Les limites de l'empathie"
 date: "2018-01-24"
-tags: 
+tags:
   - "recherche"
   - "sciences-cognitives"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
 ---
 
 L'empathie c'est bien mais ce n'est pas une panacée. On essaye de se mettre à la place de l'autre mais on y trouve surtout ce qu'il y a de plus de similaire àsoi, de plus émotionnellement facile. Et tout ça quel but exactement ?

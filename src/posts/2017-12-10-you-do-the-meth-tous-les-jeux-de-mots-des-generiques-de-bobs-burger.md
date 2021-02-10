@@ -4,6 +4,7 @@ date: "2017-12-10"
 draft: true
 tags:
   - "travaux"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
 ---
 
 ![](/assets/images/Bobs-Burgers-S07E17-Zero-Larp-Thirty.-1024x581.png)

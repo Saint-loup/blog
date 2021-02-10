@@ -3,6 +3,7 @@ title: "Un prototype en plein écran et sur deux moniteurs"
 date: "2016-02-18"
 tags:
   - "prototypage"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
 ---
 
 Dans les systèmes d'information permettant de suivre une situation complexe et changeante (systèmes de contrôle, de régulation, de communication, etc.), un opérateur doit consulter beaucoup d'informations à la fois. Pour ça, il a souvent plusieurs écrans et une même application peut utiliser deux écrans. Par exemple, j'ai travaillé récemment sur un système où l'écran principal était occupé par un tableau de bord et l'écran secondaire par un outil cartographique. Le tableau de bord permettait d'accéder à d'autres vues (popups, onglets, etc.). Il y avait également des influences possibles d'un écran à l'autre, par exemple sélectionner un élément dans le tableau de bord permet de le localiser sur la carte.

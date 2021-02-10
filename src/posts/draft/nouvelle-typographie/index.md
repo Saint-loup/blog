@@ -2,6 +2,7 @@
 draft: true
 title: "nouvelles possibilités en typographie sur le net"
 date: ""
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
 ---
 widow et orphans > https://www.smashingmagazine.com/2019/02/css-fragmentation/
 https://www.creativejuiz.fr/blog/css-css3/controles-fin-des-cesures-css4-text

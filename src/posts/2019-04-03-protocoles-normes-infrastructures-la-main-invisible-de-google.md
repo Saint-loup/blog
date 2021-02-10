@@ -5,6 +5,7 @@ tags:
   - "politique"
   - "systemes-complexes"
 coverImage: "2019-04-02_22h11_15.png"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
 ---
 
 Plusieurs journalistes ont raconté leurs périples pour se passer des géants américains du numérique (chez [Motherboard](https://motherboard.vice.com/en_us/article/ev3qw7/how-to-quit-apple-microsoft-google-facebook-amazon), chez [Gizmodo](https://gizmodo.com/i-cut-the-big-five-tech-giants-from-my-life-it-was-hel-1831304194)). Conclusion : c'est compliqué, tant ils sont omniprésents. Par exemple, Amazon (via AWS) c'est un tiers de l'infonuagique.

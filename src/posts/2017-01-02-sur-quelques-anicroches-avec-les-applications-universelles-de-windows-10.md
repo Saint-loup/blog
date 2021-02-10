@@ -4,6 +4,7 @@ date: "2017-01-02"
 tags:
   - "critique"
   - "windows"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
 ---
 
 ![illus écosystème apps](/assets/images/groove-music-1024x410.jpg)

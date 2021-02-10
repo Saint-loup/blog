@@ -1,9 +1,10 @@
 ---
 title: "\"The Oculus Rift is the first visual medium that doesn’t have a frame around it\""
 date: "2014-04-01"
-tags: 
+tags:
   - "veille"
   - "vr"
+permalink: "{{ page.date | dateToPermalink }}/{{ title | slug }}/"
 ---
 
 En avril 2012, Palmer Luckey, 19 ans à l'époque, [postait](http://www.mtbs3d.com/phpBB/viewtopic.php?f=120&t=14777) sur un forum de passionnés pour annoncer qu'il faisait de grands progrès sur un casque de réalité virtuelle, Oculus Rift, et qu'il espérait bientôt le lancer sur Kickstarter. Un mois après, Carmack se faisait prêter un casque, y adaptait Doom 3 et en faisait [la démo](http://www.theverge.com/2012/5/30/3052191/doom-3-bfg-edition-announced-for-the-fall-we-try-it-with-john) auprès de journalistes. Une entreprise est créée peu après et des vétérans de l'industrie la rejoignent pour lui donner une portée grand public. Deux ans après, Oculus VR est rachetée par Facebook et embauche John Carmack et Michael Abrash. Sacré parcours.
@@ -21,7 +22,7 @@ Il évoque également les dilemmes des dirigeants autour de l'identité de la co
 Ensuite, des [slides détaillés](http://media.steampowered.com/apps/abrashblog/Abrash%20Dev%20Days%202014.pdf) d'Abrash sur les défis techniques et cognitifs de la réalité virtuelle :
 
 > All of the followings are needed :
-> 
+>
 > - A wide field of view
 > - Adequate resolution
 > - Low pixel persistence
