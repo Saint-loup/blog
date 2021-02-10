@@ -13,6 +13,6 @@ Le bidule est pensé pour une utilisation sur petit écran et une saisie au pouc
 
 Avertissement : on parle d'un truc optimisé pour la main mais codé avec les pieds. Donc pas de support de Safari <9 ni d'Internet Explorer (et temporairement de Firefox sur Android, grrr). et un code d'une qualité très relative.
 
-[C'est ici](http://toutcequibouge.net/Divers/TR/index.html).
+[C'est ici](http://misc.toutcequibouge.net/TR/index.html).
 
-[![Screenshot_2016-01-03-00-05-00](/assets/images/Screenshot_2016-01-03-00-05-00-e1451777220269.png)](http://toutcequibouge.net/Divers/TR/index.html)
+[![Screenshot_2016-01-03-00-05-00](/assets/images/Screenshot_2016-01-03-00-05-00-e1451777220269.png)](http://misc.toutcequibouge.net/TR/index.html)
