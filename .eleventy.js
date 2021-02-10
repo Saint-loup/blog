@@ -226,12 +226,12 @@ module.exports = function (eleventyConfig) {
 		}
 		let markdownLib = markdownIt(options).use(implicitFigures);
 		eleventyConfig.setLibrary("md", markdownLib);
-	
+
 	*/
 
 
 	return {
-		pathPrefix: "/blog/",
+		//pathPrefix: "/blog/",
 
 		dir: {
 			input: 'src',
