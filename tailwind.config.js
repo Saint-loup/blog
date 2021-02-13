@@ -16,6 +16,16 @@ module.exports = {
 	},
 	theme: {
 		extend: {
+			typography: {
+				DEFAULT: {
+					css: {
+						blockquote: {
+							fontWeight: 'normal',
+
+						},
+					},
+				},
+			},
 			opacity: (theme) => ({
 				5: '.05',
 				10: '.1',
@@ -37,5 +47,8 @@ module.exports = {
 		},
 	},
 	variants: {},
-	plugins: [require('@tailwindcss/custom-forms')],
+	plugins: [
+		require('@tailwindcss/custom-forms'),
+		require('@tailwindcss/typography'),]
+	,
 }
