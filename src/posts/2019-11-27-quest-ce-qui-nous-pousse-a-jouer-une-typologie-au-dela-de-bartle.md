@@ -58,24 +58,6 @@ Les douze motivations :
 - Découverte
 
 
-Destruction
-Excitation
-
-Compétition
-Communauté
-
-Défi
-Stratégie
-
-Complétion
-Pouvoir
-
-Imaginaire (fantasy)
-Story
-
-Apparence
-Découverte
-
 Il s'agit de clusters statistiques qu'on peut plus ou moins agréger suivant la finesse souhaitée. Ils peuvent être couplés : compétition et communauté sont rattachés à un critère "social". On peut même plus aller loin et identifier trois tendances : action-sociabilité, maitrise-réussite, immersion-créativité. Mais ce sont des familles d'affinités très larges, rien de plus.
 
 ![positionnement flou d'attributs dans un graphe](/assets/images/image.png)
