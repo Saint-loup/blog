@@ -1,6 +1,6 @@
 ---
 - name: Méta Axure
-  link: "http://misc.toutcequibouge.net/meta%20axure/home.html"
+  link: /2015/12/meta-axure-un-outil-de-maquettage-cree-avec-un-outil-de-maquettage/
   img: assets/images/home/axure.png
   description: Une expérimentation pour maquetter… dans une maquette.
 - name: Bot invisible
@@ -8,11 +8,11 @@
   img:
   description: Le seul bot appeliste de la planète.
 - name: Calculateur de ticket resto
-  link: 'https://toutcequibouge.net/2016/05/lecons-ergonomiques-et-techniques-dun-projet-perso/'
+  link: /2016/05/lecons-ergonomiques-et-techniques-dun-projet-perso/
   img:
   description: Un test de clavier mobile dédié pour aider au calcul des tickets resto.
 - name: Archive d'animations flash
-  link: 'https://toutcequibouge.net/2016/05/lecons-ergonomiques-et-techniques-dun-projet-perso/'
+  link: 2016/05/lecons-ergonomiques-et-techniques-dun-projet-perso/'
   img:
   description: Quelques animations Flash classiques, en voie de disparition et archivées ici.
 - name: Data from clipboard
@@ -24,7 +24,7 @@
   img: assets/images/home/typo.png
   description: Répandez du bonheur et des espaces insécables autour de vous.
 - name: Table basse
-  link: 2020/12/18/jai-fait-un-truc/
+  link: 2020/12/jai-fait-un-truc/
   img:
   description: Ma vie culturelle en mosaïque.
 - name: Timer
