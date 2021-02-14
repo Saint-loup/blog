@@ -10,10 +10,10 @@ eleventyNavigation: # Required if want to display in Main Nav Bar
 
 ---
 
-<div class="{{ structure.g_pageWidth }}">
-  <h1>page en construction.</h1>
+<div class="{{ structure.g_pageWidth }}   ">
+  <h1>Site en construction.</h1>
 
-  <img style="margin:auto;widht:40vmax;" src="/assets/images/construction.gif"></img>
+  <img style="margin:auto;width:30vmax;" src="/assets/images/construction.gif"></img>
 
 
 
@@ -25,8 +25,8 @@ eleventyNavigation: # Required if want to display in Main Nav Bar
 <h2>Projets, essais et autres bidouilles</h2>
 <ul class="project-list " >
         {% for project in projects | reverse %}
-          <li class="project list-none my-4">
-              <div class="name text-base"><a href="{{project.link}}">{{project.name}}</a></div>
+          <li class="my-4 list-none project">
+              <div class="text-base name"><a href="{{project.link}}">{{project.name}}</a></div>
               {#<img class="picture" src="{{project.img}}"></img>#}
               <div class="description">{{project.description}}</div>
             </li>
@@ -36,8 +36,8 @@ eleventyNavigation: # Required if want to display in Main Nav Bar
 <h2>Moi, ailleurs</h2>
 <ul class="ailleurs-list " >
         {% for item in ailleurs  %}
-          <li class="ailleurs list-none my-4">
-              <div class="name text-base"><a href="{{item.link}}">{{item.name}}</a></div>
+          <li class="my-4 list-none ailleurs">
+              <div class="text-base name"><a href="{{item.link}}">{{item.name}}</a></div>
               {#<img class="picture" src="{{item.img}}"></img>#}
               <div class="description">{{item.description}}</div>
             </li>

@@ -9,7 +9,7 @@ module.exports = {
 	 * at all screen sizes.
 	 */
 	g_proseWidth: 'max-w-screen-xl px-8 lg:max-w-prose m-auto',
-	g_pageWidth: "	g_pageWidth: 'max-w-screen-xl px-8 md:px-16 lg:px-32",
+	g_pageWidth: " prose prose-xl m-auto",
 
 	/**
 	 * Globally disable display of Tag pills/links
