@@ -1,7 +1,8 @@
 {% set navPages = collections.pages | eleventyNavigation %}
-<nav x-data="{ open: false }" class="{{ colors.navCustom.barBg or colors.navDefault.barBg }} relative">
-  <div class="px-8 md:px-16 lg:px-32">
-    <div class="flex justify-between h-20">
+<nav x-data="{ open: false }" class="{{ colors.navCustom.barBg or colors.navDefault.barBg }}">
+  <div class=" navbar">
+    <div class="relative flex justify-between h-20">
+  <div class="decor-dark"></div>
 
 
       <div class="flex flex-row">
@@ -10,7 +11,7 @@
           <path d="M61.6024 30.519C61.589 33.4206 60.0722 36.341 57.5222 39.1802C54.9854 42.0047 51.5638 44.5929 48.0739 46.8019C44.5945 49.0041 41.1073 50.792 38.4841 52.031C37.1744 52.6496 36.0844 53.1293 35.3242 53.4534C35.0794 53.5578 34.8688 53.646 34.6963 53.7174C34.5245 53.646 34.3148 53.5578 34.0708 53.4534C33.3137 53.1293 32.2281 52.6496 30.9241 52.031C28.3122 50.792 24.8415 49.0041 21.3823 46.8019C17.9127 44.5929 14.5149 42.0047 12.0041 39.1802C9.48026 36.341 7.99025 33.4206 8.00359 30.519C8.01692 27.6175 9.53379 24.697 12.0837 21.8578C14.6205 19.0333 18.0421 16.4451 21.532 14.2362C25.0114 12.0339 28.4986 10.246 31.1218 9.00708C32.4316 8.38847 33.5215 7.90878 34.2817 7.58467C34.5266 7.48027 34.7371 7.39206 34.9096 7.3206C35.0815 7.39206 35.2912 7.48027 35.5351 7.58467C36.2923 7.90878 37.3778 8.38847 38.6819 9.00708C41.2937 10.246 44.7645 12.0339 48.2236 14.2362C51.6932 16.4451 55.091 19.0333 57.6019 21.8578C60.1257 24.697 61.6157 27.6175 61.6024 30.519Z" fill="#A72116" stroke="#0D4362" stroke-width="3" stroke-miterlimit="10"/>
           </svg>
 
-          <h1 class=" ml-8 flex font-medium content-center shadow-lg text-2xl sm:text-3lg lg:text-4xl {{colors.navCustom.text}}" >
+          <h1 class=" ml-8 flex font-medium content-center text-shadow-lg-dark text-2xl sm:text-3lg lg:text-4xl {{colors.navCustom.text}}" >
             <a class="m-auto" href= "{{ '/' |  url}}">{{ meta.siteName or title }} </a>
           </h1>
         </div>
@@ -19,7 +20,7 @@
           {# 11ty Nav Plugin loop  #}
           {% for entry in navPages %}
             <a {% if page.url != entry.url %}href="{{ entry.url | url }}"{% endif %} alt="Link to {{ entry.title }}"
-            class=" shadow px-3 py-2 text-xl font-medium items-center
+            class=" text-shadow px-3 py-2 text-xl font-medium items-center
             {% if page.url == entry.url %} {{ colors.navCustom.textActiveBg or colors.navDefault.textActiveBg }} {{ colors.navCustom.textActive or colors.navDefault.textActive }}
             {% else %} {{ colors.navCustom.text or colors.navDefault.text }} hover:{{ colors.navCustom.textHover or colors.navDefault.textHover }} {% endif %} focus:outline-none focus:{{ colors.navCustom.textFocus or colors.navDefault.textFocus }} transition duration-150 ease-in-out">
               {{ entry.title }}
