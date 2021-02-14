@@ -8,7 +8,8 @@ module.exports = {
 	 * across the entire site so there is consistency on margins, padding, max width
 	 * at all screen sizes.
 	 */
-	g_pageWidth: 'max-w-screen-xl px-8 lg:max-w-prose m-auto',
+	g_proseWidth: 'max-w-screen-xl px-8 lg:max-w-prose m-auto',
+	g_pageWidth: "	g_pageWidth: 'max-w-screen-xl px-8 md:px-16 lg:px-32",
 
 	/**
 	 * Globally disable display of Tag pills/links

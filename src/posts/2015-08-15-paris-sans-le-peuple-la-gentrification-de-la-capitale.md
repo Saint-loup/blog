@@ -1,6 +1,7 @@
 ---
 title: "Paris sans le peuple – La gentrification de la capitale"
 date: "2015-08-15"
+draft: true
 tags:
   - "notes-de-lecture"
   - "politique"

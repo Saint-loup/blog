@@ -7,11 +7,11 @@ coverImage: "Screenshot_2020-12-19-table-basse1-scaled.jpg"
 permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
-* * *
 
-**[C'est ici](http://table-basse.toutcequibouge.net/)**
 
-* * *
+[C'est ici](http://table-basse.toutcequibouge.net/){.cta}
+
+
 
 ![](/assets/images/image.jpg)
 
