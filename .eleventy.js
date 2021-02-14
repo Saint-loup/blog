@@ -150,21 +150,14 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy('src/assets/svg/')
 	eleventyConfig.addPassthroughCopy('src/assets/video/')
 
-	/**
-	 * Set custom markdown library instance...
-	 * and support for Emojis in markdown...
-	 * ...because why not control our .MD files and have Emojis built in?
-	 * @link https://www.11ty.dev/docs/languages/markdown/#optional-set-your-own-library-instance
-	 * @link https://www.npmjs.com/package/markdown-it-emoji
-	 *
-	 */
+
 	let options = {
 		html: true,
 		breaks: true,
 		linkify: true,
 		typographer: true,
 	}
-	let markdownLib = markdownIt(options).use(markdownItEmoji)
+	let markdownLib = markdownIt(options)
 	eleventyConfig.setLibrary('md', markdownLib)
 
 	/**
