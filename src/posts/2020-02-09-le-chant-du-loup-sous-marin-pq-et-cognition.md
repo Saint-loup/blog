@@ -11,7 +11,7 @@ hero: split  # options: carousel, graphic, video, split (text & image)
 heroSettings:
   height:
     mobile: # options = h-1/1 (default = full screen), h-1/2, h-1/3, h-3/4, h-9/10, h-48 (12rem, 192px), h-56 (14rem, 224px), h-64 (16rem, 256px)
-    desktop: h-3/4 # leave blank to inherit "mobile" height (default = full screen)
+    desktop: # leave blank to inherit "mobile" height (default = full screen)
   bg:
     color: bg-dark # default bg-black
     image: le-chant-du-loup-e1581375123572.jpg # relative to /assets/images/

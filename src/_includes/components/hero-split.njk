@@ -1,17 +1,19 @@
-<main class=" flex flex-col lg:flex-row hero-split
-{{ heroSettings.bg.color or 'bg-black' }} {{ heroSettings.height.mobile or 'h-1/1' }} sm:{{ heroSettings.height.desktop or heroSettings.height.mobile or 'h-1/1' }}">
+{#{{ heroSettings.height.mobile or 'h-1/2' }} sm:{{ heroSettings.height.desktop or heroSettings.height.mobile or 'h-1/2' }}#}
+<main class="relative flex flex-col h-auto mb-8 lg:flex-row hero-split lg:mb-18">
+    <div class=" decor-dark h-2/3"></div>
+
   <div
-        class="flex content-center justify-center w-1/2 mx-auto prose text-center prose-l max-w-7xl lg:text-left place-content-center"
+        class="flex content-center pt-8 mx-auto prose text-center lg:justify-between lg:w-1/2 prose-l lg:text-left place-content-center"
       >
-    <div class="flex content-center justify-center w-11/12 align-middle text-gray-50 place-content-center">
+    <div class="flex content-center w-11/12 align-middle lg:justify-between text-gray-50 place-content-center">
 
       <h1
-            class=" shadow-lg self-center text-5xl font-semibold leading-10 tracking-tight {{ heroSettings.headingTextColor or 'text-white' }} sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl"
+            class=" text-shadow-lg-dark self-center text-5xl font-semibold leading-10 tracking-tight {{ heroSettings.headingTextColor or 'text-white' }} sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl"
           >
         {{ title | safe }}
       </h1>
       <p
-            class="shadow-lg max-w-md mx-auto mt-3 text-lg {{ heroSettings.subheadingTextColor }} sm:text-xl md:mt-5 md:max-w-3xl"
+            class="text-shadow max-w-md mx-auto mt-3 text-lg {{ heroSettings.subheadingTextColor }} sm:text-xl md:mt-5 md:max-w-3xl"
           >
         {{ heroSettings.subheadingText | safe }}
 
@@ -26,10 +28,10 @@
     </div>
   </div>
   <div
-        class="flex lg:w-1/2 h-1/2 lg:h-full"
+        class="flex justify-center h-auto mx-auto lg:mt-16 lg:w-1/2 img-wrapper""
       >
     <img
-          class="w-auto h-auto"
+          class="shadow-lg-dark"
           src="/assets/images/{{ heroSettings.bg.image }}"
           alt="Hero Image"
 />

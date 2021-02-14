@@ -43,20 +43,57 @@ pre code {
 	@apply bg-transparent border-0 rounded-none;
 }
 
+
+
+
+
 .article .cta {
    @apply block px-8 py-4 m-auto font-semibold no-underline bg-gray-200 rounded-full shadow-md max-w-max focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-75 hover:text-gray-800 hover:bg-gray-300 ;
 
 }
 
-@media screen and (min-width:800px){
-.hero-split img {
-max-width: 95%;
-max-height: 90%;
-height: max-content;
-width: max-content;
-margin: auto auto auto 0;
+@media screen and (max-width:1024px){
+	.hero-split img {
+		width: auto;
+		height: inherit;
+		max-height: 50vmax;
+	}
 }
+
+/*@media screen and (min-width:768){
+	.hero-split img {
+		width: auto;
+		height: inherit;
+		max-height: 15vmin;
+	}
+}*/
+
+@media screen and (min-width:1024px){
+	.hero-split img {
+		width: auto;
+/*		height: inherit;
+*/max-height: 60vmax;	}
 }
+
+.decor-dark {
+position: absolute;
+@apply bg-dark;
+width: 100vw;
+height: inherit;
+z-index: -1;
+overflow: hidden;
+margin-left: calc(50% - 50vw);
+margin-right: calc(50% - 50vw);
+
+}
+
+
+
+/*.hero-split > div {
+position: relative;
+top: -5rem;
+}*/
+
 @tailwind components;
 
 @tailwind utilities;

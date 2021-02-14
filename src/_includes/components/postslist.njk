@@ -15,11 +15,13 @@
             </div>
 
             {# Post Title  #}
+                          <H2 class="text-l font-semibold leading-7 {{ colors.headingsCustom or colors.headingsDefault }}">
+
             <a href="{{ post.url | url }}" class="block hover:underline">
-              <h3 class="text-xl font-semibold leading-7 {{ colors.headingsCustom or colors.headingsDefault }}">
                 {{ post.data.title }}
-              </h3>
             </a>
+                          </H2>
+
 
             {# Display Post Excerpt if set 'true' in /src/_data/structure.js:g_showExcerpt  #}
             {% if structure.g_showExcerpt %}

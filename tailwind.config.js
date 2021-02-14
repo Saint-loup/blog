@@ -36,6 +36,13 @@ module.exports = {
 		},
 
 		extend: {
+			textShadow: {
+				"lg-dark": "3px 3px 6px rgb(0 0 0 / 46%), 0 0 5px rgb(15 3 86 / 42%)"
+			},
+			boxShadow: {
+				"lg-dark":
+					"    0 1.3px 1.9px rgba(0, 0, 0, 0.1),  0 3.3px 4.9px rgba(0, 0, 0, 0.133),  0 6.7px 9.9px rgba(0, 0, 0, 0.167),  0 13.9px 20.4px rgba(0, 0, 0, 0.207),  0 38px 56px rgba(0, 0, 0, 0.2);"
+			},
 			colors: {
 				dark: "#093249"
 
@@ -76,6 +83,8 @@ module.exports = {
 	variants: {},
 	plugins: [
 		require('@tailwindcss/custom-forms'),
-		require('@tailwindcss/typography'),]
+		require('@tailwindcss/typography'),
+		require('tailwindcss-textshadow')
+	]
 	,
 }
