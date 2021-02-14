@@ -3,7 +3,6 @@ const pluginRss = require('@11ty/eleventy-plugin-rss')
 const pluginNavigation = require('@11ty/eleventy-navigation')
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const markdownIt = require('markdown-it')
-const markdownItEmoji = require('markdown-it-emoji')
 
 // const collections = require('./utils/collections.js')
 const filters = require('./utils/filters.js')
