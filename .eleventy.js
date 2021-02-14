@@ -15,7 +15,7 @@ const yaml = require("js-yaml");
 const pageAssetsPlugin = require('eleventy-plugin-page-assets');
 const moment = require("moment");
 const implicitFigures = require('markdown-it-implicit-figures');
-
+const CleanCSS = require("clean-css");
 module.exports = function (eleventyConfig) {
 
 	eleventyConfig.addDataExtension("yaml", contents => yaml.safeLoad(contents));
@@ -321,7 +321,9 @@ module.exports = function (eleventyConfig) {
 		md.render(markdownString)
 	);
 
-
+	eleventyConfig.addFilter("cssmin", function (code) {
+		return new CleanCSS({}).minify(code).styles;
+	});
 
 	eleventyConfig.addFilter("dateToPermalink", function (date) {
 		return moment(date).format("YYYY/MM");

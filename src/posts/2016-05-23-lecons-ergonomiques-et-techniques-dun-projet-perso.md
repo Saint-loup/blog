@@ -8,7 +8,7 @@ permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 
 Il y a quelques mois j'ai publié un outil pour calculer une addition en terme de tickets resto ([le post de l'époque est ici](https://toutcequibouge.net/2016/01/un-bidule-optimise-pour-la-main-mais-code-avec-les-pieds/)). Je sais, rien ne m'arrête. Voici une mise à jour, avec notamment des visuels plus travaillés, ainsi qu'un clavier sur mesure et toujours présent à l'écran.
 
-Vous pouvez le charger ci-dessous en cliquant sur le screenshot ou [l'ouvrir](https://misc.toutcequibouge.net/TR/) depuis votre ordiphone préféré.
+Vous pouver [l'ouvrir ici](https://misc.toutcequibouge.net/TR/), de préférence depuis votre ordiphone préféré.
 
 ![](/assets/images/Capture-d’écran-2019-09-30-à-00.34.16.png)
 

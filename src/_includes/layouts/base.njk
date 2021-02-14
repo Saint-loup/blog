@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="font-sans">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,7 @@
       {{prismOkaidia | cssmin | safe}}
     </style>
   </head>
-  <body class="{{ colors.siteTextCustom or siteTextDefault }}">
+  <body class="{{ colors.siteTextCustom or siteTextDefault }} sans">
 {#    <div hidden>{% svgsprite %}</div>
 #}    <div class="flex flex-col min-h-screen">
       {% include "components/nav.njk" %}
@@ -28,6 +28,8 @@
       {% if hero %}
         {% set heroComponent = ['components/hero-', hero, '.njk'] %}
         {% include heroComponent | join %}
+        {% else %}
+
       {% endif %}
 
       {# If any frontmatter includes images.feature, insert it at the top of the page,

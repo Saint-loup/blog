@@ -6,13 +6,24 @@ tags:
   - "recherche"
   - "sciences-cognitives"
   - "systemes-complexes"
-coverImage: "le-chant-du-loup-e1581375123572.jpg"
 permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+hero: split  # options: carousel, graphic, video, split (text & image)
+heroSettings:
+  height:
+    mobile: # options = h-1/1 (default = full screen), h-1/2, h-1/3, h-3/4, h-9/10, h-48 (12rem, 192px), h-56 (14rem, 224px), h-64 (16rem, 256px)
+    desktop: h-3/4 # leave blank to inherit "mobile" height (default = full screen)
+  bg:
+    color: bg-dark # default bg-black
+    image: le-chant-du-loup-e1581375123572.jpg # relative to /assets/images/
+    imagePosition: # options = bg-center (default), bg-left, bg-right
+  headingTextColor: # default = text-white (can use any TailwindCSS text-[color]-[xxx])
+  subheadingText:
+  subheadingTextColor: # Leave empty to inherit headingTextColor or default (text-white) or use any text-[color]-[xxx]
+
 ---
 
 _Le Chant du loup_ suit l’épopée de l’équipage d’un sous-marin et de son “oreille d’or”, un analyste acoustique. Ce film est une mine d'or sur l'esprit humain et ses interactions avec la machine. Voici pêle-mêle ce que j'ai trouvé intéressant.
 
-![](/assets/images/le-chant-du-loup-e1581375123572.jpg)
 
 On y trouve beaucoup d'exemples des approches appelées [facteur humain](https://en.wikipedia.org/wiki/Human_factors_and_ergonomics), c'est-à-dire en gros de la manière dont humains, technique et organisations sont intriqués dans des gros machins impénétrables appelés [systèmes socio-techniques complexes](https://en.wikipedia.org/wiki/Sociotechnical_system).
 
@@ -24,7 +35,7 @@ C'est aussi une parfaite illustration de la [cognition incarnée](https://en.wik
 
 ![XKCD 903. Légende : "When Wikipedia has a server outage, my apparent IQ drops by 30 points."](/assets/images/extended_mind.png)
 
-[XKCD - The Extend Mind](https://xkcd.com/903/)
+[XKCD - The Extended Mind](https://xkcd.com/903/)
 
 ### Un équipage, plusieurs cerveaux, un seul esprit ?
 

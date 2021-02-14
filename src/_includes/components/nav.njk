@@ -1,13 +1,26 @@
 {% set navPages = collections.pages | eleventyNavigation %}
-<nav x-data="{ open: false }" class="{{ colors.navCustom.barBg or colors.navDefault.barBg }} shadow relative">
+<nav x-data="{ open: false }" class="{{ colors.navCustom.barBg or colors.navDefault.barBg }} relative">
   <div class="px-8 md:px-16 lg:px-32">
     <div class="flex justify-between h-16">
-        <h1 class="sm:text-3lg text-2xl lg:text-4xl flex content-center {{ colors.headingsCustom or colors.headingsDefault }}" ><a class="m-auto" href= "{{ '/' |  url}}">{{ meta.siteName or title }} </a></h1>
+
+
+        <div class="flex flex-row">
+         <svg class="h-10 m-auto" viewBox="0 0 70 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M69.0085 31.0426C68.6787 47.6096 34.2058 60.5144 34.2058 60.5144C34.2058 60.5144 0.267506 46.5625 0.597275 29.9954C0.927043 13.4284 35.4 0.523572 35.4 0.523572C35.4 0.523572 69.3383 14.4755 69.0085 31.0426Z" fill="#A72116"/>
+<path d="M63.099 30.9521C62.8262 44.657 34.309 55.3323 34.309 55.3323C34.309 55.3323 6.23403 43.7907 6.50682 30.0859C6.77962 16.3811 35.2968 5.70576 35.2968 5.70576C35.2968 5.70576 63.3718 17.2473 63.099 30.9521Z" fill="#A72116" stroke="#0D4362" stroke-miterlimit="10"/>
+</svg>
+          <h1 class=" ml-8 flex font-medium content-center shadow-lg text-2xl sm:text-3lg lg:text-4xl {{colors.navCustom.text}}" >
+            <a class="m-auto" href= "{{ '/' |  url}}">{{ meta.siteName or title }} </a>
+          </h1>
+        </div>
 
         <div class="hidden sm:ml-6 sm:flex sm:items-center">
           {# 11ty Nav Plugin loop  #}
           {% for entry in navPages %}
-            <a {% if page.url != entry.url %}href="{{ entry.url | url }}"{% endif %} alt="Link to {{ entry.title }}" class=" px-3 py-2 text-l font-medium rounded-md items-center {% if page.url == entry.url %} {{ colors.navCustom.textActiveBg or colors.navDefault.textActiveBg }} {{ colors.navCustom.textActive or colors.navDefault.textActive }} {% else %} {{ colors.navCustom.text or colors.navDefault.text }} hover:{{ colors.navCustom.textHover or colors.navDefault.textHover }} {% endif %} focus:outline-none focus:{{ colors.navCustom.textFocus or colors.navDefault.textFocus }} transition duration-150 ease-in-out">
+            <a {% if page.url != entry.url %}href="{{ entry.url | url }}"{% endif %} alt="Link to {{ entry.title }}"
+            class=" shadow px-3 py-2 text-xl font-medium rounded-md items-center
+            {% if page.url == entry.url %} {{ colors.navCustom.textActiveBg or colors.navDefault.textActiveBg }} {{ colors.navCustom.textActive or colors.navDefault.textActive }}
+            {% else %} {{ colors.navCustom.text or colors.navDefault.text }} hover:{{ colors.navCustom.textHover or colors.navDefault.textHover }} {% endif %} focus:outline-none focus:{{ colors.navCustom.textFocus or colors.navDefault.textFocus }} transition duration-150 ease-in-out">
               {{ entry.title }}
             </a>
           {% endfor %}
@@ -36,7 +49,7 @@
     <div class="pt-2 pb-3">
       {# 11ty Nav Plugin loop  #}
       {% for entry in navPages %}
-        <a {% if page.url != entry.url %}href="{{ entry.url | url }}"{% endif %} alt="Link to {{ entry.title }}" class="block pl-4 pr-4 py-2 {% if page.url == entry.url %}{{ colors.navCustom.mobileBgActive or colors.navDefault.mobileBgActive }} {{ colors.navCustom.mobileTextActive or colors.navDefault.mobileTextActive }}{% else %}{{ colors.navCustom.mobileBg or colors.navDefault.mobileBg }} hover:{{ colors.navCustom.mobileTextHover or colors.navDefault.mobileTextHover }} hover:{{ colors.navCustom.mobileBgHover or colors.navDefault.mobileBgHover }}  {% endif %} text-base font-medium  {{ colors.navCustom.mobileText or colors.navDefault.mobileText }}  focus:outline-none focus:{{ colors.navCustom.mobileTextFocus or colors.navDefault.mobileTextFocus }} focus:{{ colors.navCustom.mobileBgFocus or colors.navDefault.mobileBgFocus }} transition duration-150 ease-in-out">
+        <a {% if page.url != entry.url %}href="{{ entry.url | url }}"{% endif %} alt="Link to {{ entry.title }}" class="block pl-4 pr-4 py-2 {% if page.url == entry.url %}{{ colors.navCustom.mobileBgActive or colors.navDefault.mobileBgActive }} {{ colors.navCustom.mobileTextActive or colors.navDefault.mobileTextActive }}{% else %}{{ colors.navCustom.mobileBg or colors.navDefault.mobileBg }} hover:{{ colors.navCustom.mobileTextHover or colors.navDefault.mobileTextHover }} hover:{{ colors.navCustom.mobileBgHover or colors.navDefault.mobileBgHover }}  {% endif %} text-l font-medium  {{ colors.navCustom.mobileText or colors.navDefault.mobileText }}  focus:outline-none focus:{{ colors.navCustom.mobileTextFocus or colors.navDefault.mobileTextFocus }} focus:{{ colors.navCustom.mobileBgFocus or colors.navDefault.mobileBgFocus }} transition duration-150 ease-in-out">
           {{ entry.title }}
         </a>
       {% endfor %}

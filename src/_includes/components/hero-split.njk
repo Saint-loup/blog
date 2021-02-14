@@ -1,16 +1,17 @@
-<main class="lg:relative {{ heroSettings.bg.color or 'bg-black' }} {{ heroSettings.height.mobile or 'h-1/1' }} sm:{{ heroSettings.height.desktop or heroSettings.height.mobile or 'h-1/1' }}">
+<main class=" flex flex-col lg:flex-row hero-split
+{{ heroSettings.bg.color or 'bg-black' }} {{ heroSettings.height.mobile or 'h-1/1' }} sm:{{ heroSettings.height.desktop or heroSettings.height.mobile or 'h-1/1' }}">
   <div
-        class="w-full pt-16 pb-20 mx-auto text-center max-w-7xl lg:py-48 lg:text-left"
+        class="flex content-center justify-center w-1/2 mx-auto prose text-center prose-l max-w-7xl lg:text-left place-content-center"
       >
-    <div class="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
+    <div class="flex content-center justify-center w-11/12 align-middle text-gray-50 place-content-center">
 
-      <h2
-            class="text-4xl font-semibold leading-10 tracking-tight {{ heroSettings.headingTextColor or 'text-white' }} sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl"
+      <h1
+            class=" shadow-lg self-center text-5xl font-semibold leading-10 tracking-tight {{ heroSettings.headingTextColor or 'text-white' }} sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl"
           >
-        {{ heroSettings.headingText | safe }}
-      </h2>
+        {{ title | safe }}
+      </h1>
       <p
-            class="max-w-md mx-auto mt-3 text-lg {{ heroSettings.subheadingTextColor }} sm:text-xl md:mt-5 md:max-w-3xl"
+            class="shadow-lg max-w-md mx-auto mt-3 text-lg {{ heroSettings.subheadingTextColor }} sm:text-xl md:mt-5 md:max-w-3xl"
           >
         {{ heroSettings.subheadingText | safe }}
 
@@ -25,12 +26,13 @@
     </div>
   </div>
   <div
-        class="relative w-full h-1/2 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full"
+        class="flex lg:w-1/2 h-1/2 lg:h-full"
       >
     <img
-          class="absolute inset-0 object-cover w-full h-full"
+          class="w-auto h-auto"
           src="/assets/images/{{ heroSettings.bg.image }}"
           alt="Hero Image"
 />
   </div>
 </main>
+

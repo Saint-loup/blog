@@ -7,7 +7,11 @@ coverImage: "screenshot.png"
 permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
-J'ai fait un minuteur, il est joli, il est cool, [il est disponible ici](https://misc.toutcequibouge.net/Timer/).
+J'ai fait un minuteur, il est joli, il est cool, il est disponible ici :
+
+[c'est ici](https://misc.toutcequibouge.net/Timer/){.cta}
+
+
 
 [![](/images/screenshot-984x1024.png)](https://misc.toutcequibouge.net/Timer/)
 
