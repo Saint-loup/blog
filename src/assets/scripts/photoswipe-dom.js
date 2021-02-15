@@ -1,4 +1,4 @@
-
+/*
 var initPhotoSwipeFromDOM = function (gallerySelector) {
 
 	const imageSizes = {
@@ -368,4 +368,4 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
 };
 
 // execute above function
-initPhotoSwipeFromDOM('.gallery ul');
+initPhotoSwipeFromDOM('.gallery ul');*/
