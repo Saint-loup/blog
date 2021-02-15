@@ -79,6 +79,7 @@ pre code {
 }
 
 @media screen and (max-width:1024px){
+
 	.hero-split img {
 		width: auto;
 		height: inherit;
@@ -95,6 +96,9 @@ pre code {
 }*/
 
 @media screen and (min-width:1024px){
+	.img-wrapper {
+		margin-top: 4%;
+	}
 	.hero-split img {
 		width: auto;
 /*		height: inherit;
