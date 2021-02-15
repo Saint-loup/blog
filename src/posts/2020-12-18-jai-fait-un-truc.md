@@ -3,8 +3,21 @@ title: "J'ai fait un truc"
 date: "2020-12-18"
 tags:
   - "travaux"
-coverImage: "Screenshot_2020-12-19-table-basse1-scaled.jpg"
 permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+excerpt:
+hero: split  # options: carousel, graphic, video, split (text & image)
+heroSettings:
+  height:
+    mobile: # options = h-1/1 (default = full screen), h-1/2, h-1/3, h-3/4, h-9/10, h-48 (12rem, 192px), h-56 (14rem, 224px), h-64 (16rem, 256px)
+    desktop: # leave blank to inherit "mobile" height (default = full screen)
+  bg:
+    color: bg-dark # default bg-black
+    image: image.jpg # relative to /assets/images/
+    imagePosition: # options = bg-center (default), bg-left, bg-right
+  headingTextColor: # default = text-white (can use any TailwindCSS text-[color]-[xxx])
+  subheadingText:
+  subheadingTextColor: # Leave empty to inherit headingTextColor or default (text-white) or use any text-[color]-[xxx]
+
 ---
 
 
@@ -12,8 +25,6 @@ permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 [C'est ici](http://table-basse.toutcequibouge.net/){.cta}
 
 
-
-![](/assets/images/image.jpg)
 
 ## C'est quoi ?
 
