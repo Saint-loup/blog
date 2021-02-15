@@ -33,8 +33,8 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(pluginRss)
 	eleventyConfig.addPlugin(pluginNavigation)
 	eleventyConfig.addPlugin(syntaxHighlight)
-	const imagesResponsiverConfig = require("./utils/images-responsiver-config.js");
-	//eleventyConfig.addPlugin(imagesResponsiver, imagesResponsiverConfig);
+	/*	const imagesResponsiverConfig = require("./utils/images-responsiver-config.js");
+		eleventyConfig.addPlugin(imagesResponsiver, imagesResponsiverConfig);*/
 
 
 
@@ -217,6 +217,7 @@ module.exports = function (eleventyConfig) {
 		mode: "parse",
 		postsMatching: "src/posts/*/*.md",
 	});
+
 
 
 
