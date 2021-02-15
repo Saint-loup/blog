@@ -32,7 +32,13 @@
 
 {#- RSS Feed #}
 <link type="application/atom+xml" rel="alternate" href="{{ build.url }}/feed.xml" title="{{ meta.siteName }} XML Feed">
-
+{#
+<link rel="stylesheet" href="/assets/css/photoswipe/photoswipe.css" media="print" onload="this.media=&#39;all&#39;" />
+<link rel="stylesheet" href="/assets/css/photoswipe/skin/skin.css" media="print" onload="this.media=&#39;all&#39;" />
+<script  src="/assets/scripts/photoswipe.min.js" defer=""></script>
+<script  src="/assets/scripts/photoswipe-ui-default-min.js" defer=""></script>
+<script  src="/assets/scripts/photoswipe-dom.js" defer=""></script>
+#}
 {% set css %}
   {% include "src/assets/css/fonts.css" %}
 {% endset %}

@@ -1,1 +1,1 @@
-import 'alpinejs'
+//const alpine = require('alpinejs')

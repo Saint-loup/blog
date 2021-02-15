@@ -5,7 +5,9 @@ layout: base
 <article class="prose lg:prose-xl prose-lg article {{ structure.g_proseWidth }}">
 
       {% if not hero %}
-          <h1 class="{{ colors.headingsCustom or colors.headingsDefault }}">{{ seo.title or title }}</h1>
+          <header>
+            <h1 class="{{ colors.headingsCustom or colors.headingsDefault }}">{{ seo.title or title }}</h1>
+          </header>
       {% endif %}
 
   <div class="text-sm {{ colors.authorCustom.date or colors.authorDefault.date}}">
@@ -18,43 +20,101 @@ layout: base
 
   {{ layoutContent | safe }}
 
-  {% if structure.g_showTagPills or structure.g_showSocialShareIcons %}
-    <div class="pt-4 mt-12 border-t md:justify-between md:items-start md:flex md:flex-row">
-
-      {# If you don't want to display the Tag Pills, set "false" in /src/_data/structure.js #}
-      <div class="md:w-1/2">
-        {% if structure.g_showTagPills %}
-          {% include "components/tagpills.njk" %}
-        {% endif %}
-      </div>
-
-      {# If you don't want to display Social Share icons, disable them in /src/_data/structure.js  #}
-      <div class="px-2 pt-6 md:pt-2 md:w-1/2 md:flex md:justify-end">
-        {% if structure.g_showSocialShareIcons %}
-          {% include "components/socialshare.njk" %}
-        {% endif %}
-      </div>
-
-    </div>
-  {% endif %}
-
-  {# ===== Previous and Next =====  #}
-  <div class="border-t mt-4 pt-4 {{ colors.borderCustom.color or colors.borderDefault.color }} md:flex-row md:flex md:justify-between">
-    {% set previousPost = collections.post | getPreviousCollectionItem(page) %}
-    {% set nextPost = collections.post | getNextCollectionItem(page) %}
-
-    <div class="py-2 text-center sm:py-0">
-      {% if previousPost %}
-        <a class="{{ colors.prevNextCustom.text or colors.prevNextDefault.text }} hover:{{ colors.prevNextCustom.text or colors.prevNextDefault.textHover }}" href="{{ previousPost.url | url }}">← {{ previousPost.data.title }}</a>
-      {% endif %}
-    </div>
-
-    <div class="py-2 text-center sm:py-0">
-      {% if nextPost %}
-        <a class="{{ colors.prevNextCustom.text or colors.prevNextDefault.text }} hover:{{ colors.prevNextCustom.text or colors.prevNextDefault.textHover }}" href="{{ nextPost.url | url}}">{{ nextPost.data.title }} →</a>
-      {% endif %}
-    </div>
-
-  </div>
 
 </article>
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+        It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides.
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+  </main>
+
+ <footer class="container-wide ">
+    {% if structure.g_showTagPills or structure.g_showSocialShareIcons %}
+      <div class="pt-4 mt-12 border-t md:justify-between md:items-start md:flex md:flex-row">
+        {# If you don't want to display the Tag Pills, set "false" in /src/_data/structure.js #}
+        <div class="md:w-1/2">
+          {% if structure.g_showTagPills %}
+            {% include "components/tagpills.njk" %}
+          {% endif %}
+        </div>
+        {# If you don't want to display Social Share icons, disable them in /src/_data/structure.js  #}
+          {% if structure.g_showSocialShareIcons %}
+            {% include "components/socialshare.njk" %}
+          {% endif %}
+      </div>
+    {% endif %}
+    {# ===== Previous and Next =====  #}
+    <div class="border-t mt-4 pt-4 {{ colors.borderCustom.color or colors.borderDefault.color }} md:flex-row md:flex md:justify-between">
+      {% set previousPost = collections.post | getPreviousCollectionItem(page) %}
+      {% set nextPost = collections.post | getNextCollectionItem(page) %}
+      <div class="py-2 text-center sm:py-0">
+        {% if previousPost %}
+          <a class="{{ colors.prevNextCustom.text or colors.prevNextDefault.text }} hover:{{ colors.prevNextCustom.text or colors.prevNextDefault.textHover }}" href="{{ previousPost.url | url }}">← {{ previousPost.data.title }}</a>
+        {% endif %}
+      </div>
+      <div class="py-2 text-center sm:py-0">
+        {% if nextPost %}
+          <a class="{{ colors.prevNextCustom.text or colors.prevNextDefault.text }} hover:{{ colors.prevNextCustom.text or colors.prevNextDefault.textHover }}" href="{{ nextPost.url | url}}">{{ nextPost.data.title }} →</a>
+        {% endif %}
+      </div>
+    </div>
+  </footer>

@@ -1,8 +1,9 @@
-<footer>
-  <div class="{{ colors.footerCustom.barBg or colors.footerDefault.barBg }}">
-    <div class="max-w-screen-xl px-4 py-12 mx-auto sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
+<footer class="relative h-full">
+    <div class="decor-dark"></div>
+
+    <div class="py-12 mx-auto md:flex md:items-center md:justify-between ">
+      {% if structure.g_showFooterSocialIcons %}
       <div class="flex justify-center md:order-2 {{ colors.socialIconsCustom or colors.socialIconsDefault }}">
-        {% if structure.g_showFooterSocialIcons %}
 
           {# Display Social icons from _data/social.json  #}
           {% for site in social %}
@@ -12,14 +13,13 @@
               </a>
             {% endif %}
           {% endfor %}
+      </div>
 
         {% endif %}
-      </div>
       <div class="mt-8 md:mt-0 md:order-1">
         <p class="text-center text-base leading-6 {{ colors.footerCustom.text or colors.footerDefault.text }}">
         Sauf mention contraire, le contenu de ce site est cc by-nc. Attribution : Baptiste Roullin. Vos données personnelles : j'en ai pas.
         </p>
       </div>
     </div>
-  </div>
 </footer>

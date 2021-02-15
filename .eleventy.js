@@ -15,10 +15,12 @@ const pageAssetsPlugin = require('eleventy-plugin-page-assets');
 const moment = require("moment");
 const implicitFigures = require('markdown-it-implicit-figures');
 const CleanCSS = require("clean-css");
+const imagesResponsiver = require("eleventy-plugin-images-responsiver");
+
+
 module.exports = function (eleventyConfig) {
 
 	eleventyConfig.addDataExtension("yaml", contents => yaml.safeLoad(contents));
-
 
 
 
@@ -31,6 +33,10 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(pluginRss)
 	eleventyConfig.addPlugin(pluginNavigation)
 	eleventyConfig.addPlugin(syntaxHighlight)
+	const imagesResponsiverConfig = require("./utils/images-responsiver-config.js");
+	//eleventyConfig.addPlugin(imagesResponsiver, imagesResponsiverConfig);
+
+
 
 	/**
 	 * Filters
@@ -330,7 +336,7 @@ module.exports = function (eleventyConfig) {
 			data: '_data',
 		},
 		passthroughFileCopy: true,
-		templateFormats: ['html', 'njk', 'md'],
+		templateFormats: ['html', 'njk', 'md', "css", "js"],
 		htmlTemplateEngine: 'njk',
 		markdownTemplateEngine: 'njk',
 	}
