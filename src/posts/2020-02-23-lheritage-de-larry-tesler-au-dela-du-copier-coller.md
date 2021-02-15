@@ -13,14 +13,14 @@ heroSettings:
     desktop: h-3/4 # leave blank to inherit "mobile" height (default = full screen)
   bg:
     color: bg-dark # default bg-black
-    image: Capture-d’écran-2020-02-22-à-21.56.15-e1582420058368-1024x882.png # relative to /assets/images/
+    image: "souris 3 btns.png" # relative to /assets/images/
     imagePosition: # options = bg-center (default), bg-left, bg-right
+    alt: Clavier auxiliaire utilisé par Tesler pour tester la fonction de couper-coller, avec des étiquettes notées "cut" et "paste"
   headingTextColor: # default = text-white (can use any TailwindCSS text-[color]-[xxx])
   subheadingText:
   subheadingTextColor: # Leave empty to inherit headingTextColor or default (text-white) or use any text-[color]-[xxx]
 ---
 
-![Clavier auxiliaire utilisé par Tesler pour tester la fonction de couper-coller, avec des étiquettes notées "cut" et "paste".](/assets/images/Capture-d’écran-2020-02-22-à-21.56.15-e1582420058368-1024x882.png)
 
 Clavier auxiliaire utilisé par Tesler pour tester la fonction de couper-coller, avec des étiquettes notées "cut" et "paste".
 

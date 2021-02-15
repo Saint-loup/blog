@@ -1,5 +1,5 @@
 {% set navPages = collections.pages | eleventyNavigation %}
-<nav x-data="{ open: false }" class="{{ colors.navCustom.barBg or colors.navDefault.barBg }}">
+<header x-data="{ open: false }" class="{{ colors.navCustom.barBg or colors.navDefault.barBg }}">
   <div class=" navbar">
     <div class="relative flex justify-between h-20">
   <div class="decor-dark"></div>
@@ -59,4 +59,4 @@
     </div>
 
   </div>
-</nav>
+</header>

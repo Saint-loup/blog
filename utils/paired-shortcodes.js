@@ -1,4 +1,14 @@
+const markdownIt = require('markdown-it')
+
 module.exports = {
+
+
+	gallery: function (data) {
+		const galleryContent = markdownIt().render(data);
+		return `<div class="gallery">${galleryContent}</div>`;
+	},
+
+
 	/**
 	 * ===== Wrapper =====
 	 *
