@@ -12,6 +12,7 @@ module.exports = {
 	 */
 	siteTextDefault: 'text-gray-900',
 	siteTextCustom: '',
+	accent: 'bg-dark',
 
 	/**
 	 * Reason for both 'xxxDefault' and 'xxxCustom'

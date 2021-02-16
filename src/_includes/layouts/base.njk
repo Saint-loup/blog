@@ -22,25 +22,9 @@
 #}  <div class="flex flex-col w-11/12 min-h-screen mx-auto container-2xl">
       {% include "components/nav.njk" %}
 
-      {#  Allows a user to easily change the Hero type on the Home page...or any page.
-          See /src/home.md for how to use.
-      #}
-      {% if hero %}
-        {% set heroComponent = ['components/hero-', hero, '.njk'] %}
-        {% include heroComponent | join %}
-        {% else %}
 
-      {% endif %}
 
-      {# If any frontmatter includes images.feature, insert it at the top of the page,
-      below the nav and outside the default wrapper below. #}
-      {% if images.feature %}
-        <figure class="w-screen {{ images.height or "h-48 md:h-1/3" }}">
-          <img class="object-cover {{ images.align }} w-full h-full" src="{{ images.feature if 'http' in images.feature else "/assets/images/" + images.feature }}" alt="{{ title }}">
-        </figure>
-      {% endif %}
-
-      <main class="flex-grow block max-w-full py-12 m-auto" id="content">
+      <main class="flex-grow block max-w-full m-auto mb-20" id="content">
         {{ content | safe }}
       </main>
 
