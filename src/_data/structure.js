@@ -30,7 +30,7 @@ module.exports = {
 	 * Set below to 'false' to globally disable Excerpt on the Posts List (/blog)
 	 *
 	 */
-	g_showExcerpt: true,
+	g_showExcerpt: false,
 
 	/**
 	 * ===== Display Author Blocks =====
