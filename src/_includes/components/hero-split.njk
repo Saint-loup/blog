@@ -30,7 +30,9 @@
   <div
         class="flex justify-center h-auto mx-auto lg:w-1/2 img-wrapper"
       >
-    <img  alt="{{heroSettings.bg.alt}}"
+
+{#      {% set path = '/assets/images/'+ heroSettings.bg.image %}
+#}    <img  alt="{{heroSettings.bg.alt}}"
           class="shadow-lg-dark"
           src="/assets/images/{{ heroSettings.bg.image }}"
           alt="Hero Image"
