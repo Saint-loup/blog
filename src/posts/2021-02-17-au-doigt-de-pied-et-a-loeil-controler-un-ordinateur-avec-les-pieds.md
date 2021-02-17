@@ -69,7 +69,7 @@ Voici un exemple d'une [autre marque](https://www.grundig-gbs.com/fr/solutions/m
 
 ![Pédalier de retranscription](/assets/images/Digta-Transcription-Starter-Kit-540_Sp568.jpg)
 
-Que ce soit pour la retranscription ou pour un autre but, écouter attentivement et de manière répétée de longues paroles est une activité assez étrange, tour à tour hypnotique et agressive. On est enveloppé et immergé de la voix des locuteurs, alors qu'on la contrôle et l'interrompe sans cesse, au point de la disloquer et de lui faire perdre son flot.
+Que ce soit pour la retranscription ou pour un autre but, écouter attentivement et de manière répétée de longues paroles est une activité assez étrange, tour à tour hypnotique et agressive, surtout avec un appareil très tactile comme un pédalier ou une roulette de montage accentue certainement l'effet. On est enveloppé et immergé dans la voix des locuteurs, alors qu'on la contrôle et l'interrompe sans cesse, au point de la disloquer et de lui faire perdre son flot.
 
 
 
