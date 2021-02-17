@@ -125,6 +125,10 @@ margin-right: calc(50% - 50vw);
 }
 
 
+.article main img {
+	margin:auto
+}
+
 /*.hero-split > div {
 position: relative;
 top: -5rem;
