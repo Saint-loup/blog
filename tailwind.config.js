@@ -1,3 +1,4 @@
+const { opacity } = require('tailwindcss/defaultTheme')
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
@@ -44,12 +45,41 @@ module.exports = {
 				'accent': "#a72116"
 			},
 			typography: {
+				'xl': {
+					css: {
+						'ul > li:before':
+						{
+							top: '.8em !important'
+						}
+					}
+				},
+				'lg': {
+					css: {
+						'ul > li:before':
+						{
+							top: '.8em !important'
+						}
+					}
+				},
 				DEFAULT: {
 					css: {
 						blockquote: {
 							fontWeight: 'normal',
-
 						},
+						code: {
+							fontSize: '.8em',
+							border: 'none',
+							padding: '.3rem',
+							fontWeight: 'normal',
+							'&:before': { content: "none !important" },
+							'&:after': { content: "none !important" },
+							borderRadius: '3px',
+							opacity: 'rgba(229, 231, 235, var(--tw-bg-opacity))',
+							"--tw-bg-opacity": '0.5 !important'
+
+
+						}
+						,
 						h1: {
 							color: 'inherit'
 						}
