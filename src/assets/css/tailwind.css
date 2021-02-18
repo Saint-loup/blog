@@ -84,6 +84,7 @@ pre code {
 		width: auto;
 		height: inherit;
 		max-height: 50vmax;
+		align-self: flex-start;
 	}
 }
 
@@ -101,8 +102,8 @@ pre code {
 	}
 	.hero-split img {
 		width: auto;
-/*		height: inherit;
-*/max-height: 60vmax;	}
+		max-height: 60vmax;
+		align-self: flex-start;}
 }
 
 .decor-dark {
