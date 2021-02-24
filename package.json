@@ -4,7 +4,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "dev:webpack": "webpack  --mode development",
-    "dev:eleventy": "eleventy --serve",
+    "dev:eleventy": "  eleventy --serve",
     "dev:postcss": "postcss src/assets/css/tailwind.css -o dist/assets/tailwind.css --watch",
     "dev": " npm-run-all clean --parallel dev:* --print-label",
     "build:webpack": "webpack  --mode production",
@@ -28,7 +28,6 @@
     "cross-env": "^7.0.3",
     "cssnano": "^4.1.10",
     "dotenv": "^8.2.0",
-    "eleventy-plugin-images-responsiver": "^1.8.2",
     "eleventy-plugin-page-assets": "^0.3.0",
     "html-minifier": "^4.0.0",
     "luxon": "^1.25.0",
@@ -47,8 +46,10 @@
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
+    "@11ty/eleventy-img": "^0.8.0",
     "@sindresorhus/slugify": "^1.1.0",
     "@tailwindcss/typography": "^0.4.0",
+    "eleventy-plugin-images-responsiver": "^1.8.2",
     "js-yaml": "^3.14.0",
     "markdown-it-anchor": "^7.0.2",
     "markdown-it-attrs": "^4.0.0",

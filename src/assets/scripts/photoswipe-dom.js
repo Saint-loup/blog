@@ -1,8 +1,8 @@
-/*
+
 var initPhotoSwipeFromDOM = function (gallerySelector) {
 
 	const imageSizes = {
-		"gallery-3x2": {
+		"3x2": {
 			small: {
 				width: 600,
 				height: 400
@@ -91,7 +91,7 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
 	// parse slide data (url, title, size ...) from DOM elements
 	// (children of gallerySelector)
 	var parseThumbnailElements = function (el) {
-		var thumbElements = el.querySelectorAll('figure'),
+		var thumbElements = el.querySelectorAll('img'),
 			numNodes = thumbElements.length,
 			items = [],
 			figureEl,
@@ -368,4 +368,4 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
 };
 
 // execute above function
-initPhotoSwipeFromDOM('.gallery ul');*/
+//initPhotoSwipeFromDOM('.gallery ul');
