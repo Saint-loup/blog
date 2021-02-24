@@ -14,47 +14,7 @@ module.exports = {
 	siteTextCustom: '',
 	accent: 'bg-accent',
 
-	/**
-	 * Reason for both 'xxxDefault' and 'xxxCustom'
-	 *  I could have only provided ONE set of settings. But knowing how users
-	 *  actually use a system, at some point they'll want to revert to the
-	 *  original color set...or at least reference it.
-	 *  Providing a 'Default' and 'Custom' set allows you to keep the original
-	 *  colors for future reference while setting 'Custom' overrides for entire
-	 *  sets or individual elements.
-	 *
-	 *    If you don't care about keeping them as reference, you can just
-	 *      change the "xxxDefault" key values.
-	 *
-	 *    "xxxCustom" values will always override "xxxDefault" values.
-	 *
-	 * ~~~~~ Cusomization tip ~~~~~
-	 *    To quickly create a full set of custom colors,
-	 *    simply select and copy the set of "Default" elements
-	 *    and 'replace paste' them in the "Custom" area.
-	 *    Then just change the "color" value in the middle.
-	 *    This will help keep the customization values looking correct
-	 *    and wil ensure no errors in "text", "bg", and "border" values.
-	 */
-	navDefault: {
-		barBg: 'bg-white',
-		text: 'text-teal-500',
-		textActive: 'text-teal-600',
-		textHover: 'text-teal-600',
-		textActiveBg: 'bg-teal-100',
-		textFocus: 'text-teal-500',
-		mobileBg: '',
-		mobileBgActive: 'bg-teal-700',
-		mobileBgHover: 'bg-teal-100',
-		mobileBgFocus: 'bg-teal-300',
-		mobileText: 'text-teal-500',
-		mobileTextActive: 'text-teal-300',
-		mobileTextHover: 'text-teal-600',
-		mobileTextFocus: 'text-teal-700',
-		mobileButton: 'text-teal-500',
-		mobileButtonHover: 'text-teal-600',
-		mobileButtonBgHover: 'bg-teal-100',
-	},
+
 	/**
 	 *  NOTE: You MUST keep all Custom variable keys, even if their values are empty and you don't intend to use them.
 	 *  If you delete any variable keys, 11ty won't work.
@@ -63,17 +23,17 @@ module.exports = {
 		barBg: 'bg-dark',
 		text: 'text-gray-100',
 		textActive: 'text-gray-200',
-		textHover: 'text-gray-200',
+		textHover: 'text-accent',
 		textActiveBg: 'nav-selected',
-		textFocus: 'text-gray-300',
+		textFocus: 'text-accent',
 		mobileBg: '',
 		mobileBgActive: 'border-b-2',
 		mobileBgHover: 'bg-gray-100',
-		mobileBgFocus: 'bg-gray-300',
+		mobileBgFocus: 'text-gray-100',
 		mobileText: 'text-gray-200',
 		mobileTextActive: '',
-		mobileTextHover: 'text-gray-600',
-		mobileTextFocus: 'text-gray-700',
+		mobileTextHover: 'text-accent',
+		mobileTextFocus: 'text-accent',
 		mobileButton: 'text-gray-200',
 		mobileButtonHover: 'text-gray-600',
 		mobileButtonBgHover: 'bg-gray-100',
