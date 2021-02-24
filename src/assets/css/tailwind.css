@@ -135,6 +135,19 @@ position: relative;
 top: -5rem;
 }*/
 
+
+.nav-selected {
+&:after {
+	content:'';
+	width:100%;
+	height:4px;
+	@apply bg-gray-200;
+	position:absolute;
+	left:0;
+	bottom:-5px
+
+}
+}
 @tailwind components;
 
 @tailwind utilities;
