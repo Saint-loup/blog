@@ -5,7 +5,7 @@ tags:
   - "architecture"
   - "ville"
 coverImage: "archisuits-bench.jpg"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 ![banc de camden](/assets/images/Camden_bench.jpg " Un banc anti SDF, anti-dealer, anti-tagueur, anti-skater")

@@ -3,7 +3,7 @@ title: "Gestion des styles dans Axure"
 date: "2016-02-19"
 tags:
   - "prototypage"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 Axure n'est pas un outil de maquettage à haute fidélité, pourtant il est parfois intéressant de modifier les styles par défaut des widgets ou de disposer d'une bibliothèque de styles. Cela évite par exemple de sélectionner cinquante fois un niveau de gris et se retrouver avec une palette de gris pas homogène. Voici comment faire.

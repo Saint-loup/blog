@@ -5,7 +5,7 @@ tags:
   - "Tout ce qui bouge"
   - "concept"
 
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 _Résumé : sur mobile j'ai changé la barre de menu du blog._

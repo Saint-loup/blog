@@ -3,7 +3,7 @@ title: "Nouvelle interface de Firefox : premières impressions"
 date: "2013-03-31"
 tags:
   - "critique"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 Mozilla a livré la première version utilisable de la nouvelle interface pour Firefox, baptisée Australis. On peut l’essayer [ici](http://people.mozilla.org/~jwein/ux-nightly/). Mes premières impressions sont mitigées.

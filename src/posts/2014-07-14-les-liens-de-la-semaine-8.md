@@ -3,7 +3,7 @@ title: "Les liens de la semaine #6"
 date: "2014-07-14"
 tags:
   - "veille"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 - [Blackberry va sortir un gros téléphone avec un écran carré](http://arstechnica.com/gadgets/2014/07/blackberrys-square-screened-phone-to-free-us-from-our-rectangular-world). C'est un choix audacieux (suicidaire ?) puisqu'il va à rebours des idées reçues sur l'ergonomie physique des smartphones. Je l'imagine assez confortable à utiliser si l'on accepte d'y mettre les deux mains. Il est suffisamment large pour être vraiment en pris en main (comme un gros smartphone type Galaxy Note en mode paysage), avec un écran suffisamment haut pour que le contenu ne soit pas bouffé par le clavier et l'interface.

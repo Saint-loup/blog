@@ -3,7 +3,7 @@ title: "Aux origines des interactions"
 date: "2014-08-07"
 tags:
   - "histoire"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 Dan Saffer, auteur d'un livre sur la notion de « micro-interaction », tient [une liste](http://microinteractions.com/the-origins-of-famous-microinteractions/) sur l'origine d’interactions aujourd'hui omniprésentes : l’auto-correction, le copier-coller, les barres de défilement, etc.

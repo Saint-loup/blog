@@ -6,7 +6,7 @@ tags:
   - "sketch"
   - "travaux"
 
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 [C'est ici](https://github.com/Saint-loup/data-from-clipboard){.cta}

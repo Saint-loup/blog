@@ -3,7 +3,7 @@ title: "Axure 7 : panorama des nouveautés"
 date: "2014-01-07"
 tags:
   - "prototypage"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 Pour ceux qui ne sont pas sortis de l'industrie du livrable au kilo[1](#fn-328:1) et qui ont toujours besoin d'un outil de maquettage IHM polyvalent, la sortie d'Axure 7 est une bonne nouvelle, d'autant plus que la mise à jour est gratuite pour les possesseurs d'une licence. Même si certaines nouveautés peuvent laisser perplexes (ombres portées internes et externes, un mode pseudo-responsive, etc.), la liste des fonctionnalités et des améliorations est impressionnante. La [page de présentation](http://www.axure.com/news/new-in-7) est très détaillée, mais voici une liste de ce qui est intéressant pour moi au quotidien.

@@ -5,7 +5,7 @@ tags:
   - "conception"
   - "histoire"
   - "utilisateurs"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 hero: split  # options: carousel, graphic, video, split (text & image)
 heroSettings:
   height:
@@ -44,7 +44,7 @@ NLS, le système d'Engelbart était plus avancé et utilisait une souris comme p
 
 Larry Tesler (avec Peter Deutsch) inventa alors le curseur placé entre les caractères que l'on connait aujourd'hui.
 
-![curseur en poutre en I](/assets/images/2020-02-23_00h54_25.png)
+![curseur en poutre en I](/assets/images/2020-02-23_00h54_25.png){width=400}
 
 #### 2\. **Le remplacement des modes par le presse-papier et les menus**
 

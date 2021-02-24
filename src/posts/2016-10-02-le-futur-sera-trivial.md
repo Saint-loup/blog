@@ -5,7 +5,7 @@ tags:
   - "futur"
   - "reflexions"
 coverImage: "giphy.gif"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 J'aime beaucoup le concept de futur trivial ("future mundane") de Nick Foster, qu'il a présenté dans [un article](http://www.core77.com/posts/25678/the-future-mundane-25678) et lors d'[une conférence](https://www.hellofosta.com/writing/the-future-mundane). Qu'est-ce à dire ?

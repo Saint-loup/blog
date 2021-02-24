@@ -4,7 +4,7 @@ date: 2021-02-17
 excerpt : Lors de deux moments importants pour l'histoire de l'informatique, on trouve une personne assise à une machine et utilisant autant ses pieds que ses mains.
 tags:
   - "objets"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 hero: split  # options: carousel, graphic, video, split (text & image)
 heroSettings:
   height:

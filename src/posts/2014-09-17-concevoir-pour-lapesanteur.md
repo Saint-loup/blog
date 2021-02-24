@@ -3,7 +3,7 @@ title: "Concevoir pour l'apesanteur"
 date: "2014-09-17"
 tags:
   - "objets"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 Strabic a publié un [article passionnant](http://strabic.fr/Octave-De-Gaulle-Distiller) sur la création d'une bouteille et d'un verre qui soient utilisables dans une station spatiale. Je vous encourage à le lire en détail, mais voici quelques remarques.

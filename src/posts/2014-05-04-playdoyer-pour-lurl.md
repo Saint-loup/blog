@@ -3,7 +3,7 @@ title: "Plaidoyer pour l'URL"
 date: "2014-05-04"
 tags:
   - "features"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 _Résumé : il faut se battre pour l'URL mais il faut aussi améliorer la barre d'adresse et en faire une vraie barre de navigation et d'action._

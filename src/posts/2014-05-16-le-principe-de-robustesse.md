@@ -4,7 +4,7 @@ date: "2014-05-16"
 tags:
   - "reflexions"
   - "systemes-complexes"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 Dans le domaine des protocoles de communication, le Principe de robustesse veut qu'un nœud d'un réseau (par exemple un serveur sur Internet) soit tolérant quand il décide d'accepter ou non un message plus ou moins bien formé, et qu'il soit plus rigoureux sur la qualité des messages qu'il envoie. Le principe voit son origine dans les débats autour de l'importance qu'il faut donner à une norme de communication : la stratégie optimale pour la robustesse du réseau, ce serait de suivre la norme de près en output mais beaucoup moins en input.

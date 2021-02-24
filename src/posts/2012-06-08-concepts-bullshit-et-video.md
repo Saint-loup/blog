@@ -3,7 +3,7 @@ title: "Concepts, bullshit et video"
 date: "2012-06-08"
 tags:
   - "futur"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 Vous le savez sans doute, Google a annoncé qu’il comptait sortir des lunettes avec un affichage tête haute. [La vidéo de présentation](http://youtu.be/9c6W4CCU9M4) était aussi excitante qu’avare de détails. Plus récemment, cet [entretien](http://www.fastcodesign.com/1669937/googles-project-glass-inside-the-problem-solving-and-prototyping) avec le leader du projet s’étend sur leur démarche mais me laisse toujours un peu frustré. Son message : les gens de Google ne sont pas qu’une bande d’ingénieurs amateurs de nouveaux joujoux, ils réfléchissent à ce qu’ils font et sont bien conscients des questions ergonomiques et sociales que posent leur produit.\[1\]  Au-delà, l’article donne peu de réponses concrètes et on est toujours dans le flou. Notamment, on ne sait pas toujours pas grand-chose sur la manière dont l’utilisateur interagirait avec les lunettes, alors que la question est centrale pour un produit aussi novateur.

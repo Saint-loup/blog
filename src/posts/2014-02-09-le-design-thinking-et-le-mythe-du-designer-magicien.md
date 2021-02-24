@@ -4,7 +4,7 @@ date: "2014-02-09"
 tags:
   - "features"
   - "place-du-concepteur"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 _Résumé : le design n’est pas une panacée._

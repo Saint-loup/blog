@@ -3,7 +3,7 @@ title: "Les liens de la semaine #7"
 date: "2014-08-09"
 tags:
   - "veille"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 - Strabic fait la chronique du livre [_Max Bill / Jan Tschichold : La querelle typographique des modernes_](http://strabic.fr/Max-Bill-Jan-Tschichold), à propos du débat entre ces deux théoriciens de la typographie et des revirements de Tschichold, passé du modernisme au classicisme. J'ai déjà parlé de lui dans mon article sur [L'éternelle querelle du minimalisme](http://toutcequibouge.net/toutcequibouge/2013/02/l-ternelle-querelle-du-minimalisme/).

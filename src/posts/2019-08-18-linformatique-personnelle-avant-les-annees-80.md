@@ -4,7 +4,7 @@ date: "2019-08-18"
 tags:
   - "histoire"
   - "utilisateurs"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 hero: split  # options: carousel, graphic, video, split (text & image)
 heroSettings:
   height:
