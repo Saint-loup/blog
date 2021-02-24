@@ -4,7 +4,7 @@ date: "2012-12-06"
 tags:
   - "critique"
   - "mac"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 Je prends habituellement soin de rester à l’écart des discussions sur la convergence entre iOS et Mac OS et sur la mauvaise influence que le premier aurait sur le second. Pourtant, avec la sortie d’iTunes 11, j’ai un exemple parfait de modèle d’interaction inspiré par iOS et qui m’a beaucoup dérouté.

@@ -4,7 +4,7 @@ date: "2016-02-14"
 tags:
   - "histoire"
   - "objets"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 []: # (wide-img)
 

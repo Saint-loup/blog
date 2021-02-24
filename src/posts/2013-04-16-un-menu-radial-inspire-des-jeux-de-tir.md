@@ -3,7 +3,7 @@ title: "Un menu radial inspiré des jeux de tir"
 date: "2013-04-16"
 tags:
   - "jeu-video"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 _Résumé : Plein de mots arides sur les modes en IHM, puis une modeste proposition d'interaction pour écran tactile._

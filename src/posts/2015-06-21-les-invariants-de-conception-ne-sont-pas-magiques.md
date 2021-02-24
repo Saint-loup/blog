@@ -5,7 +5,7 @@ tags:
   - "mobile"
   - "objets"
   - "utilisateurs"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 ![Tiré de La Mesure de l'homme, par Henry Dreyfuss (un des fondateurs de l'ergonomie scientifique " ](/assets/images/hand-dimensions-1024x993.png) Tiré de _La Mesure de l'homme_ de Henry Dreyfuss, un des fondateurs de l'ergonomie scientifique")

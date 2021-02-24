@@ -3,7 +3,7 @@ title: "Un petit redesign de Gmail (bonus : supprimer la barre noire des sites G
 date: "2013-01-30"
 tags:
   - "travaux"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 Je me suis amusé (est-ce le bon mot ?) à faire deux feuille de style pour améliorer un peu l’interface de Google. Pour ceux qui ne connaitraient pas, avec un addon pour son navigateur et un peu de CSS, on peut personnaliser l’apparence d’un site. On peut les trouver [ici](http://userstyles.org/users/175691).

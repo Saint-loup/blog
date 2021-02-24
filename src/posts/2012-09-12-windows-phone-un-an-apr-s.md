@@ -4,7 +4,7 @@ date: "2012-09-12"
 tags:
   - "critique"
   - "windows-phone"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 J’ai un Windows Phone : le Lumia 800. Il est à la fois beau et ergonomique, une parfaite illustration de la convergence entre forme et fonction. Je l’aime. C’est au niveau du logiciel que ça se complique.

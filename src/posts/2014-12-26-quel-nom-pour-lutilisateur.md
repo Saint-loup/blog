@@ -3,7 +3,7 @@ title: "Quel nom pour l'utilisateur"
 date: "2014-12-26"
 tags:
   - "utilisateurs"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 Après [Don Norman](http://www.jnd.org/dn.mss/words_matter_talk_a.html), [Jack Dorsey](http://jacks.tumblr.com/post/33785796042/lets-reconsider-our-users) et bien d'autres, c'est au tour de [la directrice du design de produit](http://uk.businessinsider.com/facebook-says-it-has-dropped-the-term-users-and-has-an-empathy-team-2014-12) chez Facebook de déclarer qu'elle préfère ne pas dire « utilisateur » mais tout simplement « personne ». L'idée derrière ce refus est toujours de rappeler que les utilisateurs sont des êtres humains et ne se résument pas à leur utilisation d'un service. C'est très bien que des compagnies mettent en avant une démarche centrée sur l'utilisateur, pourtant je trouve la démarche malavisée. (Sans parler de l'ironie à voir Facebook donner des leçons de respect.)

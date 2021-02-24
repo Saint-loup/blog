@@ -4,7 +4,7 @@ date: "2014-08-16"
 tags:
   - "graphisme"
   - "typographie"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 En typographie, on aime bien les nombres magiques. Par exemple, il parait qu'il faut 66 caractères par ligne (recommandation de [Bringhust](http://jacobian.org/writing/typography-rhythm-proportion/), souvent répétée), que la hauteur de texte d’un livre doit être égale à la largeur de la page (selon le [canon de Tschichold](https://en.wikipedia.org/wiki/Canons_of_page_construction#Golden_canon) qui m’a toujours semblé mystérieux) et que mettre le Nombre d’or partout ne fait jamais de mal (à part bien sûr tomber dans la [numérologie](http://www.laputanlogic.com/articles/2005/04/14-1647-4601.html)).

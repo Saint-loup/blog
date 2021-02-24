@@ -3,7 +3,7 @@ title: "Les liens de la semaine #8"
 date: "2014-08-26"
 tags:
   - "veille"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 - [Passionnant article sur les classifications de police](http://kupferschrift.de/cms/2012/03/on-classifications). En résumé : la plupart des classifications sont mauvaises mais on pourrait faire mieux. L’auteur propose deux approches, l’une qui parte du tracé du caractère, l’autre d’une classification à facettes où l’on puisse enchainer les termes.

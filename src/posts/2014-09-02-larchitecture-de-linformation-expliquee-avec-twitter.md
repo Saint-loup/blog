@@ -4,7 +4,7 @@ date: "2014-09-02"
 tags:
   - "architecture-de-linformation"
   - "conception"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 Twitter est un terrain d'expérimentations intéressant pour les créateurs d'applications. Non parce que la plateforme permet des travaux révolutionnaires, mais au contraire parce qu'elle est limitée en complexité et encadrée par des règles assez strictes. Chacun fait de son mieux à partir des mêmes données, des mêmes concepts de base, des mêmes [interdictions](https://developer.twitter.com/fr/developer-terms/agreement-and-policy).

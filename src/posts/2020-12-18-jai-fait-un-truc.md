@@ -3,7 +3,7 @@ title: "J'ai fait un truc"
 date: "2020-12-18"
 tags:
   - "travaux"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 excerpt:
 hero: split  # options: carousel, graphic, video, split (text & image)
 heroSettings:

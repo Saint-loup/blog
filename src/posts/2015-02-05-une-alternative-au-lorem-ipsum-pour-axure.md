@@ -3,7 +3,7 @@ title: "Une alternative au Lorem ipsum pour Axure"
 date: "2015-02-05"
 tags:
   - "prototypage"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 Dans une maquette, le texte peut servir à plein de choses :

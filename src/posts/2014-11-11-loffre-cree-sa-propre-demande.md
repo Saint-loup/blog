@@ -4,7 +4,7 @@ date: "2014-11-11"
 tags:
   - "reflexions"
   - "systemes-complexes"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 Cette formule de [Keynes](https://fr.wikipedia.org/wiki/Loi_de_Say) résume l'idée que la demande n'est pas statique et tend au contraire à augmenter lorsque l'offre croît elle aussi. La raison est simple : si un domaine est en situation de pénurie, une partie de la demande va rester inexprimée. Par exemple, je ne vais même pas essayer d'emprunter une route si je sais qu'elle est en permanence bouchée. Cela ne veut pas dire que je n'en ai pas envie. Ce phénomène a été redécouvert, avec des variantes, dans bien des domaines :

@@ -4,7 +4,7 @@ date: "2012-08-10"
 tags:
   - "critique"
   - "mac"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 Loin de moi le désir de lancer un débat du type “depuis la mort de Jobs, Apple c’est plus ce que c’était” ou “Mac OS est le pire des systèmes d’exploitation à l’exception de tous les autres”, mais je constate que les préférences système de Mac OS souffrent de quelques problèmes de finition. Certains datent de Mountain Lion, d’autres sont plus anciens. Ce sont des détails, mais venant d’un éditeur de logiciels qui a fait sa réputation sur son soin pour la finition et son souci de cohérence, ça la fout mal.

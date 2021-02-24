@@ -4,7 +4,7 @@ date: "2014-08-08"
 tags:
   - "recherche"
   - "ux"
-permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 ---
 
 On entend par design en expérience utilisateur toute approche qui va au-delà des qualités instrumentales et pragmatiques d’un service pour adopter un point de vue plus holistique. Mais « holistique », c’est potentiellement très fourre-tout. Pour y voir un peu plus clair, je conseille les diapositives de [cette conférence](http://fr.slideshare.net/flupa/journe-thmatique-ateliers-ux-evaluation-ux-carine-lallemand). Carine Lallemand présente un modèle en vogue ainsi que plusieurs modèles d'évaluation. Voici ce que j'ai retiré de cette présentation, sous forme un peu brouillonne.
