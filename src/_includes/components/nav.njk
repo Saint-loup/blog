@@ -22,7 +22,7 @@
           {% for entry in navPages %}
             <a {% if page.url != entry.url %}href="{{ entry.url | url }}"{% endif %} alt="Link to {{ entry.title }}"
             class="
-            relative text-shadow text-xl font-medium items-center focus:outline-none focus:{{ colors.navCustom.textFocus or colors.navDefault.textFocus }} transition duration-150 ease-in-out
+            flex h-full relative text-shadow text-xl font-medium items-center focus:outline-none focus:{{ colors.navCustom.textFocus or colors.navDefault.textFocus }} transition duration-150 ease-in-out
             {% if entry.url in page.url %}
               {{ colors.navCustom.textActiveBg or colors.navDefault.textActiveBg }} {{ colors.navCustom.textActive or colors.navDefault.textActive }}
             {% else %}
@@ -41,7 +41,7 @@
       <div class="flex items-center sm:hidden">
 
         {# Mobile menu button #}
-        <button @click="open = !open" class="inline-flex items-center justify-center p-2 {{ colors.navCustom.mobileButton or colors.navDefault.mobileButton }} transition duration-150 ease-in-out rounded-md hover:{{ colors.navCustom.mobileButton or colors.navDefault.mobileButton }} hover:{{ colors.navCustom.mobileButtonBgover or colors.navDefault.mobileButtonBgHover }} focus:outline-none focus:{{ colors.navCustom.mobileButton or colors.navDefault.mobileButton }} focus:{{ colors.navCustom.mobileButton or colors.navDefault.mobileButton }}" x-bind:aria-label="open ? 'Close main menu' : 'Main menu'" aria-label="Main menu" x-bind:aria-expanded="open">
+        <button @click="open = !open" class="inline-flex items-center justify-center p-2 {{ colors.navCustom.mobileButton or colors.navDefault.mobileButton }} transition duration-150 ease-in-out rounded-md  focus:outline-none focus:{{ colors.navCustom.mobileButton or colors.navDefault.mobileButton }} focus:{{ colors.navCustom.mobileButton or colors.navDefault.mobileButton }}" x-bind:aria-label="open ? 'Close main menu' : 'Main menu'" aria-label="Main menu" x-bind:aria-expanded="open">
           {# Icon when menu is closed.  #}
           <svg x-state:on="Menu open" x-state:off="Menu closed" :class="{ 'hidden': open, 'block': !open }" class="block w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -61,17 +61,17 @@
       {# 11ty Nav Plugin loop  #}
       {% for entry in navPages %}
 
-        <div class="relative block h-12 text-xl font-medium text-center ">
-          <div class="decor-dark"></div>
           <a {% if page.url != entry.url %}href="{{ entry.url | url }}"{% endif %} alt="Link to {{ entry.title }}" class="
+         relative block h-12 text-xl font-medium text-center
           {{ colors.navCustom.mobileText or colors.navDefault.mobileText }}  focus:outline-none focus:{{ colors.navCustom.mobileTextFocus or colors.navDefault.mobileTextFocus }} focus:{{ colors.navCustom.mobileBgFocus or colors.navDefault.mobileBgFocus }} transition duration-150 ease-in-out
           {% if page.url == entry.url %}
-            {{ colors.navCustom.mobileBgActive or colors.navDefault.mobileBgActive }} {{ colors.navCustom.mobileTextActive or colors.navDefault.mobileTextActive }}{% else %}{{ colors.navCustom.mobileBg or colors.navDefault.mobileBg }} hover:{{ colors.navCustom.mobileTextHover or colors.navDefault.mobileTextHover }} hover:{{ colors.navCustom.mobileBgHover or colors.navDefault.mobileBgHover }}
+            {{ colors.navCustom.mobileBgActive or colors.navDefault.mobileBgActive }} {{ colors.navCustom.mobileTextActive or colors.navDefault.mobileTextActive }}{% else %}{{ colors.navCustom.mobileBg or colors.navDefault.mobileBg }} hover:{{ colors.navCustom.mobileTextHover or colors.navDefault.mobileTextHover }}
           {% endif %}
           ">
-            {{ entry.title }}
+            <div class="decor-dark"></div>
+
+            <span>{{ entry.title }}</span>
           </a>
-        </div>
       {% endfor %}
 
     </div>
