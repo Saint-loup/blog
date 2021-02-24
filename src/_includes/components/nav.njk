@@ -57,24 +57,25 @@
 
   <div x-description="Mobile menu, toggle classes based on menu state." x-state:on="Menu open" x-state:off="Menu closed" :class="{ 'block': open, 'hidden': !open }" class="hidden sm:hidden">
 
-    <div class="">
       {# 11ty Nav Plugin loop  #}
       {% for entry in navPages %}
 
           <a {% if page.url != entry.url %}href="{{ entry.url | url }}"{% endif %} alt="Link to {{ entry.title }}" class="
          relative block h-12 text-xl font-medium text-center
-          {{ colors.navCustom.mobileText or colors.navDefault.mobileText }}  focus:outline-none focus:{{ colors.navCustom.mobileTextFocus or colors.navDefault.mobileTextFocus }} focus:{{ colors.navCustom.mobileBgFocus or colors.navDefault.mobileBgFocus }} transition duration-150 ease-in-out
+          {{ colors.navCustom.mobileText or colors.navDefault.mobileText }}
+          focus:outline-none focus:{{ colors.navCustom.mobileTextFocus or colors.navDefault.mobileTextFocus }}
+          focus:{{ colors.navCustom.mobileBgFocus or colors.navDefault.mobileBgFocus }} transition duration-150 ease-in-out
           {% if page.url == entry.url %}
-            {{ colors.navCustom.mobileBgActive or colors.navDefault.mobileBgActive }} {{ colors.navCustom.mobileTextActive or colors.navDefault.mobileTextActive }}{% else %}{{ colors.navCustom.mobileBg or colors.navDefault.mobileBg }} hover:{{ colors.navCustom.mobileTextHover or colors.navDefault.mobileTextHover }}
+            {{ colors.navCustom.mobileTextActive or colors.navDefault.mobileTextActive }}
+            {% else %}{{ colors.navCustom.mobileBg or colors.navDefault.mobileBg }} hover:{{ colors.navCustom.mobileTextHover or colors.navDefault.mobileTextHover }}
           {% endif %}
           ">
             <div class="decor-dark"></div>
 
-            <span>{{ entry.title }}</span>
+            <span class=" {{ colors.navCustom.mobileBgActive or colors.navDefault.mobileBgActive }}
+">{{ entry.title }}</span>
           </a>
       {% endfor %}
-
-    </div>
 
   </div>
 </header>
