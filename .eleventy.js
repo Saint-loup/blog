@@ -16,7 +16,7 @@ const moment = require("moment");
 const implicitFigures = require('markdown-it-implicit-figures');
 const CleanCSS = require("clean-css");
 const imagesResponsiver = require("eleventy-plugin-images-responsiver");
-const Image = require("@11ty/eleventy-img");
+//const Image = require("@11ty/eleventy-img");
 const path = require("path");
 
 module.exports = function (eleventyConfig) {
@@ -217,7 +217,7 @@ module.exports = function (eleventyConfig) {
 	});
 
 	/*	eleventyConfig.addPlugin(imagesResponsiver, {
-	
+
 			default: {
 				selector: '.template-post :not(picture) img[src]:not([srcset]):not([src$=".svg"]):not([src$=".gif"])',
 				minWidth: 320,
@@ -239,9 +239,9 @@ module.exports = function (eleventyConfig) {
 							const name = path.basename(src, extension);
 							return `${name}-${width}.webp`;
 						}
-	
+
 					}
-	
+
 					try {
 						Image('src' + decodeURI(url), options);
 						let metadata = Image.statsSync('src' + decodeURI(url), options);
