@@ -3,9 +3,9 @@ const markdownIt = require('markdown-it')
 module.exports = {
 
 
-	gallery: function (data) {
+	gallery: function (data, size) {
 		const galleryContent = markdownIt().render(data);
-		return `<div class="gallery">${galleryContent}</div>`;
+		return `<div class="gallery" data-size="${size} ">${galleryContent}</div>`;
 	},
 
 
