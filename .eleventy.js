@@ -15,7 +15,7 @@ const pageAssetsPlugin = require('eleventy-plugin-page-assets');
 const moment = require("moment");
 const implicitFigures = require('markdown-it-implicit-figures');
 const CleanCSS = require("clean-css");
-const imagesResponsiver = require("eleventy-plugin-images-responsiver");
+//const imagesResponsiver = require("eleventy-plugin-images-responsiver");
 //const Image = require("@11ty/eleventy-img");
 const path = require("path");
 
