@@ -2,46 +2,57 @@
 //const imageSize = require('image-size');
 const markdownIt = require('markdown-it');
 const md = new markdownIt();
+const Image = require("@11ty/eleventy-img");
 
 const runBeforeHook = (image, document) => {
-	/*	let documentBody = document.querySelector('body');
-		let srcPath = documentBody.getAttribute('data-img-src');
-		// TODO: get "dist/" from config
-		let distPath = documentBody
-			.getAttribute('data-img-dist')
-			.replace(/^dist/, '');
+	/*
+		let url = image.getAttribute('src')
+		let stats = await Image(url, {
+			widths: [640, 1280]
+		});
 
-		let imageSrc = image.getAttribute('src');
-		if (imageSrc === null) {
-			console.dir(image.attributes);
-		}
+		image.setAttribute('src', stats.jpg.url);*/
+	console.log("prout")
+	let documentBody = document.querySelector('body');
+	let srcPath = documentBody.getAttribute('data-img-src');
+	// TODO: get "dist/" from config
+	let distPath = documentBody
+		.getAttribute('data-img-dist')
+		.replace(/^dist/, '');
 
-		let imageUrl = '';
+	let imageSrc = image.getAttribute('src');
+	if (imageSrc === null) {
+		console.dir(image.attributes);
+	}
 
-		if (imageSrc.match(/^(https?:)?\/\//)) {
-			// TODO: find a way to get a remote image's dimensions
-			// TODO: some images are local but have an absolute URL
-			imageUrl = imageSrc;
+	let imageUrl = '';
+
+	if (imageSrc.match(/^(https?:)?\/\//)) {
+		// TODO: find a way to get a remote image's dimensions
+		// TODO: some images are local but have an absolute URL
+		imageUrl = imageSrc;
+	} else {
+		let imageDimensions;
+		if (imageSrc[0] === '/') {
+			// TODO: get "src/" from Eleventy config
+			imageDimensions = imageSize('./src' + imageSrc);
+			imageUrl = site.url + imageSrc;
 		} else {
-			let imageDimensions;
-			if (imageSrc[0] === '/') {
-				// TODO: get "src/" from Eleventy config
-				imageDimensions = imageSize('./src' + imageSrc);
-				imageUrl = site.url + imageSrc;
-			} else {
-				// This is a relative URL
-				imageDimensions = imageSize(srcPath + imageSrc);
-				imageUrl = site.url + distPath + imageSrc;
-			}
-			image.setAttribute('width', imageDimensions.width);
-			image.setAttribute('height', imageDimensions.height);
-			image.setAttribute('src', imageUrl);
+			// This is a relative URL
+			imageDimensions = imageSize(srcPath + imageSrc);
+			imageUrl = site.url + distPath + imageSrc;
 		}
+		image.setAttribute('width', imageDimensions.width);
+		image.setAttribute('height', imageDimensions.height);
+		image.setAttribute('src', imageUrl);
+	}
 
-		image.dataset.responsiver = image.className;*/
+	image.dataset.responsiver = image.className;
 };
 
 const runAfterHook = (image, document) => {
+	console.log("prout")
+
 	/*	let imageUrl =
 			image.getAttribute('data-pristine') || image.getAttribute('src');
 		let caption = image.getAttribute('title');
@@ -71,7 +82,7 @@ const runAfterHook = (image, document) => {
 };
 
 module.exports = {
-	selector: ':not(picture) img[src]:not([srcset]):not([src$=".svg"])',
+	selector: 'article.template-post :not(picture) img[src]:not([srcset]):not([src$=".svg"])',
 
 	runBefore: runBeforeHook,
 	runAfter: runAfterHook,
