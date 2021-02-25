@@ -74,7 +74,10 @@
           ">
             <div class="decor-dark"></div>
 
-            <span class=" m-auto {{ colors.navCustom.mobileBgActive  }}
+            <span class=" m-auto
+            {% if entry.url in page.url %}
+              {{ colors.navCustom.mobileBgActive  }}
+            {% endif %}
 ">{{ entry.title }}</span>
           </a>
       {% endfor %}
