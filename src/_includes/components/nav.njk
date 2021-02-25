@@ -20,7 +20,7 @@
 
           {# 11ty Nav Plugin loop  #}
           {% for entry in navPages %}
-            <a {% if page.url != entry.url %}href="{{ entry.url | url }}"{% endif %} alt="Link to {{ entry.title }}"
+            <a href="{{ entry.url | url }}" alt="Link to {{ entry.title }}"
             class="
             flex h-full relative text-shadow text-xl font-medium items-center focus:outline-none focus:{{ colors.navCustom.textFocus  }} transition duration-150 ease-in-out
             {% if entry.url in page.url %}
@@ -43,11 +43,11 @@
         {# Mobile menu button #}
         <button @click="open = !open" class="inline-flex items-center justify-center p-2 {{ colors.navCustom.mobileButton  }} transition duration-150 ease-in-out rounded-md  focus:outline-none focus:{{ colors.navCustom.mobileButton  }} focus:{{ colors.navCustom.mobileButton  }}" x-bind:aria-label="open ? 'Close main menu' : 'Main menu'" aria-label="Main menu" x-bind:aria-expanded="open">
           {# Icon when menu is closed.  #}
-          <svg x-state:on="Menu open" x-state:off="Menu closed" :class="{ 'block bottom-0': open, 'bottom-20': !open }" class="block w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg x-state:on="Menu open" x-state:off="Menu closed" :class="{ 'hidden': open, 'block': !open }" class="block w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
           {# Icon when menu is open.  #}
-          <svg x-state:on="Menu open" x-state:off="Menu closed" :class="{ 'bottom-20': !open, 'block bottom-0': open }" class="hidden w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg x-state:on="Menu open" x-state:off="Menu closed" :class="{ 'hidden': !open, 'block': open }" class="hidden w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
           </svg>
         </button>
@@ -55,20 +55,22 @@
     </div>
   </div>
 
-  <div x-description="Mobile menu, toggle classes based on menu state." x-state:on="Menu open" x-state:off="Menu closed" :class="{ ' bottom-0': open, 'bottom-20': !open }" class="relative sm:hidden nav-burger">
+  <div x-description="Mobile menu, toggle classes based on menu state." x-state:on="Menu open" x-state:off="Menu closed" :class="{ ' bottom-0 z-10': open, 'bottom-20': !open }" class="relative sm:hidden nav-burger">
 
       {# 11ty Nav Plugin loop  #}
       {% for entry in navPages %}
 
-          <a {% if page.url != entry.url %}href="{{ entry.url | url }}"{% endif %} alt="Link to {{ entry.title }}" class="
-          h-20 flex relative block h-12 text-xl font-medium text-center
-          {{ colors.navCustom.mobileText  }}
-          focus:outline-none focus:{{ colors.navCustom.mobileTextFocus  }}
-          focus:{{ colors.navCustom.mobileBgFocus  }} transition duration-150 ease-in-out
-          {% if page.url == entry.url %}
-            {{ colors.navCustom.mobileTextActive  }}
-            {% else %}{{ colors.navCustom.mobileBg  }} hover:{{ colors.navCustom.mobileTextHover  }}
-          {% endif %}
+          <a href="{{ entry.url | url }}"
+          alt="Link to {{ entry.title }}"
+          class="
+            h-20 flex relative block h-12 text-xl font-medium text-center
+            {{ colors.navCustom.mobileText  }}
+            focus:outline-none focus:{{ colors.navCustom.mobileTextFocus  }}
+            focus:{{ colors.navCustom.mobileBgFocus  }} transition duration-150 ease-in-out
+              {% if entry.url in page.url %}
+              {{ colors.navCustom.mobileTextActive  }}
+              {% else %}{{ colors.navCustom.mobileBg  }} hover:{{ colors.navCustom.mobileTextHover  }}
+            {% endif %}
           ">
             <div class="decor-dark"></div>
 
