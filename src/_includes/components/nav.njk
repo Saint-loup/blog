@@ -1,28 +1,28 @@
 {% set navPages = collections.pages | eleventyNavigation %}
-<header x-data="{ open: false }" class="">
-  <div class=" navbar">
-    <div class="relative flex justify-between h-20">
-      <div class="decor-dark"></div>
+<header class="navbar">
+  <div class="relative z-10 flex justify-between h-20">
+    <div class="decor-dark"></div>
 
-      <div class="flex flex-row">
-          <a class="m-auto" href= "{{ '/' |  url}}">
-          <svg class="h-8 m-auto fill-current lg:h-10 text-accent" viewBox="0 0 70 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div class="flex flex-row">
+      <a class="m-auto" href="{{ '/' |  url}}">
+        <svg class="h-8 m-auto fill-current lg:h-10 text-accent" viewbox="0 0 70 61" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M69.0125 30.519C68.9364 47.0891 34.665 60.5201 34.665 60.5201C34.665 60.5201 0.51711 47.0891 0.593284 30.519C0.669458 13.9489 34.9408 0.517944 34.9408 0.517944C34.9408 0.517944 69.0887 13.9489 69.0125 30.519Z"/>
           <path d="M61.6024 30.519C61.589 33.4206 60.0722 36.341 57.5222 39.1802C54.9854 42.0047 51.5638 44.5929 48.0739 46.8019C44.5945 49.0041 41.1073 50.792 38.4841 52.031C37.1744 52.6496 36.0844 53.1293 35.3242 53.4534C35.0794 53.5578 34.8688 53.646 34.6963 53.7174C34.5245 53.646 34.3148 53.5578 34.0708 53.4534C33.3137 53.1293 32.2281 52.6496 30.9241 52.031C28.3122 50.792 24.8415 49.0041 21.3823 46.8019C17.9127 44.5929 14.5149 42.0047 12.0041 39.1802C9.48026 36.341 7.99025 33.4206 8.00359 30.519C8.01692 27.6175 9.53379 24.697 12.0837 21.8578C14.6205 19.0333 18.0421 16.4451 21.532 14.2362C25.0114 12.0339 28.4986 10.246 31.1218 9.00708C32.4316 8.38847 33.5215 7.90878 34.2817 7.58467C34.5266 7.48027 34.7371 7.39206 34.9096 7.3206C35.0815 7.39206 35.2912 7.48027 35.5351 7.58467C36.2923 7.90878 37.3778 8.38847 38.6819 9.00708C41.2937 10.246 44.7645 12.0339 48.2236 14.2362C51.6932 16.4451 55.091 19.0333 57.6019 21.8578C60.1257 24.697 61.6157 27.6175 61.6024 30.519Z" stroke="#0D4362" stroke-width="3" stroke-miterlimit="10"/>
-          </svg>
+        </svg>
+      </a>
+      <h1 class=" tracking-tight lg:tracking-normal ml-4 lg:ml-8 relative bottom-0.5 sm:bottom-auto flex font-medium content-center text-shadow-lg-dark text-2-half-xl sm:text-3lg lg:text-4xl {{colors.navCustom.text}}">
+        <a class="m-auto" href="{{ '/' |  url}}">{{ meta.siteName or title }}
         </a>
-        <h1 class=" tracking-tight lg:tracking-normal ml-4 lg:ml-8 relative bottom-0.5 sm:bottom-auto flex font-medium content-center text-shadow-lg-dark text-2-half-xl sm:text-3lg lg:text-4xl {{colors.navCustom.text}}" >
-            <a class="m-auto" href= "{{ '/' |  url}}">{{ meta.siteName or title }} </a>
-         </h1>
-      </div>
+      </h1>
+    </div>
 
-        <div class="hidden m-auto sm:m-0 sm:flex sm:items-center">
+    <div class="hidden m-auto sm:m-0 sm:flex sm:items-center">
 
-          {# 11ty Nav Plugin loop  #}
-          {% for entry in navPages %}
-            <a href="{{ entry.url | url }}" alt="Link to {{ entry.title }}"
-            class="
-            flex h-full relative text-shadow text-xl font-medium items-center focus:outline-none focus:{{ colors.navCustom.textFocus  }} transition duration-150 ease-in-out
+      {# 11ty Nav Plugin loop  #}
+      {% for entry in navPages %}
+        <a href="{{ entry.url | url }}" alt="Link to {{ entry.title }}" class="
+            flex h-full relative text-shadow text-xl font-medium items-center
+            focus:outline-none focus:{{ colors.navCustom.textFocus  }}
             {% if entry.url in page.url %}
               {{ colors.navCustom.textActiveBg  }} {{ colors.navCustom.textActive  }}
             {% else %}
@@ -30,57 +30,64 @@
               hover:{{ colors.navCustom.textHover  }}
             {% endif %}
             ">
-              {{ entry.title }}
-            </a>
-          {% endfor %}
-      </div>
+          {{ entry.title }}
+        </a>
+      {% endfor %}
+    </div>
 
-      {# Right side of Navbar  #}
+    {# Right side of Navbar  #}
 
-      {# MOBILE MENU  #}
-      <div class="flex items-center sm:hidden">
+    {# MOBILE MENU  #}
+    <div class="flex items-center sm:hidden">
 
-        {# Mobile menu button #}
-        <button @click="open = !open" class="inline-flex items-center justify-center p-2 {{ colors.navCustom.mobileButton  }} transition duration-150 ease-in-out rounded-md  focus:outline-none focus:{{ colors.navCustom.mobileButton  }} focus:{{ colors.navCustom.mobileButton  }}" x-bind:aria-label="open ? 'Close main menu' : 'Main menu'" aria-label="Main menu" x-bind:aria-expanded="open">
-          {# Icon when menu is closed.  #}
-          <svg x-state:on="Menu open" x-state:off="Menu closed" :class="{ 'hidden': open, 'block': !open }" class="block w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-          {# Icon when menu is open.  #}
-          <svg x-state:on="Menu open" x-state:off="Menu closed" :class="{ 'hidden': !open, 'block': open }" class="hidden w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-          </svg>
-        </button>
-      </div>
+      {# Mobile menu button #}
+      <button x-on:click.away="open = false" @click="open = !open; " class="inline-flex items-center justify-center p-2 {{ colors.navCustom.mobileButton  }} transition duration-150 ease-in-out rounded-md  focus:outline-none focus:{{ colors.navCustom.mobileButton  }} focus:{{ colors.navCustom.mobileButton  }}" x-bind:aria-label="open ? 'Close main menu' : 'Main menu'" aria-label="Main menu" x-bind:aria-expanded="open">
+        {# Icon when menu is closed.  #}
+        <svg :class="{ 'hidden': open, 'block': !open }" class="block w-8 h-8" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+        {# Icon when menu is open.  #}
+        <svg :class="{ 'hidden': !open, 'block': open }" class="hidden w-8 h-8" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
     </div>
   </div>
 
-  <div x-description="Mobile menu, toggle classes based on menu state." x-state:on="Menu open" x-state:off="Menu closed" :class="{ ' bottom-0 z-10': open, 'bottom-20': !open }" class="relative sm:hidden nav-burger">
+  <div
+  x-description="Mobile menu, toggle classes based on menu state."
+  x-show="open"
+  x-transition:enter="transition ease-out duration-300"
+  x-transition:enter-start="opacity-0 transform -translate-y-40"
+  x-transition:enter-end="opacity-100 transform translate-y-0"
+  x-transition:leave="transition ease-out duration-300"
+  x-transition:leave-start="transition ease-out duration-300 opacity-100 transform translate-y-0"
+  x-transition:leave-end="opacity-0 transform -translate-y-40"
 
-      {# 11ty Nav Plugin loop  #}
-      {% for entry in navPages %}
+  class="sm:hidden">
 
-          <a href="{{ entry.url | url }}"
-          alt="Link to {{ entry.title }}"
+    {# 11ty Nav Plugin loop  #}
+    {% for entry in navPages %}
+
+      <a href="{{ entry.url | url }}" alt="Link to {{ entry.title }}"
           class="
             h-20 flex relative block h-12 text-xl font-medium text-center
             {{ colors.navCustom.mobileText  }}
             focus:outline-none focus:{{ colors.navCustom.mobileTextFocus  }}
-            focus:{{ colors.navCustom.mobileBgFocus  }} transition duration-150 ease-in-out
+            focus:{{ colors.navCustom.mobileBgFocus  }}
               {% if entry.url in page.url %}
               {{ colors.navCustom.mobileTextActive  }}
               {% else %}{{ colors.navCustom.mobileBg  }} hover:{{ colors.navCustom.mobileTextHover  }}
             {% endif %}
           ">
-            <div class="decor-dark"></div>
+        <div class="decor-dark"></div>
 
-            <span class=" m-auto
+        <span class=" m-auto
             {% if entry.url in page.url %}
               {{ colors.navCustom.mobileBgActive  }}
             {% endif %}
-">{{ entry.title }}</span>
-          </a>
-      {% endfor %}
-
-  </div>
-</header>
+           ">{{ entry.title }}
+        </span>
+      </a>
+    {% endfor %}
+  </header>
