@@ -56,21 +56,16 @@
 
   <div
   x-description="Mobile menu, toggle classes based on menu state."
-  x-show="open"
-  x-transition:enter="transition ease-out duration-300"
-  x-transition:enter-start="opacity-0 transform -translate-y-40"
-  x-transition:enter-end="opacity-100 transform translate-y-0"
-  x-transition:leave="transition ease-out duration-300"
-  x-transition:leave-start="transition ease-out duration-300 opacity-100 transform translate-y-0"
-  x-transition:leave-end="opacity-0 transform -translate-y-40"
-
-  class="sm:hidden">
+  :class="{ 'anim-nav-closed': !open, 'anim-nav-opened': open }"
+  id="navbar-mobile"
+  class="relative transition duration-300 ease-out sm:hidden">
 
     {# 11ty Nav Plugin loop  #}
     {% for entry in navPages %}
 
       <a href="{{ entry.url | url }}" alt="Link to {{ entry.title }}"
           class="
+            last:z-50
             h-20 flex relative block h-12 text-xl font-medium text-center
             {{ colors.navCustom.mobileText  }}
             focus:outline-none focus:{{ colors.navCustom.mobileTextFocus  }}

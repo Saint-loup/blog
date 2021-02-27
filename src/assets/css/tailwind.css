@@ -115,7 +115,8 @@ pre code {
 	overflow: hidden;
 	margin-left: calc(50% - 50vw);
 	margin-right: calc(50% - 50vw);
-
+/*	box-shadow: 0px 3px 8px 1px #132233ad;
+*/
 	}
 
 
@@ -151,9 +152,11 @@ pre code {
 
 }
 
-.nav-burger {
-	transition: .1s all cubic-bezier(.43,.21,.97,.78);
-	z-index: -2;
+.anim-nav-closed {
+	transform: translateY( calc(-1 * var(--navbar-height) * 5rem));
+}
+.anim-nav-opened {
+	transform: translateY( calc( --var(navbar-height) * 5rem));
 }
 @tailwind components;
 
