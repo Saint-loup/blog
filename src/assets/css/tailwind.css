@@ -51,7 +51,9 @@ pre code {
 }
 
 
-
+--root {
+	--navbar-height:1;
+}
 
 
 .article .cta {
@@ -156,7 +158,7 @@ pre code {
 	transform: translateY( calc(-1 * var(--navbar-height) * 5rem));
 }
 .anim-nav-opened {
-	transform: translateY( calc( --var(navbar-height) * 5rem));
+	transform: translateY( 0);
 }
 @tailwind components;
 
