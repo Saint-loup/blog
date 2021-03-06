@@ -24,13 +24,6 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addDataExtension("yaml", contents => yaml.safeLoad(contents));
 
 
-	var md = require("markdown-it")();
-	var blockImagePlugin = require("markdown-it-block-image");
-
-	md.use(blockImagePlugin, {
-		outputContainer: true,
-		containerClassName: "image-container"
-	});
 
 
 	eleventyConfig.setFrontMatterParsingOptions({
@@ -364,6 +357,8 @@ module.exports = function (eleventyConfig) {
 		});
 	}
 
+	var blockImagePlugin = require("markdown-it-block-image");
+
 	const md = markdownIt(markdownItOptions)
 		.disable('code')
 		.use(markdownItHeadingLevel, { firstLevel: 2 })
@@ -373,8 +368,12 @@ module.exports = function (eleventyConfig) {
 		.use(markdownItContainer, 'info')
 		.use(markdownItContainer, 'success')
 		.use(markdownItContainer, 'warning')
-		.use(markdownItContainer, 'error');
+		.use(blockImagePlugin, {
+			outputContainer: true,
+			containerClassName: "image-container"
+		}).use(markdownItContainer, 'error');
 	eleventyConfig.setLibrary('md', md);
+
 
 	// Add markdownify filter with Markdown-it configuration
 	eleventyConfig.addFilter('markdownify', (markdownString) =>
