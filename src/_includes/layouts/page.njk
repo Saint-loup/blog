@@ -3,8 +3,8 @@ layout: base
 tags: pages
 ---
 
-<div class="m-auto my-12 page">
-<h1 class="{{ colors.headingsCustom or colors.headingsDefault }}">{{ seo.title or title }}</h1>
+<div class="max-w-3xl mx-auto my-12 page">
+  <h1 class="{{ colors.headingsCustom or colors.headingsDefault }}">{{ seo.title or title }}</h1>
   {% if seo.description %}
     <div class="{{ colors.borderCustom.borders or colors.borderDefault.borders }} {{ colors.borderCustom.color or colors.borderDefault.color }}">
       {{ seo.description }}

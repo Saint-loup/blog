@@ -1,7 +1,6 @@
 ---
 title: Au doigt de pied et à l'oeil — contrôler un ordinateur avec les pieds
 date: 2021-02-17
-excerpt : Lors de deux moments importants pour l'histoire de l'informatique, on trouve une personne assise à une machine et utilisant autant ses pieds que ses mains.
 tags:
   - "objets"
 permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
@@ -15,14 +14,17 @@ heroSettings:
     image: joyboard2.jpg  # relative to /assets/images/
     imagePosition: # options = bg-center (default), bg-left, bg-right
   headingTextColor: # default = text-white (can use any TailwindCSS text-[color]-[xxx])
-  subheadingText:
+
   subheadingTextColor: # Leave empty to inherit headingTextColor or default (text-white) or use any text-[color]-[xxx]
 
 ---
 
+Lors de deux moments importants pour l'histoire de l'informatique, on trouve une personne assise à une machine et utilisant autant ses pieds que ses mains.
+
+<!-- excerpt -->
+
 *Première date de publication : Avril 2018*
 
-{{excerpt}}
 
 
 D'abord, le [métier Jacquard](https://fr.wikipedia.org/wiki/M%C3%A9tier_Jacquard) nécessitait l'emploi d'une pédale, comme d'autres métiers à tisser avant lui. Cette invention inspirera [le proto-ordinateur](https://en.wikipedia.org/wiki/Analytical_Engine) de Babbage et Lovelace. Ensuite, Engelbart est connu pour être le premier, dès 1968, à proposer un système cohérent comprenant interface graphique, souris et collaboration à distance. Ce qui est moins connu, c'est que pour lui le succès de la souris fut presque accidentel. Lui croyait plus dans le potentiel du [clavier à accords](https://en.wikipedia.org/wiki/Chorded_keyboard) et avant ça avait expérimenté avec des dispositifs où la position du pointeur était transmise par un casque, ou encore par la position... [du pied et du genou !](ftp://ftp.invisible-island.net/shuford/terminal/engelbart_mouse_alternatives.html)

@@ -1,9 +1,8 @@
 {% set navPages = collections.pages | eleventyNavigation %}
-<header class="navbar">
+<header class="navbar px-per bg-dark">
   <div class="relative z-10 flex justify-between h-20">
-    <div class="decor-dark"></div>
 
-    <div class="flex flex-row">
+    <div class="flex flex-row bg-dark">
       <a class="m-auto" href="{{ '/' |  url}}">
         <svg class="h-8 m-auto fill-current lg:h-10 text-accent" viewbox="0 0 70 61" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M69.0125 30.519C68.9364 47.0891 34.665 60.5201 34.665 60.5201C34.665 60.5201 0.51711 47.0891 0.593284 30.519C0.669458 13.9489 34.9408 0.517944 34.9408 0.517944C34.9408 0.517944 69.0887 13.9489 69.0125 30.519Z"/>
@@ -41,7 +40,7 @@
     <div class="flex items-center sm:hidden">
 
       {# Mobile menu button #}
-      <button x-on:click.away="open = false" @click="open = !open; " class="inline-flex items-center justify-center p-2 {{ colors.navCustom.mobileButton  }} transition duration-150 ease-in-out rounded-md  focus:outline-none focus:{{ colors.navCustom.mobileButton  }} focus:{{ colors.navCustom.mobileButton  }}" x-bind:aria-label="open ? 'Close main menu' : 'Main menu'" aria-label="Main menu" x-bind:aria-expanded="open">
+      <button x-on:click.away="open = false" @click="open = !open; " class="inline-flex items-center justify-center p-2 {{ colors.navCustom.mobileButton  }} transition-transform duration-150 ease-in-out rounded-md  focus:outline-none focus:{{ colors.navCustom.mobileButton  }} focus:{{ colors.navCustom.mobileButton  }}" x-bind:aria-label="open ? 'Close main menu' : 'Main menu'" aria-label="Main menu" x-bind:aria-expanded="open">
         {# Icon when menu is closed.  #}
         <svg :class="{ 'hidden': open, 'block': !open }" class="block w-8 h-8" fill="none" viewbox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -58,7 +57,7 @@
   x-description="Mobile menu, toggle classes based on menu state."
   :class="{ 'anim-nav-closed': !open, 'anim-nav-opened': open }"
   id="navbar-mobile"
-  class="relative transition duration-300 ease-out sm:hidden">
+  class="relative transition-transform duration-300 ease-out sm:hidden">
 
     {# 11ty Nav Plugin loop  #}
     {% for entry in navPages %}
@@ -75,7 +74,6 @@
               {% else %}{{ colors.navCustom.mobileBg  }} hover:{{ colors.navCustom.mobileTextHover  }}
             {% endif %}
           ">
-        <div class="decor-dark"></div>
 
         <span class=" m-auto
             {% if entry.url in page.url %}

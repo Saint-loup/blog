@@ -1,42 +1,46 @@
 {#{{ heroSettings.height.mobile or 'h-1/2' }} sm:{{ heroSettings.height.desktop or heroSettings.height.mobile or 'h-1/2' }}#}
 <header class="relative flex flex-col h-auto mb-8 lg:flex-row hero-split lg:mb-18">
-    <div class=" decor-dark h-2/3"></div>
+  <div class=" decor-dark h-2/3"></div>
 
   <div
-        class="flex content-center m-8 mx-auto prose text-center lg:justify-between lg:w-1/2 prose-l lg:text-left place-content-center"
+        class="flex flex-col m-8 mx-auto prose lg:justify-center text-gray-50 lg:w-1/2 prose-l lg:text-left"
       >
-    <div class="flex content-center align-middle lg:w-11/12 lg:justify-between text-gray-50 place-content-center">
 
-      <h1
-            class=" text-shadow-lg-dark self-center text-5xl font-semibold leading-10 {{ heroSettings.headingTextColor or 'text-white' }} sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl"
+    <h1
+            class=" text-shadow-lg-dark text-5xl font-semibold leading-10 {{ heroSettings.headingTextColor or 'text-white' }} sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl"
           >
-        {{ title | safe }}
-      </h1>
+      {{ title | safe }}
+    </h1>
+    {% if heroSettings.subheadingText %}
       <p
             class="text-shadow max-w-md mx-auto mt-3 text-lg {{ heroSettings.subheadingTextColor }} sm:text-xl md:mt-5 md:max-w-3xl"
           >
         {{ heroSettings.subheadingText | safe }}
-
       </p>
+    {% endif %}
 
-      {% if heroSettings.buttonText %}
-        <div class="w-full mt-12 ">
-          <a href="{{ heroSettings.buttonURL }}" class="p-4 rounded-lg {{ heroSettings.buttonTextColor or colors.buttonCustom.text or colors.buttonDefault.text }} {{ heroSettings.buttonBgColor or colors.buttonCustom.bg or colors.buttonDefault.bg }} hover:{{ colors.buttonCustom.textHover or colors.buttonDefault.textHover }} hover:{{ heroSettings.buttonBgHover or colors.buttonCustom.bgHover or colors.buttonDefault.bgHover }} {{ heroSettings.buttonBorder or colors.buttonCustom.border or colors.buttonDefault.border }}">{{ heroSettings.buttonText }}</a>
-        </div>
-      {% endif %}
-
+    <div class="text-sm text-gray-50">
+      <time datetime="{{ page.date | dateToFormat("yyyy-MM-dd") }}">
+        {{ page.date | dateToFormat("dd LLL yyyy") }}
+      </time>
     </div>
+    {% if heroSettings.buttonText %}
+      <div class="w-full mt-12 ">
+        <a href="{{ heroSettings.buttonURL }}" class="p-4 rounded-lg {{ heroSettings.buttonTextColor or colors.buttonCustom.text or colors.buttonDefault.text }} {{ heroSettings.buttonBgColor or colors.buttonCustom.bg or colors.buttonDefault.bg }} hover:{{ colors.buttonCustom.textHover or colors.buttonDefault.textHover }} hover:{{ heroSettings.buttonBgHover or colors.buttonCustom.bgHover or colors.buttonDefault.bgHover }} {{ heroSettings.buttonBorder or colors.buttonCustom.border or colors.buttonDefault.border }}">{{ heroSettings.buttonText }}</a>
+      </div>
+    {% endif %}
+
   </div>
   <div
         class="flex justify-center h-auto mx-auto lg:w-1/2 img-wrapper"
       >
 
-{#      {% set path = '/assets/images/'+ heroSettings.bg.image %}
-#}    <img  alt="{{heroSettings.bg.alt}}"
+    {#      {% set path = '/assets/images/'+ heroSettings.bg.image %}
+#}
+    <img  alt="{{heroSettings.bg.alt}}"
           class="shadow-lg-dark"
           src="/assets/images/{{ heroSettings.bg.image }}"
           alt="Hero Image"
-  />
+/>
   </div>
-  </header>
-
+</header>

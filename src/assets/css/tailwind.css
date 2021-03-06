@@ -1,5 +1,9 @@
 @tailwind base;
 
+--root {
+	--navbar-height:1;
+}
+
 h1,
 h2,
 h3,
@@ -43,17 +47,11 @@ p {
 	@apply p-0 m-0;
 }
 
-code {
-	@apply p-1 text-sm bg-gray-200 border border-gray-300 rounded-lg;
-}
+
 pre code {
 	@apply bg-transparent border-0 rounded-none;
 }
 
-
---root {
-	--navbar-height:1;
-}
 
 
 .article .cta {
@@ -80,12 +78,14 @@ pre code {
 	}
 }
 
+
+
 @media screen and (max-width:1024px){
 
 	.hero-split img {
 		width: auto;
 		height: inherit;
-		max-height: 50vmax;
+		max-height: 48vmax;
 		align-self: flex-start;
 	}
 }
@@ -109,16 +109,16 @@ pre code {
 }
 
 	.decor-dark {
-	position: absolute;
-	@apply bg-dark;
-	width: 100vw;
-	height: inherit;
-	z-index: -1;
-	overflow: hidden;
-	margin-left: calc(50% - 50vw);
-	margin-right: calc(50% - 50vw);
-/*	box-shadow: 0px 3px 8px 1px #132233ad;
-*/
+		position: absolute;
+		@apply bg-dark;
+		width: 100vw;
+		height: inherit;
+		z-index: -1;
+		overflow: hidden;
+		margin-left: calc(50% - 50vw);
+		margin-right: calc(50% - 50vw);
+	/*	box-shadow: 0px 3px 8px 1px #132233ad;
+	*/
 	}
 
 
@@ -127,6 +127,7 @@ pre code {
 		margin-right: calc(30% - 30vw);
 		position: relative
 	}
+
 
 
 	.article main img {
@@ -153,13 +154,15 @@ pre code {
 
 
 }
-
-.anim-nav-closed {
+@media screen and (max-width:640px)
+{.anim-nav-closed {
 	transform: translateY( calc(-1 * var(--navbar-height) * 5rem));
 }
 .anim-nav-opened {
 	transform: translateY( 0);
-}
+}}
+
+
 @tailwind components;
 
 @tailwind utilities;

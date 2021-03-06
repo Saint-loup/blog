@@ -4,7 +4,8 @@ date: "2020-12-18"
 tags:
   - "travaux"
 permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
-excerpt:
+excerpt: Une mosaïque des livres, jeux, films... que je "pratique", filtrables par année et catégorie. Un variateur permet de changer la taille des vignettes, pour avoir une vue panoramique ou au contraire très détaillée.
+
 hero: split  # options: carousel, graphic, video, split (text & image)
 heroSettings:
   height:
@@ -15,7 +16,7 @@ heroSettings:
     image: image.jpg # relative to /assets/images/
     imagePosition: # options = bg-center (default), bg-left, bg-right
   headingTextColor: # default = text-white (can use any TailwindCSS text-[color]-[xxx])
-  subheadingText:
+
   subheadingTextColor: # Leave empty to inherit headingTextColor or default (text-white) or use any text-[color]-[xxx]
 
 ---
