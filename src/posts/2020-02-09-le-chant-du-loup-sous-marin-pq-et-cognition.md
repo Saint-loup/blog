@@ -7,7 +7,6 @@ tags:
   - "sciences-cognitives"
   - "systemes-complexes"
 permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
-excerpt: _Le Chant du loup_ suit l’épopée de l’équipage d’un sous-marin et de son “oreille d’or”, un analyste acoustique. Ce film est une mine d'or sur l'esprit humain et ses interactions avec la machine. Voici pêle-mêle ce que j'ai trouvé intéressant.
 
 hero: split  # options: carousel, graphic, video, split (text & image)
 heroSettings:
@@ -19,12 +18,14 @@ heroSettings:
     image: le-chant-du-loup-e1581375123572.jpg # relative to /assets/images/
     imagePosition: # options = bg-center (default), bg-left, bg-right
   headingTextColor: # default = text-white (can use any TailwindCSS text-[color]-[xxx])
-  subheadingText:
+
   subheadingTextColor: # Leave empty to inherit headingTextColor or default (text-white) or use any text-[color]-[xxx]
 
 ---
 
-{{excerpt}}
+_Le Chant du loup_ suit l’épopée de l’équipage d’un sous-marin et de son “oreille d’or”, un analyste acoustique. Ce film est une mine d'or sur l'esprit humain et ses interactions avec la machine. Voici pêle-mêle ce que j'ai trouvé intéressant.
+
+<!-- excerpt -->
 
 On y trouve beaucoup d'exemples des approches appelées [facteur humain](https://en.wikipedia.org/wiki/Human_factors_and_ergonomics), c'est-à-dire en gros de la manière dont humains, technique et organisations sont intriqués dans des gros machins impénétrables appelés [systèmes socio-techniques complexes](https://en.wikipedia.org/wiki/Sociotechnical_system).
 

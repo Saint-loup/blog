@@ -15,7 +15,7 @@ heroSettings:
     image: 2019-09-14_01h56_51.jpg # relative to /assets/images/
     imagePosition: # options = bg-center (default), bg-left, bg-right
   headingTextColor: # default = text-white (can use any TailwindCSS text-[color]-[xxx])
-  subheadingText:
+
   subheadingTextColor: # Leave empty to inherit headingTextColor or default (text-white) or use any text-[color]-[xxx]
 
 ---

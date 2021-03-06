@@ -1,4 +1,4 @@
-const { opacity } = require('tailwindcss/defaultTheme')
+const { opacity, fontFamily } = require('tailwindcss/defaultTheme')
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
@@ -33,6 +33,12 @@ module.exports = {
 		},
 
 		extend: {
+			spacing: {
+				'per-lg': '4%',
+				'per': '2%',
+
+
+			},
 			fontSize: {
 				'2-half-xl': '1.65rem',
 			},
@@ -77,10 +83,8 @@ module.exports = {
 							'&:before': { content: "none !important" },
 							'&:after': { content: "none !important" },
 							borderRadius: '3px',
-							opacity: 'rgba(229, 231, 235, var(--tw-bg-opacity))',
-							"--tw-bg-opacity": '0.5 !important'
-
-
+							backgroundColor: 'rgba(229, 231, 235, .5)',
+							fontFamily: 'unset'
 						}
 						,
 						h1: {

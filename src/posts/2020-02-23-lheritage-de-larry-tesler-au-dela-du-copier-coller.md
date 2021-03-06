@@ -17,7 +17,7 @@ heroSettings:
     imagePosition: # options = bg-center (default), bg-left, bg-right
     alt: Clavier auxiliaire utilisé par Tesler pour tester la fonction de couper-coller, avec des étiquettes notées "cut" et "paste"
   headingTextColor: # default = text-white (can use any TailwindCSS text-[color]-[xxx])
-  subheadingText:
+
   subheadingTextColor: # Leave empty to inherit headingTextColor or default (text-white) or use any text-[color]-[xxx]
 ---
 

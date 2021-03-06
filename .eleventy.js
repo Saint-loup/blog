@@ -24,7 +24,22 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addDataExtension("yaml", contents => yaml.safeLoad(contents));
 
 
+	var md = require("markdown-it")();
+	var blockImagePlugin = require("markdown-it-block-image");
 
+	md.use(blockImagePlugin, {
+		outputContainer: true,
+		containerClassName: "image-container"
+	});
+
+
+	eleventyConfig.setFrontMatterParsingOptions({
+		excerpt: true,
+		// Optional, default is "---"
+		excerpt_separator: "<!-- excerpt -->"
+	});
+
+	eleventyConfig.addNunjucksFilter("markdownify", markdownString => md.render(markdownString));
 
 	/**
 	 * Plugins
