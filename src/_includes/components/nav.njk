@@ -1,8 +1,8 @@
 {% set navPages = collections.pages | eleventyNavigation %}
-<header class="navbar px-per bg-dark">
-  <div class="relative z-10 flex justify-between h-20">
+<header class="navbar lg:px-per lg:bg-dark ">
+  <div class="relative z-10 flex justify-between h-20 px-per lg:p-0 bg-dark ">
 
-    <div class="flex flex-row bg-dark">
+    <div class="flex flex-row ">
       <a class="m-auto" href="{{ '/' |  url}}">
         <svg class="h-8 m-auto fill-current lg:h-10 text-accent" viewbox="0 0 70 61" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M69.0125 30.519C68.9364 47.0891 34.665 60.5201 34.665 60.5201C34.665 60.5201 0.51711 47.0891 0.593284 30.519C0.669458 13.9489 34.9408 0.517944 34.9408 0.517944C34.9408 0.517944 69.0887 13.9489 69.0125 30.519Z"/>
@@ -63,7 +63,7 @@
     {% for entry in navPages %}
 
       <a href="{{ entry.url | url }}" alt="Link to {{ entry.title }}"
-          class="
+          class="  px-per lg:p-0 bg-dark
             last:z-50
             h-20 flex relative block h-12 text-xl font-medium text-center
             {{ colors.navCustom.mobileText  }}
