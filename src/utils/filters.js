@@ -1,12 +1,28 @@
 const { DateTime } = require('luxon')
 const slugify = require('slugify')
 const cleanCSS = require('clean-css')
+const moment = require('moment')
+/*const { formatDistance, parse, locale, parseISO, lightFormat } = require('date-fns')
+const { fr } = require('date-fns/locale/fr')*/
 
 module.exports = {
 	/**
 	 * Filters
 	 * @link https://www.11ty.dev/docs/filters/
 	 */
+
+
+
+
+	cssmin: (code) => {
+		return new CleanCSS({}).minify(code).styles;
+	},
+
+	dateToPermalink: function (date) {
+		return moment(date).format("YYYY/MM");
+	},
+
+
 
 	/**
 	 * dateToFormat allows specifiying display format at point of use.
@@ -31,17 +47,17 @@ module.exports = {
 			replacement: '-',
 			remove: /[*+~.·,()'"`´%!?¿:@]/g,
 		})
-  },
-  
-    /**
+	},
+
+	/**
    * Pass ` | limit(x)` to a Collection loop to limit the number returned
    * Alt = ` | reverse | limit(x)` to return X most recent
    * Took the following filters from
    * @link https://www.youtube.com/watch?v=wV77GwOY22w&feature=share
    */
-  limit: (arr, count = 5) => {
-    return arr.slice(0, count)
-  },
+	limit: (arr, count = 5) => {
+		return arr.slice(0, count)
+	},
 
 	/**
 	 * Get Authors from _data/authors.json to use in Post Lists and Detail

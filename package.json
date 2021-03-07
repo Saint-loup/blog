@@ -28,6 +28,7 @@
     "cross-env": "^7.0.3",
     "cssnano": "^4.1.10",
     "dotenv": "^8.2.0",
+    "eleventy-plugin-images-responsiver": "^1.8.2",
     "eleventy-plugin-page-assets": "^0.3.0",
     "html-minifier": "^4.0.0",
     "luxon": "^1.25.0",
@@ -43,19 +44,20 @@
     "tailwindcss-textshadow": "^2.1.3",
     "terser-webpack-plugin": "^4.2.3",
     "webpack": "^4.44.2",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "moment": "^2.29.1"
   },
   "dependencies": {
     "@11ty/eleventy-img": "^0.8.0",
     "@sindresorhus/slugify": "^1.1.0",
     "@tailwindcss/typography": "^0.4.0",
+    "date-fns": "^2.19.0",
     "js-yaml": "^3.14.0",
     "markdown-it-anchor": "^7.0.2",
     "markdown-it-attrs": "^4.0.0",
     "markdown-it-block-image": "^0.0.3",
     "markdown-it-container": "^3.0.0",
     "markdown-it-footnote": "^3.0.2",
-    "markdown-it-implicit-figures": "^0.10.0",
-    "moment": "^2.29.1"
+    "markdown-it-implicit-figures": "^0.10.0"
   }
 }
