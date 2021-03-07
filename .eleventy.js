@@ -12,18 +12,23 @@ const transforms = require('./src/utils/transforms.js')
 //const svgsprite = require('./src/utils/svgsprite')
 const yaml = require("js-yaml");
 const pageAssetsPlugin = require('eleventy-plugin-page-assets');
-const moment = require("moment");
 const implicitFigures = require('markdown-it-implicit-figures');
 const CleanCSS = require("clean-css");
 //const imagesResponsiver = require("eleventy-plugin-images-responsiver");
 //const Image = require("@11ty/eleventy-img");
 const path = require("path");
+const blockImagePlugin = require("markdown-it-block-image");
+const markdownItAttributes = require('markdown-it-attrs');
+const markdownItContainer = require('markdown-it-container');
+
+const markdownItFootnote = require('markdown-it-footnote');
+
+const slugify = require('./src/_includes/slugify.js');
+const markdownItAnchor = require('markdown-it-anchor');
 
 module.exports = function (eleventyConfig) {
 
 	eleventyConfig.addDataExtension("yaml", contents => yaml.safeLoad(contents));
-
-
 
 
 	eleventyConfig.setFrontMatterParsingOptions({
@@ -32,7 +37,6 @@ module.exports = function (eleventyConfig) {
 		excerpt_separator: "<!-- excerpt -->"
 	});
 
-	eleventyConfig.addNunjucksFilter("markdownify", markdownString => md.render(markdownString));
 
 	/**
 	 * Plugins
@@ -52,6 +56,7 @@ module.exports = function (eleventyConfig) {
 	Object.keys(filters).forEach((filterName) => {
 		eleventyConfig.addFilter(filterName, filters[filterName])
 	})
+
 
 	/**
 	 * Transforms
@@ -162,14 +167,6 @@ module.exports = function (eleventyConfig) {
 
 
 
-	let options = {
-		html: true,
-		breaks: true,
-		linkify: true,
-		typographer: true,
-	}
-	let markdownLib = markdownIt(options)
-	eleventyConfig.setLibrary('md', markdownLib)
 
 	/**
 	 * Add layout aliases
@@ -272,33 +269,10 @@ module.exports = function (eleventyConfig) {
 			gallery_3x2: {
 			},
 		});
-	*/
+		*/
 
 
-	/*	let options = {
-			dataType: false,  // <figure data-type="image">, default: false
-			figcaption: false,  // <figcaption>alternative text</figcaption>, default: false
-			tabindex: false, // <figure tabindex="1+n">..., default: false
-			link: false // <a href="img.png"><img src="img.png"></a>, default: false
-		}
-		let markdownLib = markdownIt(options).use(implicitFigures);
-		eleventyConfig.setLibrary("md", markdownLib);
 
-	*/
-
-
-	const markdownItOptions = {
-		html: true,
-		breaks: true,
-		linkify: true,
-	};
-	const markdownItAttributes = require('markdown-it-attrs');
-	const markdownItContainer = require('markdown-it-container');
-
-	const markdownItFootnote = require('markdown-it-footnote');
-
-	const slugify = require('./src/_includes/slugify.js');
-	const markdownItAnchor = require('markdown-it-anchor');
 	// https://www.toptal.com/designers/htmlarrows/punctuation/section-sign/
 	const markdownItAnchorOptions = {
 		permalink: true,
@@ -309,9 +283,6 @@ module.exports = function (eleventyConfig) {
 			return slugify(s);
 		},
 	};
-
-
-
 
 	// taken from https://gist.github.com/rodneyrehm/4feec9af8a8635f7de7cb1754f146a39
 	function getHeadingLevel(tagName) {
@@ -328,11 +299,9 @@ module.exports = function (eleventyConfig) {
 		if (typeof firstLevel === 'string') {
 			firstLevel = getHeadingLevel(firstLevel);
 		}
-
 		if (!firstLevel || isNaN(firstLevel)) {
 			return;
 		}
-
 		var levelOffset = firstLevel - 1;
 		if (levelOffset < 1 || levelOffset > 6) {
 			return;
@@ -357,9 +326,24 @@ module.exports = function (eleventyConfig) {
 		});
 	}
 
-	var blockImagePlugin = require("markdown-it-block-image");
 
-	const md = markdownIt(markdownItOptions)
+	/*	let options = {
+		dataType: false,  // <figure data-type="image">, default: false
+		figcaption: false,  // <figcaption>alternative text</figcaption>, default: false
+		tabindex: false, // <figure tabindex="1+n">..., default: false
+		link: false // <a href="img.png"><img src="img.png"></a>, default: false
+	}
+
+*/
+
+	let options = {
+		html: true,
+		breaks: true,
+		linkify: true,
+		typographer: true,
+	}
+
+	const md = markdownIt(options)
 		.disable('code')
 		.use(markdownItHeadingLevel, { firstLevel: 2 })
 		.use(markdownItFootnote)
@@ -368,25 +352,17 @@ module.exports = function (eleventyConfig) {
 		.use(markdownItContainer, 'info')
 		.use(markdownItContainer, 'success')
 		.use(markdownItContainer, 'warning')
+		//use(implicitFigures)
 		.use(blockImagePlugin, {
 			outputContainer: true,
 			containerClassName: "image-container"
 		}).use(markdownItContainer, 'error');
 	eleventyConfig.setLibrary('md', md);
 
-
 	// Add markdownify filter with Markdown-it configuration
 	eleventyConfig.addFilter('markdownify', (markdownString) =>
 		md.render(markdownString)
 	);
-
-	eleventyConfig.addFilter("cssmin", function (code) {
-		return new CleanCSS({}).minify(code).styles;
-	});
-
-	eleventyConfig.addFilter("dateToPermalink", function (date) {
-		return moment(date).format("YYYY/MM");
-	});
 
 
 	return {

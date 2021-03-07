@@ -28,7 +28,7 @@
 
       <main
       :class="{ 'anim-nav-closed': !open, 'anim-nav-opened': open }"
-       class=" {{"sm:px-per-lg px-per " if layout == 'post'}} relative flex-grow block max-w-full mb-20 transition-all duration-300 ease-out " id="content">
+       class=" {{" " if layout == 'post'}} sm:px-per-lg px-per  relative flex-grow block max-w-full mb-20 transition-all duration-300 ease-out " id="content">
         {{ content | safe }}
       </main>
 
