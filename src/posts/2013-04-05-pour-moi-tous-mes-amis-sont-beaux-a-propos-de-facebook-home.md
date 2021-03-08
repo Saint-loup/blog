@@ -3,7 +3,7 @@ title: "Pour moi tous mes amis sont beaux – À propos de Facebook Home"
 date: "2013-04-05"
 tags:
   - "utilisateurs"
-permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+
 ---
 
 Facebook a dévoilé Home, une surcouche pour téléphones Android. [Fast Company](http://www.fastcodesign.com/1672289/home-facebooks-bold-new-vision-for-social-smartphones) a un bon résumé des concepts à l'œuvre derrière le design.

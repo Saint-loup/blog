@@ -3,7 +3,7 @@ title: "Un bref panorama des outils de prototypage"
 date: "2012-07-24"
 tags:
   - "prototypage"
-permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+
 ---
 
 J’ai créé une catégorie sur Wikipedia pour recenser les outils de prototypage d’interfaces graphiques. Voici une liste plus complète (mais loin d’être exhaustive), incluant ceux qui n’ont pas de pages sur Wikipedia et me permettant de faire quelques commentaires le cas échéant.

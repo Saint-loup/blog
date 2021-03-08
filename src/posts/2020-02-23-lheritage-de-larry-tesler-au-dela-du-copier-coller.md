@@ -5,7 +5,7 @@ tags:
   - "conception"
   - "histoire"
   - "utilisateurs"
-permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+
 hero: split  # options: carousel, graphic, video, split (text & image)
 heroSettings:
   caption: Clavier auxiliaire utilisé par Tesler pour tester la fonction de couper-coller, avec des étiquettes notées "cut" et "paste".

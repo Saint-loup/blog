@@ -4,7 +4,7 @@ date: "2012-07-09"
 tags:
   - "conception"
   - "utilisateurs"
-permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+
 ---
 
 On voit de temps en temps des gens se plaindre de l’utilisabilité ou des performances d’un navigateur lors d’une utilisation très lourde. Je pense à des déclarations du genre : “je suis un power user, j’ai quasiment toujours plus de cinquante onglets ouverts et mon navigateur ne fait rien pour me faciliter la vie”. Les navigateurs doivent-ils prendre en compte des cas d’utilisation comme celui-ci, que l’on peut qualifier d’extrêmes, et faire des efforts pour améliorer l’expérience de ces utilisateurs ?

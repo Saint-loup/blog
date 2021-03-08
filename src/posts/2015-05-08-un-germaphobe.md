@@ -5,7 +5,7 @@ tags:
   - "inclusion"
   - "objets"
   - "ville"
-permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+
 ---
 
 > Ainsi une autoroute peut être une voie pour le conducteur et une limite pour le piéton. ([Kevin Lynch](http://en.wikipedia.org/wiki/Kevin_A._Lynch), _The Image of the City_)

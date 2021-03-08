@@ -6,7 +6,7 @@ tags:
   - "travaux"
 
 coverImage: "Icon_ombre2.png"
-permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+
 ---
 
 Résumé : j'ai créé un [plugin Sketch](https://github.com/Saint-loup/typographie-frenchy#readme) pour respecter automatiquement les règles typo, espaces insécables et bien plus.

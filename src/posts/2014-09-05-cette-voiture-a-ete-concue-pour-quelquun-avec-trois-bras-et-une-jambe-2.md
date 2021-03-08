@@ -5,7 +5,7 @@ tags:
   - "histoire"
   - "objets"
   - "ville"
-permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+
 ---
 
 Dans sa [thèse](http://www.benjaminthierry.fr/2013/12/15/soutenance-de-these/) magistrale sur l'histoire des IHM, Benjamin Thierry relate l'influence immédiate qu'a eue la sortie du Macintosh sur l'industrie : en 1984, de nombreux vendeurs commencent à proposer des souris et des interfaces graphiques. L'industrie adopte rapidement autour des même conventions.

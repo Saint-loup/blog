@@ -3,7 +3,7 @@ title: "What you see is what you get"
 date: "2012-06-23"
 tags:
   - "features"
-permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+
 ---
 
 J’aime [voir la musique](http://www.youtube.com/watch?v=rRgXUFnfKIY) (chaque couleur représente un instrument).

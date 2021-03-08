@@ -3,7 +3,7 @@ title: "Axure : Créer un menu et un fil d'ariane sans dupliquer aucun contenu"
 date: "2015-12-15"
 tags:
   - "prototypage"
-permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+
 ---
 
 ### Menu

@@ -3,7 +3,7 @@ title: "J'ai fait un truc"
 date: "2020-12-18"
 tags:
   - "travaux"
-permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+
 excerpt: Une mosaïque des livres, jeux, films... que je "pratique", filtrables par année et catégorie. Un variateur permet de changer la taille des vignettes, pour avoir une vue panoramique ou au contraire très détaillée.
 
 hero: split  # options: carousel, graphic, video, split (text & image)

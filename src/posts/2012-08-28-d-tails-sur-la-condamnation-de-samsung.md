@@ -4,7 +4,7 @@ date: "2012-08-28"
 tags:
   - "droit"
   - "politique"
-permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+
 ---
 
 Avertissement habituel : [je ne suis pas juriste](http://en.wikipedia.org/wiki/IANAL).

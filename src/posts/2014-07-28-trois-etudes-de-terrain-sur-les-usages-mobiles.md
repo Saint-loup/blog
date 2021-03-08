@@ -4,7 +4,7 @@ date: "2014-07-28"
 tags:
   - "mobile"
   - "utilisateurs"
-permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+
 ---
 
 Les statistiques très générales sur les usages mobiles pullulent mais on manque d'études précises et de gens ayant pris la peine de faire du terrain. Voici donc :
