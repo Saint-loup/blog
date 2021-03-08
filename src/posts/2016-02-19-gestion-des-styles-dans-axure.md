@@ -9,9 +9,8 @@ permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 Axure n'est pas un outil de maquettage à haute fidélité, pourtant il est parfois intéressant de modifier les styles par défaut des widgets ou de disposer d'une bibliothèque de styles. Cela évite par exemple de sélectionner cinquante fois un niveau de gris et se retrouver avec une palette de gris pas homogène. Voici comment faire.
 
 
-[]: # (wide-img)
 
-![Axure - Style par défaut](/assets/images/2016-02-19\_14h44\_12.png)
+![Axure - Style par défaut](/assets/images/2016-02-19\_14h44\_12.png)(.wide-img)
 
 ![Axure Créer un style réutilisable](/assets/images/2016-02-19\_14h52\_44.png)
 

@@ -6,7 +6,6 @@ tags:
   - "recherche"
   - "sciences-cognitives"
   - "systemes-complexes"
-permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 
 hero: split  # options: carousel, graphic, video, split (text & image)
 heroSettings:
