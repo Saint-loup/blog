@@ -4,7 +4,7 @@ date: 2020-04-10
 tags:
   - travaux
 coverImage: "screenshot.png"
-permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+
 ---
 
 J'ai fait un minuteur, il est joli, il est cool, il est disponible ici :

@@ -3,7 +3,7 @@ title: "Difficultés de navigation entre sites web et applications mobiles"
 date: "2014-04-24"
 tags:
   - "mobile"
-permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+
 ---
 
 Dans un [article récent](http://daringfireball.net/2014/04/rethinking_what_we_mean_by_mobile_web), John Gruber nous invite à aller au-delà de la dichotomie entre app native et web app et à repenser ce que nous entendons par "web mobile" :

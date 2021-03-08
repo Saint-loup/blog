@@ -4,7 +4,7 @@ date: "2015-09-01"
 tags:
   - "architecture-de-linformation"
   - "critique"
-permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+
 ---
 
 [Pocket](https://getpocket.com/) est un service de lecture différée plutôt chouette et disponible officiellement sur cinq plateformes. Hélas, les interfaces de ces différentes plateformes souffrent d'un certain manque d'homogénéité. C'est même carrément le bordel. J'ai fait un tableau de ces incohérences.

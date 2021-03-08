@@ -3,7 +3,7 @@ title: "Les liens de la semaine #5"
 date: "2012-10-26"
 tags:
   - "veille"
-permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+
 ---
 
 (Pour des valeurs suffisamment approchées de “semaine”. Ok, ça fait un bail.)

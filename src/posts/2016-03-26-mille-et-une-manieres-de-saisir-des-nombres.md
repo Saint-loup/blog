@@ -4,7 +4,7 @@ date: "2016-03-26"
 tags:
   - "histoire"
   - "objets"
-permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+
 ---
 
 En schématisant, on peut distinguer deux manières de saisir des nombres : avec une « échelle » et avec un clavier.

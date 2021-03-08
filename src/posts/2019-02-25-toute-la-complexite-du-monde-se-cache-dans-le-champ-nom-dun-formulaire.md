@@ -6,7 +6,7 @@ tags:
   - "reflexions"
   - "systemes-complexes"
 coverImage: "Capture-d’écran-2019-02-22-à-00.48.19-1-e1551047733730.png"
-permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+
 ---
 
 ![](/assets/images/Capture-d’écran-2019-02-22-à-00.48.19-1-e1551047733730-1024x430.png)

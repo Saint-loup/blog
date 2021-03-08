@@ -5,7 +5,7 @@ tags:
   - "agile"
   - "conception"
   - "reflexions"
-permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+
 ---
 
 [Un article intéressant d’Internet Actu](http://www.internetactu.net/2012/10/31/methodes-agiles-la-conception-logicielle-appliquee-au-monde-physique/) sur l’application des méthodes Agile au génie industriel. Quelques remarques :

@@ -3,7 +3,7 @@ title: "Les liens de la semaine 2"
 date: "2012-07-02"
 tags:
   - "veille"
-permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+
 ---
 
 - L’ontogenèse récapitule la phylogenèse : [un père apprend à son fils à utiliser une interface en ligne de commande, puis deux ans après une interface graphique simplifiée](http://changelog.complete.org/archives/category/technology/children-computing). J’aime le coté progressif de son éducation et le fait que ce que l’on appelle “interface graphique” ou “ligne de commande” soient en fait la synthèse de nombreuses fonctions différentes

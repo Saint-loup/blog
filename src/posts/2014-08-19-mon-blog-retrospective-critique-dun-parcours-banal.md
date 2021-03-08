@@ -3,7 +3,7 @@ title: "Mon blog : rétrospective critique d'un parcours banal"
 date: "2014-08-19"
 tags:
   - "meta"
-permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+
 ---
 
 Je suis tombé sur de vieilles captures d'écran du blog et c'est assez drôle. Il a en effet connu des évolutions formelles assez drastiques, ce qui est un euphémisme pour dire qu'il a été bien moche. J'y vois un parcours assez typique de beaucoup d'apprentis designers, avec l'échelle de progression suivante.

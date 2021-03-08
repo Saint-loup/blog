@@ -3,7 +3,7 @@ title: Au doigt de pied et à l'oeil — contrôler un ordinateur avec les pieds
 date: 2021-02-17
 tags:
   - "objets"
-permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+
 hero: split  # options: carousel, graphic, video, split (text & image)
 heroSettings:
   height:

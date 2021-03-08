@@ -1,34 +1,32 @@
-const fs = require('fs')
 const pluginRss = require('@11ty/eleventy-plugin-rss')
 const pluginNavigation = require('@11ty/eleventy-navigation')
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
-const markdownIt = require('markdown-it')
+const CleanCSS = require("clean-css");
+const yaml = require("js-yaml");
+const slugify = require('./src/_includes/slugify.js');
 
-// const collections = require('./src/collections.js')
+
+//const svgsprite = require('./src/utils/svgsprite')
+const pageAssetsPlugin = require('eleventy-plugin-page-assets');
+const implicitFigures = require('markdown-it-implicit-figures');
+const imagesResponsiver = require("eleventy-plugin-images-responsiver");
+
+const blockImagePlugin = require("markdown-it-block-image");
+const markdownItAttributes = require('markdown-it-attrs');
+const markdownItContainer = require('markdown-it-container');
+const markdownIt = require('markdown-it')
+const markdownItFootnote = require('markdown-it-footnote');
+const markdownItAnchor = require('markdown-it-anchor');
+
 const filters = require('./src/utils/filters.js')
 const shortcodes = require('./src/utils/shortcodes.js')
 const pairedshortcodes = require('./src/utils/paired-shortcodes.js')
 const transforms = require('./src/utils/transforms.js')
-//const svgsprite = require('./src/utils/svgsprite')
-const yaml = require("js-yaml");
-const pageAssetsPlugin = require('eleventy-plugin-page-assets');
-const implicitFigures = require('markdown-it-implicit-figures');
-const CleanCSS = require("clean-css");
-const imagesResponsiver = require("eleventy-plugin-images-responsiver");
-const path = require("path");
-const blockImagePlugin = require("markdown-it-block-image");
-const markdownItAttributes = require('markdown-it-attrs');
-const markdownItContainer = require('markdown-it-container');
 
-const markdownItFootnote = require('markdown-it-footnote');
-
-const slugify = require('./src/_includes/slugify.js');
-const markdownItAnchor = require('markdown-it-anchor');
 
 module.exports = function (eleventyConfig) {
 
 	eleventyConfig.addDataExtension("yaml", contents => yaml.safeLoad(contents));
-
 
 	eleventyConfig.setFrontMatterParsingOptions({
 		excerpt: true,
@@ -45,7 +43,6 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(pluginRss)
 	eleventyConfig.addPlugin(pluginNavigation)
 	eleventyConfig.addPlugin(syntaxHighlight)
-
 
 
 	/**
@@ -71,8 +68,6 @@ module.exports = function (eleventyConfig) {
 	 */
 	Object.keys(shortcodes).forEach((shortcodeName) => {
 		eleventyConfig.addShortcode(shortcodeName, shortcodes[shortcodeName])
-
-
 	})
 
 	/**
@@ -92,6 +87,7 @@ module.exports = function (eleventyConfig) {
 	 * @link https://www.11ty.dev/docs/languages/nunjucks/#asynchronous-shortcodes
 	 */
 	//eleventyConfig.addNunjucksAsyncShortcode('svgsprite', svgsprite)
+
 
 	/**
 	 * Collections
@@ -164,9 +160,6 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy('src/robots.txt')
 	eleventyConfig.addPassthroughCopy('src/assets/**/*')
 
-
-
-
 	/**
 	 * Add layout aliases
 	 * @link https://www.11ty.dev/docs/layouts/#layout-aliasing
@@ -186,41 +179,11 @@ module.exports = function (eleventyConfig) {
 	 */
 	eleventyConfig.setDataDeepMerge(true)
 
-	/**
-	 * Override BrowserSync Server options
-	 * This so we can have and test a 404 during local dev.
-	 * @link https://www.11ty.dev/docs/config/#override-browsersync-server-options
-	 */
-	// eleventyConfig.setBrowserSyncConfig({
-	// 	notify: true,
-	// 	snippetOptions: {
-	// 		rule: {
-	// 			match: /<\/head>/i,
-	// 			fn: function (snippet, match) {
-	// 				return snippet + match
-	// 			},
-	// 		},
-	// 	},
-	// Set local server 404 fallback
-	// callbacks: {
-	// 	ready: function (err, browserSync) {
-	// 		const content_404 = fs.readFileSync('dist/404.html')
 
-	// 		browserSync.addMiddleware('*', (req, res) => {
-	// 			// Provides the 404 content without redirect.
-	// 			res.write(content_404)
-	// 			res.end()z
-	// 		})
-	// 	},
-	// },
-	// })
 
-	eleventyConfig.addPlugin(pageAssetsPlugin, {
-		mode: "parse",
-		postsMatching: "src/posts/*/*.md",
-	});
+	//eleventyConfig.addPlugin(pageAssetsPlugin, {		mode: "parse",		postsMatching: "src/posts/*/*.md",});
 
-	//eleventyConfig.addPlugin(imagesResponsiver, require('./src/utils/images-responsiver-config.js'))
+	eleventyConfig.addPlugin(imagesResponsiver, require('./src/utils/images-responsiver-config.js'))
 
 
 	// https://www.toptal.com/designers/htmlarrows/punctuation/section-sign/

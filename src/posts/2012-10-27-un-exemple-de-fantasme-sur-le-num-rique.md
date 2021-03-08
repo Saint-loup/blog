@@ -3,7 +3,7 @@ title: "Un exemple de fantasme sur le numérique"
 date: "2012-10-27"
 tags:
   - "reflexions"
-permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+
 ---
 
 Dans [un article](http://uxmag.com/articles/five-things-to-know-when-designing-a-windows-8-app) sur la conception d’applications pour Windows 8, on peut lire :

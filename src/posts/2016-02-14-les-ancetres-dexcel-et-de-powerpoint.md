@@ -4,7 +4,7 @@ date: "2016-02-14"
 tags:
   - "histoire"
   - "objets"
-permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
+
 ---
 
 ![](/assets/imageslarge\_the\_apartment\_blu-ray\_1.jpg)(.wide-img)
