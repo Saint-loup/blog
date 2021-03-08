@@ -1,9 +1,8 @@
-const { DateTime } = require('luxon')
+const { DateTime, Settings } = require('luxon')
 const slugify = require('slugify')
 const cleanCSS = require('clean-css')
-const moment = require('moment')
-/*const { formatDistance, parse, locale, parseISO, lightFormat } = require('date-fns')
-const { fr } = require('date-fns/locale/fr')*/
+
+Settings.defaultLocale = "fr";
 
 module.exports = {
 	/**
@@ -19,7 +18,9 @@ module.exports = {
 	},
 
 	dateToPermalink: function (date) {
-		return moment(date).format("YYYY/MM");
+		return DateTime.fromJSDate(date, {
+			zone: 'utc',
+		}).toFormat('yyyy/MM')
 	},
 
 

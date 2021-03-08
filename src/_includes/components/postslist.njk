@@ -5,7 +5,7 @@
         {# Post publish Date and Author display conditional  #}
         <div class="text-sm {{ colors.authorCustom.date or colors.authorDefault.date }}">
           <time datetime="{{ post.data.page.date | dateToFormat("yyyy-MM-dd") }}">
-            {{ post.data.page.date | dateToFormat("dd LLL yyyy") }}
+            {{ post.data.page.date | dateToFormat("dd LLLL yyyy") }}
           </time>
           {# Global disable author display in /src/_data/structure.js #}
 

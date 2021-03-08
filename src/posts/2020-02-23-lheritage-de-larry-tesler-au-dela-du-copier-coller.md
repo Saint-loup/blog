@@ -8,6 +8,7 @@ tags:
 permalink: "blog/{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 hero: split  # options: carousel, graphic, video, split (text & image)
 heroSettings:
+  caption: Clavier auxiliaire utilisé par Tesler pour tester la fonction de couper-coller, avec des étiquettes notées "cut" et "paste".
   height:
     mobile: # options = h-1/1 (default = full screen), h-1/2, h-1/3, h-3/4, h-9/10, h-48 (12rem, 192px), h-56 (14rem, 224px), h-64 (16rem, 256px)
     desktop: h-3/4 # leave blank to inherit "mobile" height (default = full screen)
@@ -22,7 +23,6 @@ heroSettings:
 ---
 
 
-Clavier auxiliaire utilisé par Tesler pour tester la fonction de couper-coller, avec des étiquettes notées "cut" et "paste".
 
 Larry Tesler, décédé récemment, est associé à l'invention du copier-coller. De même qu'Engelbart a inventé bien plus que la souris, son influence est vaste : les premières interfaces graphique chez Xerox Parc et Apple, SmallTalk, le PDA Newton... Vice a fait un bon [portrait](https://www.vice.com/en_us/article/n7jdgw/larry-tesler-the-inventor-of-copy-paste-was-more-influential-than-you-realize) de son parcours.
 
@@ -54,7 +54,7 @@ Les éditeurs de texte étaient massivement modaux, c'est-à-dire qu'il y avait 
 
 C'est aussi l'héritage d'une époque où [les éditeurs de texte](https://en.wikipedia.org/wiki/Line_editor) étaient conçus pour un télétype (c'est-à-dire concrètement une imprimante), pas pour un écran. On désignait une ligne, on faisait une modification et on imprimait le résultat en croisant les doigts pour ne avoir fait d'erreur. Dans un contexte aussi peu interactif, des modes étaient nécessaires.
 
-![Les créateurs d'Unix utilisant un PDP-11 avec un terminal télétype](/assets/images/ken-and-den-1024x777.jpg)
+![Les créateurs d'Unix utilisant un PDP-11 avec un terminal télétype](/assets/images/ken-and-den-1024x777.jpg "Les créateurs d'Unix utilisant un PDP-11 avec un terminal télétype")
 
 Les créateurs d'Unix devant un PDP-11
 
@@ -70,9 +70,9 @@ Inspiré par Pentti Kanerva, Tesler abolit ces modes en inversant le modèle d'i
 
 La complexité a été ainsi déplacée des modes au presse-papier : celui-ci stocke de l'information sans l'afficher à l'utilisateur, ce qui occasionne parfois des surprises. Mais globalement, copier et coller étant souvent concomitants, on a beaucoup gagné au change.
 
-![Capture d'écran de Mac OS 9, avec un éditeur de texte ouvert dans lequel il est écrit "Larry Tesler 1945-2020")](/assets/images/Capture-d’écran-2020-02-22-à-18.53.08-1024x691.png)
+![Capture d'écran de Mac OS 9, avec un éditeur de texte ouvert dans lequel il est écrit "Larry Tesler 1945-2020")](/assets/images/Capture-d’écran-2020-02-22-à-18.53.08-1024x691.png "Réalisé avec cet [émulateur](https://jamesfriend.com.au/pce-js/)"
+)
 
-Réalisé avec cet [émulateur](https://jamesfriend.com.au/pce-js/)
 
 #### 3\. La métaphore de couper et coller
 
@@ -146,7 +146,7 @@ Computer History Museum, [Oral History of Lawrence G. “Larry” Tesler](https:
 
 [Une démonstration par Tesler de son éditeur de texte phare](https://www.youtube.com/watch?v=Dhmz68CII9Y)
 
-![Larry Tesler face à un Xerox Alto](/assets/images/maxresdefault1-1024x576.jpg)
+![](/assets/images/maxresdefault1-1024x576.jpg "Larry Tesler face à un Xerox Alto")
 
 ### Post-scriptum : où l'on retrouve Don Norman
 

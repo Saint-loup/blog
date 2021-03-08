@@ -25,7 +25,7 @@ layout: base
       <h1 class="{{ colors.headingsCustom or colors.headingsDefault }}">{{ seo.title or title }}</h1>
       <div class="text-sm {{ colors.authorCustom.date or colors.authorDefault.date}}">
         <time datetime="{{ page.date | dateToFormat("yyyy-MM-dd") }}">
-          {{ page.date | dateToFormat("dd LLL yyyy") }}
+          {{ page.date | dateToFormat("dd LLLl yyyy") }}
         </time>
       </div>
     </header>

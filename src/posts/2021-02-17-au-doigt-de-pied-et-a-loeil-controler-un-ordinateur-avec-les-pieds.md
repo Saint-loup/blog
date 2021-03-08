@@ -35,15 +35,15 @@ Ensuite, le pied se retrouve un peu partout. Si vous ne me croyez pas, je vous c
 
 Quoi d'autre ? On peut parler de l'industrie, où les risques d'activation intempestive ([analysés ici](http://toutcequibouge.net/toutcequibouge/wp-content/uploads/2018/04/TOERGJ-2-13.pdf)) exigent des pédales avec des clapets et autres garde-fous.
 
-![Pédale industrielle](/assets/images/s-l1600-1024x669.jpg)
+![Pédale industrielle](/assets/images/s-l1600-1024x669.jpg "Pédale industrielle")
 
 Les utilisateurs avec des problèmes de posture ou de motricité peuvent utiliser toute sorte de "[souris à pied](https://en.wikipedia.org/wiki/Footmouse)", comme cette fascinante [Souris-Sandale](http://www.yankodesign.com/2010/04/07/flip-flop-mouse/).
 
-![Souris-sandale ou toe-mouse](/assets/images/toe_mouse.jpg)
+![Souris-sandale ou toe-mouse](/assets/images/toe_mouse.jpg "Souris-sandale ou toe-mouse]")
 
 La première [machine à écrire](https://en.wikipedia.org/wiki/Sholes_and_Glidden_typewriter) à être largement utilisée comprenait une pédale pour la touche Entrée. Toujours dans l'édition de texte, la [VIM Clutch](https://github.com/alevchuk/vim-clutch) constitue un exemple intéressant de convergence entre matériel et logiciel. L'éditeur de texte VIM fonctionne par modes : un mode normal, un pour l'insertion, un pour la sélection de texte, etc. Ça parait bizarre mais c'est beaucoup plus [sensé](http://www.viemu.com/a-why-vi-vim.html) que ça n'en a l'air. Un maitre-nerd a donc bricolé une pédale qui permet, tant qu'on la maintient, de rester dans le mode le plus courant. Ça rappelle un peu les pédaliers de piano et c'est assez logique d'avoir une touche dédiée et accessible à part pour une action aussi fondamentale.
 
-![Sholes and Glidden typewriter](/assets/images/Sholesglidden2.png)
+![](/assets/images/Sholesglidden2.png "Sholes and Glidden typewriter")
 
 Citons aussi les chaussures intelligentes, avec [uniquement des senseurs](https://www.wareable.com/running/smart-shoes-875), ou carrément avec [des actuateurs](https://en.wikipedia.org/wiki/Adidas_1) modifiant le niveau d'amorti.
 
@@ -61,7 +61,7 @@ Incorporer un calculateur à une chaussure peut aussi être glorieusement vain. 
 
 
 
-![nzxt-rtkft-studios-pc-shoes](/assets/images/nzxt-rtkft-studios-pc-shoes.jpeg)
+![](/assets/images/nzxt-rtkft-studios-pc-shoes.jpeg)
 
 Sinon, via ce [tweet de Maxime Quijoux](https://twitter.com/mquijoux/status/1360129653055324163), je découvre que la retranscription de paroles enregistrées, activité chronophage s'il en est,  est parfois musclée par le recorurs à un pédalier spécifique. J'ai d'abord cru que c'était un accessoire de guitariste (Olympus est une marque  qui fait dans la musique) mais non, c'est bien un outil dédié.
 
@@ -69,7 +69,7 @@ Sinon, via ce [tweet de Maxime Quijoux](https://twitter.com/mquijoux/status/1360
 
 Voici un exemple d'une [autre marque](https://www.grundig-gbs.com/fr/solutions/materiel/digta-transcription-starter-kit/) :
 
-![Pédalier de retranscription](/assets/images/Digta-Transcription-Starter-Kit-540_Sp568.jpg)
+![](/assets/images/Digta-Transcription-Starter-Kit-540_Sp568.jpg "Pédalier de retranscription")
 
 Que ce soit pour la retranscription ou pour un autre but, écouter attentivement et de manière répétée de longues paroles est une activité assez étrange, tour à tour hypnotique et agressive, surtout avec un appareil très tactile comme un pédalier ou une roulette de montage accentue certainement l'effet. On est enveloppé et immergé dans la voix des locuteurs, alors qu'on la contrôle et l'interrompe sans cesse, au point de la disloquer et de lui faire perdre son flot.
 
