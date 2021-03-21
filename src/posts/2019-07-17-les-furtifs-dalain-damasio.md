@@ -14,7 +14,7 @@ Les connaisseurs de son œuvre seront en terrain connu. De la Horde, on retrouve
 
 Vous allez me dire qu’il creuse et fait foisonner ses obsessions. Je trouve surtout qu’il se répète et se caricature lui-même.
 
-![Couverture des Furtifs](/assets/images/1-uFzbZEP0dfQZzBpgwPndGA-1024x439.jpeg)
+![Couverture des Furtifs](/assets/images/1-uFzbZEP0dfQZzBpgwPndGA.jpeg)
 
 ### Une fan fiction des mouvements libertaires
 

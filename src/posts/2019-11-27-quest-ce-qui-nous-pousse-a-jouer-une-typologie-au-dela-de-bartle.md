@@ -20,7 +20,7 @@ _Sur la psychologie des joueurs et les travaux de Nick Yee et Quantic Foundry._
 
 Le [modèle de Bartle](https://en.wikipedia.org/wiki/Bartle_taxonomy_of_player_types) est une typologie des joueurs très populaires. Datant de 1996 et tiré de données sur des participants à des MMORPG, il est très limité et se retrouve remplacé par des théories plus fines.
 
-![Les quatre profils du modèle de Bartle : Tueur, Social, Explorateur, Collectionneur](/assets/images/2019-11-23_13h31_18-1024x575.jpg)
+![Les quatre profils du modèle de Bartle : Tueur, Social, Explorateur, Collectionneur](/assets/images/2019-11-23_13h31_18.jpg)
 
 Les quatre profils : Tueur, Social, Explorateur, Collectionneur
 
@@ -40,7 +40,7 @@ De même, être tout en bas de l'échelle de la stratégie ne signifie pas qu'on
 
 Nick Yee et son [cabinet d'analyse](https://quanticfoundry.com/gdc2019/) proposent un modèle alternatif tiré d'enquêtes massives. A partir de 400 000 d'entretiens, il fait émerger douze d'attributs.
 
-![](/assets/images/Sans-titre-1024x575.png)
+![](/assets/images/Sans-titre.png)
 
 Les douze motivations :
 
@@ -70,7 +70,7 @@ Des noms de jeux vidéo sont cités mais il s'agit uniquement d'exemples. Les at
 
 Un score élevé signifie une préférence pour jongler entre planification à long terme et micro-décisions, un goût pour analyse des informations complexes. Un score, on l'a dit, suggère des boucles de gameplay plus courtes et aimer réagir à l'environnement.
 
-![Stratégie](/assets/images/2019-11-23_18h37_04-1024x579.jpg)
+![Stratégie](/assets/images/2019-11-23_18h37_04.jpg)
 
 #### Design
 
@@ -88,7 +88,7 @@ L'opposé d'un joueur compétitif n'est pas quelqu'un qui aime jouer tout seul m
 
 Attention aux oppositions trompeuses entre jeunes et vieux : certaines courbes ne sont pas monotones, si bien qu'un joueur de 60 peut être plus proche d'un joueur de 15 que de 40 ans.
 
-![Evolution du défi à travers l'âge](/assets/images/Capture-d’écran-2019-11-27-à-20.19.22-1024x575.png)
+![Evolution du défi à travers l'âge](/assets/images/Capture-d’écran-2019-11-27-à-20.19.22.png)
 
 #### Pouvoir
 
@@ -112,7 +112,7 @@ Pas juste exploration géographique mais découverte des limites du jeu (des rè
 
 Ce graphique montre à la fois la variabilité entre cultures et l'importance d'avoir une _baseline_ : comparé à la Chine, les USA paraissent dans la moyenne en tout.
 
-![Différences entre USA et Chine ](/assets/images/Capture-d’écran-2019-11-27-à-20.16.16-1024x567.png)
+![Différences entre USA et Chine ](/assets/images/Capture-d’écran-2019-11-27-à-20.16.16.png)
 
 ### En 1971, déjà…
 

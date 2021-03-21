@@ -13,7 +13,7 @@ Comme beaucoup de designers dont le travail est de créer de bonnes interfaces, 
 
 Il y a les interfaces frontalement horribles, comme cet outil de maintenance pour un distributeur de billet.
 
-![](/assets/images/ecoatm-1024x579.jpg)
+![](/assets/images/ecoatm.jpg)
 
 Il y a les interfaces qu'il faut avoir utilisé pour comprendre. Prenez Lotus Notes : des [analyses](http://hallofshame.gp.co.at/lotus.htm) et des [sites entiers](https://web.archive.org/web/20120222220218/http://lotusnotessucks.4t.com/lnEnd.html) sont dédiés à sa nullité. On parle d'une application qui ne suit pas des raccourcis universels et basiques (par exemple CTRL+A pour tout sélectionner). On parle d'une application fournie avec un utilitaire pour la forcer à quitter quand les choses tournent mal. Une application suicidaire.
 

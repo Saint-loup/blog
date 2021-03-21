@@ -14,4 +14,4 @@ J'ai fait un truc du même genre, en beaucoup plus modeste : un outil de maquett
 
 Il est testable en ligne [à cette adresse](http://misc.toutcequibouge.net/meta%20axure/home.html) et le fichier source est [ici](http://misc.toutcequibouge.net/meta%20axure/meta%20axure.rp) (il n'est pas du tout documenté et nécessite Axure 8).
 
-[![Meta Axure](/assets/images/2016-01-04_11h26_09-1024x727.png)](http://misc.toutcequibouge.net/meta%20axure/home.html)
+[![Meta Axure](/assets/images/2016-01-04_11h26_09.png)](http://misc.toutcequibouge.net/meta%20axure/home.html)

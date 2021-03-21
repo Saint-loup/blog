@@ -8,7 +8,7 @@ tags:
 
 ---
 
-![Tiré de La Mesure de l'homme, par Henry Dreyfuss (un des fondateurs de l'ergonomie scientifique " ](/assets/images/hand-dimensions-1024x993.png) Tiré de _La Mesure de l'homme_ de Henry Dreyfuss, un des fondateurs de l'ergonomie scientifique")
+![Tiré de La Mesure de l'homme, par Henry Dreyfuss (un des fondateurs de l'ergonomie scientifique " ](/assets/images/hand-dimensions.png) Tiré de _La Mesure de l'homme_ de Henry Dreyfuss, un des fondateurs de l'ergonomie scientifique")
 
 L'honorable Raphaël « iErgo » Yharrassarry aime à rappeler que la conception est encadrée par certains invariants :
 

@@ -35,7 +35,7 @@ Ensuite, le pied se retrouve un peu partout. Si vous ne me croyez pas, je vous c
 
 Quoi d'autre ? On peut parler de l'industrie, où les risques d'activation intempestive ([analysés ici](http://toutcequibouge.net/toutcequibouge/wp-content/uploads/2018/04/TOERGJ-2-13.pdf)) exigent des pédales avec des clapets et autres garde-fous.
 
-![Pédale industrielle](/assets/images/s-l1600-1024x669.jpg "Pédale industrielle")
+![Pédale industrielle](/assets/images/s-l1600.jpg "Pédale industrielle")
 
 Les utilisateurs avec des problèmes de posture ou de motricité peuvent utiliser toute sorte de "[souris à pied](https://en.wikipedia.org/wiki/Footmouse)", comme cette fascinante [Souris-Sandale](http://www.yankodesign.com/2010/04/07/flip-flop-mouse/).
 
