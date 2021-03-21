@@ -1,3 +1,5 @@
+src/assets/generatedImages/*
+
 .eleventyignore
 # Custom Local
 project

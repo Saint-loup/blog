@@ -57,6 +57,7 @@
     "markdown-it-block-image": "^0.0.3",
     "markdown-it-container": "^3.0.0",
     "markdown-it-footnote": "^3.0.2",
-    "markdown-it-implicit-figures": "^0.10.0"
+    "markdown-it-implicit-figures": "^0.10.0",
+    "sharp": "^0.27.1"
   }
 }

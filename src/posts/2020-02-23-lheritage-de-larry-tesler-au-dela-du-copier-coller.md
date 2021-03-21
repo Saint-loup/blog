@@ -56,7 +56,6 @@ C'est aussi l'héritage d'une époque où [les éditeurs de texte](https://en.wi
 
 ![Les créateurs d'Unix utilisant un PDP-11 avec un terminal télétype](/assets/images/ken-and-den-1024x777.jpg "Les créateurs d'Unix utilisant un PDP-11 avec un terminal télétype")
 
-Les créateurs d'Unix devant un PDP-11
 
 Même NLS, le système d'Engelbart avec clavier et souris n'était pas plus simple. Voici la procédure pour déplacer du texte :
 
