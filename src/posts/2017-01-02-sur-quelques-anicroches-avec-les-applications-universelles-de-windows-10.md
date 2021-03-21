@@ -7,7 +7,7 @@ tags:
 
 ---
 
-![illus écosystème apps](/assets/images/groove-music-1024x410.jpg)
+![illus écosystème apps](/assets/images/groove-music.jpg)
 
 La double erreur de Windows 8, c'était de vouloir forcer un paradigme tactile sur un OS classique et en plus de le faire cohabiter avec une interface de type desktop. Cela entrainait des [trucs aberrants](http://www.thewindowsclub.com/windows-store-apps-windows-taskbar) comme les applications "Metro" ouvertes et pourtant absentes de la barre des tâches du bureau.
 
@@ -23,7 +23,7 @@ Prenez OneNote : non seulement les boutons du ruban deviennent plus compacts qua
 
 Le problème, c'est que le travail d'adaptation a été minime pour beaucoup des nouvelles applications natives. Par exemple, dans une fenêtre étroite Groove Music marche très bien -- normal, elle est très proche de sa contrepartie sur Windows 10 Mobile. Mais redimensionner la fenêtre ne tire pas du tout partie de la taille d'écran. Le contenu est découpé en plein de vues étriquées : pour se faire une idée globale de ce que j'ai d'un artiste en local, je dois ouvrir sa fiche, puis cliquer sur un album ou sur "Vue Morceaux". N'importe quel lecteur de musique digne de ce nom montre deux niveaux à la fois : des artistes et leurs albums respectifs, ou les albums d'un artiste avec ses chansons. iTunes montre même les trois niveaux : artistes, albums et chansons.
 
-![iTunes Artist View](/assets/images/artists-view-100017932-orig-1024x623.png)
+![iTunes Artist View](/assets/images/artists-view-100017932-orig.png)
 
 Plus généralement, j'ai relevé trois problèmes presque systématiques dans ces nouvelles applications.
 

@@ -54,7 +54,7 @@ Les éditeurs de texte étaient massivement modaux, c'est-à-dire qu'il y avait 
 
 C'est aussi l'héritage d'une époque où [les éditeurs de texte](https://en.wikipedia.org/wiki/Line_editor) étaient conçus pour un télétype (c'est-à-dire concrètement une imprimante), pas pour un écran. On désignait une ligne, on faisait une modification et on imprimait le résultat en croisant les doigts pour ne avoir fait d'erreur. Dans un contexte aussi peu interactif, des modes étaient nécessaires.
 
-![Les créateurs d'Unix utilisant un PDP-11 avec un terminal télétype](/assets/images/ken-and-den-1024x777.jpg "Les créateurs d'Unix utilisant un PDP-11 avec un terminal télétype")
+![Les créateurs d'Unix utilisant un PDP-11 avec un terminal télétype](/assets/images/ken-and-den.jpg "Les créateurs d'Unix utilisant un PDP-11 avec un terminal télétype")
 
 
 Même NLS, le système d'Engelbart avec clavier et souris n'était pas plus simple. Voici la procédure pour déplacer du texte :
@@ -69,7 +69,7 @@ Inspiré par Pentti Kanerva, Tesler abolit ces modes en inversant le modèle d'i
 
 La complexité a été ainsi déplacée des modes au presse-papier : celui-ci stocke de l'information sans l'afficher à l'utilisateur, ce qui occasionne parfois des surprises. Mais globalement, copier et coller étant souvent concomitants, on a beaucoup gagné au change.
 
-![Capture d'écran de Mac OS 9, avec un éditeur de texte ouvert dans lequel il est écrit "Larry Tesler 1945-2020")](/assets/images/Capture-d’écran-2020-02-22-à-18.53.08-1024x691.png "Réalisé avec cet [émulateur](https://jamesfriend.com.au/pce-js/)"
+![Capture d'écran de Mac OS 9, avec un éditeur de texte ouvert dans lequel il est écrit "Larry Tesler 1945-2020")](/assets/images/Capture-d’écran-2020-02-22-à-18.53.08.png "Réalisé avec cet [émulateur](https://jamesfriend.com.au/pce-js/)"
 )
 
 
@@ -85,7 +85,7 @@ Quelle approche a suivi Tesler pour faire tout ça ?
 
 Malgré ses fortes convictions (qui allaient jusqu'à avoir une plaque d'immatriculation anti-modale), Tesler n'a jamais succombé à l'illusion de connaitre les utilisateurs et a donc très tôt mené des tests.
 
-![](/assets/images/2020-02-23_01h20_55-1024x533.jpg)
+![](/assets/images/2020-02-23_01h20_55.jpg)
 
 > My observations of secretaries learning to use the text editors of that era soon convinced me that my beloved computers were, in fact, unfriendly monsters, and that their sharpest fangs were the ever-present modes. The most common question asked by new users, at least as often as "How do I do this?," was "How do I get out of this mode?"
 >
@@ -145,7 +145,7 @@ Computer History Museum, [Oral History of Lawrence G. “Larry” Tesler](https:
 
 [Une démonstration par Tesler de son éditeur de texte phare](https://www.youtube.com/watch?v=Dhmz68CII9Y)
 
-![](/assets/images/maxresdefault1-1024x576.jpg "Larry Tesler face à un Xerox Alto")
+![](/assets/images/maxresdefault1.jpg "Larry Tesler face à un Xerox Alto")
 
 ### Post-scriptum : où l'on retrouve Don Norman
 

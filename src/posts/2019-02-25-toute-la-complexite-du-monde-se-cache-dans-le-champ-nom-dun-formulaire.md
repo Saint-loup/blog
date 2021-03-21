@@ -9,7 +9,7 @@ coverImage: "Capture-d’écran-2019-02-22-à-00.48.19-1-e1551047733730.png"
 
 ---
 
-![](/assets/images/Capture-d’écran-2019-02-22-à-00.48.19-1-e1551047733730-1024x430.png)
+![](/assets/images/Capture-d’écran-2019-02-22-à-00.48.19-1-e1551047733730.png)
 
 Une personne n'a pas forcément un seul prénom suivi d'un seul nom de famille. Elle peut avoir un seul nom, ou trois prénoms et quatre noms de famille, en changer au cours de sa vie, son nom peut être très long ou très court... il y a [tellement de variantes](https://shinesolutions.com/2018/01/08/falsehoods-programmers-believe-about-names-with-examples) à travers les sociétés humaines que l'exception doit être considérée comme la norme. Cette complexité existe aussi pour les [numéros de téléphone](https://github.com/googlei18n/libphonenumber/blob/master/FALSEHOODS.md), les [adresses](https://www.mjt.me.uk/posts/falsehoods-programmers-believe-about-addresses), et pour tant d'autres mécanismes qu'il existe toute une littérature à ce sujet, avec un titre devenu coutumier : "Les erreurs que font les développeurs avec \[bidule\]".
 
@@ -19,7 +19,7 @@ C'est un problème classique d'écart entre le territoire et la carte. Un concep
 
 Les noms sont déjà complexes, alors imaginez une notion comme la famille. Par exemple le service Google Play Family impose des règles qui forment une [définition implicite](https://twitter.com/edent/status/846270908138426369).
 
-![](/assets/images/C76O4a6W0AENhCT.jpg-large-1024x850.jpg)
+![](/assets/images/C76O4a6W0AENhCT.jpg-large.jpg)
 
 Admettons que ce sont surtout des limites commerciales pensées pour que les gens n'abusent pas du système en ajoutant trois cent personnes du monde entier à leur "famille". Mais quand même. Qui est Google pour dire qu'une famille ne peut être composée de nombreuses personnes vivant dans plusieurs pays ? Ensuite, ça influe forcément sur la vie des gens : le service devient intriqué avec leur quotidien et définit quels films peut regarder un enfant, avec qui et sur quel appareil. Tout ça dans un contexte d'objets toujours plus présents et connectés, où la famille peut avoir un appareil Google dans chaque pièce et plus d'appareils que de membre.
 
