@@ -5,10 +5,8 @@ const CleanCSS = require("clean-css");
 const yaml = require("js-yaml");
 const slugify = require('./src/_includes/slugify.js');
 
-
 //const svgsprite = require('./src/utils/svgsprite')
 const pageAssetsPlugin = require('eleventy-plugin-page-assets');
-const implicitFigures = require('markdown-it-implicit-figures');
 const imagesResponsiver = require("eleventy-plugin-images-responsiver");
 
 const blockImagePlugin = require("markdown-it-block-image");
@@ -181,7 +179,7 @@ module.exports = function (eleventyConfig) {
 
 
 
-	//eleventyConfig.addPlugin(pageAssetsPlugin, {		mode: "parse",		postsMatching: "src/posts/*/*.md",});
+	//eleventyConfig.addPlugin(pageAssetsPlugin, { mode: "parse", postsMatching: "src/posts/*/*.md", });
 
 	eleventyConfig.addPlugin(imagesResponsiver, require('./src/utils/images-responsiver-config.js'))
 
@@ -240,15 +238,6 @@ module.exports = function (eleventyConfig) {
 	}
 
 
-	/*	let options = {
-		dataType: false,  // <figure data-type="image">, default: false
-		figcaption: false,  // <figcaption>alternative text</figcaption>, default: false
-		tabindex: false, // <figure tabindex="1+n">..., default: false
-		link: false // <a href="img.png"><img src="img.png"></a>, default: false
-	}
-
-*/
-
 	let options = {
 		html: true,
 		breaks: true,
@@ -263,13 +252,11 @@ module.exports = function (eleventyConfig) {
 		.use(markdownItAnchor, markdownItAnchorOptions)
 		.use(markdownItAttributes)
 		.use(markdownItContainer, 'info')
-		.use(markdownItContainer, 'success')
-		.use(markdownItContainer, 'warning')
-		//use(implicitFigures)
 		.use(blockImagePlugin, {
-			outputContainer: true,
+			outputContainer: 'figure',
 			containerClassName: "image-container"
-		}).use(markdownItContainer, 'error');
+		});
+
 	eleventyConfig.setLibrary('md', md);
 
 	// Add markdownify filter with Markdown-it configuration

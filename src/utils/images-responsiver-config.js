@@ -20,7 +20,6 @@ module.exports = {
 					'$1-' + width + '.webp'),
 		runBefore: (image, document) => {
 			let url = image.getAttribute('src')
-			console.log(image.getAttribute("title"))
 			const options = {
 				widths: [320, 640, 1024, 1600],
 				dryRun: false,
@@ -51,14 +50,10 @@ module.exports = {
 		runAfter: (image, document) => {
 			//image.setAttribute('src', image.dataset.responsiveruRL);
 			//let caption = image.getAttribute("title");
-			if (image.parentNode.nodeName === "p") {
-				image.parentNode.replaceWith(figure);
-			} else {
-				image.replaceWith(figure);
-			}
+
 
 		},
-		steps: 4,
+		steps: 5,
 		classes: ['img-default'],
 		attributes: { loading: 'lazy', },
 	},
