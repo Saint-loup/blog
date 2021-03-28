@@ -54,7 +54,7 @@ module.exports = {
 		runAfter: (image, document) => {
 			//image.setAttribute('src', image.dataset.responsiveruRL);
 			//let caption = image.getAttribute("title");
-			console.log(image.getAttribute('width'))
+
 
 
 		},
