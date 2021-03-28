@@ -34,7 +34,7 @@ C'est aussi une parfaite illustration de la [cognition incarnée](https://en.wik
 - Que nos représentations existent par et pour l'action. Notre vision ne doit pas être pensée comme la construction d'une image mais comme une activité d'exploration du monde par boucles incessantes entre gestes et perception.Deux références : un livre d'Alva Noe ([PDF de résumé](http://www.nyu.edu/gsas/dept/philo/courses/consciousness08/noe.precis.pdf) et un de Kevin O'Regan Même nos capacités plus abstraites peuvent être pensées comme orientées vers certaines pratiques comme [la communication et l'argumentation](https://journals.openedition.org/aad/2884).
 - Qu'il n'y a pas de limite précise entre l'esprit, le corps et son environnement immédiat. Par exemple si je dessine des schémas pour m'aider et structurer ma pensée et que j'y reviens fréquemment dans un carnet de notes, c'est une manière d'[externaliser ma mémoire](https://www.researchgate.net/publication/306352756_Cognitive_Offloading) et on peut même dire que ce carnet fait partie de mon esprit, [de manière étendue](https://en.wikipedia.org/wiki/The_Extended_Mind).
 
-![XKCD 903. Légende : "When Wikipedia has a server outage, my apparent IQ drops by 30 points."](/assets/images/extended_mind.png){data-responsiver=gallery_3x2}
+![XKCD 903. Légende : "When Wikipedia has a server outage, my apparent IQ drops by 30 points."](/assets/images/extended_mind.png)
 
 [XKCD - The Extended Mind](https://xkcd.com/903/)
 
@@ -76,9 +76,9 @@ Admirez aussi le tableau lumineux, les feuillets suspendus et le rouleau de scot
 
 Cet usage du papier est aussi documenté dans les cockpits d'avion, [voir ce papier](https://pages.ucsd.edu/~ehutchins/documents/fp146-nomura.pdf) (PDF) écrit par Nomura, Hutchins (encore lui) et Holder.
 
-- ![](/assets/images/Capture-d’écran-2020-02-08-à-10.53.48.png){data-responsiver=gallery_3x2}
 
-- ![](/assets/images/Capture-d’écran-2020-02-08-à-10.53.00.png){data-responsiver=gallery_3x2}
+- ![](/assets/images/Capture-d’écran-2020-02-08-à-10.53.48.png)
+- ![](/assets/images/Capture-d’écran-2020-02-08-à-10.53.00.png)
 
 
 ### Papier... et papier-toilette
@@ -89,7 +89,7 @@ Dans À la poursuite d'Octobre rouge, on voit ce qui ressemble fort à un roulea
 
 Réponse : un analyste utilise un sonar passif, c'est-à-dire pas un sonar classique qui émet des sons pour détecter leur réverbération sur l'environnement. Il écoute, tout simplement. Et il regarde : le spectre sonore ci-dessous représente le temps en ordonnées et la direction en abscisses (parfois il s'agit de la fréquence). A l'époque, pour suivre une trace sonore il devait le faire à la main. Ou plutôt au feutre. D'où le rouleau qui permettait d'essuyer ces marques. [Ma source](https://www.quora.com/In-The-Hunt-for-Red-October-why-is-there-toilet-paper-at-the-USS-Dallas-sonar-station).
 
-![](/assets/images/vlcsnap-2020-02-09-14h50m31s457.jpg){data-responsiver=gallery_3x2}
+![](/assets/images/vlcsnap-2020-02-09-14h50m31s457.jpg)
 
 ### **Oreille d'or**
 
@@ -101,7 +101,7 @@ L'oreille d'or a le trackball dans une main, le casque sur une seule oreille pen
 >
 > [Source](http://zone.sousmarins.free.fr/nouvelles%20internationales%20des%20sous-marins.htm)
 
-![](/assets/images/vlcsnap-2020-02-08-14h07m47s689-e1581169306219.png){data-responsiver=gallery_3x2}
+![](/assets/images/vlcsnap-2020-02-08-14h07m47s689-e1581169306219.png)
 
 ### **Système socio-technique**
 
@@ -136,6 +136,6 @@ https://twitter.com/JivTurky/status/1125057398874484738
 
 Un reportage de Libération : [Vingt-quatre heures dans un sous-marin](https://www.liberation.fr/apps/2018/10/vingt-quatre-heures-dans-un-sous-marin/)
 
-![Panneau de contrôle à bord du sous-marin Casabianca](/assets/images/crop-0-0-1500-1000-0-monge-myop-casabianca-7-1539854297.jpg){data-responsiver=gallery_3x2}
+![Panneau de contrôle à bord du sous-marin Casabianca](/assets/images/crop-0-0-1500-1000-0-monge-myop-casabianca-7-1539854297.jpg)
 
 Photo : Olivier Monge pour [Libération](https://www.liberation.fr/apps/2018/10/vingt-quatre-heures-dans-un-sous-marin/), à bord du sous marin nucléaire Casabianca à quai à Toulon. Toulon, le 9 aout 2018

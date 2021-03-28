@@ -6,7 +6,7 @@ const yaml = require("js-yaml");
 const slugify = require('./src/_includes/slugify.js');
 
 //const svgsprite = require('./src/utils/svgsprite')
-const pageAssetsPlugin = require('eleventy-plugin-page-assets');
+//const pageAssetsPlugin = require('eleventy-plugin-page-assets');
 const imagesResponsiver = require("eleventy-plugin-images-responsiver");
 
 const blockImagePlugin = require("markdown-it-block-image");
@@ -152,12 +152,13 @@ module.exports = function (eleventyConfig) {
 	 * Passthrough File Copy
 	 * @link https://www.11ty.dev/docs/copy/
 	 */
-	eleventyConfig.addPassthroughCopy('src/*.png')
-	eleventyConfig.addPassthroughCopy('src/*.jpg')
+	//eleventyConfig.addPassthroughCopy('src/assets/generatedImages/')
+	//	eleventyConfig.addPassthroughCopy('src/*.png')
+	//	eleventyConfig.addPassthroughCopy('src/*.jpg')
 	eleventyConfig.addPassthroughCopy('src/*.ico')
 	eleventyConfig.addPassthroughCopy('src/robots.txt')
-	eleventyConfig.addPassthroughCopy('src/assets/**/*')
-
+	eleventyConfig.addPassthroughCopy('src/assets/')
+	eleventyConfig.setUseGitIgnore(false)
 	/**
 	 * Add layout aliases
 	 * @link https://www.11ty.dev/docs/layouts/#layout-aliasing

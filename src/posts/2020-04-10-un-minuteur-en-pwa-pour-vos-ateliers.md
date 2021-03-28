@@ -13,7 +13,7 @@ J'ai fait un minuteur, il est joli, il est cool, il est disponible ici :
 
 
 
-[![](/assets/images/screenshot-984x1024.png)](https://misc.toutcequibouge.net/Timer/)
+[![](/assets/images/screenshot.png)](https://misc.toutcequibouge.net/Timer/)
 
 **Quoi qu'est-ce que c'est ?**
 
