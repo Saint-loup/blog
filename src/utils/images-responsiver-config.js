@@ -40,7 +40,7 @@ module.exports = {
 			//try {
 			Image('src/' + decodeURI(url), options);
 			let metadata = Image.statsSync('src/' + decodeURI(url), options);
-			const images = metadata.jpg
+			const images = metadata.jpeg
 			image.setAttribute('width', images[images.length - 1].width);
 			image.setAttribute('height', images[images.length - 1].height);
 			image.dataset.responsiver = image.className;
