@@ -74,7 +74,7 @@ Je vais décrire quelque chose d'à la fois similaire et différent:
 
 [
 
-![Carte du cable sous-marin FASTER](/assets/images/2019-04-07_17h33_42.png)
+![Carte du cable sous-marin FASTER](/assets/images/cable_sous_marin.png)
 
 ](https://blog.telegeography.com/rising-tide-content-providers-investment-in-submarine-cables-continues)
 
