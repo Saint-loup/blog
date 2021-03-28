@@ -20,7 +20,7 @@ C'est éminemment vrai, au sens qu'avant de concevoir un service ou un objet, il
 
 Reprenons l'exemple du téléphone : quelle dimension doit-il avoir pour être utilisable ? On peut prendre pour cible la taille moyenne des mains de notre population cible, mais c'est trop approximatif. Une même moyenne peut cacher des distributions très différentes, comme dans ce graphique.
 
-![Moyenne identique, écart-type très différent](/assets/images/Comparison_standard_deviations-400x296.png " Moyenne identique, écart-type très différent")
+![Moyenne identique, écart-type très différent](/assets/images/Comparison_standard_deviations.png " Moyenne identique, écart-type très différent")
 
 Pour une même moyenne, les gens peuvent avoir des mains très semblables ou au contraire dissemblables. Sans donnée plus fine, on ne peut pas savoir quelle proportion de gens pourront correctement utiliser le téléphone.
 
