@@ -37,7 +37,7 @@ module.exports = {
 			}
 
 			try {
-				await Image('src' + decodeURI(url), options);
+				await Image('src/' + decodeURI(url), options);
 				let metadata = Image.statsSync('src/' + decodeURI(url), options);
 				const images = metadata.png
 				image.setAttribute('width', images[images.length - 1].width);
