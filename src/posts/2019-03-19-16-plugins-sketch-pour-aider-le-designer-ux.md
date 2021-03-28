@@ -16,7 +16,7 @@ Pour les designers UX qui travaillent sur Sketch, voici des plugins utiles pour 
 
 [Connection Flow Arrows](https://github.com/faridsabitov/Sketch-Connection-Flow-Arrows) : pareil mais vers n'importe quel calque. Et avec pas mal de paramètres utiles. Le détail qui fait la différence : des pointes de flèche orientées par rapport au trait, pas à l'objet cible.
 
-![Exemple de flèches avec le plugin Connection flow arrows](/assets/images/2019-03-19_20h12_29-768x369.png)
+![Exemple de flèches avec le plugin Connection flow arrows](/assets/images/2019-03-19_20h12_29.png)
 
 Connection Flow Arrows
 

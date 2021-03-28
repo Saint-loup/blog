@@ -7,7 +7,7 @@ tags:
 
 ---
 
-![](/assets/imageslarge\_the\_apartment\_blu-ray\_1.jpg)(.wide-img)
+![](/assets/images/large\_the\_apartment\_blu-ray\_1.jpg)(.wide-img)
 
 ### Excel
 

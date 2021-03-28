@@ -13,7 +13,7 @@ C'est aussi une bonne illustration d'une idée simple mais fondamentale en archi
 
 Seule une poignée de ces concepts est retenu pour figurer dans la navigation globale. Chaque application (y compris les versions officielles) fait des choix différents :
 
-![twitter2](images/twitter_2.png)![twitter1](/assets/images/twitter_1.png)
+![twitter1](/assets/images/twitter_1.png)
 
 ![Twittelator](/assets/images/twitterlator.png " Twittelator pour iPad")
 
