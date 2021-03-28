@@ -31,7 +31,7 @@ Un clavier peut être un pavé de dix chiffres, ou bien une grille de nombres à
 
 Les pavés à dix chiffres sont le plus souvent disposés en trois colonnes, comme sur certaines calculettes (inventé par [David Sunstrand](http://retrocalculators.com/sundstrand.htm), 1911) ou sur les téléphones depuis les travaux de [Chapanis](https://en.wikipedia.org/wiki/Alphonse_Chapanis) aux laboratoires Bell. Pour les calculettes, on ne trouve historiquement pas de raisonnement particulier pour avoir organisé les chiffres du bas vers le haut ([source](http://www.vcalc.net/Keyboard.htm)), alors que l'ordre des chiffres sur un téléphone, du haut vers le bas, a été minutieusement étudié. Voici par exemple [17 alternatives](http://www.theatlantic.com/technology/archive/2013/08/the-17-designs-that-bell-almost-used-for-the-layout-of-telephone-buttons/279237/) qui on été testées et laissées de coté :
 
-![bell](/assets/images/bell-708x1024.jpg)
+![bell](/assets/images/bell.jpg)
 
 Ils peuvent être disposés sur deux lignes, comme sur certains claviers « sécurisés » de sites bancaires ou comme [le premier clavier de calculette à dix chiffres commercialisé](http://badonoer.blogspot.fr/2013/12/dalton-adding-machine-mechanism-and.html).
 
