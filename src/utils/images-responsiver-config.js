@@ -18,7 +18,7 @@ module.exports = {
 				replace(
 					/^(.*)(\.[^\.]+)$/,
 					'$1-' + width + '.png'),
-		runBefore: async (image, document) => {
+		runBefore: (image, document) => {
 			let url = image.getAttribute('src')
 			const options = {
 				sharpWebpOptions: {
@@ -32,27 +32,29 @@ module.exports = {
 				filenameFormat: function (id, src, width, format, options) {
 					const extension = path.extname(src);
 					const name = path.basename(src, extension);
-					return `${name}-${width}.png`;
+					return `${name}-${width}.${format}`;
 				}
 			}
 
-			try {
-				await Image('src/' + decodeURI(url), options);
-				let metadata = Image.statsSync('src/' + decodeURI(url), options);
-				const images = metadata.png
-				image.setAttribute('width', images[images.length - 1].width);
-				image.setAttribute('height', images[images.length - 1].height);
-				image.dataset.responsiver = image.className;
-				image.dataset.responsiveruRL = metadata.png.url;
-				image.dataset.size = image.className;
-			}
+			//try {
+			Image('src/' + decodeURI(url), options);
+			let metadata = Image.statsSync('src/' + decodeURI(url), options);
+			const images = metadata.png
+			image.setAttribute('width', images[images.length - 1].width);
+			image.setAttribute('height', images[images.length - 1].height);
+			image.dataset.responsiver = image.className;
+			image.dataset.responsiveruRL = metadata.png.url;
+			image.dataset.size = image.className;
+
+			/*}
 			catch (e) {
 				console.log(e)
-			}
+			}*/
 		},
 		runAfter: (image, document) => {
 			//image.setAttribute('src', image.dataset.responsiveruRL);
 			//let caption = image.getAttribute("title");
+			console.log(image.getAttribute('width'))
 
 
 		},

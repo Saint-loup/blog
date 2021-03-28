@@ -23,7 +23,8 @@ Les styles d'interactions sont des variations visuelles qui s'activent lorsqu'un
 - Le style lui-même. Ici, ça peut être que le libellé passe en gras. Une fois ajouté, il apparait dans le panneau « Widget properties ».
 - L'action qui le déclenche.
 
-![Axure tuto 1](images/Sans-titre.png) ![Axure tuto 2](/assets/images/Sans-titre-2.png)
+![Axure tuto 1](/assets/images/Sans-titre.png)
+![Axure tuto 2](/assets/images/Sans-titre-2.png)
 
 ### Second ingrédient : onPageLoad
 
