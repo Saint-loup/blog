@@ -15,7 +15,7 @@ Dans le premier cas, on choisit une bonne valeur sur une échelle continue, avec
 
 ![Pascaline](/assets/images/640px-Arts_et_Metiers_Pascaline_dsc03869.jpg " Pascaline")
 
-![Curta](/assets/images/Curta-Image08a.png " Curta")
+![Curta](/assets/images/Curta_II.jpg "Curta")
 
 L’Arithmomètre fut très populaire jusqu'à la moitié du XXe siècle, que ce soit [l'appareil d'origine](https://www.youtube.com/watch?v=aDN4s8ElxqE) inventé par Tomas de Colmar ou [la variante](https://en.wikipedia.org/wiki/Odhner_Arithmometer) de Odhner, dotée d'un nouveau mécanisme. Notez que son usage était assez fastidieux : il fallait remettre le total à zéro, saisir un nombre puis le valider par un grand tour de manivelle (voir la vidéo plus bas).
 
