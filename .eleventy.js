@@ -41,6 +41,8 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(pluginRss)
 	eleventyConfig.addPlugin(pluginNavigation)
 	eleventyConfig.addPlugin(syntaxHighlight)
+	//eleventyConfig.addPlugin(pageAssetsPlugin, { mode: "parse", postsMatching: "src/posts/*/*.md", });
+	eleventyConfig.addPlugin(imagesResponsiver, require('./src/utils/images-responsiver-config.js'))
 
 
 	/**
@@ -148,6 +150,8 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addWatchTarget('./src/*.js')
 	eleventyConfig.addWatchTarget('./tailwind.config.js')
 
+
+
 	/**
 	 * Passthrough File Copy
 	 * @link https://www.11ty.dev/docs/copy/
@@ -158,7 +162,9 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy('src/*.ico')
 	eleventyConfig.addPassthroughCopy('src/robots.txt')
 	eleventyConfig.addPassthroughCopy('src/assets/')
-	eleventyConfig.setUseGitIgnore(false)
+	eleventyConfig.setUseGitIgnore(true)
+
+
 	/**
 	 * Add layout aliases
 	 * @link https://www.11ty.dev/docs/layouts/#layout-aliasing
@@ -179,10 +185,6 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.setDataDeepMerge(true)
 
 
-
-	//eleventyConfig.addPlugin(pageAssetsPlugin, { mode: "parse", postsMatching: "src/posts/*/*.md", });
-
-	eleventyConfig.addPlugin(imagesResponsiver, require('./src/utils/images-responsiver-config.js'))
 
 
 	// https://www.toptal.com/designers/htmlarrows/punctuation/section-sign/
