@@ -17,7 +17,7 @@ module.exports = {
 				).
 				replace(
 					/^(.*)(\.[^\.]+)$/,
-					'$1-' + width + '.png'),
+					'$1-' + width + '.jpg'),
 		runBefore: (image, document) => {
 			let url = image.getAttribute('src')
 			const options = {
@@ -26,12 +26,13 @@ module.exports = {
 				},
 				widths: [320, 576, 832, 1088, 1344, 1600],
 				dryRun: false,
-				formats: ['webp', 'png'],
+				formats: ['webp', 'jpeg'],
 				urlPath: '/assets/images/',
 				outputDir: './src/assets/generatedImages/',
 				filenameFormat: function (id, src, width, format, options) {
 					const extension = path.extname(src);
 					const name = path.basename(src, extension);
+
 					return `${name}-${width}.${format}`;
 				}
 			}
@@ -39,11 +40,11 @@ module.exports = {
 			//try {
 			Image('src/' + decodeURI(url), options);
 			let metadata = Image.statsSync('src/' + decodeURI(url), options);
-			const images = metadata.png
+			const images = metadata.jpg
 			image.setAttribute('width', images[images.length - 1].width);
 			image.setAttribute('height', images[images.length - 1].height);
 			image.dataset.responsiver = image.className;
-			image.dataset.responsiveruRL = metadata.png.url;
+			image.dataset.responsiveruRL = metadata.jpg.url;
 			image.dataset.size = image.className;
 
 			/*}
