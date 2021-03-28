@@ -24,7 +24,7 @@ module.exports = {
 				sharpWebpOptions: {
 					quality: 90,
 				},
-				widths: [320, 576, 832, 1088, 1334, 1600],
+				widths: [320, 576, 832, 1088, 1344, 1600],
 				dryRun: false,
 				formats: ['webp', 'png'],
 				urlPath: '/assets/images/',
