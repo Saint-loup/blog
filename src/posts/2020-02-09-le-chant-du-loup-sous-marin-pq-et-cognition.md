@@ -50,15 +50,15 @@ Dans un environnement aussi avancé et précaire qu'un sous-marin, l'usage de l'
 
 Il y a d'abord la table de navigation, utilisée avec feutre effaçable, rapporteur et compas. Le navigateur y calcule des modifications de trajectoire pour les proposer au commandant, qui peut voir le résultat directement. Quelques exemples, tirés du Chant du loup et d'autres films.
 
+{% gallery %}
+- ![](/assets/images/vlcsnap-2020-02-08-14h39m35s021.png){data-responsiver=gallery_3x2}
 
-- ![](/assets/images/vlcsnap-2020-02-08-14h39m35s021.png)
+- ![](/assets/images/vlcsnap-2020-02-08-14h09m10s472-1-e1581169488346.jpg){data-responsiver=gallery_3x2}
 
-- ![](/assets/images/vlcsnap-2020-02-08-14h09m10s472-1-e1581169488346.jpg)
+- ![](/assets/images/EQPVwmDX0Ac83Jy.jpg){data-responsiver=gallery_3x2}
 
-- ![](/assets/images/EQPVwmDX0Ac83Jy.jpg)
-
-- ![](/assets/images/EQPVwnmXYAASuGE.jpg)
-
+- ![](/assets/images/EQPVwnmXYAASuGE.jpg){data-responsiver=gallery_3x2}
+{% endgallery %}
 
 
 Ce genre de réflexion effectuée directement sur papier a été qualifiée "[d'action épistémique](https://onlinelibrary.wiley.com/doi/pdf/10.1207/s15516709cog1804_1)" (PDF) par Kirsch et Maglio, qui ont étudié le comportement de joueurs face à Tetris. Ces actions n'ont pas d'autre but que d'aider à la résolution de problème, par exemple pour vérifier si une pièce va s'adapter aux autres il est plus simple de la pivote à l'écran que dans sa tête.

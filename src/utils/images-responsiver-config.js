@@ -44,7 +44,7 @@ module.exports = {
 			image.setAttribute('width', images[images.length - 1].width);
 			image.setAttribute('height', images[images.length - 1].height);
 			image.dataset.responsiver = image.className;
-			image.dataset.responsiveruRL = metadata.jpg.url;
+			//image.dataset.responsiveruRL = metadata.jpg.url;
 			image.dataset.size = image.className;
 
 			/*}
