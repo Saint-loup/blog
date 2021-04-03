@@ -89,55 +89,7 @@ module.exports = function (eleventyConfig) {
 	//eleventyConfig.addNunjucksAsyncShortcode('svgsprite', svgsprite)
 
 
-	/**
-	 * Collections
-	 * ============================
-	 *
-	 * POST Collection set so we can check status of "draft:" frontmatter.
-	 * If set "true" then post will NOT be processed in PRODUCTION env.
-	 * If "false" or NULL it will be published in PRODUCTION.
-	 * Every Post will ALWAYS be published in DEVELOPMENT so you can preview locally.
-	 */
-	eleventyConfig.addCollection('post', (collection) => {
-		if (process.env.ELEVENTY_ENV !== 'production')
-			return [...collection.getFilteredByGlob('./src/posts/**/*.md')]
-		else
-			return [...collection.getFilteredByGlob('./src/posts/**/*.md')].filter((post) => !post.data.draft)
-	})
 
-	// TAGLIST used from the official eleventy-base-blog  https://github.com/11ty/eleventy-base-blog/blob/master/.eleventy.js
-	eleventyConfig.addCollection('tagList', function (collection) {
-		let tagSet = new Set()
-		collection.getAll().forEach(function (item) {
-			if ('tags' in item.data) {
-				let tags = item.data.tags
-
-				tags = tags.filter(function (item) {
-					switch (item) {
-						// this list should match the `filter` list in tags.njk
-						case 'authors':
-						case 'pages':
-						case 'post':
-						case 'travaux':
-							return false
-					}
-
-					return true
-				})
-
-				for (const tag of tags) {
-					tagSet.add(tag)
-				}
-			}
-		})
-
-		// returning an array in addCollection works in Eleventy 0.5.3
-		return [...tagSet]
-	})
-
-	eleventyConfig.addCollection("catList", function (collectionApi) {
-		return collectionApi.getFilteredByTag("travaux");
-	});
 
 
 	/**
@@ -156,9 +108,9 @@ module.exports = function (eleventyConfig) {
 	 * Passthrough File Copy
 	 * @link https://www.11ty.dev/docs/copy/
 	 */
-	//eleventyConfig.addPassthroughCopy('src/assets/generatedImages/')
-	//	eleventyConfig.addPassthroughCopy('src/*.png')
-	//	eleventyConfig.addPassthroughCopy('src/*.jpg')
+	eleventyConfig.addPassthroughCopy('src/assets/generatedImages/')
+	eleventyConfig.addPassthroughCopy('src/*.webp')
+	eleventyConfig.addPassthroughCopy('src/*.jpg')
 	eleventyConfig.addPassthroughCopy('src/*.ico')
 	eleventyConfig.addPassthroughCopy('src/robots.txt')
 	eleventyConfig.addPassthroughCopy('src/assets/')
@@ -183,7 +135,6 @@ module.exports = function (eleventyConfig) {
 	 * @link https://www.11ty.dev/docs/data-deep-merge/#data-deep-merge
 	 */
 	eleventyConfig.setDataDeepMerge(true)
-
 
 
 
@@ -266,6 +217,57 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addFilter('markdownify', (markdownString) =>
 		md.render(markdownString)
 	);
+
+
+
+	/**
+ * Collections
+ * ============================
+ *
+ * POST Collection set so we can check status of "draft:" frontmatter.
+ * If set "true" then post will NOT be processed in PRODUCTION env.
+ * If "false" or NULL it will be published in PRODUCTION.
+ * Every Post will ALWAYS be published in DEVELOPMENT so you can preview locally.
+ */
+	eleventyConfig.addCollection('post', (collection) => {
+		if (process.env.ELEVENTY_ENV !== 'production')
+			return [...collection.getFilteredByGlob('./src/posts/**/*.md')]
+		else
+			return [...collection.getFilteredByGlob('./src/posts/**/*.md')].filter((post) => !post.data.draft)
+	})
+
+	// TAGLIST used from the official eleventy-base-blog  https://github.com/11ty/eleventy-base-blog/blob/master/.eleventy.js
+	eleventyConfig.addCollection('tagList', function (collection) {
+		let tagSet = new Set()
+		collection.getAll().forEach(function (item) {
+			if ('tags' in item.data) {
+				let tags = item.data.tags
+
+				tags = tags.filter(function (item) {
+					switch (item) {
+						// this list should match the `filter` list in tags.njk
+						case 'authors':
+						case 'pages':
+						case 'post':
+						case 'travaux':
+							return false
+					}
+					return true
+				})
+
+				for (const tag of tags) {
+					tagSet.add(tag)
+				}
+			}
+		})
+
+		// returning an array in addCollection works in Eleventy 0.5.3
+		return [...tagSet]
+	})
+
+	eleventyConfig.addCollection("catList", function (collectionApi) {
+		return collectionApi.getFilteredByTag("travaux");
+	});
 
 
 	return {
