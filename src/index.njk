@@ -8,37 +8,37 @@ excerpt: # used for page excerpts and META (will be overwritten if SEO used belo
 
 <div class="{{ structure.g_pageWidth }}   ">
 
-  <img class="w-1/3 mx-auto my-8" src="/assets/images/construction.gif"></img>
-
-
+  <img class="w-1/3 mx-auto my-8" src="/assets/UI/construction.gif"></img>
 
   {% if seo.description %}
     <div class="p-2 {{ colors.borderCustom.borders or colors.borderDefault.borders }} {{ colors.borderCustom.color or colors.borderDefault.color }}">
       {{ seo.description }}
-  {% endif %}
+    {% endif %}
 
-<h2>Projets, essais et autres bidouilles</h2>
-<ul class="project-list " >
-        {% for project in projects | reverse %}
-          <li class="my-4 list-none project">
-              <div class="text-base name"><a href="{{project.link}}">{{project.name}}</a></div>
-              {#<img class="picture" src="{{project.img}}"></img>#}
-              <div class="description">{{project.description}}</div>
-            </li>
-        {% endfor %}
-</ul>
+    <h2>Projets, essais et autres bidouilles</h2>
+    <ul class="project-list " >
+      {% for project in projects | reverse %}
+        <li class="my-4 list-none project">
+          <div class="text-base name">
+            <a href="{{project.link}}">{{project.name}}</a>
+          </div>
+          {#<img class="picture" src="{{project.img}}"></img>#}
+          <div class="description">{{project.description}}</div>
+        </li>
+      {% endfor %}
+    </ul>
 
-<h2>Moi, ailleurs</h2>
-<ul class="ailleurs-list " >
-        {% for item in ailleurs  %}
-          <li class="my-4 list-none ailleurs">
-              <div class="text-base name"><a href="{{item.link}}">{{item.name}}</a></div>
-              {#<img class="picture" src="{{item.img}}"></img>#}
-              <div class="description">{{item.description}}</div>
-            </li>
-        {% endfor %}
-</ul>
+    <h2>Moi, ailleurs</h2>
+    <ul class="ailleurs-list " >
+      {% for item in ailleurs %}
+        <li class="my-4 list-none ailleurs">
+          <div class="text-base name">
+            <a href="{{item.link}}">{{item.name}}</a>
+          </div>
+          {#<img class="picture" src="{{item.img}}"></img>#}
+          <div class="description">{{item.description}}</div>
+        </li>
+      {% endfor %}
+    </ul>
 
-
-</div>
-
+  </div>

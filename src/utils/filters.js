@@ -1,6 +1,7 @@
 const { DateTime, Settings } = require('luxon')
-const slugify = require('slugify')
+const slugify = require('./slugify.js');
 const cleanCSS = require('clean-css')
+const md = require('./markdown.js')
 
 Settings.defaultLocale = "fr";
 
@@ -11,6 +12,9 @@ module.exports = {
 	 */
 
 
+
+	// Add markdownify filter with Markdown-it configuration
+	markdownify: (markdownString) => { md.render(markdownString) },
 
 
 	cssmin: (code) => {

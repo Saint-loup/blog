@@ -1,11 +1,11 @@
-const markdownIt = require('markdown-it')
+const md = require('./markdown.js')
 
 module.exports = {
 
 
 	gallery: function (data, size) {
-		const galleryContent = markdownIt().render(data);
-		return `<div class="gallery" data-size="${size} ">${galleryContent}</div>`;
+		const content = md.render(data)
+		return `<div class="gallery" data-size="${size} ">${content}</div>`;
 	},
 
 
