@@ -52,10 +52,15 @@ Il y a d'abord la table de navigation, utilisée avec feutre effaçable, rapport
 
 {% gallery %}
 
+- ![]("/assets/images/EQPVwmDX0Ac83Jy.jpg")
+
 - ![](/assets/images/EQPVwmDX0Ac83Jy.jpg)
 
-- ![](/assets/images/EQPVwnmXYAASuGE.jpg)
+- ![](/assets/images/EQPVwnmXYAASuGE.jpg )
+
 {% endgallery %}
+
+
 
 
 Ce genre de réflexion effectuée directement sur papier a été qualifiée "[d'action épistémique](https://onlinelibrary.wiley.com/doi/pdf/10.1207/s15516709cog1804_1)" (PDF) par Kirsch et Maglio, qui ont étudié le comportement de joueurs face à Tetris. Ces actions n'ont pas d'autre but que d'aider à la résolution de problème, par exemple pour vérifier si une pièce va s'adapter aux autres il est plus simple de la pivote à l'écran que dans sa tête.
@@ -66,16 +71,24 @@ Des zoids tout à fait mignons dessinés à la main en 1994
 
 Admirez aussi le tableau lumineux, les feuillets suspendus et le rouleau de scotch pré-dévidé.
 
-- ![](/assets/images/vlcsnap-2020-02-08-14h18m13s710.png)
+{% gallery %}
+
+- ![](/assets/images/vlcsnap-2020-02-08-14h18m13s710.png '')
 
 - ![](/assets/images/vlcsnap-2020-02-08-14h09m56s011-1.png)
+
+{% endgallery %}
+
 
 
 Cet usage du papier est aussi documenté dans les cockpits d'avion, [voir ce papier](https://pages.ucsd.edu/~ehutchins/documents/fp146-nomura.pdf) (PDF) écrit par Nomura, Hutchins (encore lui) et Holder.
 
+{% gallery %}
 
 - ![](/assets/images/Capture-d’écran-2020-02-08-à-10.53.48.png)
 - ![](/assets/images/Capture-d’écran-2020-02-08-à-10.53.00.png)
+
+{% endgallery %}
 
 
 ### Papier... et papier-toilette
@@ -104,6 +117,10 @@ L'oreille d'or a le trackball dans une main, le casque sur une seule oreille pen
 
 Voici quelques interfaces montrées dans le film (probablement non-contractuelles). Mais c'est la partie émergée de l'iceberg. D'une certaine manière dans un sous-marin tout est interface entre l'être humain et des fonctions critiques. Tout est pensé pour aider les sous-mariniers à écouter et exécuter des ordres, à marcher, se tenir, ou respirer. Par exemple quand l'atmosphère est compromise, ils peuvent se brancher à intervalle régulier à des arrivées d'air.
 
+
+{% gallery %}
+
+
 - ![](/assets/images/D_dx7AjXoAcTNaU.png)
 
 - ![](/assets/images/D_dx7ARWkAEjWrd.png)
@@ -117,6 +134,8 @@ Voici quelques interfaces montrées dans le film (probablement non-contractuelle
 - ![](/assets/images/D_dy0NxXYAIXkt8.png)
 
 - ![](/assets/images/vlcsnap-2020-02-09-14h49m19s615-e1583282965609.jpg)
+
+{% endgallery %}
 
 
 Dans cet écosystème entièrement artificiel, tout a été conçu. L'équipage aussi : comment s'organiser, qui doit faire quoi à quel moment, le language codifié, tout a été réfléchi. Plutôt que l'histoire d'un humain réduit à un rouage dans la machine, le film nous montre un monde où l'opposition entre humain et système n'a pas de sens.

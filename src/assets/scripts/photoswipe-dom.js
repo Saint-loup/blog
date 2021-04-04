@@ -1,21 +1,6 @@
 
 var initPhotoSwipeFromDOM = function (gallerySelector) {
 
-	const imageSizes =
-	{
-		small: {
-			width: 400,
-			height: 600
-		},
-		medium: {
-			width: 600,
-			height: 900
-		},
-		large: {
-			width: 800,
-			height: 1200
-		}
-	}
 
 
 	// parse slide data (url, title, size ...) from DOM elements
@@ -38,15 +23,16 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
 			}
 
 			linkEl = figureEl.children[0]; // <a> element
-
+			img = linkEl.children[0];
 
 			// create slide object
 			item = {
-				src: figureEl.getAttribute('src'),
-				orig_src: figureEl.getAttribute('src'),
-				small: imageSizes.small,
-				medium: imageSizes.medium,
-				large: imageSizes.large
+				src: linkEl.getAttribute('href'),
+				orig_src: linkEl.getAttribute('href'),
+				width: img.width,
+				height: img.height
+
+
 			};
 
 			if (figureEl.children.length > 1) {
@@ -157,14 +143,16 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
 			// define gallery index (for URL)
 			galleryUID: galleryElement.getAttribute('data-pswp-uid'),
 
-			getThumbBoundsFn: function (index) {
-				// See Options -> getThumbBoundsFn section of documentation for more info
-				var thumbnail = items[index].el.getElementsByTagName('img')[0], // find thumbnail
-					pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
-					rect = thumbnail.getBoundingClientRect();
+			/*		getThumbBoundsFn: function (index) {
+						// See Options -> getThumbBoundsFn section of documentation for more info
+						var thumbnail = items[index].el.getElementsByTagName('img')[0], // find thumbnail
+							pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
+							rect = thumbnail.getBoundingClientRect();
+						console.log(thumbnail)
+						return { x: rect.left, y: rect.top + pageYScroll, w: rect.width };
+					}*/
 
-				return { x: rect.left, y: rect.top + pageYScroll, w: rect.width };
-			}
+			hideAnimationDuration: 0, showAnimationDuration: 0
 
 		};
 
@@ -207,60 +195,60 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
 			imageSrcWillChange;
 
 		// beforeResize event fires each time size of gallery viewport updates
-		gallery.listen('beforeResize', function () {
-			// gallery.viewportSize.x - width of PhotoSwipe viewport
-			// gallery.viewportSize.y - height of PhotoSwipe viewport
-			// window.devicePixelRatio - ratio between physical pixels and device independent pixels (Number)
-			//                          1 (regular display), 2 (@2x, retina) ...
+		/*	gallery.listen('beforeResize', function () {
+				// gallery.viewportSize.x - width of PhotoSwipe viewport
+				// gallery.viewportSize.y - height of PhotoSwipe viewport
+				// window.devicePixelRatio - ratio between physical pixels and device independent pixels (Number)
+				//                          1 (regular display), 2 (@2x, retina) ...
 
 
-			// calculate real pixels when size changes
-			// realViewportWidth = gallery.viewportSize.x * window.devicePixelRatio;
-			realViewportWidth = gallery.viewportSize.x;
+				// calculate real pixels when size changes
+				// realViewportWidth = gallery.viewportSize.x * window.devicePixelRatio;
+				realViewportWidth = gallery.viewportSize.x;
 
-			// Code below is needed if you want image to switch dynamically on window.resize
+				// Code below is needed if you want image to switch dynamically on window.resize
 
-			// Find out if current images need to be changed
-			if (realViewportWidth <= 720) {
-				if (imageSize != "small") {
-					imageSize = "small"
-					imageSrcWillChange = true;
+				// Find out if current images need to be changed
+				if (realViewportWidth <= 720) {
+					if (imageSize != "small") {
+						imageSize = "small"
+						imageSrcWillChange = true;
+					}
+				} else if (realViewportWidth > 720 && realViewportWidth <= 1040) {
+					if (imageSize != "medium") {
+						imageSize = "medium"
+						imageSrcWillChange = true;
+					}
+				} else {
+					if (imageSize != "large") {
+						imageSize = "large"
+						imageSrcWillChange = true;
+					}
 				}
-			} else if (realViewportWidth > 720 && realViewportWidth <= 1040) {
-				if (imageSize != "medium") {
-					imageSize = "medium"
-					imageSrcWillChange = true;
+
+				// Invalidate items only when source is changed and when it's not the first update
+				if (imageSrcWillChange && !firstResize) {
+					// invalidateCurrItems sets a flag on slides that are in DOM,
+					// which will force update of content (image) on window.resize.
+					gallery.invalidateCurrItems();
 				}
-			} else {
-				if (imageSize != "large") {
-					imageSize = "large"
-					imageSrcWillChange = true;
+
+				if (firstResize) {
+					firstResize = false;
 				}
-			}
 
-			// Invalidate items only when source is changed and when it's not the first update
-			if (imageSrcWillChange && !firstResize) {
-				// invalidateCurrItems sets a flag on slides that are in DOM,
-				// which will force update of content (image) on window.resize.
-				gallery.invalidateCurrItems();
-			}
+				imageSrcWillChange = false;
 
-			if (firstResize) {
-				firstResize = false;
-			}
-
-			imageSrcWillChange = false;
-
-		});
+			});*/
 
 
 		// gettingData event fires each time PhotoSwipe retrieves image source & size
 		gallery.listen('gettingData', function (index, item) {
 			// Set image source & size based on real viewport width
 			// feed the Neltify resize parameter the same small/medium/large width that will be assigned in the dimensions
-			item.src = `${item.orig_src}?nf_resize=fit&w=${item[imageSize].width}`;
-			item.w = item[imageSize].width;
-			item.h = item[imageSize].height;
+			item.src = `${item.orig_src}?nf_resize=fit&w=${item.width}`;
+			item.w = item.width;
+			item.h = item.height;
 
 			// It doesn't really matter what will you do here,
 			// as long as item.src, item.w and item.h have valid values.
@@ -294,4 +282,4 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
 };
 
 // execute above function
-//initPhotoSwipeFromDOM('.gallery ul');
+initPhotoSwipeFromDOM('.gallery ul');
