@@ -8,7 +8,7 @@
   img:
   description: Le seul bot appeliste de la planète.
 - name: Calculateur de ticket resto
-  link: /blog/2016/05/lecons-ergonomiques-et-techniques-dun-projet-perso/
+  link: /blog/2016/05/lecons-ergonomiques-et-techniques-d-un-projet-perso/
   img:
   description: Un test de clavier mobile dédié pour aider au calcul des tickets resto.
 - name: Archive d'animations flash
@@ -24,7 +24,7 @@
   img: assets/images/home/typo.png
   description: Répandez du bonheur et des espaces insécables autour de vous.
 - name: Table basse
-  link: /blog/2020/12/jai-fait-un-truc/
+  link: /blog/2020/12/j-ai-fait-un-truc/
   img:
   description: Ma vie culturelle en mosaïque.
 - name: Timer
