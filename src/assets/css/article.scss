@@ -1,0 +1,47 @@
+
+.article .cta {
+   @apply block px-8 py-4 m-auto font-semibold no-underline bg-gray-200 rounded-full shadow-md max-w-max focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-75 hover:text-gray-800 hover:bg-gray-300 ;
+
+}
+
+.article main{
+	h1, h2, h3, h4, h5 {
+		position: relative;
+		padding-left: 2em;
+		left: -2em;
+		&:hover a {
+			display: inline-block;
+
+		}
+	}
+	.deeplink {
+		position: absolute;
+		left:0;
+		display: none;
+		padding:0 .5em;
+		@apply text-accent;
+	}
+}
+
+
+
+@media screen and (max-width:1024px){
+
+	.hero-split img {
+		width: auto;
+		height: inherit;
+		max-height: 48vmax;
+		align-self: flex-start;
+	}
+}
+
+/*@media screen and (min-width:768){
+	.hero-split img {
+		width: auto;
+		height: inherit;
+		max-height: 15vmin;
+	}
+}*/
+
+
+

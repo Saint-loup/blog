@@ -1,0 +1,10 @@
+@import "./global.scss";
+@import "./article.scss";
+@import "./tailwind.scss";
+@import "./images.scss";
+@import "./photoswipe/photoswipe.css";
+@import "./photoswipe/skin.css";
+@import "./prism-okaidia.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

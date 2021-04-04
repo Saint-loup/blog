@@ -1,36 +1,20 @@
 const pluginRss = require('@11ty/eleventy-plugin-rss')
 const pluginNavigation = require('@11ty/eleventy-navigation')
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
-const CleanCSS = require("clean-css");
 const yaml = require("js-yaml");
-const slugify = require('./src/_includes/slugify.js');
 
 //const svgsprite = require('./src/utils/svgsprite')
 //const pageAssetsPlugin = require('eleventy-plugin-page-assets');
 const imagesResponsiver = require("eleventy-plugin-images-responsiver");
 
-const blockImagePlugin = require("markdown-it-block-image");
-const markdownItAttributes = require('markdown-it-attrs');
-const markdownItContainer = require('markdown-it-container');
-const markdownIt = require('markdown-it')
-const markdownItFootnote = require('markdown-it-footnote');
-const markdownItAnchor = require('markdown-it-anchor');
 
-const filters = require('./src/utils/filters.js')
-const shortcodes = require('./src/utils/shortcodes.js')
-const pairedshortcodes = require('./src/utils/paired-shortcodes.js')
-const transforms = require('./src/utils/transforms.js')
+
+
 
 
 module.exports = function (eleventyConfig) {
 
-	eleventyConfig.addDataExtension("yaml", contents => yaml.safeLoad(contents));
 
-	eleventyConfig.setFrontMatterParsingOptions({
-		excerpt: true,
-		// Optional, default is "---"
-		excerpt_separator: "<!-- excerpt -->"
-	});
 
 
 	/**
@@ -49,6 +33,8 @@ module.exports = function (eleventyConfig) {
 	 * Filters
 	 * @link https://www.11ty.io/docs/filters/
 	 */
+	const filters = require('./src/utils/filters.js')
+
 	Object.keys(filters).forEach((filterName) => {
 		eleventyConfig.addFilter(filterName, filters[filterName])
 	})
@@ -58,6 +44,8 @@ module.exports = function (eleventyConfig) {
 	 * Transforms
 	 * @link https://www.11ty.io/docs/config/#transforms
 	 */
+	const transforms = require('./src/utils/transforms.js')
+
 	Object.keys(transforms).forEach((transformName) => {
 		eleventyConfig.addTransform(transformName, transforms[transformName])
 	})
@@ -66,6 +54,8 @@ module.exports = function (eleventyConfig) {
 	 * Shortcodes
 	 * @link https://www.11ty.io/docs/shortcodes/
 	 */
+	const shortcodes = require('./src/utils/shortcodes.js')
+
 	Object.keys(shortcodes).forEach((shortcodeName) => {
 		eleventyConfig.addShortcode(shortcodeName, shortcodes[shortcodeName])
 	})
@@ -74,6 +64,7 @@ module.exports = function (eleventyConfig) {
 	 * Paired Shortcodes
 	 * @link https://www.11ty.dev/docs/languages/nunjucks/#paired-shortcode
 	 */
+	const pairedshortcodes = require('./src/utils/paired-shortcodes.js')
 	Object.keys(pairedshortcodes).forEach((shortcodeName) => {
 		eleventyConfig.addPairedShortcode(
 			shortcodeName,
@@ -109,11 +100,14 @@ module.exports = function (eleventyConfig) {
 	 * @link https://www.11ty.dev/docs/copy/
 	 */
 	eleventyConfig.addPassthroughCopy('src/assets/generatedImages/')
-	eleventyConfig.addPassthroughCopy('src/*.webp')
-	eleventyConfig.addPassthroughCopy('src/*.jpg')
+	//eleventyConfig.addPassthroughCopy('src/*.webp')
+	//eleventyConfig.addPassthroughCopy('src/*.jpg')
 	eleventyConfig.addPassthroughCopy('src/*.ico')
 	eleventyConfig.addPassthroughCopy('src/robots.txt')
-	eleventyConfig.addPassthroughCopy('src/assets/')
+	eleventyConfig.addPassthroughCopy('src/assets/scripts/')
+	eleventyConfig.addPassthroughCopy('src/assets/style.css')
+	eleventyConfig.addPassthroughCopy('src/assets/UI')
+
 	eleventyConfig.setUseGitIgnore(false)
 
 
@@ -137,86 +131,21 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.setDataDeepMerge(true)
 
 
+	/**
+	MARKDOWN
+	*/
+	eleventyConfig.addDataExtension("yaml", contents => yaml.safeLoad(contents));
 
-	// https://www.toptal.com/designers/htmlarrows/punctuation/section-sign/
-	const markdownItAnchorOptions = {
-		permalink: true,
-		permalinkClass: 'deeplink',
-		permalinkSymbol: '&#xa7;&#xFE0E;',
-		level: [2, 3, 4],
-		slugify: function (s) {
-			return slugify(s);
-		},
-	};
+	eleventyConfig.setFrontMatterParsingOptions({
+		excerpt: true,
+		// Optional, default is "---"
+		excerpt_separator: "<!-- excerpt -->"
+	});
 
-	// taken from https://gist.github.com/rodneyrehm/4feec9af8a8635f7de7cb1754f146a39
-	function getHeadingLevel(tagName) {
-		if (tagName[0].toLowerCase() === 'h') {
-			tagName = tagName.slice(1);
-		}
-
-		return parseInt(tagName, 10);
-	}
-
-	function markdownItHeadingLevel(md, options) {
-		var firstLevel = options.firstLevel;
-
-		if (typeof firstLevel === 'string') {
-			firstLevel = getHeadingLevel(firstLevel);
-		}
-		if (!firstLevel || isNaN(firstLevel)) {
-			return;
-		}
-		var levelOffset = firstLevel - 1;
-		if (levelOffset < 1 || levelOffset > 6) {
-			return;
-		}
-
-		md.core.ruler.push('adjust-heading-levels', function (state) {
-			var tokens = state.tokens;
-			for (var i = 0; i < tokens.length; i++) {
-				if (tokens[i].type !== 'heading_close') {
-					continue;
-				}
-
-				var headingOpen = tokens[i - 2];
-				var headingClose = tokens[i];
-
-				var currentLevel = getHeadingLevel(headingOpen.tag);
-				var tagName = 'h' + Math.min(currentLevel + levelOffset, 6);
-
-				headingOpen.tag = tagName;
-				headingClose.tag = tagName;
-			}
-		});
-	}
-
-
-	let options = {
-		html: true,
-		breaks: true,
-		linkify: true,
-		typographer: true,
-	}
-
-	const md = markdownIt(options)
-		.disable('code')
-		.use(markdownItHeadingLevel, { firstLevel: 2 })
-		.use(markdownItFootnote)
-		.use(markdownItAnchor, markdownItAnchorOptions)
-		.use(markdownItAttributes)
-		.use(markdownItContainer, 'info')
-		.use(blockImagePlugin, {
-			outputContainer: 'figure',
-			containerClassName: "image-container"
-		});
-
+	const md = require('./src/utils/markdown.js')
 	eleventyConfig.setLibrary('md', md);
 
-	// Add markdownify filter with Markdown-it configuration
-	eleventyConfig.addFilter('markdownify', (markdownString) =>
-		md.render(markdownString)
-	);
+
 
 
 
