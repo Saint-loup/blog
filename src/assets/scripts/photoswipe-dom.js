@@ -1,102 +1,31 @@
 
 var initPhotoSwipeFromDOM = function (gallerySelector) {
 
-	const imageSizes = {
-		"3x2": {
-			small: {
-				width: 600,
-				height: 400
-			},
-			medium: {
-				width: 900,
-				height: 600
-			},
-			large: {
-				width: 1200,
-				height: 800
-			}
+	const imageSizes =
+	{
+		small: {
+			width: 400,
+			height: 600
 		},
-		"gallery-2x3": {
-			small: {
-				width: 400,
-				height: 600
-			},
-			medium: {
-				width: 600,
-				height: 900
-			},
-			large: {
-				width: 800,
-				height: 1200
-			}
+		medium: {
+			width: 600,
+			height: 900
 		},
-		"gallery-4x3": {
-			small: {
-				width: 400,
-				height: 300
-			},
-			medium: {
-				width: 800,
-				height: 600
-			},
-			large: {
-				width: 1200,
-				height: 900
-			}
-		},
-		"gallery-3x4": {
-			small: {
-				width: 300,
-				height: 400
-			},
-			medium: {
-				width: 600,
-				height: 800
-			},
-			large: {
-				width: 900,
-				height: 1200
-			}
-		},
-		"gallery-16x9": {
-			small: {
-				width: 400,
-				height: 225
-			},
-			medium: {
-				width: 800,
-				height: 450
-			},
-			large: {
-				width: 1200,
-				height: 675
-			}
-		},
-		"gallery-1x1": {
-			small: {
-				width: 400,
-				height: 400
-			},
-			medium: {
-				width: 800,
-				height: 800
-			},
-			large: {
-				width: 1000,
-				height: 1000
-			}
-		},
-	};
+		large: {
+			width: 800,
+			height: 1200
+		}
+	}
+
 
 	// parse slide data (url, title, size ...) from DOM elements
 	// (children of gallerySelector)
 	var parseThumbnailElements = function (el) {
-		var thumbElements = el.querySelectorAll('img'),
+		var thumbElements = el.querySelectorAll('figure'),
 			numNodes = thumbElements.length,
 			items = [],
 			figureEl,
 			linkEl,
-			size,
 			item;
 
 		for (var i = 0; i < numNodes; i++) {
@@ -110,17 +39,14 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
 
 			linkEl = figureEl.children[0]; // <a> element
 
-			//   size = linkEl.getAttribute('data-size').split('x');
-			let sizeId = linkEl.getAttribute('data-size');
-			size = imageSizes[sizeId];
 
 			// create slide object
 			item = {
-				src: linkEl.getAttribute('href'),
-				orig_src: linkEl.getAttribute('href'),
-				small: size.small,
-				medium: size.medium,
-				large: size.large
+				src: figureEl.getAttribute('src'),
+				orig_src: figureEl.getAttribute('src'),
+				small: imageSizes.small,
+				medium: imageSizes.medium,
+				large: imageSizes.large
 			};
 
 			if (figureEl.children.length > 1) {
