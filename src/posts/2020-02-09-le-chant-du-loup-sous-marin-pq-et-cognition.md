@@ -52,7 +52,7 @@ Il y a d'abord la table de navigation, utilisée avec feutre effaçable, rapport
 
 {% gallery %}
 
-- ![]("/assets/images/EQPVwmDX0Ac83Jy.jpg")
+- ![](/assets/images/EQPVwmDX0Ac83Jy.jpg)
 
 - ![](/assets/images/EQPVwmDX0Ac83Jy.jpg)
 
