@@ -17,7 +17,7 @@ module.exports = {
 				).
 				replace(
 					/^(.*)(\.[^\.]+)$/,
-					'$1-' + width + '.jpg'),
+					'$1-' + width + '.jpeg'),
 		runBefore: (image, document) => {
 			let url = image.getAttribute('src')
 			const options = {
