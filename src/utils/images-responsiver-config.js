@@ -7,7 +7,7 @@ module.exports = {
 		selector: '.template-post :not(picture) img[src]:not([srcset]):not([src$=".svg"]):not([src$=".gif"])',
 		minWidth: 320,
 		maxWidth: 1600,
-		fallBackWidth: 576,
+		fallbackWidth: 576,
 		sizes: '(max-width: 60rem) 90vw, 60rem',
 		resizedImageUrl: (src, width) =>
 			src.
@@ -55,7 +55,14 @@ module.exports = {
 		runAfter: (image, document) => {
 			//image.setAttribute('src', image.dataset.responsiveruRL);
 			//let caption = image.getAttribute("title");
+			if (image.closest('.gallery')) {
+				console.log("src :" + image.getAttribute('src'))
+				const link = document.createElement("a");
+				link.setAttribute("href", image.getAttribute('src'));
+				link.appendChild(image.cloneNode(true));
 
+				image.replaceWith(link);
+			}
 
 
 		},
