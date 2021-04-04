@@ -66,9 +66,6 @@ module.exports = {
 	g_showShareTwitter: true,
 	g_showShareEmail: true,
 
-	/**
-	 * ===== Home Page Carousel & Hero Controls =====
-	 */
 
 	/**
 	 * ===== Post List Style Options =====

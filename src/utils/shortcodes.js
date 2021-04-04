@@ -41,7 +41,7 @@ module.exports = {
    *
    * Used in Layouts:
    *  /src/authors.njk
-   *  /src/_includes/partials/footer.njk
+   *  /src/_includes/components/footer.njk
    *  /src/_includes/components/socialshare.njk
    *  /src/_includes/components/nav.njk (for the logos)
 	 */

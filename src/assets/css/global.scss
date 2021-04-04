@@ -5,7 +5,9 @@
 	.hero-split img {
 		width: auto;
 		max-height: 60vmax;
-		align-self: flex-start;}
+		align-self: flex-start;
+		min-height: 370px;
+	}
 }
 
 	.decor-dark {
@@ -27,7 +29,6 @@
 		margin-right: calc(30% - 30vw);
 		position: relative
 	}
-
 
 
 	.article main img {

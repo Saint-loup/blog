@@ -15,13 +15,13 @@
   }
 }
 
-.gallery > ul {
+/*.gallery > ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 200px;
   grid-gap: 1em;
   padding: 0;
-}
+}*/
 
 
 .gallery li a {
@@ -39,10 +39,9 @@
   object-position: 50% 50%;
 }
 
-
-	.prose .gallery ul li:before
-	{
-	content:none
+.prose .gallery ul li:before
+{
+content:none
 
 }
 

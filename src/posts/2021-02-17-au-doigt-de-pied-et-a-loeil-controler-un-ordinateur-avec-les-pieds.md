@@ -11,7 +11,7 @@ heroSettings:
     desktop: # leave blank to inherit "mobile" height (default = full screen)
   bg:
     color: bg-dark
-    image: joyboard2.jpg  # relative to /assets/images/
+    image: joyboard2.jpg
     imagePosition: # options = bg-center (default), bg-left, bg-right
   headingTextColor: # default = text-white (can use any TailwindCSS text-[color]-[xxx])
 

@@ -3,9 +3,9 @@ const md = require('./markdown.js')
 module.exports = {
 
 
-	gallery: function (data, size) {
+	gallery: function (data) {
 		const content = md.render(data)
-		return `<div class="gallery" data-size="${size} ">${content}</div>`;
+		return `<div class="gallery container-wide" >${content}</div>`;
 	},
 
 

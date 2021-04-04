@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr" class="font-sans">
   <head>
-    {%- include "partials/head.njk" %}
+    {%- include "components/head.njk" %}
 
   </head>
   <body x-init="
@@ -19,7 +19,7 @@
         {{ content | safe }}
       </main>
 
-      {% include "partials/footer.njk" %}
+      {% include "components/footer.njk" %}
     </div>
 
     <script src=" {{ '/assets/main.js'   | url }}" defer></script>

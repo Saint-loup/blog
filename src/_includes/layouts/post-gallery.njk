@@ -1,0 +1,21 @@
+---
+layout: post
+---
+
+{{ content | safe }}
+
+{% if layout === "post-gallery" %}
+	{% include "../components/gallery.njk" %}
+
+	{% set css %}
+	{% include "src/assets/css/photoswipe/photoswipe.css" %}
+	{% include "src/assets/css/photoswipe/skin.css" %}
+	{% endset %}
+	<style>
+		{{css | cssmin | safe}}
+	</style>
+
+	<script  src="/assets/scripts/photoswipe.min.js" defer></script>
+	<script  src="/assets/scripts/photoswipe-ui-default-min.js" defer></script>
+	<script  src="/assets/scripts/photoswipe-dom.js" defer></script>
+{% endif %}
