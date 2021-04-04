@@ -6,7 +6,7 @@ tags:
   - "recherche"
   - "sciences-cognitives"
   - "systemes-complexes"
-
+layout: post-gallery
 hero: split  # options: carousel, graphic, video, split (text & image)
 heroSettings:
   height:
@@ -17,7 +17,6 @@ heroSettings:
     image: le-chant-du-loup-e1581375123572.jpg # relative to /assets/images/
     imagePosition: # options = bg-center (default), bg-left, bg-right
   headingTextColor: # default = text-white (can use any TailwindCSS text-[color]-[xxx])
-
   subheadingTextColor: # Leave empty to inherit headingTextColor or default (text-white) or use any text-[color]-[xxx]
 
 ---
@@ -52,7 +51,6 @@ Il y a d'abord la table de navigation, utilisée avec feutre effaçable, rapport
 
 {% gallery %}
 
-- ![](/assets/images/EQPVwmDX0Ac83Jy.jpg)
 
 - ![](/assets/images/EQPVwmDX0Ac83Jy.jpg)
 
