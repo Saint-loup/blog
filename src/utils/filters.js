@@ -2,6 +2,9 @@ const { DateTime, Settings } = require('luxon')
 const slugify = require('./slugify.js');
 const cleanCSS = require('clean-css')
 const md = require('./markdown.js')
+const elasticlunr = require("elasticlunr");
+//require('./lunr.stemmer.support.min.js')(elasticlunr);
+//require('./lunr.fr.min.js')(elasticlunr);
 
 Settings.defaultLocale = "fr";
 
@@ -12,6 +15,29 @@ module.exports = {
 	 */
 
 
+
+	search: (collection) => {
+
+		// what fields we'd like our index to consist of
+		var index = elasticlunr(function () {
+			//this.use(lunr.fr);
+			this.addField("title", { boost: 5 })
+			this.addField("title", { boost: 5 })
+			this.setRef("id");
+		})
+
+		// loop through each page and add it to the index
+		collection.forEach((page) => {
+			index.addDoc({
+				id: page.url,
+				title: page.template.frontMatter.data.title,
+				excerpt: page.template.frontMatter.data.excerpt,
+				tags: page.template.frontMatter.data.tags,
+			});
+		});
+
+		return index.toJSON();
+	},
 
 	// Add markdownify filter with Markdown-it configuration
 	markdownify: (markdownString) => { md.render(markdownString) },
