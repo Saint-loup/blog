@@ -1,38 +1,17 @@
-<section class="mt-8 ">
-  <div class="">
-    {% for post in postslist | reverse %}
-      <div class="pb-10">
-        {# Post publish Date and Author display conditional  #}
-        <div class="text-sm {{ colors.authorCustom.date or colors.authorDefault.date }}">
-          <time datetime="{{ post.data.page.date | dateToFormat("yyyy-MM-dd") }}">
-            {{ post.data.page.date | dateToFormat("dd LLLL yyyy") }}
-          </time>
-          {# Global disable author display in /src/_data/structure.js #}
+{% set postslist = collections.post | reverse %}
 
-        </div>
+<section class="mt-8 post-wrapper">
+  <div class=post-list-wrapper>
+    <ul class="post-list">
+      {% for post in postslist | reverse %}
+        {% include 'components/postlistitem.njk' %}
+      {% endfor %}
+    </ul>
 
-        {# Post Title  #}
-        <H2 class="text-2xl lg:text-3xl font-semibold leading-7 {{ colors.headingsCustom or colors.headingsDefault }}">
-
-          <a href="{{ post.url | url }}" class="block hover:underline">
-            {{ post.data.title }}
-          </a>
-        </H2>
-
-        {# Display Post Excerpt if set 'true' in /src/_data/structure.js:g_showExcerpt  #}
-        {% if structure.g_showExcerpt %}
-          <div class="{{ colors.excerptCustom or colors.excerptDefault }}">
-            {% if post.data.excerpt %}
-              {{ post.data.excerpt | markdownify | safe }}
-            {% elseif post.data.page.excerpt  %}
-              {{ post.data.page.excerpt | markdownify | safe }}
-            {% endif %}
-          </div>
-        {% endif %}
-
-      </div>
-
-    {% endfor %}
+    {# ===== Paginate based on "size" frontmatter value above =====  #}
+    {# Don't even include the pagination component if there are fewer posts than needed to paginate  #}
+    {% if collections.post.length > pagination.size %}
+      {% include "components/pagination.njk" %}
+    {% endif %}
   </div>
-
-</section>
+  <ul class="search-list"></section>

@@ -9,7 +9,6 @@ module.exports = {
 		'./src/_data/structure.js',
 	],
 	theme: {
-<<<<<<< Updated upstream
 		fontFamily: {
 			sans: [
 				'Brandon',
@@ -105,27 +104,6 @@ module.exports = {
 				96: '24rem',
 				128: '32rem',
 			}),
-=======
-		textIndent: { // defaults to {}
-			'1': '0.25rem',
-			'2': '0.5rem',
-		},
-		textShadow: { // defaults to {}
-			'default': '0 2px 5px rgba(0, 0, 0, 0.5)',
-			'lg': '0 2px 10px rgba(0, 0, 0, 0.5)',
-		},
-		textDecorationStyle: { // defaults to these values
-			'solid': 'solid',
-			'double': 'double',
-			'dotted': 'dotted',
-			'dashed': 'dashed',
-			'wavy': 'wavy',
-		},
-		textDecorationColor: { // defaults to theme => theme('colors')
-			'red': '#f00',
-			'green': '#0f0',
-			'blue': '#00f',
->>>>>>> Stashed changes
 		},
 		fontVariantCaps: { // defaults to these values
 			'normal': 'normal',
@@ -264,7 +242,6 @@ module.exports = {
 			},
 		}),
 	},
-<<<<<<< Updated upstream
 	variants: {},
 	plugins: [
 		require('@tailwindcss/typography'),
@@ -273,72 +250,3 @@ module.exports = {
 	]
 	,
 }
-=======
-	variants: { // all the following default to ['responsive']
-		textIndent: ['responsive'],
-		textShadow: ['responsive'],
-		textDecorationStyle: ['responsive'],
-		textDecorationColor: ['responsive'],
-		ellipsis: ['responsive'],
-		hyphens: ['responsive'],
-		kerning: ['responsive'],
-		textUnset: ['responsive'],
-		fontVariantCaps: ['responsive'],
-		fontVariantNumeric: ['responsive'],
-		fontVariantLigatures: ['responsive'],
-		textRendering: ['responsive'],
-	},
-	plugins: [
-		require('tailwindcss-typography')({
-			// all these options default to the values specified here
-			ellipsis: true,         // whether to generate ellipsis utilities
-			hyphens: true,          // whether to generate hyphenation utilities
-			kerning: true,          // whether to generate kerning utilities
-			textUnset: true,        // whether to generate utilities to unset text properties
-			componentPrefix: 'c-',  // the prefix to use for text style classes
-		}),
-	],
-};
-
-
-//module.exports = {
-//	purge: [
-//		'./src/**/*.html',
-//		'./src/**/*.njk',
-//		'./src/**/*.md',
-//		'./src/_data/colors.js',
-//		'./src/_data/structure.js',
-//	],
-//	experimental: {
-//		applyComplexClasses: true,
-//	},
-//	future: {
-//		removeDeprecatedGapUtilities: true,
-//	},
-//	theme: {
-
-//		extend: {
-//			opacity: (theme) => ({
-//				5: '.05',
-//				10: '.1',
-//				15: '.15',
-//				20: '.2',
-//			}),
-//			// created my own heights so can specify for Heros
-//			height: (theme) => ({
-//				'1/2': '50vh',
-//				'3/4': '75vh',
-//				'9/10': '90vh',
-//				'1/1': '100vh',
-//				'1/3': 'calc(100vh / 3)',
-//				'1/4': 'calc(100vh / 4)',
-//				'1/5': 'calc(100vh / 5)',
-//				96: '24rem',
-//				128: '32rem',
-//			}),
-//		},
-//	},
-//	variants: {},
-//	plugins: [require('@tailwindcss/custom-forms')],
-//}
->>>>>>> Stashed changes
