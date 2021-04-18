@@ -70,7 +70,7 @@ let options = {
 
 const md = markdownIt(options)
 	.disable('code')
-	.use(markdownItHeadingLevel, { firstLevel: 2 })
+	//	.use(markdownItHeadingLevel, { firstLevel: 2 })
 	.use(markdownItFootnote)
 	.use(markdownItAnchor, markdownItAnchorOptions)
 	.use(markdownItAttributes)
