@@ -1,9 +1,10 @@
 const htmlmin = require('html-minifier')
+require('dotenv').config()
 
 module.exports = {
   htmlmin: function (content, outputPath) {
     // bail if not production env
-    if (process.env.ELEVENTY_ENV !== 'production') {
+    if (process.env.NODE_ENV !== 'production') {
       return content
     }
 

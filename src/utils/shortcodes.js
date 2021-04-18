@@ -40,7 +40,6 @@ module.exports = {
    * and are hardcoded in the layouts to provide unique values as required by Lighthouse.
    *
    * Used in Layouts:
-   *  /src/authors.njk
    *  /src/_includes/components/footer.njk
    *  /src/_includes/components/socialshare.njk
    *  /src/_includes/components/nav.njk (for the logos)
