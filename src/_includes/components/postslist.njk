@@ -1,7 +1,7 @@
 <section class="mt-8 ">
-  <div class="">
+  <ul class="post-list">
     {% for post in postslist | reverse %}
-      <div class="pb-10">
+      <li class="pb-10">
         {# Post publish Date and Author display conditional  #}
         <div class="text-sm {{ colors.authorCustom.date or colors.authorDefault.date }}">
           <time datetime="{{ post.data.page.date | dateToFormat("yyyy-MM-dd") }}">
@@ -30,9 +30,9 @@
           </div>
         {% endif %}
 
-      </div>
+      </li>
 
     {% endfor %}
-  </div>
+  </ul>
 
 </section>

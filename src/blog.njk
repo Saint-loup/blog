@@ -15,21 +15,35 @@ pagination:
   size: 50
   reverse: true
   alias: posts
+
 ---
 
 <hr class="my-8">
 
+{#{% include "../components/gallery.njk" %}
+#}
+
+<div class="search">
+  <div class="field">
+    <label for="searchField">Search</label>
+    <input type="search" placeholder="Search..." id="searchField"/>
+  </div>
+  <div id="noResultsFound" style="display: none">
+    <p>No results found.</p>
+  </div>
+</div>
+
 {% set postslist = posts | reverse %}
 
-{#
-  Allows a user to easily change the Tag List Style.
-  Please see instructions in /src/_data/structure.js >>> ===== Post List Style Options =====
-#}
 {% set postlist = ['components/', structure.postListStyle, '.njk'] %}
+
 {% include postlist | join %}
 
 {# ===== Paginate based on "size" frontmatter value above =====  #}
-{# Don't even include the pagination component if there are fewer posts than needed to paginate  #}
-{% if collections.post.length > pagination.size %}
-  {% include "components/pagination.njk" %}
-{% endif %}
+{#{% if collections.post.length > pagination.size %}
+{% include "components/pagination.njk" %}
+{% endif %}#}
+<script  src="/assets/scripts/lunr.stemmer.support.js" defer></script>
+<script  src="/assets/scripts/lunr.fr.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/elasticlunr/0.9.6/elasticlunr.min.js"></script>
+<script  src="/assets/scripts/search.js" defer></script>

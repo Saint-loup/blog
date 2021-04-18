@@ -3,8 +3,8 @@ const slugify = require('./slugify.js');
 const cleanCSS = require('clean-css')
 const md = require('./markdown.js')
 const elasticlunr = require("elasticlunr");
-//require('./lunr.stemmer.support.min.js')(elasticlunr);
-//require('./lunr.fr.min.js')(elasticlunr);
+require('./lunr.stemmer.support.js')(elasticlunr);
+require('./lunr.fr.js')(elasticlunr);
 
 Settings.defaultLocale = "fr";
 
@@ -16,13 +16,15 @@ module.exports = {
 
 
 
-	search: (collection) => {
+	searchIndex: (collection) => {
 
 		// what fields we'd like our index to consist of
 		var index = elasticlunr(function () {
-			//this.use(lunr.fr);
-			this.addField("title", { boost: 5 })
-			this.addField("title", { boost: 5 })
+			this.use(lunr.fr);
+			this.addField("title", { boost: 10 })
+			this.addField("excerpt", { boost: 5 })
+			this.addField("tags", { boost: 5 })
+
 			this.setRef("id");
 		})
 
@@ -33,9 +35,16 @@ module.exports = {
 				title: page.template.frontMatter.data.title,
 				excerpt: page.template.frontMatter.data.excerpt,
 				tags: page.template.frontMatter.data.tags,
+				date: page.template.frontMatter.data.date,
+
 			});
 		});
 
+		console.log(index.search('cognitique', {
+			bool: "OR",
+			expand: true
+		})
+		)
 		return index.toJSON();
 	},
 
@@ -43,7 +52,7 @@ module.exports = {
 	markdownify: (markdownString) => { md.render(markdownString) },
 
 
-	cssmin: (code) => {
+	cs: (code) => {
 		return new CleanCSS({}).minify(code).styles;
 	},
 

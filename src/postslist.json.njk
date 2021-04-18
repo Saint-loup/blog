@@ -1,0 +1,16 @@
+{#---
+permalink: /postslist.json
+
+---
+
+
+[
+  {% for post in collections.post %}
+  {% set data = post.data %}
+    {
+      "title": "{{ data.title | safe  }}",
+      "excerpt": "{{ data.excerpt  }}",
+      "url": "{{ post.url }}"
+    }{{ '' if loop.last else ',' }}
+{% endfor %}
+]#}
