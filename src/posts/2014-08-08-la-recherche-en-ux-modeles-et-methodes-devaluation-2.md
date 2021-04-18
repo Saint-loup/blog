@@ -9,7 +9,7 @@ tags:
 
 On entend par design en expérience utilisateur toute approche qui va au-delà des qualités instrumentales et pragmatiques d’un service pour adopter un point de vue plus holistique. Mais « holistique », c’est potentiellement très fourre-tout. Pour y voir un peu plus clair, je conseille les diapositives de [cette conférence](http://fr.slideshare.net/flupa/journe-thmatique-ateliers-ux-evaluation-ux-carine-lallemand). Carine Lallemand présente un modèle en vogue ainsi que plusieurs modèles d'évaluation. Voici ce que j'ai retiré de cette présentation, sous forme un peu brouillonne.
 
-### Le modèle de Hassenzahl
+## Le modèle de Hassenzahl
 
 Pour modéliser l'expérience utilisateur, il faut commencer par faire une typologie des qualités que l'on perçoit d'un système et qui expliquent l'attrait que l'on peut y trouver. Ces qualités sont divisées en une dimension pragmatique et une dimension hédonique. Selon les situations, les deux dimensions peuvent être disjointes, partiellement confondues, subordonnées l'une à l'autre, etc. Le modèle ne s'engage pas sur cet aspect. La dimension hédonique peut paraitre vague, mais Hassenzahl précise qu'elle se décompose en besoin de stimulation (goût pour la nouveauté), d'évocation (symbolisme, jeu de la mémoire) et identification (partager son identité, s'identifier aux autres).
 
@@ -19,13 +19,13 @@ De cette séparation en deux dimensions découlent des usages différents : En m
 
 Un dernier aspect intéressant est l’insistance sur la dimension temporelle : une expérience n'est pas façonnée seulement pendant l'interaction avec un système. D'une part, elle est construite par anticipation et rétrospection, d'autre part le résultat n'est pas d'un bloc. Différentes méthodes en étudieront différentes tranches, nommément l'UX anticipée, momentanée, épisodique et cumulative.
 
-### Évaluation
+## Évaluation
 
 Je vous laisse aller voir la partie sur l’évaluation, qui rappelle des bases (types, applicabilité, importance des tests normalisés) et présentent l’originalité de ces méthodes par rapport aux évaluations classiques de l’utilisabilité. Le questionnaire Attratkdiff, toujours de Hassenzahl, me parait le plus prometteur et donne des résultats de ce genre :
 
 ![Résultats de deux services A et B sur les axes pragmatiques et hédoniques. La taille des carrés représente l’intervalle de confiance](/assets/images/Attrakdiff.png " Résultats de deux services A et B sur les axes pragmatiques et hédoniques. La taille des carrés représente l’intervalle de confiance")
 
-### Autres ressources
+## Autres ressources
 
 Pour des introductions très générales et un brin académiques, vous pouvez allez lire l'article de Scapin et alia, « User Experience: Buzzword or New Paradigm? » ([PDF ici](http://www.thinkmind.org/download.php?articleid=achi_2012_13_40_20153)), ainsi que ce [bref livre blanc](http://www.allaboutux.org/uxwhitepaper). Le premier donne un recul historique bienvenu et constitue un bon panorama de l'état de l'art. Le second distingue notamment entre l’UX comme phénomène, champs d’étude et pratique.
 

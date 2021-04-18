@@ -8,13 +8,13 @@ tags:
 
 _Résumé : Plein de mots arides sur les modes en IHM, puis une modeste proposition d'interaction pour écran tactile._
 
-### Rappels sur les modes
+## Rappels sur les modes
 
 En IHM, un mode est un paramètre qui permet de produire différents résultats avec le même input, selon que ce mode soit activé ou non. C'est en fait très simple : par exemple enclencher la touche Caps Lock fait basculer les autres touches en mode « lettre capitale ».
 
 On considère classiquement que c'est une technique utile mais à manier avec précaution. C'est pratique pour augmenter l'éventail des possibilités. Les touches Shift et Caps Lock permettent de doubler le nombre de caractères que l'on peut entrer, alors que les premières machines à écrire avaient un clavier dédoublé ou devaient se contenter d'une seule casse. Le problème est que cela risque d'égarer l'utilisateur. Vous vous souvenez sans doute de l'inénarrable mode « refrappe » : on pouvait l'activer avec la touche Insert et ce n'était signalé que par un minuscule RFP en bas de la fenêtre de Microsoft Word. Il était facile d'entrer dans ce mode sans le vouloir mais nettement plus difficile d'en sortir, quand on ne connaissait pas le truc.
 
-### Jeux vidéo et quasi-modes
+## Jeux vidéo et quasi-modes
 
 Si on veut avoir le beurre et l'argent du beurre, Jeff Raskin recommande l'utilisation de ce qu'il appelle des [quasi-modes](http://en.wikipedia.org/wiki/Mode_%28computer_interface%29#Quasimodes), c'est-à-dire des modes qui demandent une intervention constante de la part de l’utilisateur. Citons le cas du pédalier d’un piano ou la touche Shift d’un clavier : elle n’a pas d’effet si elle n'est pas pressée. Cela demande plus de coordination motrice, mais en contrepartie les deux actions (ici, shift + lettres) sont liées et concomitantes. L'utilisateur a ainsi plus de contrôle sur le système et cela diminue les risques de rester dans un mode sans s'en rendre compte.
 

@@ -6,7 +6,7 @@ tags:
 
 ---
 
-### Menu
+## Menu
 
 Dans un prototype, on veut souvent qu'un menu soit présent dans toutes les vues auquel il permet d'accéder, et qu'un item du menu soit visuellement distinct des autres pour montrer qu'elle correspond à la vue en cours. (Par vue j'entends une page ou une section au sein d'une page.)
 
@@ -16,7 +16,7 @@ Meilleure solution : utiliser un master. Comme ça, toute modification ultérieu
 
 Solution ultime : un mélange de ce qu'Axure appelle les styles d'interaction et de l'évènement onPageLoad.
 
-### Premier ingrédient : les styles d'interaction
+## Premier ingrédient : les styles d'interaction
 
 Les styles d'interactions sont des variations visuelles qui s'activent lorsqu'un widget est dans un état donné. Il y a le clic, le survol, l'inactivité et la sélection.[1](#fn-1570-1) C'est cette dernière qui nous intéresse. Il faut spécifier :
 
@@ -26,7 +26,7 @@ Les styles d'interactions sont des variations visuelles qui s'activent lorsqu'un
 ![Axure tuto 1](/assets/images/Sans-titre.png)
 ![Axure tuto 2](/assets/images/Sans-titre-2.png)
 
-### Second ingrédient : onPageLoad
+## Second ingrédient : onPageLoad
 
 Axure permet d'exécuter des actions au chargement d'une page, dans l'onglet « Page interactions » du panneau « Page properties ». Ici, cela permet d'activer un item du menu différent à chaque page, même s'il est dans un master.
 
@@ -34,13 +34,13 @@ Axure permet d'exécuter des actions au chargement d'une page, dans l'onglet «�
 
 Un [tutoriel sur Axure.com](https://www.axure.com/learn/basic/interactions/navigation-menu-tutorial) avec un fichier source pour essayer.
 
-### Et au sein d'une page ?
+## Et au sein d'une page ?
 
 Notez que le truc marche entre pages, mais aussi au sein d'une page. Dans ce cas, le menu n'est plus un master mais une simple suite de widgets, et chaque vue est un état d'un panneau dynamique. Au clic sur l'item 1 du menu, on le passe en « Sélectionné »et on passe le panneau à l'état 1.
 
 Un [tutoriel plus complet](http://www.axure.com/learn/dynamic-panels/basic/tab-control-tutorial).
 
-### Fil d'Ariane
+## Fil d'Ariane
 
 Un fil d'Ariane, c'est encore un objet constant à travers les pages mais dont un aspect change. Pour que la page sélectionnée soit en gras, il suffit de suivre les explications plus haut. Mais comment faire pour le nom de la page qui change à chaque fois. La solution, c'est d'utiliser un master pour le fil d'ariane et d'ajouter à chaque chargement de page une action « Set text », avec la valeur \[\[PageName\]\]. Cette variable prédéfinie par Axure correspond au titre de la page tel que défini dans votre arborescence, donc si elle s'appelle « 04-b », le fil d'Ariane comportera « 04-b ».
 

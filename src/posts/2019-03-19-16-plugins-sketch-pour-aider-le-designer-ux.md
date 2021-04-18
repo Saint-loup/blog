@@ -10,7 +10,7 @@ coverImage: "2019-03-19_20h12_29.png"
 
 Pour les designers UX qui travaillent sur Sketch, voici des plugins utiles pour faire des wireframes ou des wireflows.
 
-### Diagrammes
+## Diagrammes
 
 [Userflows](https://abynim.github.io/UserFlows/) : sélectionner un calque, un plan de travail, générez une flèche et hop ça fait un wireflow. Il peut être actualisé à chaque déplacement de plan de travail.
 
@@ -20,7 +20,7 @@ Pour les designers UX qui travaillent sur Sketch, voici des plugins utiles pour 
 
 Connection Flow Arrows
 
-### Plans de travail
+## Plans de travail
 
 [Artboard Titles](https://github.com/asivura/sketch-artboard-titles) : vous exportez votre grand wireflow et là paf, les titres d’écrans sont minuscules et illisibles. Pas grave : ce plugin ajoute au dessus de chaque plan de travail un calque précisant son nom.
 
@@ -34,7 +34,7 @@ Deux plugins d'organisation automatiquement des plans de travail : [Artboard Man
 </figure>
 
 
-### Composants
+## Composants
 
 [Sketch Repeat](https://github.com/keremciu/sketch-repeat) : Duplique un objet à la même position dans tous les plans de travail. Pratique pour les composants transverses.
 
@@ -46,7 +46,7 @@ Deux plugins d'organisation automatiquement des plans de travail : [Artboard Man
 
 [Anima Autolayout](https://www.sketchpacks.com/AnimaApp/Auto-Layout) propose plusieurs fonctions pour gérer des dimensions dynamiques. La gestion automatique du padding peut faciliter la vie quand on veut poser rapidement les blocs d'un wireframe.
 
-### Contenu
+## Contenu
 
 [Automate Sketch](https://github.com/Ashung/Automate-Sketch) : plein de commandes utiles. Ma préférée : Décomposer un calque de texte en plusieurs, en prenant le retour à la ligne comme séparateur. Pratique quand on doit recopier plein de contenu depuis un brief.
 

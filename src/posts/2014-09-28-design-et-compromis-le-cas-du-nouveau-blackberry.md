@@ -22,7 +22,7 @@ Revenons à la solution retenue par Blackberry : le clavier a une ergonomie dout
 
 Bref, on ne peut que respecter la tentative de Blackberry, mais elle tourne à la quadrature du cercle et finit par compromettre ce qui faisait sa force, à savoir une bonne expérience de frappe. Son erreur a sans doute été de croire que celle-ci signifiait forcément un clavier physique et d'ignorer des alternatives comme les écrans immenses des phablets.
 
-### Pour aller plus loin
+** Pour aller plus loin **
 
 - [Une critique du Passport](http://www.theverge.com/2014/9/24/6837943/blackberry-passport-review)
 - [Un article sur la disparition des claviers physiques](http://www.theverge.com/2013/11/15/5104704/i-come-not-to-praise-qwerty-but-to-bury-it)

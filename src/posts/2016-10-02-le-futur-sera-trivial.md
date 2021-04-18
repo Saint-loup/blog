@@ -12,11 +12,11 @@ J'aime beaucoup le concept de futur trivial ("future mundane") de Nick Foster, q
 
 ![Millenium Falcon](/assets/images/giphy.gif)
 
-### Thèse 1 : "dans le futur, les tables resteront branlantes" ([source de la formule](https://posts.philipkd.com/wobbly-tables-and-the-problem-with-futurism-934468d2308#.jn1nbru2s))
+## Thèse 1 : "dans le futur, les tables resteront branlantes" ([source de la formule](https://posts.philipkd.com/wobbly-tables-and-the-problem-with-futurism-934468d2308#.jn1nbru2s))
 
 Comprendre : la technologie restera imparfaite, soumise à l'usure, pleine d'imprévus, et vecteur de désagréments, petits ou gros.
 
-### Thèse 2 : une société humaine change par accrétion.
+## Thèse 2 : une société humaine change par accrétion.
 
 - Elle évolue selon des rythmes différenciés. Comme le suggère le schéma ci-après, la mode change plus vite que les infrastructures.
 - Elle évolue de manière non séquentielle : une technologie n'est pas adoptée instantanément et universellement, et des technologies de génération différente peuvent cohabiter et se mélanger. Pour reprendre l'exemple favori de David Edgerton, on n'a jamais autant utilisé de chevaux que pendant les deux guerres mondiales. Je recommande d'ailleurs vivement [les articles](http://www.johost.eu/vol1_summer_2007/vol1_de.htm) et [livres](https://en.wikipedia.org/wiki/The_Shock_of_the_Old) de cet historien des sciences.

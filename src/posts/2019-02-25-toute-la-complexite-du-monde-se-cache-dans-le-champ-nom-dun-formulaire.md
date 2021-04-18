@@ -23,7 +23,7 @@ Les noms sont déjà complexes, alors imaginez une notion comme la famille. Par 
 
 Admettons que ce sont surtout des limites commerciales pensées pour que les gens n'abusent pas du système en ajoutant trois cent personnes du monde entier à leur "famille". Mais quand même. Qui est Google pour dire qu'une famille ne peut être composée de nombreuses personnes vivant dans plusieurs pays ? Ensuite, ça influe forcément sur la vie des gens : le service devient intriqué avec leur quotidien et définit quels films peut regarder un enfant, avec qui et sur quel appareil. Tout ça dans un contexte d'objets toujours plus présents et connectés, où la famille peut avoir un appareil Google dans chaque pièce et plus d'appareils que de membre.
 
-### Nom, prénom et design tragique
+## Nom, prénom et design tragique
 
 Bref, concevoir un système peut avoir des conséquences graves et inattendues, c'est un thème dont la profession prend conscience, avec différents approches ([design tragique](https://www.tragicdesign.com/), [design systémique](https://en.m.wikipedia.org/wiki/Systemic_design?wprov=sfla1)...) et spécialités ([impact sur les minorités](https://www.udeducation.org/product/diversity-and-design), [biais et automatisation forcenée](https://medium.com/s/story/the-seductive-diversion-of-solving-bias-in-artificial-intelligence-890df5e5ef53) en intelligence artificielle...).
 

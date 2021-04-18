@@ -9,7 +9,7 @@ coverImage: "2019-04-23_19h12_30.png"
 
 _Design system_, moodboard, création de maquette avec Studio... Invision est devenue une plateforme complète. Voici pourtant trois fonctions que vous avez peut-être manqué.
 
-### Visite guidée
+## Visite guidée
 
 **Quoi** : Guide le visiteur à travers une suite de commentaires. Cliquer sur Suivant l'emmène au prochain commentaire, même dans une autre page.
 
@@ -19,7 +19,7 @@ _Design system_, moodboard, création de maquette avec Studio... Invision est de
 
 ![ajout d'une étape de visite guidée](/assets/images/2019-03-04_20h55_44.png)
 
-### Export local
+## Export local
 
 **Quoi** : exporter vos maquettes en version HTML. Conserve les interactions.
 
@@ -31,7 +31,7 @@ Démonstration :
 
 ![Démonstration d'accès à la fonction d'export](/assets/images/Export.gif)
 
-### Gestion de projet
+## Gestion de projet
 
 Vite ! A quoi sert le rond bleu en bas en à droite quand vous consultez une maquette ?
 
