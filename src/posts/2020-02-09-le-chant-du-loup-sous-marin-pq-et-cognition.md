@@ -33,9 +33,9 @@ C'est aussi une parfaite illustration de la [cognition incarnée](https://en.wik
 - Que nos représentations existent par et pour l'action. Notre vision ne doit pas être pensée comme la construction d'une image mais comme une activité d'exploration du monde par boucles incessantes entre gestes et perception.Deux références : un livre d'Alva Noe ([PDF de résumé](http://www.nyu.edu/gsas/dept/philo/courses/consciousness08/noe.precis.pdf) et un de Kevin O'Regan Même nos capacités plus abstraites peuvent être pensées comme orientées vers certaines pratiques comme [la communication et l'argumentation](https://journals.openedition.org/aad/2884).
 - Qu'il n'y a pas de limite précise entre l'esprit, le corps et son environnement immédiat. Par exemple si je dessine des schémas pour m'aider et structurer ma pensée et que j'y reviens fréquemment dans un carnet de notes, c'est une manière d'[externaliser ma mémoire](https://www.researchgate.net/publication/306352756_Cognitive_Offloading) et on peut même dire que ce carnet fait partie de mon esprit, [de manière étendue](https://en.wikipedia.org/wiki/The_Extended_Mind).
 
-![XKCD 903. Légende : "When Wikipedia has a server outage, my apparent IQ drops by 30 points."](/assets/images/extended_mind.png) {data-responsiver=gallery_3x2}
+![XKCD 903. Légende : "When Wikipedia has a server outage, my apparent IQ drops by 30 points."](/assets/images/extended_mind.png "[XKCD - The Extended Mind](https://xkcd.com/903/)")
 
-[XKCD - The Extended Mind](https://xkcd.com/903/)
+
 
 ### Un équipage, plusieurs cerveaux, un seul esprit ?
 
@@ -63,7 +63,7 @@ Il y a d'abord la table de navigation, utilisée avec feutre effaçable, rapport
 
 Ce genre de réflexion effectuée directement sur papier a été qualifiée "[d'action épistémique](https://onlinelibrary.wiley.com/doi/pdf/10.1207/s15516709cog1804_1)" (PDF) par Kirsch et Maglio, qui ont étudié le comportement de joueurs face à Tetris. Ces actions n'ont pas d'autre but que d'aider à la résolution de problème, par exemple pour vérifier si une pièce va s'adapter aux autres il est plus simple de la pivote à l'écran que dans sa tête.
 
-![](/assets/images/Capture-d’écran-2020-02-08-à-11.25.42.png){data-responsiver=gallery_3x2}
+![](/assets/images/Capture-d’écran-2020-02-08-à-11.25.42.png)
 
 Des zoids tout à fait mignons dessinés à la main en 1994
 

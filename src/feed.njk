@@ -1,8 +1,14 @@
 ---json
 {
   "permalink": "rss",
-  "eleventyExcludeFromCollections": true
+  "eleventyExcludeFromCollections": true,
+  "eleventyNavigation":{
+    "key": "main",
+    "title": "RSS",
+    "order": 2
+  }
 }
+
 ---
 {# set absolutePageURL to use later in  canonical and og URLs #}
 {%- set absolutePageUrl -%}{{ page.url | url | absoluteUrl(build.url) }}{%- endset -%}
@@ -12,7 +18,7 @@
   <title>{{ meta.siteName }}</title>
   <subtitle>{{ meta.siteDescription }}</subtitle>
   <link href="{{ meta.siteURL }}"/>
-  <link href="{{ absolutePageUrl }}" rel="self"/>
+  <link href="{{ meta.siteURL }}/rss" rel="self"/>
   <updated>{{ collections.post | rssLastUpdatedDate }}</updated>
   <id>{{ meta.siteURL }}</id>
   <author>
@@ -24,7 +30,7 @@
     <entry>
       <title>{{ post.data.title }}</title>
       <link href="{{ absolutePostUrl }}"/>
-      <updated>{{ post.date | rssDate }}</updated>
+      <updated>{{ post.date | dateToRfc3339 }}</updated>
       <id>{{ absolutePostUrl }}</id>
       <content type="html">{{ post.templateContent | safe | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
     </entry>

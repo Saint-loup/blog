@@ -7,6 +7,7 @@ const yaml = require("js-yaml");
 //const pageAssetsPlugin = require('eleventy-plugin-page-assets');
 const imagesResponsiver = require("eleventy-plugin-images-responsiver");
 
+require('dotenv').config()
 
 
 
@@ -161,7 +162,7 @@ module.exports = function (eleventyConfig) {
  * Every Post will ALWAYS be published in DEVELOPMENT so you can preview locally.
  */
 	eleventyConfig.addCollection('post', (collection) => {
-		if (process.env.ELEVENTY_ENV !== 'production')
+		if (process.env.NODE_ENV !== 'production')
 			return [...collection.getFilteredByGlob('./src/posts/**/*.md')]
 		else
 			return [...collection.getFilteredByGlob('./src/posts/**/*.md')].filter((post) => !post.data.draft)
