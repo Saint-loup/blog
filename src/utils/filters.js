@@ -91,21 +91,6 @@ module.exports = {
 	},
 
 	/**
-	 * Get Authors from _data/authors.json to use in Post Lists and Detail
-	 */
-	getAuthor: (authors, key) => {
-		let author = authors.filter((a) => a.slug === key)[0]
-		return author
-	},
-
-	/**
-	 * Get Posts by Author for the Author detail page
-	 */
-	getPostsByAuthor: (posts, key) => {
-		return posts.filter((a) => a.data.author === key)
-	},
-
-	/**
 	 * Minify and inline CSS per a tip on 11ty: https://www.11ty.dev/docs/quicktips/inline-css/
 	 */
 	cssmin: (code) => {
