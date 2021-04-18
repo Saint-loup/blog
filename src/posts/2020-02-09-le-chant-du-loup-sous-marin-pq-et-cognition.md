@@ -144,9 +144,6 @@ Dans cet écosystème entièrement artificiel, tout a été conçu. L'équipage 
 
 Le canal Youtube d'un spécialiste, avec [cette playlist sur d'analyse accoustique](https://www.youtube.com/playlist?list=PLF9K78gj2FP2D-EIZkYN1sBsVauj_MdXu)
 
-Il poste aussi ce genre de chose :
-
-https://twitter.com/JivTurky/status/1125057398874484738
 
 Un reportage de Libération : [Vingt-quatre heures dans un sous-marin](https://www.liberation.fr/apps/2018/10/vingt-quatre-heures-dans-un-sous-marin/)
 
