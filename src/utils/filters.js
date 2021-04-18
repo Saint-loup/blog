@@ -5,7 +5,7 @@ const md = require('./markdown.js')
 const elasticlunr = require("elasticlunr");
 require('./lunr.stemmer.support.js')(elasticlunr);
 require('./lunr.fr.js')(elasticlunr);
-
+const removeMd = require('remove-markdown');
 Settings.defaultLocale = "fr";
 
 module.exports = {
@@ -21,30 +21,29 @@ module.exports = {
 		// what fields we'd like our index to consist of
 		var index = elasticlunr(function () {
 			this.use(lunr.fr);
-			this.addField("title", { boost: 10 })
+			this.addField("title", { boost: 8 })
 			this.addField("excerpt", { boost: 5 })
 			this.addField("tags", { boost: 5 })
+			this.addField("content", { boost: 2 })
 
-			this.setRef("id");
+
+			this.setRef("url");
 		})
 
 		// loop through each page and add it to the index
 		collection.forEach((page) => {
+
 			index.addDoc({
-				id: page.url,
+				url: page.url,
 				title: page.template.frontMatter.data.title,
 				excerpt: page.template.frontMatter.data.excerpt,
 				tags: page.template.frontMatter.data.tags,
+				content: removeMd(page.template.frontMatter.content),
 				date: page.template.frontMatter.data.date,
 
 			});
 		});
 
-		console.log(index.search('cognitique', {
-			bool: "OR",
-			expand: true
-		})
-		)
 		return index.toJSON();
 	},
 
