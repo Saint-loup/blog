@@ -1,4 +1,8 @@
+require('dotenv').config()
+
+
 module.exports = {
+
 	siteURL: process.env.URL || 'https://toutcequibouge.net/',
 	siteName: "Tout ce qui bouge",
 	siteDescription:

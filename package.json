@@ -8,7 +8,7 @@
     "dev:postcss": "postcss src/assets/css/main.css -o dist/assets/css/main.min.css --watch",
     "dev": " npm-run-all clean --parallel dev:* --print-label",
     "build:webpack": "webpack  --mode production",
-    "build:eleventy": " cross-env ELEVENTY_ENV=production eleventy",
+    "build:eleventy": " cross-env NODE_ENV=production eleventy",
     "build:postcss": " cross-env NODE_ENV=production postcss src/assets/css/main.css -o dist/assets/css/main.min.css",
     "build": "run-s clean build:* --print-label"
   },
