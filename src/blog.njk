@@ -33,3 +33,8 @@ pagination:
 {% if collections.post.length > pagination.size %}
   {% include "components/pagination.njk" %}
 {% endif %}
+
+{% set postlist = ['components/', structure.postListStyle, '.njk'] %}
+<template id="postListItem">
+  {% include 'components/postlist.njk' %}
+</template>
