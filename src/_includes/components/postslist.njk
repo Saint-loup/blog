@@ -1,6 +1,6 @@
 {% set postslist = posts | reverse %}
 
-<section class="mt-8 post-wrapper">
+<section class="mt-8 post-wrapper ">
   <div class=post-list-wrapper>
     <ul class="post-list">
       {% for post in postslist | reverse %}
@@ -10,7 +10,7 @@
 
     {# ===== Paginate based on "size" frontmatter value above =====  #}
     {# Don't even include the pagination component if there are fewer posts than needed to paginate  #}
-    {% if (collections.post.length > pagination.size) and (pagination.showPagination == true) %}
+    {% if (collections.post.length > pagination.size) and (postListItemStyle.showPagination == true) %}
       {% include "components/pagination.njk" %}
     {% endif %}
   </div>
