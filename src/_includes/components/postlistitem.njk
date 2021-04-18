@@ -1,30 +1,35 @@
-<li class="pb-10">
-	{# Post publish Date and Author display conditional  #}
-	<div class="text-sm {{ colors.authorCustom.date or colors.authorDefault.date }}">
-		<time datetime="{{ post.data.page.date | dateToFormat("yyyy-MM-dd") }}">
-			{{ post.data.page.date | dateToFormat("dd LLLL yyyy") }}
-		</time>
-		{# Global disable author display in /src/_data/structure.js #}
+<li class="mb-8 ">
 
-	</div>
+	{% if postListItemStyle.complete %}
+		<div class="text-sm {{ colors.authorCustom.date or colors.authorDefault.date }}">
+			<time datetime="{{ post.data.page.date | dateToFormat("yyyy-MM-dd") }}">
+				{{ post.data.page.date | dateToFormat("dd LLLL yyyy") }}
+			</time>
+			{# Global disable author display in /src/_data/structure.js #}
+
+		</div>
+	{% endif %}
 
 	{# Post Title  #}
-	<H2 class="text-2xl lg:text-3xl font-semibold leading-7 {{ colors.headingsCustom or colors.headingsDefault }}">
+	<H2 class="text-2xl font-semibold leading-7 lg:text-3xl text-accent2">
 
 		<a href="{{ post.url | url }}" class="block hover:underline">
 			{{ post.data.title }}
 		</a>
 	</H2>
-
 	{# Display Post Excerpt if set 'true' in /src/_data/structure.js:g_showExcerpt  #}
-	{% if structure.g_showExcerpt %}
-		<div class="excerpt {{ colors.excerptCustom or colors.excerptDefault }}">
-			{% if post.data.excerpt %}
-				{{ post.data.excerpt | markdownify | safe }}
-			{% elseif post.data.page.excerpt  %}
-				{{ post.data.page.excerpt | markdownify | safe }}
-			{% endif %}
+	{#	{% if postListItemStyle.complete %}
+#}
+
+	{% if postListItemStyle.complete %}
+
+		<div class" {{ colors.excerptCustom or colors.excerptDefault }}">
+
+			{{ post.data.excerpt |  removeMD}}
+			{{ post.data.page.excerpt | removeMD }}
 		</div>
 	{% endif %}
 
+	{#	{% endif %}
+#}
 </li>

@@ -32,14 +32,13 @@ module.exports = {
 
 		// loop through each page and add it to the index
 		collection.forEach((page) => {
-			console.log(page.template.frontMatter.data.date)
 			index.addDoc({
 				url: page.url,
-				title: page.template.frontMatter.data.title,
-				excerpt: page.template.frontMatter.data.excerpt,
-				tags: page.template.frontMatter.data.tags,
-				content: removeMd(page.template.frontMatter.content),
-				date: page.template.frontMatter.data.date,
+				title: page.data.title,
+				excerpt: page.data.excerpt,
+				tags: page.data.tags,
+				content: removeMd(page.content),
+				date: page.data.date,
 
 			});
 		});
@@ -49,7 +48,7 @@ module.exports = {
 
 	// Add markdownify filter with Markdown-it configuration
 	markdownify: (markdownString) => { md.render(markdownString) },
-
+	removeMD: (string) => { return (!string ? "" : removeMd(string)) },
 
 	cs: (code) => {
 		return new CleanCSS({}).minify(code).styles;

@@ -28,12 +28,13 @@
 	h5 {
 		@apply text-lg;
 	}
-	/*p a,
+	a,
 	li a,
 	blockquote a,
 	dd a {
-		@apply font-medium text-indigo-700;
-	}	*/
+/*		@apply font-medium text-indigo-700;
+*/		text-decoration-skip-ink: auto;
+	}
 	p {
 		@apply mt-4;
 	}

@@ -3,6 +3,14 @@ title: Site en construction.
 layout: page
 date: 2020-08-05
 excerpt: # used for page excerpts and META (will be overwritten if SEO used below)
+pagination:
+  data: collections.post
+  size: 3
+  reverse: true
+  alias: posts
+postListItemStyle:
+  complete: false
+  showPagination: false
 
 ---
 
@@ -15,30 +23,39 @@ excerpt: # used for page excerpts and META (will be overwritten if SEO used belo
       {{ seo.description }}
     {% endif %}
 
-    <h2>Projets, essais et autres bidouilles</h2>
-    <ul class="project-list " >
-      {% for project in projects | reverse %}
-        <li class="my-4 list-none project">
-          <div class="text-base name">
-            <a href="{{project.link}}">{{project.name}}</a>
-          </div>
-          {#<img class="picture" src="{{project.img}}"></img>#}
-          <div class="description">{{project.description}}</div>
-        </li>
-      {% endfor %}
-    </ul>
+    <section class="mb-10">
+      <h2>Bafouilles</h2>
+      {% include 'components/postslist.njk' %}
+    </section>
 
-    <h2>Moi, ailleurs</h2>
-    <ul class="ailleurs-list " >
-      {% for item in ailleurs %}
-        <li class="my-4 list-none ailleurs">
-          <div class="text-base name">
-            <a href="{{item.link}}">{{item.name}}</a>
-          </div>
-          {#<img class="picture" src="{{item.img}}"></img>#}
-          <div class="description">{{item.description}}</div>
-        </li>
-      {% endfor %}
-    </ul>
+    <section class="mb-10">
+      <h2>Bidouilles</h2>
+      <ul class="project-list " >
+        {% for project in projects | reverse %}
+          <li class="my-8 font-medium list-none project">
+            <div class="text-2xl font-semibold leading-7 text-accent2 lg:text-3xl name ">
+              <a href="{{project.link}}">{{project.name}}</a>
+            </div>
+            {#<img class="picture" src="{{project.img}}"></img>#}
+            <div class="text-lg description">{{project.description}}</div>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    <section class="mb-10">
+      <h2>Ailleurs</h2>
+      <ul class="ailleurs-list " >
+        {% for item in ailleurs %}
+          <li class="my-8 list-none ailleurs">
+            <div class="text-2xl font-semibold leading-7 text-accent2 lg:text-3xl">
+              <a href="{{item.link}}">{{item.name}}</a>
+            </div>
+            {#<img class="picture" src="{{item.img}}"></img>#}
+            <div class="text-lg description">{{item.description}}</div>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
 
   </div>
