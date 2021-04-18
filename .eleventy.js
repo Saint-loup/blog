@@ -17,8 +17,6 @@ require('dotenv').config()
 module.exports = function (eleventyConfig) {
 
 
-
-
 	/**
 	 * Plugins
 	 * @link https://www.11ty.dev/docs/plugins/
@@ -28,13 +26,17 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(pluginNavigation)
 	eleventyConfig.addPlugin(syntaxHighlight)
 	//eleventyConfig.addPlugin(pageAssetsPlugin, { mode: "parse", postsMatching: "src/posts/*/*.md", });
-	//	eleventyConfig.addPlugin(imagesResponsiver, require('./src/utils/images-responsiver-config.js'))
 	eleventyConfig.addPlugin(embedTwitter, {
 		doNotTrack: true,
 		cacheText: false,
 		conversation: false,
 		align: "center"
 	});
+
+	if (process.env.NODE_ENV === "production") {
+		eleventyConfig.addPlugin(imagesResponsiver, require('./src/utils/images-responsiver-config.js'))
+
+	}
 
 	/**
 	 * Filters
@@ -51,12 +53,12 @@ module.exports = function (eleventyConfig) {
 	 * Transforms
 	 * @link https://www.11ty.io/docs/config/#transforms
 	 */
-	const transforms = require('./src/utils/transforms.js')
+	/*const transforms = require('./src/utils/transforms.js')
 
 	Object.keys(transforms).forEach((transformName) => {
 		eleventyConfig.addTransform(transformName, transforms[transformName])
 	})
-
+*/
 	/**
 	 * Shortcodes
 	 * @link https://www.11ty.io/docs/shortcodes/
