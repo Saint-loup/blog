@@ -1,0 +1,30 @@
+<li class="pb-10">
+	{# Post publish Date and Author display conditional  #}
+	<div class="text-sm {{ colors.authorCustom.date or colors.authorDefault.date }}">
+		<time datetime="{{ post.data.page.date | dateToFormat("yyyy-MM-dd") }}">
+			{{ post.data.page.date | dateToFormat("dd LLLL yyyy") }}
+		</time>
+		{# Global disable author display in /src/_data/structure.js #}
+
+	</div>
+
+	{# Post Title  #}
+	<H2 class="text-2xl lg:text-3xl font-semibold leading-7 {{ colors.headingsCustom or colors.headingsDefault }}">
+
+		<a href="{{ post.url | url }}" class="block hover:underline">
+			{{ post.data.title }}
+		</a>
+	</H2>
+
+	{# Display Post Excerpt if set 'true' in /src/_data/structure.js:g_showExcerpt  #}
+	{% if structure.g_showExcerpt %}
+		<div class="excerpt {{ colors.excerptCustom or colors.excerptDefault }}">
+			{% if post.data.excerpt %}
+				{{ post.data.excerpt | markdownify | safe }}
+			{% elseif post.data.page.excerpt  %}
+				{{ post.data.page.excerpt | markdownify | safe }}
+			{% endif %}
+		</div>
+	{% endif %}
+
+</li>

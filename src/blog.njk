@@ -12,29 +12,29 @@ seo:
   description:
 pagination:
   data: collections.post
-  size: 50
+  size: 40
   reverse: true
   alias: posts
+
 ---
 
 <hr class="my-8">
 
-{% set postslist = posts | reverse %}
+<div class="blog-wrapper">
+  <div class="search">
+    <div class="flex flex-col field">
+      <label for="searchField">Rechercher</label>
+      <input type="search"  class="w-1/2 p-2 border-gray-600 rounded-md" placeholder="" id="searchField"/>
+    </div>
+    <div id="noResultsFound" style="display: none">
+      <p>Aucun résultat.</p>
+    </div>
+  </div>
 
-{#
-  Allows a user to easily change the Tag List Style.
-  Please see instructions in /src/_data/structure.js >>> ===== Post List Style Options =====
-#}
-{% set postlist = ['components/', structure.postListStyle, '.njk'] %}
-{% include postlist | join %}
+  {% include 'components/postslist.njk' %}
+</div>
 
-{# ===== Paginate based on "size" frontmatter value above =====  #}
-{# Don't even include the pagination component if there are fewer posts than needed to paginate  #}
-{% if collections.post.length > pagination.size %}
-  {% include "components/pagination.njk" %}
-{% endif %}
-
-{% set postlist = ['components/', structure.postListStyle, '.njk'] %}
-<template id="postListItem">
-  {% include 'components/postlist.njk' %}
-</template>
+<script  src="/assets/scripts/lunr.stemmer.support.js" defer></script>
+<script  src="/assets/scripts/lunr.fr.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/elasticlunr/0.9.6/elasticlunr.min.js"></script>
+<script  src="/assets/scripts/search.js" defer></script>
