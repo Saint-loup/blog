@@ -18,7 +18,7 @@
 
 	{# Display Post Excerpt if set 'true' in /src/_data/structure.js:g_showExcerpt  #}
 	{% if structure.g_showExcerpt %}
-		<div class="{{ colors.excerptCustom or colors.excerptDefault }}">
+		<div class="excerpt {{ colors.excerptCustom or colors.excerptDefault }}">
 			{% if post.data.excerpt %}
 				{{ post.data.excerpt | markdownify | safe }}
 			{% elseif post.data.page.excerpt  %}

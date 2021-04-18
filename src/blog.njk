@@ -12,7 +12,7 @@ seo:
   description:
 pagination:
   data: collections.post
-  size: 50
+  size: 40
   reverse: true
   alias: posts
 
@@ -20,29 +20,20 @@ pagination:
 
 <hr class="my-8">
 
-{#{% include "../components/gallery.njk" %}
-#}
+<div class="blog-wrapper">
+  <div class="search">
+    <div class="flex flex-col field">
+      <label for="searchField">Rechercher</label>
+      <input type="search"  class="w-1/2 p-2 border-gray-600 rounded-md" placeholder="" id="searchField"/>
+    </div>
+    <div id="noResultsFound" style="display: none">
+      <p>Aucun résultat.</p>
+    </div>
+  </div>
 
-<div class="search">
-  <div class="field">
-    <label for="searchField">Search</label>
-    <input type="search" placeholder="Search..." id="searchField"/>
-  </div>
-  <div id="noResultsFound" style="display: none">
-    <p>No results found.</p>
-  </div>
+  {% include 'components/postslist.njk' %}
 </div>
 
-{% set postslist = posts | reverse %}
-
-{% set postlist = ['components/', structure.postListStyle, '.njk'] %}
-
-{% include postlist | join %}
-
-{# ===== Paginate based on "size" frontmatter value above =====  #}
-{#{% if collections.post.length > pagination.size %}
-{% include "components/pagination.njk" %}
-{% endif %}#}
 <script  src="/assets/scripts/lunr.stemmer.support.js" defer></script>
 <script  src="/assets/scripts/lunr.fr.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/elasticlunr/0.9.6/elasticlunr.min.js"></script>
