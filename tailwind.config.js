@@ -26,6 +26,17 @@ module.exports = {
 		},
 
 		extend: {
+			minHeight: {
+
+
+				'1/4h': '25vh',
+
+				'1/2h': '50vh',
+
+				'3/4h': '75vh',
+
+				'full': '100vh',
+			},
 			spacing: {
 				'per-lg': '4%',
 				'per': '2%',
