@@ -26,7 +26,7 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(pluginNavigation)
 	eleventyConfig.addPlugin(syntaxHighlight)
 	//eleventyConfig.addPlugin(pageAssetsPlugin, { mode: "parse", postsMatching: "src/posts/*/*.md", });
-	eleventyConfig.addPlugin(imagesResponsiver, require('./src/utils/images-responsiver-config.js'))
+	//eleventyConfig.addPlugin(imagesResponsiver, require('./src/utils/images-responsiver-config.js'))
 
 
 	/**
