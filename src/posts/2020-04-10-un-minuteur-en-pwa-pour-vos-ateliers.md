@@ -1,6 +1,6 @@
 ---
 title: Un minuteur en PWA pour vos ateliers
-date: 2020-04-10
+date: "2020-04-10"
 tags:
   - travaux
 coverImage: "screenshot.png"

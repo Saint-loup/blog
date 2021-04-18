@@ -32,7 +32,7 @@ module.exports = {
 
 		// loop through each page and add it to the index
 		collection.forEach((page) => {
-
+			console.log(page.template.frontMatter.data.date)
 			index.addDoc({
 				url: page.url,
 				title: page.template.frontMatter.data.title,
