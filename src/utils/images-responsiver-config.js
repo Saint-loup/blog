@@ -24,7 +24,7 @@ module.exports = {
 				sharpWebpOptions: {
 					quality: 90,
 				},
-				widths: [360, 576, 832, 1088, 1344, 1600],
+				widths: [360, 670, 980, 1290, 1600],
 				dryRun: false,
 				formats: ['webp', 'jpeg'],
 				urlPath: '/assets/images/',
@@ -65,7 +65,7 @@ module.exports = {
 
 
 		},
-		steps: 6,
+		steps: 5,
 		classes: ['img-default'],
 		attributes: { loading: 'lazy', },
 	},
