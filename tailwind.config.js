@@ -44,7 +44,8 @@ module.exports = {
 			},
 			colors: {
 				'dark': "#093249",
-				'accent': "#a72116"
+				'accent': "#a72116",
+				'accent2': "rgb(143, 87, 28)"
 			},
 			typography: {
 				'xl': {
