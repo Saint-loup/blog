@@ -11,9 +11,10 @@ module.exports = {
     // returned minified content from html files
     if (outputPath.endsWith('.html')) {
       let minified = htmlmin.minify(content, {
-        useShortDoctype: true,
+        useShortDoctype: false,
         removeComments: true,
-        collapseWhitespace: true,
+        collapseWhitespace: false,
+        html5: true
       })
 
       return minified
