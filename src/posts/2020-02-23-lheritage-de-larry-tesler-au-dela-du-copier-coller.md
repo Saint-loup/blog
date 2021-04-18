@@ -14,7 +14,7 @@ heroSettings:
     desktop: h-3/4 # leave blank to inherit "mobile" height (default = full screen)
   bg:
     color: bg-dark # default bg-black
-    image: "souris btn.png" # relative to /assets/images/
+    image: "souris_btn.png" # relative to /assets/images/
     imagePosition: # options = bg-center (default), bg-left, bg-right
     alt: Clavier auxiliaire utilisé par Tesler pour tester la fonction de couper-coller, avec des étiquettes notées "cut" et "paste"
   headingTextColor: # default = text-white (can use any TailwindCSS text-[color]-[xxx])
