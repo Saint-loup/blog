@@ -12,7 +12,7 @@ Les raisons du succès des interfaces graphiques sont bien connues : des objets 
 
 ![wooton](/assets/images/wooton.png " Bureau Wooton, station de travail tout-en-un")
 
-### Un dossier = une fenêtre
+## Un dossier = une fenêtre
 
 il est moins connu que cette métaphore, à son origine, était plus forte et contraignante. Les premières versions du Finder (l'explorateur de fichier de Mac OS) obéissaient à un modèle dit « spatial », lequel a été abandonné à la sortie de Mac OS X (moment d'une refonte complète du système). Cela se traduisait par deux règles :
 
@@ -23,7 +23,7 @@ il est moins connu que cette métaphore, à son origine, était plus forte et co
 
 En résumé, le Finder « spatial » tentait de faire fonctionner le bureau comme un ensemble de choses tangibles et fixes, pouvant servir de véritable mémoire externe ([l'être humain étant plus doué pour reconnaitre un objet que pour s'en rappeler](http://www.nngroup.com/articles/recognition-and-recall/)). Au lieu d'utiliser une abstraction pour en gérer une autre (fenêtre et système de fichier), l'utilisateur manipulait des objets concrets qui ne changeaient pas dans son dos ([principe de moindre surprise](http://en.wikipedia.org/wiki/Principle_of_least_astonishment)).
 
-### Contraignant mais adapté à son temps
+## Contraignant mais adapté à son temps
 
 Ce modèle pouvait être assez contraignant. Notamment, ouvrir un dossier faisait forcément apparaître une nouvelle fenêtre (_la_ fenêtre de _ce_ dossier). Pour éviter de se retrouver avec des dizaines ouvertes, il fallait déplier l'arborescence du dossier (comme dans Mac OS X aujourd'hui), ou bien utiliser Alt+click, ce qui fermait la fenêtre d'origine et ouvrait la nouvelle en même temps.
 
@@ -35,7 +35,7 @@ Pourtant, d'après ce que j'ai pu lire et tester, ça marchait pas mal. D'abord,
 
 Ensuite, la cible d'Apple était moins experte que le public typique de l'époque et n'était probablement pas à l'aise avec l'abstraction d'un système de fichiers arborescent. Enfin, les ordinateurs d'alors avaient peu de mémoire, peu de fichiers et peu d'applications, peu de mémoire et avaient donc moins besoin de manipuler des quantités énormes d'information.
 
-### Le lent déclin du bureau façon Macintosh
+## Le lent déclin du bureau façon Macintosh
 
 Aujourd'hui, bien peu d'explorateurs de fichiers utilisent encore un modèle spatial. Les seuls [projets actifs](http://en.wikipedia.org/wiki/Spatial_file_manager#Examples) que j'ai trouvé sont Haiku OS (héritier de BeOS), Enligthenment (dit-on) et MATE (mais pas par défaut).
 
@@ -43,7 +43,7 @@ A moins que vous n'utilisiez un système exotique, il y a de fortes chances que 
 
 Ce modèle a été popularisé par Windows 98 (avec des prémisses dans 95). Dans une optique de convergence avec Internet Explorer, une barre d'adresse et des boutons Précédent et Suivant ont été ajoutés. Ouvrir un dossier a cessé d'ouvrir une nouvelle fenêtre. Ce comportement a été adopté par Mac OS X à sa sortie, créant un Finder bâtard, avec deux types de fenêtres et des réactions imprévisibles. Pour des détails, voyez notamment cet [article de Siracusa](http://arstechnica.com/apple/2003/11/macosx-10-3/11/), et celui-ci de [Tog](http://www.asktog.com/columns/034OSX-FirstLook.html) (un des premiers spécialistes en IHM employés par Apple).
 
-### Cachez ces fenêtres que je ne saurais voir
+## Cachez ces fenêtres que je ne saurais voir
 
 Le modèle de Windows est donc devenu la convention dominante -- son ubiquité n'y est sans doute pas étrangère.
 
@@ -59,7 +59,7 @@ En gros, tout est fait pour qu'on n'ait plus à déplacer ou redimensionner ses 
 
 Certains se sont inquiétés de l'importation de certains concepts depuis iOS. Il est vrai qu'aujourd'hui, tout est fait pour qu'on puisse utiliser un Mac comme un iPad, en affichant toutes les applications en plein écran et en naviguant entre elles grâce à un geste du trackpad. Après l'abandon du Finder spatial, faut-il s'attendre un jour à la disparition des fenêtres ?
 
-### Pour aller plus loin
+## Pour aller plus loin
 
 - [Un article](http://arstechnica.com/apple/2003/04/02/finder/) de John Siracusa récapitulant sa défense du Finder spatial
 - [Une démo de Mac OS 7](https://jamesfriend.com.au/pce-js/) accessible depuis un navigateur

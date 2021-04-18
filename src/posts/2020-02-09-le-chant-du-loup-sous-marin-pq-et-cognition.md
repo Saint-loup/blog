@@ -37,13 +37,13 @@ C'est aussi une parfaite illustration de la [cognition incarnée](https://en.wik
 
 
 
-### Un équipage, plusieurs cerveaux, un seul esprit ?
+## Un équipage, plusieurs cerveaux, un seul esprit ?
 
 Le Chant du loup m'a fait notamment penser aux travaux d'[Edwin Hutchins](https://en.wikipedia.org/wiki/Edwin_Hutchins). Ce chercheur a passé du temps sur des ponts de frégates et dans des cockpits d'avion pour étudier leur organisation. Son livre _Cognition in the wild_ s’ouvre sur une longue description d'un navire ayant échappé de justesse à une grave collision.
 
 Il explique que l'intelligence doit être vue comme un phénomène intrinsèquement collectif, surtout dans ces cas d'équipages travaillant dans un environnement codifié et soudés autour d'un objectif commun. Les informations circulent à toute vitesse, chacun a un rôle précis pour analyser une information ou effectuer une action, si bien que l’équipe fonctionne presque comme une seule entité. Ou disons au moins qu'il y a un continuum entre individu et collectif.
 
-### Outils cognitifs
+## Outils cognitifs
 
 Dans un environnement aussi avancé et précaire qu'un sous-marin, l'usage de l'écrit peut étonner, alors qu'il est partout.
 
@@ -89,7 +89,7 @@ Cet usage du papier est aussi documenté dans les cockpits d'avion, [voir ce pap
 {% endgallery %}
 
 
-### Papier... et papier-toilette
+## Papier... et papier-toilette
 
 Dans À la poursuite d'Octobre rouge, on voit ce qui ressemble fort à un rouleau de papier-toilette à droite de l'écran. Pourquoi ?
 
@@ -99,7 +99,7 @@ Réponse : un analyste utilise un sonar passif, c'est-à-dire pas un sonar class
 
 ![](/assets/images/vlcsnap-2020-02-09-14h50m31s457.jpg)
 
-### **Oreille d'or**
+## **Oreille d'or**
 
 La tâche principale d'une oreille d'or : moins écouter que classer. Comparer à une base de données de signaux connus. Ce bruit est-il biologique ? Marin, sous-marin ? Ami, ennemi ? Si le bruit ne rentre pas dans une case, il est bien embêté. Dans le film : c'est trop silencieux pour venir d'un bateau mais en même temps aucun sous-marin en activité n'a d'hélices à quatre pales. Il faut forcément une réponse, tu as littéralement cinq personnes sur le dos qui doivent décider d'une trajectoire.
 
@@ -111,7 +111,7 @@ L'oreille d'or a le trackball dans une main, le casque sur une seule oreille pen
 
 ![](/assets/images/vlcsnap-2020-02-08-14h07m47s689-e1581169306219.png)
 
-### **Système socio-technique**
+## **Système socio-technique**
 
 Voici quelques interfaces montrées dans le film (probablement non-contractuelles). Mais c'est la partie émergée de l'iceberg. D'une certaine manière dans un sous-marin tout est interface entre l'être humain et des fonctions critiques. Tout est pensé pour aider les sous-mariniers à écouter et exécuter des ordres, à marcher, se tenir, ou respirer. Par exemple quand l'atmosphère est compromise, ils peuvent se brancher à intervalle régulier à des arrivées d'air.
 
@@ -138,7 +138,7 @@ Voici quelques interfaces montrées dans le film (probablement non-contractuelle
 
 Dans cet écosystème entièrement artificiel, tout a été conçu. L'équipage aussi : comment s'organiser, qui doit faire quoi à quel moment, le language codifié, tout a été réfléchi. Plutôt que l'histoire d'un humain réduit à un rouage dans la machine, le film nous montre un monde où l'opposition entre humain et système n'a pas de sens.
 
-### En bonus
+## En bonus
 
 [Un jeu vidéo de cartographie sous-marine](https://store.steampowered.com/app/890720/In_Other_Waters/)
 

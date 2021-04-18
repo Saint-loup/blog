@@ -11,7 +11,7 @@ Les relations entre client et prestataire sont compliquées, presque par défini
 
 Face à cette prétention, la solution habituelle est d'essayer d'asseoir cette expertise : « vous me payez pour ça, faites-moi confiance ». Ça peut marcher, mais c'est un joker qui ne marche pas éternellement et qui remplace l'échange par le bras de fer. Il y a certes bien des manières de convaincre et on peut être pédagogue avec un client sans l'envoyer bouler. Mais si cela se résume à surenchérir d'arrogance en voulant « éduquer » le client, j'ai peur que cela n'enterre toute possibilité d'aborder la racine du problème – et il y en a souvent une.
 
-### Le design comme symptôme
+## Le design comme symptôme
 
 Prenons un cas auquel j'ai assisté : un client n'était pas content de propositions de pictogrammes. Après quelques échanges, il nous a envoyé des contre-propositions se résumant à des cliparts tirés d'une banque d'images et à des croquis faits par eux-même. Clairement, c'était mauvais, ça ne marchait pas. L'épisode nous a énervé et donné l'impression que le client prétendait faire le travail à notre place. A mon sens, notre très compréhensible colère se trompait de cible. Le problème n'est pas qu'ils aient osé prendre le feutre et l'initiative, c'est qu'ils l'aient fait dans leur coin.
 
@@ -19,7 +19,7 @@ Il y avait là une situation idéale pour une séance de co-conception, tous ens
 
 Dans ce contexte, s'arc-bouter sur ses prérogatives n'est au mieux qu'une solution à court-terme. Asséner « c’est moi le designer » ne remplace pas une vraie argumentation voire, soyons fous, des tests auprès d'utilisateurs. Adopter une approche plus collaborative offre bien des avantages. Avoir un rôle de conseiller plutôt que d'expert tout puissant permet de gagner en confiance ce que l'on perd en contrôle. Mais cela suppose dès le départ une relation saine et propice.
 
-### Le design comme monopole
+## Le design comme monopole
 
 Plus fondamentalement, cette idée même de prérogative est contestable. Chacun a éminemment le droit de se sentir viscéralement designer, mais dans le cadre d'un projet ce n'est qu'un un poste attribué à quelqu'un. Il y a de nombreuses manières d’organiser ce qui relève du « design ». Ça peut être une des casquettes de quelqu'un, aussi bien qu'être décomposé en spécialités : concept, études utilisateur, prototypage, animations, spécification, éditorial, graphisme, tests… c'est large.
 
@@ -29,7 +29,7 @@ Un avis ?
 
 ![VGE, wink wink](/assets/images/VGE.png "[Source](http://www.ina.fr/video/I00017840)")
 
-### Pour aller plus loin
+## Pour aller plus loin
 
 - [Ten Graphic Design Paradoxes](http://bloganubis.com/2009/08/03/ten-graphic-design-paradoxes/) : une réflexion sur l'arrogance et le monopole de la connaissance
 - [Designer as Author](http://2x4.org/ideas/22/designer-as-author/) : des différents modèles possibles du designer

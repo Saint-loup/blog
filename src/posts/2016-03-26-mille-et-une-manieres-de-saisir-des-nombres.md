@@ -9,7 +9,7 @@ tags:
 
 En schématisant, on peut distinguer deux manières de saisir des nombres : avec une « échelle » et avec un clavier.
 
-### Échelles
+## Échelles
 
 Dans le premier cas, on choisit une bonne valeur sur une échelle continue, avec un curseur ou un stylet. L’échelle peut être linéaire (comme sur l’Arithmomètre) ou circulaire (comme sur la [Pascaline](https://fr.wikipedia.org/wiki/Pascaline#Roue_d.27inscription) ou un téléphone à cadran). L’échelle est parfois implicite, comme sur la Curta où seule la valeur sélectionnée est affichée.
 
@@ -25,7 +25,7 @@ L’Arithmomètre fut très populaire jusqu'à la moitié du XXe siècle, que ce
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/kE-8rAU3YO4?rel=0" frameborder="0" allowfullscreen></iframe>
 
-### Claviers
+## Claviers
 
 Un clavier peut être un pavé de dix chiffres, ou bien une grille de nombres à saisir directement.
 
@@ -47,7 +47,7 @@ Ces appareils ont donné lieu à des considérations ergonomiques tout à fait m
 - Soucis de clarté : les colonnes étaient coloriées différemment et deux revêtements différents étaient utilisés sur les touches, en alternance sur chaque ligne.
 - Conception holistique : pour éviter de trop lever le bras, des [bureaux spéciaux](http://www2.cruzio.com/~vagabond/Desks.html) étaient utilisés avec un encastrement pour abaisser la machine.
 
-### Pour aller plus loin
+## Pour aller plus loin
 
 Des sites historiques spécialisés :
 

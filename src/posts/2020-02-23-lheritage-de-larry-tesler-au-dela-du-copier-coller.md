@@ -30,13 +30,13 @@ Comme avec Engelbart, ce qui est intéressant au-delà du catalogue de ses accom
 
 Mais commençons pas du concret.
 
-### Le génie du copier-coller
+## Le génie du copier-coller
 
 Les actions de couper, copier et coller font partie de ces idées omniprésentes qui ont pourtant été créées un jour. Les barres de défilement, l'auto-complétion... [j'ai continué ici](https://toutcequibouge.net/2014/08/aux-origines-des-interactions/) une liste d'inventions commencée par Dan Saffer.
 
 Tesler a inventé en fait plusieurs choses.
 
-#### 1\. **Une sélection intuitive du texte**
+### 1\. **Une sélection intuitive du texte**
 
 A l'époque, la crurseur était placé sous le caractère (ou derrière, en couleur inversée), ce qui introduisait de l’ambiguïté : si j'insère une lettre, va-t-elle être placée avant ou après le caractère sélectionné ?
 
@@ -46,7 +46,7 @@ Larry Tesler (avec Peter Deutsch) inventa alors le curseur placé entre les cara
 
 ![curseur en poutre en I](/assets/images/2020-02-23_00h54_25.png){width=400}
 
-#### 2\. **Le remplacement des modes par le presse-papier et les menus**
+### 2\. **Le remplacement des modes par le presse-papier et les menus**
 
 Se débarrasser des modes était le grand combat de Tesler. Qu'est-ce qu'un mode ? C'est un état global du système que l'utilisateur enclenche et qui permet ou interdit d'autres actions. Par exemple appuyer sur la touche VERR MAJ permet de taper des lettres capitales mais interdit les minuscules. Appuyer sur MAJ serait un quasi-mode (selon la terminologie de Jef Raskin) qui oblige à maintenir la touche pour rester actif.
 
@@ -73,15 +73,15 @@ La complexité a été ainsi déplacée des modes au presse-papier : celui-ci st
 )
 
 
-#### 3\. La métaphore de couper et coller
+### 3\. La métaphore de couper et coller
 
 La dernière pièce du puzzle a été de rassembler le déplacement et la duplication. Suivant l'action précédente, coller peut couper ou bien copier. Cela n'allait pas de soit : encore aujourd'hui Mac OS permet de copier un fichier mais pas de le couper, car le déplacement est vu comme une action bien distincte. On a finalement trois actions réunies par une même métaphore, celle du papier.
 
-### La méthode Tesler
+## La méthode Tesler
 
 Quelle approche a suivi Tesler pour faire tout ça ?
 
-#### 1\. Tester, tester et tester
+### 1\. Tester, tester et tester
 
 Malgré ses fortes convictions (qui allaient jusqu'à avoir une plaque d'immatriculation anti-modale), Tesler n'a jamais succombé à l'illusion de connaitre les utilisateurs et a donc très tôt mené des tests.
 
@@ -97,7 +97,7 @@ Malgré ses fortes convictions (qui allaient jusqu'à avoir une plaque d'immatri
 >
 > p. 62, Bill Moggridge, Designing interactions. MIT press, 2007. [Tout le chapitre est disponible ici](http://www.designinginteractions.com/download)
 
-#### 2\. Prendre les problèmes à la racine
+### 2\. Prendre les problèmes à la racine
 
 Ce qui m'impressionne, c'est sa capacité très tôt dans sa carrière à argumenter et théoriser ses choix. Dès 1981, son [disours contre les modes](https://carlstrom.com/stanford/cs242/WWW/readings/Smalltalk-Byte.htm) est solide et construit. En 2010 il réalise ce schéma pour montrer qu'il faut moins d'étapes pour corriger une erreur avec une interface amodale. Voir ces enjeux nécessitait de s'abstraire du fonctionnel et de modéliser des interactions. Cela va plus loin que compter le nombre de clics et relève de la sémantique : les opérations de l'utilisateur sont composées de verbes et de noms, l'ordre nom-verbe est-il supérieur à l'ordre inverse, pourtant plus proche de l'anglais ? Les tests lui ont montré que oui.
 
@@ -105,7 +105,7 @@ Ce qui m'impressionne, c'est sa capacité très tôt dans sa carrière à argume
 
 [A Personal History of Modeless Text Editing](http://worrydream.com/refs/Tesler%20-%20A%20Personal%20History%20of%20Modeless%20Text%20Editing%20and%20Cut-Copy-Paste.pdf)
 
-#### 3\. La démocratisation contre l'avant-garde
+### 3\. La démocratisation contre l'avant-garde
 
 L'opposition de Tesler à Engelbart fut parfois frontale et révèle une différence fondamentale dans leurs visions. Pour schématiser, le premier visait le grand public et le second des experts.
 
@@ -139,7 +139,7 @@ Quoiqu'il en soit, voici quelques personnes qui chacun à leur manière tentent 
 - [How can we develop transformative tools for thought?](https://numinous.productions/ttft/)
 - [Casual creator, ou de la séparation artificielle entre créateur et consommateur](http://www.galaxykate.com/blog/casualcreator.html)
 
-### Références complémentaires
+## Références complémentaires
 
 Computer History Museum, [Oral History of Lawrence G. “Larry” Tesler](https://archive.computerhistory.org/resources/access/text/2014/08/102746675-05-01-acc.pdf)
 
@@ -147,7 +147,7 @@ Computer History Museum, [Oral History of Lawrence G. “Larry” Tesler](https:
 
 ![](/assets/images/maxresdefault1.jpg "Larry Tesler face à un Xerox Alto")
 
-### Post-scriptum : où l'on retrouve Don Norman
+## Post-scriptum : où l'on retrouve Don Norman
 
 J'évoque dans cet article les éditeurs de texte des années 70. Il s'avère que l'un d'entre eux fut longtemps l'éditeur par défaut d'Unix et fut durement critiqué dans un article de Don Norman : _[The truth about Unix: The user interface is horrid](http://www.ceri.memphis.edu/people/smalley/ESCI7205_misc_files/The_truth_about_Unix_cleaned.pdf)_ (PDF).
 

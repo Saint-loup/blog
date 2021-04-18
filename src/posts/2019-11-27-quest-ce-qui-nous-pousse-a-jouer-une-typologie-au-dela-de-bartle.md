@@ -16,7 +16,7 @@ _Sur la psychologie des joueurs et les travaux de Nick Yee et Quantic Foundry._
 
 [Une vidéo d'une présentation à la GDC 2019](https://www.gdcvault.com/play/1025742/A-Deep-Dive-into-the)
 
-### Les modèles existants, appeaux à stéréotypes
+## Les modèles existants, appeaux à stéréotypes
 
 Le [modèle de Bartle](https://en.wikipedia.org/wiki/Bartle_taxonomy_of_player_types) est une typologie des joueurs très populaires. Datant de 1996 et tiré de données sur des participants à des MMORPG, il est très limité et se retrouve remplacé par des théories plus fines.
 
@@ -36,7 +36,7 @@ Plus généralement, ces typologies sont souvent normatives et contribuent à re
 
 De même, être tout en bas de l'échelle de la stratégie ne signifie pas qu'on n'a pas de préférence en matière de prise de décision, mais des préférences différentes, par exemple préférer les décisions rapides en réaction à l'environnement immédiat. Un score faible n'est pas une absence de motivation mais une motivation différente et spécifique.
 
-### Un nouvel espoir
+## Un nouvel espoir
 
 Nick Yee et son [cabinet d'analyse](https://quanticfoundry.com/gdc2019/) proposent un modèle alternatif tiré d'enquêtes massives. A partir de 400 000 d'entretiens, il fait émerger douze d'attributs.
 
@@ -62,59 +62,59 @@ Il s'agit de clusters statistiques qu'on peut plus ou moins agréger suivant la 
 
 ![positionnement flou d'attributs dans un graphe](/assets/images/image.png)
 
-### Notes sur certaines motivations
+## Notes sur certaines motivations
 
 Des noms de jeux vidéo sont cités mais il s'agit uniquement d'exemples. Les attributs décrivent les joueurs, pas les jeux. On peut s'approprier une œuvre de plein de façons, par exemple en pratiquant un jeu de stratégie de manière bourrine.
 
-#### **Stratégie**
+### **Stratégie**
 
 Un score élevé signifie une préférence pour jongler entre planification à long terme et micro-décisions, un goût pour analyse des informations complexes. Un score, on l'a dit, suggère des boucles de gameplay plus courtes et aimer réagir à l'environnement.
 
 ![Stratégie](/assets/images/2019-11-23_18h37_04.jpg)
 
-#### Design
+### Design
 
 Design désigne ici "seulement" la capacité à personnaliser l'apparence du jeu (avatar, maisons, etc.).
 
-#### Communauté
+### Communauté
 
 En dessous de 30ans, les joueurs masculins sont plus communautaires. Trait de personnalité intrinsèquement masculin ou culture _gamer_ toxique qui exclut les femmes et fait donc baisser ce score chez elles ?
 
-#### **Compétition**
+### **Compétition**
 
 L'opposé d'un joueur compétitif n'est pas quelqu'un qui aime jouer tout seul mais plutôt qui aime jouer collaborativement ou dans l'émulation.
 
-#### Défi
+### Défi
 
 Attention aux oppositions trompeuses entre jeunes et vieux : certaines courbes ne sont pas monotones, si bien qu'un joueur de 60 peut être plus proche d'un joueur de 15 que de 40 ans.
 
 ![Evolution du défi à travers l'âge](/assets/images/Capture-d’écran-2019-11-27-à-20.19.22.png)
 
-#### Pouvoir
+### Pouvoir
 
 Motivation différente de l'envie de complétion. Impression de progrès continu, sans besoin de but final.
 
-#### Destruction
+### Destruction
 
 Pas une opposition entre construction et destruction mais plutôt entre serein et chaotique.
 
-#### Imaginaire (_fantasy_)
+### Imaginaire (_fantasy_)
 
 Meilleur prédicteur de l'achat d'appareils de réalité virtuelle : pas l'imagination mais l'excitation et la destruction. Mais l'imaginaire est un bon prédicteur de la satisfaction après achat.
 
 Cela évoque [les aspects temporels de l'UX](https://uxmind.eu/2014/07/09/l-ux-est-dynamique/), aussi analysés dans [cette conférence](https://www.gdcvault.com/play/1023329/Engines-of-Play-How-Player) sur la nostalgie et l'engagement à long terme chez les joueurs
 
-#### Découverte
+### Découverte
 
 Pas juste exploration géographique mais découverte des limites du jeu (des règles, du monde)
 
-#### Différences culturelles
+### Différences culturelles
 
 Ce graphique montre à la fois la variabilité entre cultures et l'importance d'avoir une _baseline_ : comparé à la Chine, les USA paraissent dans la moyenne en tout.
 
 ![Différences entre USA et Chine ](/assets/images/Capture-d’écran-2019-11-27-à-20.16.16.png)
 
-### En 1971, déjà…
+## En 1971, déjà…
 
 Les motivations présentées ici ont été dégagées spécialement pour le domaine des jeux, pourtant elles ont un coté générique et pourraient presque s'appliquer à n'importe quelle activité sociale encadrée par des règles. En 1971, Roger Caillois proposait un [modèle différent](http://azumanurlin.over-blog.com/2015/08/en-bref-roger-caillois.html), sans doute moins rigoureux scientifiquement, mais avec des intuitions qui capturent bien l'expérience du jeu (pas forcément vidéo). Il s'agissait de quatre motivations classées en couples d'opposés :
 
@@ -126,7 +126,7 @@ Le plaisir spécifique lié au hasard, aux sensations fortes, aux illusions... t
 >
 > Philosophie des jeux vidéo, disponible [intégralement ici](https://www.editions-zones.fr/lyber?philosophie-des-jeux-video) ou à [La Découverte](https://www.editionsladecouverte.fr/catalogue/index-Philosophie_des_jeux_vid__o-9782707197672.html)
 
-### Et l'UX dans tout ça
+## Et l'UX dans tout ça
 
 Les motivations de Quantic Foundry font penser aux [cartes UX](https://uxmind.eu/portfolio/ux-design-and-evaluation-cards/) développées par Carine Lallemand, Vincent Koenig et Guillaume Gronier. Elles sont tirées d'un cadre théorique différent (théorie des besoins, [théorie de l'auto-détermination](https://en.wikipedia.org/wiki/Self-determination_theory)…). La liste est ici :
 

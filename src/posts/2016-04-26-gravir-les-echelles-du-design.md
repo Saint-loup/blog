@@ -6,7 +6,7 @@ tags:
 
 ---
 
-### Petite mission et pied dans la porte
+## Petite mission et pied dans la porte
 
 En 2007, [Michael Beirut](http://designobserver.com/feature/youre-so-intelligent/5917/) décrivait comment il gravissait l'échelle des enjeux pour gagner en légitimité :
 
@@ -14,7 +14,7 @@ En 2007, [Michael Beirut](http://designobserver.com/feature/youre-so-intelligent
 
 ![Boy that escalated quickly](/assets/images/Boy-that-escalated-quickly.jpg)
 
-### Toute la SNCF dans un papelard
+## Toute la SNCF dans un papelard
 
 Dans ce mille-feuilles d'enjeux, les couches supérieures structurent celles du dessous. Dans les cas extrêmes, un objet anodin encapsule une bonne partie de la complexité de tout l'édifice. Exemple : les 36 données présentes sur un billet de la SNCF, commentées [ici](http://tarification.blogspot.fr/2011/11/titre-de-transports-billets-papier.html).
 
@@ -24,14 +24,14 @@ Dans le même genre, j'ai récemment aidé à concevoir d'un outil permettant au
 
 Bref, beaucoup de questions souvent inattendues pour un seul champ, alors qu'on était bien placés auprès de l'échelle des décideurs. C'est ce que tentent de faire beaucoup de gens : s'attaquer à un problème par la racine et pas par la petite porte, en ayant d'emblée une position assez influente pour vraiment changer les choses. Faire du [design stratégique](https://en.wikipedia.org/wiki/Strategic_design), de la [stratégie UX](http://shop.oreilly.com/product/0636920032090.do), de la conduite du changement, etc.
 
-### C'est facile à dire
+## C'est facile à dire
 
 Dans un projet, il est bon d'être responsable de son niveau, consulté pour le niveau +1 et au courant du niveau +2. Exemple : vous êtes responsable des IHM, on vous consulte sur les choix fonctionnels et on vous tiens au courant du raisonnement derrière les orientations stratégiques. Il peut y avoir des niveaux en dessous (déclinaison des IHM) et au dessus. Si vous avez besoin de gravir un échelon pour faire du bon travail et que vous y parvenez (par exemple lors du projet suivant), tant mieux, mais :
 
 1. C'est plus facile à dire qu'à faire.
 2. Il est difficile de suivre ou de s'occuper de trop de niveaux en même temps.
 
-### Qui es-tu et d'où parles-tu ?
+## Qui es-tu et d'où parles-tu ?
 
 Ces réflexions m'amènent à [un article récent](http://www.sciencedirect.com/science/article/pii/S240587261530037X) de Donald Norman et Pieter Jan Stappers. Son propos est que si on monte très haut dans les échelons, on arrive au niveau de systèmes socio-techniques complexes, qui posent des défis spécifiques :
 

@@ -16,7 +16,7 @@ Vous allez me dire qu’il creuse et fait foisonner ses obsessions. Je trouve su
 
 ![Couverture des Furtifs](/assets/images/1-uFzbZEP0dfQZzBpgwPndGA.jpeg)
 
-### Une fan fiction des mouvements libertaires
+## Une fan fiction des mouvements libertaires
 
 Il y a quand même du neuf. Notamment, on passe d’un univers inventé à « notre » univers, ce qui permet des résonances avec le présent (Orange racheté par Orange !). La description des effets croisés de la privatisation et de la stratification sociale est intéressante : on a affaire à des groupes qui se côtoient, pas à des castes imperméables. On évite le cliché SF de la littéralité où les pauvres sont en bas et les riches en haut. Il peut arriver qu'ils se côtoient dans une rue mais se séparent la rue suivante, celle-ci étant réservée aux détenteurs d’un certain statut. Ce dernier n’est pas assigné à la naissance : rien n’empêche le pauvre d’acheter un pass temporaire, s'il le peut.
 
@@ -32,7 +32,7 @@ Damasio est moins intéressé par décrire la société de demain que par ses à
 
 Il est plus inventif pour décrire ces nouvelles formes d'activisme : occupation des toits et des vides _entre_, brigades aériennes, bricolages fous, tagueurs dépassant la distinction beau/utile... Mais ces pratiques sont souvent exposées sous la forme de pavés de texte et peu évoquées ensuite. Ça ressemble plus à un catalogue qu'à un univers cohérent où tout s'entrecroise. Damasio ne fait pas mystère de ses affinités politiques et de ses visites à la ZAD de NDDL, mais ce qu'il en tire me donne l’impression d’une fan fiction des mouvements libertaires, certes sincère et généreuse. (J'ai rien contre les fan fiction assumées hein.)
 
-### L’humanité découvre une nouvelle forme de vie et paf ça fait le Grand soir
+## L’humanité découvre une nouvelle forme de vie et paf ça fait le Grand soir
 
 Ajoutons que l'analyse politique qui se dégage du roman ne vole pas très haut.
 
@@ -52,7 +52,7 @@ Vers la fin du roman se trouvent de courts inserts, des sortes de fragments de m
 
 Recherche pour le mot "déter".
 
-### Une narration à plusieurs points de vue tous identiques
+## Une narration à plusieurs points de vue tous identiques
 
 Le roman se veut aussi explicitement philosophique. Ce qu'il appelle tranquillou “[ma philosophie du vivant](https://www.actusf.com/detail-d-un-article/les-furtifs-alain-damasio-d%C3%A9voile-les-secrets-de-son-nouveau-roman)” n'est pas plus fine.
 
@@ -72,7 +72,7 @@ Il y a chez Damasio une générosité palpable, l'envie d'absorber beaucoup d'in
 
 C'est encore plus patent avec les personnages secondaires. Ils se ressemblent un peu tous et sont souvent décrits comme des blocs rayonnants de joie sauvage ou enfantine. "Une bouille à angles, déter comme ils disent, jolie dans son genre sauvage."
 
-### De belles idées inabouties
+## De belles idées inabouties
 
 Au fond, ce qui me déçoit le plus c'est que Damasio ne fasse pas grand chose de ses influences intellectuelles, à part en tirer une vague exaltation de la vie. Deleuze brillait plus par sa virtuosité et sa capacité à rapprocher des références inattendues que par la précision de ses thèses. Il fut donc un grand carburant pour de nombreux artistes.
 

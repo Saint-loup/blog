@@ -55,7 +55,7 @@ Le meilleur pour la fin : par deux fois, des petits malins ont essayé de triche
 
 
 
-### Ajout 2021
+## Ajout 2021
 
 Incorporer un calculateur à une chaussure peut aussi être glorieusement vain. Admirez cette [paire de sneakers](https://www.rockpapershotgun.com/my-sole-weeps-for-these-rtx-3080-shoes) ornée d'une carte graphique. Pourquoi une carte à 700 boules sur une chaussures ? Est-ce qu'elle a une vraie fonction ? Mystère. Les coopérations entre constructeurs informatiques et marques de mode, c'est toujours quelque chose.
 

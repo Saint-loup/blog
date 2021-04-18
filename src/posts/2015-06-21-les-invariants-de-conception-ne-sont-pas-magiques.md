@@ -16,7 +16,7 @@ L'honorable Raphaël « iErgo » Yharrassarry aime à rappeler que la concep
 
 C'est éminemment vrai, au sens qu'avant de concevoir un service ou un objet, il y a des valeurs relativement stables, notamment physiologiques et anatomiques, qu'il faut connaitre et prendre en compte. Il faut pourtant faire attention : ces invariants ne sont que des guides. Il n'y a pas de critère unique et magique.
 
-### Il n'y a pas d'homme moyen
+## Il n'y a pas d'homme moyen
 
 Reprenons l'exemple du téléphone : quelle dimension doit-il avoir pour être utilisable ? On peut prendre pour cible la taille moyenne des mains de notre population cible, mais c'est trop approximatif. Une même moyenne peut cacher des distributions très différentes, comme dans ce graphique.
 
@@ -34,7 +34,7 @@ En anthropométrie, on présente souvent seulement le 5e, le 50e (équivalent à
 
 Par choix, on considère que les mesures en deçà du 5e et au-delà du 95e centile sont des extrêmes et peuvent être ignorés. Il reste seulement ces trois mesures à prendre en compte : est-ce que le téléphone aura une bonne prise pour ces trois tailles de main ?
 
-### Quelle mesure choisir ?
+## Quelle mesure choisir ?
 
 Compliquons encore les choses : on a fait comme si seule la longueur de la main importait, mais il y a d'autres mesures pertinentes. La source dont j'ai tiré la longueur de la main fournit en fait six tailles :
 
@@ -46,7 +46,7 @@ Ces mesures ne sont pas forcément parfaitement corrélées entre elles. Pour sc
 
 EDIT : dans les années 50, l'armée américaine a découvert le même problème [pour les cockpits d'avions](https://www.thestar.com/news/insight/2016/01/16/when-us-air-force-discovered-the-flaw-of-averages.html) : « _Out of 4,063 pilots, not a single airman fit within the average range on all 10 dimension_s ».
 
-### Quel principe de conception ?
+## Quel principe de conception ?
 
 Il y a des techniques statistiques pour extraire les variables pertinentes d'un ensemble de corrélations, mais c'est hors de portée de cet article. Imaginons qu'une technique de ce genre nous dise que retenir trois des six variables permette de couvrir du 6e au 97e. Ça ne nous dit pas toujours pas quoi faire. Il y a trois axes de conception possibles :
 
@@ -62,7 +62,7 @@ Deuxième solution : rendre le produit **ajustable**, lors de l'installation ou 
 
 Enfin, on peut essayer de trouver une **dimension unique** qui satisfasse le maximum de monde. Par exemple on peut placer une borne interactive à hauteur de bras d'une personne de petite taille, dans l'idée qu'il est plus facile pour une grande personne de se baisser que le contraire.
 
-### Et l'usage au fait
+## Et l'usage au fait
 
 Il y a une dernière complication : au-delà des critères physiques, les usages d'un téléphone sont variables, y compris pour une même personne.
 
@@ -81,7 +81,7 @@ Rétrospectivement, l'exemple de l'iPhone est intéressant. Sur le seul critère
 
 Conclusion : ne jamais raisonner sur un critère isolé. Tout est affaire de compromis, il faut juste trouver les bons.
 
-### Pour aller plus loin
+## Pour aller plus loin
 
 - [Une compilation de ressources sur les usages et la conception mobile](http://4ourth.com/Touch/)
 - [Les slides de la présentation de Cornelia Laros](http://fr.slideshare.net/orsoral/comportements-mobiles-vrais-challenges-ides-reues)

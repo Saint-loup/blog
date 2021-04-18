@@ -24,7 +24,7 @@ Bien sûr, je sais ce que c'est. Il y a des contraintes de temps et d'argent et 
 
 Sauf que ce n’est pas toujours le cas. Parfois, au fil des refontes ou des ajouts, les divergences s'aggravent au lieu de se résorber. Le site de la MAAF a trois gabarits largement hétérogènes, tantid que le site des impôts en a quatre (ou disons deux avec des fortes variantes chacun), plus désuets à mesure que l'on s'enfonce dans les profondeurs du site. L'absence de cohérence se ressent, car à l'utilisation l'on est facilement amené à passer d'un gabarit à l'autre. Oh, encore un autre exemple avec deux screenshots de l'espace client d'EDF [ici](http://toutcequibouge.net/toutcequibouge/wp-content/uploads/2016/08/2016-08-19_14h28_11.png) et [ici](http://toutcequibouge.net/toutcequibouge/wp-content/uploads/2016/08/EDF-2.png).
 
-### MAAF
+## MAAF
 
 ![](/assets/images/MAAF-0.png)
 
@@ -36,7 +36,7 @@ Sauf que ce n’est pas toujours le cas. Parfois, au fil des refontes ou des ajo
 
 ![](/assets/images/MAAF-2-1024x808-1.jpg)
 
-### impots.gouv.fr
+## impots.gouv.fr
 
 [](/assets/images/impots-0-e1471563276671.png)(.wide-img)
 
@@ -50,7 +50,7 @@ Sauf que ce n’est pas toujours le cas. Parfois, au fil des refontes ou des ajo
 [](/assets/images/Impots-3-e1471563162292.png)(.wide-img)
 
 
-### Windows, ce palimpseste
+## Windows, ce palimpseste
 
 Microsoft est un spécialiste pour ajouter des couches d'IHM à Windows sans rénover ou enlever les anciennes. C'est parfois une preuve de sagacité (le sélecteur de couleur est correct et [à peine bougé](https://twitter.com/Saint_loup/status/766068136416256001)) en vingt ans, parfois d'immobilisme (il a fallu quinze ans et Vista pour avoir une réelle mise à jour de Paint). Ce que je trouve le plus fascinant, c'est le panneau de configuration : avec ses successions de panneaux toujours plus avancés et vieillots, on traverse une bonne partie de l'histoire du système d'exploitation.
 
@@ -64,6 +64,6 @@ Ensuite, on arrive aux panneaux à taille fixe et à onglets, qui datent de Wind
 
 ![Options de l'explorateur de fichier](/assets/images/2016-08-18_22h22_56.png)
 
-### Un dernier exemple
+## Un dernier exemple
 
 L'historique de Google Chrome ne ressemblent pas aux favoris, qui ne ressemblent pas du tout à la fenêtre de téléchargement ([voir screenshots](https://twitter.com/Saint_loup/status/753873190041034752)). C'est apparemment [temporaire](http://thenextweb.com/google/2016/01/29/how-to-try-google-chromes-material-design-makeover-right-now/#gref), mais pourquoi une transition aussi désordonnée vers le Material Design ?

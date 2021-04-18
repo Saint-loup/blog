@@ -27,7 +27,7 @@ Le problème, c'est que le travail d'adaptation a été minime pour beaucoup des
 
 Plus généralement, j'ai relevé trois problèmes presque systématiques dans ces nouvelles applications.
 
-### Premier problème : ☰
+## Premier problème : ☰
 
 L'utilisation du bouton "hamburger" sur mobile est discutable mais compréhensible. Sur desktop ça l'est moins, surtout quand c'est de manière non-conventionnelle. Dans les "grosses" applications, il sert d'interrupteur pour masquer/afficher les libellés du menu. Dans les applications légères, il fait apparaitre ces libellés temporairement (comme un "flyover" ou "popover"). Comme on le voit dans cette animation, ce n'est pas d'une utilité renversante eu égard à sa position prééminente.
 
@@ -38,7 +38,7 @@ L'utilisation du bouton "hamburger" sur mobile est discutable mais compréhensib
 
 Oui, c'est bien le Menu démarrer, même lui y a droit. Un menu de navigation avec son propre bouton de navigation, merci Microsoft. L’icône habituellement la plus structurante d'une app est transformée en simple post-it, puisque cliquer dessus sert juste à rappeler la signification des icônes. Si celle-ci posait vraiment problème il y avait d'autres solutions, comme afficher tous les titres de menu lors d'un survol prolongé. Courrier est le seul cas où ce hamburger est justifié puisqu'il présente de vraies différences de contenu entre modes compact et complet.
 
-### Deuxième problème : …
+## Deuxième problème : …
 
 La barre de commandes comprend une icône en points de suspension. C’est encore un décalque du mobile, qui transgresse au passage des conventions desktop, sans gain évident. Elle ouvre des commandes supplémentaires et fait apparaitre le nom de toutes les cônes.
 
@@ -62,7 +62,7 @@ Si c'était un bonus, le comportement ne serait pas une mauvaise idée puisqu’
 
 Problème annexe : cette barre de commandes est le plus souvent en haut, mais pas toujours. Exemple : l'Enregistreur vocal.
 
-### Troisième problème : ⇐
+## Troisième problème : ⇐
 
 Terminons par le bouton retour : il apparait à gauche du titre, à la place de la traditionnelle icône de l'application. Pourquoi pas, ça s’inscrit dans la tendance de remplir la barre de titre ou de la fusionner avec d’autres. Mais c'est gênant en pratique et en théorie.
 

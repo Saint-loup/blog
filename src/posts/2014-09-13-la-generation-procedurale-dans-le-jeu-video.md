@@ -11,7 +11,7 @@ _Je recycle ici un travail étudiant datant d'il y a trois ou quatre ans. Le tex
 
 Les jeux vidéos grand public actuels ont souvent une grande valeur ajoutée en terme de contenu : graphismes réalistes, environnements vastes et variés, acteurs professionnels, etc. Même avec un gros budget, cette richesse représente un défi de production. Par exemple, la ville immense et détaillée de GTA4 a été entièrement créée « à la main » : chaque immeuble a été dessiné et placé avec soin par des artistes. Il existe une autre approche, qui consiste à partir d’éléments de base (ici, un ensemble de bâtiments) et à les disposer semi-aléatoirement, avec certaines contraintes (laisser des vides pour que des rues se forment, rassembler les immeubles similaires pour que chaque quartier ait une identité, etc.). Cette approche dite _procédurale_ est très générique : avec elle, on peut générer des textures, des terrains, des niveaux de jeu, des scénarios, etc.
 
-### Un peu de technique
+## Un peu de technique
 
 Il y a globalement deux familles de techniques : celles des grammaires de formes et celles utilisant des fonction de bruit.
 
@@ -25,7 +25,7 @@ Passons aux _fonctions de bruit._ On commence par placer des points dont les val
 
 ![Bruit de Perlin en dimensions 1, 2 et 3](/assets/images/Perlin.png " Bruit de Perlin en dimensions 1, 2 et 3")
 
-### Un nouveau processus de conception
+## Un nouveau processus de conception
 
 Générer du contenu procéduralement au lieu de le créer à la main a de multiples avantages :
 
@@ -38,7 +38,7 @@ Ces limites suggèrent une méthode de conception différente de celle fréquemm
 
 Pourtant, on regagne en facilités de macro-gestion ce qu’on perd en contrôle minutieux. On ne peut pas placer telle espèce d’arbre à tel endroit, mais on peut faire des changements globaux sur la flore simplement en modifiant l’algorithme. Ce nouvel état d’esprit peut se répandre dans tout le processus de conception. Par exemple, puisqu’on ne peut pas planifier précisément l’emplacement d’une rencontre en forêt, on peut laisser le programme s’en occuper en suivant certaines conditions (« dans une clairière à moins d’un kilomètre de la ville »). Ensuite, on peut être tenté de rendre aléatoire la survenue elle-même des évènements. Certains moments clés dans le scénario peuvent restés pré-codés, tandis que d’autres peuvent se faire au hasard (par exemple les rencontres que le joueur ferait dans une ville).
 
-### De nouveaux types d’interactions
+## De nouveaux types d’interactions
 
 L’approche procédurale change aussi beaucoup la manière de jouer. Certains jeux promettent en effet une re-jouabilité potentiellement infinie, puisque la cartographie des niveaux, l’emplacement des objets, les objectifs à remplir, etc. sont différents pour chaque nouvelle partie et chaque joueur. La question de la durée de vie d’un jeu doit donc être repensée, puisqu’elle dépend plus de la propension du joueur à se lasser que de l’imagination du développeur. À charge pour ce dernier de créer un programme qui génère des environnements et des aventures intéressantes, le reste se passe entre le jeu et le joueur. C’est à nouveau une perte de contrôle pour le créateur, mais qui se révèle payante, puisqu’elle permet au joueur de mieux s’approprier le jeu et de se faire sa « propre » aventure.
 
