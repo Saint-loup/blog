@@ -4,14 +4,14 @@
     <div>
       {% if pagination.href.previous %}
         <a href="{{ pagination.href.previous | url }}" class="relative inline-flex items-center px-4 py-2 text-sm font-medium leading-5 {{ colors.paginateCustom.linkText or colors.paginateDefault.linkText }} transition duration-150 ease-in-out {{ colors.paginateCustom.linkBg or colors.paginateDefault.linkBg }} border {{ colors.paginateCustom.linkBorder or colors.paginateDefault.linkBorder }} rounded-md hover:{{ colors.paginateCustom.linkTextHover or colors.paginateDefault.linkTextHover }} hover:{{ colors.paginateCustom.linkBgHover or colors.paginateDefault.linkBgHover }} focus:outline-none focus:shadow-outline-blue focus:{{ colors.paginateCustom.linkFocusBorder or colors.paginateDefault.linkFocusBorder }} active:bg-gray-100 active:{{ colors.paginateCustom.linkText or colors.paginateDefault.linkText }}">
-      Previous
+      Précédent
     </a>
       {% endif %}
     </div>
     <div>
       {% if pagination.href.next %}
         <a href="{{ pagination.href.next | url }}" class="relative inline-flex items-center px-4 py-2 ml-3 text-sm font-medium leading-5 {{ colors.paginateCustom.linkText or colors.paginateDefault.linkText }} transition duration-150 ease-in-out {{ colors.paginateCustom.linkBg or colors.paginateDefault.linkBg }} border {{ colors.paginateCustom.linkBorder or colors.paginateDefault.linkBorder }} rounded-md hover:{{ colors.paginateCustom.linkTextHover or colors.paginateDefault.linkTextHover }} hover:{{ colors.paginateCustom.linkBgHover or colors.paginateDefault.linkBgHover }} focus:outline-none focus:shadow-outline-blue focus:{{ colors.paginateCustom.linkFocusBorder or colors.paginateDefault.linkFocusBorder }} active:bg-gray-100 active:{{ colors.paginateCustom.linkText or colors.paginateDefault.linkText }}">
-      Next
+      Suivant
     </a>
       {% endif %}
     </div>
