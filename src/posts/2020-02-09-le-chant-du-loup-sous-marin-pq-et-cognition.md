@@ -4,8 +4,9 @@ date: "2020-02-09"
 tags:
   - "objets"
   - "recherche"
-  - "sciences-cognitives"
-  - "systemes-complexes"
+  - "sciences cognitives"
+  - "systemes complexes"
+
 layout: post-gallery
 hero: split  # options: carousel, graphic, video, split (text & image)
 heroSettings:

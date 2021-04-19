@@ -2,7 +2,7 @@
 title: "Un menu radial inspiré des jeux de tir"
 date: "2013-04-16"
 tags:
-  - "jeu-video"
+  - "jeu vidéo"
 
 ---
 
