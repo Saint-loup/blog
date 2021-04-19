@@ -25,7 +25,7 @@ Une meilleure alternative est d'automatiser le problème, soit en début de chai
 
 Mais c'est une voie intéressante. Après tout, Invision, Figma ou Framer génèrent des maquettes de plus en plus compatibles avec du HTML/CSS. Cette proximité entre conception et réalisation pourrait aussi s'appliquer au texte.
 
-Dans un tout autre angle, voir aussi [Kopie](https://kopie.io/), outil de rédaction collaborative synchronisée avec Sketch.
+Dans un tout autre angle, voir aussi [Kopie](https://web.archive.org/web/20190228013754/https://kopie.io/), outil de rédaction collaborative synchronisée avec Sketch.
 
 Ajoutons que le plugin apporte aussi quelques embellissements directement dans les maquettes, indépendamment de ces questions de workflow :
 
