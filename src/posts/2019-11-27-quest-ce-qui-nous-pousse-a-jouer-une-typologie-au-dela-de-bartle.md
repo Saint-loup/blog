@@ -2,9 +2,9 @@
 title: "Ce qui nous pousse à jouer : une typologie au-delà de Bartle"
 date: "2019-11-27"
 tags:
-  - "jeu-video"
+  - "jeu vidéo"
   - "recherche"
-  - "sciences-cognitives"
+  - "sciences cognitives"
   - "utilisateurs"
 coverImage: "2019-11-23_13h31_18-1-scaled.jpg"
 

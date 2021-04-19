@@ -3,7 +3,7 @@ title: "Vous n'avez pas le monopole du design"
 date: "2014-09-30"
 tags:
   - "features"
-  - "place-du-concepteur"
+  - "place du concepteur"
 
 ---
 

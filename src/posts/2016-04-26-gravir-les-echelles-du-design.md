@@ -2,7 +2,7 @@
 title: "Gravir les échelles du design"
 date: "2016-04-26"
 tags:
-  - "place-du-concepteur"
+  - "place du concepteur"
 
 ---
 

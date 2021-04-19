@@ -4,7 +4,8 @@ date: "2019-04-03"
 draft: true
 tags:
   - "politique"
-  - "systemes-complexes"
+  - "systemes complexes"
+
 coverImage: "2019-04-02_22h11_15.png"
 
 ---
