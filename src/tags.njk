@@ -9,35 +9,20 @@ pagination:
     - pages
     - post
 
-permalink: /tags/{{ tag }}/
+permalink: /tags/{{ tag | slug }}/
 eleventyComputed:
-  title: Articles sur "{{ tag }}”
+  title: 'Articles à propos de : "{{ tag }}”'
 ---
-
-
 
 {#
   We set this to 'postslist' so we can use the same postslist components as the /blog
 #}
-  {% set postslist = collections[tag]  %}
+{% set postslist = collections[tag] %}
 
-{#
-  Either inherit the 'postListStyle' or use another layout
-  Please see instructions in /src/_data/structure.js
-#}
-{% set tagStyle = structure.tagListStyle or structure.postListStyle %}
+{% include 'components/postslist.njk' %}
 
-{#
-  Allows a user to easily change the Tag List Style.
-  Please see instructions in /src/_data/structure.js
-#}
-{% set postlist = ['components/', tagStyle, '.njk'] %}
-{% include postlist | join %}
-
-<div class="border-t border-gray-300">
-<h4 class="{{ colors.tagPillCustom.text or colors.tagPillDefault.text }}">All Tags:</h4>
-{% set tags = collections.tagList %}
-{% include "components/tagpills.njk" %}
+<div class="my-16 border-t border-gray-300 container-wide">
+  <h3 class="{{ colors.tagPillCustom.text or colors.tagPillDefault.text }}">Tous les mots clés</h3>
+  {% set tags = collections.tagList %}
+  {% include "components/tagpills.njk" %}
 </div>
-
-
