@@ -33,8 +33,15 @@ postListItemStyle:
       <p>Aucun résultat.</p>
     </div>
   </div>
+  {% set postslist = posts | reverse %}
 
   {% include 'components/postslist.njk' %}
+
+  <div class="my-16 border-t border-gray-300 container-wide">
+    <h3 class="{{ colors.tagPillCustom.text or colors.tagPillDefault.text }}">Tous les mots clés</h3>
+    {% set tags = collections.tagList %}
+    {% include "components/tagpills.njk" %}
+  </div>
 </div>
 
 <script  src="/assets/scripts/lunr.stemmer.support.js" defer></script>
