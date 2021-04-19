@@ -18,7 +18,7 @@ Solution ultime : un mélange de ce qu'Axure appelle les styles d'interaction et
 
 ## Premier ingrédient : les styles d'interaction
 
-Les styles d'interactions sont des variations visuelles qui s'activent lorsqu'un widget est dans un état donné. Il y a le clic, le survol, l'inactivité et la sélection.[1](#fn-1570-1) C'est cette dernière qui nous intéresse. Il faut spécifier :
+Les styles d'interactions sont des variations visuelles qui s'activent lorsqu'un widget est dans un état donné. Il y a le clic, le survol, l'inactivité et la sélection.[^Attention : Axure, aimant la simplicité, distingue ces styles de la liste d'évènements, laquelle comporte des termes très proches (mouseOver vs onMouseHover vs Selected).] C'est cette dernière qui nous intéresse. Il faut spécifier :
 
 - Le style lui-même. Ici, ça peut être que le libellé passe en gras. Une fois ajouté, il apparait dans le panneau « Widget properties ».
 - L'action qui le déclenche.
@@ -45,7 +45,3 @@ Un [tutoriel plus complet](http://www.axure.com/learn/dynamic-panels/basic/tab-c
 Un fil d'Ariane, c'est encore un objet constant à travers les pages mais dont un aspect change. Pour que la page sélectionnée soit en gras, il suffit de suivre les explications plus haut. Mais comment faire pour le nom de la page qui change à chaque fois. La solution, c'est d'utiliser un master pour le fil d'ariane et d'ajouter à chaque chargement de page une action « Set text », avec la valeur \[\[PageName\]\]. Cette variable prédéfinie par Axure correspond au titre de la page tel que défini dans votre arborescence, donc si elle s'appelle « 04-b », le fil d'Ariane comportera « 04-b ».
 
 ![Axure tuto 4](/assets/images/sans-titre-4.png)
-
-* * *
-
-1. Attention : Axure, aimant la simplicité, distingue ces styles de la liste d'évènements, laquelle comporte des termes très proches (mouseOver vs onMouseHover vs Selected). Because [↩](#fnref-1570-1)
