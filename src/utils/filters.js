@@ -37,7 +37,8 @@ module.exports = {
 				title: page.data.title,
 				excerpt: page.data.excerpt,
 				tags: page.data.tags,
-				content: removeMd(page.content),
+				//on accède au contenu en  markdown et on le transforme en texte brut.
+				content: removeMd(page.template.frontMatter.content),
 				date: page.data.date,
 
 			});
