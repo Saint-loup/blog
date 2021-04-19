@@ -190,6 +190,8 @@ module.exports = function (eleventyConfig) {
 						case 'pages':
 						case 'post':
 						case 'travaux':
+						case 'features':
+
 							return false
 					}
 					return true
