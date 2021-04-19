@@ -57,11 +57,7 @@ module.exports = {
             </svg>`
 	},
 
-	/**
-	 * I honestly don't remember why I added this markdown shortcode?
-	 * I'm guessing at one point I wanted to use markdown in a .njk file (for some reason)
-	 * and so added this markdown processor shortcode.
-	 */
+
 	markdown: function (value) {
 		if (!value) {
 			return ''

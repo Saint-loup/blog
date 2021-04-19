@@ -2,20 +2,7 @@
   <div class="decor-dark"></div>
 
   <div class="py-12 mx-auto md:flex md:items-center md:justify-between ">
-    {% if structure.g_showFooterSocialIcons %}
-      <div class="flex justify-center md:order-2 {{ colors.socialIconsCustom or colors.socialIconsDefault }}">
 
-        {# Display Social icons from _data/social.json  #}
-        {% for site in social %}
-          {% if site.url %}
-            <a aria-label="Link to {{ site.platform }}" alt="Link to {{ site.platform }}" class="hover:{{ colors.socialIconsHoverCustom or colors.socialIconsHoverDefault }}" href="{{ site.url | url }}">
-              {% svg site.platform, "mx-2 h-6 w-6 fill-current", site.platform, "footer" %}
-            </a>
-          {% endif %}
-        {% endfor %}
-      </div>
-
-    {% endif %}
     <div class="mx-auto mt-8 md:mt-0 md:order-1">
       <p class="text-center text-base leading-6 {{ colors.footerCustom.text or colors.footerDefault.text }}">
         Vous êtes chez Baptiste. Blogue vaillamment propulsé par Eleventy et un Raspberry Pi.
