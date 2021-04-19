@@ -12,7 +12,6 @@ const search = (e) => {
 
 
 
-	const postListItemTemplate = document.getElementById("postListItemTemplate");
 
 	const noResultsEl = document.getElementById("noResultsFound");
 	const container = document.querySelector('.post-wrapper');
