@@ -1,9 +1,7 @@
 src/assets/generatedImages/*
 
 .eleventyignore
-# Custom Local
-project
-_project
+
 
 .DS_Store
 **/.DS_Store
