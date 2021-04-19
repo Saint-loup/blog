@@ -16,7 +16,7 @@ Pour avoir un plein écran, il faut masquer les barre d'onglets, d'outil, d'adre
 
 - Installez-la et redémarrez Firefox ;
 - Pressez les touches Ctrl+Shift+A ;
-- Allez dans l'onglet de Stylish \[1\] et cliquez sur "Créer un nouveau style" \[2\].
+- Allez dans l'onglet de Stylish et cliquez sur "Créer un nouveau style".
 
 ![2015-12-29_15h40_30](/assets/images/2015-12-29_15h40_30.png)
 
