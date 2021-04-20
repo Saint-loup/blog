@@ -3,11 +3,7 @@ title: Site en construction.
 layout: page
 date: 2020-08-05
 excerpt: # used for page excerpts and META (will be overwritten if SEO used below)
-pagination:
-  data: collections.post
-  size: 3
-  reverse: true
-  alias: posts
+
 postListItemStyle:
   complete: false
   showPagination: false
@@ -25,7 +21,7 @@ postListItemStyle:
 
     <section class="mb-16">
       <h2>Bafouilles</h2>
-      {% set postslist = posts | reverse %}
+      {% set postslist = collections.post | reverse | slice(0, 3) %}
 
       {% include 'components/postslist.njk' %}
 
