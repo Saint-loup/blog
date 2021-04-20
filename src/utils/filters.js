@@ -7,16 +7,15 @@ require('./lunr.stemmer.support.js')(elasticlunr);
 require('./lunr.fr.js')(elasticlunr);
 const removeMd = require('remove-markdown');
 Settings.defaultLocale = "fr";
-const { Base64 } = require('js-base64'); module.exports = {
+
+module.exports = {
 	/**
 	 * Filters
 	 * @link https://www.11ty.dev/docs/filters/
 	 */
 
-	//
-	toBase64: (string) => {
-		return Base64.encode(string)
-	},
+
+
 	searchIndex: (collection) => {
 
 		// what fields we'd like our index to consist of
