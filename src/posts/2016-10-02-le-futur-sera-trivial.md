@@ -3,7 +3,7 @@ title: "Le futur sera trivial"
 date: "2016-10-02"
 tags:
   - "futur"
-  - "reflexions"
+  - "réflexions"
 coverImage: "giphy.gif"
 
 ---

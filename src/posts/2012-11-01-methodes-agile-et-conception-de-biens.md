@@ -4,7 +4,7 @@ date: "2012-11-01"
 tags:
   - "agile"
   - "conception"
-  - "reflexions"
+  - "réflexions"
 
 ---
 
