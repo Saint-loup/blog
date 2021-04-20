@@ -1,7 +1,7 @@
 <section class="mt-8 post-wrapper ">
   <div class=post-list-wrapper>
     <ul class="post-list">
-      {% for post in postslist | reverse %}
+      {% for post in postslist %}
         {% include 'components/postlistitem.njk' %}
       {% endfor %}
     </ul>

@@ -15,7 +15,9 @@ module.exports = {
 	 */
 
 
-
+	slice: function (arr, a, b) {
+		return arr.slice(a, b);
+	},
 	searchIndex: (collection) => {
 
 		// what fields we'd like our index to consist of
