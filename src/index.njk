@@ -36,8 +36,8 @@ postListItemStyle:
       <h2>Bidouilles</h2>
       <ul class="project-list " >
         {% for project in projects | reverse %}
-          <li class="my-8 font-medium list-none project">
-            <div class="text-2xl font-semibold leading-7 text-accent2 lg:text-3xl name ">
+          <li class="my-8 list-none project">
+            <div class="text-2xl font-bold leading-7 text-accent2 lg:text-3xl name ">
               <a href="{{project.link}}">{{project.name}}</a>
             </div>
             {#<img class="picture" src="{{project.img}}"></img>#}
