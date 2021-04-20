@@ -1,9 +1,15 @@
 const path = require('path')
 
 module.exports = {
-  entry: path.resolve(__dirname, 'src/assets/scripts/main.js'),
+  entry: {
+    main: path.resolve(__dirname, 'src/assets/scripts/main.js'),
+    search: path.resolve(__dirname, 'src/assets/scripts/search.js'),
+    gallery: path.resolve(__dirname, 'src/assets/scripts/gallery.js'),
+
+  },
   output: {
-    path: path.resolve(__dirname, 'dist/assets'),
+    path: path.resolve(__dirname, 'dist/assets/scripts'),
+    filename: '[name].min.js'
   },
 
   plugins: [],

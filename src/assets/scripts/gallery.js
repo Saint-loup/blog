@@ -1,4 +1,6 @@
 
+const PhotoSwipe = require('photoswipe')
+
 var initPhotoSwipeFromDOM = function (gallerySelector) {
 
 
@@ -195,7 +197,7 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
 		}
 
 		// Pass data to PhotoSwipe and initialize it
-		gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+		gallery = new PhotoSwipe(pswpElement, PhotoSwipe.PhotoSwipeUI_Default, items, options);
 
 		// responsive images
 		// create variable that will store real size of viewport
