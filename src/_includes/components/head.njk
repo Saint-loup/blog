@@ -36,8 +36,16 @@
 <meta name="twitter:description" content="{{ seo.description or excerpt or meta.siteDescription }}"/>
 {#- Favicon #}
 {#<link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/images/favicon/apple-touch-icon.png' | url }}">
-#}<link rel="icon" type="image/svg+xml" href="/assets/UI/favicon.svg">
-<link rel="icon" type="image/png" href="/assets/UI/favicon.png" sizes="32x32">
+#}
+{% set faviconSVG %}
+{% include "src/assets/UI/favicon.svg" %}
+{% endset %}
+{#{% set faviconPNG %}
+{% include "src/assets/UI/favicon.png" %}
+{% endset %}#}
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,{{faviconSVG | toBase64}} ">
+<link rel="icon" type="image/svg+xml" href="data:image/png;base64,{{faviconPNG | toBase64}} ">
 
 {#- RSS Feed #}
 <link type="application/atom+xml" rel="alternate"  title="RSS Feed for {{ meta.siteName }}"  href="/rss" title="{{ meta.siteName }} XML Feed">
