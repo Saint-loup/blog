@@ -7,6 +7,7 @@ const embedTwitter = require("eleventy-plugin-embed-twitter");
 //const svgsprite = require('./src/utils/svgsprite')
 //const pageAssetsPlugin = require('eleventy-plugin-page-assets');
 const imagesResponsiver = require("eleventy-plugin-images-responsiver");
+const { default: postcss } = require('postcss');
 
 require('dotenv').config()
 
@@ -99,6 +100,7 @@ module.exports = function (eleventyConfig) {
 	 * @link https://www.11ty.dev/docs/config/#add-your-own-watch-targets
 	 */
 	eleventyConfig.addWatchTarget('./src/assets/css/')
+
 	eleventyConfig.addWatchTarget('./src/*.js')
 	eleventyConfig.addWatchTarget('./tailwind.config.js')
 
@@ -107,14 +109,19 @@ module.exports = function (eleventyConfig) {
 	/**
 	 * Passthrough File Copy
 	 * @link https://www.11ty.dev/docs/copy/
-	 */
+
+	cf. webpack.configs.js pour le JS
+	cf. postcss.config.js pour le CSS
+
+	*/
+
+
 	eleventyConfig.addPassthroughCopy('src/assets/generatedImages/')
 	//eleventyConfig.addPassthroughCopy('src/*.webp')
 	//eleventyConfig.addPassthroughCopy('src/*.jpg')
 	eleventyConfig.addPassthroughCopy('src/*.ico')
 	eleventyConfig.addPassthroughCopy('src/robots.txt')
-	eleventyConfig.addPassthroughCopy('src/assets/scripts/')
-	eleventyConfig.addPassthroughCopy('src/assets/style.css')
+	eleventyConfig.addPassthroughCopy('src/assets/css/fonts')
 	eleventyConfig.addPassthroughCopy('src/assets/UI')
 
 	eleventyConfig.setUseGitIgnore(false)
