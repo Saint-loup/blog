@@ -1,3 +1,6 @@
+const elasticlunr = require("elasticlunr");
+require('./lunr.stemmer.support.js')(elasticlunr);
+require('./lunr.fr.js')(elasticlunr);
 
 //"use strict"
 
@@ -9,7 +12,6 @@ const search = (e) => {
 			bool: "OR",
 			expand: true
 		});
-
 
 
 
@@ -31,10 +33,12 @@ const search = (e) => {
 			searchList.removeChild(searchList.lastChild)
 		}
 		if (results.length > 0) {
+
 			console.log('results')
 			noResultsEl.style.display = "none";
 			results.map((r) => {
-				let { url, title, excerpt, date } = r.doc;
+				const doc = window.searchIndex.documentStore.getDoc(r.ref)
+				let { url, title, excerpt, date } = doc;
 				const el = document.createElement("li");
 				el.classList.add('mb-8')
 				el.innerHTML = `<div class="text-sm text-gray"><time datetime="">${date}</time></div><h2 class="text-2xl lg:text-3xl font-semibold leading-7 text-accent2"><a href="${url}" class="block hover:underline">${title}</a></h2><div class="text-sm leading-relaxed italic text-gray-700">${excerpt || ""}</div>`
