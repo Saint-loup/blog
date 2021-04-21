@@ -60,12 +60,12 @@ function markdownItHeadingLevel(md, options) {
 	});
 }
 
-
 let options = {
 	html: true,
 	breaks: true,
 	linkify: true,
 	typographer: true,
+	quotes: ['«\u202F', '\u202F»', '‹\u202F', '\u202F›']
 }
 
 const md = markdownIt(options)
