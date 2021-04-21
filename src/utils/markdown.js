@@ -66,6 +66,7 @@ let options = {
 	breaks: true,
 	linkify: true,
 	typographer: true,
+	quotes: ['«\xA0', '\xA0»', '‹\xA0', '\xA0›']
 }
 
 const md = markdownIt(options)
