@@ -13,11 +13,11 @@ tags:
 
 [Le designer comme dramaturge](http://www.jnd.org/dn.mss/foreword_computers_.html) – Brenda Laurel, 1991.
 
-[Le designer comme ventriloquiste](http://www.it.hiof.no/interaction-design/papers/hutchins1987mfi.pdf) – Hutchins, 1987 (alerte mauvais PDF) :
+[Le designer comme ventriloquiste](http://www.it.hiof.no/interaction-design/papers/hutchins1987mfi.pdf) – Hutchins, 1987 (alerte mauvais PDF) :
 
 > The metaphor of user and computer engaged in a conversation with each other or carrying on a dialogue about the task at hand is the most popular of the mode of interaction metaphors for human computer interfaces.
 
-Voir aussi :
+Voir aussi :
 
 [Vous n'avez pas le monopole du design](http://toutcequibouge.net/2014/09/vous-navez-pas-le-monopole-du-design/).
 

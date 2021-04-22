@@ -24,7 +24,7 @@ heroSettings:
 
 
 
-Larry Tesler, décédé récemment, est associé à l'invention du copier-coller. De même qu'Engelbart a inventé bien plus que la souris, son influence est vaste : les premières interfaces graphique chez Xerox Parc et Apple, SmallTalk, le PDA Newton... Vice a fait un bon [portrait](https://www.vice.com/en_us/article/n7jdgw/larry-tesler-the-inventor-of-copy-paste-was-more-influential-than-you-realize) de son parcours.
+Larry Tesler, décédé récemment, est associé à l'invention du copier-coller. De même qu'Engelbart a inventé bien plus que la souris, son influence est vaste : les premières interfaces graphique chez Xerox Parc et Apple, SmallTalk, le PDA Newton... Vice a fait un bon [portrait](https://www.vice.com/en_us/article/n7jdgw/larry-tesler-the-inventor-of-copy-paste-was-more-influential-than-you-realize) de son parcours.
 
 Comme avec Engelbart, ce qui est intéressant au-delà du catalogue de ses accomplissements, c'est de comprendre la vision qui les a motivé. En plus et comme souvent, Tesler est moins un inventeur solitaire que le synthétiseur d'une effervescence collective. Dans l'article je m'efforce de citer ses inspirations.
 
@@ -38,7 +38,7 @@ Tesler a inventé en fait plusieurs choses.
 
 ### 1\. **Une sélection intuitive du texte**
 
-A l'époque, la crurseur était placé sous le caractère (ou derrière, en couleur inversée), ce qui introduisait de l’ambiguïté : si j'insère une lettre, va-t-elle être placée avant ou après le caractère sélectionné ?
+A l'époque, la crurseur était placé sous le caractère (ou derrière, en couleur inversée), ce qui introduisait de l’ambiguïté : si j'insère une lettre, va-t-elle être placée avant ou après le caractère sélectionné ?
 
 NLS, le système d'Engelbart était plus avancé et utilisait une souris comme pointeur, mais n'avait pas de curseur permanent. La souris servait littéralement de pointeur, pour indiquer par exemple le début et à la fin d'une sélection de texte.
 
@@ -48,16 +48,16 @@ Larry Tesler (avec Peter Deutsch) inventa alors le curseur placé entre les cara
 
 ### 2\. **Le remplacement des modes par le presse-papier et les menus**
 
-Se débarrasser des modes était le grand combat de Tesler. Qu'est-ce qu'un mode ? C'est un état global du système que l'utilisateur enclenche et qui permet ou interdit d'autres actions. Par exemple appuyer sur la touche VERR MAJ permet de taper des lettres capitales mais interdit les minuscules. Appuyer sur MAJ serait un quasi-mode (selon la terminologie de Jef Raskin) qui oblige à maintenir la touche pour rester actif.
+Se débarrasser des modes était le grand combat de Tesler. Qu'est-ce qu'un mode ? C'est un état global du système que l'utilisateur enclenche et qui permet ou interdit d'autres actions. Par exemple appuyer sur la touche VERR MAJ permet de taper des lettres capitales mais interdit les minuscules. Appuyer sur MAJ serait un quasi-mode (selon la terminologie de Jef Raskin) qui oblige à maintenir la touche pour rester actif.
 
-Les éditeurs de texte étaient massivement modaux, c'est-à-dire qu'il y avait un mode pour naviguer, un pour insérer, un pour supprimer... La présence de modes complexifie les interactions (dans quel mode suis-je ? Comment en sortir ?) mais élargit la palette d'actions. Par exemple en mode Naviguer, chaque touche du clavier peut être un raccourci, ce qui permet des actions fines du genre "avancer de trois paragraphes". [L'éditeur Vim](http://rc3.org/2012/05/12/the-grammar-of-vim/), encore populaire aujourd'hui, fonctionne essentiellement ainsi.
+Les éditeurs de texte étaient massivement modaux, c'est-à-dire qu'il y avait un mode pour naviguer, un pour insérer, un pour supprimer... La présence de modes complexifie les interactions (dans quel mode suis-je ? Comment en sortir ?) mais élargit la palette d'actions. Par exemple en mode Naviguer, chaque touche du clavier peut être un raccourci, ce qui permet des actions fines du genre "avancer de trois paragraphes". [L'éditeur Vim](http://rc3.org/2012/05/12/the-grammar-of-vim/), encore populaire aujourd'hui, fonctionne essentiellement ainsi.
 
 C'est aussi l'héritage d'une époque où [les éditeurs de texte](https://en.wikipedia.org/wiki/Line_editor) étaient conçus pour un télétype (c'est-à-dire concrètement une imprimante), pas pour un écran. On désignait une ligne, on faisait une modification et on imprimait le résultat en croisant les doigts pour ne avoir fait d'erreur. Dans un contexte aussi peu interactif, des modes étaient nécessaires.
 
 ![Les créateurs d'Unix utilisant un PDP-11 avec un terminal télétype](/assets/images/ken-and-den.jpg "Les créateurs d'Unix utilisant un PDP-11 avec un terminal télétype")
 
 
-Même NLS, le système d'Engelbart avec clavier et souris n'était pas plus simple. Voici la procédure pour déplacer du texte :
+Même NLS, le système d'Engelbart avec clavier et souris n'était pas plus simple. Voici la procédure pour déplacer du texte :
 
 1. Touche M (pour Move)
 2. Touche T (pour Text)
@@ -65,9 +65,9 @@ Même NLS, le système d'Engelbart avec clavier et souris n'était pas plus simp
 4. Pointer la destination
 5. Valider
 
-Inspiré par Pentti Kanerva, Tesler abolit ces modes en inversant le modèle d'interaction : au lieu de désigner d'abord l'action (effacer) puis son objet (tel groupe de mot), on sélectionnait du texte puis on agissait dessus. Le clavier ne servait plus qu'à une chose, taper du texte. Les commandes ont d'abord été attribuées à des touches spéciales puis au menu déroulant "éditer", inventé juste après.
+Inspiré par Pentti Kanerva, Tesler abolit ces modes en inversant le modèle d'interaction : au lieu de désigner d'abord l'action (effacer) puis son objet (tel groupe de mot), on sélectionnait du texte puis on agissait dessus. Le clavier ne servait plus qu'à une chose, taper du texte. Les commandes ont d'abord été attribuées à des touches spéciales puis au menu déroulant "éditer", inventé juste après.
 
-La complexité a été ainsi déplacée des modes au presse-papier : celui-ci stocke de l'information sans l'afficher à l'utilisateur, ce qui occasionne parfois des surprises. Mais globalement, copier et coller étant souvent concomitants, on a beaucoup gagné au change.
+La complexité a été ainsi déplacée des modes au presse-papier : celui-ci stocke de l'information sans l'afficher à l'utilisateur, ce qui occasionne parfois des surprises. Mais globalement, copier et coller étant souvent concomitants, on a beaucoup gagné au change.
 
 ![Capture d'écran de Mac OS 9, avec un éditeur de texte ouvert dans lequel il est écrit "Larry Tesler 1945-2020")](/assets/images/Capture-d’écran-2020-02-22-à-18.53.08.png "Réalisé avec cet [émulateur](https://jamesfriend.com.au/pce-js/)"
 )
@@ -75,11 +75,11 @@ La complexité a été ainsi déplacée des modes au presse-papier : celui-ci st
 
 ### 3\. La métaphore de couper et coller
 
-La dernière pièce du puzzle a été de rassembler le déplacement et la duplication. Suivant l'action précédente, coller peut couper ou bien copier. Cela n'allait pas de soit : encore aujourd'hui Mac OS permet de copier un fichier mais pas de le couper, car le déplacement est vu comme une action bien distincte. On a finalement trois actions réunies par une même métaphore, celle du papier.
+La dernière pièce du puzzle a été de rassembler le déplacement et la duplication. Suivant l'action précédente, coller peut couper ou bien copier. Cela n'allait pas de soit : encore aujourd'hui Mac OS permet de copier un fichier mais pas de le couper, car le déplacement est vu comme une action bien distincte. On a finalement trois actions réunies par une même métaphore, celle du papier.
 
 ## La méthode Tesler
 
-Quelle approche a suivi Tesler pour faire tout ça ?
+Quelle approche a suivi Tesler pour faire tout ça ?
 
 ### 1\. Tester, tester et tester
 
@@ -99,7 +99,7 @@ Malgré ses fortes convictions (qui allaient jusqu'à avoir une plaque d'immatri
 
 ### 2\. Prendre les problèmes à la racine
 
-Ce qui m'impressionne, c'est sa capacité très tôt dans sa carrière à argumenter et théoriser ses choix. Dès 1981, son [disours contre les modes](https://carlstrom.com/stanford/cs242/WWW/readings/Smalltalk-Byte.htm) est solide et construit. En 2010 il réalise ce schéma pour montrer qu'il faut moins d'étapes pour corriger une erreur avec une interface amodale. Voir ces enjeux nécessitait de s'abstraire du fonctionnel et de modéliser des interactions. Cela va plus loin que compter le nombre de clics et relève de la sémantique : les opérations de l'utilisateur sont composées de verbes et de noms, l'ordre nom-verbe est-il supérieur à l'ordre inverse, pourtant plus proche de l'anglais ? Les tests lui ont montré que oui.
+Ce qui m'impressionne, c'est sa capacité très tôt dans sa carrière à argumenter et théoriser ses choix. Dès 1981, son [disours contre les modes](https://carlstrom.com/stanford/cs242/WWW/readings/Smalltalk-Byte.htm) est solide et construit. En 2010 il réalise ce schéma pour montrer qu'il faut moins d'étapes pour corriger une erreur avec une interface amodale. Voir ces enjeux nécessitait de s'abstraire du fonctionnel et de modéliser des interactions. Cela va plus loin que compter le nombre de clics et relève de la sémantique : les opérations de l'utilisateur sont composées de verbes et de noms, l'ordre nom-verbe est-il supérieur à l'ordre inverse, pourtant plus proche de l'anglais ? Les tests lui ont montré que oui.
 
 ![](/assets/images/2020-02-23_01h43_56.png)
 
@@ -119,19 +119,19 @@ Il se préoccupait plus d'utilité que d'utilisabilité. Mettre des mois à appr
 
 Le problème est qu'il voulait créer un instrument merveilleux comme le violon alors que pas grand monde ne prendra le temps d'apprendre à jouer du violon, pour reprendre une formule d'Alan Kay cité par Bardini, p. 215)
 
-Tesler, à l'inverse, voulait créer des logiciels simples à comprendre par le plus grand nombre :
+Tesler, à l'inverse, voulait créer des logiciels simples à comprendre par le plus grand nombre :
 
 > \[Avec un collègue\] ils rédigèrent une note interne à Xerox décrivant ce qu'ils appelèrent IT, pour "Intuitive Typewriter" \[machine à écrire intuitive\]. Ils décidèrent que la facilité d'utilisation était importante, en réalisant que ce serait un "désaccord majeur avec Engelbart".
 >
 > p. 157, Bardini, Thierry (2000). [_Bootstrapping: Douglas Engelbart, Coevolution, and the Origins of Personal Computing_](https://archive.org/details/bootstrappingdou00bard_0). Stanford University Press.
 
-Pour Engelbart, un nouveau medium appelait de nouvelles conventions, tant pis si cela rompait avec les habitudes. Pour Tesler c'était l'inverse :
+Pour Engelbart, un nouveau medium appelait de nouvelles conventions, tant pis si cela rompait avec les habitudes. Pour Tesler c'était l'inverse :
 
 > Il fallait adapter l'interface à la manière dont les gens travaillent et pas utiliser l'interface pour les forcer à apprendre à travailler mieux et différemment.
 >
 > Idem
 
-Dès le début des années 70 est donc née cette opposition entre deux philosophies. Elle reste prégnante dans la conception de logiciels : élitisme ou démocratisation, puissance ou facilité, respect des habitudes ou nouveauté. Présentée ainsi, l'opposition tend à la caricature et il y a sans doute de la place pour tous les types de logiciel. D'aucuns ont cependant argué qu'une vision a écrasé l'autre et a tué dans l’œuf tout un champ [d'outils exigeants et avancés](http://www.loper-os.org/?p=861).
+Dès le début des années 70 est donc née cette opposition entre deux philosophies. Elle reste prégnante dans la conception de logiciels : élitisme ou démocratisation, puissance ou facilité, respect des habitudes ou nouveauté. Présentée ainsi, l'opposition tend à la caricature et il y a sans doute de la place pour tous les types de logiciel. D'aucuns ont cependant argué qu'une vision a écrasé l'autre et a tué dans l’œuf tout un champ [d'outils exigeants et avancés](http://www.loper-os.org/?p=861).
 
 Quoiqu'il en soit, voici quelques personnes qui chacun à leur manière tentent de combler ce fossé et de faire avancer le medium.
 
@@ -147,8 +147,8 @@ Computer History Museum, [Oral History of Lawrence G. “Larry” Tesler](https:
 
 ![](/assets/images/maxresdefault1.jpg "Larry Tesler face à un Xerox Alto")
 
-## Post-scriptum : où l'on retrouve Don Norman
+## Post-scriptum : où l'on retrouve Don Norman
 
-J'évoque dans cet article les éditeurs de texte des années 70. Il s'avère que l'un d'entre eux fut longtemps l'éditeur par défaut d'Unix et fut durement critiqué dans un article de Don Norman : _[The truth about Unix: The user interface is horrid](http://www.ceri.memphis.edu/people/smalley/ESCI7205_misc_files/The_truth_about_Unix_cleaned.pdf)_ (PDF).
+J'évoque dans cet article les éditeurs de texte des années 70. Il s'avère que l'un d'entre eux fut longtemps l'éditeur par défaut d'Unix et fut durement critiqué dans un article de Don Norman : _[The truth about Unix: The user interface is horrid](http://www.ceri.memphis.edu/people/smalley/ESCI7205_misc_files/The_truth_about_Unix_cleaned.pdf)_ (PDF).
 
 L'article date de 1981 et fut apparemment très populaire. C'est le premier d'un longue série de textes qu'il consacre à l'informatique.

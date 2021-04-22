@@ -7,7 +7,7 @@ tags:
 
 ---
 
-Les statistiques très générales sur les usages mobiles pullulent mais on manque d'études précises et de gens ayant pris la peine de faire du terrain. Voici donc :
+Les statistiques très générales sur les usages mobiles pullulent mais on manque d'études précises et de gens ayant pris la peine de faire du terrain. Voici donc :
 
 - [Une étude de Personæ User Lab](http://fr.slideshare.net/PersonaeUserLab/smartphone-street-observer).
 

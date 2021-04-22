@@ -14,8 +14,8 @@ Supposons qu'on veuille tester l'utilisabilité du dispositif en permettant à l
 
 Pour avoir un plein écran, il faut masquer les barre d'onglets, d'outil, d'adresse... tout ce que Mozilla appelle le « [chrome](https://developer.mozilla.org/en-US/docs/Glossary/Chrome) »). Pour ça, l'extension [stylish](https://addons.mozilla.org/en-US/firefox/addon/stylish/) permet de modifier le CSS (c'est-à-dire en gros le style) de n'importe quel site, et même de Firefox lui-même.
 
-- Installez-la et redémarrez Firefox ;
-- Pressez les touches Ctrl+Shift+A ;
+- Installez-la et redémarrez Firefox ;
+- Pressez les touches Ctrl+Shift+A ;
 - Allez dans l'onglet de Stylish et cliquez sur "Créer un nouveau style".
 
 ![2015-12-29_15h40_30](/assets/images/2015-12-29_15h40_30.png)
@@ -29,7 +29,7 @@ Pour avoir un plein écran, il faut masquer les barre d'onglets, d'outil, d'adre
 }
 ```
 
-Voici également le code si vous voulez cacher les ascenseurs. :
+Voici également le code si vous voulez cacher les ascenseurs. :
 
 ```
 #content browser {
@@ -39,7 +39,7 @@ Voici également le code si vous voulez cacher les ascenseurs. :
 }
 ```
 
-Le résultat ressemble à ça :
+Le résultat ressemble à ça :
 
 ![2015-12-29_15h42_12](/assets/images/2015-12-29_15h42_12.png)
 
@@ -53,6 +53,6 @@ Pour Axure, la solution la plus simple (OK tout est relatif) est de créer un pa
 
 ## Configuration des écrans
 
-Dans Windows, configurez la position des deux écrans (Bureau > Clic droit > Résolution de l'écran) en fonction de la manière dont l'utilisateur sera réellement installé à son poste. Quelque chose comme ça :
+Dans Windows, configurez la position des deux écrans (Bureau > Clic droit > Résolution de l'écran) en fonction de la manière dont l'utilisateur sera réellement installé à son poste. Quelque chose comme ça :
 
 ![2015-12-29_09h59_17](/assets/images/2015-12-29_09h59_17.png)

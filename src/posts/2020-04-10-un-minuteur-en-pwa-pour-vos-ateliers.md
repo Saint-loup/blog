@@ -7,7 +7,7 @@ coverImage: "screenshot.png"
 
 ---
 
-J'ai fait un minuteur, il est joli, il est cool, il est disponible ici :
+J'ai fait un minuteur, il est joli, il est cool, il est disponible ici :
 
 [c'est ici](https://misc.toutcequibouge.net/Timer/){.cta}
 
@@ -34,7 +34,7 @@ Mais il est parfait pour minuter du collage de post-it.
 - Ce n'est pas sans utilité.
 - C'était l'occasion de s'initier à Vue.js.
 - Comme il y a plusieurs manières de modifier le temps, c'est un bon exercice de conception technique pour la gestion des états.
-- Il y aussi des choix de conception à faire sur des actions d'apparence anodines. Par exemple : faut-il autoriser l'ajout de minutes en cours de route, sans même faire pause ? Pour moi oui, c'est un cas d'usage en pleine formation. OK, mais alors l'action de remise à zéro doit-elle réinitialiser à la durée d'origine, ou à cette durée assortie des minutes ajoutées ? Plein de petites questions comme ça.
+- Il y aussi des choix de conception à faire sur des actions d'apparence anodines. Par exemple : faut-il autoriser l'ajout de minutes en cours de route, sans même faire pause ? Pour moi oui, c'est un cas d'usage en pleine formation. OK, mais alors l'action de remise à zéro doit-elle réinitialiser à la durée d'origine, ou à cette durée assortie des minutes ajoutées ? Plein de petites questions comme ça.
 
 **Détails techniques**
 
@@ -42,4 +42,4 @@ App en Vue.js, avec vue-cli et le [module cli-plugin-pwa](https://www.npmjs.com/
 
 Si vous voulez rire, [le code est ici](https://github.com/Saint-loup/timer).
 
-PWA : _[progressive web application](https://developer.mozilla.org/fr/docs/Web/Progressive_web_apps)_. Un ensemble de technologies permettant d'enrichir une page web de fonctions réservées traditionnellement à des applications natives et locales. Notifications, fonctions hors-ligne, accès aux périphériques, etc,
+PWA : _[progressive web application](https://developer.mozilla.org/fr/docs/Web/Progressive_web_apps)_. Un ensemble de technologies permettant d'enrichir une page web de fonctions réservées traditionnellement à des applications natives et locales. Notifications, fonctions hors-ligne, accès aux périphériques, etc,

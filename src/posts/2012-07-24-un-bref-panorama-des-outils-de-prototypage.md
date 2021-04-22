@@ -7,7 +7,7 @@ tags:
 ---
 
 J’ai créé une catégorie sur Wikipedia pour recenser les outils de prototypage d’interfaces graphiques. Voici une liste plus complète (mais loin d’être exhaustive), incluant ceux qui n’ont pas de pages sur Wikipedia et me permettant de faire quelques commentaires le cas échéant.
-**EDIT : Voici [un article](http://toutcequibouge.net/toutcequibouge/2014/06/le-guide-relativement-exhaustif-et-raisonnablement-ultime-des-outils-de-prototypage/) plus récent sur la question.**
+**EDIT : Voici [un article](http://toutcequibouge.net/toutcequibouge/2014/06/le-guide-relativement-exhaustif-et-raisonnablement-ultime-des-outils-de-prototypage/) plus récent sur la question.**
 
 
 
@@ -39,7 +39,7 @@ Volontairement limité, l’outil est imbattable pour créer rapidement une maqu
 
 Blend cherche à combler le fossé entre graphistes et développeurs en proposant un outil hybride qui permet de dessiner des éléments d’interface et de voir le code sous-jacent. Ce n’est pas le premier éditeur WYSIWYG et c’est une approche qui attire souvent la méfiance, mais c’est un logiciel vraiment intéressant. Il génère des projets lisibles directement dans Visual Studio et totalement natifs au niveau du code (il faut choisir entre WPF, la composante graphique de .NET, et Silverlight). Un graphiste peut ainsi profiter des widgets prédéfinis, les styler, spécifier leur comportement et balancer le tout aux développeurs qui peuvent l’intégrer au reste du projet. Cela suggère des manières de travailler en équipe assez intéressantes. Au minimum, cela favorise les interactions entre créateurs d’interface et codeurs, puisque cela force les premiers à se familiariser avec la technologie et les seconds à faire attention aux spécifications qu’on leur envoie.  
 
- Par ailleurs, si vous voulez créer une maquette aboutie graphiquement, il est facile d’y inclure les widgets standard de Windows. Si vous voulez plutôt un rendu en fil de fer, le module Sketchflow (disponible dans la version Ultimate) propose un style “mockup”. Mais n’espérez pas la légèreté d’un Balsamiq. Blend expose via une interface graphique une bonne partie de la technologie WPF : les liaisons de données, le système de mise en page, les nombreuses propriétés propres à chaque widget (pardon, à Redmond on dit “contrôle”), etc. Les premiers contacts avec le logiciel ne sont pas forcément faciles. C’est sans doute le prix à payer, vu la portée des fonctionnalités,
+ Par ailleurs, si vous voulez créer une maquette aboutie graphiquement, il est facile d’y inclure les widgets standard de Windows. Si vous voulez plutôt un rendu en fil de fer, le module Sketchflow (disponible dans la version Ultimate) propose un style “mockup”. Mais n’espérez pas la légèreté d’un Balsamiq. Blend expose via une interface graphique une bonne partie de la technologie WPF : les liaisons de données, le système de mise en page, les nombreuses propriétés propres à chaque widget (pardon, à Redmond on dit “contrôle”), etc. Les premiers contacts avec le logiciel ne sont pas forcément faciles. C’est sans doute le prix à payer, vu la portée des fonctionnalités,
 
 
 [**Omnigraffle**](http://www.omnigroup.com/products/omnigraffle/) + le gabarit Konigi Wireframes (Mac OS, iPad, démo de 14 jours)
@@ -61,7 +61,7 @@ Un peu vieux et limité.
 
 [**InVision**](http://www.invisionapp.com/) (En ligne, version gratuite)
 
-Les deux petits derniers :
+Les deux petits derniers :
 
 [**Moqups**](https://moqups.com/) (En ligne)
 
