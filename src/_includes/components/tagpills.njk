@@ -1,11 +1,17 @@
-<div class="flex flex-wrap px-2 pt-6 tagpills md:pt-2">
+<div class="flex flex-wrap items-center pt-6 tagpills md:pt-2">
   {% for tag in tags %}
     {# Knock out the first iteration of the loop to drop the default "post" tag generated in `posts/posts.json`. #}
     {# If there's a better/easier way of doing this, please LMK.  #}
     {% if not loop.first %}
-      <div class="inline-block p-2">
-        <a title="mot clé {{ tag }}" aria-label="mot clé {{ tag }}" href="{{ '/tags/' | url}}{{tag | slug  }}/" class="px-4 py-2 text-sm {{ colors.tagPillCustom.text or colors.tagPillDefault.text }} {{ colors.tagPillCustom.bg or colors.tagPillDefault.bg }}  rounded-full hover:{{ colors.tagPillCustom.textHover or colors.tagPillDefault.textHover }}  hover:{{ colors.tagPillCustom.bgHover or colors.tagPillDefault.bgHover }}">{{ tag }}</a>
+      <div class="inline-block">
+        <a title="mot clé {{ tag }}" aria-label="mot clé {{ tag }}" href="{{ '/tags/' | url}}{{tag | slug  }}/"
+        class=" label text-accent2 font-medium   hover:px-4 hover:py-2 hover:rounded-full hover:{{ colors.tagPillDefault.bgHover}} ">{{ tag }}</a>
       </div>
+
+      {% if not loop.last %}
+        <span class="mx-4 text-xl font-light text-gray-500 ">~</span>
+      {% endif %}
     {% endif %}
+
   {% endfor %}
 </div>

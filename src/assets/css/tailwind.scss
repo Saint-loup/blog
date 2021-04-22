@@ -35,8 +35,12 @@
 /*		@apply font-medium text-indigo-700;
 */		text-decoration-skip-ink: auto;
 	}
-	p {
-		@apply mt-4;
+
+}
+
+@layer components {
+		.label {
+		@apply text-base my-2 text-gray-700
 	}
 }
 
