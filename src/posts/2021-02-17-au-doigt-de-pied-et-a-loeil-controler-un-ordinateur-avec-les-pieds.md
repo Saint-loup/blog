@@ -23,7 +23,7 @@ Lors de deux moments importants pour l'histoire de l'informatique, on trouve une
 
 <!-- excerpt -->
 
-*Première date de publication : Avril 2018*
+*Première date de publication : Avril 2018*
 
 
 
@@ -33,7 +33,7 @@ Ensuite, le pied se retrouve un peu partout. Si vous ne me croyez pas, je vous c
 
 ![](/assets/images/Sans-titre-3.png)
 
-Quoi d'autre ? On peut parler de l'industrie, où les risques d'activation intempestive ([analysés ici](http://toutcequibouge.net/toutcequibouge/wp-content/uploads/2018/04/TOERGJ-2-13.pdf)) exigent des pédales avec des clapets et autres garde-fous.
+Quoi d'autre ? On peut parler de l'industrie, où les risques d'activation intempestive ([analysés ici](http://toutcequibouge.net/toutcequibouge/wp-content/uploads/2018/04/TOERGJ-2-13.pdf)) exigent des pédales avec des clapets et autres garde-fous.
 
 ![Pédale industrielle](/assets/images/s-l1600.jpg "Pédale industrielle")
 
@@ -41,13 +41,13 @@ Les utilisateurs avec des problèmes de posture ou de motricité peuvent utilise
 
 ![Souris-sandale ou toe-mouse](/assets/images/toe_mouse.jpg "Souris-sandale ou toe-mouse]")
 
-La première [machine à écrire](https://en.wikipedia.org/wiki/Sholes_and_Glidden_typewriter) à être largement utilisée comprenait une pédale pour la touche Entrée. Toujours dans l'édition de texte, la [VIM Clutch](https://github.com/alevchuk/vim-clutch) constitue un exemple intéressant de convergence entre matériel et logiciel. L'éditeur de texte VIM fonctionne par modes : un mode normal, un pour l'insertion, un pour la sélection de texte, etc. Ça parait bizarre mais c'est beaucoup plus [sensé](http://www.viemu.com/a-why-vi-vim.html) que ça n'en a l'air. Un maitre-nerd a donc bricolé une pédale qui permet, tant qu'on la maintient, de rester dans le mode le plus courant. Ça rappelle un peu les pédaliers de piano et c'est assez logique d'avoir une touche dédiée et accessible à part pour une action aussi fondamentale.
+La première [machine à écrire](https://en.wikipedia.org/wiki/Sholes_and_Glidden_typewriter) à être largement utilisée comprenait une pédale pour la touche Entrée. Toujours dans l'édition de texte, la [VIM Clutch](https://github.com/alevchuk/vim-clutch) constitue un exemple intéressant de convergence entre matériel et logiciel. L'éditeur de texte VIM fonctionne par modes : un mode normal, un pour l'insertion, un pour la sélection de texte, etc. Ça parait bizarre mais c'est beaucoup plus [sensé](http://www.viemu.com/a-why-vi-vim.html) que ça n'en a l'air. Un maitre-nerd a donc bricolé une pédale qui permet, tant qu'on la maintient, de rester dans le mode le plus courant. Ça rappelle un peu les pédaliers de piano et c'est assez logique d'avoir une touche dédiée et accessible à part pour une action aussi fondamentale.
 
 ![](/assets/images/Sholesglidden2.png "Sholes and Glidden typewriter")
 
 Citons aussi les chaussures intelligentes, avec [uniquement des senseurs](https://www.wareable.com/running/smart-shoes-875), ou carrément avec [des actuateurs](https://en.wikipedia.org/wiki/Adidas_1) modifiant le niveau d'amorti.
 
-Le meilleur pour la fin : par deux fois, des petits malins ont essayé de tricher au casino en portant un ordinateur qui communiquait des informations à un complice ([source 1](https://www.engadget.com/2013/09/18/edward-thorp-father-of-wearable-computing/), [source 2](https://en.wikipedia.org/wiki/Eudaemons)). Comment le tricheur faisait-il pour saisir ces informations ? En tapant du pied. Un bel exemple d'habitronique, dès 1960 et à nos pieds.
+Le meilleur pour la fin : par deux fois, des petits malins ont essayé de tricher au casino en portant un ordinateur qui communiquait des informations à un complice ([source 1](https://www.engadget.com/2013/09/18/edward-thorp-father-of-wearable-computing/), [source 2](https://en.wikipedia.org/wiki/Eudaemons)). Comment le tricheur faisait-il pour saisir ces informations ? En tapant du pied. Un bel exemple d'habitronique, dès 1960 et à nos pieds.
 
 ![](/assets/images/DFRnbugUwAASueP.jpg)
 
@@ -57,7 +57,7 @@ Le meilleur pour la fin : par deux fois, des petits malins ont essayé de triche
 
 ## Ajout 2021
 
-Incorporer un calculateur à une chaussure peut aussi être glorieusement vain. Admirez cette [paire de sneakers](https://www.rockpapershotgun.com/my-sole-weeps-for-these-rtx-3080-shoes) ornée d'une carte graphique. Pourquoi une carte à 700 boules sur une chaussures ? Est-ce qu'elle a une vraie fonction ? Mystère. Les coopérations entre constructeurs informatiques et marques de mode, c'est toujours quelque chose.
+Incorporer un calculateur à une chaussure peut aussi être glorieusement vain. Admirez cette [paire de sneakers](https://www.rockpapershotgun.com/my-sole-weeps-for-these-rtx-3080-shoes) ornée d'une carte graphique. Pourquoi une carte à 700 boules sur une chaussures ? Est-ce qu'elle a une vraie fonction ? Mystère. Les coopérations entre constructeurs informatiques et marques de mode, c'est toujours quelque chose.
 
 
 
@@ -67,7 +67,7 @@ Sinon, via ce [tweet de Maxime Quijoux](https://twitter.com/mquijoux/status/1360
 
 
 
-Voici un exemple d'une [autre marque](https://www.grundig-gbs.com/fr/solutions/materiel/digta-transcription-starter-kit/) :
+Voici un exemple d'une [autre marque](https://www.grundig-gbs.com/fr/solutions/materiel/digta-transcription-starter-kit/) :
 
 ![](/assets/images/Digta-Transcription-Starter-Kit-540_Sp568.jpg "Pédalier de retranscription")
 

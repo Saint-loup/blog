@@ -1,5 +1,5 @@
 ---
-title: "Protocoles, normes, infrastructures : la main invisible de Google"
+title: "Protocoles, normes, infrastructures : la main invisible de Google"
 date: "2019-04-03"
 draft: true
 tags:
@@ -10,11 +10,11 @@ coverImage: "2019-04-02_22h11_15.png"
 
 ---
 
-Plusieurs journalistes ont raconté leurs périples pour se passer des géants américains du numérique (chez [Motherboard](https://motherboard.vice.com/en_us/article/ev3qw7/how-to-quit-apple-microsoft-google-facebook-amazon), chez [Gizmodo](https://gizmodo.com/i-cut-the-big-five-tech-giants-from-my-life-it-was-hel-1831304194)). Conclusion : c'est compliqué, tant ils sont omniprésents. Par exemple, Amazon (via AWS) c'est un tiers de l'infonuagique.
+Plusieurs journalistes ont raconté leurs périples pour se passer des géants américains du numérique (chez [Motherboard](https://motherboard.vice.com/en_us/article/ev3qw7/how-to-quit-apple-microsoft-google-facebook-amazon), chez [Gizmodo](https://gizmodo.com/i-cut-the-big-five-tech-giants-from-my-life-it-was-hel-1831304194)). Conclusion : c'est compliqué, tant ils sont omniprésents. Par exemple, Amazon (via AWS) c'est un tiers de l'infonuagique.
 
 Je vais décrire quelque chose d'à la fois similaire et différent:
 
-- D'abord, comment on peut passer la journée sans quitter l'univers Google -- avec des degrés de probabilité variable suivant les étapes : les productions Youtube n'ont pas la même prégnance que Youtube lui-même.
+- D'abord, comment on peut passer la journée sans quitter l'univers Google -- avec des degrés de probabilité variable suivant les étapes : les productions Youtube n'ont pas la même prégnance que Youtube lui-même.
 - Ensuite, comment cet univers n'est pas seulement constitué des offres qu'il propose et des filiales qu'il possède, mais aussi des langages, normes, et protocoles invisibles sur lesquelles il a un large contrôle.
 
 [

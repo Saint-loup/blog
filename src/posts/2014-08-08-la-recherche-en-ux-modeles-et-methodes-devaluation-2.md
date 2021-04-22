@@ -1,5 +1,5 @@
 ---
-title: "La recherche en UX : modèles et méthodes d’évaluation"
+title: "La recherche en UX : modèles et méthodes d’évaluation"
 date: "2014-08-08"
 tags:
   - "recherche"
@@ -15,13 +15,13 @@ Pour modéliser l'expérience utilisateur, il faut commencer par faire une typol
 
 A noter qu'il existe de nombreuses listes de ce type. Par exemple, plusieurs des sept « besoins psychologiques » [cités par Carine Lallemand](http://uxmind.eu/portfolio/ux-design-and-evaluation-cards/) ne sont pas sans évoquer les trois critères plus haut. En 2004 déjà, Peter Morville proposait son diagramme [en nid d'abeille](http://semanticstudios.com/publications/semantics/000029.php), selon un angle cette fois assez différent.
 
-De cette séparation en deux dimensions découlent des usages différents : En mode hédonique, l'utilisation est un plaisir en soi et les objectifs improvisés, contrairement au mode pragmatique, moins ouvert, où les tâches sont plus délibérées et délimitées temporellement. Cela peut orienter la conception : on n’utilise pas un système de la même manière selon qu’on soit en situation de loisir ou de travail.
+De cette séparation en deux dimensions découlent des usages différents : En mode hédonique, l'utilisation est un plaisir en soi et les objectifs improvisés, contrairement au mode pragmatique, moins ouvert, où les tâches sont plus délibérées et délimitées temporellement. Cela peut orienter la conception : on n’utilise pas un système de la même manière selon qu’on soit en situation de loisir ou de travail.
 
-Un dernier aspect intéressant est l’insistance sur la dimension temporelle : une expérience n'est pas façonnée seulement pendant l'interaction avec un système. D'une part, elle est construite par anticipation et rétrospection, d'autre part le résultat n'est pas d'un bloc. Différentes méthodes en étudieront différentes tranches, nommément l'UX anticipée, momentanée, épisodique et cumulative.
+Un dernier aspect intéressant est l’insistance sur la dimension temporelle : une expérience n'est pas façonnée seulement pendant l'interaction avec un système. D'une part, elle est construite par anticipation et rétrospection, d'autre part le résultat n'est pas d'un bloc. Différentes méthodes en étudieront différentes tranches, nommément l'UX anticipée, momentanée, épisodique et cumulative.
 
 ## Évaluation
 
-Je vous laisse aller voir la partie sur l’évaluation, qui rappelle des bases (types, applicabilité, importance des tests normalisés) et présentent l’originalité de ces méthodes par rapport aux évaluations classiques de l’utilisabilité. Le questionnaire Attratkdiff, toujours de Hassenzahl, me parait le plus prometteur et donne des résultats de ce genre :
+Je vous laisse aller voir la partie sur l’évaluation, qui rappelle des bases (types, applicabilité, importance des tests normalisés) et présentent l’originalité de ces méthodes par rapport aux évaluations classiques de l’utilisabilité. Le questionnaire Attratkdiff, toujours de Hassenzahl, me parait le plus prometteur et donne des résultats de ce genre :
 
 ![Résultats de deux services A et B sur les axes pragmatiques et hédoniques. La taille des carrés représente l’intervalle de confiance](/assets/images/Attrakdiff.png " Résultats de deux services A et B sur les axes pragmatiques et hédoniques. La taille des carrés représente l’intervalle de confiance")
 

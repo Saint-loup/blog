@@ -11,20 +11,20 @@ tags:
 
 ![Dans l'ordre, la barre de navigation des versions Web, Android, Windows et Mac](/assets/images/pocket.png " Dans l'ordre, la barre de navigation des versions Web, Android, Windows et Mac")
 
-Notez bien que :
+Notez bien que :
 
-- Je me suis concentré sur l'accès aux fonctions concernées. Il y a d'autres incohérences : dans le reste de la procédure (ex : ajout d'items sur Mac, modification groupée sur iPad), dans le choix des pictogrammes (mode d'affichage sur Windows), dans le concept de base (principe de double panneau avec l'article à droite sur Mac)...
+- Je me suis concentré sur l'accès aux fonctions concernées. Il y a d'autres incohérences : dans le reste de la procédure (ex : ajout d'items sur Mac, modification groupée sur iPad), dans le choix des pictogrammes (mode d'affichage sur Windows), dans le concept de base (principe de double panneau avec l'article à droite sur Mac)...
 - Un « non » dans le tableau signifie que la fonction est purement absente.
 - Le site web est responsive mais je n'ai inclus que la version « grand format ».
 - J'ai regroupé Paramètres et Aide par commodité car ils sont toujours placés à côté.
 
-Le tableau, je trouve, montre bien l'étendue des divergences :
+Le tableau, je trouve, montre bien l'étendue des divergences :
 
 - une moitié des fonctions est indisponible sur au moins une plateforme.
 - Aucune fonction étudiée n'est parfaitement homogène (c'est-à-dire offrant un accès identique sur toutes les versions).
 - Sur les cinq plateformes, on dénombre quatre accès différents pour trois fonctions
 
-Certaines divergences sont facilement explicables :
+Certaines divergences sont facilement explicables :
 
 - Pocket suit parfois les conventions propres à chaque plateforme. Par exemple, sur Android, les paramètres se trouvent habituellement dans le menu en haut à droite (celui accessible par les trois points) et ce menu n'a pas d'équivalent sur iOS.
 - Certaines fonctions ont moins d'intérêt sur certaines plateformes, par exemple un affichage en grille sur un petit smartphone.
@@ -32,7 +32,7 @@ Certaines divergences sont facilement explicables :
 
 Mais ça n'explique pas l'ampleur du problème. J'y vois surtout un manque de volonté des créateurs. Par exemple, la version Windows / Chrome OS utilise les même technologies que la version web (en gros c'est une web app lancée en local). Les deux devraient donc être relativement faciles à faire converger, pourtant la version Windows est l'une des plus divergentes.
 
-Un facteur supplémentaire d'incohérence est temporel : des mises à jour modifient fréquemment les interfaces et ajoutent à la confusion. Je ne saurais dire si l'homogénéité est tendanciellement croissante.
+Un facteur supplémentaire d'incohérence est temporel : des mises à jour modifient fréquemment les interfaces et ajoutent à la confusion. Je ne saurais dire si l'homogénéité est tendanciellement croissante.
 
 Foin de blabla, voici le tableau.
 

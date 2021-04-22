@@ -6,7 +6,7 @@ tags:
 
 ---
 
-- Connaissiez-vous ces paradigmes d’interaction ? Les interfaces [basées sur le zoom](http://en.wikipedia.org/wiki/Zooming_user_interface), celles basées sur le [franchissement](http://en.wikipedia.org/wiki/Crossing-based_interface) plutôt que sur le pointage, celles basées sur le fait de [gratter une surface](http://en.wikipedia.org/wiki/Scratch_input).
+- Connaissiez-vous ces paradigmes d’interaction ? Les interfaces [basées sur le zoom](http://en.wikipedia.org/wiki/Zooming_user_interface), celles basées sur le [franchissement](http://en.wikipedia.org/wiki/Crossing-based_interface) plutôt que sur le pointage, celles basées sur le fait de [gratter une surface](http://en.wikipedia.org/wiki/Scratch_input).
 
 - [Le son d’une porte de voiture quand elle s’ouvre et se ferme](http://news.bbc.co.uk/2/hi/programmes/click_online/9533769.stm) est une chose très étudiée et travaillée. Un bon exemple de soin pour l’[expérience client](http://en.wikipedia.org/wiki/Customer_experience) et de l’importance de la [première impression](http://en.wikipedia.org/wiki/Out-of-box_experience).
 

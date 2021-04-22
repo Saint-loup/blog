@@ -13,7 +13,7 @@ tags:
 
 On change des thèmes habituels de ce blog avec des morceaux choisis de l'essai _Paris sans le peuple – La gentrification de la capitale_, d'[Anne Clerval](http://acp.u-pem.fr/equipe/anne-clerval/) et aux Éditions de la découverte.
 
-> Racontant la reconquête du Paris communard par l’armée versaillaise en mai 1871, Louise Michel décrivait ainsi la dernière barricade située rue de la Fontaine-au-Roi (11e arrondissement), au pied de la colline de Belleville : « La barricade de la rue Saint-Maur vient de mourir, celle de la rue Fontaine-au-Roi s’entête, crachant la mitraille à la face sanglante de Versailles. On sent la bande furieuse des loups qui s’approchent, il n’y a plus à la Commune qu’une parcelle de Paris, de la rue du Faubourg-du-Temple au boulevard de Belleville. Rue Ramponeau, un seul combattant à une barricade arrêta un instant Versailles. Les seuls encore debout, en ce moment où se tait le canon du Père-Lachaise, sont ceux de la rue Fontaine-au-Roi. Ils n’ont plus pour longtemps de mitraille, celle de Versailles tonne sur eux. »
+> Racontant la reconquête du Paris communard par l’armée versaillaise en mai 1871, Louise Michel décrivait ainsi la dernière barricade située rue de la Fontaine-au-Roi (11e arrondissement), au pied de la colline de Belleville : « La barricade de la rue Saint-Maur vient de mourir, celle de la rue Fontaine-au-Roi s’entête, crachant la mitraille à la face sanglante de Versailles. On sent la bande furieuse des loups qui s’approchent, il n’y a plus à la Commune qu’une parcelle de Paris, de la rue du Faubourg-du-Temple au boulevard de Belleville. Rue Ramponeau, un seul combattant à une barricade arrêta un instant Versailles. Les seuls encore debout, en ce moment où se tait le canon du Père-Lachaise, sont ceux de la rue Fontaine-au-Roi. Ils n’ont plus pour longtemps de mitraille, celle de Versailles tonne sur eux. »
 
 * * *
 
@@ -21,7 +21,7 @@ On change des thèmes habituels de ce blog avec des morceaux choisis de l'essai 
 
 * * *
 
-> Neil Smith, géographe new-yorkais qui fut l’élève de David Harvey, inscrit la gentrification dans les logiques de développement inégal propres au capitalisme : il montre que la dévalorisation de certains espaces (dégradation du bâti et paupérisation de la population) n’est pas un accident, mais au contraire une aubaine pour le réinvestissement lucratif du capital dans la revalorisation de ces espaces. La gentrification est donc avant tout la conséquence de la circulation du capital à la recherche du profit, circulation qui s’inscrit sans cesse dans des cycles de valorisation/dévalorisation/revalorisation alimentant la différenciation spatiale. Parallèlement, la gentrification des quartiers populaires centraux sert les stratégies de distinction sociale d’une petite bourgeoisie intellectuelle, pleine ascension depuis les années 1970.
+> Neil Smith, géographe new-yorkais qui fut l’élève de David Harvey, inscrit la gentrification dans les logiques de développement inégal propres au capitalisme : il montre que la dévalorisation de certains espaces (dégradation du bâti et paupérisation de la population) n’est pas un accident, mais au contraire une aubaine pour le réinvestissement lucratif du capital dans la revalorisation de ces espaces. La gentrification est donc avant tout la conséquence de la circulation du capital à la recherche du profit, circulation qui s’inscrit sans cesse dans des cycles de valorisation/dévalorisation/revalorisation alimentant la différenciation spatiale. Parallèlement, la gentrification des quartiers populaires centraux sert les stratégies de distinction sociale d’une petite bourgeoisie intellectuelle, pleine ascension depuis les années 1970.
 
 * * *
 
@@ -33,7 +33,7 @@ On change des thèmes habituels de ce blog avec des morceaux choisis de l'essai 
 
 * * *
 
-> Cela renvoie à l’« effet-paysage » dont parlait Patrick Simon à propos de la mixité sociale pour les nouveaux habitants du quartier de Belleville : celle-ci est surtout un décor, une ambiance pour les gentrifieurs, qui ont peu d’interactions réelles avec les autres classes sociales.
+> Cela renvoie à l’« effet-paysage » dont parlait Patrick Simon à propos de la mixité sociale pour les nouveaux habitants du quartier de Belleville : celle-ci est surtout un décor, une ambiance pour les gentrifieurs, qui ont peu d’interactions réelles avec les autres classes sociales.
 
 * * *
 
@@ -65,7 +65,7 @@ On change des thèmes habituels de ce blog avec des morceaux choisis de l'essai 
 
 * * *
 
-> On saisit là les paradoxes et les impasses du quartier comme échelle privilégiée de mixité sociale : alors que l’habitat social de fait des quartiers populaires est progressivement détruit, le fait de privilégier dans ces quartiers la création de logements sociaux pour les classes moyennes ne permet pas de compenser cette perte et la réduction des logements accessibles aux classes populaires dans la ville en général. En voulant favoriser la mixité sociale dans tous les quartiers de Paris, sans tenir compte du processus de gentrification, la mairie contribue de fait à réduire la mixité sociale à l’échelle de la ville.
+> On saisit là les paradoxes et les impasses du quartier comme échelle privilégiée de mixité sociale : alors que l’habitat social de fait des quartiers populaires est progressivement détruit, le fait de privilégier dans ces quartiers la création de logements sociaux pour les classes moyennes ne permet pas de compenser cette perte et la réduction des logements accessibles aux classes populaires dans la ville en général. En voulant favoriser la mixité sociale dans tous les quartiers de Paris, sans tenir compte du processus de gentrification, la mairie contribue de fait à réduire la mixité sociale à l’échelle de la ville.
 
 * * *
 
@@ -85,7 +85,7 @@ On change des thèmes habituels de ce blog avec des morceaux choisis de l'essai 
 
 * * *
 
-> \[…\] révélatrice de la sélection interne aux classes populaires qu’a entraînée la construction massive de logements sociaux en banlieue et que poursuit la gentrification : ce sont les plus pauvres et les plus précaires qui sont restés.
+> \[…\] révélatrice de la sélection interne aux classes populaires qu’a entraînée la construction massive de logements sociaux en banlieue et que poursuit la gentrification : ce sont les plus pauvres et les plus précaires qui sont restés.
 
 * * *
 

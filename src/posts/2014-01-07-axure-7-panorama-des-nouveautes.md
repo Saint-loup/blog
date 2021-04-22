@@ -1,5 +1,5 @@
 ---
-title: "Axure 7 : panorama des nouveautés"
+title: "Axure 7 : panorama des nouveautés"
 date: "2014-01-07"
 tags:
   - "prototypage"
@@ -10,15 +10,15 @@ Pour ceux qui ne sont pas sortis de l'industrie du livrable au kilo[^Cf. l'artic
 
 Je vous préviens, l'article est plein d'anglicismes et de features (argh ça commence) qui vous paraitront sans doute dérisoires.
 
-- Meilleure gestion du texte : ajout de widgets header, libellé, paragraphe (avec lorem ipsum intégré !). Le wrapping du texte peut se désactiver au double clic ou via une option (ce qui permet au widget de se redimensionner comme un grand suivant la longueur du texte).
+- Meilleure gestion du texte : ajout de widgets header, libellé, paragraphe (avec lorem ipsum intégré !). Le wrapping du texte peut se désactiver au double clic ou via une option (ce qui permet au widget de se redimensionner comme un grand suivant la longueur du texte).
 - Chaque écran possède maintenant un historique d'action, changer d'écrans n'annule pas la possibilité d'annuler une action. J'en pleurerais.
 - Possibilité d'ajouter des dossiers dans l'arborescence. J'en pleure.
-- Interactions : beaucoup plus d'évènements gérés, scripting étendu.
+- Interactions : beaucoup plus d'évènements gérés, scripting étendu.
 - Des [interactions de plus haut niveau](http://www.axure.com/forum/tips-tricks-examples/7951-hide-show-options.html) sont incluses (pour faciliter la gestion du z-index, la création de popins, d'accordéons ou de menus au survol).
 - Lien rapide entre pages, pour éviter l'usine à gaz qu'est le gestionnaire d'interactions.
 - Les widgets peuvent être cachés ou déplacés, comme un panneau dynamique. Le gestionnaire de panneau dynamique inclut les widgets.
 - Les dynamic panels peuvent s'ajuster automatiquement à la taille du contenu.
-- Moins de limites artificielles dans la personnalisation des widgets : possibilité de transformer un widget en un autre type de widget, de changer la hauteur d'un droplist (ie. un menu "select"). Les menus de navigationt sont moins galère à redimensionner.
+- Moins de limites artificielles dans la personnalisation des widgets : possibilité de transformer un widget en un autre type de widget, de changer la hauteur d'un droplist (ie. un menu "select"). Les menus de navigationt sont moins galère à redimensionner.
 - Un nouveau mode de prévisualisation rapide des maquettes, en plus du classique, qui fonctionne un peu comme [LiveReload](http://livereload.com/). La première génération est très rapide et il suffit de rafraichir le navigateur pour que les changements soient pris en compte. Chaque chargement de page est plus long, mais plus besoin de générer en permanence dans Axure.
 - Possibilité de chercher dans l'arborescence d'une maquette HTML et de surligner les éléments interactifs.
 - Gestion des polices d'icônes, ce qui permet d'avoir des icônes colorisables et redimensionnables sans perte de qualité.

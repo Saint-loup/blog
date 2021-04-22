@@ -8,9 +8,9 @@ tags:
 
 ---
 
-Dans sa [thèse](http://www.benjaminthierry.fr/2013/12/15/soutenance-de-these/) magistrale sur l'histoire des IHM, Benjamin Thierry relate l'influence immédiate qu'a eue la sortie du Macintosh sur l'industrie : en 1984, de nombreux vendeurs commencent à proposer des souris et des interfaces graphiques. L'industrie adopte rapidement autour des même conventions.
+Dans sa [thèse](http://www.benjaminthierry.fr/2013/12/15/soutenance-de-these/) magistrale sur l'histoire des IHM, Benjamin Thierry relate l'influence immédiate qu'a eue la sortie du Macintosh sur l'industrie : en 1984, de nombreux vendeurs commencent à proposer des souris et des interfaces graphiques. L'industrie adopte rapidement autour des même conventions.
 
-Et pour les voitures ? Un modèle précis est-il à l’origine de l’agencement moderne des commandes ?
+Et pour les voitures ? Un modèle précis est-il à l’origine de l’agencement moderne des commandes ?
 
 On pourrait penser à [la Ford T](http://www.modelt.ca/drive-fs.html), puisqu'elle a révolutionné la production et le marché des automobiles. Mais elle était compliquée à opérer et n’a pas eu de grande influence à ce niveau là. L’accélérateur était sous le volant à droite et trois pédales servaient respectivement à l’embrayage, à la marche arrière et au frein. Le levier à gauche servait à basculer entre les modes haute vitesse, neutre et frein d'urgence, en combinaison avec l'embrayge. [Cette page](http://www.modelt.ca/drive-fs.html) vous donnera une idée plus juste de la complexité du bousin.
 
