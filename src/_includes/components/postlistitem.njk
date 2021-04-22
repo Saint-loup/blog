@@ -23,11 +23,11 @@
 
 	{% if postListItemStyle.complete %}
 
-		<div class" {{ colors.excerptCustom or colors.excerptDefault }}">
+		<p class="label">
 
 			{{ post.data.excerpt |  removeMD}}
 			{{ post.data.page.excerpt | removeMD }}
-		</div>
+		</p>
 	{% endif %}
 
 	{#	{% endif %}

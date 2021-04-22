@@ -33,11 +33,11 @@ postListItemStyle:
       <ul class="project-list " >
         {% for project in projects | reverse %}
           <li class="my-8 list-none project">
-            <div class="text-2xl font-bold leading-7 text-accent2 lg:text-3xl name ">
+            <p class="text-2xl font-bold leading-7 text-accent2 lg:text-3xl name ">
               <a href="{{project.link}}">{{project.name}}</a>
-            </div>
+            </p>
             {#<img class="picture" src="{{project.img}}"></img>#}
-            <div class="text-lg description">{{project.description}}</div>
+            <p class="text-lg description">{{project.description}}</p>
           </li>
         {% endfor %}
       </ul>
