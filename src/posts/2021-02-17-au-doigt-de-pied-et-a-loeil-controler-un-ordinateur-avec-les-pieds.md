@@ -39,7 +39,7 @@ Quoi d'autre ? On peut parler de l'industrie, où les risques d'activation int
 
 Les utilisateurs avec des problèmes de posture ou de motricité peuvent utiliser toute sorte de "[souris à pied](https://en.wikipedia.org/wiki/Footmouse)", comme cette fascinante [Souris-Sandale](http://www.yankodesign.com/2010/04/07/flip-flop-mouse/).
 
-![Souris-sandale ou toe-mouse](/assets/images/toe_mouse.jpg "Souris-sandale ou toe-mouse]")
+![Souris-sandale ou toe-mouse](/assets/images/toe_mouse.jpg "Souris-sandale ou toe-mouse")
 
 La première [machine à écrire](https://en.wikipedia.org/wiki/Sholes_and_Glidden_typewriter) à être largement utilisée comprenait une pédale pour la touche Entrée. Toujours dans l'édition de texte, la [VIM Clutch](https://github.com/alevchuk/vim-clutch) constitue un exemple intéressant de convergence entre matériel et logiciel. L'éditeur de texte VIM fonctionne par modes : un mode normal, un pour l'insertion, un pour la sélection de texte, etc. Ça parait bizarre mais c'est beaucoup plus [sensé](http://www.viemu.com/a-why-vi-vim.html) que ça n'en a l'air. Un maitre-nerd a donc bricolé une pédale qui permet, tant qu'on la maintient, de rester dans le mode le plus courant. Ça rappelle un peu les pédaliers de piano et c'est assez logique d'avoir une touche dédiée et accessible à part pour une action aussi fondamentale.
 

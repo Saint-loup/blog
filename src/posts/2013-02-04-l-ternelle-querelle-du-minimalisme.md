@@ -17,7 +17,7 @@ En 2006, les créateurs de Rogue Amoeba (un éditeur de logiciels pour Mac) plai
 
 En 2001 sortait Mac OS X, avec ses boutons bleus reluisants et ses animations. Alors que Jobs vantait un graphisme qu’on avait envie de lécher (je cite), on cria au “_style over substance_”, on reprocha aux designers d’Apple de se faire plaisir et on rappela que l’esthétique pouvait desservir l’utilisabilité. Aujourd’hui, on rappelle que Jony Ive, chantre du design épuré, a commis des coques d’iMac dans ce genre :
 
-[![iMac kitsch](/assets/images/iMac-kitsch.png)](http://toutcequibouge.net/toutcequibouge/wp-content/uploads/2013/02/iMac-kitsch.png)
+[iMac kitsch](/assets/images/iMac-kitsch.png)]
 
 En 1928, Jan Tschichold publiait _The New Typography_, ouvrage où il appelle de ses vœux la naissance d’une [typographie moderne](http://en.wikipedia.org/wiki/Modern_typography)[^Il dit « typographie » mais parle en fait du graphisme en général. L’ouvrage est consultable [sur Scribd](http://www.scribd.com/doc/82664550/Tschichold-Jan-The-New-Typography-Eng), après inscription.]. Cela signifiait pour lui une « rupture complète avec la typographie ancienne » et impliquait de « se débarrasser de tout concepts décoratifs et de se tourner vers le design fonctionnel » (je cite, p. 64). Il s’oppose particulièrement à la copie servile de styles classiques (par exemple de la part du mouvement _Arts & Crafts_) et à l’inventivité désordonnée et surchargée de l’Art Nouveau. À la place, il propose la recherche de formes simples, rationnelles et en phase avec leur temps. Il ne faut pas entendre ce modernisme de manière abstraite : il ne s’agit pas de prétexter un « esprit du temps » commode et évanescent, mais d’être en adéquation avec la technique et les besoins de l’époque.
 

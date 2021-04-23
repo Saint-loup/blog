@@ -12,6 +12,6 @@ Lorsqu’on fait le visuel d’une interface, [on a coutume](http://uxmovement.c
 
 Une expérience très simple permet de le montrer : si on prend des formes avec des frontières nettes, on a l’impression que celles qui sont plus claires dans la partie supérieures sont convexes, alors que les autres sont concaves. Notez à quel point on distingue facilement les deux types, mêmes lorsqu’ils sont mélangés. De plus, le phénomène se produit même on met la tête à l’envers. Le fait que ce soit aussi saillant visuellement et que cela ne soit pas corrigé par l’orientation de la tête (alors que l’[équilibre](http://fr.wikipedia.org/wiki/Syst%C3%A8me_vestibulaire) est lui aussi un truc assez fondamental) suggèrent que c’est un principe assez primitif de la perception animale.
 
-![](/assets/images/2008-09-17_dots3.jpg)
+![Disques disposés en grille, avec un dégradé du noir au blanc](/assets/images/2008-09-17_dots3.jpg)
 
 [Ramachandran](http://en.wikipedia.org/wiki/Vilayanur_S._Ramachandran) est à l’origine des travaux autour de ce phénomène. L’image est tirée de [cet article](https://www.scientificamerican.com/article/seeing-is-believing-aug-08/), dont je recommande la lecture.
