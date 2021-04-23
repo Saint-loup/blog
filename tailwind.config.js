@@ -77,6 +77,9 @@ module.exports = {
 				},
 				DEFAULT: {
 					css: {
+						figcaption: {
+							textAlign: "center"
+						},
 						blockquote: {
 							fontWeight: 'normal',
 						},

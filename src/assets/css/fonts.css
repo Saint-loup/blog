@@ -97,12 +97,12 @@
     font-display: swap;
 }
 
-@font-face {
+/*@font-face {
     font-family: 'Brandon';
     src: local('Brandon Text Medium Italic'), local('BrandonText-MediumItalic'),
         url('/assets/css/fonts/brandontext-mediumitalic.woff2') format('woff2');
     font-weight: 500;
     font-style: italic;
     font-display: swap;
-}
+}*/
 
