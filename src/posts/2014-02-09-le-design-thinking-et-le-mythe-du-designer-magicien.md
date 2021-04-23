@@ -1,6 +1,6 @@
 ---
 title: "Le design thinking et le mythe du designer-magicien"
-date: "2014-02-09"
+date: 2014-02-09
 tags:
   - "features"
   - "place du concepteur"

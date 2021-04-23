@@ -1,6 +1,6 @@
 ---
 title: "Quelques exemples de design fantaisiste voire un brin pervers"
-date: "2014-03-30"
+date: 2014-03-30
 tags:
   - "objets"
   - "veille"

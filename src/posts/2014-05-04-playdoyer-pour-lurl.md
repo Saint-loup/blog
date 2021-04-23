@@ -1,6 +1,6 @@
 ---
 title: "Plaidoyer pour l'URL"
-date: "2014-05-04"
+date: 2014-05-04
 tags:
   - "features"
 

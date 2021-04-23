@@ -1,6 +1,6 @@
 ---
 title: "Archéologie des interfaces – Ou pourquoi il ne faut pas faire une refonte à moitié"
-date: "2016-08-18"
+date: 2016-08-18
 tags:
   - "critique"
   - "histoire"

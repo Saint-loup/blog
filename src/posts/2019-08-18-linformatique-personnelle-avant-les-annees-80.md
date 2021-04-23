@@ -1,6 +1,6 @@
 ---
 title: "Utilisateurs ou citoyens ? L’informatique personnelle avant les années 80"
-date: "2019-08-18"
+date: 2019-08-18
 tags:
   - "histoire"
   - "utilisateurs"

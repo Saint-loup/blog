@@ -1,6 +1,6 @@
 ---
 title: "Sur quelques anicroches avec les applications universelles de Windows 10"
-date: "2017-01-02"
+date: 2017-01-02
 tags:
   - "critique"
   - "windows"

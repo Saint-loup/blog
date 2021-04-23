@@ -1,6 +1,6 @@
 ---
 title: "Les liens de la semaine #7"
-date: "2014-08-09"
+date: 2014-08-09
 tags:
   - "veille"
 

@@ -1,6 +1,6 @@
 ---
 title: "Difficultés de navigation entre sites web et applications mobiles"
-date: "2014-04-24"
+date: 2014-04-24
 tags:
   - "mobile"
 

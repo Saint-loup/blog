@@ -1,7 +1,7 @@
 ---
 draft: true
 title: "Digital ou numérique : ni baratin ni pédantisme"
-date: "2016-08-15"
+date: 2016-08-15
 tags:
   - "reflexions"
 

@@ -1,6 +1,6 @@
 ---
 title: "Axure 7 : panorama des nouveautés"
-date: "2014-01-07"
+date: 2014-01-07
 tags:
   - "prototypage"
 

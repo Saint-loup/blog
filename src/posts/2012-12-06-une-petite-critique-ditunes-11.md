@@ -1,6 +1,6 @@
 ---
 title: "Une petite critique d'iTunes 11"
-date: "2012-12-06"
+date: 2012-12-06
 tags:
   - "critique"
   - "mac"

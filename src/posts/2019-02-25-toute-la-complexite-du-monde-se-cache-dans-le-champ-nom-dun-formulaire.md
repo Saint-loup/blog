@@ -1,6 +1,6 @@
 ---
 title: "Toute la complexité du monde se cache dans le champ Nom d'un formulaire"
-date: "2019-02-25"
+date: 2019-02-25
 tags:
   - "inclusion"
   - "réflexions"

@@ -1,6 +1,6 @@
 ---
 title: "Le futur sera trivial"
-date: "2016-10-02"
+date: 2016-10-02
 tags:
   - "futur"
   - "réflexions"

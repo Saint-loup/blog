@@ -1,6 +1,6 @@
 ---
 title: "Les liens de la semaine #4"
-date: "2012-08-01"
+date: 2012-08-01
 tags:
   - "veille"
 

@@ -1,6 +1,6 @@
 ---
 title: "Protocoles, normes, infrastructures : la main invisible de Google"
-date: "2019-04-03"
+date: 2019-04-03
 draft: true
 tags:
   - "politique"

@@ -1,6 +1,6 @@
 ---
 title: "Les ancêtres d'Excel et de Powerpoint"
-date: "2016-02-14"
+date: 2016-02-14
 tags:
   - "histoire"
   - "objets"

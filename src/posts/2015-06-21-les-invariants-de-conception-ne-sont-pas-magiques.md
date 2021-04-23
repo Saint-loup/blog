@@ -1,6 +1,6 @@
 ---
 title: "Les invariants de conception ne sont pas magiques"
-date: "2015-06-21"
+date: 2015-06-21
 tags:
   - "mobile"
   - "objets"

@@ -1,6 +1,6 @@
 ---
 title: "The Uncanny Valley"
-date: "2012-06-13"
+date: 2012-06-13
 tags:
   - "futur"
   - "utilisateurs"

@@ -1,6 +1,6 @@
 ---
 title: "Nouvelle interface de Firefox : premières impressions"
-date: "2013-03-31"
+date: 2013-03-31
 tags:
   - "critique"
 

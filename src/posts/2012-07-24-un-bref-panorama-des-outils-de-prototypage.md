@@ -1,6 +1,6 @@
 ---
 title: "Un bref panorama des outils de prototypage"
-date: "2012-07-24"
+date: 2012-07-24
 tags:
   - "prototypage"
 

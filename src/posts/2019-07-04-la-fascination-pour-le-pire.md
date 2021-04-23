@@ -1,6 +1,6 @@
 ---
 title: "La fascination pour le pire"
-date: "2019-07-04"
+date: 2019-07-04
 tags:
   - "conception"
 coverImage: "012cukejqs1z.png"

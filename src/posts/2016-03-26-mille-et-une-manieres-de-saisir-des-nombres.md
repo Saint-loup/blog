@@ -1,6 +1,6 @@
 ---
 title: "Mille et une manieres de saisir des nombres"
-date: "2016-03-26"
+date: 2016-03-26
 tags:
   - "histoire"
   - "objets"

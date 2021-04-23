@@ -1,6 +1,6 @@
 ---
 title: "De quelques similitudes entre utilisabilité et sécurité"
-date: "2015-09-06"
+date: 2015-09-06
 tags:
   - "réflexions"
   - "sécurité"

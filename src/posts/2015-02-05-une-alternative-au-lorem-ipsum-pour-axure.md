@@ -1,6 +1,6 @@
 ---
 title: "Une alternative au Lorem ipsum pour Axure"
-date: "2015-02-05"
+date: 2015-02-05
 tags:
   - "prototypage"
 

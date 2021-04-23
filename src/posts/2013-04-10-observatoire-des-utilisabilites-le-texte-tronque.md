@@ -1,6 +1,6 @@
 ---
 title: "Observatoire des utilisabilités : le texte tronqué"
-date: "2013-04-10"
+date: 2013-04-10
 tags:
   - "critique"
 

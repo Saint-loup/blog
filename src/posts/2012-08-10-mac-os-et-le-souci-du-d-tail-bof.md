@@ -1,6 +1,6 @@
 ---
 title: "Mac OS et le souci du détail : bof"
-date: "2012-08-10"
+date: 2012-08-10
 tags:
   - "critique"
   - "mac"

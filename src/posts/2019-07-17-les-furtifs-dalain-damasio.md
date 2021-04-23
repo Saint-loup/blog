@@ -1,6 +1,6 @@
 ---
 title: "Les Furtifs d'Alain Damasio : plus de la même chose"
-date: "2019-07-17"
+date: 2019-07-17
 tags:
   - "futur"
   - "litterature"

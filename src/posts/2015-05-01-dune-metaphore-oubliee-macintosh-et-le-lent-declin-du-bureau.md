@@ -1,6 +1,6 @@
 ---
 title: "D'une métaphore oubliée : Macintosh et le lent déclin du bureau"
-date: "2015-05-01"
+date: 2015-05-01
 tags:
   - "features"
   - "histoire"

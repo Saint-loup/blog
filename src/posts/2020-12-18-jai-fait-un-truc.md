@@ -1,6 +1,6 @@
 ---
 title: "J'ai fait un truc"
-date: "2020-12-18"
+date: 2020-12-18
 tags:
   - "travaux"
 

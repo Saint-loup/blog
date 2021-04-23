@@ -1,6 +1,6 @@
 ---
 title: "La recherche en UX : modèles et méthodes d’évaluation"
-date: "2014-08-08"
+date: 2014-08-08
 tags:
   - "recherche"
   - "ux"

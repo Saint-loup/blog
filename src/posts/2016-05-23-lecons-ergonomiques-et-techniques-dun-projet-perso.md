@@ -1,6 +1,6 @@
 ---
 title: "Leçons ergonomiques et techniques d'un projet perso"
-date: "2016-05-23"
+date: 2016-05-23
 tags:
   - "travaux"
 ---

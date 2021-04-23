@@ -1,6 +1,6 @@
 ---
 title: "Cogner à son ordi"
-date: "2016-04-12"
+date: 2016-04-12
 tags:
   - "objets"
 

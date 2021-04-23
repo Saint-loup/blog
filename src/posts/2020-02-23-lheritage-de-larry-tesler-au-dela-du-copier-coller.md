@@ -1,6 +1,6 @@
 ---
 title: "L'héritage de Larry Tesler au-delà du copier-coller"
-date: "2020-02-23"
+date: 2020-02-23
 tags:
   - "conception"
   - "histoire"

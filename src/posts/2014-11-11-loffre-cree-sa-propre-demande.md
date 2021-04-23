@@ -1,6 +1,6 @@
 ---
 title: "L'offre crée sa propre demande"
-date: "2014-11-11"
+date: 2014-11-11
 tags:
   - "réflexions"
   - "systemes complexes"

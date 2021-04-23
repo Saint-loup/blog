@@ -1,6 +1,6 @@
 ---
 title: "« Cette voiture a été conçue pour quelqu’un avec trois bras et une jambe »"
-date: "2014-09-05"
+date: 2014-09-05
 tags:
   - "histoire"
   - "objets"

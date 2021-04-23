@@ -1,6 +1,6 @@
 ---
 title: "Le responsive design ailleurs que sur le web"
-date: "2014-06-12"
+date: 2014-06-12
 tags:
   - "conception"
   - "responsive"

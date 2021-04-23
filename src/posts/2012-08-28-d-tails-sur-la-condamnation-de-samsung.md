@@ -1,6 +1,6 @@
 ---
 title: "Détails sur la condamnation de Samsung"
-date: "2012-08-28"
+date: 2012-08-28
 tags:
   - "droit"
   - "politique"
