@@ -212,9 +212,9 @@ module.exports = function (eleventyConfig) {
 		return [...tagSet]
 	})
 
-	eleventyConfig.addCollection("catList", function (collectionApi) {
-		return collectionApi.getFilteredByTag("travaux");
-	});
+	/*	eleventyConfig.addCollection("catList", function (collectionApi) {
+			return collectionApi.getFilteredByTag("travaux");
+		});*/
 
 
 	return {
