@@ -38,7 +38,7 @@ postListItemStyle:
   {% include 'components/postslist.njk' %}
 
   <div class="my-16 border-t border-gray-300 container-wide">
-    <h3 class="{{ colors.tagPillCustom.text or colors.tagPillDefault.text }}">Tous les mots clés</h3>
+    <h3 class="{{ colors.tagPillCustom.text or colors.tagPillDefault.text }}">Tous les thèmes</h3>
     {% set tags = collections.tagList %}
     {% include "components/tagpills.njk" %}
   </div>
