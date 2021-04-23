@@ -38,7 +38,6 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
 			};
 
 			if (figureEl.children.length > 1) {
-				// <figcaption> content
 				item.title = figureEl.children[1].innerHTML;
 			}
 

@@ -1,11 +1,10 @@
-const blockImagePlugin = require("markdown-it-block-image");
 const markdownItAttributes = require('markdown-it-attrs');
 const markdownItContainer = require('markdown-it-container');
 const markdownIt = require('markdown-it')
 const markdownItFootnote = require('markdown-it-footnote');
 const markdownItAnchor = require('markdown-it-anchor');
 const slugify = require('./slugify.js');
-
+const implicitFigures = require('markdown-it-image-figures');
 
 // https://www.toptal.com/designers/htmlarrows/punctuation/section-sign/
 const markdownItAnchorOptions = {
@@ -75,8 +74,7 @@ const md = markdownIt(options)
 	.use(markdownItAnchor, markdownItAnchorOptions)
 	.use(markdownItAttributes)
 	.use(markdownItContainer, 'info')
-	.use(blockImagePlugin, {
-		outputContainer: 'figure',
-		containerClassName: "image-container"
-	});
+	.use(implicitFigures, { figcaption: true });
+
+
 module.exports = md;
