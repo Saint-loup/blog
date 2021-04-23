@@ -9,8 +9,8 @@ tags:
 
 ---
 
-![paris sans le peuple](/assets/images/paris-sans-le-peuple.jpg)
-
+<!--![couverture du livre paris sans le peuple](/assets/images/paris-sans-le-peuple.jpg)
+-->
 On change des thèmes habituels de ce blog avec des morceaux choisis de l'essai _Paris sans le peuple – La gentrification de la capitale_, d'[Anne Clerval](http://acp.u-pem.fr/equipe/anne-clerval/) et aux Éditions de la découverte.
 
 > Racontant la reconquête du Paris communard par l’armée versaillaise en mai 1871, Louise Michel décrivait ainsi la dernière barricade située rue de la Fontaine-au-Roi (11e arrondissement), au pied de la colline de Belleville : « La barricade de la rue Saint-Maur vient de mourir, celle de la rue Fontaine-au-Roi s’entête, crachant la mitraille à la face sanglante de Versailles. On sent la bande furieuse des loups qui s’approchent, il n’y a plus à la Commune qu’une parcelle de Paris, de la rue du Faubourg-du-Temple au boulevard de Belleville. Rue Ramponeau, un seul combattant à une barricade arrêta un instant Versailles. Les seuls encore debout, en ce moment où se tait le canon du Père-Lachaise, sont ceux de la rue Fontaine-au-Roi. Ils n’ont plus pour longtemps de mitraille, celle de Versailles tonne sur eux. »
