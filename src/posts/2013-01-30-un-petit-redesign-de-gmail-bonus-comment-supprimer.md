@@ -1,6 +1,6 @@
 ---
 title: "Un petit redesign de Gmail (bonus : supprimer la barre noire des sites Google)"
-date: "2013-01-30"
+date: 2013-01-30
 tags:
   - "travaux"
 

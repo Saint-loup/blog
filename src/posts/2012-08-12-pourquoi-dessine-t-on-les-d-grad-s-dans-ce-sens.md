@@ -1,6 +1,6 @@
 ---
 title: "Pourquoi dessine-t-on les dégradés dans ce sens ?"
-date: "2012-08-12"
+date: 2012-08-12
 tags:
   - "graphisme"
   - "recherche"

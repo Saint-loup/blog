@@ -1,6 +1,6 @@
 ---
 title: "Les liens de la semaine 2"
-date: "2012-07-02"
+date: 2012-07-02
 tags:
   - "veille"
 

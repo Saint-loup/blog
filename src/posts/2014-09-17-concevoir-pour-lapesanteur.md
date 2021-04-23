@@ -1,6 +1,6 @@
 ---
 title: "Concevoir pour l'apesanteur"
-date: "2014-09-17"
+date: 2014-09-17
 tags:
   - "objets"
 

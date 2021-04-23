@@ -1,6 +1,6 @@
 ---
 title: "Le germaphobe et l'écran tactile"
-date: "2015-05-08"
+date: 2015-05-08
 tags:
   - "inclusion"
   - "objets"

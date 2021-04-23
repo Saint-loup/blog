@@ -1,6 +1,6 @@
 ---
 title: "Les liens de la semaine 1"
-date: "2012-06-06"
+date: 2012-06-06
 tags:
   - "veille"
 

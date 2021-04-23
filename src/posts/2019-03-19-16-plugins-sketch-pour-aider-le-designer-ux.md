@@ -1,6 +1,6 @@
 ---
 title: "16 extensions Sketch pour aider le designer UX"
-date: "2019-03-19"
+date: 2019-03-19
 tags:
   - "prototypage"
   - "sketch"

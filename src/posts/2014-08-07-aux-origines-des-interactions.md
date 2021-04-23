@@ -1,6 +1,6 @@
 ---
 title: "Aux origines des interactions"
-date: "2014-08-07"
+date: 2014-08-07
 tags:
   - "histoire"
 

@@ -1,6 +1,6 @@
 ---
 title: "Design et compromis : le cas du nouveau Blackberry"
-date: "2014-09-28"
+date: 2014-09-28
 tags:
   - "mobile"
   - "objets"

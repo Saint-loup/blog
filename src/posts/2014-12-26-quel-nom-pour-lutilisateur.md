@@ -1,6 +1,6 @@
 ---
 title: "Quel nom pour l'utilisateur"
-date: "2014-12-26"
+date: 2014-12-26
 tags:
   - "utilisateurs"
 

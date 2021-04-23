@@ -1,6 +1,6 @@
 ---
 title: "Petit panorama de la ville hostile"
-date: "2017-08-05"
+date: 2017-08-05
 tags:
   - "architecture"
   - "ville"

@@ -1,6 +1,6 @@
 ---
 title: "Un prototype en plein écran et sur deux moniteurs"
-date: "2016-02-18"
+date: 2016-02-18
 tags:
   - "prototypage"
 

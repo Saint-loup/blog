@@ -1,6 +1,6 @@
 ---
 title: "Les liens de la semaine #5"
-date: "2012-10-26"
+date: 2012-10-26
 tags:
   - "veille"
 

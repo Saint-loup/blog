@@ -1,6 +1,6 @@
 ---
 title: "What you see is what you get"
-date: "2012-06-23"
+date: 2012-06-23
 tags:
   - "features"
 

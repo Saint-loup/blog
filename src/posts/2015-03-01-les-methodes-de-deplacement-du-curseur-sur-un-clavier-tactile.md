@@ -1,6 +1,6 @@
 ---
 title: "Les méthodes de déplacement du curseur sur un clavier tactile"
-date: "2015-03-01"
+date: 2015-03-01
 tags:
   - "mobile"
 

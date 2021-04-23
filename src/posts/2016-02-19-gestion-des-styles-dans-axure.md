@@ -1,6 +1,6 @@
 ---
 title: "Gestion des styles dans Axure"
-date: "2016-02-19"
+date: 2016-02-19
 tags:
   - "prototypage"
 

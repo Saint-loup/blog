@@ -1,6 +1,6 @@
 ---
 title: "Les liens de la semaine #3"
-date: "2012-07-24"
+date: 2012-07-24
 tags:
   - "veille"
 

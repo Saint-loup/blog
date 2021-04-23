@@ -1,6 +1,6 @@
 ---
 title: "Concepts, bullshit et video"
-date: "2012-06-08"
+date: 2012-06-08
 tags:
   - "futur"
 

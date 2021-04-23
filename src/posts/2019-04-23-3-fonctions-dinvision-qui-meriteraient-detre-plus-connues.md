@@ -1,6 +1,6 @@
 ---
 title: "3 fonctions d'Invision qui mériteraient d'être plus connues"
-date: "2019-04-23"
+date: 2019-04-23
 tags:
   - "prototypage"
 coverImage: "2019-04-23_19h12_30.png"

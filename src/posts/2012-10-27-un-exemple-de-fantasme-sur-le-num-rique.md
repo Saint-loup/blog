@@ -1,6 +1,6 @@
 ---
 title: "Un exemple de fantasme sur le numérique"
-date: "2012-10-27"
+date: 2012-10-27
 tags:
   - "réflexions"
 

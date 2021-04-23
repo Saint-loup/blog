@@ -1,6 +1,6 @@
 ---
 title: "Pour une typographie pragmatique"
-date: "2014-08-16"
+date: 2014-08-16
 tags:
   - "graphisme"
   - "typographie"

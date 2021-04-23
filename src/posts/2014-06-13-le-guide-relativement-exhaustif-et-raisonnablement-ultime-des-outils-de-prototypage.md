@@ -1,6 +1,6 @@
 ---
 title: "Le guide relativement exhaustif et raisonnablement ultime des outils de prototypage"
-date: "2014-06-13"
+date: 2014-06-13
 tags:
   - "prototypage"
   - "travaux"

@@ -1,6 +1,6 @@
 ---
 title: "Le retour des ombres"
-date: "2015-06-21"
+date: 2015-06-21
 tags:
   - "graphisme"
 

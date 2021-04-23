@@ -1,6 +1,6 @@
 ---
 title: "L'utilisateur a toujours raison – ou pas"
-date: "2012-07-09"
+date: 2012-07-09
 tags:
   - "conception"
   - "utilisateurs"

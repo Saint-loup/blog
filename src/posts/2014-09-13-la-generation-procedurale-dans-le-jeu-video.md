@@ -1,6 +1,6 @@
 ---
 title: "La génération procédurale dans le jeu vidéo"
-date: "2014-09-13"
+date: 2014-09-13
 tags:
   - "features"
   - "jeu vidéo"

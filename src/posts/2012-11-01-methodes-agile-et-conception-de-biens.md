@@ -1,6 +1,6 @@
 ---
 title: "Methodes Agile et conception d'objets"
-date: "2012-11-01"
+date: 2012-11-01
 tags:
   - "agile"
   - "conception"

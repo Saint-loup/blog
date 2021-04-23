@@ -1,6 +1,6 @@
 ---
 title: "Le Chant du loup : sous-marin, PQ et cognition"
-date: "2020-02-09"
+date: 2020-02-09
 tags:
   - "objets"
   - "recherche"

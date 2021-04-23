@@ -1,6 +1,6 @@
 ---
 title: "Six métaphores plus modestes qu'il n'y parait pour le rôle du designer"
-date: "2016-03-22"
+date: 2016-03-22
 tags:
   - "conception"
   - "réflexions"

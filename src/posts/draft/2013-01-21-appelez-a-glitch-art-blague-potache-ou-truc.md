@@ -1,6 +1,6 @@
 ---
 title: "Glitchy web design"
-date: "2013-01-21"
+date: 2013-01-21
 tags:
   - "travaux"
 draft: true

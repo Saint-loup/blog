@@ -1,6 +1,6 @@
 ---
 title: "Un plugin Sketch pour importer du contenu depuis le presse-papier"
-date: "2019-12-11"
+date: 2019-12-11
 tags:
   - "prototypage"
   - "sketch"

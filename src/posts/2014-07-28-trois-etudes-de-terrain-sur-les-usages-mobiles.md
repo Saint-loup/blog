@@ -1,6 +1,6 @@
 ---
 title: "Trois études de terrain sur les usages mobiles"
-date: "2014-07-28"
+date: 2014-07-28
 tags:
   - "mobile"
   - "utilisateurs"

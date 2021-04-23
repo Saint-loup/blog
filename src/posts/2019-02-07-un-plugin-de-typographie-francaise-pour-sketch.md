@@ -1,6 +1,6 @@
 ---
 title: "Un plugin de typographie française pour Sketch"
-date: "2019-02-07"
+date: 2019-02-07
 tags:
   - "prototypage"
   - "travaux"

@@ -1,6 +1,6 @@
 ---
 title: "Pour moi tous mes amis sont beaux – À propos de Facebook Home"
-date: "2013-04-05"
+date: 2013-04-05
 tags:
   - "utilisateurs"
 

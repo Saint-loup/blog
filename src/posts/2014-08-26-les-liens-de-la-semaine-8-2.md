@@ -1,6 +1,6 @@
 ---
 title: "Les liens de la semaine #8"
-date: "2014-08-26"
+date: 2014-08-26
 tags:
   - "veille"
 

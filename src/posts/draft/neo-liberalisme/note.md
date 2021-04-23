@@ -1,6 +1,6 @@
 ---
 title: "Néo-libéralisme, ou La plus belle des ruses du diable est de vous persuader qu'il n'existe pas"
-date: "1111-11-11"
+date: 1111-11-11
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Mon blog : rétrospective critique d'un parcours banal"
-date: "2014-08-19"
+date: 2014-08-19
 tags:
   - "méta"
 

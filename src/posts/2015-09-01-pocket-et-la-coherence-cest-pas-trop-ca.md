@@ -1,6 +1,6 @@
 ---
 title: "Pocket et la cohérence c'est pas trop ça"
-date: "2015-09-01"
+date: 2015-09-01
 tags:
   - "architecture de l'information"
   - "critique"

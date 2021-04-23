@@ -1,6 +1,6 @@
 ---
 title: "Le Principe de robustesse"
-date: "2014-05-16"
+date: 2014-05-16
 tags:
   - "réflexions"
   - "systemes complexes"
