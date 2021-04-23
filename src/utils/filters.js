@@ -15,11 +15,10 @@ module.exports = {
 	 */
 
 
-	slice: function (arr, a, b) {
+	slice: function (arr, a, b = 5) {
 		return arr.slice(a, b);
 	},
 	searchIndex: (collection) => {
-
 		// what fields we'd like our index to consist of
 		var index = elasticlunr(function () {
 			this.use(lunr.fr);
@@ -27,8 +26,6 @@ module.exports = {
 			this.addField("excerpt", { boost: 5 })
 			this.addField("tags", { boost: 5 })
 			this.addField("content", { boost: 2 })
-
-
 			this.setRef("url");
 		})
 
@@ -37,7 +34,6 @@ module.exports = {
 			const frenchDate = DateTime.fromJSDate(page.data.date, {
 				zone: 'utc',
 			}).toFormat("dd LLLL yyyy")
-			console.log(page.data.title, frenchDate)
 			index.addDoc({
 				url: page.url,
 				title: page.data.title,
@@ -54,19 +50,14 @@ module.exports = {
 
 	// Add markdownify filter with Markdown-it configuration
 	markdownify: (markdownString) => { md.render(markdownString) },
-	removeMD: (string) => { return (!string ? "" : removeMd(string)) },
 
-	cs: (code) => {
-		return new CleanCSS({}).minify(code).styles;
-	},
+	removeMD: (string) => { return (!string ? "" : removeMd(string)) },
 
 	dateToPermalink: function (date) {
 		return DateTime.fromJSDate(date, {
 			zone: 'utc',
 		}).toFormat('yyyy/MM')
 	},
-
-
 
 	/**
 	 * dateToFormat allows specifiying display format at point of use.
@@ -91,16 +82,6 @@ module.exports = {
 			replacement: '-',
 			remove: /[*+~.·,()'"`´%!?¿:@]/g,
 		})
-	},
-
-	/**
-   * Pass ` | limit(x)` to a Collection loop to limit the number returned
-   * Alt = ` | reverse | limit(x)` to return X most recent
-   * Took the following filters from
-   * @link https://www.youtube.com/watch?v=wV77GwOY22w&feature=share
-   */
-	limit: (arr, count = 5) => {
-		return arr.slice(0, count)
 	},
 
 	/**
