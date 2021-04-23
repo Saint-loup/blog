@@ -145,7 +145,7 @@ Dans cet écosystème entièrement artificiel, tout a été conçu. L'équipage 
 
 Le canal Youtube d'un spécialiste, avec [cette playlist sur d'analyse accoustique](https://www.youtube.com/playlist?list=PLF9K78gj2FP2D-EIZkYN1sBsVauj_MdXu)
 
-
+5
 Un reportage de Libération : [Vingt-quatre heures dans un sous-marin](https://www.liberation.fr/apps/2018/10/vingt-quatre-heures-dans-un-sous-marin/)
 
 ![Panneau de contrôle à bord du sous-marin Casabianca](/assets/images/crop-0-0-1500-1000-0-monge-myop-casabianca-7-1539854297.jpg)

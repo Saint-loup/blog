@@ -23,7 +23,7 @@ Notez également le manque de structure des boutons dans le panneau Sécurité�
 
 Enfin, admirez comme la troisième case à cocher dépasse d’un poil vers la gauche dans le panneau Utilisateurs :
 
-![](/assets/images/utilisateurs.png)
+![panneau des préférences, section "utilisateurs"](/assets/images/utilisateurs.png)
 
 Je suis peut-être maniaque, mais à Cupertino on est censé être _encore_ plus maniaque. A noter que ce n’est pas une liste exhaustive et que je me suis concentré sur les points les plus incontestables. On pourrait aussi parler de la nomenclature incohérente (entre un libellé et d’un menu déroulant, il y a parfois un double point, parfois non), des menus déroulants à deux items, des options pour le trackpad mal fichues…
 
