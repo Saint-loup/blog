@@ -4,13 +4,15 @@ tags: pages
 ---
 
 <div class="max-w-3xl mx-auto my-12 page">
-  <h1 class="{{ colors.headingsCustom or colors.headingsDefault }}">{{ seo.title or title }}</h1>
+  <h1 class="m- {{ colors.headingsCustom or colors.headingsDefault }}">{{ seo.title or title }}</h1>
+  <hr class="my-8">
+
   {% if seo.description %}
     <div class="{{ colors.borderCustom.borders or colors.borderDefault.borders }} {{ colors.borderCustom.color or colors.borderDefault.color }}">
       {{ seo.description }}
     </div>
   {% endif %}
 
-  {{ content | safe }}
+  <div class="">{{ content | safe }}</div>
 
 </div>
