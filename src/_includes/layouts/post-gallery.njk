@@ -12,7 +12,7 @@ layout: post
 	{% include "src/assets/css/photoswipe/skin.css" %}
 	{% endset %}
 	<style>
-		{{css | cssmin | safe}}
+		{{css | minify('css') | safe}}
 	</style>
 
 	<script  src="/assets/scripts/gallery.min.js" defer></script>

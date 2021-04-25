@@ -7,6 +7,7 @@ require('./lunr.stemmer.support.js')(elasticlunr);
 require('./lunr.fr.js')(elasticlunr);
 const removeMd = require('remove-markdown');
 Settings.defaultLocale = "fr";
+var pd = require('pretty-data').pd;
 
 module.exports = {
 	/**
@@ -84,10 +85,17 @@ module.exports = {
 		})
 	},
 
-	/**
-	 * Minify and inline CSS per a tip on 11ty: https://www.11ty.dev/docs/quicktips/inline-css/
-	 */
-	cssmin: (code) => {
-		return new cleanCSS({}).minify(code).styles
-	},
+
+	minify: (data, format) => {
+		switch (format) {
+			case 'css':
+				return pd.cssmin(data)
+			case 'json':
+				return pd.jsonmin(data)
+
+			default:
+				throw new Error("format non supporté")
+		}
+
+	}
 }
