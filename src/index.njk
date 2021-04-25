@@ -7,7 +7,11 @@ excerpt: # used for page excerpts and META (will be overwritten if SEO used belo
 postListItemStyle:
   complete: false
   showPagination: false
-
+pagination:
+  data: projects
+  size: 5
+  alias: projectsList
+  reverse: true
 ---
 
 <div class="{{ structure.g_pageWidth }} ">
@@ -25,13 +29,13 @@ postListItemStyle:
 
       {% include 'components/postslist.njk' %}
 
-      <a href="/blog" class="text-xl font-semibold leading-7 text-accent2 lg:text-2xl ">Tous les articles</a>
+      <a href="/blog" class="text-xl font-semibold leading-7 text-accent2 lg:text-2xl ">Voir tout ⤳</a>
     </section>
 
     <section class="mb-16">
       <h2>Bidouilles</h2>
       <ul class="project-list " >
-        {% for project in projects | reverse %}
+        {% for project in projectsList %}
           <li class="my-8 list-none project">
             <p class="text-2xl font-bold leading-7 text-accent2 lg:text-3xl name ">
               <a href="{{project.link}}">{{project.name}}</a>
@@ -41,6 +45,7 @@ postListItemStyle:
           </li>
         {% endfor %}
       </ul>
+      <a href="/projets" class="text-xl font-semibold leading-7 text-accent2 lg:text-2xl ">Voir tout ⤳</a>
     </section>
 
     <section class="">
