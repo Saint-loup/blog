@@ -6,10 +6,13 @@ module.exports = {
     search: path.resolve(__dirname, 'src/assets/scripts/search.js'),
     gallery: path.resolve(__dirname, 'src/assets/scripts/gallery.js'),
 
+
   },
   output: {
     path: path.resolve(__dirname, 'dist/assets/scripts'),
+    //  filename: '[name].min.js?[contenthash]'
     filename: '[name].min.js'
+
   },
 
   plugins: [],

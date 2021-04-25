@@ -19,7 +19,7 @@
 
       {# 11ty Nav Plugin loop  #}
       {% for entry in navPages %}
-        <a href="{{ entry.url | url }}" title="Lien vers {{ entry.title }}" class="
+        <a href="{{ entry.url | url }}"  class="
             flex h-full relative text-shadow text-xl font-medium items-center
             focus:outline-none focus:{{ colors.navCustom.textFocus  }}
             {% if entry.url in page.url %}
@@ -62,7 +62,7 @@
     {# 11ty Nav Plugin loop  #}
     {% for entry in navPages %}
 
-      <a href="{{ entry.url | url }}" title="Link to {{ entry.title }}"
+      <a href="{{ entry.url | url }}"
           class="  px-per lg:p-0 bg-dark
             last:z-50
             h-20 flex relative  text-xl font-medium text-center
