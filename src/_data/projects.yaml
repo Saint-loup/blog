@@ -15,6 +15,14 @@
   link: https://misc.toutcequibouge.net/archive_flash/
   img:
   description: Quelques animations Flash classiques, en voie de disparition et archivées ici.
+- name: Différence et répétition
+  link:  https://difference--repetition.tumblr.com/
+  img:
+  description: catalogage de variations visuelles
+- name: Google avale le web
+  link:  https://googleeatingtheweb.tumblr.com/
+  img:
+  description: Recensement de tout ces où Google Search essaie de nous fournir la réponse sans que l'on ait à cliquer sur un résultat.
 - name: Data from clipboard
   link: "/blog/2019/12/un-plugin-sketch-pour-importer-du-contenu-depuis-le-presse-papier/"
   img: assets/images/home/data-from-clipboard.png

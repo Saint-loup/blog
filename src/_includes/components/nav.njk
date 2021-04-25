@@ -1,5 +1,8 @@
 {% set navPages = collections.pages | eleventyNavigation %}
 <header class="navbar lg:px-per lg:bg-dark ">
+
+  {# =======    NAV DESKTOP      ========= #}
+
   <div class="relative z-10 flex justify-between h-20 px-per lg:p-0 bg-dark ">
 
     <div class="flex flex-row ">
@@ -20,7 +23,7 @@
       {# 11ty Nav Plugin loop  #}
       {% for entry in navPages %}
         <a href="{{ entry.url | url }}"  class="
-            flex h-full relative text-shadow text-xl font-medium items-center
+            flex ml-8 xl:ml-12 h-full relative text-shadow text-xl font-medium items-center
             focus:outline-none focus:{{ colors.navCustom.textFocus  }}
             {% if entry.url in page.url %}
               {{ colors.navCustom.textActiveBg  }} {{ colors.navCustom.textActive  }}
@@ -53,6 +56,7 @@
     </div>
   </div>
 
+  {# =======    NAV MOBILE      ========= #}
   <div
   x-description="Mobile menu, toggle classes based on menu state."
   :class="{ 'anim-nav-closed': !open, 'anim-nav-opened': open }"
