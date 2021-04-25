@@ -100,7 +100,7 @@ module.exports = function (eleventyConfig) {
 	 * @link https://www.11ty.dev/docs/config/#add-your-own-watch-targets
 	 */
 	eleventyConfig.addWatchTarget('./src/assets/css/')
-
+	eleventyConfig.addWatchTarget('./src/assets/scripts/')
 	eleventyConfig.addWatchTarget('./src/*.js')
 	eleventyConfig.addWatchTarget('./tailwind.config.js')
 
