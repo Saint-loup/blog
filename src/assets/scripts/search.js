@@ -53,7 +53,7 @@ const search = (e) => {
 
 };
 
-fetch("/search-index.json").then((response) => response.json().then((rawIndex) => {
+fetch("/index.min.json").then((response) => response.json().then((rawIndex) => {
 	window.searchIndex = elasticlunr
 		.Index
 		.load(rawIndex);
