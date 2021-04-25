@@ -7,7 +7,7 @@ permalink: "{{ page.date | dateToPermalink }}/{{ title | slugify }}/"
 
 Il y a quelques débats ces temps-ci sur l'évolution des logiciels de prototypage et sur ce que serait l'outil parfait (exemples d'articles : [1](http://grafiskjournal.com/archive/envisioning-the-perfect-design-app), [2](https://medium.com/startup-study-group/designer-desperately-looking-for-scalability-design-tools-f04478a12d42#.w49saisuc), [3](http://www.subtraction.com/2015/05/07/the-state-of-design-tools/). Avant même de s'interroger sur le logiciel lui-même, un angle intéressant -- et souvent implicite dans les discussions -- est de distinguer deux styles de flux de travail : le style de l'IDE et celui d'UNIX.
 
-\[caption id="attachment\_1606" align="alignnone" width="625"\]![Un exemple volontairement caricatural : Visual Studio avec plein de panneaux activés](images/vsclient-1024x702.png) Un exemple volontairement caricatural : Visual Studio avec plein de panneaux activés\[/caption\]
+\[caption id="attachment\_1606" align="alignnone" width="625"\]![Un exemple volontairement caricatural : Visual Studio avec plein de panneaux activés]() Un exemple volontairement caricatural : Visual Studio avec plein de panneaux activés\[/caption\]
 
 En informatique, un IDE est un Environnement de Développement intégré (_Integrated Development Environnement_), c'est-à-dire un gros logiciel auto-suffisant qui rassemble l'ensemble des fonctions nécessaires à tous les aspects du développement : code proprement dit, mais aussi navigation dans le projet, gestion des dépendances, des versions, des tests, des générations etc.
 
