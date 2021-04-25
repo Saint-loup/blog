@@ -31,11 +31,15 @@
   link: /blog/2019/02/un-plugin-de-typographie-francaise-pour-sketch/
   img: assets/images/home/typo.png
   description: Répandez du bonheur et des espaces insécables autour de vous.
-- name: Table basse
-  link: /blog/2020/12/j-ai-fait-un-truc/
-  img:
-  description: Ma vie culturelle en mosaïque.
 - name: Timer
   link: /blog/2020/04/un-minuteur-en-pwa-pour-vos-ateliers/
   img:
   description: Un minuteur en PWA pour vos ateliers.
+- name: Table basse
+  link: /blog/2020/12/j-ai-fait-un-truc/
+  img:
+  description: Ma vie culturelle en mosaïque.
+- name: Ce blog
+  link: /tags/tout-ce-qui-bouge/
+  img:
+  description: depuis 2012, la vache.

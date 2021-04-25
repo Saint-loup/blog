@@ -8,7 +8,9 @@ pagination:
     - authors
     - pages
     - post
-
+postListItemStyle:
+  complete: true
+  showPagination: false
 permalink: /tags/{{ tag | slug }}/
 eleventyComputed:
   title: 'Articles à propos de : "{{ tag }}”'
