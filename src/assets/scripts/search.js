@@ -4,17 +4,19 @@ require('./lunr.fr.js')(elasticlunr);
 
 //"use strict"
 
-const search = (e) => {
+
+async function search(e) {
 	const value = e.target.value
-	const results = window
+	if (!window.searchIndex) {
+		const rawIndex = await fetch("/index.min.json")
+		window.searchIndex = elasticlunr.Index.load(await rawIndex.json());
+	}
+	results = window
 		.searchIndex
 		.search(value, {
 			bool: "OR",
 			expand: true
 		});
-
-
-
 	const noResultsEl = document.getElementById("noResultsFound");
 	const container = document.querySelector('.post-wrapper');
 	const postList = container.children[0];
@@ -46,19 +48,15 @@ const search = (e) => {
 			});
 		} else {
 			console.log('no results')
-
 			noResultsEl.style.display = "block";
 		}
 	}
 
+
+
 };
 
-fetch("/index.min.json").then((response) => response.json().then((rawIndex) => {
-	window.searchIndex = elasticlunr
-		.Index
-		.load(rawIndex);
+document
+	.getElementById("searchField")
+	.addEventListener("input", search);
 
-	document
-		.getElementById("searchField")
-		.addEventListener("input", search);
-}));
