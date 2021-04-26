@@ -13,15 +13,15 @@ Petite synthèse d'article lus à ce sujet.
 
 [Se mettre dans la peau des consommateurs, ça ne marche pas](https://hbr.org/2015/03/putting-yourself-in-the-customers-shoes-doesnt-work) :
 
-> The more empathetic managers were, the more they used their personal preferences to predict what customers would want. \[...\] the more they ignored the market research on customers that we provided them.
+> The more empathetic managers were, the more they used their personal preferences to predict what customers would want. (…) the more they ignored the market research on customers that we provided them.
 
 [L'empathie n'est qu'une étape](https://medium.com/@odannyboy/in-design-empathy-is-not-enough-c315b1c1ecee) :
 
-> We needed distance — a psychic removal — in order to really assess the problem and take action to change it. \[...\] Empathy will get you to see the problems from the users’ perspective, but not the solutions.
+> We needed distance — a psychic removal — in order to really assess the problem and take action to change it. (…) Empathy will get you to see the problems from the users’ perspective, but not the solutions.
 
 [Empathie signifie surtout empathie pour la clientèle, au risque d'exclure d'autres personnes](https://www.epicpeople.org/empathy-faux-ethics/) :
 
-> Empathy for commercial ends is simply marketing. \[...\] Back to our coffee shop. Here’s a standard solution: Keep the bathroom door locked and require people to ask for a key available only to paying customers. This solves a discrete problem for the coffee shop. After all, how can one business possibly take on an issue like inequality or homelessness? But it does more; it actively ignores the larger, systemic responsibilities the business has to the community. By empathizing with one group of people, we necessarily exclude another."
+> Empathy for commercial ends is simply marketing. (…) Back to our coffee shop. Here’s a standard solution: Keep the bathroom door locked and require people to ask for a key available only to paying customers. This solves a discrete problem for the coffee shop. After all, how can one business possibly take on an issue like inequality or homelessness? But it does more; it actively ignores the larger, systemic responsibilities the business has to the community. By empathizing with one group of people, we necessarily exclude another."
 
 [Les limites de l'empathie dans la réalité virtuelle](https://www.topic.com/the-limits-of-empathy) :
 
