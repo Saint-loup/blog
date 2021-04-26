@@ -10,7 +10,7 @@ Axure n'est pas un outil de maquettage à haute fidélité, pourtant il est parf
 
 
 
-![Axure - Style par défaut](/assets/images/2016-02-19\_14h44\_12.png)(.wide-img)
+![Axure - Style par défaut](/assets/images/2016-02-19\_14h44\_12.png) {.container-wide}
 
 ![Axure Créer un style réutilisable](/assets/images/2016-02-19\_14h52\_44.png)
 
