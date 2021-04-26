@@ -7,7 +7,7 @@ tags:
 
 ---
 
-![](/assets/images/large\_the\_apartment\_blu-ray\_1.jpg)(.wide-img)
+![](/assets/images/large\_the\_apartment\_blu-ray\_1.jpg) {.container-wide}
 
 ## Excel
 
@@ -29,9 +29,9 @@ Si on remonte jusqu'au début du 20e siècle, on trouve l'entreprise de chimie D
 Et DuPont a fait ça de la manière la plus littérale et steampunk qui soit : _avec des rails_.
 
 
-![](/assets/images/1974298\_001.jpg "1919 : première version")(.wide-img)
+![](/assets/images/1974298\_001.jpg "1919 : première version") {.container-wide}
 
-![](/assets/images/2005273\_0001-e145540648863.jpg "1950 : ver­sion plus évo­luée")(.wide-img)
+![](/assets/images/2005273\_0001-e145540648863.jpg "1950 : ver­sion plus évo­luée") {.container-wide}
 
 ## Pour aller plus loin
 

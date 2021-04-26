@@ -38,16 +38,16 @@ Sauf que ce n’est pas toujours le cas. Parfois, au fil des refontes ou des ajo
 
 ## impots.gouv.fr
 
-[](/assets/images/impots-0-e1471563276671.png)(.wide-img)
+[](/assets/images/impots-0-e1471563276671.png) {.container-wide}
 
 * * *
 
 
-[](/assets/images/impots-2-e1471563206897.png)(.wide-img)
+[](/assets/images/impots-2-e1471563206897.png) {.container-wide}
 
 * * *
 
-[](/assets/images/Impots-3-e1471563162292.png)(.wide-img)
+[](/assets/images/Impots-3-e1471563162292.png) {.container-wide}
 
 
 ## Windows, ce palimpseste
