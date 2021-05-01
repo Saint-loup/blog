@@ -1,6 +1,11 @@
-const { opacity, fontFamily } = require('tailwindcss/defaultTheme')
-const defaultTheme = require('tailwindcss/defaultTheme')
+/*const { opacity, fontFamily } = require('tailwindcss/defaultTheme')
+const defaultTheme = require('tailwindcss/defaultTheme')*/
+const colors = require('tailwindcss/colors')
 module.exports = {
+	corePlugins: {
+		float: false
+	},
+	mode: 'jit',
 	purge: [
 		'./src/**/*.html',
 		'./src/**/*.njk',
@@ -24,6 +29,14 @@ module.exports = {
 				'sans-serif',
 			],
 		},
+		colors: {
+			transparent: 'transparent',
+			current: 'currentColor',
+			black: colors.black,
+			white: colors.white,
+			gray: colors.coolGray,
+			indigo: colors.indigo
+		},
 
 		extend: {
 			minHeight: {
@@ -40,8 +53,6 @@ module.exports = {
 			spacing: {
 				'per-lg': '4%',
 				'per': '2%',
-
-
 			},
 			fontSize: {
 				'2-half-xl': '1.65rem',
@@ -257,7 +268,6 @@ module.exports = {
 			},
 		}),
 	},
-	variants: {},
 	plugins: [
 		require('@tailwindcss/typography'),
 		require('tailwindcss-textshadow'),
