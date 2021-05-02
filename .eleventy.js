@@ -7,6 +7,7 @@ const yaml = require("js-yaml");
 //const pageAssetsPlugin = require('eleventy-plugin-page-assets');
 const imagesResponsiver = require("eleventy-plugin-images-responsiver");
 require('dotenv').config()
+const embedEverything = require("eleventy-plugin-embed-everything");
 
 
 
