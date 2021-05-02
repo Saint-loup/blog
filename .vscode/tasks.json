@@ -4,9 +4,13 @@
 		{
 			"type": "npm",
 			"script": "dev",
-			"group": "build",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
 			"problemMatcher": [],
 			"label": "npm: dev",
+			"detail": "npm-run-all clean --parallel dev:* --print-label"
 		}
 	]
 }

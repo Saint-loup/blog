@@ -6,8 +6,6 @@ const yaml = require("js-yaml");
 //const svgsprite = require('./src/utils/svgsprite')
 //const pageAssetsPlugin = require('eleventy-plugin-page-assets');
 const imagesResponsiver = require("eleventy-plugin-images-responsiver");
-const { default: postcss } = require('postcss');
-
 require('dotenv').config()
 
 
