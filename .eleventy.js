@@ -2,13 +2,10 @@ const pluginRss = require('@11ty/eleventy-plugin-rss')
 const pluginNavigation = require('@11ty/eleventy-navigation')
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const yaml = require("js-yaml");
-const embedTwitter = require("eleventy-plugin-embed-twitter");
 
 //const svgsprite = require('./src/utils/svgsprite')
 //const pageAssetsPlugin = require('eleventy-plugin-page-assets');
 const imagesResponsiver = require("eleventy-plugin-images-responsiver");
-const { default: postcss } = require('postcss');
-
 require('dotenv').config()
 
 
@@ -27,12 +24,7 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(pluginNavigation)
 	eleventyConfig.addPlugin(syntaxHighlight)
 	//eleventyConfig.addPlugin(pageAssetsPlugin, { mode: "parse", postsMatching: "src/posts/*/*.md", });
-	eleventyConfig.addPlugin(embedTwitter, {
-		doNotTrack: true,
-		cacheText: false,
-		conversation: false,
-		align: "center"
-	});
+
 
 	if (process.env.NODE_ENV === "production") {
 		eleventyConfig.addPlugin(imagesResponsiver, require('./src/utils/images-responsiver-config.js'))

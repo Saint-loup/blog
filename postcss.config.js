@@ -7,6 +7,9 @@ module.exports = {
     require('autoprefixer'),
     require('postcss-nested'),
 
-    ...process.env.NODE_ENV === "production" ? [require('cssnano')] : []
+    ...process.env.NODE_ENV === "production" ? [require('cssnano')] : [],
+    require('postcss-hash')({
+      manifest: './src/_data/hashes_css.json',
+    }),
   ]
 };
