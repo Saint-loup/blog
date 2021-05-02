@@ -2,9 +2,9 @@ require('dotenv').config()
 
 module.exports = {
   plugins: [
-    /*    require('postcss-hash')({
-          manifest: './src/_data/hashes_css.json',
-        }),*/
+    require('postcss-hash')({
+      manifest: './src/_data/hashes_css.json',
+    }),
     require('postcss-import'),
 
     require('tailwindcss'),
