@@ -24,7 +24,9 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(pluginNavigation)
 	eleventyConfig.addPlugin(syntaxHighlight)
 	//eleventyConfig.addPlugin(pageAssetsPlugin, { mode: "parse", postsMatching: "src/posts/*/*.md", });
-
+	eleventyConfig.addPlugin(embedEverything, {
+		use: ['vimeo', 'youtube']
+	});
 
 	if (process.env.NODE_ENV === "production") {
 		eleventyConfig.addPlugin(imagesResponsiver, require('./src/utils/images-responsiver-config.js'))
