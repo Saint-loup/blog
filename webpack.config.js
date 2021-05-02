@@ -18,15 +18,15 @@ const WebpackAssetsManifest = require('webpack-assets-manifest'); module.exports
   },
 
   module: {
-    /*  rules: [
-        {
-          test: /\.m?js$/,
-          exclude: /node_modules/,
-          use: {
-            loader: 'babel-loader',
-          },
+    rules: [
+      {
+        test: /\.m?js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
         },
-      ],*/
+      },
+    ],
   },
   plugins: [
     new WebpackAssetsManifest({
