@@ -1,7 +1,7 @@
 Tout les fonctionnalités du blog, même les plus basiques (à compléter)
 
 
-La page d'accueil charge en ~250ms. Environnement : Firefox 89, pas de cache, réseau émulant une "bonne 3G".
+La page d'accueil charge en ~250ms. Environnement : Firefox 89, pas de cache, réseau émulant une "[bonne 3G](https://developer.mozilla.org/fr/docs/Tools/Network_Monitor/Throttling)".
 
 
 ## Divers
