@@ -33,5 +33,5 @@ La page d'accueil charge en ~250ms. Environnement : Firefox 89, pas de cache, r�
 - Compression et conversion auto d'images en .webp. Fallback en jpg si le navigateur ne supporte pas le format, géré coté serveur, avec une technique adaptée [de ceci](https://github.com/cdowdy/Nginx-Content-Negotiation/blob/master/nginx.conf)
 - Génération auto du balisage pour images responsive et des images correspondantes, au bonnes dimensions.
 - Génération auto de la légende d'imge (<figcaption> à partir de l'attribut `title`)
-- Génération de ` ...<figcaption>légende de l'image<figcaption>` avec le markdown suivant : `![](url "légende de l'image")`
+ - Génération de ` <figure> ... <figcaption>légende de l'image</figcaption></figure>` avec le markdown suivant : `![](url "légende de l'image")`
 
