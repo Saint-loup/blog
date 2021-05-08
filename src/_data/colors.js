@@ -127,7 +127,7 @@ module.exports = {
 	 *
 	 * === Post Listing Pills ===
 	 */
-	paginateDefault: {
+	paginate: {
 		blockBg: '',
 		blockBorder: 'border-gray-200',
 		linkText: 'text-gray-600',
@@ -137,20 +137,9 @@ module.exports = {
 		linkBgActive: 'bg-gray-100',
 		linkBgHover: 'bg-gray-200',
 		linkBorder: 'border-gray-300',
-		linkFocusBorder: 'border-blue-300',
+		linkFocusBorder: 'border-accent-300 ',
 	},
-	paginateCustom: {
-		blockBg: '',
-		blockBorder: '',
-		linkText: '',
-		linkTextActive: '',
-		linkTextHover: '',
-		linkBg: '',
-		linkBgActive: '',
-		linkBgHover: '',
-		linkBorder: '',
-		linkFocusBorder: '',
-	},
+
 
 	/**
 	 * === Previous / Next Post Detail Links

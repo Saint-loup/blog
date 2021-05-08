@@ -15,5 +15,4 @@ layout: post
 		{{css | minify('css') | safe}}
 	</style>
 
-	<script  src="/assets/scripts/gallery.min.js" defer></script>
-{% endif %}
+<script  src="/assets/scripts/{{hashes_js['gallery.js']}}" defer></script>{% endif %}
