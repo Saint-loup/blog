@@ -42,7 +42,6 @@
 {#- RSS Feed #}
 <link type="application/atom+xml" rel="alternate"  title="RSS Feed for {{ meta.siteName }}"  href="/rss" title="{{ meta.siteName }} XML Feed">
 
-<link rel="stylesheet" href="{{ '/assets/css/main.min.css' | url }}"/>
 
 {% set css %}
 {% include "src/assets/css/fonts.css" %}
@@ -51,3 +50,8 @@
 <style>
   {{css | minify('css') | safe}}
 </style>
+
+{#<link rel="stylesheet" href="/assets/css/main.min.css"/>
+#}
+<link rel="stylesheet" href="/assets/css/{{hashes_css['main.css']}}"/>
+<script  src="/assets/scripts/{{hashes_js['main.js']}}" defer></script>
