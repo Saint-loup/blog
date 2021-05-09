@@ -6,7 +6,8 @@ require('./lunr.fr.js')(elasticlunr);
 
 
 async function search(e) {
-	const value = e.target.value
+	e.preventDefault();
+	const value = this[0].value
 	if (!window.searchIndex) {
 		const rawIndex = await fetch("/index.min.json")
 		window.searchIndex = elasticlunr.Index.load(await rawIndex.json());
@@ -57,6 +58,6 @@ async function search(e) {
 };
 
 document
-	.getElementById("searchField")
-	.addEventListener("input", search);
+	.getElementById("search-form")
+	.addEventListener("submit", search);
 
