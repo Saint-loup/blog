@@ -39,29 +39,29 @@
 
     {# Right side of Navbar  #}
 
-    {# MOBILE MENU  #}
-    <div class="flex items-center sm:hidden">
+    {# NAV BAR MENU  #}
+    <div class="flex items-center sm:hidden" id="menu-bar">
 
       {# Mobile menu button #}
-      <button x-on:click.away="open = false" @click="open = !open; " class="inline-flex items-center justify-center p-2 {{ colors.navCustom.mobileButton  }} transition-transform duration-150 ease-in-out rounded-md  focus:outline-none focus:{{ colors.navCustom.mobileButton  }} focus:{{ colors.navCustom.mobileButton  }}" x-bind:aria-label="open ? 'Fermer le menu principal' : 'Menu principal'" aria-label="Menu principal" x-bind:aria-expanded="open">
+      <button  class="relative inline-flex items-center justify-center p-2 {{ colors.navCustom.mobileButton  }} transition-transform duration-150 ease-in-out rounded-md  focus:outline-none focus:{{ colors.navCustom.mobileButton  }} focus:{{ colors.navCustom.mobileButton  }}" x-bind:aria-label="open ? 'Fermer le menu principal' : 'Menu principal'" aria-label="Menu principal" x-bind:aria-expanded="open">
+
+        <div id="trigger-zone" class="relative absolute  h-20 w-20"></div>
         {# Icon when menu is closed.  #}
-        <svg :class="{ 'hidden': open, 'block': !open }" class="block w-8 h-8" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+        <svg  class="block w-8 h-8" fill="none" viewbox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
         {# Icon when menu is open.  #}
-        <svg :class="{ 'hidden': !open, 'block': open }" class=" hidden w-8 h-8" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+        <svg  class=" hidden w-8 h-8" fill="none" viewbox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
         </svg>
       </button>
     </div>
   </div>
 
-  {# =======    NAV MOBILE      ========= #}
+  {# =======    MENU OFF CANVAS MOBILE      ========= #}
   <div
-  x-description="Mobile menu, toggle classes based on menu state."
-  :class="{ 'anim-nav-closed': !open, 'anim-nav-opened': open }"
-  id="navbar-mobile"
-  class="relative transition-transform duration-300 ease-out sm:hidden">
+  id="menu-offcanvas"
+  class="anim-nav-closed relative transition-transform duration-200 ease-out sm:hidden">
 
     {# 11ty Nav Plugin loop  #}
     {% for entry in navPages %}
