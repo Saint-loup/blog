@@ -46,12 +46,15 @@
 {% set css %}
 {% include "src/assets/css/fonts.css" %}
 {% endset %}
-<!-- feed it through our cssmin filter to minify -->
 <style>
   {{css | minify('css') | safe}}
 </style>
 
-{#<link rel="stylesheet" href="/assets/css/main.min.css"/>
-#}
+
 <link rel="stylesheet" href="/assets/css/{{hashes_css['main.css']}}"/>
-<script  src="/assets/scripts/{{hashes_js['main.js']}}" defer></script>
+
+{% if meta.env == 'production' %}
+  <script  src="/assets/scripts/{{hashes_js['main.js']}}" defer></script>
+{% else %}
+  <script  src="/assets/scripts/main.js" defer></script>
+{% endif %}
