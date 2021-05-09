@@ -22,15 +22,18 @@ postListItemStyle:
 ---
 
 <div class="blog-wrapper">
-  <div class="search">
-    <div class="flex flex-col field">
+  <form class="search " id="search-form" aria-controls="post-list">
+    <div class="flex flex-col field  w-1/2">
       <label for="searchField" class="label">Rechercher</label>
-      <input type="search"  class="w-1/2 p-2 border-gray-600 rounded-md" placeholder="" id="searchField"/>
+      <div class="relative">
+        <input type="search"  class=" w-full p-2 border-gray-600 rounded-md" placeholder="" id="searchField"/>
+        <input type="image" name="submit" src="/assets/UI/search.svg" border="0" class="absolute right-2 p-2 h-10">
+      </div>
     </div>
-    <div id="noResultsFound" class="text-base" style="display: none">
-      <p>Aucun résultat.</p>
-    </div>
-  </div>
+    <p id="noResultsFound" class="text-base py-4" style="display: none" role="alert">
+      Aucun résultat.
+    </p>
+  </form>
   {% set postslist = posts %}
 
   {% include 'components/postslist.njk' %}
