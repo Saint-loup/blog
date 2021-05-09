@@ -14,6 +14,7 @@ module.exports = {
 	authorEmail: 'baptiste@roullin.net',
 	twitterSite: '@saint_loup',
 	twitterCreator: '@saint_loup',
+	env: process.env.NODE_ENV || 'development '
 
 
 }
