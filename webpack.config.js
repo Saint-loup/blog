@@ -10,10 +10,9 @@ const WebpackAssetsManifest = require('webpack-assets-manifest'); module.exports
   output: {
 
     path: path.resolve(__dirname, 'dist/assets/scripts'),
-    filename: '[name].[contenthash].js',
     /*    détournement du publicpatch*/
-    publicPath: path.resolve(__dirname, 'src')
-
+    publicPath: path.resolve(__dirname, 'src'),
+    filename: (process.env.NODE_ENV === "production" ? '[name].[contenthash].js' : '[name].js')
 
   },
 
