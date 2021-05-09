@@ -14,7 +14,7 @@ function hideOnClickAway(updatedClassList, mainContent, button) {
 const button = document.querySelector('#menu-bar button #trigger-zone')
 
 button.addEventListener("click", function () {
-	const mainContent = document.querySelector('#main-content')
+	const mainContent = document.querySelector('#content')
 
 	const offCanvas = document.querySelector('#menu-offcanvas')
 	const button = document.querySelectorAll('#menu-bar button svg')
