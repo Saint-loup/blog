@@ -43,7 +43,8 @@
     <div class="flex items-center sm:hidden" id="menu-bar">
 
       {# Mobile menu button #}
-      <button  class="relative inline-flex items-center justify-center p-2 {{ colors.navCustom.mobileButton  }} transition-transform duration-150 ease-in-out rounded-md  focus:outline-none focus:{{ colors.navCustom.mobileButton  }} focus:{{ colors.navCustom.mobileButton  }}" x-bind:aria-label="open ? 'Fermer le menu principal' : 'Menu principal'" aria-label="Menu principal" x-bind:aria-expanded="open">
+      <button  class="relative inline-flex items-center justify-center p-2 {{ colors.navCustom.mobileButton  }} transition-transform duration-150 ease-in-out rounded-md  focus:outline-none focus:{{ colors.navCustom.mobileButton  }} focus:{{ colors.navCustom.mobileButton  }}"
+       aria-label="Menu principal" aria-expanded="false">
 
         <div id="trigger-zone" class="relative absolute  h-20 w-20 -right-2"></div>
         {# Icon when menu is closed.  #}
