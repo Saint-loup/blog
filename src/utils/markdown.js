@@ -5,6 +5,10 @@ const markdownItFootnote = require('markdown-it-footnote');
 const markdownItAnchor = require('markdown-it-anchor');
 const slugify = require('./slugify.js');
 const imageFigures = require('markdown-it-image-figures');
+//const bracketedSpans = require('markdown-it-bracketed-spans');
+
+const MarkdownBlockquoteCite = require('markdown-it-blockquote-cite');
+
 
 // https://www.toptal.com/designers/htmlarrows/punctuation/section-sign/
 const markdownItAnchorOptions = {
@@ -73,6 +77,7 @@ const md = markdownIt(options)
 	.use(markdownItFootnote)
 	.use(markdownItAnchor, markdownItAnchorOptions)
 	.use(markdownItAttributes)
+	.use(MarkdownBlockquoteCite)
 	.use(markdownItContainer, 'info')
 	.use(imageFigures, { figcaption: true });
 
