@@ -13,13 +13,9 @@
 .spin {
 	display:inline-block;
 	transition:transform 2.5s ease, color .5s ease;
-
+	transform:rotate(0deg);
+	@apply text-accent;
 	transform-origin:50% 75% 0
-}
-
-h1:hover .spin{
-	transform:rotate(2turn);
-	@apply text-accent
 }
 
 
