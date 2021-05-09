@@ -64,8 +64,10 @@ h1:hover .spin{
 		bottom: 1em;
 
 	}
-
 }
+
+
+
 @media screen and (max-width:640px) {
 	.anim-nav-closed {
 	transform: translateY( calc(-1 * var(--navbar-height) * 5rem));
