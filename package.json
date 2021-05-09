@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "scripts": {
     "clean": "rimraf dist",
-    "dev:webpack": "webpack  --mode development",
+    "dev:webpack": "webpack --watch  --mode development",
     "dev:eleventy": "eleventy --serve",
     "dev:postcss": "postcss src/assets/css/main.css -o dist/assets/css/main.css --watch",
     "dev": "npm-run-all clean --parallel dev:* --print-label",
@@ -53,7 +53,7 @@
     "webpack": "^5.33.2",
     "webpack-assets-manifest": "^5.0.6",
     "webpack-cli": "^4.6.0",
-    "markdown-it-blockquote-cite": "github:saint-loup/markdown-it-blockquote-cite#master",
+    "markdown-it-blockquote-cite": "github:saint-loup/markdown-it-blockquote-cite#master"
   },
   "dependencies": {
     "alpinejs": "^2.8.0",
