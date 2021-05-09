@@ -5,13 +5,14 @@
 }
 
 @layer base {
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
+	body h1,
+	body h2,
+	body h3,
+	body h4,
+	body h5,
+	body h6 {
 		@apply font-semibold text-gray-700;
+		padding:0
 	}
 	h1 {
 		@apply text-4xl;
