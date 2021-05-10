@@ -2,7 +2,7 @@
 title: Site en construction.
 layout: page
 date: 2020-08-05
-excerpt: # used for page excerpts and META (will be overwritten if SEO used below)
+description: # used for page excerpts and META (will be overwritten if SEO used below)
 
 postListItemStyle:
   complete: false
@@ -29,7 +29,7 @@ pagination:
 
       {% include 'components/postslist.njk' %}
 
-      <a href="/blog" class="text-xl font-semibold leading-7 text-accent2 lg:text-2xl ">Voir tout ⤳</a>
+      <a href="/blog" class="text-xl font-semibold leading-7 text-accent2 lg:text-2xl ">Voir tout <span aria-hidden>⤳</span></a>
     </section>
 
     <section class="mb-16">
@@ -45,7 +45,7 @@ pagination:
           </li>
         {% endfor %}
       </ul>
-      <a href="/projets" class="text-xl font-semibold leading-7 text-accent2 lg:text-2xl ">Voir tout ⤳</a>
+      <a href="/projets" class="text-xl font-semibold leading-7 text-accent2 lg:text-2xl ">Voir tout <span aria-hidden>⤳</span></a>
     </section>
 
     <section class="">
