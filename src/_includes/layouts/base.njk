@@ -4,18 +4,16 @@
     {%- include "components/head.njk" %}
 
   </head>
-  <body x-init="
-  document.body.style.setProperty('--navbar-height', document.querySelector('#navbar-mobile').children.length);
-  "
-  x-data="{ open: false}" class="template-{{layout}} {{ colors.siteTextCustom or siteTextDefault }} sans">
+  <body
+  class="template-{{layout}} {{ colors.siteTextCustom or siteTextDefault }} sans">
     {#    <div hidden>{% svgsprite %}</div>
 #}
     <div class="flex flex-col min-h-screen mx-auto container-2xl">
       {% include "components/nav.njk" %}
 
       <main
-      :class="{ 'anim-nav-closed': !open, 'anim-nav-opened': open }"
-       class="mb-10 {{" " if layout == 'post'}} sm:px-per-lg px-per  relative flex-grow block max-w-full transition-all duration-300 ease-out " id="content">
+      id="content"
+       class=" anim-nav-closed mb-10 {{" " if layout == 'post'}} sm:px-per-lg px-per  relative flex-grow block max-w-full transition-all duration-300 ease-out " id="content">
         {{ content | safe }}
       </main>
 

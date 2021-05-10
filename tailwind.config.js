@@ -3,7 +3,7 @@ const defaultTheme = require('tailwindcss/defaultTheme')*/
 const colors = require('tailwindcss/colors')
 module.exports = {
 	corePlugins: {
-		float: false
+
 	},
 	mode: 'jit',
 	purge: [
@@ -269,7 +269,9 @@ module.exports = {
 		}),
 	},
 	plugins: [
-		require('@tailwindcss/typography'),
+		require('@tailwindcss/typography')({
+			modifiers: ['lg', 'xl', '2xl'],
+		}),
 		require('tailwindcss-textshadow'),
 		require('@tailwindcss/forms'),
 	]

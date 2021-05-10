@@ -19,7 +19,7 @@ eleventyComputed:
 {#
   We set this to 'postslist' so we can use the same postslist components as the /blog
 #}
-{% set postslist = collections[tag] %}
+{% set postslist = collections[tag] | reverse %}
 
 {% include 'components/postslist.njk' %}
 

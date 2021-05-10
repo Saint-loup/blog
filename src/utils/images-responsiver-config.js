@@ -9,15 +9,21 @@ module.exports = {
 		maxWidth: 1600,
 		fallbackWidth: 576,
 		sizes: '(max-width: 60rem) 90vw, 60rem',
-		resizedImageUrl: (src, width) =>
-			src.
+		resizedImageUrl: (src, width) => {
+
+			if (!(new RegExp('^/').test(src))) {
+				src = "/assets/generatedImages/" + src
+			}
+			src = src.
 				replace(
 					/\/assets\/images\//,
 					'/assets/generatedImages/'
 				).
 				replace(
 					/^(.*)(\.[^\.]+)$/,
-					'$1-' + width + '.jpg'),
+					'$1-' + width + '.jpg')
+			return src
+		},
 		runBefore: (image, document) => {
 			let url = image.getAttribute('src')
 			const options = {
@@ -37,9 +43,16 @@ module.exports = {
 				}
 			}
 
+
 			//try {
-			Image('src/' + decodeURI(url), options);
-			let metadata = Image.statsSync('src/' + decodeURI(url), options);
+			if (!(new RegExp('^/').test(url))) {
+				url = "src/assets/images/single/" + url
+			}
+			else {
+				url = "src/" + url
+			}
+			Image(decodeURI(url), options);
+			let metadata = Image.statsSync(decodeURI(url), options);
 			const images = metadata.jpeg
 			image.setAttribute('width', images[images.length - 1].width);
 			image.setAttribute('height', images[images.length - 1].height);

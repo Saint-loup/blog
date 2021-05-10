@@ -13,12 +13,12 @@
 
 {#- General #}
 <meta name="author" content="{{ author or meta.authorName }}"/>
-<meta name="description" content="{{ seo.description or excerpt or meta.siteDescription }}"/>
+<meta name="description" content="{{ description   }}"/>
 {#<link rel="canonical" href="{{meta.siteURL}}"/>#}
 {#- Open Graph #}
 <meta property="og:site_name" content="{{ meta.title }}"/>
 <meta property="og:title" content="{{ seo.title or title }} | {{ meta.siteName }}"/>
-<meta property="og:description" content="{{ seo.description or excerpt or meta.siteDescription }}"/>
+<meta property="og:description" content="{{ description or meta.siteDescription }}"/>
 <meta property="og:url" content="{{meta.siteURL}}{{  page.url  }}"/>
 <meta property="og:locale" content="{{ meta.locale }}"/>
 {#{% if tags.includes("post") %}
@@ -33,7 +33,7 @@
 <meta name="twitter:site" content="{{ meta.siteName}}"/>
 <meta name="twitter:creator" content="{{ meta.twitterCreator }}"/>
 <meta name="twitter:title" content="{{ seo.title or title }}"/>
-<meta name="twitter:description" content="{{ seo.description or excerpt or meta.siteDescription }}"/>
+<meta name="twitter:description" content="{{ description or meta.siteDescription }}"/>
 {#- Favicon #}
 {#<link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/images/favicon/apple-touch-icon.png' | url }}">
 #}<link rel="icon" type="image/svg+xml" href="/assets/UI/favicon.svg">
@@ -46,12 +46,15 @@
 {% set css %}
 {% include "src/assets/css/fonts.css" %}
 {% endset %}
-<!-- feed it through our cssmin filter to minify -->
 <style>
   {{css | minify('css') | safe}}
 </style>
 
-{#<link rel="stylesheet" href="/assets/css/main.min.css"/>
-#}
+
 <link rel="stylesheet" href="/assets/css/{{hashes_css['main.css']}}"/>
-<script  src="/assets/scripts/{{hashes_js['main.js']}}" defer></script>
+
+{% if meta.env == 'production' %}
+  <script  src="/assets/scripts/{{hashes_js['main.js']}}" defer></script>
+{% else %}
+  <script  src="/assets/scripts/main.js" defer></script>
+{% endif %}
