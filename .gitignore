@@ -1,4 +1,6 @@
 src/assets/generatedImages/*
+src/assets/images/single
+
 src/_data/hashes_css.json
 src/_data/hashes_js.json
 
