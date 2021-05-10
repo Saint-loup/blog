@@ -14,7 +14,7 @@
                   {# Display Post Excerpt if set 'true' in /src/_data/structure.js:g_showExcerpt  #}
                   {% if structure.g_showExcerpt %}
                     <div class="{{ colors.excerptCustom or colors.excerptDefault }}">
-                      {{ post.data.excerpt }}
+                      {{ post.data.description }}
                     </div>
                   {% endif %}
                 </a>

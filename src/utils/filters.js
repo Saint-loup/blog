@@ -24,7 +24,7 @@ module.exports = {
 		var index = elasticlunr(function () {
 			this.use(lunr.fr);
 			this.addField("title", { boost: 8 })
-			this.addField("excerpt", { boost: 5 })
+			this.addField("description", { boost: 5 })
 			this.addField("tags", { boost: 5 })
 			this.addField("content", { boost: 2 })
 			this.setRef("url");
@@ -38,7 +38,7 @@ module.exports = {
 			index.addDoc({
 				url: page.url,
 				title: page.data.title,
-				excerpt: page.data.excerpt,
+				description: page.data.description,
 				tags: page.data.tags,
 				//on accède au contenu en  markdown et on le transforme en texte brut.
 				content: removeMd(page.template.frontMatter.content),

@@ -5,11 +5,11 @@
     {% if not loop.first %}
       <div class="inline-block">
         <a title="mot clé {{ tag }}" aria-label="mot clé {{ tag }}" href="{{ '/tags/' | url}}{{tag | slug  }}/"
-        class=" label text-accent2 font-medium   hover:px-4 hover:py-2 hover:rounded-full hover:{{ colors.tagPillDefault.bgHover}} ">{{ tag }}</a>
+        class=" label text-accent2 font-medium   ">{{ tag }}</a>
       </div>
 
       {% if not loop.last %}
-        <span class="mx-4 text-xl font-light text-gray-500 ">~</span>
+        <span class="mx-4 text-xl font-light text-gray-500 " autocomplete="off">~</span>
       {% endif %}
     {% endif %}
 

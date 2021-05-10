@@ -17,7 +17,7 @@
 	transform-origin:50% 75% 0
 }
 
-h1:hover .spin{
+#site-title:hover .spin{
 	transform:rotate(2turn);
 	@apply text-accent
 }
@@ -64,12 +64,15 @@ h1:hover .spin{
 		bottom: 1em;
 
 	}
+}
 
-}
-@media screen and (max-width:640px)
-{.anim-nav-closed {
+
+
+@media screen and (max-width:640px) {
+	.anim-nav-closed {
 	transform: translateY( calc(-1 * var(--navbar-height) * 5rem));
+	}
+	body .anim-nav-opened {
+		transform: translateY( 0);
+	}
 }
-.anim-nav-opened {
-	transform: translateY( 0);
-}}
