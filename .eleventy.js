@@ -152,6 +152,7 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.setFrontMatterParsingOptions({
 		excerpt: true,
 		// Optional, default is "---"
+		excerpt_alias: 'description',
 		excerpt_separator: "<!-- excerpt -->"
 	});
 
@@ -171,13 +172,18 @@ module.exports = function (eleventyConfig) {
  * If "false" or NULL it will be published in PRODUCTION.
  * Every Post will ALWAYS be published in DEVELOPMENT so you can preview locally.
  */
-	eleventyConfig.addCollection('post', (collection) => {
 
-		return [...collection.getFilteredByGlob('./src/posts/**/*.md')]
 
-	})
+	const publishedPosts = (post) => !post.data.draft;
 
-	eleventyConfig.addCollection('tagList', function (collection) {
+	eleventyConfig.addCollection("post", (collection) => {
+		return collection
+			.getFilteredByGlob("./src/posts/*.md")
+			.filter(publishedPosts);
+	});
+
+
+	eleventyConfig.addCollection('tagList', (collection) => {
 		let tagSet = new Set()
 		collection.getAll().forEach(function (item) {
 			if ('tags' in item.data) {

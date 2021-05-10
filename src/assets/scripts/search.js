@@ -41,7 +41,7 @@ async function search(e) {
 			noResultsEl.style.display = "none";
 			results.map((r) => {
 				const doc = window.searchIndex.documentStore.getDoc(r.ref)
-				let { url, title, excerpt, date } = doc;
+				let { url, title, description, date } = doc;
 				const el = document.createElement("li");
 				el.classList.add('mb-8')
 				el.innerHTML = `<div class="text-sm text-gray"><time datetime="">${date}</time></div><h2 class="text-2xl lg:text-3xl font-semibold leading-7 text-accent2"><a href="${url}" class="block hover:underline">${title}</a></h2><div class="text-sm leading-relaxed italic text-gray-700">${excerpt || ""}</div>`
