@@ -1,5 +1,7 @@
 const path = require('path')
+const CopyPlugin = require("copy-webpack-plugin");
 const WebpackAssetsManifest = require('webpack-assets-manifest'); module.exports = {
+
   entry: {
     main: path.resolve(__dirname, 'src/assets/scripts/main.js'),
     search: path.resolve(__dirname, 'src/assets/scripts/search.js'),
@@ -28,6 +30,22 @@ const WebpackAssetsManifest = require('webpack-assets-manifest'); module.exports
     ],
   },
   plugins: [
+    //
+    new CopyPlugin({
+      patterns: [
+        {
+          from: "posts/**/*.{png,webp,gif,mp4,jpg,jpeg}",
+          context: "src",
+          to({ context, absoluteFilename }) {
+            return `${context}/assets/images/single/[name][ext]`;
+          },
+        }
+        ,
+      ],
+      options: {
+        concurrency: 100,
+      },
+    }),
     new WebpackAssetsManifest({
       output: '../../../src/_data/hashes_js.json'
     }),
