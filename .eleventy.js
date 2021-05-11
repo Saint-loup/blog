@@ -15,6 +15,47 @@ const embedEverything = require("eleventy-plugin-embed-everything");
 
 module.exports = function (eleventyConfig) {
 
+	/**
+	 * Opts in to a full deep merge when combining the Data Cascade.
+	 * Per the link below, "This will likely become the default in an upcoming major version."
+	 * So I'm going to implement it now.
+	 * @link https://www.11ty.dev/docs/data-deep-merge/#data-deep-merge
+	 */
+	eleventyConfig.setDataDeepMerge(true)
+
+	/**
+ * Custom Watch Targets
+ * for when the Tailwind config or .css files change...
+ * by default not watched by 11ty
+ * @link https://www.11ty.dev/docs/config/#add-your-own-watch-targets
+ */
+	eleventyConfig.addWatchTarget('./src/assets/css/')
+	eleventyConfig.addWatchTarget('./src/assets/scripts/')
+	eleventyConfig.addWatchTarget('./src/*.js')
+	eleventyConfig.addWatchTarget('./tailwind.config.js')
+	eleventyConfig.setWatchThrottleWaitTime(100);
+
+
+	/**
+	 * Passthrough File Copy
+	 * @link https://www.11ty.dev/docs/copy/
+
+	cf. webpack.configs.js pour le JS
+	cf. postcss.config.js pour le CSS
+
+	*/
+
+	eleventyConfig.addPassthroughCopy({ 'src/assets/images/*.gif': 'assets/images' });
+	eleventyConfig.addPassthroughCopy('src/assets/generatedImages/')
+	//eleventyConfig.addPassthroughCopy('src/*.webp')
+	//eleventyConfig.addPassthroughCopy('src/*.jpg')
+	eleventyConfig.addPassthroughCopy('src/*.ico')
+	eleventyConfig.addPassthroughCopy('src/robots.txt')
+	eleventyConfig.addPassthroughCopy('src/assets/css/fonts')
+	eleventyConfig.addPassthroughCopy('src/assets/UI')
+
+	eleventyConfig.setUseGitIgnore(false)
+
 
 	/**
 	 * Plugins
@@ -55,6 +96,7 @@ module.exports = function (eleventyConfig) {
 		eleventyConfig.addTransform(transformName, transforms[transformName])
 	})
 */
+
 	/**
 	 * Shortcodes
 	 * @link https://www.11ty.io/docs/shortcodes/
@@ -86,42 +128,6 @@ module.exports = function (eleventyConfig) {
 
 
 
-
-
-	/**
-	 * Custom Watch Targets
-	 * for when the Tailwind config or .css files change...
-	 * by default not watched by 11ty
-	 * @link https://www.11ty.dev/docs/config/#add-your-own-watch-targets
-	 */
-	eleventyConfig.addWatchTarget('./src/assets/css/')
-	eleventyConfig.addWatchTarget('./src/assets/scripts/')
-	eleventyConfig.addWatchTarget('./src/*.js')
-	eleventyConfig.addWatchTarget('./tailwind.config.js')
-
-
-
-	/**
-	 * Passthrough File Copy
-	 * @link https://www.11ty.dev/docs/copy/
-
-	cf. webpack.configs.js pour le JS
-	cf. postcss.config.js pour le CSS
-
-	*/
-
-	eleventyConfig.addPassthroughCopy({ 'src/assets/images/*.gif': 'assets/images' });
-	eleventyConfig.addPassthroughCopy('src/assets/generatedImages/')
-	//eleventyConfig.addPassthroughCopy('src/*.webp')
-	//eleventyConfig.addPassthroughCopy('src/*.jpg')
-	eleventyConfig.addPassthroughCopy('src/*.ico')
-	eleventyConfig.addPassthroughCopy('src/robots.txt')
-	eleventyConfig.addPassthroughCopy('src/assets/css/fonts')
-	eleventyConfig.addPassthroughCopy('src/assets/UI')
-
-	eleventyConfig.setUseGitIgnore(false)
-
-
 	/**
 	 * Add layout aliases
 	 * @link https://www.11ty.dev/docs/layouts/#layout-aliasing
@@ -135,13 +141,6 @@ module.exports = function (eleventyConfig) {
 	//eleventyConfig.addLayoutAlias('home', 'layouts/home.njk')
 
 
-	/**
-	 * Opts in to a full deep merge when combining the Data Cascade.
-	 * Per the link below, "This will likely become the default in an upcoming major version."
-	 * So I'm going to implement it now.
-	 * @link https://www.11ty.dev/docs/data-deep-merge/#data-deep-merge
-	 */
-	eleventyConfig.setDataDeepMerge(true)
 
 
 	/**

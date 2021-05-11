@@ -1,5 +1,7 @@
 
 const PhotoSwipe = require('photoswipe')
+const PhotoSwipeUI_Default = require('photoswipe/dist/photoswipe-ui-default.js')
+
 
 var initPhotoSwipeFromDOM = function (gallerySelector) {
 
@@ -138,24 +140,19 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
 			items;
 		items = parseThumbnailElements(galleryElement);
 
-		/*	const richPictureType = galleryElement.classList
-			const type = (
-				[...richPictureType].includes('rich-picture-gallery')
-				?
-				:
-			)*/
-		// define options (if needed)
 		options = {
 			closeOnScroll: false,
 			closeEl: true,
 			captionEl: true,
 			fullscreenEl: false,
 			zoomEl: false,
+			initialZoomLevel: 'fit',
+			secondaryZoomLevel: 'fill',
 			shareEl: false,
 			counterEl: true,
 			arrowEl: true,
 			preloaderEl: true,
-			clickToCloseNonZoomable: false,
+			clickToCloseNonZoomable: true,
 			tapToClose: false,
 			// define gallery index (for URL)
 			galleryUID: galleryElement.getAttribute('data-pswp-uid'),
@@ -202,7 +199,7 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
 		}
 
 		// Pass data to PhotoSwipe and initialize it
-		gallery = new PhotoSwipe(pswpElement, PhotoSwipe.PhotoSwipeUI_Default, items, options);
+		gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
 
 		// responsive images
 		// create variable that will store real size of viewport
@@ -262,7 +259,6 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
 		// gettingData event fires each time PhotoSwipe retrieves image source & size
 		gallery.listen('gettingData', function (index, item) {
 			// Set image source & size based on real viewport width
-			// feed the Neltify resize parameter the same small/medium/large width that will be assigned in the dimensions
 			item.src = `${item.orig_src}?nf_resize=fit&w=${item.width}`;
 			item.w = item.width;
 			item.h = item.height;
