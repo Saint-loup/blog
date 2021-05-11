@@ -5,7 +5,7 @@ const WebpackAssetsManifest = require('webpack-assets-manifest'); module.exports
   entry: {
     main: path.resolve(__dirname, 'src/assets/scripts/main.js'),
     search: path.resolve(__dirname, 'src/assets/scripts/search.js'),
-    gallery: path.resolve(__dirname, 'src/assets/scripts/gallery.js'),
+    richPicture: path.resolve(__dirname, 'src/assets/scripts/richPicture.js'),
   },
 
 

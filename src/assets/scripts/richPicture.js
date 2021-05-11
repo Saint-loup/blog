@@ -76,8 +76,8 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
 
 		// find index of clicked item by looping through all child nodes
 		// alternatively, you may define index via data- attribute
-		var clickedGallery = clickedListItem.parentNode.parentNode, // we need to make our way back to the top of the ul > li > figure chain
-			childNodes = clickedListItem.parentNode.parentNode.querySelectorAll('figure'),
+		var clickedGallery = clickedListItem.parentNode, // we need to make our way back to the top of the ul > li > figure chain
+			childNodes = clickedListItem.parentNode.querySelectorAll('figure'),
 			numChildNodes = childNodes.length,
 			nodeIndex = 0,
 			index;
@@ -138,9 +138,15 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
 			items;
 		items = parseThumbnailElements(galleryElement);
 
+		/*	const richPictureType = galleryElement.classList
+			const type = (
+				[...richPictureType].includes('rich-picture-gallery')
+				?
+				:
+			)*/
 		// define options (if needed)
 		options = {
-
+			closeOnScroll: false,
 			closeEl: true,
 			captionEl: true,
 			fullscreenEl: false,
@@ -271,16 +277,26 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
 		gallery.init();
 	};
 
+
+
 	// loop through all gallery elements and bind events
 	var galleryElements = document.querySelectorAll(gallerySelector);
 
+
+
 	for (var i = 0, l = galleryElements.length; i < l; i++) {
+		/*	const child = galleryElements[i].childNodes[0]
+			if (!child.tagName.toUpperCase() === 'UL') {
+				galleryElements[i].insertBefore(document.createElement('ul'), child)
+
+			}*/
+
 		galleryElements[i].setAttribute('data-pswp-uid', i + 1);
 		galleryElements[i].onclick = onThumbnailsClick;
 	}
 
 	// find all figcaptions within a gallery, and hide them visually
-	var imageElements = document.querySelectorAll('.gallery figure figcaption');
+	var imageElements = document.querySelectorAll('.rich-picture figure figcaption');
 	for (var i = 0, l = imageElements.length; i < l; i++) {
 		imageElements[i].classList.add('visually-hidden');
 	}
@@ -292,5 +308,4 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
 	}
 };
 
-// execute above function
-initPhotoSwipeFromDOM('.gallery ul');
+initPhotoSwipeFromDOM('.rich-picture');

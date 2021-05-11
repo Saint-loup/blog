@@ -3,9 +3,10 @@ const md = require('./markdown.js')
 module.exports = {
 
 
-	gallery: function (data) {
+	richpicture: function (data, type) {
 		const content = md.render(data)
-		return `<div class="gallery container-wide" >${content}</div>`;
+
+		return `<div class="rich-picture rich-picture-${type} container-wide" >${content}</div>`;
 	},
 
 

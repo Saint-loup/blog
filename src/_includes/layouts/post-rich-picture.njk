@@ -4,8 +4,8 @@ layout: post
 
 {{ content | safe }}
 
-{% if layout === "post-gallery" %}
-	{% include "../components/gallery.njk" %}
+{% if layout === "post-rich-picture" %}
+	{% include "../components/rich-picture.njk" %}
 
 	{% set css %}
 	{% include "src/assets/css/photoswipe/photoswipe.css" %}
@@ -15,4 +15,4 @@ layout: post
 		{{css | minify('css') | safe}}
 	</style>
 
-<script  src="/assets/scripts/{{hashes_js['gallery.js']}}" defer></script>{% endif %}
+<script  src="/assets/scripts/{{hashes_js['richPicture.js']}}" defer></script>{% endif %}

@@ -68,7 +68,7 @@ module.exports = {
 		runAfter: (image, document) => {
 			//image.setAttribute('src', image.dataset.responsiveruRL);
 			//let caption = image.getAttribute("title");
-			if (image.closest('.gallery')) {
+			if (image.closest('.rich-picture')) {
 				const link = document.createElement("a");
 				link.setAttribute("href", image.getAttribute('src'));
 				link.appendChild(image.cloneNode(true));
