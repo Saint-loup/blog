@@ -7,7 +7,7 @@ module.exports = {
 		selector: '[class^="template-post"] :not(picture) img[src]:not([srcset]):not([src$=".svg"]):not([src$=".gif"])',
 		minWidth: 360,
 		maxWidth: 1600,
-		fallbackWidth: 576,
+		fallbackWidth: 1600,
 		sizes: '(max-width: 60rem) 90vw, 60rem',
 		resizedImageUrl: (src, width) => {
 
