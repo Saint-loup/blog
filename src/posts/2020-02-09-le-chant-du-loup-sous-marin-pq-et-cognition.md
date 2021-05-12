@@ -7,7 +7,7 @@ tags:
   - "sciences cognitives"
   - "systemes complexes"
 
-layout: post-gallery
+layout: post-rich-picture
 hero: split  # options: carousel, graphic, video, split (text & image)
 heroSettings:
   height:
@@ -50,14 +50,14 @@ Dans un environnement aussi avancé et précaire qu'un sous-marin, l'usage de l'
 
 Il y a d'abord la table de navigation, utilisée avec feutre effaçable, rapporteur et compas. Le navigateur y calcule des modifications de trajectoire pour les proposer au commandant, qui peut voir le résultat directement. Quelques exemples, tirés du Chant du loup et d'autres films.
 
-{% gallery %}
+{% richpicture gallery %}
 
 
-- ![](/assets/images/EQPVwmDX0Ac83Jy.jpg)
+![](/assets/images/EQPVwmDX0Ac83Jy.jpg)
 
-- ![](/assets/images/EQPVwnmXYAASuGE.jpg )
+![](/assets/images/EQPVwnmXYAASuGE.jpg )
 
-{% endgallery %}
+{% endrichpicture %}
 
 
 
@@ -70,24 +70,25 @@ Des zoids tout à fait mignons dessinés à la main en 1994
 
 Admirez aussi le tableau lumineux, les feuillets suspendus et le rouleau de scotch pré-dévidé.
 
-{% gallery %}
+{% richpicture gallery %}
 
-- ![](/assets/images/vlcsnap-2020-02-08-14h18m13s710.png '')
+![](/assets/images/vlcsnap-2020-02-08-14h18m13s710.png '')
 
-- ![](/assets/images/vlcsnap-2020-02-08-14h09m56s011-1.png)
+![](/assets/images/vlcsnap-2020-02-08-14h09m56s011-1.png)
 
-{% endgallery %}
+{% endrichpicture %}
 
 
 
 Cet usage du papier est aussi documenté dans les cockpits d'avion, [voir ce papier](https://pages.ucsd.edu/~ehutchins/documents/fp146-nomura.pdf) (PDF) écrit par Nomura, Hutchins (encore lui) et Holder.
 
-{% gallery %}
+{% richpicture gallery %}
 
-- ![](/assets/images/Capture-d’écran-2020-02-08-à-10.53.48.png)
-- ![](/assets/images/Capture-d’écran-2020-02-08-à-10.53.00.png)
+![](/assets/images/Capture-d’écran-2020-02-08-à-10.53.48.png)
 
-{% endgallery %}
+![](/assets/images/Capture-d’écran-2020-02-08-à-10.53.00.png)
+
+{% endrichpicture %}
 
 
 ## Papier... et papier-toilette
@@ -117,24 +118,24 @@ L'oreille d'or a le trackball dans une main, le casque sur une seule oreille pen
 Voici quelques interfaces montrées dans le film (probablement non-contractuelles). Mais c'est la partie émergée de l'iceberg. D'une certaine manière dans un sous-marin tout est interface entre l'être humain et des fonctions critiques. Tout est pensé pour aider les sous-mariniers à écouter et exécuter des ordres, à marcher, se tenir, ou respirer. Par exemple quand l'atmosphère est compromise, ils peuvent se brancher à intervalle régulier à des arrivées d'air.
 
 
-{% gallery %}
+{% richpicture gallery %}
 
 
-- ![](/assets/images/D_dx7AjXoAcTNaU.png)
+![](/assets/images/D_dx7AjXoAcTNaU.png)
 
-- ![](/assets/images/D_dx7ARWkAEjWrd.png)
+![](/assets/images/D_dx7ARWkAEjWrd.png)
 
-- ![](/assets/images/D_dx7BQX4AE4Z7E.png)
+![](/assets/images/D_dx7BQX4AE4Z7E.png)
 
-- ![](/assets/images/D_dx92QX4AI5k-d.jpg)
+![](/assets/images/D_dx92QX4AI5k-d.jpg)
 
-- ![](/assets/images/D_dx93bXkAAFIMo.png)
+![](/assets/images/D_dx93bXkAAFIMo.png)
 
-- ![](/assets/images/D_dy0NxXYAIXkt8.png)
+![](/assets/images/D_dy0NxXYAIXkt8.png)
 
-- ![](/assets/images/vlcsnap-2020-02-09-14h49m19s615-e1583282965609.jpg)
+![](/assets/images/vlcsnap-2020-02-09-14h49m19s615-e1583282965609.jpg)
 
-{% endgallery %}
+{% endrichpicture %}
 
 
 Dans cet écosystème entièrement artificiel, tout a été conçu. L'équipage aussi : comment s'organiser, qui doit faire quoi à quel moment, le language codifié, tout a été réfléchi. Plutôt que l'histoire d'un humain réduit à un rouage dans la machine, le film nous montre un monde où l'opposition entre humain et système n'a pas de sens.
