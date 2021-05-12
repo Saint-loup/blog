@@ -6,6 +6,7 @@
 
 .article .post-main{
 	h1, h2, h3, h4, h5 {
+		display: flex;
 		position: relative;
 		padding-left: 2em;
 		left: -2em;
@@ -20,7 +21,6 @@
 		display: none;
 		padding:0 .5em;
 		@apply text-accent;
-		top: 50%;
 	}
 }
 
@@ -46,3 +46,13 @@
 
 
 
+	.container-wide {
+		margin-left: calc(30% - 30vw);
+		margin-right: calc(30% - 30vw);
+		position: relative
+	}
+
+
+	.article .post-main img {
+		margin:auto
+	}
