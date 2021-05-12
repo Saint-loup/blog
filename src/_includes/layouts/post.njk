@@ -7,7 +7,7 @@ layout: base
 {% else %}
 
 {% endif %}
-<article class="template-post my-20 prose lg:prose-xl prose-lg article {{ structure.g_proseWidth }}">
+<section class="template-post my-20 prose lg:prose-xl prose-lg article {{ structure.g_proseWidth }}">
   {#  Allows a user to easily change the Hero type on the Home page...or any page.
           See /src/home.md for how to use.
       #}
@@ -33,7 +33,7 @@ layout: base
 
   <div class="my-16 post-main">{{ content | safe }}</div>
 
-</article>
+</section>
 
 <footer class="mt-16 mb-6 text-lg container-wide md:text-xl ">
   {% if structure.g_showTagPills or structure.g_showSocialShareIcons %}
