@@ -191,7 +191,7 @@ module.exports = function (eleventyConfig) {
 
 	eleventyConfig.addCollection("post", (collection) => {
 		return collection
-			.getFilteredByGlob("./src/posts/*.md")
+			.getFilteredByGlob("./src/posts/**/*.md")
 			.filter(publishedPosts);
 	});
 
