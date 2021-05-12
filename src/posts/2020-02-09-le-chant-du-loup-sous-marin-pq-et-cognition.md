@@ -7,7 +7,7 @@ tags:
   - "sciences cognitives"
   - "systemes complexes"
 
-layout: post-rich-picture
+richPicture: true
 hero: split  # options: carousel, graphic, video, split (text & image)
 heroSettings:
   height:

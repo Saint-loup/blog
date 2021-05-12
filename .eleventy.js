@@ -149,7 +149,6 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addLayoutAlias('base', 'layouts/base.njk')
 	eleventyConfig.addLayoutAlias('page', 'layouts/page.njk')
 	eleventyConfig.addLayoutAlias('post', 'layouts/post.njk')
-	eleventyConfig.addLayoutAlias('post-rich-picture', 'layouts/post-rich-picture.njk')
 	eleventyConfig.addLayoutAlias('author', 'layouts/author.njk')
 
 	//eleventyConfig.addLayoutAlias('home', 'layouts/home.njk')
