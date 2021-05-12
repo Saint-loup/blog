@@ -3,7 +3,7 @@ title: "Wordpress ⟼ Eleventy"
 date: 2021-04-25
 tags:
   - "Tout ce qui bouge"
-layout: post-gallery
+layout: post-rich-picture
 hero: split  # options: carousel, graphic, video, split (text & image)
 heroSettings:
   height:
