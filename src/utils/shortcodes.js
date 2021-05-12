@@ -1,11 +1,8 @@
 const markdownIt = require('markdown-it')
 const svgColorDefault = 'text-indigo-500'
 
+
 module.exports = {
-
-
-
-
 
 	project: function (name, link, img, description) {
 		return `<div class="project flex flex-col overflow-hidden rounded-lg shadow-lg">

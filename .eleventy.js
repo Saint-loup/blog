@@ -9,7 +9,9 @@ const imagesResponsiver = require("eleventy-plugin-images-responsiver");
 require('dotenv').config()
 const embedEverything = require("eleventy-plugin-embed-everything");
 
-
+const meta = require('./src/_data/meta.js');
+const njk = require('nunjucks')
+const api = require('zotero-api-client');
 
 
 
@@ -124,7 +126,19 @@ module.exports = function (eleventyConfig) {
 	 *
 	 * @link https://www.11ty.dev/docs/languages/nunjucks/#asynchronous-shortcodes
 	 */
-	//eleventyConfig.addNunjucksAsyncShortcode('svgsprite', svgsprite)
+	eleventyConfig.addNunjucksAsyncShortcode('zotero', async function (type, id) {
+		if (type === 'tag') {
+			const response = await api().library('user', meta.zoteroProfileID).tags(id).items().get();
+		}
+		else {
+			const response = await api().library('user', meta.zoteroProfileID).collection(id).items().get();
+
+		}
+		const items = await response.getData();
+		njk.configure('src/_includes/components/', { autoescape: true, trimBlocks: true, lstripBlocks: true });
+
+		return njk.render('zotero.njk', { items: items });
+	})
 
 
 
