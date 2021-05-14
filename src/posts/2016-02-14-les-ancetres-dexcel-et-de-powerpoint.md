@@ -40,10 +40,6 @@ Si on remonte jusqu'au début du 20e siècle, on trouve l'entreprise de chimie D
 Et DuPont a fait ça de la manière la plus littérale et steampunk qui soit : _avec des rails_.
 
 
-
-{% richpicture %}
-
-
 ![](/assets/images/1974298\_001.jpg "1919 : première version") 
 
 ![](/assets/images/2005273\_0001-e145540648863.jpg "1950 : ver­sion plus évo­luée")
