@@ -32,18 +32,18 @@ On n'a pas attendu l'informatique pour représenter des données. Les [première
 
 {% richpicture %}
 
-![tablette2](/Users/baptiste/blog/src/posts/physical dataviz/tablette2.png "[source](https://fr.wikipedia.org/wiki/YBC_7289)")
+![tablette2](tablette2.jpg "[source](https://fr.wikipedia.org/wiki/YBC_7289)")
 
-![tablette1](/Users/baptiste/blog/src/posts/physical dataviz/tablette1.png)
+![tablette1](tablette1.jpg)
 
-![Building_plans_Louvre_AO338](/Users/baptiste/blog/src/posts/physical dataviz/Building_plans_Louvre_AO338.jpg "Plan d'un bâtiment de six pièces, un sanctuaire ou une maison privée. Fin du IIIe millénaire. [Source](https://fr.wikipedia.org/wiki/Fichier:Building_plans_Louvre_AO338.jpg)")
+![Building_plans_Louvre_AO338](Building_plans_Louvre_AO338.jpg "Plan d'un bâtiment de six pièces, un sanctuaire ou une maison privée. Fin du IIIe millénaire. [Source](https://fr.wikipedia.org/wiki/Fichier:Building_plans_Louvre_AO338.jpg)")
 
 {% endrichpicture %}
 
 
 Il y a plein de manières compréhensibles et mémorables d'encoder des informations dans des objets. Voici un exemple qui ne repose sur aucun système d'écriture, contrairement aux tablettes plus haut : les cartes utilisées par les marins des îles Marshall, dans l'océan Pacifique.
 
-![stick_maps](/Users/baptiste/blog/src/posts/physical dataviz/stick_maps.jpg)
+![stick_maps](stick_maps.jpg)
 
 Voici [une longue compilation](http://dataphys.org/list/) de ces "visualisations physiques de données", avec aussi pas mal d'expérimentations récentes.
 
@@ -51,15 +51,15 @@ Voici [une longue compilation](http://dataphys.org/list/) de ces "visualisations
 
 Si on saute aux XIX et XXe siècles, la création de modèles en relief est un cas d'utilisation relativement fréquent.  En 1874, Maxwell illustra avec un modèle en platre les liens entre l'évolution de trois variable : volume, entropie et énergie.
 
-![maxwell](maxwell.png "[Source](https://peabodyhsi.wordpress.com/2020/07/15/3d-scanning-the-famous-maxwell-gibbs-thermodynamic-model/). Voir [Wikipedia](https://en.wikipedia.org/wiki/Maxwell's_thermodynamic_surface) pour des photos du modèle en platre et d'autres infos")
+![maxwell](maxwell.jpg "[Source](https://peabodyhsi.wordpress.com/2020/07/15/3d-scanning-the-famous-maxwell-gibbs-thermodynamic-model/). Voir [Wikipedia](https://en.wikipedia.org/wiki/Maxwell's_thermodynamic_surface) pour des photos du modèle en platre et d'autres infos")
 
 Datant de 1913, cette carte montre le nombre de passagers transportés par métro de Frankfort. La quantité était représenté par le nombre de lamelles de bois collées et empilées.
 
-![streetcar](/Users/baptiste/blog/src/posts/physical dataviz/streetcar.jpg "[source](http://dataphys.org/list/frankfurt-streetcar-load/)")
+![streetcar](streetcar.jpg "[source](http://dataphys.org/list/frankfurt-streetcar-load/)")
 
 Datant des années 50, cette courbe montre l'évolution de la consommation d'électricité en Grande-Bretagne, suivant les heures de la journée, entre 1951 et 1954. Chaque jour est représenté par une feuille de carton et des poignées permettaient d'élargir le dispositif pour ajouter des feuilles.
 
-![Graphique en 3D de l'évolution de la consommation électrique](/Users/baptiste/blog/src/posts/physical dataviz/medium_cd0673_039_111216_INH_090_Electricity_3D_graph.jpg "http://dataphys.org/list/electricity-generated-or-demanded/")
+![Graphique en 3D de l'évolution de la consommation électrique](medium_cd0673_039_111216_INH_090_Electricity_3D_graph.jpg "http://dataphys.org/list/electricity-generated-or-demanded/")
 
 ## Interactivité
 
@@ -85,9 +85,9 @@ Ou encore, https://100yrsofbrinton.tumblr.com/post/122103818380/interactive-dash
 
 {% richpicture %}
 
-![indexcards2](/Users/baptiste/blog/src/posts/physical dataviz/indexcards2.png)
+![indexcards2](indexcards2.jpg)
 
-![indexcards](/Users/baptiste/blog/src/posts/physical dataviz/indexcards.png)
+![indexcards](indexcards.jpg)
 
 {% endrichpicture %}
 
