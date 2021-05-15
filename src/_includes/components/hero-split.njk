@@ -1,7 +1,6 @@
 {#{{ heroSettings.height.mobile or 'h-1/2' }} sm:{{ heroSettings.height.desktop or heroSettings.height.mobile or 'h-1/2' }}#}
 <header class="relative flex flex-col h-auto mb-8 lg:flex-row hero-split lg:mb-18">
   <div class=" decor-dark h-2/3"></div>
-
   <div
         class="flex flex-col m-8 mx-auto prose lg:justify-center text-gray-50 lg:w-1/2 prose-l lg:text-left"
       >
@@ -39,7 +38,7 @@
 #}
     <img  alt="{{heroSettings.bg.alt}}"
           class="shadow-lg-dark"
-          src="/assets/images/{{ heroSettings.bg.image }}"
+          src="/assets/images/{{'relative/' if relative }}{{ heroSettings.bg.image }}"
           alt="Hero Image"
 />
   </div>

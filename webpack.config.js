@@ -37,7 +37,7 @@ const WebpackAssetsManifest = require('webpack-assets-manifest'); module.exports
           from: "posts/**/*.{png,webp,gif,mp4,jpg,jpeg}",
           context: "src",
           to({ context, absoluteFilename }) {
-            return `${context}/assets/images/single/[name][ext]`;
+            return `${context}/assets/images/relative/[name][ext]`;
           },
         }
         ,
