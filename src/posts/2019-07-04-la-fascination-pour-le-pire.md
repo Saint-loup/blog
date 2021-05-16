@@ -6,7 +6,7 @@ tags:
 hero:
   type: split  # options: carousel, graphic, video, split (text & image)
   image: "012cukejqs1z.png"
-  ---
+---
 
 ![](/assets/images/012cukejqs1z.png)
 
