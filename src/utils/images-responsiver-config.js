@@ -24,7 +24,7 @@ module.exports = {
 					'$1-' + width + '.jpg')
 			return src
 		},
-		runBefore: async (image, document) => {
+		runBefore: (image, document) => {
 			let url = image.getAttribute('src')
 			const options = {
 				sharpWebpOptions: {
@@ -51,7 +51,8 @@ module.exports = {
 				else {
 					url = "src/" + url
 				}
-				await Image(decodeURI(url), options);
+				// fonction async mais ajouter await fout le bordel
+				Image(decodeURI(url), options);
 				let metadata = Image.statsSync(decodeURI(url), options);
 				const images = metadata.jpeg
 				image.setAttribute('width', images[images.length - 1].width);

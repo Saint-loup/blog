@@ -7,17 +7,11 @@ tags:
   - "données"
 draft: true
 richPicture: true
-hero: split  # options: carousel, graphic, video, split (text & image)
-heroSettings:
-  height:
-    mobile:
-    desktop:
-  bg:
-    color: bg-dark # default bg-black
-    image:
-    imagePosition: # options = bg-center (default), bg-left, bg-right
-  headingTextColor:
-  subheadingTextColor:
+hero:
+  type: split  # options: carousel, graphic, video, split (text & image)
+  image: maxwell.jpg
+  alt:
+
 ---
 
 Quelques exemples et remarques sur ce que l'on appelle parfois la [physicalisation](https://hal.archives-ouvertes.fr/hal-02113248v1) de données, dans un sens large.
@@ -77,11 +71,9 @@ Comment présenter un enchainement de graphiques à un auditoire, quand on n'a m
 
 
 
-Ou encore, https://100yrsofbrinton.tumblr.com/post/122103818380/interactive-dashboards-in-1914-yes
+Ou encore,
 
-
-
-
+ https://100yrsofbrinton.tumblr.com/post/122103818380/interactive-dashboards-in-1914-yes
 
 {% richpicture %}
 

@@ -1,15 +1,20 @@
 ---
 layout: base
 ---
-{% if hero %}
-  {% set heroComponent = ['components/hero-', hero, '.njk'] %}
+
+{% if hero.image %}
+
+  {% set heroComponent = ['components/hero-', hero.type, '.njk'] %}
+  {{hero.image | log}}
+
   {% include heroComponent | join %}
 {% else %}
 
 {% endif %}
+
 <article class="template-post my-20 prose lg:prose-xl prose-lg article {{ structure.g_proseWidth }}">
 
-  {% if not hero %}
+  {% if not hero.image %}
     <header class="">
       <h1 class="{{ colors.headingsCustom or colors.headingsDefault }}">{{ seo.title or title }}</h1>
       <div class="text-sm {{ colors.authorCustom.date or colors.authorDefault.date}}">
