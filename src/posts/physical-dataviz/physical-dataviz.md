@@ -5,7 +5,7 @@ tags:
   - "histoire"
   - "objets"
   - "données"
-draft: true
+draft: false
 
 richPicture: true
 hero:
@@ -109,7 +109,7 @@ D'autant que le système était pensé de bout en bout. Il y avait des "méta-fi
 
 ## Ouvroir de dataviz potentielles
 
-Finissons par un exercice sous contraintes intéressant : des "photoviz" qui utilisent des objets triviaux pour figurer des quantités et liés au thème de la donnée représentée. Garanti sans triche ni redimensionnement. 
+Finissons par un exercice sous contraintes intéressant : des "photoviz" qui utilisent des objets triviaux pour figurer des quantités et liés au thème de la donnée représentée. Garanti sans triche ni redimensionnement.
 
 https://twitter.com/JulesGrandin/status/1163371189487722496
 
@@ -121,6 +121,6 @@ https://twitter.com/JulesGrandin/status/1164093612172427264
 
 ## Récap des principaux liens
 
-- [Un panorama complet de la question](https://hal.archives-ouvertes.fr/hal-02113248v1) : histoire, enjeux, développements récents...  
-- [Un inventaire de dataphys](http://dataphys.org/list/). 
-- [Plein de posts dédié à Brinton](https://gravyanecdote.com/tag/100yrsofbrinton/), auteur du traité de 1914 évoqué et qui avait à l'époque déjà recensé pas mal d'exemples. 
+- [Un panorama complet de la question](https://hal.archives-ouvertes.fr/hal-02113248v1) : histoire, enjeux, développements récents...
+- [Un inventaire de dataphys](http://dataphys.org/list/).
+- [Plein de posts dédié à Brinton](https://gravyanecdote.com/tag/100yrsofbrinton/), auteur du traité de 1914 évoqué et qui avait à l'époque déjà recensé pas mal d'exemples.
