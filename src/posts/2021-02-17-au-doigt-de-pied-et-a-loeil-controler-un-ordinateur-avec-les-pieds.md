@@ -7,7 +7,6 @@ tags:
 hero:
   type: split  # options: carousel, graphic, video, split (text & image)
   image: joyboard2.jpg
-  alt:
 
 ---
 

@@ -9,7 +9,6 @@ description: Une mosaïque des livres, jeux, films... que je "pratique", filtrab
 hero:
   type: split  # options: carousel, graphic, video, split (text & image)
   image: tb.jpg
-  alt:
 
 
 ---

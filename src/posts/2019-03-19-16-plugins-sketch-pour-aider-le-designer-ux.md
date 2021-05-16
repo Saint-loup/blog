@@ -7,8 +7,7 @@ tags:
 hero:
   type: split  # options: carousel, graphic, video, split (text & image)
   image: "2019-03-19_20h12_29.png"
-  alt:
----
+  ---
 
 Pour les designers UX qui travaillent sur Sketch, voici des plugins utiles pour faire des wireframes ou des wireflows.
 
