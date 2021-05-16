@@ -7,7 +7,7 @@ tags:
 hero:
   type: split  # options: carousel, graphic, video, split (text & image)
   image: "1-uFzbZEP0dfQZzBpgwPndGA-e1582155605785.jpeg"
-  ---
+---
 
 Alors que j'avais dévoré La Horde du contrevent, le nouveau roman d’Alain Damasio m’est tombé des mains. Voici une tentative de critique.
 
