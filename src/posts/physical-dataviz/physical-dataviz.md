@@ -15,7 +15,7 @@ hero:
 
 ---
 
-Panorama foutraque de ce que l'on appelle parfois la physicalisation de données.
+Panorama foutraque de ce que l'on appelle parfois la physicalisation de données : visualiser des données par un support physique non-numérique.
 
 <!-- excerpt -->
 
@@ -23,7 +23,7 @@ Panorama foutraque de ce que l'on appelle parfois la physicalisation de données
 
 ## La dataviz en 3000 avant JC
 
-On n'a pas attendu l'informatique pour représenter des données. Les [premières traces](https://en.wikipedia.org/wiki/History_of_writing#Recorded_history) de l'écriture c'est un peu ça : un jeton pour une vache, un deuxième jeton pour une seconde vache.  Les systèmes graphiques plus aboutis étaient utilisées avec des buts similaires, puisqu'on retrouve beaucoup d'inscription parlant de taille de troupeaux, d'aire de parcelles ou de volumes de récoltes. Parfois en utilisant à plein la spatialité de la surface, comme en témoignent ces deux tablettes babyloniennes :  un problème de géométrie et le plan d'un grand bâtiment.
+On n'a pas attendu l'informatique pour représenter des données. Les [premières traces](https://en.wikipedia.org/wiki/History_of_writing#Recorded_history) de l'écriture c'est un peu ça : un jeton pour une vache, un deuxième pour une seconde vache.  Les systèmes graphiques plus aboutis étaient utilisées avec des buts similaires, puisqu'on retrouve beaucoup d'inscription parlant de taille de troupeaux, d'aire de parcelles ou de volumes de récoltes. Parfois en utilisant à plein la spatialité de la surface, comme en témoignent ces deux tablettes babyloniennes :  un problème de géométrie et le plan d'un grand bâtiment.
 
 {% richpicture %}
 
