@@ -4,8 +4,10 @@ date: 2019-07-17
 tags:
   - "futur"
   - "litterature"
-coverImage: "1-uFzbZEP0dfQZzBpgwPndGA-e1582155605785.jpeg"
-
+hero:
+  type: split  # options: carousel, graphic, video, split (text & image)
+  image: "1-uFzbZEP0dfQZzBpgwPndGA-e1582155605785.jpeg"
+  alt:
 ---
 
 Alors que j'avais dévoré La Horde du contrevent, le nouveau roman d’Alain Damasio m’est tombé des mains. Voici une tentative de critique.

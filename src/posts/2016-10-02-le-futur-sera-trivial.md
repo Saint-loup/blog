@@ -4,15 +4,20 @@ date: 2016-10-02
 tags:
   - "futur"
   - "réflexions"
-coverImage: "giphy.gif"
+hero:
+  type: split  # options: carousel, graphic, video, split (text & image)
+  image: "falcon.gif"
+  alt: "Han Solo tape sur un panneau du cockpit du Millenium Falcon pour le faire fonctionner."
+
 
 ---
 
 J'aime beaucoup le concept de futur trivial ("future mundane") de Nick Foster, qu'il a présenté dans [un article](http://www.core77.com/posts/25678/the-future-mundane-25678) et lors d'[une conférence](https://www.hellofosta.com/writing/the-future-mundane). Qu'est-ce à dire ?
 
-![Millenium Falcon](/assets/images/giphy.gif)
 
-## Thèse 1 : "dans le futur, les tables resteront branlantes" ([source de la formule](https://posts.philipkd.com/wobbly-tables-and-the-problem-with-futurism-934468d2308#.jn1nbru2s))
+## Thèse 1 : "dans le futur, les tables resteront branlantes"
+
+([source de la formule](https://posts.philipkd.com/wobbly-tables-and-the-problem-with-futurism-934468d2308#.jn1nbru2s))
 
 Comprendre : la technologie restera imparfaite, soumise à l'usure, pleine d'imprévus, et vecteur de désagréments, petits ou gros.
 

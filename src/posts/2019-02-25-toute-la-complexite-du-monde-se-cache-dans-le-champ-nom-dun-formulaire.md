@@ -5,9 +5,10 @@ tags:
   - "inclusion"
   - "réflexions"
   - "systemes complexes"
-
-coverImage: "Capture-d’écran-2019-02-22-à-00.48.19-1-e1551047733730.png"
-
+hero:
+  type: split  # options: carousel, graphic, video, split (text & image)
+  image: "Capture-d’écran-2019-02-22-à-00.48.19-1-e1551047733730.png"
+  alt:
 ---
 
 ![](/assets/images/Capture-d’écran-2019-02-22-à-00.48.19-1-e1551047733730.png)

@@ -4,8 +4,10 @@ date: 2017-08-05
 tags:
   - "architecture"
   - "ville"
-coverImage: "archisuits-bench.jpg"
-
+hero:
+  type: split  # options: carousel, graphic, video, split (text & image)
+  image: "archisuits-bench.jpg"
+  alt: "Un banc anti SDF, anti-dealer, anti-tagueur, anti-skater"
 ---
 
 ![banc de camden](/assets/images/Camden_bench.jpg " Un banc anti SDF, anti-dealer, anti-tagueur, anti-skater")

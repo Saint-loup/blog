@@ -9,6 +9,8 @@ La page d'accueil charge en ~250ms. Environnement : Firefox 89, pas de cache, r�
 - Cache busting du JS et du CSS
 - RSS
 - Plan de site
+- Aperçu du contenu quand un lien est posté sur Twitter ("Twitter Cards")
+
 
 ## Pages
 
@@ -26,8 +28,9 @@ La page d'accueil charge en ~250ms. Environnement : Firefox 89, pas de cache, r�
 
 
 
-## images
+## Média
 
+- Embarquement automatique de contenu Twitter, Youtube... juste avec l'URL
 - Gallerie d'images s'ouvrant en popin
 - Toutes les images sont charges paresseusement.
 - Compression et conversion auto d'images en .webp. Fallback en jpg si le navigateur ne supporte pas le format, géré coté serveur, avec une technique adaptée [de ceci](https://github.com/cdowdy/Nginx-Content-Negotiation/blob/master/nginx.conf)
