@@ -8,12 +8,11 @@ description: Une mosaïque des livres, jeux, films... que je "pratique", filtrab
 
 hero:
   type: split  # options: carousel, graphic, video, split (text & image)
-  image: image.png
+  image: tb.jpg
   alt:
 
 
 ---
-
 
 
 [C'est ici](http://table-basse.toutcequibouge.net/){.cta}

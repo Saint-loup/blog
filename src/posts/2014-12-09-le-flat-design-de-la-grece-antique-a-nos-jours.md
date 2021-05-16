@@ -2,7 +2,6 @@
 title: "Le flat design de la Grèce antique à nos jours"
 date: 2014-12-09
 tags:
-  - "anthologie"
   - "architecture"
   - "histoire"
 

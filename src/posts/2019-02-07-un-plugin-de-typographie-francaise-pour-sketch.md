@@ -5,7 +5,10 @@ tags:
   - "prototypage"
   - "travaux"
 
-coverImage: "Icon_ombre2.png"
+hero:
+  type: split  # options: carousel, graphic, video, split (text & image)
+  image: "Icon_ombre2.png"
+  alt:
 
 ---
 

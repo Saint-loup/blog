@@ -11,4 +11,4 @@ hero:
   alt: Clavier auxiliaire utilisé par Tesler pour tester la fonction de couper-coller, avec des étiquettes notées "cut" et "paste".
 ---
 
-Wow il est [sur Github](https://github.com/Saint-loup/blog). Documentation et réflexions à venir.
+Ce blog existe depuis fiou, 2012. Les sources sont même [sur Github](https://github.com/Saint-loup/blog). Documentation et réflexions à venir.

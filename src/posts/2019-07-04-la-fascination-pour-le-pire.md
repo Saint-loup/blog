@@ -3,8 +3,10 @@ title: "La fascination pour le pire"
 date: 2019-07-04
 tags:
   - "conception"
-coverImage: "012cukejqs1z.png"
-
+hero:
+  type: split  # options: carousel, graphic, video, split (text & image)
+  image: "012cukejqs1z.png"
+  alt:
 ---
 
 ![](/assets/images/012cukejqs1z.png)

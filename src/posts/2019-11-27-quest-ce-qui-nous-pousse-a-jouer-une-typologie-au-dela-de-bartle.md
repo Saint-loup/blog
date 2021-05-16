@@ -6,8 +6,10 @@ tags:
   - "recherche"
   - "sciences cognitives"
   - "utilisateurs"
-coverImage: "2019-11-23_13h31_18-1-scaled.jpg"
-
+hero:
+  type: split  # options: carousel, graphic, video, split (text & image)
+  image: "2019-11-23_13h31_18-1-scaled.jpg"jpeg"
+  alt:
 ---
 
 _Sur la psychologie des joueurs et les travaux de Nick Yee et Quantic Foundry._

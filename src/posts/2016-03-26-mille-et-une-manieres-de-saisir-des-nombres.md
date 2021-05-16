@@ -4,6 +4,10 @@ date: 2016-03-26
 tags:
   - "histoire"
   - "objets"
+hero:
+  type: split  # options: carousel, graphic, video, split (text & image)
+  image: Curta_II.jpg
+  alt:
 
 ---
 
@@ -13,7 +17,7 @@ En schématisant, on peut distinguer deux manières de saisir des nombres : av
 
 Dans le premier cas, on choisit une bonne valeur sur une échelle continue, avec un curseur ou un stylet. L’échelle peut être linéaire (comme sur l’Arithmomètre) ou circulaire (comme sur la [Pascaline](https://fr.wikipedia.org/wiki/Pascaline#Roue_d.27inscription) ou un téléphone à cadran). L’échelle est parfois implicite, comme sur la Curta où seule la valeur sélectionnée est affichée.
 
-![Pascaline](/assets/images/640px-Arts_et_Metiers_Pascaline_dsc03869.jpg " Pascaline")
+![Pascaline](/assets/images/Arts_et_Metiers_Pascaline_dsc03869.jpg " Pascaline")
 
 ![Curta](/assets/images/Curta_II.jpg "Curta")
 
