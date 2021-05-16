@@ -8,7 +8,7 @@ tags:
   - "utilisateurs"
 hero:
   type: split  # options: carousel, graphic, video, split (text & image)
-  image: "2019-11-23_13h31_18-1-scaled.jpg"jpeg"
+  image: "2019-11-23_13h31_18-1-scaled.jpg"
 ---
 
 _Sur la psychologie des joueurs et les travaux de Nick Yee et Quantic Foundry._
