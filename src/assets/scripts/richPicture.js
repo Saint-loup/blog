@@ -288,8 +288,8 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
 			}*/
 
 		galleryElements[i].setAttribute('data-pswp-uid', i + 1);
+		// Viser uniquement l'img, pas la légende.
 		const target = galleryElements[i].childNodes[0].childNodes[0]
-		console.log(target)
 		target.onclick = onThumbnailsClick;
 	}
 
