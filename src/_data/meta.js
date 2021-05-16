@@ -3,14 +3,14 @@ require('dotenv').config()
 
 module.exports = {
 	env: process.env.NODE_ENV || 'development ',
-	siteURL: process.env.URL || 'https://toutcequibouge.net/',
+	siteURL: 'https://toutcequibouge.net/',
 	siteName: "Tout ce qui bouge",
 	siteDescription:
 		'Veille et réflexion sur la technologie, ses usages et mésusages.',
-	siteImage: '',
+	image: 'assets/UI/linotype.png',
 	lang: 'fr',
 	locale: 'fr_FR',
-	authorName: 'Baptiste',
+	author: 'Baptiste',
 	authorEmail: '',
 
 	zoteroProfileID: "5883126",
