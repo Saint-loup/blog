@@ -5,7 +5,6 @@ layout: base
 {% if hero.image %}
 
   {% set heroComponent = ['components/hero-', hero.type, '.njk'] %}
-  {{hero.image | log}}
 
   {% include heroComponent | join %}
 {% else %}

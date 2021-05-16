@@ -14,20 +14,19 @@
 {#- General #}
 <meta name="author" content="{{ author or meta.authorName }}"/>
 <meta name="description" content="{{ description | removeMD   }}"/>
-{#<link rel="canonical" href="{{meta.siteURL}}"/>#}
 {#- Open Graph #}
-<meta property="og:site_name" content="{{ meta.title }}"/>
+<meta property="og:site_name" content="{{ meta.siteName }}"/>
 <meta property="og:title" content="{{ seo.title or title }} | {{ meta.siteName }}"/>
 <meta property="og:description" content="{{ description | removeMD or meta.siteDescription }}"/>
 <meta property="og:url" content="{{meta.siteURL}}{{  page.url  }}"/>
 <meta property="og:locale" content="{{ meta.locale }}"/>
-{#{% if tags.includes("post") %}
-#}<meta property="og:image" content="/assets/generatedImages/{{hero.image}}"/>
+{% if layout == 'post' and hero.image %}
+  <meta property="og:image" content="{{meta.siteURL}}/assets/generatedImages/{{hero.image.slice(0, -4)}}-670.jpg "/>
+{% else %}
+  <meta property="og:image" content="{{meta.siteURL}}/{{ meta.image}}"/>
 
-{#{% endif %}
-#}
-{#<meta property="og:image" content="{{ ogImage | url | absoluteUrl(build.url) }}" />
-#}
+{% endif %}
+
 {#- Twitter Card #}
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="{{ meta.siteName}}"/>

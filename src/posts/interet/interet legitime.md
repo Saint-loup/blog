@@ -44,9 +44,9 @@ Première complication : il faut croiser cette base légale avec le principe  d'
 
 {% richpicture %}
 
-![](Eruu8c_XEAIHKKz.png)
+![Une finalité appelée "mesurer la performance du contenu" et en dessous deux case à cocher : consentementent et intérêt légitime](Eruu8c_XEAIHKKz.png)
 
-![](EruvX35W8AURa07.jpg)
+![Deux onglets, consentement et intérêt légitime, et pour chaque onglet une liste de finalité de traitement de la donnée.](EruvX35W8AURa07.jpg)
 
 {% endrichpicture %}
 
@@ -63,7 +63,7 @@ Ces techniques peuvent passer du byzantin au total *dark pattern* . Par exemple 
 
 Donc on peut tout refuser, au titre du  consentement, sans savoir si ça décoche les cases pour l'intérêt légitime, planquées derrière le lien. On suppose que non. D'ailleurs,  la vue 1 a un bouton retour mais pas la vue 2 : si on a refusé certaines choses on ne peut pas aller voir la vue 1 pour voir si son choix a été respecté.
 
-![](bloomberg.png) {.container-wide}
+![La notice de cookies de bloomberg.com](bloomberg.png) {.container-wide}
 
 ## Une pratique de toute façon pas légale
 

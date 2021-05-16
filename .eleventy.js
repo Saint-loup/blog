@@ -48,6 +48,8 @@ module.exports = function (eleventyConfig) {
 	*/
 
 	eleventyConfig.addPassthroughCopy({ 'src/assets/images/*.gif': 'assets/images' });
+	//eleventyConfig.addPassthroughCopy('src/assets/images/')
+
 	eleventyConfig.addPassthroughCopy('src/assets/generatedImages/')
 	//eleventyConfig.addPassthroughCopy('src/*.webp')
 	//eleventyConfig.addPassthroughCopy('src/*.jpg')
