@@ -13,12 +13,12 @@
 
 {#- General #}
 <meta name="author" content="{{ author or meta.authorName }}"/>
-<meta name="description" content="{{ description   }}"/>
+<meta name="description" content="{{ description | removeMD   }}"/>
 {#<link rel="canonical" href="{{meta.siteURL}}"/>#}
 {#- Open Graph #}
 <meta property="og:site_name" content="{{ meta.title }}"/>
 <meta property="og:title" content="{{ seo.title or title }} | {{ meta.siteName }}"/>
-<meta property="og:description" content="{{ description or meta.siteDescription }}"/>
+<meta property="og:description" content="{{ description | removeMD or meta.siteDescription }}"/>
 <meta property="og:url" content="{{meta.siteURL}}{{  page.url  }}"/>
 <meta property="og:locale" content="{{ meta.locale }}"/>
 {#{% if tags.includes("post") %}
@@ -42,14 +42,12 @@
 {#- RSS Feed #}
 <link type="application/atom+xml" rel="alternate"  title="RSS Feed for {{ meta.siteName }}"  href="/rss" title="{{ meta.siteName }} XML Feed">
 
-
 {% set css %}
 {% include "src/assets/css/fonts.css" %}
 {% endset %}
 <style>
   {{css | minify('css') | safe}}
 </style>
-
 
 <link rel="stylesheet" href="/assets/css/{{hashes_css['main.css']}}"/>
 

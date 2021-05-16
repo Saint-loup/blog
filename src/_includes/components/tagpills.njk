@@ -5,13 +5,12 @@
     {% if not loop.first %}
       <div class="inline-block">
         <a title="mot clé {{ tag }}" aria-label="mot clé {{ tag }}" href="{{ '/tags/' | url}}{{tag | slug  }}/"
-        class=" label text-accent2 font-medium   ">{{ tag }}</a>
-      {% if not loop.last %}
+        class="font-medium  label text-accent2">{{ tag | capitalize }}</a>
+        {% if not loop.last %}
           <span class="mx-4 text-xl font-light text-gray-500 " >~</span>
-      {% endif %}
+        {% endif %}
 
       </div>
-
 
     {% endif %}
 
