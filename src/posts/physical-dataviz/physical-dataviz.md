@@ -11,7 +11,7 @@ richPicture: true
 hero:
   type: split  # options: carousel, graphic, video, split (text & image)
   image: maxwell.jpg
-  alt:
+  alt: "modèle en plâtre sur lequel est tracé des courbes, pour expliquer la thermodynamique."
 
 ---
 
@@ -65,7 +65,7 @@ Il y a plein de manières compréhensibles et mémorables d'encoder des informat
 
 Si on saute aux XIX et XXe siècles, la création de modèles en relief est un cas d'utilisation relativement fréquent.  En 1874, Maxwell illustra avec un modèle en plâtre les liens entre l'évolution de trois variable : volume, entropie et énergie.
 
-![maxwell](maxwell.jpg "[Source](https://peabodyhsi.wordpress.com/2020/07/15/3d-scanning-the-famous-maxwell-gibbs-thermodynamic-model/). Voir [Wikipedia](https://en.wikipedia.org/wiki/Maxwell's_thermodynamic_surface) pour des photos du modèle en plâtre et d'autres infos.")
+![modèle en plâtre sur lequel est tracé des courbes, pour expliquer la thermodynamique.](maxwell.jpg "[Source](https://peabodyhsi.wordpress.com/2020/07/15/3d-scanning-the-famous-maxwell-gibbs-thermodynamic-model/). Voir [Wikipedia](https://en.wikipedia.org/wiki/Maxwell's_thermodynamic_surface) pour des photos du modèle en plâtre et d'autres infos.")
 
 Datant de 1913, cette carte montre le nombre de passagers transportés par le métro de Frankfort. La quantité était représenté par le nombre de lamelles de bois collées et empilées.
 
