@@ -4,9 +4,12 @@ module.exports = {
 
 
 	richpicture: function (data, type) {
-		const content = md.render(data)
+		let content = md.render(data)
+		if (data.match(/\!\[/g).length > 1) {
+			var width = 'container-wide'
+		}
 
-		return `<div class="rich-picture rich-picture-${type} container-wide" >${content}</div>`;
+		return `<div class="rich-picture ${width} " >${content}</div>`;
 	},
 
 

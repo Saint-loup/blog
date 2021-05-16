@@ -69,7 +69,7 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(syntaxHighlight)
 	//eleventyConfig.addPlugin(pageAssetsPlugin, { mode: "parse", postsMatching: "src/posts/*/*.md", });
 	eleventyConfig.addPlugin(embedEverything, {
-		use: ['vimeo', 'youtube']
+		use: ['vimeo', 'youtube', 'twitter'], twitter: { options: { align: 'center' } }
 	});
 
 	if (process.env.NODE_ENV === "production") {
@@ -149,7 +149,6 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addLayoutAlias('base', 'layouts/base.njk')
 	eleventyConfig.addLayoutAlias('page', 'layouts/page.njk')
 	eleventyConfig.addLayoutAlias('post', 'layouts/post.njk')
-	eleventyConfig.addLayoutAlias('post-rich-picture', 'layouts/post-rich-picture.njk')
 	eleventyConfig.addLayoutAlias('author', 'layouts/author.njk')
 
 	//eleventyConfig.addLayoutAlias('home', 'layouts/home.njk')

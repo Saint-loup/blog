@@ -44,26 +44,28 @@ module.exports = {
 			}
 
 
-			//try {
-			if (!(new RegExp('^/').test(url))) {
-				url = "src/assets/images/single/" + url
-			}
-			else {
-				url = "src/" + url
-			}
-			Image(decodeURI(url), options);
-			let metadata = Image.statsSync(decodeURI(url), options);
-			const images = metadata.jpeg
-			image.setAttribute('width', images[images.length - 1].width);
-			image.setAttribute('height', images[images.length - 1].height);
-			image.dataset.responsiver = image.className;
-			//image.dataset.responsiveruRL = metadata.jpg.url;
-			image.dataset.size = image.className;
+			try {
+				if (!(new RegExp('^/').test(url))) {
+					url = "src/assets/images/relative/" + url
+				}
+				else {
+					url = "src/" + url
+				}
+				// fonction async mais ajouter await fout le bordel
+				Image(decodeURI(url), options);
+				let metadata = Image.statsSync(decodeURI(url), options);
+				const images = metadata.jpeg
+				image.setAttribute('width', images[images.length - 1].width);
+				image.setAttribute('height', images[images.length - 1].height);
+				image.dataset.responsiver = image.className;
+				//image.dataset.responsiveruRL = metadata.jpg.url;
+				image.dataset.size = image.className;
 
-			/*}
+			}
 			catch (e) {
 				console.log(e)
-			}*/
+				console.log('debug : ' + url)
+			}
 		},
 		runAfter: (image, document) => {
 			//image.setAttribute('src', image.dataset.responsiveruRL);

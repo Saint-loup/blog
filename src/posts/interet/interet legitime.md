@@ -6,7 +6,7 @@ tags:
     - droit
     - RGPD
     - vie privée
-layout: post-rich-picture
+richPicture: true
 draft: false
 ---
 
@@ -27,12 +27,12 @@ C'est un raisonnement utilisé dans les politiques de confidentialité d'un nomb
 Par exemple chez [Nestle Belgique](https://web.archive.org/web/20210117130247/https://www.nestle.be/fr/info/yourdata), c'est une base légale invoquée dans chacune des lignes du tableau. La dernière colonne apporte quelques détails : "gagner en efficacité", déterminer les types de consommateurs pour les nouveaux produits et services", etc. Ce sont des choses banales et je ne vois pas ce qui justifie une base légale exceptionnelle.
 
 
-{% richpicture %}
+    {% richpicture %}
 
-![Politique de confidentialité de Nestle.be](nestle_be.png)
+    ![Politique de confidentialité de Nestle.be](nestle_be.png)
 
 
-{% endrichpicture %}
+    {% endrichpicture %}
 
 
 

@@ -256,10 +256,10 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
 			});*/
 
 
-		// gettingData event fires each time PhotoSwipe retrieves image source & size
+		// gettingData event fires each time PhotoSwipe retrieves imagse source & size
 		gallery.listen('gettingData', function (index, item) {
 			// Set image source & size based on real viewport width
-			item.src = `${item.orig_src}?nf_resize=fit&w=${item.width}`;
+			item.src = `${item.orig_src}?nf_resize=fit&w=${window.innerWidth}`;
 			item.w = item.width;
 			item.h = item.height;
 
@@ -281,14 +281,16 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
 
 
 	for (var i = 0, l = galleryElements.length; i < l; i++) {
-		/*	const child = galleryElements[i].childNodes[0]
-			if (!child.tagName.toUpperCase() === 'UL') {
-				galleryElements[i].insertBefore(document.createElement('ul'), child)
-
-			}*/
 
 		galleryElements[i].setAttribute('data-pswp-uid', i + 1);
-		galleryElements[i].onclick = onThumbnailsClick;
+
+		// Viser uniquement img > a, pas la légende.
+		const figures = galleryElements[i].children
+		for (var i = 0, l = figures.length; i < l; i++) {
+			const target = figures[i].children[0]
+			target.onclick = onThumbnailsClick;
+		}
+
 	}
 
 	// find all figcaptions within a gallery, and hide them visually
