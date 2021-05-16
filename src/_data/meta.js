@@ -7,7 +7,7 @@ module.exports = {
 	siteName: "Tout ce qui bouge",
 	siteDescription:
 		'Veille et réflexion sur la technologie, ses usages et mésusages.',
-	siteImage: '',
+	image: 'assets/UI/linotype.png',
 	lang: 'fr',
 	locale: 'fr_FR',
 	authorName: 'Baptiste',
