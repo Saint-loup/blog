@@ -69,7 +69,7 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(syntaxHighlight)
 	//eleventyConfig.addPlugin(pageAssetsPlugin, { mode: "parse", postsMatching: "src/posts/*/*.md", });
 	eleventyConfig.addPlugin(embedEverything, {
-		use: ['vimeo', 'youtube']
+		use: ['vimeo', 'youtube', 'twitter'], twitter: { options: { align: 'center' } }
 	});
 
 	if (process.env.NODE_ENV === "production") {
