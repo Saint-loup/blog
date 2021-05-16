@@ -5,21 +5,10 @@ tags:
   - "conception"
   - "histoire"
   - "utilisateurs"
-
-hero: split  # options: carousel, graphic, video, split (text & image)
-heroSettings:
-  caption: Clavier auxiliaire utilisé par Tesler pour tester la fonction de couper-coller, avec des étiquettes notées "cut" et "paste".
-  height:
-    mobile: # options = h-1/1 (default = full screen), h-1/2, h-1/3, h-3/4, h-9/10, h-48 (12rem, 192px), h-56 (14rem, 224px), h-64 (16rem, 256px)
-    desktop: h-3/4 # leave blank to inherit "mobile" height (default = full screen)
-  bg:
-    color: bg-dark # default bg-black
-    image: "souris_btn.png" # relative to /assets/images/
-    imagePosition: # options = bg-center (default), bg-left, bg-right
-    alt: Clavier auxiliaire utilisé par Tesler pour tester la fonction de couper-coller, avec des étiquettes notées "cut" et "paste"
-  headingTextColor: # default = text-white (can use any TailwindCSS text-[color]-[xxx])
-
-  subheadingTextColor: # Leave empty to inherit headingTextColor or default (text-white) or use any text-[color]-[xxx]
+hero:
+  type: split  # options: carousel, graphic, video, split (text & image)
+  image: "souris_btn.png"
+  alt: Clavier auxiliaire utilisé par Tesler pour tester la fonction de couper-coller, avec des étiquettes notées "cut" et "paste".
 ---
 
 

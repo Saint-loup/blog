@@ -5,17 +5,10 @@ tags:
   - "histoire"
   - "objets"
 richPicture: true
-hero: split  # options: carousel, graphic, video, split (text & image)
-heroSettings:
-  height:
-    mobile: 
-    desktop: 
-  bg:
-    color: bg-dark # default bg-black
-    image: large\_the\_apartment\_blu-ray\_1.jpg
-    imagePosition: # options = bg-center (default), bg-left, bg-right
-  headingTextColor:
-  subheadingTextColor:
+hero:
+  type: split  # options: carousel, graphic, video, split (text & image)
+  image: large\_the\_apartment\_blu-ray\_1.jpg
+  alt:
 ---
 
 
@@ -40,7 +33,7 @@ Si on remonte jusqu'au début du 20e siècle, on trouve l'entreprise de chimie D
 Et DuPont a fait ça de la manière la plus littérale et steampunk qui soit : _avec des rails_.
 
 
-![](/assets/images/1974298\_001.jpg "1919 : première version") 
+![](/assets/images/1974298\_001.jpg "1919 : première version")
 
 ![](/assets/images/2005273\_0001-e145540648863.jpg "1950 : ver­sion plus évo­luée")
 

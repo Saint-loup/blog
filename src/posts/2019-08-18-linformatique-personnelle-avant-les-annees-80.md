@@ -4,21 +4,11 @@ date: 2019-08-18
 tags:
   - "histoire"
   - "utilisateurs"
-
-hero: split  # options: carousel, graphic, video, split (text & image)
-heroSettings:
-  caption: "Une enseignante et ses élèves autour d'un terminal Teletype. Crédits : Computer History Museum"
-  height:
-    mobile: # options = h-1/1 (default = full screen), h-1/2, h-1/3, h-3/4, h-9/10, h-48 (12rem, 192px), h-56 (14rem, 224px), h-64 (16rem, 256px)
-    desktop: h-3/4 # leave blank to inherit "mobile" height (default = full screen)
-  bg:
-    color: bg-dark # default bg-black
-    image: 2019-09-14_01h56_51.jpg # relative to /assets/images/
-    imagePosition: # options = bg-center (default), bg-left, bg-right
-  headingTextColor: # default = text-white (can use any TailwindCSS text-[color]-[xxx])
-
-  subheadingTextColor: # Leave empty to inherit headingTextColor or default (text-white) or use any text-[color]-[xxx]
-
+hero:
+  type: split  # options: carousel, graphic, video, split (text & image)
+  image: 2019-09-14_01h56_51.jpg
+  alt: "Une enseignante et ses élèves autour d'un terminal Teletype. Crédits : Computer History Museum"
+  title: "Une enseignante et ses élèves autour d'un terminal Teletype. Crédits : Computer History Museum"
 ---
 
 Notes rapides sur un livre intéressant : [A People’s History of Computing in the United States](https://www.hup.harvard.edu/catalog.php?isbn=9780674970977).
