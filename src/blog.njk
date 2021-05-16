@@ -23,14 +23,14 @@ postListItemStyle:
 
 <div class="blog-wrapper">
   <form class="search " id="search-form" aria-controls="post-list">
-    <div class="flex flex-col field  w-1/2">
+    <div class="flex flex-col w-1/2 field">
       <label for="searchField" class="label">Rechercher</label>
       <div class="relative">
-        <input type="search"  class=" w-full p-2 border-gray-600 rounded-md" placeholder="" id="searchField"/>
-        <input type="image" name="submit" src="/assets/UI/search.svg" border="0" class="absolute right-2 p-2 h-10">
+        <input type="search"  class="w-full p-2 border-gray-600 rounded-md " placeholder="" id="searchField"/>
+        <input type="image" name="submit" src="/assets/UI/search.svg" border="0" class="absolute h-10 p-2 right-2">
       </div>
     </div>
-    <p id="noResultsFound" class="text-base py-4" style="display: none" role="alert">
+    <p id="noResultsFound" class="py-4 text-base" style="display: none" role="alert">
       Aucun résultat.
     </p>
   </form>
