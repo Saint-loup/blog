@@ -6,8 +6,7 @@ tags:
 hero:
   type: split  # options: carousel, graphic, video, split (text & image)
   image: "2019-04-23_19h12_30.png"
-  alt:
----
+  ---
 
 _Design system_, moodboard, création de maquette avec Studio... Invision est devenue une plateforme complète. Voici pourtant trois fonctions que vous avez peut-être manqué.
 
