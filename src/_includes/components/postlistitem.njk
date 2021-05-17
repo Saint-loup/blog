@@ -5,15 +5,13 @@
 			<time datetime="{{ post.data.page.date | dateToFormat("yyyy-MM-dd") }}">
 				{{ post.data.page.date | dateToFormat("dd LLLL yyyy") }}
 			</time>
-			{# Global disable author display in /src/_data/structure.js #}
-
 		</div>
 	{% endif %}
 
 	{# Post Title  #}
 	<H2 class="text-2xl font-semibold leading-7 lg:text-3xl text-accent2">
 
-		<a href="{{ post.url | url }}" class="block hover:underline">
+		<a href="{{ post.url }}" class="block hover:underline">
 			{{ post.data.title }}
 		</a>
 	</H2>

@@ -1,3 +1,5 @@
+const remove = require('remove-markdown');
+
 const { DateTime, Settings } = require('luxon')
 const slugify = require('./slugify.js');
 const cleanCSS = require('clean-css')
@@ -5,7 +7,6 @@ const md = require('./markdown.js')
 const elasticlunr = require("elasticlunr");
 require('./lunr.stemmer.support.js')(elasticlunr);
 require('./lunr.fr.js')(elasticlunr);
-const removeMd = require('remove-markdown');
 Settings.defaultLocale = "fr";
 var pd = require('pretty-data').pd;
 
@@ -32,27 +33,26 @@ module.exports = {
 
 		// loop through each page and add it to the index
 		collection.forEach((page) => {
-			const frenchDate = DateTime.fromJSDate(page.data.date, {
-				zone: 'utc',
-			}).toFormat("dd LLLL yyyy")
+			console.log("debug : " + typeof page.data.date)
+
+			const frenchDate = DateTime.fromJSDate(page.data.date, { zone: 'utc' }).toFormat("dd LLLL yyyy")
 			index.addDoc({
 				url: page.url,
 				title: page.data.title,
 				description: page.data.description,
 				tags: page.data.tags,
 				//on accède au contenu en  markdown et on le transforme en texte brut.
-				content: removeMd(page.template.frontMatter.content),
-				date: frenchDate,
+				content: remove(page.template.frontMatter.content),
+				date: page.data.date
 			});
 		});
-
 		return index.toJSON();
 	},
 
 	// Add markdownify filter with Markdown-it configuration
 	markdownify: (markdownString) => { md.render(markdownString) },
 
-	removeMD: (string) => { return (!string ? "" : removeMd(string)) },
+	removeMD: require('./removeMD.js'),
 
 	dateToPermalink: function (date) {
 		return DateTime.fromJSDate(date, {
@@ -68,11 +68,7 @@ module.exports = {
 	 * And finally, example used in /src/posts/posts.json to format the permalink
 	 *  when working with old /yyyy/MM/dd/slug format from Wordpress exports
 	 */
-	dateToFormat: (date, format) => {
-		return DateTime.fromJSDate(date, {
-			zone: 'utc',
-		}).toFormat(String(format))
-	},
+	dateToFormat: require('./dateToFormat.js'),
 
 	/**
    // Universal slug filter strips unsafe chars from URLs
