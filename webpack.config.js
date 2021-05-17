@@ -1,6 +1,10 @@
 const path = require('path')
 const CopyPlugin = require("copy-webpack-plugin");
-const WebpackAssetsManifest = require('webpack-assets-manifest'); module.exports = {
+const HTMLWebpackPlugin = require('html-webpack-plugin');
+const WebpackAssetsManifest = require('webpack-assets-manifest');
+
+module.exports = {
+
 
   entry: {
     main: path.resolve(__dirname, 'src/assets/scripts/main.js'),
@@ -21,6 +25,23 @@ const WebpackAssetsManifest = require('webpack-assets-manifest'); module.exports
   module: {
     rules: [
       {
+        test: /\.njk$/,
+        use: [
+          {
+            loader: 'simple-nunjucks-loader',
+            options: {
+              searchPaths: [
+                'src/_includes/components'
+              ], filters: {
+                dateToFormat: path.resolve('src/utils/dateToFormat.js'),
+                removeMD: path.resolve('src/utils/removeMD.js')
+
+              }
+            }
+          }
+        ]
+      },
+      {
         test: /\.m?js$/,
         exclude: /node_modules/,
         use: {
@@ -30,7 +51,8 @@ const WebpackAssetsManifest = require('webpack-assets-manifest'); module.exports
     ],
   },
   plugins: [
-    //
+
+
     new CopyPlugin({
       patterns: [
         {

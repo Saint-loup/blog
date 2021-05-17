@@ -1,6 +1,8 @@
 const elasticlunr = require("elasticlunr");
 require('./lunr.stemmer.support.js')(elasticlunr);
 require('./lunr.fr.js')(elasticlunr);
+import postlistitem from '../../../src/_includes/components/postlistitem.njk'
+
 
 //"use strict"
 
@@ -12,7 +14,7 @@ async function search(e) {
 		const rawIndex = await fetch("/index.min.json")
 		window.searchIndex = elasticlunr.Index.load(await rawIndex.json());
 	}
-	results = window
+	const results = window
 		.searchIndex
 		.search(value, {
 			bool: "OR",
@@ -42,10 +44,25 @@ async function search(e) {
 			results.map((r) => {
 				const doc = window.searchIndex.documentStore.getDoc(r.ref)
 				let { url, title, description, date } = doc;
-				const el = document.createElement("li");
-				el.classList.add('mb-8')
-				el.innerHTML = `<div class="text-sm text-gray"><time datetime="">${date}</time></div><h2 class="text-2xl lg:text-3xl font-semibold leading-7 text-accent2"><a href="${url}" class="block hover:underline">${title}</a></h2><div class="text-sm leading-relaxed italic text-gray-700">${description || ""}</div>`
-				searchList.appendChild(el);
+				console.log("debug : " + typeof date)
+
+				const el = postlistitem({
+					postListItemStyle: {
+						complete: 'complete'
+					},
+					post: {
+						url,
+						data: {
+							title,
+							description,
+							page: {
+								date: date,
+								description
+							}
+						}
+					}
+				})
+				searchList.insertAdjacentHTML('afterbegin', el);
 			});
 		} else {
 			console.log('no results')
