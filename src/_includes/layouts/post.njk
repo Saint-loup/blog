@@ -55,17 +55,3 @@ layout: base
     </div>
   </div>
 </footer>
-
-{% if richPicture === true %}
-  {% include "../components/rich-picture.njk" %}
-
-  {% set css %}
-  {% include "src/assets/css/photoswipe/photoswipe.css" %}
-  {% include "src/assets/css/photoswipe/skin.css" %}
-  {% endset %}
-  <style>
-    {{css | minify('css') | safe}}
-  </style>
-
-  <script  src="/assets/scripts/{{hashes_js['richPicture.js']}}" defer></script>
-{% endif %}

@@ -70,8 +70,10 @@ module.exports = {
 				'accent2': "rgb(143, 87, 28)"
 			},
 			typography: {
+
 				'xl': {
 					css: {
+						'line-height': '1.7',
 						'ul > li:before':
 						{
 							top: '.8em !important'
@@ -80,6 +82,7 @@ module.exports = {
 				},
 				'lg': {
 					css: {
+						'line-height': '1.6',
 						'ul > li:before':
 						{
 							top: '.8em !important'

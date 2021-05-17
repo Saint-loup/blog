@@ -280,13 +280,13 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
 
 
 
-	for (var i = 0, l = galleryElements.length; i < l; i++) {
+	for (let i = 0, l = galleryElements.length; i < l; i++) {
 
 		galleryElements[i].setAttribute('data-pswp-uid', i + 1);
 
 		// Viser uniquement img > a, pas la légende.
 		const figures = galleryElements[i].children
-		for (var i = 0, l = figures.length; i < l; i++) {
+		for (let i = 0, l = figures.length; i < l; i++) {
 			const target = figures[i].children[0]
 			target.onclick = onThumbnailsClick;
 		}
