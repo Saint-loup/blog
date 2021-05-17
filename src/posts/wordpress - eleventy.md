@@ -3,7 +3,7 @@ title: "Wordpress ⟼ Eleventy"
 date: 2021-04-25
 tags:
   - "Tout ce qui bouge"
-richPicture: true
+richPicture: false
 
 hero:
   type: split  # options: carousel, graphic, video, split (text & image)
