@@ -22,4 +22,4 @@ Bref, les commandes étaient positionnées différemment selon les modèles et n
 
 Les présentateurs de Top Gear ([S10E08](https://itunes.apple.com/us/tv-season/top-gear-series-10/id304214876)) se sont essayé à démarrer et piloter ces voitures et c'est plutôt fendard. Le titre et une bonne partie des références de ce texte viennent de là.
 
-![Cadillac T53 (oui on voit pas grand chose "](/assets/images/Cadillac_T53.png) Cadillac T53 (oui on voit pas grand chose)")
+![Cadillac T53 (oui on voit pas grand chose "](/assets/images/Cadillac_T53.png "Cadillac T53 (oui on voit pas grand chose)")
