@@ -3,7 +3,7 @@ title: "\"The Oculus Rift is the first visual medium that doesn’t have a frame
 date: 2014-04-01
 tags:
   - "veille"
-  - "vr"
+  - "VR"
 
 ---
 
