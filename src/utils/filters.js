@@ -33,7 +33,6 @@ module.exports = {
 
 		// loop through each page and add it to the index
 		collection.forEach((page) => {
-			console.log("debug : " + typeof page.data.date)
 
 			const frenchDate = DateTime.fromJSDate(page.data.date, { zone: 'utc' }).toFormat("dd LLLL yyyy")
 			index.addDoc({
