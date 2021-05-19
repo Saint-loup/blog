@@ -15,8 +15,8 @@ layout: base
 
   {% if not hero.image %}
     <header class="">
-      <h1 class="{{ colors.headingsCustom or colors.headingsDefault }}">{{ seo.title or title }}</h1>
-      <div class="text-sm {{ colors.authorCustom.date or colors.authorDefault.date}}">
+      <h1 class="text-gray-700">{{ seo.title or title }}</h1>
+      <div class="text-sm">
         <time datetime="{{ page.date | dateToFormat("yyyy-MM-dd") }}">
           {{ page.date | dateToFormat("dd LLLL yyyy") }}
         </time>
@@ -29,7 +29,7 @@ layout: base
 </article>
 
 <footer class="mt-16 mb-6 text-lg container-wide md:text-xl ">
-  {% if structure.g_showTagPills or structure.g_showSocialShareIcons %}
+  {% if structure.g_showTagPills %}
     <div class="pt-4 mt-12 border-t md:justify-between md:items-start md:flex md:flex-row">
       {# If you don't want to display the Tag Pills, set "false" in /src/_data/structure.js #}
       {% if structure.g_showTagPills %}
@@ -45,12 +45,16 @@ layout: base
     {% set previousPost = collections.post | getNextCollectionItem(page) %}
     <div class="py-2 text-center sm:py-0">
       {% if previousPost %}
-        <a class="{{ colors.prevNextCustom.text or colors.prevNextDefault.text }} hover:{{ colors.prevNextCustom.text or colors.prevNextDefault.textHover }}" href="{{ previousPost.url | url }}">← {{ previousPost.data.title }}</a>
+        <a class=" hover:text-accent2" href="{{ previousPost.url | url }}">
+        ← {{ previousPost.data.title }}
+        </a>
       {% endif %}
     </div>
     <div class="py-2 text-center sm:py-0">
       {% if nextPost %}
-        <a class="{{ colors.prevNextCustom.text or colors.prevNextDefault.text }} hover:{{ colors.prevNextCustom.text or colors.prevNextDefault.textHover }}" href="{{ nextPost.url | url}}">{{ nextPost.data.title }} →</a>
+        <a class="hover:text-accent2" href="{{ nextPost.url | url}}">
+          {{ nextPost.data.title }} →
+        </a>
       {% endif %}
     </div>
   </div>

@@ -40,8 +40,11 @@
 }
 
 @layer components {
-		.label {
+	.label {
 		@apply text-base my-2 text-gray-700
+	}
+	.cta {
+   		@apply block px-8 py-4 m-auto font-semibold no-underline bg-gray-200 rounded-full shadow-md max-w-max focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-75 hover:text-gray-800 hover:bg-gray-300 ;
 	}
 }
 

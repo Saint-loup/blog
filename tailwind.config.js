@@ -35,7 +35,7 @@ module.exports = {
 			black: colors.black,
 			white: colors.white,
 			gray: colors.coolGray,
-			indigo: colors.indigo
+			indigo: colors.indigo,
 		},
 
 		extend: {
@@ -77,8 +77,7 @@ module.exports = {
 				'accent': "#a72116",
 				'accent2': "rgb(143, 87, 28)"
 			},
-			typography: {
-
+			typography: (theme) => ({
 				'xl': {
 					css: {
 						'line-height': '1.7',
@@ -98,7 +97,9 @@ module.exports = {
 					}
 				},
 				DEFAULT: {
+
 					css: {
+						color: theme('colors.gray.900'),
 						figcaption: {
 							textAlign: "center"
 						},
@@ -115,14 +116,36 @@ module.exports = {
 							borderRadius: '3px',
 							backgroundColor: 'rgba(229, 231, 235, .5)',
 							fontFamily: 'unset'
-						}
-						,
+						},
 						h1: {
 							color: 'inherit'
+						},
+						h2: {
+							color: theme('colors.gray.700')
+						},
+						h3: {
+							color: theme('colors.gray.700')
+
+						},
+						h4: {
+							color: theme('colors.gray.700')
+
 						}
+
 					},
 				},
-			},
+				dark: {
+					css: {
+						color: theme('colors.gray.200'),
+						a: {
+							color: theme('colors.gray.200'),
+							'&:hover': {
+								color: theme('colors.accent'),
+							},
+						},
+					}
+				}
+			}),
 			opacity: (theme) => ({
 				5: '.05',
 				10: '.1',

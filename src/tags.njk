@@ -24,7 +24,7 @@ eleventyComputed:
 {% include 'components/postslist.njk' %}
 
 <div class="my-16 border-t border-gray-300 container-wide">
-  <h3 class="{{ colors.tagPillCustom.text or colors.tagPillDefault.text }}">Tous les mots clés</h3>
+  <h3 class="text-gray-700">Tous les mots clés</h3>
   {% set tags = collections.tagList %}
   {% include "components/tagpills.njk" %}
 </div>
