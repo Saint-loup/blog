@@ -1,7 +1,7 @@
 <li class="mb-8 ">
 
 	{% if postListItemStyle.complete %}
-		<div class="text-sm {{ colors.authorCustom.date or colors.authorDefault.date }}">
+		<div class="text-sm text-gray-700">
 			<time datetime="{{ post.data.page.date | dateToFormat("yyyy-MM-dd") }}">
 				{{ post.data.page.date | dateToFormat("dd LLLL yyyy") }}
 			</time>
