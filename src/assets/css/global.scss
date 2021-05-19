@@ -43,7 +43,7 @@
 	top: -5rem;
 	}*/
 
-	.nav-selected {
+.nav-selected {
 	&:after {
 		content:'';
 		width:100%;
@@ -53,8 +53,17 @@
 		left:0;
 		bottom: 1em;
 
+		}
+}
+
+.nav-selected.mobile {
+	&:after {
+		height:3px;
+		bottom: -.2em;
+
 	}
 }
+
 
 
 

@@ -9,15 +9,13 @@
 	{% endif %}
 
 	{# Post Title  #}
-	<H2 class="text-2xl font-semibold leading-7 lg:text-3xl text-accent2">
+	<H2 class="cta-heading">
 
 		<a href="{{ post.url }}" class="block hover:underline">
 			{{ post.data.title }}
 		</a>
 	</H2>
-	{# Display Post Excerpt if set 'true' in /src/_data/structure.js:g_showExcerpt  #}
-	{#	{% if postListItemStyle.complete %}
-#}
+
 
 	{% if postListItemStyle.complete %}
 		<p class="label">

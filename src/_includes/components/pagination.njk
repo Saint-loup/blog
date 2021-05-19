@@ -1,40 +1,18 @@
-<div class="flex items-center justify-between px-0 py-3 border-t
-{{  colors.paginateDefault.blockBg }}
-{{  colors.paginateDefault.blockBorder }} sm:px-0">
+<div class="flex items-center justify-between px-0 py-3 border-t border-gray-200 sm:px-0">
 
   {# PAGINATION PRÉCÉDENT / SUIVAANT #}
 
   <div class="flex justify-between flex-1 ">
     <div>
       {% if pagination.href.previous %}
-        <a href="{{ pagination.href.previous }}" class="relative inline-flex items-center px-4 py-2 text-sm font-medium leading-5
-        {{  colors.paginateDefault.linkText }} transition duration-150 ease-in-out
-        {{  colors.paginateDefault.linkBg }} border
-        {{  colors.paginateDefault.linkBorder }} rounded-md
-        hover:text-accent2
-        hover:bg-gray-100
-        focus:outline-none focus:shadow-outline-blue
-        focus: bg-gray-100
-        focus:{{  colors.paginateDefault.linkFocusBorder }}
-        active:{{  colors.paginateDefault.linkText }}">
+        <a href="{{ pagination.href.previous }}" class="cta-secondary">
       Précédent
     </a>
       {% endif %}
     </div>
     <div>
       {% if pagination.href.next %}
-        <a href="{{ pagination.href.next }}" class="relative inline-flex items-center px-4 py-2 ml-3 text-sm font-medium leading-5
-        {{  colors.paginateDefault.linkText }} transition duration-150 ease-in-out
-        {{  colors.paginateDefault.linkBg }} border
-        {{  colors.paginateDefault.linkBorder }} rounded-md
-        hover:text-accent2
-        hover:bg-gray-100
-        focus:bg-gray-100
-
-        focus:outline-none focus:shadow-outline-blue
-        focus:{{  colors.paginateDefault.linkFocusBorder }}
-      active:bg-gray-100
-        active:{{  colors.paginateDefault.linkText }}">
+        <a href="{{ pagination.href.next }}" class="cta-secondary">
       Suivant
     </a>
       {% endif %}
