@@ -46,6 +46,7 @@ module.exports = function (eleventyConfig) {
 	cf. postcss.config.js pour le CSS
 
 	*/
+	eleventyConfig.addPassthroughCopy('src/assets/scripts/truchet.js')
 
 	eleventyConfig.addPassthroughCopy({ 'src/assets/images/*.gif': 'assets/images' });
 	//eleventyConfig.addPassthroughCopy('src/assets/images/')

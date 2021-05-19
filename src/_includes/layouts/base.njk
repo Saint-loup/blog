@@ -29,8 +29,15 @@
       <style>
         {{css | minify('css') | safe}}
       </style>
-
       <script  src="/assets/scripts/{{hashes_js['richPicture.js']}}" defer></script>
+    {% endif %}
+
+    <script  src="/assets/scripts/truchet.js" defer ></script>
+
+    {% if meta.env == 'production' %}
+      <script  src="/assets/scripts/{{hashes_js['main.js']}}" defer></script>
+    {% else %}
+      <script  src="/assets/scripts/main.js" defer></script>
     {% endif %}
   </body>
 </html>
