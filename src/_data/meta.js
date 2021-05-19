@@ -12,7 +12,6 @@ module.exports = {
 	locale: 'fr_FR',
 	author: 'Baptiste',
 	authorEmail: '',
-
 	zoteroProfileID: "5883126",
 
 
