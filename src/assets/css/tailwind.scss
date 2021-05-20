@@ -76,8 +76,9 @@ pre code {
 
 
 
-.post-list img, .search-list img {
+.post-list img , .search-list img {
 	max-width: 30%;
 	object-fit: cover;
-	padding-right:3%
+	padding-right:3%;
+	cursor: pointer;
 }
