@@ -43,9 +43,12 @@ async function search(e) {
 			noResultsEl.style.display = "none";
 			results.map((r) => {
 				const doc = window.searchIndex.documentStore.getDoc(r.ref)
-				let { url, title, description, date } = doc;
-				console.log("debug : " + typeof date)
 
+				let { url, title, description, date, fileSlug, } = doc;
+
+				if (doc.hero) {
+					var { hero } = doc
+				}
 				const el = postlistitem({
 					postListItemStyle: {
 						complete: 'complete'
@@ -53,11 +56,13 @@ async function search(e) {
 					post: {
 						url,
 						data: {
+							hero: hero,
 							title,
 							description,
 							page: {
-								date: date,
-								description
+								date,
+								description,
+								fileSlug,
 							}
 						}
 					}

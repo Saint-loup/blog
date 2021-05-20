@@ -29,15 +29,13 @@ layout: base
 </article>
 
 <footer class="mt-16 mb-6 text-lg container-wide md:text-xl ">
-  {% if structure.g_showTagPills %}
-    <div class="pt-4 mt-12 border-t md:justify-between md:items-start md:flex md:flex-row">
-      {# If you don't want to display the Tag Pills, set "false" in /src/_data/structure.js #}
-      {% if structure.g_showTagPills %}
-        {% include "components/tagpills.njk" %}
-      {% endif %}
+  <div class="pt-4 mt-12 border-t md:justify-between md:items-start md:flex md:flex-row">
+    {# If you don't want to display the Tag Pills, set "false" in /src/_data/structure.js #}
+    {% if structure.g_showTagPills %}
+      {% include "components/tagpills.njk" %}
+    {% endif %}
 
-    </div>
-  {% endif %}
+  </div>
 
   {# ===== Previous and Next =====  #}
   <div class="border-t mt-4 pt-4 {{ colors.borderCustom.color or colors.borderDefault.color }} md:flex-row md:flex md:justify-between">

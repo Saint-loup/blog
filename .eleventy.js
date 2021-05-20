@@ -35,24 +35,33 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addWatchTarget('./src/assets/scripts/')
 	eleventyConfig.addWatchTarget('./src/*.js')
 	eleventyConfig.addWatchTarget('./tailwind.config.js')
-	eleventyConfig.setWatchThrottleWaitTime(100);
+	eleventyConfig.setWatchThrottleWaitTime(200);
 
+	eleventyConfig.setWatchJavaScriptDependencies(true);
 
 	/**
-	 * Passthrough File Copy
-	 * @link https://www.11ty.dev/docs/copy/
+ * Passthrough File Copy
+ * @link https://www.11ty.dev/docs/copy/
 
-	cf. webpack.configs.js pour le JS
-	cf. postcss.config.js pour le CSS
+cf. webpack.configs.js pour le JS
+cf. postcss.config.js pour le CSS
 
-	*/
+*/
 
 	eleventyConfig.addPassthroughCopy({ 'src/assets/images/*.gif': 'assets/images' });
 	//eleventyConfig.addPassthroughCopy('src/assets/images/')
+	eleventyConfig.addPassthroughCopy({ 'src/posts/**/*.webp': 'assets/generatedImages' })
+	eleventyConfig.addPassthroughCopy({ 'src/posts/**/*.png': 'assets/generatedImages' })
+	eleventyConfig.addPassthroughCopy({ 'src/posts/**/*.jpg': 'assets/generatedImages' })
+	eleventyConfig.addPassthroughCopy({ 'src/posts/**/*.jpeg': 'assets/generatedImages' })
+	eleventyConfig.addPassthroughCopy({ 'src/assets/images/*.webp': 'assets/generatedImages' })
+	eleventyConfig.addPassthroughCopy({ 'src/assets/images/*.png': 'assets/generatedImages' })
+	eleventyConfig.addPassthroughCopy({ 'src/assets/images/*.jpg': 'assets/generatedImages' })
+	eleventyConfig.addPassthroughCopy({ 'src/assets/images/*.jpeg': 'assets/generatedImages' })
 
-	eleventyConfig.addPassthroughCopy('src/assets/generatedImages/')
-	//eleventyConfig.addPassthroughCopy('src/*.webp')
-	//eleventyConfig.addPassthroughCopy('src/*.jpg')
+
+	eleventyConfig.addPassthroughCopy('src/posts/**/*.gif')
+
 	eleventyConfig.addPassthroughCopy('src/*.ico')
 	eleventyConfig.addPassthroughCopy('src/robots.txt')
 	eleventyConfig.addPassthroughCopy('src/assets/css/fonts')

@@ -5,7 +5,7 @@ description: The Posts List display is controled in /src/_data/structure.js and 
 layout: page
 eleventyNavigation:
   key: main
-  title: Blog #  as it will appear in the nav
+  title: Textes
   order: 1    # order to display in the nav
 seo:
   title: Tous les articles
@@ -38,7 +38,9 @@ postListItemStyle:
 
   {% include 'components/postslist.njk' %}
 
-  <div class="my-16 border-t border-gray-300 lg:container-wide">
+  <div class=" lg:container-wide">
+    <hr class="my-8">
+
     <h3 class"text-gray-700">Tous les thèmes</h3>
     {% set tags = collections.tagList %}
     {% include "components/tagpills.njk" %}
