@@ -43,7 +43,7 @@ module.exports = {
 				content: remove(page.template.frontMatter.content),
 				date: page.data.date,
 				hero: page.data.hero,
-				placeholderImage: page.data.placeholderImage
+				fileSlug: page.fileSlug
 			});
 
 		});

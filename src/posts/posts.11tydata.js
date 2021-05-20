@@ -14,7 +14,7 @@ module.exports = {
 
       if (data.hero === undefined || data.hero === {}) {
 
-        return await truchet(null, "node", data.page.fileSlug)
+        await truchet(null, "node", data.page.fileSlug).catch(console.error);
       }
       else { return false }
     },

@@ -44,7 +44,7 @@ async function search(e) {
 			results.map((r) => {
 				const doc = window.searchIndex.documentStore.getDoc(r.ref)
 
-				let { url, title, description, date, placeholderImage, } = doc;
+				let { url, title, description, date, fileSlug, } = doc;
 
 				if (doc.hero) {
 					var { hero } = doc
@@ -57,12 +57,12 @@ async function search(e) {
 						url,
 						data: {
 							hero: hero,
-							placeholderImage: placeholderImage,
 							title,
 							description,
 							page: {
-								date: date,
-								description
+								date,
+								description,
+								fileSlug,
 							}
 						}
 					}

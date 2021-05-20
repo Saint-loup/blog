@@ -35,9 +35,9 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addWatchTarget('./src/assets/scripts/')
 	eleventyConfig.addWatchTarget('./src/*.js')
 	eleventyConfig.addWatchTarget('./tailwind.config.js')
-	eleventyConfig.setWatchThrottleWaitTime(2000);
+	eleventyConfig.setWatchThrottleWaitTime(200);
 
-	eleventyConfig.setWatchJavaScriptDependencies(false);
+	eleventyConfig.setWatchJavaScriptDependencies(true);
 
 	/**
  * Passthrough File Copy
@@ -50,7 +50,6 @@ cf. postcss.config.js pour le CSS
 
 	eleventyConfig.addPassthroughCopy({ 'src/assets/images/*.gif': 'assets/images' });
 	//eleventyConfig.addPassthroughCopy('src/assets/images/')
-	eleventyConfig.addPassthroughCopy('src/assets/generatedImages/')
 	eleventyConfig.addPassthroughCopy({ 'src/posts/**/*.webp': 'assets/generatedImages' })
 	eleventyConfig.addPassthroughCopy({ 'src/posts/**/*.png': 'assets/generatedImages' })
 	eleventyConfig.addPassthroughCopy({ 'src/posts/**/*.jpg': 'assets/generatedImages' })

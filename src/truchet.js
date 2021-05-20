@@ -1,7 +1,7 @@
 // https://observablehq.com/@xenomachina/truchet-tiles-variant-intertwined-quarter-circles@552
 
 const fs = require('fs')
-const util = require('util');
+const { pipeline } = require('stream/promises');
 
 const { createCanvas } = require('canvas')
 var makeRandomGenerator = require('random-seed');
@@ -24,9 +24,18 @@ module.exports = async function (el, mode, slug) {
 	const twist = 2;
 	const scramble = 2;*/
 
+	/*
+		const should_shuffle = (rand.intBetween(0, 1) === 1 ? true : false)
+		const tile_size = 30; // 32 viewport
+		const curve_thickness = rand.intBetween(1, 30)
+		const curves_per_tile = rand.intBetween(1, 10)
+		const twist = rand.intBetween(0, 50)
+		const scramble = rand.intBetween(0, 50)
+	*/
+
 	const height = 280;
 	const width = 400;
-	const tile_size = rand.intBetween(25, 60)
+	const tile_size = rand.intBetween(40, 80)
 	const saturation = 30;
 	const seed = Math.random();
 	const hue_amplitude = rand.intBetween(10, 80);
@@ -35,21 +44,13 @@ module.exports = async function (el, mode, slug) {
 	const background_phase = 180;
 	const border = "#000000";
 	const grid_alpha = 0;
-	const should_shuffle = (rand.intBetween(0, 1) === 1 ? true : false)
-	const curve_thickness = 1;
-	const curves_per_tile = 7;
+	const should_shuffle = false
 	const twist = 0;
 	const scramble = 0;
+	const curve_thickness = 1;
+	const curves_per_tile = 7;
+
 	const segments = curves_per_tile + 1;
-
-	/*
-		const tile_size = 30; // 32 viewport
-
-	const curve_thickness = rand.intBetween(1, 30)
-	const curves_per_tile = rand.intBetween(1, 10)
-		const twist = rand.intBetween(0, 50)
-		const scramble = rand.intBetween(0, 50)
-		const segments = curves_per_tile + 1;*/
 
 
 	if (mode === "DOM") {
@@ -156,14 +157,15 @@ module.exports = async function (el, mode, slug) {
 			tileContext.restore();
 		}
 	}
-	const path = 'dist/assets/generatedImages/' + slug + '.jpg'
-	console.log(path);
-	const out = fs.createWriteStream(path)
-	const stream = tileCanvas.createJPEGStream()
-	stream.pipe(out)
-	out.on('finish', () => {
-		console.log('The JPEG file was created.')
-	})
+
+
+	const path = 'dist/assets/generatedImages/' + slug + '.png'
+
+	await pipeline(
+		tileCanvas.createPNGStream({ compressionLevel: 2 }),
+		fs.createWriteStream(path)
+	)
+
 
 }
 
