@@ -1,12 +1,15 @@
 // https://observablehq.com/@xenomachina/truchet-tiles-variant-intertwined-quarter-circles@552
-function truchet(el) {
-	var makeRandomGenerator = require('random-seed');
-	//const d3 = require('d3')
-	var d3 = require("d3-color")
-	const height = 1000;
-	const width = 1000;
 
+const fs = require('fs')
+const util = require('util');
+
+const { createCanvas } = require('canvas')
+var makeRandomGenerator = require('random-seed');
+var d3 = require("d3-color")
+
+module.exports = async function (el, mode, slug) {
 	const rand = makeRandomGenerator.create()
+
 	/*const saturation = 60;
 	const seed = Math.random();
 	const hue_amplitude = 90;
@@ -21,28 +24,44 @@ function truchet(el) {
 	const twist = 2;
 	const scramble = 2;*/
 
-	const saturation = 60;
+	const height = 280;
+	const width = 400;
+	const tile_size = rand.intBetween(25, 60)
+	const saturation = 30;
 	const seed = Math.random();
-	const hue_amplitude = 90;
-	const hue_phase = 180;
+	const hue_amplitude = rand.intBetween(10, 80);
+	const hue_phase = 220;
 	const background = '#649cac'
 	const background_phase = 180;
 	const border = "#000000";
 	const grid_alpha = 0;
-	const should_shuffle = false;
-	const tile_size = 30;
+	const should_shuffle = (rand.intBetween(0, 1) === 1 ? true : false)
 	const curve_thickness = 1;
-	const curves_per_tile = 4;
+	const curves_per_tile = 7;
 	const twist = 0;
 	const scramble = 0;
 	const segments = curves_per_tile + 1;
 
+	/*
+		const tile_size = 30; // 32 viewport
 
-	const tileCanvas = el;
+	const curve_thickness = rand.intBetween(1, 30)
+	const curves_per_tile = rand.intBetween(1, 10)
+		const twist = rand.intBetween(0, 50)
+		const scramble = rand.intBetween(0, 50)
+		const segments = curves_per_tile + 1;*/
 
 
+	if (mode === "DOM") {
+
+		var tileCanvas = el;
+	}
+	else {
+		var tileCanvas = createCanvas(width, height)
+	}
 	const tileContext = tileCanvas.getContext('2d');
-
+	tileCanvas.width = width
+	tileCanvas.height = height
 	const rForm = makeRandomGenerator("form:" + seed)
 	const rScramble = makeRandomGenerator("scramble:" + seed)
 	const rScramble2 = makeRandomGenerator("scramble2:" + seed)
@@ -55,6 +74,7 @@ function truchet(el) {
 	const curveWidth = Math.max(2, tile_size / segments * curve_thickness + 1);
 
 	function shuffle(a) {
+
 		for (let i = a.length - 1; i > 0; i--) {
 			const j = Math.floor(rShuffle.random() * (i + 1));
 			[a[i], a[j]] = [a[j], a[i]];
@@ -136,8 +156,15 @@ function truchet(el) {
 			tileContext.restore();
 		}
 	}
+	const path = 'dist/assets/generatedImages/' + slug + '.jpg'
+	console.log(path);
+	const out = fs.createWriteStream(path)
+	const stream = tileCanvas.createJPEGStream()
+	stream.pipe(out)
+	out.on('finish', () => {
+		console.log('The JPEG file was created.')
+	})
+
 }
 
-[...document.querySelectorAll('canvas')].forEach(el => {
-	truchet(el)
-});
+
