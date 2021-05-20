@@ -1,29 +1,34 @@
-<li class="mb-8 ">
+<li class="flex my-12">
+	{% if post.data.hero.image %}
 
-	{% if postListItemStyle.complete %}
-		<div class="text-sm text-gray-700">
-			<time datetime="{{ post.data.page.date | dateToFormat("yyyy-MM-dd") }}">
-				{{ post.data.page.date | dateToFormat("dd LLLL yyyy") }}
-			</time>
-		</div>
+		<img  loading="lady" class="responsiver-sharped"  alt="{{post.data.hero.alt}}"
+		src="/assets/generatedImages/{{post.data.hero.image}}">
+		{% else%}
+		<img  loading="lady" alt="{{post.data.hero.alt}}" src="/assets/generatedImages/{{post.data.page.fileSlug}}.jpg" >
 	{% endif %}
 
-	{# Post Title  #}
-	<H2 class="cta-heading">
-
-		<a href="{{ post.url }}" class="block hover:underline">
-			{{ post.data.title }}
-		</a>
-	</H2>
-
-
-	{% if postListItemStyle.complete %}
-		<p class="label">
-			{{ post.data.description |  removeMD}}
-			{{ post.data.page.description | removeMD }}
-		</p>
-	{% endif %}
-
-	{#	{% endif %}
-#}
+	<div>
+		{% if postListItemStyle.complete %}
+			<div class="text-sm text-gray-700">
+				<time datetime="{{ post.data.page.date | dateToFormat("yyyy-MM-dd") }}">
+					{{ post.data.page.date | dateToFormat("dd LLLL yyyy") }}
+				</time>
+			</div>
+		{% endif %}
+		{# Post Title  #}
+		<H2 class="cta-heading">
+			<a href="{{ post.url }}" class="block hover:underline">
+				{{ post.data.title }}
+			</a>
+		</H2>
+		{% if postListItemStyle.complete %}
+			<p class="label">
+				{{ post.data.description |  removeMD}}
+				{{ post.data.page.description | removeMD }}
+			</p>
+		{% endif %}
+	</div>
 </li>
+{% if not loop.last %}
+	<hr class="w-screen my-4">
+{% endif %}

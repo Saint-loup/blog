@@ -34,7 +34,6 @@ module.exports = {
 		// loop through each page and add it to the index
 		collection.forEach((page) => {
 
-			const frenchDate = DateTime.fromJSDate(page.data.date, { zone: 'utc' }).toFormat("dd LLLL yyyy")
 			index.addDoc({
 				url: page.url,
 				title: page.data.title,
@@ -42,8 +41,11 @@ module.exports = {
 				tags: page.data.tags,
 				//on accède au contenu en  markdown et on le transforme en texte brut.
 				content: remove(page.template.frontMatter.content),
-				date: page.data.date
+				date: page.data.date,
+				hero: page.data.hero,
+				placeholderImage: page.data.placeholderImage
 			});
+
 		});
 		return index.toJSON();
 	},
