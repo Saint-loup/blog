@@ -16,7 +16,7 @@ pagination:
 
 <div class="{{ structure.g_pageWidth }} ">
 
-  <img class="w-1/2 mx-auto my-8" src="/assets/UI/construction.gif" alt=""></img>
+  <img class="w-1/4 mx-auto my-8" src="/assets/UI/construction.gif" alt=""></img>
 
   {% if seo.description %}
     <div class="p-2 {{ colors.borderCustom.borders or colors.borderDefault.borders }} {{ colors.borderCustom.color or colors.borderDefault.color }}">
@@ -40,7 +40,7 @@ pagination:
           <li class="my-8 list-none project">
             <a class="cta-heading name " href="{{project.link}}">{{project.name}}</a>
             {#<img class="picture" src="{{project.img}}"></img>#}
-            <p class="text-lg description">{{project.description}}</p>
+            <p class="label description">{{project.description}}</p>
           </li>
         {% endfor %}
       </ul>
@@ -55,7 +55,7 @@ pagination:
           <li class="my-8 list-none ailleurs">
             <a class="cta-heading" href="{{item.link}}">{{item.name}}</a>
             {#<img class="picture" src="{{item.img}}"></img>#}
-            <div class="text-lg description">{{item.description}}</div>
+            <div class="label description">{{item.description}}</div>
           </li>
         {% endfor %}
       </ul>

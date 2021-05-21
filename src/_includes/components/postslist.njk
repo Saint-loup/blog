@@ -2,13 +2,27 @@
   <div class=post-list-wrapper>
     <ul class="post-list">
       {% for post in postslist %}
-        {% include 'components/postlistitem.njk' %}
+        {% if postListItemStyle.complete %}
+          {% include 'components/postlistitem.njk' %}
+        {% else %}
+          <li class="mb-8">
+            <H2 class="cta-heading">
+              <a href="{{ post.url }}" class="block hover:underline">
+                {{ post.data.title }}
+              </a>
+            </H2>
+            <time class="label " datetime="{{ post.data.page.date | dateToFormat("yyyy-MM-dd") }}">
+              {{ post.data.page.date | dateToFormat("dd LLLL yyyy") }}
+            </time>
+          </li>
+        {% endif %}
       {% endfor %}
     </ul>
 
     {# ===== Paginate based on "size" frontmatter value above =====  #}
     {# Don't even include the pagination component if there are fewer posts than needed to paginate  #}
     {% if (collections.post.length > pagination.size) and (postListItemStyle.showPagination) %}
+
       {% include "components/pagination.njk" %}
     {% endif %}
   </div>

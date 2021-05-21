@@ -1,10 +1,7 @@
 <li class="flex my-12">
-	{% if postListItemStyle.complete %}
-		<img onclick="window.location.href='{{post.url}}'"  loading="lazy" alt="{{post.data.hero.alt}}"
+	<img onclick="window.location.href='{{post.url}}'"  loading="lazy" alt="{{post.data.hero.alt}}"
 				src=" {{ '/assets/generatedImages/'+ post.data.hero.image if post.data.hero.image else '/assets/generatedImages/' + post.data.page.fileSlug + '.png' }}"
 				>
-	{% endif %}
-
 	<div>
 
 		{# Post Title  #}
@@ -13,13 +10,11 @@
 				{{ post.data.title }}
 			</a>
 		</H2>
-		{% if postListItemStyle.complete %}
-			<time class="my-2 text-gray-700 " datetime="{{ post.data.page.date | dateToFormat("yyyy-MM-dd") }}">
-				{{ post.data.page.date | dateToFormat("dd LLLL yyyy") }}
-			</time>
-		{% endif %}
+		<time class="block label" datetime="{{ post.data.page.date | dateToFormat("yyyy-MM-dd") }}">
+			{{ post.data.page.date | dateToFormat("dd LLLL yyyy") }}
+		</time>
 
-		{% if postListItemStyle.complete and(post.data.description or post.data.page.description) %}
+		{% if post.data.description or post.data.page.description %}
 			<span class="hidden mx-2 text-xl font-light text-gray-500 sm:inline " >~</span>
 
 			<span class="label">
@@ -29,6 +24,6 @@
 		{% endif %}
 	</div>
 </li>
-{% if not loop.last and postListItemStyle.complete %}
+{% if not loop.last %}
 	<hr class="my-4 container-full">
 {% endif %}
