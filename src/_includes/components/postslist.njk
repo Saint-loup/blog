@@ -11,7 +11,7 @@
                 {{ post.data.title }}
               </a>
             </H2>
-            <time class="label " datetime="{{ post.data.page.date | dateToFormat("yyyy-MM-dd") }}">
+            <time class="block label " datetime="{{ post.data.page.date | dateToFormat("yyyy-MM-dd") }}">
               {{ post.data.page.date | dateToFormat("dd LLLL yyyy") }}
             </time>
           </li>
