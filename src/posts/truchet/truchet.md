@@ -11,12 +11,13 @@ richPicture: false
 hero:
   type: split
   image: truchet.png
-
 ---
 
 Que ce sont donc ces jolis motifs en vignettes ?
 <!-- excerpt -->
 
 
+{% observable "c3eb21cb" %}
 
 ​	https://observablehq.com/@xenomachina/truchet-tiles-variant-intertwined-quarter-circles
+

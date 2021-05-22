@@ -1,14 +1,11 @@
 // https://observablehq.com/@xenomachina/truchet-tiles-variant-intertwined-quarter-circles@552
 
-const fs = require('fs')
-const { pipeline } = require('stream/promises');
-
-const { createCanvas } = require('canvas')
 var makeRandomGenerator = require('random-seed');
 var d3 = require("d3-color")
 
-module.exports = async function (el, mode, slug) {
+module.exports = async function (tileCanvas) {
 	const rand = makeRandomGenerator.create()
+
 
 	/*const saturation = 60;
 	const seed = Math.random();
@@ -49,17 +46,10 @@ module.exports = async function (el, mode, slug) {
 	const scramble = 0;
 	const curve_thickness = 1;
 	const curves_per_tile = 7;
-
 	const segments = curves_per_tile + 1;
 
 
-	if (mode === "DOM") {
 
-		var tileCanvas = el;
-	}
-	else {
-		var tileCanvas = createCanvas(width, height)
-	}
 	const tileContext = tileCanvas.getContext('2d');
 	tileCanvas.width = width
 	tileCanvas.height = height
@@ -159,12 +149,7 @@ module.exports = async function (el, mode, slug) {
 	}
 
 
-	const path = 'dist/assets/generatedImages/' + slug + '.png'
-
-	await pipeline(
-		tileCanvas.createPNGStream({ compressionLevel: 2 }),
-		fs.createWriteStream(path)
-	)
+	return tileCanvas
 
 
 }

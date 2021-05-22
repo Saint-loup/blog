@@ -1,4 +1,4 @@
-var truchet = require('../truchet.js');
+var truchet = require('../truchet-node.js');
 
 module.exports = {
   layout: "post",
@@ -14,7 +14,7 @@ module.exports = {
 
       if (data.hero === undefined || data.hero === {}) {
 
-        await truchet(null, "node", data.page.fileSlug).catch(console.error);
+         await truchet(null, data.page.fileSlug).catch(console.error);
       }
       else { return false }
     },
