@@ -9,7 +9,7 @@ module.exports = (string) => {
 	} else {
 		let slug = slugify(string, {
 			decamelize: false,
-			customReplacements: [['%', ' ']],
+			customReplacements: [['%', ' '], ["'", '']],
 		});
 		memoizedSlugs[string] = slug;
 		return slug;

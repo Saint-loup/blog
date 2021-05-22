@@ -4,3 +4,4 @@ require('./nav.js')();
 
 require('./spin.js')();
 
+require('./truchet-dom.js')();

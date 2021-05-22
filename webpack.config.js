@@ -7,7 +7,7 @@ module.exports = {
 
   entry: {
     truchet: path.resolve(__dirname, 'src/truchet.js'),
-    truchetTest: path.resolve(__dirname, 'src/assets/scripts/truchet-dom.js'),
+    'truchet-dom': path.resolve(__dirname, 'src/assets/scripts/truchet-dom.js'),
     main: path.resolve(__dirname, 'src/assets/scripts/main.js'),
     search: path.resolve(__dirname, 'src/assets/scripts/search.js'),
     richPicture: path.resolve(__dirname, 'src/assets/scripts/richPicture.js'),

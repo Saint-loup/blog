@@ -3,23 +3,9 @@
 var makeRandomGenerator = require('random-seed');
 var d3 = require("d3-color")
 
-module.exports = async function (tileCanvas) {
+module.exports = async function (tileCanvas, params) {
 	const rand = makeRandomGenerator.create()
 
-
-	/*const saturation = 60;
-	const seed = Math.random();
-	const hue_amplitude = 90;
-	const hue_phase = 180;
-	const background = 'hue_phase';
-	const background_phase = 90;
-	const border = "#000000";
-	const grid_alpha = 0;
-	const should_shuffle = true;
-	const curve_thickness = 1;
-	const curves_per_tile = 7;
-	const twist = 2;
-	const scramble = 2;*/
 
 	/*
 		const should_shuffle = (rand.intBetween(0, 1) === 1 ? true : false)
@@ -30,29 +16,55 @@ module.exports = async function (tileCanvas) {
 		const scramble = rand.intBetween(0, 50)
 	*/
 
-	const height = 280;
-	const width = 400;
-	const tile_size = rand.intBetween(40, 80)
-	const saturation = 30;
-	const seed = Math.random();
-	const hue_amplitude = rand.intBetween(10, 80);
-	const hue_phase = 220;
-	const background = '#649cac'
-	const background_phase = 180;
-	const border = "#000000";
-	const grid_alpha = 0;
-	const should_shuffle = false
-	const twist = 0;
-	const scramble = 0;
-	const curve_thickness = 1;
-	const curves_per_tile = 7;
-	const segments = curves_per_tile + 1;
+	if (params) {
+		var height = params.height
+		var width = params.width
+		var tile_size = params.tile_size
+		var saturation = params.saturation
+		var seed = params.seed
+		var hue_amplitude = params.hue_amplitude
+		var hue_phase = params.hue_phase
+		var background = params.background
+		var background_phase = params.background_phase
+		var border = params.border
+		var grid_alpha = params.grid_alpha
+		var should_shuffle = params.should_shuffle
+		var twist = params.twist
+		var scramble = params.scramble
+		var curve_thickness = params.curve_thickness
+		var curves_per_tile = params.curves_per_tile
+		var segments = curves_per_tile + 1;
+		tileCanvas.width = params.width
+		tileCanvas.height = params.height
+	}
+	else {
 
+
+		const height = 280;
+		const width = 400;
+		const tile_size = rand.intBetween(40, 80)
+		const saturation = 30;
+		const seed = Math.random();
+		const hue_amplitude = rand.intBetween(10, 80);
+		const hue_phase = 220;
+		const background = '#649cac'
+		const background_phase = 180;
+		const border = "#000000";
+		const grid_alpha = 0;
+		const should_shuffle = false
+		const twist = 0;
+		const scramble = 0;
+		const curve_thickness = 1;
+		const curves_per_tile = 7;
+		const segments = curves_per_tile + 1;
+		tileCanvas.width = width
+		tileCanvas.height = height
+	}
 
 
 	const tileContext = tileCanvas.getContext('2d');
-	tileCanvas.width = width
-	tileCanvas.height = height
+
+
 	const rForm = makeRandomGenerator("form:" + seed)
 	const rScramble = makeRandomGenerator("scramble:" + seed)
 	const rScramble2 = makeRandomGenerator("scramble2:" + seed)
