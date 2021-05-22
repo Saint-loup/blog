@@ -34,7 +34,7 @@ module.exports = {
 				dryRun: false,
 				formats: ['webp', 'jpeg'],
 				urlPath: '/assets/images/',
-				outputDir: './dist/assets/generatedImages/',
+				outputDir: './src/assets/generatedImages/',
 				filenameFormat: function (id, src, width, format, options) {
 					const extension = path.extname(src);
 					const name = path.basename(src, extension);

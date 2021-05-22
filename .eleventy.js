@@ -50,6 +50,8 @@ cf. postcss.config.js pour le CSS
 
 	eleventyConfig.addPassthroughCopy({ 'src/assets/images/*.gif': 'assets/images' });
 	//eleventyConfig.addPassthroughCopy('src/assets/images/')
+	eleventyConfig.addPassthroughCopy('src/assets/generatedImages/')
+
 	eleventyConfig.addPassthroughCopy({ 'src/posts/**/*.webp': 'assets/generatedImages' })
 	eleventyConfig.addPassthroughCopy({ 'src/posts/**/*.png': 'assets/generatedImages' })
 	eleventyConfig.addPassthroughCopy({ 'src/posts/**/*.jpg': 'assets/generatedImages' })
@@ -58,6 +60,7 @@ cf. postcss.config.js pour le CSS
 	eleventyConfig.addPassthroughCopy({ 'src/assets/images/*.png': 'assets/generatedImages' })
 	eleventyConfig.addPassthroughCopy({ 'src/assets/images/*.jpg': 'assets/generatedImages' })
 	eleventyConfig.addPassthroughCopy({ 'src/assets/images/*.jpeg': 'assets/generatedImages' })
+
 
 
 	eleventyConfig.addPassthroughCopy('src/posts/**/*.gif')
@@ -151,8 +154,18 @@ cf. postcss.config.js pour le CSS
 		return njk.render('zotero.njk', { items: items });
 	})
 
+	eleventyConfig.addNunjucksAsyncShortcode('observable', async function (id) {
+		return  `<div id="observablehq-tileDebase-${id}"></div>
 
-
+				<script type="module">
+				import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+				import define from "https://api.observablehq.com/@saint-loup/test.js?v=3";
+				new Runtime().module(define, name => {
+				if (name === "tileDebase") return new Inspector(document.querySelector('#observablehq-tileDebase-${id}'));
+				});
+				</script>
+				`
+	})
 	/**
 	 * Add layout aliases
 	 * @link https://www.11ty.dev/docs/layouts/#layout-aliasing
