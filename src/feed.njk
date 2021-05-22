@@ -24,7 +24,7 @@
     <name>{{ meta.authorName }}</name>
     <email>{{ meta.authorEmail }}</email>
   </author>
-  {%- for post in collections.post | reverse %}
+  {%- for post in collections.post | reverse | slice(0, 20) %}
     {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(meta.siteURL) }}{% endset %}
     <entry>
       <title>{{ post.data.title }}</title>
