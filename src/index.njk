@@ -16,7 +16,7 @@ pagination:
 
 <div class="{{ structure.g_pageWidth }} ">
 
-  <img class="w-1/3 mx-auto my-8" src="/assets/UI/construction.gif" alt=""></img>
+  <img class="w-1/4 mx-auto my-8" src="/assets/UI/construction.gif" alt=""></img>
 
   {% if seo.description %}
     <div class="p-2 {{ colors.borderCustom.borders or colors.borderDefault.borders }} {{ colors.borderCustom.color or colors.borderDefault.color }}">
@@ -31,33 +31,31 @@ pagination:
 
       <a href="/blog" class="text-xl font-semibold leading-7 text-accent2 lg:text-2xl ">Voir tout <span aria-hidden="true">⤳</span></a>
     </section>
+    <hr class="my-8">
 
     <section class="mb-16">
       <h2>Bidouilles</h2>
       <ul class="project-list " >
         {% for project in projectsList %}
           <li class="my-8 list-none project">
-            <p class="text-2xl font-bold leading-7 text-accent2 lg:text-3xl name ">
-              <a href="{{project.link}}">{{project.name}}</a>
-            </p>
+            <a class="cta-heading name " href="{{project.link}}">{{project.name}}</a>
             {#<img class="picture" src="{{project.img}}"></img>#}
-            <p class="text-lg description">{{project.description}}</p>
+            <p class="label description">{{project.description}}</p>
           </li>
         {% endfor %}
       </ul>
       <a href="/projets" class="text-xl font-semibold leading-7 text-accent2 lg:text-2xl ">Voir tout <span aria-hidden="true">⤳</span></a>
     </section>
+    <hr class="my-8">
 
     <section class="">
       <h2>Ailleurs</h2>
       <ul class="ailleurs-list " >
         {% for item in ailleurs %}
           <li class="my-8 list-none ailleurs">
-            <div class="text-2xl font-semibold leading-7 text-accent2 lg:text-3xl">
-              <a href="{{item.link}}">{{item.name}}</a>
-            </div>
+            <a class="cta-heading" href="{{item.link}}">{{item.name}}</a>
             {#<img class="picture" src="{{item.img}}"></img>#}
-            <div class="text-lg description">{{item.description}}</div>
+            <div class="label description">{{item.description}}</div>
           </li>
         {% endfor %}
       </ul>

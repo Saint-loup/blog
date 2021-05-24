@@ -1,5 +1,5 @@
-/*const alpine = require('alpinejs')
-*/
+const alpine = require('alpinejs')
+
 require('./nav.js')();
 
 require('./spin.js')();

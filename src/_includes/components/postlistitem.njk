@@ -1,31 +1,29 @@
-<li class="mb-8 ">
+<li class="flex my-12">
+	<img onclick="window.location.href='{{post.url}}'"  loading="lazy" alt="{{post.data.hero.alt}}"
+				src=" {{ '/assets/generatedImages/'+ post.data.hero.image if post.data.hero.image else '/assets/generatedImages/' + post.data.page.fileSlug + '.png' }}"
+				>
+	<div>
 
-	{% if postListItemStyle.complete %}
-		<div class="text-sm {{ colors.authorCustom.date or colors.authorDefault.date }}">
-			<time datetime="{{ post.data.page.date | dateToFormat("yyyy-MM-dd") }}">
-				{{ post.data.page.date | dateToFormat("dd LLLL yyyy") }}
-			</time>
-		</div>
-	{% endif %}
+		{# Post Title  #}
+		<H2 class="mb-3 cta-heading">
+			<a href="{{ post.url }}" class="block hover:underline">
+				{{ post.data.title }}
+			</a>
+		</H2>
+		<time class="block label" datetime="{{ post.data.page.date | dateToFormat("yyyy-MM-dd") }}">
+			{{ post.data.page.date | dateToFormat("dd LLLL yyyy") }}
+		</time>
 
-	{# Post Title  #}
-	<H2 class="text-2xl font-semibold leading-7 lg:text-3xl text-accent2">
+		{% if post.data.description or post.data.page.description %}
+			<span class="hidden mx-2 text-xl font-light text-gray-500 sm:inline " >~</span>
 
-		<a href="{{ post.url }}" class="block hover:underline">
-			{{ post.data.title }}
-		</a>
-	</H2>
-	{# Display Post Excerpt if set 'true' in /src/_data/structure.js:g_showExcerpt  #}
-	{#	{% if postListItemStyle.complete %}
-#}
-
-	{% if postListItemStyle.complete %}
-		<p class="label">
-			{{ post.data.description |  removeMD}}
-			{{ post.data.page.description | removeMD }}
-		</p>
-	{% endif %}
-
-	{#	{% endif %}
-#}
+			<span class="label">
+				{{ post.data.description |  removeMD}}
+				{{ post.data.page.description | removeMD }}
+			</span>
+		{% endif %}
+	</div>
 </li>
+{% if not loop.last %}
+	<hr class="my-4 container-full">
+{% endif %}

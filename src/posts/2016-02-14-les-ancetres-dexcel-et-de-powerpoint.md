@@ -7,7 +7,7 @@ tags:
 richPicture: true
 hero:
   type: split  # options: carousel, graphic, video, split (text & image)
-  image: large\_the\_apartment\_blu-ray\_1.jpg
+  image: large_the_apartment_blu-ray_1.jpg
 ---
 
 

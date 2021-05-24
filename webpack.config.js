@@ -5,8 +5,8 @@ const WebpackAssetsManifest = require('webpack-assets-manifest');
 
 module.exports = {
 
-
   entry: {
+
     main: path.resolve(__dirname, 'src/assets/scripts/main.js'),
     search: path.resolve(__dirname, 'src/assets/scripts/search.js'),
     richPicture: path.resolve(__dirname, 'src/assets/scripts/richPicture.js'),
@@ -14,12 +14,10 @@ module.exports = {
 
 
   output: {
-
     path: path.resolve(__dirname, 'dist/assets/scripts'),
     /*    détournement du publicpatch*/
     publicPath: path.resolve(__dirname, 'src'),
     filename: (process.env.NODE_ENV === "production" ? '[name].[contenthash].js' : '[name].js')
-
   },
 
   module: {
@@ -31,7 +29,9 @@ module.exports = {
             loader: 'simple-nunjucks-loader',
             options: {
               searchPaths: [
-                'src/_includes/components'
+                'src/_includes/components',
+                'src/_includes/utils'
+
               ], filters: {
                 dateToFormat: path.resolve('src/utils/dateToFormat.js'),
                 removeMD: path.resolve('src/utils/removeMD.js')

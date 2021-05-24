@@ -34,7 +34,7 @@ module.exports = {
 				dryRun: false,
 				formats: ['webp', 'jpeg'],
 				urlPath: '/assets/images/',
-				outputDir: './src/assets/generatedImages/',
+				outputDir: './dist/assets/generatedImages/',
 				filenameFormat: function (id, src, width, format, options) {
 					const extension = path.extname(src);
 					const name = path.basename(src, extension);
@@ -43,7 +43,7 @@ module.exports = {
 				}
 			}
 
-
+			// test et réécriture des images à chemin relatif
 			try {
 				if (!(new RegExp('^/').test(url))) {
 					url = "src/assets/images/relative/" + url

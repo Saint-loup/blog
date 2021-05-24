@@ -4,6 +4,7 @@ date: 2014-09-13
 tags:
   - "features"
   - "jeu vidéo"
+  - "procédural"
 
 ---
 

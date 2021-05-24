@@ -1,18 +1,17 @@
 ---
-title: Tous les articles
-date: 2020-08-05
-description: The Posts List display is controled in /src/_data/structure.js and ships with 4 options.
+title: guide de style
+eleventyExcludeFromCollections: true,
 layout: page
 eleventyNavigation:
   key: main
-  title: Textes
+  title: Blog #  as it will appear in the nav
   order: 1    # order to display in the nav
 seo:
   title: Tous les articles
   description:
 pagination:
   data: collections.post
-  size: 40
+  size: 3
   alias: posts
   reverse: true
 postListItemStyle:
@@ -38,10 +37,8 @@ postListItemStyle:
 
   {% include 'components/postslist.njk' %}
 
-  <div class=" lg:container-wide">
-    <hr class="my-8">
-
-    <h3 class"text-gray-700">Tous les thèmes</h3>
+  <div class="my-16 border-t border-gray-300 lg:container-wide">
+    <h3 class="{{ colors.tagPillCustom.text or colors.tagPillDefault.text }}">Tous les thèmes</h3>
     {% set tags = collections.tagList %}
     {% include "components/tagpills.njk" %}
   </div>

@@ -1,8 +1,5 @@
 
-.article .cta {
-   @apply block px-8 py-4 m-auto font-semibold no-underline bg-gray-200 rounded-full shadow-md max-w-max focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-75 hover:text-gray-800 hover:bg-gray-300 ;
 
-}
 
 .article {
 	h1, h2, h3, h4, h5 {
@@ -20,7 +17,7 @@
 		left:0;
 		display: none;
 		padding:0 .5em;
-		@apply text-accent;
+		@apply text-accent2;
 	}
 }
 
@@ -47,6 +44,20 @@
 .article.prose figure img {
     margin: auto !important;
 }
+
+
+.container-wide {
+	margin-left: calc(30% - 30vw);
+	margin-right: calc(30% - 30vw);
+	position: relative
+}
+
+.container-full {
+	width: 100vw;
+ position: relative;
+ margin-left: -50vw;
+ left: 50%;
+	}
 
 	.article img, .article video, .article iframe {
 		margin:auto
