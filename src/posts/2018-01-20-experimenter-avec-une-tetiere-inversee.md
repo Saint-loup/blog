@@ -2,7 +2,7 @@
 title: "Expérimenter avec une tétière inversée"
 date: 2018-01-20
 tags:
-  - "tout ce qui bouge"
+  - "Tout ce qui bouge"
   - "concept"
 
 
