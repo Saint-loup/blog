@@ -149,13 +149,13 @@ cf. postcss.config.js pour le CSS
 
 		}
 		const items = await response.getData();
-		njk.configure('src/_includes/components/', { autoescape: true, trimBlocks: true, lstripBlocks: true });
+		njk.configure('src/_templates/components/', { autoescape: true, trimBlocks: true, lstripBlocks: true });
 
 		return njk.render('zotero.njk', { items: items });
 	})
 
 	eleventyConfig.addNunjucksAsyncShortcode('observable', async function (id) {
-		return  `<div id="observablehq-tileDebase-${id}"></div>
+		return `<div id="observablehq-tileDebase-${id}"></div>
 
 				<script type="module">
 				import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
@@ -173,7 +173,8 @@ cf. postcss.config.js pour le CSS
 	eleventyConfig.addLayoutAlias('base', 'layouts/base.njk')
 	eleventyConfig.addLayoutAlias('page', 'layouts/page.njk')
 	eleventyConfig.addLayoutAlias('post', 'layouts/post.njk')
-	eleventyConfig.addLayoutAlias('author', 'layouts/author.njk')
+	eleventyConfig.addLayoutAlias('post-mdjs', 'layouts/post-mdjs.njk')
+
 
 	//eleventyConfig.addLayoutAlias('home', 'layouts/home.njk')
 
@@ -258,7 +259,7 @@ cf. postcss.config.js pour le CSS
 		dir: {
 			input: 'src',
 			output: 'dist',
-			includes: '_includes',
+			includes: '_templates',
 			data: '_data',
 		},
 		passthroughFileCopy: true,

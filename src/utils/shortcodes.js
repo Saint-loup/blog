@@ -3,7 +3,16 @@ const svgColorDefault = 'text-indigo-500'
 
 
 module.exports = {
+	truchet: function (data) {
 
+		return `
+			<canvas id="truchet" class="m-2" ></canvas>
+			<script  src="/assets/scripts/truchet.js" defer ></script>
+			<script  src="/assets/scripts/truchet-dom.js"  ></script>
+
+			`
+
+	},
 	project: function (name, link, img, description) {
 		return `<div class="project flex flex-col overflow-hidden rounded-lg shadow-lg">
 							<h3 class="name"><a href="${link}">${name}</a></h3>
@@ -37,9 +46,9 @@ module.exports = {
    * and are hardcoded in the layouts to provide unique values as required by Lighthouse.
    *
    * Used in Layouts:
-   *  /src/_includes/components/footer.njk
-   *  /src/_includes/components/socialshare.njk
-   *  /src/_includes/components/nav.njk (for the logos)
+   *  /src/_templates/components/footer.njk
+   *  /src/_templates/components/socialshare.njk
+   *  /src/_templates/components/nav.njk (for the logos)
 	 */
 	svg: function (name, classes, desc, location) {
 		const nameAttr = name ? name : 'piedpiper'

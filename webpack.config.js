@@ -30,8 +30,8 @@ module.exports = {
             loader: 'simple-nunjucks-loader',
             options: {
               searchPaths: [
-                'src/_includes/components',
-                'src/_includes/utils'
+                'src/_templates/components',
+                'src/_templates/utils'
 
               ], filters: {
                 dateToFormat: path.resolve('src/utils/dateToFormat.js'),
