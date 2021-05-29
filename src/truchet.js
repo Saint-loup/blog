@@ -17,11 +17,19 @@ module.exports = async function (tileCanvas, params) {
 	*/
 
 	if (params) {
+
+		if (!params.seed) {
+			var seed = Math.random();
+
+		}
+		else {
+			var seed = params.seed
+		}
+
 		var height = params.height
 		var width = params.width
 		var tile_size = params.tile_size
 		var saturation = params.saturation
-		var seed = params.seed
 		var hue_amplitude = params.hue_amplitude
 		var hue_phase = params.hue_phase
 		var background = params.background
@@ -33,30 +41,31 @@ module.exports = async function (tileCanvas, params) {
 		var scramble = params.scramble
 		var curve_thickness = params.curve_thickness
 		var curves_per_tile = params.curves_per_tile
-		var segments = curves_per_tile + 1;
+		var segments = params.curves_per_tile + 1;
 		tileCanvas.width = params.width
 		tileCanvas.height = params.height
+		console.log(segments)
 	}
 	else {
 
 
-		const height = 280;
-		const width = 400;
-		const tile_size = rand.intBetween(40, 80)
-		const saturation = 30;
-		const seed = Math.random();
-		const hue_amplitude = rand.intBetween(10, 80);
-		const hue_phase = 220;
-		const background = '#649cac'
-		const background_phase = 180;
-		const border = "#000000";
-		const grid_alpha = 0;
-		const should_shuffle = false
-		const twist = 0;
-		const scramble = 0;
-		const curve_thickness = 1;
-		const curves_per_tile = 7;
-		const segments = curves_per_tile + 1;
+		var height = 280;
+		var width = 400;
+		var tile_size = rand.intBetween(40, 80)
+		var saturation = 30;
+		var seed = Math.random();
+		var hue_amplitude = rand.intBetween(10, 80);
+		var hue_phase = 220;
+		var background = '#649cac'
+		var background_phase = 180;
+		var border = "#000000";
+		var grid_alpha = 0;
+		var should_shuffle = false
+		var twist = 0;
+		var scramble = 0;
+		var curve_thickness = 1;
+		var curves_per_tile = 7;
+		var segments = curves_per_tile + 1;
 		tileCanvas.width = width
 		tileCanvas.height = height
 	}

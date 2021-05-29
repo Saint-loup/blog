@@ -14,13 +14,6 @@ const njk = require('nunjucks')
 const api = require('zotero-api-client');
 
 
-const pluginMdjs = require('./src/mdjs');
-
-module.exports = function (eleventyConfig) {
-	eleventyConfig.addPlugin(pluginMdjs);
-};
-
-
 
 module.exports = function (eleventyConfig) {
 
@@ -97,6 +90,7 @@ cf. postcss.config.js pour le CSS
 		eleventyConfig.addPlugin(imagesResponsiver, require('./src/utils/images-responsiver-config.js'))
 
 	}
+
 
 	/**
 	 * Filters

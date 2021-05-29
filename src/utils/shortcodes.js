@@ -1,16 +1,14 @@
-const markdownIt = require('markdown-it')
+const markdownIt = require('markdown-it')({ html: true })
 const svgColorDefault = 'text-indigo-500'
 
-
 module.exports = {
-	truchet: function (data) {
+	truchet: function (args) {
+		const ret =
+			`<div>
+			<canvas  class='m-2 canvas' data-args='${JSON.stringify(args)}' ></canvas>
 
-		return `
-			<canvas id="truchet" class="m-2" ></canvas>
-			<script  src="/assets/scripts/truchet.js" defer ></script>
-			<script  src="/assets/scripts/truchet-dom.js"  ></script>
-
-			`
+		</div>`
+		return ret
 
 	},
 	project: function (name, link, img, description) {
@@ -30,7 +28,8 @@ module.exports = {
    * according to the existing examples.
    *
    * Attributes:
-   *    name ; required, must be same as SVG file name in /src/assets/svg/ (without ".svg")
+   *    name ;
+   * required, must be same as SVG file name in /src/assets/svg/ (without ".svg")
    *    classes : optional but required if you want to control size, color, etc.
    *    desc : optional when used in .md content files
    *    location : optional when used in .md content files
@@ -69,11 +68,9 @@ module.exports = {
 			return ''
 		}
 
-		let markdown = markdownIt({
-			html: true,
-		})
 
-		return markdown.render(value)
+
+		return markdownIt.render(value)
 	},
 
 }
