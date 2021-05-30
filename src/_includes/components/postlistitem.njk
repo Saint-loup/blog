@@ -8,13 +8,13 @@
 	<div>
 
 		{# Post Title  #}
-		<H2 class="mb-3 cta-heading">
+		<H2 class="mb-1 leading-6 lg:mb-3 cta-heading">
 			<a href="{{ post.url }}" class="block hover:underline">
 				{{ post.data.title }}
 			</a>
 		</H2>
 		{% if postListItemStyle.complete %}
-			<time class="my-2 text-gray-700 " datetime="{{ post.data.page.date | dateToFormat("yyyy-MM-dd") }}">
+			<time class="text-gray-700 lg:my-2 " datetime="{{ post.data.page.date | dateToFormat("yyyy-MM-dd") }}">
 				{{ post.data.page.date | dateToFormat("dd LLLL yyyy") }}
 			</time>
 		{% endif %}
@@ -30,5 +30,5 @@
 	</div>
 </li>
 {% if not loop.last and postListItemStyle.complete %}
-	<hr class="my-4 container-full">
+	<hr class="hidden my-4 container-full lg:block">
 {% endif %}
