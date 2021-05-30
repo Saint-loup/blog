@@ -10,13 +10,12 @@
 				{{ post.data.title }}
 			</a>
 		</H2>
-		<time class="block label lg:my-2" datetime="{{ post.data.page.date | dateToFormat("yyyy-MM-dd") }}">
+		<time class=" label lg:my-2" datetime="{{ post.data.page.date | dateToFormat("yyyy-MM-dd") }}">
 			{{ post.data.page.date | dateToFormat("dd LLLL yyyy") }}
 		</time>
 
 		{% if post.data.description or post.data.page.description %}
-			<span class="hidden mx-2 text-xl font-light text-gray-500 sm:inline " >~</span>
-
+			<span class=" mx-2 text-xl font-light text-gray-500 inline " >~</span>
 			<span class="label">
 				{{ post.data.description |  removeMD}}
 				{{ post.data.page.description | removeMD }}
@@ -25,5 +24,5 @@
 	</div>
 </li>
 {% if not loop.last %}
-	<hr class="hidden my-4 container-full lg:block">
+	<hr class="hidden my-4 container-full sm:block">
 {% endif %}
