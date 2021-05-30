@@ -3,13 +3,9 @@ const svgColorDefault = 'text-indigo-500'
 
 module.exports = {
 	truchet: function (args) {
-		const ret =
-			`<div>
-			<canvas  class='m-2 canvas' data-args='${JSON.stringify(args)}' ></canvas>
-
-		</div>`
-		return ret
-
+		return	`<div>
+					<canvas  class='m-2 canvas' data-args='${JSON.stringify(args)}' ></canvas>
+					</div>`
 	},
 	project: function (name, link, img, description) {
 		return `<div class="project flex flex-col overflow-hidden rounded-lg shadow-lg">
