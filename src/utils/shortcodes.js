@@ -2,10 +2,8 @@ const markdownIt = require('markdown-it')({ html: true })
 const svgColorDefault = 'text-indigo-500'
 
 module.exports = {
-	truchet: function (args) {
-		return	`<div>
-					<canvas  class='m-2 canvas' data-args='${JSON.stringify(args)}' ></canvas>
-					</div>`
+	truchet: function (args, style) {
+		return `<canvas   class='truchet-canvas ${style}' data-args='${JSON.stringify(args)}' ></canvas>`
 	},
 	project: function (name, link, img, description) {
 		return `<div class="project flex flex-col overflow-hidden rounded-lg shadow-lg">

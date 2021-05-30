@@ -96,3 +96,12 @@ pre code {
 	padding-right:3%;
 	cursor: pointer;
 }
+
+
+
+.truchet-rotate canvas {
+	transition: transform .2s ease-out;
+	cursor: pointer;
+	margin: 0
+}
+

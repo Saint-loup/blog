@@ -20,17 +20,17 @@ module.exports = async function (canvas, params) {
 	width = canvas.width = params.width || 400
 	var seed = params.seed || Math.random();
 	var tile_size = params.tile_size || rand.intBetween(40, 80)
-	var saturation = params.saturation || 30;
+	var saturation = params.saturation || 80;
 	var hue_amplitude = params.hue_amplitude || rand.intBetween(10, 80);
 	var hue_phase = params.hue_phase || 220;
-	var background = params.background || '#649cac'
+	var background = params.background || '#fff'
 	var background_phase = params.background_phase || 180
-	var border = params.border || "#000000";
+	var border = params.border || "#fff";
 	var grid_alpha = params.grid_alpha || 0
 	var should_shuffle = params.should_shuffle || false;
 	var twist = (params.twist || 0) / 100
 	var scramble = (params.scramble || 0) / 100
-	var curve_thickness = (params.curve_thickness || 1) / 100;
+	var curve_thickness = (params.curve_thickness || 10) / 100;
 	var curves_per_tile = params.curves_per_tile || 1;
 
 	var segments = curves_per_tile + 1;
@@ -52,6 +52,61 @@ module.exports = async function (canvas, params) {
 
 	const curveWidth = Math.max(2, tile_size / segments * curve_thickness + 1);
 
+
+	function randomize_curves(x, y, tile_size) {
+
+		// soit 0, soit tile_size
+		// pour définir l'origine du cercle
+		const otx = (rForm.random() < 0.5 ? 0 : tile_size);
+		const oty = (rForm.random() < 0.5 ? 0 : tile_size);
+
+
+
+		const curves = []
+		//		chaque segment est composé d'une courbe intérieur et d'une courbe extérieure)
+
+		// pour chaque segment, ajoute une courbe à un tableau curves
+		// scramble, shuffle et twist
+		for (let i = 1; i <= Math.floor(segments / 2); i++) {
+			// We do this outside of the if for more stability.
+			const stx = (rScramble2.random() < 0.5 ? 0 : tile_size);
+			const sty = (rScramble2.random() < 0.5 ? 0 : tile_size);
+			const should_scramble = (i > 1 && rScramble.random() < scramble)
+			const tx = should_scramble ? stx : otx;
+			const ty = should_scramble ? sty : oty;
+
+			const should_twist = (rTwist.random() < twist);
+
+			// est-ce qu'on agit sur le segment intérieur ou extérieur de la courbe
+			const k = segments - i;
+
+			// toujours faux si pas de twist
+			const twist_i = (k != i) && (rTwist.random() < 0.5) && should_twist;
+			const twist_k = (k != i) && (!twist_i) && should_twist;
+
+			function do_twist(twist_this, z) {
+				return twist_this ? tile_size - z : z;
+			}
+
+			const curve =
+				[twist_i ? k : i,
+				do_twist(twist_i, tx),
+					ty
+				]
+			curves.push(curve);
+			if (k != i) {
+				curves.push([twist_k ? i : k, do_twist(twist_k, tx), ty]);
+				curves.unshift([twist_k ? i : k, do_twist(twist_k, tile_size - tx), tile_size - ty]);
+			}
+			curves.unshift([twist_i ? k : i, do_twist(twist_i, tile_size - tx), tile_size - ty]);
+		}
+		if (should_shuffle) shuffle(curves);
+
+		return curves
+
+	}
+
+
 	function shuffle(a) {
 
 		for (let i = a.length - 1; i > 0; i--) {
@@ -61,6 +116,8 @@ module.exports = async function (canvas, params) {
 		return a;
 	}
 
+	// x et y sont soit à 0, soit à tile_size.
+	//définit le point d'origine du cercle parmi les quatre coints de la tile
 	function circle(x, y, r, style) {
 		tileContext.beginPath();
 		tileContext.arc(x, y, r, 0, 2 * Math.PI);
@@ -76,65 +133,45 @@ module.exports = async function (canvas, params) {
 
 
 	function part(i, x, y, flip) {
-		const hue = ((flip ? (segments - i) : i) / curves_per_tile) * hue_amplitude + hue_phase;
-		circle(x, y, tile_size * i / segments, `hsla(${hue}, ${saturation}%, ${100 - saturation / 2}%, 1)`);
+
+		// Peut être à 1 ou 5
+		// définit les alternances de teinte entre chaque segment
+		const hue_flip = ((flip ? (segments - i) : i) / curves_per_tile)
+		const hue = hue_flip * hue_amplitude + hue_phase;
+		const light = 100 - saturation / 2
+		circle(x, y, tile_size * i / segments, `hsla(${hue}, ${saturation}%, ${light}%, 1)`);
 	}
+
+	//pour chaque tile
 	for (let y = 0; y < height; y += tile_size) {
 		for (let x = 0; x < width; x += tile_size) {
-			const curves = [];
 
-			// soit 0, soit tile_size
-			const otx = (rForm.random() < 0.5 ? 0 : tile_size);
-			const oty = (rForm.random() < 0.5 ? 0 : tile_size);
+			// FOND
+			// est-on dans une tuile paire ou impaire ?
+			tileContext.fillStyle = background;
+			// on remplit une première fois toute la tuile
+			tileContext.fillRect(0, 0, tile_size, tile_size);
 
-
-			// pour chaque segment (composé d'une courbe intérieur et d'une courbe extérieure)
-			for (let i = 1; i <= Math.floor(segments / 2); i++) {
-				// We do this outside of the if for more stability.
-				const stx = (rScramble2.random() < 0.5 ? 0 : tile_size);
-				const sty = (rScramble2.random() < 0.5 ? 0 : tile_size);
-				const should_scramble = (i > 1 && rScramble.random() < scramble)
-				const tx = should_scramble ? stx : otx;
-				const ty = should_scramble ? sty : oty;
-
-				const should_twist = (rTwist.random() < twist);
-
-				const k = segments - i;
-				const twist_i = (k != i) && (rTwist.random() < 0.5) && should_twist;
-				const twist_k = (k != i) && (!twist_i) && should_twist;
-
-				function do_twist(twist_this, z) {
-					return twist_this ? tile_size - z : z;
-				}
-				const curve = [twist_i ? k : i,
-				do_twist(twist_i, tx),
-					ty
-				]
-				curves.push(curve);
-				if (k != i) {
-					curves.push([twist_k ? i : k, do_twist(twist_k, tx), ty]);
-					curves.unshift([twist_k ? i : k, do_twist(twist_k, tile_size - tx), tile_size - ty]);
-				}
-				curves.unshift([twist_i ? k : i, do_twist(twist_i, tile_size - tx), tile_size - ty]);
-			}
-			if (should_shuffle) shuffle(curves);
-
-			// draw tile
-			const parity = ((x + y) / tile_size) % 2;
+			// Puis on ajoute deux carrés, décalés en position et en teinte.
 			const bkg2 = d3.hsl(background);
 			bkg2.h += background_phase;
-			tileContext.fillStyle = background;
-			tileContext.fillRect(0, 0, tile_size, tile_size);
 			tileContext.fillStyle = bkg2.hex();
+			const parity = ((x + y) / tile_size) % 2;
 			tileContext.fillRect(parity ? 0 : tile_size / 2, 0, tile_size / 2, tile_size / 2);
 			tileContext.fillRect(parity ? tile_size / 2 : 0, tile_size / 2, tile_size / 2, tile_size / 2);
+
+			// COURBE
+			const curves = randomize_curves(x, y, tile_size)
 			for (let j = 0; j < curves.length; ++j) {
 				let [i, tx, ty] = curves[j];
-				part(i, tx, ty, ((x + y + tx + ty) / tile_size) % 2);
+				const hue_should_flip = ((x + y + tx + ty) / tile_size) % 2
+				part(i, tx, ty, hue_should_flip);
 			}
 
+			// CANVAS
 			context.drawImage(tileCanvas, x, y);
 			context.save();
+			// GRILLE
 			context.globalAlpha = grid_alpha;
 			context.beginPath();
 			context.rect(x, y, tile_size, tile_size);

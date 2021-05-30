@@ -7,4 +7,14 @@ document.addEventListener('DOMContentLoaded', async function () {
 
 	})
 }
-	, false)
+	, false);
+
+
+[...document.querySelectorAll('.truchet-canvas')].forEach(el => {
+	let rotate = 0;
+	el.addEventListener('click', function () {
+		rotate += 90;
+		this.style = `transform:rotate(${rotate}deg)`
+	}
+		, false)
+});
