@@ -12,39 +12,63 @@ seo:
 
     <div class="px-4 py-16 bg-white sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
       <div class="max-w-lg mx-auto lg:max-w-none">
-        <form name="contact" action="/merci" method="POST" data-netlify-recaptcha="true" data-netlify-honeypot="bot-field" data-netlify="true" class="grid grid-cols-1 row-gap-6">
-          <p class="hidden">
-            <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-          </p>
+        <form id="contact"   class="grid grid-cols-1 row-gap-6">
+
           <div>
-            <label for="full_name" class="sr-only">Nom</label>
-            <div class="relative rounded-md shadow-sm">
-              <input id="full_name" name="name" class="block w-full px-4 py-3 mb-6 placeholder-gray-500 transition duration-150 ease-in-out form-input" placeholder="Nom">
+            <label for="name" >Nom</label>
+            <div class="relative ">
+              <input required id="name" name="name" type="text" class="rounded-md shadow-sm block w-full px-4 py-3 mb-6 placeholder-gray-500 transition duration-150 ease-in-out form-input">
             </div>
           </div>
           <div>
-            <label for="email" class="sr-only">Email</label>
-            <div class="relative rounded-md shadow-sm">
-              <input id="email" name="email" type="email" class="block w-full px-4 py-3 mb-6 placeholder-gray-500 transition duration-150 ease-in-out form-input" placeholder="Email">
+            <label for="email" >Email</label>
+            <div class="relative ">
+              <input required id="email" name="email" type="email" class="rounded-md shadow-sm block w-full px-4 py-3 mb-6 placeholder-gray-500 transition duration-150 ease-in-out form-input" >
             </div>
           </div>
 
           <div>
-            <label for="message" class="sr-only">Message</label>
-            <div class="relative rounded-md shadow-sm">
-              <textarea id="message" name="message" rows="4" class="block w-full px-4 py-3 mb-6 placeholder-gray-500 transition duration-150 ease-in-out form-input" placeholder="Message"></textarea>
+            <label for="message" >Message</label>
+            <div class="relative ">
+              <textarea required id="message" name="message" rows="4" class="rounded-md shadow-sm block w-full px-4 py-3 mb-6 placeholder-gray-500 transition duration-150 ease-in-out form-input" ></textarea>
             </div>
           </div>
-          <div data-netlify-recaptcha="true"></div>
           <div class="">
-            <span class="inline-flex rounded-md shadow-sm">
-              <button type="submit" class="py-4 px-6 my-4 rounded-lg {{ colors.buttonDefault.text or colors.buttonCustom.text }} hover:{{ colors.buttonDefault.textHover or colors.buttonCustom.textHover }} {{ colors.buttonDefault.bg or colors.buttonCustom.bg }} hover:{{ colors.buttonDefault.bgHover or colors.buttonCustom.bgHover }} {{ colors.buttonDefault.border or colors.buttonCustom.border }}">
-                Envoyer
-              </button>
-            </span>
+              <button  type="submit" class="inline-flex rounded-md shadow-sm py-4 px-6 my-4 rounded-lg">Envoyer
+              </button >
           </div>
         </form>
       </div>
     </div>
   </div>
 </div>
+
+<script>
+document.querySelector("#contact").addEventListener( 'submit', async function () {
+      event.preventDefault();
+  var data = new FormData(this);
+  const res = await fetch('https://nuage.toutcequibouge.net/ocs/v2.php/apps/forms/api/v1/submission/insert', {
+    method: 'POST',
+    mode: 'cors',
+
+    headers: {
+     'Content-Type': 'application/json',
+    'OCS-APIRequest':'true',
+    },
+    body: data
+  });
+})
+
+document.querySelector("#contact").addEventListener('formdata', (e) => {
+  console.log('formdata fired');
+
+  // Get the form data from the event object
+  let data = e.formData;
+  for (var value of data.values()) {
+    console.log(value);
+  }
+
+
+});
+
+</script>
