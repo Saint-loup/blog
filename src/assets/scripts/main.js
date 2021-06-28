@@ -10,7 +10,6 @@ document.querySelector("#contact").addEventListener('submit', async function () 
 	var data = new FormData(this);
 	console.log(data.entries());
 
-
 })
 
 document.querySelector("#contact").addEventListener('formdata', (e) => {
