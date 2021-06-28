@@ -1,9 +1,35 @@
 {% set navPages = collections.pages | eleventyNavigation %}
 <header class="navbar lg:px-per lg:bg-dark ">
 
-  {# =======    NAV DESKTOP      ========= #}
+
+
+  {# =======    MENU OFF CANVAS MOBILE      ========= #}
+  <div
+  id="menu-offcanvas"
+  class="relative transition-transform duration-200 ease-out sm:hidden ">
+
+    {% for entry in navPages %}
+
+      <a href="{{ entry.url | url }}"
+          class="relative flex h-20 text-xl font-medium text-center text-gray-200 px-per lg:p-0 bg-dark last:z-50 focus:outline-none focus:text-accent active:text-accent2">
+
+        <span class=" m-auto relative
+            {% if entry.url in page.url %}
+              nav-selected mobile
+            {% endif %}
+           ">{{ entry.title }}
+        </span>
+      </a>
+    {% endfor %}
+
+    </div>
+
+
 
   <div class="relative z-10 flex justify-between h-20 px-per lg:p-0 bg-dark ">
+
+
+  {# =======    TITRE      ========= #}
 
     <a id="site-title" title="lien vers la page d'accueil"class="flex flex-row my-auto" href="{{ '/' |  url}}">
       <svg class="h-8 m-auto fill-current lg:h-10 text-accent" viewbox="0 0 70 61" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -17,9 +43,11 @@
         </div>
     </a>
 
+
+  {# =======    ENTRÉES MENU DESKTOP      ========= #}
+
     <div class="hidden m-auto sm:m-0 sm:flex sm:items-center">
 
-      {# 11ty Nav Plugin loop  #}
       {% for entry in navPages %}
         <a href="{{ entry.url | url }}"  class="
             flex ml-8 xl:ml-12 h-full relative text-shadow text-xl font-medium items-center focus:outline-none focus:text-accent  text-gray-100
@@ -34,12 +62,9 @@
       {% endfor %}
     </div>
 
-    {# Right side of Navbar  #}
+  {# =======    BOUTON BURGER       ========= #}
 
-    {# NAV BAR MENU  #}
     <div class="flex items-center sm:hidden" id="menu-bar">
-
-      {# Mobile menu button #}
       <button  class="relative inline-flex items-center justify-center p-2 text-gray-200 transition-transform duration-150 ease-in-out rounded-md focus:outline-none focus:text-accent active:text-accent2"
        aria-label="Menu principal" aria-expanded="false">
 
@@ -56,23 +81,5 @@
     </div>
   </div>
 
-  {# =======    MENU OFF CANVAS MOBILE      ========= #}
-  <div
-  id="menu-offcanvas"
-  class="relative transition-transform duration-200 ease-out anim-nav-closed sm:hidden ">
 
-    {# 11ty Nav Plugin loop  #}
-    {% for entry in navPages %}
-
-      <a href="{{ entry.url | url }}"
-          class="relative flex h-20 text-xl font-medium text-center text-gray-200 px-per lg:p-0 bg-dark last:z-50 focus:outline-none focus:text-accent active:text-accent2">
-
-        <span class=" m-auto relative
-            {% if entry.url in page.url %}
-              nav-selected mobile
-            {% endif %}
-           ">{{ entry.title }}
-        </span>
-      </a>
-    {% endfor %}
   </header>

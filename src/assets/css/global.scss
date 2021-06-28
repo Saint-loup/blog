@@ -67,11 +67,3 @@
 
 
 
-@media screen and (max-width:640px) {
-	.anim-nav-closed {
-	transform: translateY( calc(-1 * var(--navbar-height) * 5rem));
-	}
-	body .anim-nav-opened {
-		transform: translateY( 0);
-	}
-}
