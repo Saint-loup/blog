@@ -46,16 +46,15 @@ seo:
 <script>
 document.querySelector("#contact").addEventListener( 'submit', async function () {
       event.preventDefault();
-  var data = new FormData(this);
   const res = await fetch('https://nuage.toutcequibouge.net/ocs/v2.php/apps/forms/api/v1/submission/insert', {
     method: 'POST',
     mode: 'cors',
     headers: {
-     'Content-Type': 'application/json',
+     'Content-Type': 'application/json; charset=UTF-8',
     'OCS-APIRequest':'true',
     'Referrer-Policy': 'origin'
     },
-    body: data
+    body: JSON.stringify(Object.fromEntries(new FormData(this)))
   });
 })
 
@@ -64,9 +63,7 @@ document.querySelector("#contact").addEventListener('formdata', (e) => {
 
   // Get the form data from the event object
   let data = e.formData;
-  for (var value of data.values()) {
-    console.log(value);
-  }
+  JSON.stringify(Object.fromEntries(e.formData))
 
 
 });
