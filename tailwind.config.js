@@ -93,7 +93,14 @@ module.exports = {
 						'ul > li:before':
 						{
 							top: '.8em !important'
+						},
+
+						h1: {
+							color: 'inherit',
+							fontSize: '2.2em',
+							lineHeight: '1.1'
 						}
+
 					}
 				},
 				DEFAULT: {
@@ -118,7 +125,9 @@ module.exports = {
 							fontFamily: 'unset'
 						},
 						h1: {
-							color: 'inherit'
+							color: 'inherit',
+							fontSize: '2em',
+							lineHeight: '1.1'
 						},
 						h2: {
 							color: theme('colors.gray.700')
