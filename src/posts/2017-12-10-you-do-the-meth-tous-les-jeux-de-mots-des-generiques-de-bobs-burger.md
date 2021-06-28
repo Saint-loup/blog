@@ -251,7 +251,7 @@ Il y a 126 photogrammes pour 134 épisodes (de la S1 au milieu de la S8), ce qui
 
 ![](/assets/images/Bobs-Burgers-S07E16-Eggs-for-Days..png '')
 
-![](/assets/images/Bobs-Burgers-S07E17-Zero-Larp-Thirty..png '')
+![](/assets/images/Bobs-Burgers-S07E17-Zero-Larp-Thirty.png '')
 
 ![](/assets/images/Bobs-Burgers-S07E18-The-Laser-inth..png '')
 

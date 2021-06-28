@@ -50,9 +50,8 @@ document.querySelector("#contact").addEventListener( 'submit', async function ()
   const res = await fetch('https://nuage.toutcequibouge.net/ocs/v2.php/apps/forms/api/v1/submission/insert', {
     method: 'POST',
     mode: 'cors',
-
     headers: {
-     'Content-Type': 'multipart/form-data',
+     'Content-Type': 'application/json',
     'OCS-APIRequest':'true',
     'Referrer-Policy': 'origin'
     },
