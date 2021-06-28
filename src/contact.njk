@@ -52,8 +52,9 @@ document.querySelector("#contact").addEventListener( 'submit', async function ()
     mode: 'cors',
 
     headers: {
-     'Content-Type': 'application/json',
+     'Content-Type': 'multipart/form-data',
     'OCS-APIRequest':'true',
+    'Referrer-Policy': 'origin'
     },
     body: data
   });
