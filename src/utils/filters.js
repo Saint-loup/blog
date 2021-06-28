@@ -75,11 +75,7 @@ module.exports = {
    // Universal slug filter strips unsafe chars from URLs
    */
 	slugify: (string) => {
-		return slugify(string, {
-			lower: true,
-			replacement: '-',
-			remove: /[*+~.·,()'"`´%!?¿:@]/g,
-		})
+		return slugify(string)
 	},
 
 
