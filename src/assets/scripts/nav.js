@@ -1,8 +1,12 @@
 module.exports = function () {
 
-	window.scrollBy({
-		top: document.querySelector('#menu-offcanvas').getBoundingClientRect().height,
-	});
+
+	document.addEventListener('DOMContentLoaded', () => {
+		window.scrollTo({
+			top: document.querySelector('#menu-bar').offsetTop,
+		});
+	})
+
 
 	const button = document.querySelector('#menu-bar button #trigger-zone')
 	button.addEventListener("click", function () {
@@ -27,7 +31,7 @@ module.exports = function () {
 			offCanvas.classList.remove('anim-nav-opened')
 			window.scrollBy({
 				behavior: 'smooth',
-				top: document.querySelector('#menu-offcanvas').getBoundingClientRect().height,
+				top: document.querySelector('#menu-bar').offsetTop,
 			});
 		}
 
