@@ -2,56 +2,58 @@
 layout: base
 ---
 
-{% if hero.image %}
+<div class="template-post-main">
+  {% if hero.image %}
 
-  {% set heroComponent = ['components/hero-', hero.type, '.njk'] %}
+    {% set heroComponent = ['components/hero-', hero.type, '.njk'] %}
 
-  {% include heroComponent | join %}
-{% else %}
+    {% include heroComponent | join %}
+  {% else %}
 
-{% endif %}
-
-<article class="post-main template-post my-20 prose lg:prose-xl prose-lg article {{ structure.g_proseWidth }}">
-
-  {% if not hero.image %}
-    <header class="">
-      <h1 class="text-gray-700">{{ seo.title or title }}</h1>
-      <div class="text-sm">
-        <time datetime="{{ page.date | dateToFormat("yyyy-MM-dd") }}">
-          {{ page.date | dateToFormat("dd LLLL yyyy") }}
-        </time>
-      </div>
-    </header>
   {% endif %}
 
-  <div class="my-16 post-main">{{ content | safe }}</div>
+  <article class="post-main  my-20 prose lg:prose-xl prose-lg article {{ structure.g_proseWidth }}">
 
-</article>
+    {% if not hero.image %}
+      <header class="">
+        <h1 class="text-gray-700">{{ seo.title or title }}</h1>
+        <div class="text-sm">
+          <time datetime="{{ page.date | dateToFormat("yyyy-MM-dd") }}">
+            {{ page.date | dateToFormat("dd LLLL yyyy") }}
+          </time>
+        </div>
+      </header>
+    {% endif %}
 
-<footer class="mt-16 mb-6 text-lg container-wide md:text-xl ">
-  <div class="pt-4 mt-12 border-t md:justify-between md:items-start md:flex md:flex-row">
-    {# If you don't want to display the Tag Pills, set "false" in /src/_data/structure.js #}
-      {% include "components/tagpills.njk" %}
+    <div class="my-16 post-main">{{ content | safe }}</div>
 
-  </div>
+  </article>
 
-  {# ===== Previous and Next =====  #}
-  <div class="border-t mt-4 pt-4 {{ colors.borderCustom.color or colors.borderDefault.color }} md:flex-row md:flex md:justify-between">
-    {% set nextPost = collections.post | getPreviousCollectionItem(page) %}
-    {% set previousPost = collections.post | getNextCollectionItem(page) %}
-    <div class="py-2 text-center sm:py-0">
-      {% if previousPost %}
-        <a class=" hover:text-accent2" href="{{ previousPost.url | url }}">
-        ← {{ previousPost.data.title }}
-        </a>
-      {% endif %}
+  <footer class="mt-16 mb-6 text-lg container-wide md:text-xl ">
+    <div class="pt-4 mt-12 border-t md:justify-between md:items-start md:flex md:flex-row">
+      {# If you don't want to display the Tag Pills, set "false" in /src/_data/structure.js #}
+        {% include "components/tagpills.njk" %}
+
     </div>
-    <div class="py-2 text-center sm:py-0">
-      {% if nextPost %}
-        <a class="hover:text-accent2" href="{{ nextPost.url | url}}">
-          {{ nextPost.data.title }} →
-        </a>
-      {% endif %}
+
+    {# ===== Previous and Next =====  #}
+    <div class="border-t mt-4 pt-4 {{ colors.borderCustom.color or colors.borderDefault.color }} md:flex-row md:flex md:justify-between">
+      {% set nextPost = collections.post | getPreviousCollectionItem(page) %}
+      {% set previousPost = collections.post | getNextCollectionItem(page) %}
+      <div class="py-2 text-center sm:py-0">
+        {% if previousPost %}
+          <a class=" hover:text-accent2" href="{{ previousPost.url | url }}">
+          ← {{ previousPost.data.title }}
+          </a>
+        {% endif %}
+      </div>
+      <div class="py-2 text-center sm:py-0">
+        {% if nextPost %}
+          <a class="hover:text-accent2" href="{{ nextPost.url | url}}">
+            {{ nextPost.data.title }} →
+          </a>
+        {% endif %}
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
+</div>

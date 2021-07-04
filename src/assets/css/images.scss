@@ -63,3 +63,41 @@ content:none
     object-position: unset;
   }
 }
+
+@media screen and (min-width:1024px){
+	.img-wrapper {
+		margin-top: 4%;
+	}
+	.hero-split img, .hero-split video {
+		width: auto;
+		max-height: 60vmax;
+		align-self: flex-start;
+min-height: 312px;	}
+}
+
+@media screen and (max-width:1024px){
+
+	.hero-split img, .hero-split video {
+		width: auto;
+		height: inherit;
+		max-height: 48vmax;
+		align-self: flex-start;
+	}
+}
+
+/*@media screen and (min-width:768){
+	.hero-split img {
+		width: auto;
+		height: inherit;
+		max-height: 15vmin;
+	}
+}*/
+
+.article.prose figure img {
+    margin: auto !important;
+}
+
+
+.article img, .article video, .article iframe {
+	margin:auto
+}

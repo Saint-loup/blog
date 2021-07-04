@@ -3,7 +3,8 @@ window.truchet = require('../../truchet.js');
 
 document.addEventListener('DOMContentLoaded', async function () {
 	[...document.querySelectorAll('canvas')].forEach(async (el) => {
-		await truchet(el, JSON.parse(el.dataset.args));
+		await truchet(el, document.createElement('canvas'),
+			JSON.parse(el.dataset.args), null);
 
 	})
 }

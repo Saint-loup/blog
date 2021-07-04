@@ -1,6 +1,6 @@
 <li class="flex my-12">
 	<img onclick="window.location.href='{{post.url}}'"  loading="lazy" alt="{{post.data.hero.alt}}"
-				src="/assets/generatedImages/{{  post.data.hero.image if post.data.hero.image else  post.data.page.fileSlug + '.png' }}"
+				src="/assets/generatedImages/{{  post.data.hero.image if post.data.hero.image else  'truchet-'+ post.data.page.fileSlug + '.png' }}"
 				>
 	<div>
 
