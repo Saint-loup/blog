@@ -10,10 +10,7 @@ import postlistitem from '../../../src/_templates/components/postlistitem.njk'
 async function search(e) {
 	e.preventDefault();
 	const value = this[0].value
-	if (!window.searchIndex) {
-		const rawIndex = await fetch("/index.min.json")
-		window.searchIndex = elasticlunr.Index.load(await rawIndex.json());
-	}
+
 	const results = window
 		.searchIndex
 		.search(value, {
@@ -79,7 +76,13 @@ async function search(e) {
 
 };
 
-document
-	.getElementById("search-form")
+document.getElementById("search-form")
 	.addEventListener("submit", search);
 
+document.getElementById("search-form")
+	.addEventListener("input", async function () {
+		if (!window.searchIndex) {
+			const rawIndex = await fetch("/index.min.json")
+			window.searchIndex = elasticlunr.Index.load(await rawIndex.json());
+		}
+	});

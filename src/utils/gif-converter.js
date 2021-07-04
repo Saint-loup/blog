@@ -79,7 +79,6 @@ async function convertGIFs(img) {
 	});
 
 	video.setAttribute('src', videoSrc)
-	console.log(video.src)
 
 	video.setAttribute("autoplay", "");
 	video.setAttribute("muted", "");
@@ -96,7 +95,7 @@ async function convertGIFs(img) {
 		parent.replaceChild(video, img);
 
 	}
-	 return;
+	return;
 }
 
 
