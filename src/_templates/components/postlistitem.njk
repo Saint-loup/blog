@@ -1,11 +1,7 @@
 <li class="flex my-12">
-	{{post.fileSlug | log}}
-	{{post.inputPath | log}}
-	{{post.inputPath | log}}
-	{{post.data.title | log}}
 
 	<img onclick="window.location.href='{{post.url}}'"  loading="lazy" alt="{{post.data.hero.alt}}"
-				src="/assets/generatedImages/{{  post.data.hero.image if post.data.hero.image else  'truchet-'+ post.data.page.fileSlug + '.png' }}"
+				src="{{  post.data.hero.image if post.data.hero.image else  'truchet-'+ post.data.page.fileSlug + '.png' }}"
 				>
 	<div>
 

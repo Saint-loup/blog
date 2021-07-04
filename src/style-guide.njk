@@ -1,46 +1,12 @@
 ---
 title: guide de style
-eleventyExcludeFromCollections: true,
+eleventyExcludeFromCollections: true
 layout: page
 eleventyNavigation:
   key: main
   title: Blog #  as it will appear in the nav
   order: 1    # order to display in the nav
-seo:
-  title: Tous les articles
-  description:
-pagination:
-  data: collections.post
-  size: 3
-  alias: posts
-  reverse: true
-postListItemStyle:
-  complete: true
-  showPagination: true
+draft: true
+
 
 ---
-
-<div class="blog-wrapper">
-  <form class="search " id="search-form" aria-controls="post-list">
-    <div class="flex flex-col w-1/2 field">
-      <label for="searchField" class="label">Rechercher</label>
-      <div class="relative">
-        <input type="search"  class="w-full p-2 border-gray-600 rounded-md " placeholder="" id="searchField"/>
-        <input type="image" name="submit" src="/assets/UI/search.svg" border="0" class="absolute h-10 p-2 right-2">
-      </div>
-    </div>
-    <p id="noResultsFound" class="py-4 text-base" style="display: none" role="alert">
-      Aucun résultat.
-    </p>
-  </form>
-  {% set postslist = posts %}
-
-  {% include 'components/postslist.njk' %}
-
-  <div class="my-16 border-t border-gray-300 lg:container-wide">
-    <h3 class="{{ colors.tagPillCustom.text or colors.tagPillDefault.text }}">Tous les thèmes</h3>
-    {% set tags = collections.tagList %}
-    {% include "components/tagpills.njk" %}
-  </div>
-</div>
-<script  src="/assets/scripts/{{hashes_js['search.js']}}" defer></script>

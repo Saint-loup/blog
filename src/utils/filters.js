@@ -16,6 +16,11 @@ module.exports = {
 	 * @link https://www.11ty.dev/docs/filters/
 	 */
 
+	frontMatterFilter: function (collection, field) {
+		if (!field) return collection;
+
+		return collection.filter(item => { return !item?.data?.[field] })
+	},
 	similarPosts: function (collection, path, categories) {
 
 		const getSimilarCategories = function (categoriesA, categoriesB) {
