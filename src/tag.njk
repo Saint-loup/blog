@@ -8,6 +8,10 @@ pagination:
     - authors
     - pages
     - post
+    - travaux
+    - publishedPosts
+    - all
+    - tagList
 postListItemStyle:
   complete: true
   showPagination: false
@@ -16,16 +20,13 @@ eleventyComputed:
   title: 'Articles à propos de : "{{ tag }}”'
 ---
 
-{#
-  We set this to 'postslist' so we can use the same postslist components as the /blog
-#}
-{% set postslist = collections[tag] | reverse %}
+{% set postslist = collections[tag] | frontMatterFilter("draft") | reverse %}
 
 {% include 'components/postslist.njk' %}
 
 <div class="my-16 border-t border-gray-300 container-wide">
   <h3 class="text-gray-700">Tous les mots clés</h3>
   {% set tags = collections.tagList %}
-  {#  {% include "components/tagpills.njk" %}
-#}
+    {% include "components/tagpills.njk" %}
+
 </div>

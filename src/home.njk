@@ -19,14 +19,14 @@ postListItemStyle:
       {{ seo.description }}
     {% endif %}
 
- {#   <section class="mb-16">
+    <section class="mb-16">
       <h2>Bafouilles</h2>
       {% set postslist = collections.publishedPosts | reverse | slice(0, 3) %}
 
       {% include 'components/postslist.njk' %}
 
       <a href="/blog" class="text-xl font-semibold leading-7 text-accent2 lg:text-2xl ">Voir tout <span aria-hidden="true">⤳</span></a>
-    </section>#}
+    </section>
     <hr class="my-8">
 
     <section class="mb-16">

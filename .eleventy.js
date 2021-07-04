@@ -85,7 +85,7 @@ cf. postcss.config.js pour le CSS
 
 	if (process.env.NODE_ENV === "production") {
 		eleventyConfig.addPlugin(imagesResponsiver, require('./src/utils/images-responsiver-config.js'))
-		//eleventyConfig.addPlugin(require('./src/utils/gif-converter.js'))
+		eleventyConfig.addPlugin(require('./src/utils/gif-converter.js'))
 
 	}
 
@@ -213,20 +213,19 @@ cf. postcss.config.js pour le CSS
 
 		//const collec = collection.getFilteredByGlob("./src/posts/**/*.md").filter(publishedPosts);
 
-		const collec =  collection.getFilteredByTag("post").filter(publishedPosts)
-		collec.forEach(item => {
-
-			if (item.fileSlug === undefined) {
-				console.log(item.templateContent)
-			}
-		})
+		const collec = collection.getFilteredByTag("post").filter(publishedPosts)
+		/*	collec.forEach(item => {
+				if (item.fileSlug === undefined) {
+					console.log(item.templateContent)
+				}
+			})*/
 		return collec
 	});
 
 
 	eleventyConfig.addCollection('tagList', (collection) => {
 		let tagSet = new Set()
-		collection.getAll().filter(publishedPosts).forEach(function (item) {
+		collection.getFilteredByTag("post").filter(publishedPosts).forEach(function (item) {
 			if ('tags' in item.data) {
 				let tags = item.data.tags
 
@@ -238,7 +237,7 @@ cf. postcss.config.js pour le CSS
 						case 'post':
 						case 'travaux':
 						case 'features':
-
+						case 'publishedposts':
 							return false
 					}
 					return true
@@ -250,7 +249,6 @@ cf. postcss.config.js pour le CSS
 			}
 		})
 
-		// returning an array in addCollection works in Eleventy 0.5.3
 		return [...tagSet]
 	})
 

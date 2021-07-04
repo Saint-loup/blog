@@ -1,5 +1,6 @@
 const Image = require("@11ty/eleventy-img");
 const path = require("path");
+const { promisify } = require("util");
 
 module.exports = {
 
@@ -24,7 +25,7 @@ module.exports = {
 					'$1-' + width + '.jpg')
 			return src
 		},
-		runBefore: (image, document) => {
+		runBefore: async (image, document) => {
 			let originalPath = image.getAttribute('src')
 			const intermediaryPath = "src/assets/imagesToProcess/" + path.basename(originalPath)
 			const options = {
@@ -43,10 +44,18 @@ module.exports = {
 					return `${name}-${width}.${modifiedFormat}`;
 				}
 			}
-	/*		if (document.querySelector('body').classList.contains('template-post')) {
+			if (document.querySelector('body').classList.contains('template-post')) {
+
 				try {
+					const exists = promisify(require("fs").exists);
+					if (!(await exists(intermediaryPath))) {
+						console.log(intermediaryPath + 'debug : existe pas')
+					}
+					console.log(intermediaryPath)
+
 					// fonction async mais ajouter await fout le bordel
-					Image(decodeURI(intermediaryPath), options);
+					const stats = await Image(decodeURI(intermediaryPath), options);
+					console.log(stats.jpeg[0].filename)
 				}
 				catch (e) {
 					console.log(e)
@@ -66,7 +75,7 @@ module.exports = {
 				console.log(e)
 				console.log('debug : ' + originalPath)
 			}
-			*/
+
 		},
 		runAfter: (image, document) => {
 			//image.setAttribute('src', image.dataset.responsiveruRL);
