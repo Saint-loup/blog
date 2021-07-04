@@ -6,7 +6,7 @@ module.exports = async function (slug) {
 	const { pipeline } = require('stream/promises');
 	const truchet = require('./truchet.js')
 
-	const path = 'dist/assets/generatedImages/' + slug + '.png'
+	const path = 'dist/assets/generatedImages/truchet-' + slug + '.png'
 
 
 	const tileCanvas = await truchet(

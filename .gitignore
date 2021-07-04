@@ -1,8 +1,11 @@
 src/assets/generatedImages/*
+src/assets/imagesToProcess/*
+
 src/assets/images/single
 src/assets/images/relative
 src/_data/hashes_css.json
 src/_data/hashes_js.json
+
 .eleventyignore
 
 .sync_*

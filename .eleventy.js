@@ -39,6 +39,10 @@ module.exports = function (eleventyConfig) {
 
 	eleventyConfig.setWatchJavaScriptDependencies(true);
 
+
+
+
+
 	/**
  * Passthrough File Copy
  * @link https://www.11ty.dev/docs/copy/
@@ -48,18 +52,11 @@ cf. postcss.config.js pour le CSS
 
 */
 
-	eleventyConfig.addPassthroughCopy({ 'src/assets/images/*.gif': 'assets/images' });
-	//eleventyConfig.addPassthroughCopy('src/assets/images/')
-	eleventyConfig.addPassthroughCopy('src/assets/generatedImages/')
+	//eleventyConfig.addPassthroughCopy({ 'src/assets/images/*.gif': 'assets/images' });
+	//On copie tels quels les média avec chemins relatifs ou absolus dans /dist, qu'ils puissent être lus par du balisage non-transformé (sans srcset ou gif -> vidéo)
 
-	eleventyConfig.addPassthroughCopy({ 'src/posts/**/*.webp': 'assets/generatedImages' })
-	eleventyConfig.addPassthroughCopy({ 'src/posts/**/*.png': 'assets/generatedImages' })
-	eleventyConfig.addPassthroughCopy({ 'src/posts/**/*.jpg': 'assets/generatedImages' })
-	eleventyConfig.addPassthroughCopy({ 'src/posts/**/*.jpeg': 'assets/generatedImages' })
-	eleventyConfig.addPassthroughCopy({ 'src/assets/images/*.webp': 'assets/generatedImages' })
-	eleventyConfig.addPassthroughCopy({ 'src/assets/images/*.png': 'assets/generatedImages' })
-	eleventyConfig.addPassthroughCopy({ 'src/assets/images/*.jpg': 'assets/generatedImages' })
-	eleventyConfig.addPassthroughCopy({ 'src/assets/images/*.jpeg': 'assets/generatedImages' })
+	eleventyConfig.addPassthroughCopy({ 'src/posts/**/*.{png,webp,gif,mp4,jpg,jpeg}': 'assets/generatedImages' })
+	eleventyConfig.addPassthroughCopy({ 'src/assets/images/*.{png,webp,gif,mp4,jpg,jpeg}': 'assets/generatedImages' })
 
 
 
@@ -88,6 +85,7 @@ cf. postcss.config.js pour le CSS
 
 	if (process.env.NODE_ENV === "production") {
 		eleventyConfig.addPlugin(imagesResponsiver, require('./src/utils/images-responsiver-config.js'))
+		eleventyConfig.addPlugin(require('./src/utils/gif-converter.js'))
 
 	}
 

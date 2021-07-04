@@ -13,7 +13,6 @@ module.exports = {
     placeholderImage: async (data) => {
 
       if (data.hero === undefined || data.hero === {}) {
-
         await truchetNode(data.page.fileSlug).catch(console.error);
       }
       else { return false }

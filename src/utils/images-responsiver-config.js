@@ -4,10 +4,10 @@ const path = require("path");
 module.exports = {
 
 	default: {
-		selector: '[class^="template-post"] :not(picture) img[src]:not([srcset]):not([src$=".svg"]):not([src$=".gif"])',
+		selector: '.template-post-main :not(picture) img[src]:not([srcset]):not([src$=".svg"]):not([src$=".gif"])',
 		minWidth: 360,
-		maxWidth: 1600,
-		fallbackWidth: 1600,
+		maxWidth: 1920,
+		fallbackWidth: 1280,
 		sizes: '(max-width: 60rem) 90vw, 60rem',
 		resizedImageUrl: (src, width) => {
 
@@ -25,16 +25,16 @@ module.exports = {
 			return src
 		},
 		runBefore: (image, document) => {
-			let url = image.getAttribute('src')
+			let originalPath = image.getAttribute('src')
 			const options = {
 				sharpWebpOptions: {
 					quality: 90,
 				},
-				widths: [360, 670, 980, 1290, 1600],
+				widths: [360, 750, 1140, 1530, 1920],
 				dryRun: false,
 				formats: ['webp', 'jpeg'],
-				urlPath: '/assets/images/',
-				outputDir: './src/assets/generatedImages/',
+				urlPath: '/assets/imagesToProcess/',
+				outputDir: './dist/assets/generatedImages/',
 				filenameFormat: function (id, src, width, format, options) {
 					const extension = path.extname(src);
 					const name = path.basename(src, extension);
@@ -45,15 +45,12 @@ module.exports = {
 
 			// test et réécriture des images à chemin relatif
 			try {
-				if (!(new RegExp('^/').test(url))) {
-					url = "src/assets/images/relative/" + url
-				}
-				else {
-					url = "src/" + url
-				}
+				const intermediaryPath = "src/assets/imagesToProcess/" + path.basename(originalPath)
+
+
 				// fonction async mais ajouter await fout le bordel
-				Image(decodeURI(url), options);
-				let metadata = Image.statsSync(decodeURI(url), options);
+				Image(decodeURI(intermediaryPath), options);
+				let metadata = Image.statsSync(decodeURI(intermediaryPath), options);
 				const images = metadata.jpeg
 				image.setAttribute('width', images[images.length - 1].width);
 				image.setAttribute('height', images[images.length - 1].height);
@@ -64,7 +61,7 @@ module.exports = {
 			}
 			catch (e) {
 				console.log(e)
-				console.log('debug : ' + url)
+				console.log('debug : ' + originalPath)
 			}
 		},
 		runAfter: (image, document) => {

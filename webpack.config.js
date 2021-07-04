@@ -56,14 +56,25 @@ module.exports = {
 
     new CopyPlugin({
       patterns: [
+        //On copie média avec chemins relatifs ou absolus dans un dossier unique intermédiaire, que les scripts puissent processer
         {
           from: "posts/**/*.{png,webp,gif,mp4,jpg,jpeg}",
           context: "src",
           to({ context, absoluteFilename }) {
-            return `${context}/assets/images/relative/[name][ext]`;
+            return `${context}/assets/imagesToProcess/[name][ext]`;
           },
-        }
-        ,
+
+        },
+        {
+          from: "assets/images/*",
+          context: "src",
+          to({ context, absoluteFilename }) {
+            return `${context}/assets/imagesToProcess/[name][ext]`;
+          },
+
+        },
+
+
       ],
       options: {
         concurrency: 100,
