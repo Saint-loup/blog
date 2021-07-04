@@ -85,7 +85,7 @@ cf. postcss.config.js pour le CSS
 
 	if (process.env.NODE_ENV === "production") {
 		eleventyConfig.addPlugin(imagesResponsiver, require('./src/utils/images-responsiver-config.js'))
-		eleventyConfig.addPlugin(require('./src/utils/gif-converter.js'))
+		//eleventyConfig.addPlugin(require('./src/utils/gif-converter.js'))
 
 	}
 
@@ -172,7 +172,7 @@ cf. postcss.config.js pour le CSS
 	eleventyConfig.addLayoutAlias('base', 'layouts/base.njk')
 	eleventyConfig.addLayoutAlias('page', 'layouts/page.njk')
 	eleventyConfig.addLayoutAlias('post', 'layouts/post.njk')
-	eleventyConfig.addLayoutAlias('post-mdjs', 'layouts/post-mdjs.njk')
+	eleventyConfig.addLayoutAlias('post-canvas', 'layouts/post-canvas.njk')
 
 
 	//eleventyConfig.addLayoutAlias('home', 'layouts/home.njk')
@@ -202,26 +202,31 @@ cf. postcss.config.js pour le CSS
 	/**
  * Collections
  * ============================
- *
- * POST Collection set so we can check status of "draft:" frontmatter.
- * If set "true" then post will NOT be processed in PRODUCTION env.
- * If "false" or NULL it will be published in PRODUCTION.
- * Every Post will ALWAYS be published in DEVELOPMENT so you can preview locally.
+
  */
 
 
-	const publishedPosts = (post) => !post.data.draft;
+	const publishedPosts = (post) => { return !post.data.draft }
 
-	eleventyConfig.addCollection("post", (collection) => {
-		return collection
-			.getFilteredByGlob("./src/posts/**/*.md")
-			.filter(publishedPosts);
+
+	eleventyConfig.addCollection("publishedPosts", function (collection) {
+
+		//const collec = collection.getFilteredByGlob("./src/posts/**/*.md").filter(publishedPosts);
+
+		const collec =  collection.getFilteredByTag("post").filter(publishedPosts)
+		collec.forEach(item => {
+
+			if (item.fileSlug === undefined) {
+				console.log(item.templateContent)
+			}
+		})
+		return collec
 	});
 
 
 	eleventyConfig.addCollection('tagList', (collection) => {
 		let tagSet = new Set()
-		collection.getAll().forEach(function (item) {
+		collection.getAll().filter(publishedPosts).forEach(function (item) {
 			if ('tags' in item.data) {
 				let tags = item.data.tags
 

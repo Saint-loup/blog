@@ -11,11 +11,15 @@ module.exports = {
   eleventyComputed: {
 
     placeholderImage: async (data) => {
-
-      if (data.hero === undefined || data.hero === {}) {
+   if (data.draft !== true )
+      {   if (data.hero === undefined || data.hero === {}) {
         await truchetNode(data.page.fileSlug).catch(console.error);
       }
       else { return false }
+    }
+    else {
+
+    }
     },
 
     relative: (data) => {

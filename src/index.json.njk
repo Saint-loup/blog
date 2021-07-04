@@ -1,5 +1,7 @@
 ---
 permalink: /index.min.json
+"eleventyExcludeFromCollections": true,
+
 ---
 
 {{ collections.post | searchIndex | dump   | safe }}

@@ -4,7 +4,7 @@ const path = require("path");
 module.exports = {
 
 	default: {
-		selector: '.template-post-main :not(picture) img[src]:not([srcset]):not([src$=".svg"]):not([src$=".gif"])',
+		selector: ':not(picture) img[src]:not([srcset]):not([src$=".svg"]):not([src$=".gif"])',
 		minWidth: 360,
 		maxWidth: 1920,
 		fallbackWidth: 1280,
@@ -26,6 +26,7 @@ module.exports = {
 		},
 		runBefore: (image, document) => {
 			let originalPath = image.getAttribute('src')
+			const intermediaryPath = "src/assets/imagesToProcess/" + path.basename(originalPath)
 			const options = {
 				sharpWebpOptions: {
 					quality: 90,
@@ -42,27 +43,30 @@ module.exports = {
 					return `${name}-${width}.${modifiedFormat}`;
 				}
 			}
-
-			// test et réécriture des images à chemin relatif
+	/*		if (document.querySelector('body').classList.contains('template-post')) {
+				try {
+					// fonction async mais ajouter await fout le bordel
+					Image(decodeURI(intermediaryPath), options);
+				}
+				catch (e) {
+					console.log(e)
+					console.log('debug : ' + originalPath)
+				}
+			}
 			try {
-				const intermediaryPath = "src/assets/imagesToProcess/" + path.basename(originalPath)
-
-
-				// fonction async mais ajouter await fout le bordel
-				Image(decodeURI(intermediaryPath), options);
 				let metadata = Image.statsSync(decodeURI(intermediaryPath), options);
-				const images = metadata.jpeg
+				const images = metadata.jpeg || metadata.png
 				image.setAttribute('width', images[images.length - 1].width);
 				image.setAttribute('height', images[images.length - 1].height);
 				image.dataset.responsiver = image.className;
 				//image.dataset.responsiveruRL = metadata.jpg.url;
 				image.dataset.size = image.className;
-
 			}
 			catch (e) {
 				console.log(e)
 				console.log('debug : ' + originalPath)
 			}
+			*/
 		},
 		runAfter: (image, document) => {
 			//image.setAttribute('src', image.dataset.responsiveruRL);

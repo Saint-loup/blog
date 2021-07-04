@@ -5,7 +5,7 @@ tags:
   - "tout ce qui bouge"
   - "procédural"
 draft: true
-layout: post-mdjs
+layout: post-canvas
 richPicture: false
 hero:
   type: split

@@ -1,4 +1,9 @@
 <li class="flex my-12">
+	{{post.fileSlug | log}}
+	{{post.inputPath | log}}
+	{{post.inputPath | log}}
+	{{post.data.title | log}}
+
 	<img onclick="window.location.href='{{post.url}}'"  loading="lazy" alt="{{post.data.hero.alt}}"
 				src="/assets/generatedImages/{{  post.data.hero.image if post.data.hero.image else  'truchet-'+ post.data.page.fileSlug + '.png' }}"
 				>
@@ -15,7 +20,7 @@
 		</time>
 
 		{% if post.data.description or post.data.page.description %}
-			<span class=" mx-2 text-xl font-light text-gray-500 inline " >~</span>
+			<span class="inline mx-2 text-xl font-light text-gray-500 " >~</span>
 			<span class="label">
 				{{ post.data.description |  removeMD}}
 				{{ post.data.page.description | removeMD }}
