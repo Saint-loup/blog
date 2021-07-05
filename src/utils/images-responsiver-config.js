@@ -5,13 +5,13 @@ const { promisify } = require("util");
 module.exports = {
 
 	default: {
-		selector: ':not(picture) img[src]:not([srcset]):not([src$=".svg"]):not([src$=".gif"])',
+		selector: '#content :not(picture) img[src]:not([srcset]):not([src$=".svg"]):not([src$=".gif"])',
 		minWidth: 360,
 		maxWidth: 1920,
 		fallbackWidth: 1280,
 		sizes: '(max-width: 60rem) 90vw, 60rem',
 		resizedImageUrl: (src, width) => {
-
+			console.log(src)
 			if (!(new RegExp('^/').test(src))) {
 				src = "/assets/generatedImages/" + src
 			}
@@ -44,25 +44,24 @@ module.exports = {
 					return `${name}-${width}.${modifiedFormat}`;
 				}
 			}
-			if (document.querySelector('body').classList.contains('template-post')) {
 
-				try {
-					const exists = promisify(require("fs").exists);
-					if (!(await exists(intermediaryPath))) {
-						console.log(intermediaryPath + 'debug : existe pas')
-					}
-					console.log(intermediaryPath)
-
-					// fonction async mais ajouter await fout le bordel
-					const stats = await Image(decodeURI(intermediaryPath), options);
-					console.log(stats.jpeg[0].filename)
-				}
-				catch (e) {
-					console.log(e)
-					console.log('debug : ' + originalPath)
-				}
-			}
 			try {
+				const exists = promisify(require("fs").exists);
+				if (!(await exists(intermediaryPath))) {
+					console.log(intermediaryPath + 'debug : existe pas')
+				}
+
+				// fonction async mais ajouter await fout le bordel
+				const stats = await Image(decodeURI(intermediaryPath), options);
+				//console.log(stats.jpeg[0].filename)
+			}
+			catch (e) {
+				console.log(e)
+				console.log('debug : ' + originalPath)
+			}
+
+			try {
+
 				let metadata = Image.statsSync(decodeURI(intermediaryPath), options);
 				const images = metadata.jpeg || metadata.png
 				image.setAttribute('width', images[images.length - 1].width);
