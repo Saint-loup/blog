@@ -5,6 +5,12 @@
 }
 
 @layer base {
+	body .UI a {
+	font-weight: inherit;
+	font-size: inherit;
+	color: inherit
+
+}
 	body h1,
 	body h2,
 	body h3,
@@ -120,3 +126,5 @@ pre code {
 		padding-bottom:.7em;
 		height: 18vh;}
 }
+
+
