@@ -8,8 +8,8 @@
 {%- endset -%}
 
 {#- General #}
-<meta name="author" content="{{ author or meta.authorName }}"/>
-<meta name="description" content="{{ description | removeMD   }}"/>
+<meta name="author" content="{{ meta.author }}"/>
+<meta name="description" content="{{ description | removeMD or meta.siteDescription }}"/>
 {#- Open Graph #}
 <meta property="og:site_name" content="{{ meta.siteName }}"/>
 <meta property="og:title" content="{{ seo.title or title }} | {{ meta.siteName }}"/>
