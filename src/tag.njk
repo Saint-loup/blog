@@ -27,6 +27,8 @@ eleventyComputed:
 <div class="my-16 border-t border-gray-300 container-wide">
   <h3 class="text-gray-700">Tous les mots clés</h3>
   {% set tags = collections.tagList %}
-    {% include "components/tagpills.njk" %}
+  {% set block = true %}
+
+  {% include "components/tagpills.njk" %}
 
 </div>

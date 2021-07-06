@@ -8,6 +8,7 @@ layout: base
     {% set heroComponent = ['components/hero-', hero.type, '.njk'] %}
 
     {% include heroComponent | join %}
+
   {% else %}
 
   {% endif %}
@@ -17,10 +18,12 @@ layout: base
     {% if not hero.image %}
       <header class="">
         <h1 class="text-gray-700">{{ seo.title or title }}</h1>
-        <div class="text-sm">
+        <div class="text-sm UI sm:text-base">
           <time datetime="{{ page.date | dateToFormat("yyyy-MM-dd") }}">
             {{ page.date | dateToFormat("dd LLLL yyyy") }}
           </time>
+          {% include "components/tagpills-inline.njk" %}
+
         </div>
       </header>
     {% endif %}
@@ -29,12 +32,7 @@ layout: base
 
   </article>
 
-  <footer class="mt-16 mb-6 text-lg container-wide md:text-xl ">
-    <div class="pt-4 mt-12 border-t md:justify-between md:items-start md:flex md:flex-row">
-      {# If you don't want to display the Tag Pills, set "false" in /src/_data/structure.js #}
-        {% include "components/tagpills.njk" %}
-
-    </div>
+  <footer class="mt-16 mb-6 text-2xl container-wide md:text-3xl lg:4xl ">
 
     {# ===== Previous and Next =====  #}
     <div class="border-t mt-4 pt-4 {{ colors.borderCustom.color or colors.borderDefault.color }} md:flex-row md:flex md:justify-between">

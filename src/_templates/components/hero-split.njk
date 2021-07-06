@@ -10,10 +10,12 @@
       {{ title | safe }}
     </h1>
 
-    <div class="text-sm text-gray-50">
+    <div class="text-sm UI text-gray-50">
       <time datetime="{{ page.date | dateToFormat("yyyy-MM-dd") }}">
         {{ page.date | dateToFormat("dd LLL yyyy") }}
       </time>
+      {% include "components/tagpills-inline.njk" %}
+
     </div>
 
   </div>
@@ -26,5 +28,6 @@
           class="shadow-lg-dark"
           src="{{'' if relative else '/assets/images/'  }}{{ hero.image }}"
 />
+
   </div>
 </header>
