@@ -7,7 +7,7 @@
     font-display: swap;
 }*/
 
-@font-face {
+/*@font-face {
     font-family: 'Brandon';
     src: local('Brandon Text Black Italic'), local('BrandonText-BlackItalic'),
         url('/assets/css/fonts/brandontext-blackitalic.woff2') format('woff2');
@@ -15,7 +15,7 @@
     font-style: italic;
     font-display: swap;
 }
-
+*/
 /*@font-face {
     font-family: 'Brandon';
     src: local('Brandon Text Black'), local('BrandonText-Black'),
