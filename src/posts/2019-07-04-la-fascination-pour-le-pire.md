@@ -8,7 +8,6 @@ hero:
   image: "012cukejqs1z.png"
 ---
 
-![](/assets/images/012cukejqs1z.png)
 
 Comme beaucoup de designers dont le travail est de créer de bonnes interfaces, je suis fasciné par l’extrême inverse : des interfaces monstrueusement mauvaises.
 
