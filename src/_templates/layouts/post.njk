@@ -38,14 +38,14 @@ layout: base
 		<div class="border-t mt-4 pt-4 {{ colors.borderCustom.color or colors.borderDefault.color }} md:flex-row md:flex md:justify-between">
 			{% set nextPost = collections.publishedPosts | getPreviousCollectionItem(page) %}
 			{% set previousPost = collections.publishedPosts | getNextCollectionItem(page) %}
-			<div class="py-2 text-center sm:py-0">
+			<div class="py-2 sm:py-0">
 				{% if previousPost %}
 					<a class=" hover:text-accent2" href="{{ previousPost.url | url }}">
           ← {{ previousPost.data.title }}
 					</a>
 				{% endif %}
 			</div>
-			<div class="py-2 text-center sm:py-0">
+			<div class="py-2 text-right sm:py-0">
 				{% if nextPost %}
 					<a class="hover:text-accent2" href="{{ nextPost.url | url}}">
 						{{ nextPost.data.title }} →
