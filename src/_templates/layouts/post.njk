@@ -32,7 +32,7 @@ layout: base
 
 	</article>
 
-	<footer class="mt-16 mb-6 text-2xl container-wide md:text-3xl lg:4xl ">
+	<footer class="mt-16 mb-6 text-xl container-wide md:text-2xl lg:3xl ">
 
 		{# ===== Previous and Next =====  #}
 		<div class="border-t mt-4 pt-4 {{ colors.borderCustom.color or colors.borderDefault.color }} md:flex-row md:flex md:justify-between">
@@ -40,14 +40,14 @@ layout: base
 			{% set previousPost = collections.publishedPosts | getNextCollectionItem(page) %}
 			<div class="py-2 sm:py-0">
 				{% if previousPost %}
-					<a class=" hover:text-accent2" href="{{ previousPost.url | url }}">
+					<a class=" hover:underline text-accent2" href="{{ previousPost.url | url }}">
           ← {{ previousPost.data.title }}
 					</a>
 				{% endif %}
 			</div>
 			<div class="py-2 text-right sm:py-0">
 				{% if nextPost %}
-					<a class="hover:text-accent2" href="{{ nextPost.url | url}}">
+					<a class="hover:underline text-accent2" href="{{ nextPost.url | url}}">
 						{{ nextPost.data.title }} →
           </a>
 				{% endif %}
