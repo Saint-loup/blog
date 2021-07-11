@@ -16,6 +16,7 @@ hero:
 
 [C'est ici](http://table-basse.toutcequibouge.net/){.cta}
 
+Soyez patient pour le premier chargement, car l'hébergeur (Heroku version gratuite) éteint le serveur après 30 min d'inactivité.
 
 
 ## C'est quoi ?
